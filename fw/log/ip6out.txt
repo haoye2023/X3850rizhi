@@ -1,0 +1,52 @@
+-P INPUT DROP
+-P FORWARD DROP
+-P OUTPUT DROP
+-N ALLOWED_IPv4
+-N ALLOWED_IPv6
+-N ALLOWED_MAC
+-N ALLOWED_TIME
+-N ICMPFLOOD
+-N IMM_INPUT
+-N SYNFLOOD
+-N icmpv6-filter
+-A INPUT -i lo -m comment --comment "firetool-core-statement" -j IMM_INPUT 
+-A INPUT -i usb0 -m comment --comment "firetool-core-statement" -j IMM_INPUT 
+-A INPUT -m comment --comment "firetool-core-statement" -j ALLOWED_TIME 
+-A OUTPUT -m comment --comment "firetool-temp-statement" -j ACCEPT 
+-A OUTPUT -p icmpv6 -m comment --comment "firetool-temp-statement" -j ACCEPT 
+-A OUTPUT -m state --state RELATED,ESTABLISHED -m comment --comment "firetool-core-statement" -j ACCEPT 
+-A OUTPUT -m comment --comment "firetool-core-statement" -j NFLOG --nflog-prefix "output deny" --nflog-group 7 --nflog-range 80 
+-A OUTPUT -m comment --comment "firetool-core-statement" -j DROP 
+-A ALLOWED_IPv6 -m comment --comment "firetool-core-statement" -j ALLOWED_MAC 
+-A ALLOWED_MAC -m comment --comment "firetool-core-statement" -j IMM_INPUT 
+-A ALLOWED_TIME -m comment --comment "firetool-core-statement" -j ALLOWED_IPv6 
+-A ICMPFLOOD -m comment --comment "firetool-core-statement" -j DROP 
+-A IMM_INPUT -p icmpv6 -j icmpv6-filter 
+-A IMM_INPUT -m state --state RELATED,ESTABLISHED -m comment --comment "firetool-core-statement" -j ACCEPT 
+-A IMM_INPUT -i any -p tcp -m tcp --tcp-flags FIN,SYN,RST,PSH,ACK,URG NONE -m comment --comment "firetool-core-statement" -j DROP 
+-A IMM_INPUT -i any -p tcp -m tcp --tcp-flags FIN,SYN FIN,SYN -m comment --comment "firetool-core-statement" -j DROP 
+-A IMM_INPUT -i any -p tcp -m tcp --tcp-flags SYN,RST SYN,RST -m comment --comment "firetool-core-statement" -j DROP 
+-A IMM_INPUT -i any -p tcp -m tcp --tcp-flags FIN,RST FIN,RST -m comment --comment "firetool-core-statement" -j DROP 
+-A IMM_INPUT -i any -p tcp -m tcp --tcp-flags FIN,ACK FIN -m comment --comment "firetool-core-statement" -j DROP 
+-A IMM_INPUT -i any -p tcp -m tcp --tcp-flags ACK,URG URG -m comment --comment "firetool-core-statement" -j DROP 
+-A IMM_INPUT -m ipv6header --header esp -m comment --comment "firetool-core-statement" -j ACCEPT 
+-A IMM_INPUT -m ipv6header --header auth -m comment --comment "firetool-core-statement" -j ACCEPT 
+-A IMM_INPUT -m ipv6header --invalid -m comment --comment "firetool-core-statement" -j ACCEPT 
+-A IMM_INPUT -m comment --comment "firetool-core-statement" -j NFLOG --nflog-prefix "input deny" --nflog-group 6 --nflog-range 80 
+-A IMM_INPUT -p udp -m comment --comment "firetool-core-statement" -j REJECT --reject-with icmp6-port-unreachable 
+-A IMM_INPUT -m comment --comment "firetool-core-statement" -j DROP 
+-A SYNFLOOD -m limit --limit 12/sec --limit-burst 24 -m comment --comment "firetool-core-statement" -j ACCEPT 
+-A SYNFLOOD -m comment --comment "firetool-core-statement" -j DROP 
+-A icmpv6-filter ! -s fe80::/10 -p icmpv6 -m icmp6 --icmpv6-type 130 -j DROP 
+-A icmpv6-filter ! -s fe80::/10 -p icmpv6 -m icmp6 --icmpv6-type 131 -j DROP 
+-A icmpv6-filter ! -s fe80::/10 -p icmpv6 -m icmp6 --icmpv6-type 132 -j DROP 
+-A icmpv6-filter ! -s fe80::/10 -p icmpv6 -m icmp6 --icmpv6-type 143 -j DROP 
+-A icmpv6-filter ! -s fe80::/10 -p icmpv6 -m icmp6 --icmpv6-type 151 -j DROP 
+-A icmpv6-filter ! -s fe80::/10 -p icmpv6 -m icmp6 --icmpv6-type 152 -j DROP 
+-A icmpv6-filter ! -s fe80::/10 -p icmpv6 -m icmp6 --icmpv6-type 153 -j DROP 
+-A icmpv6-filter -p icmpv6 -m icmp6 --icmpv6-type 133 -j DROP 
+-A icmpv6-filter -p icmpv6 -m icmp6 --icmpv6-type 144 -j DROP 
+-A icmpv6-filter -p icmpv6 -m icmp6 --icmpv6-type 145 -j DROP 
+-A icmpv6-filter -p icmpv6 -m icmp6 --icmpv6-type 146 -j DROP 
+-A icmpv6-filter -p icmpv6 -m icmp6 --icmpv6-type 147 -j DROP 
+-A icmpv6-filter -j ACCEPT 

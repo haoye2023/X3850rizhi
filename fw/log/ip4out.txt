@@ -1,0 +1,46 @@
+-P INPUT DROP
+-P FORWARD DROP
+-P OUTPUT DROP
+-N ALLOWED_IPv4
+-N ALLOWED_IPv6
+-N ALLOWED_MAC
+-N ALLOWED_TIME
+-N Blackhole
+-N ICMPFLOOD
+-N IMM_INPUT
+-N SYNFLOOD
+-N UsbLog
+-A INPUT -i lo -m comment --comment "firetool-core-statement" -j IMM_INPUT 
+-A INPUT -i usb0 -m comment --comment "firetool-core-statement" -j IMM_INPUT 
+-A INPUT -m comment --comment "firetool-core-statement" -j ALLOWED_TIME 
+-A OUTPUT -s 127.0.0.1/32 -d 127.0.0.1/32 -m comment --comment "firetool-core-statement" -j ACCEPT 
+-A OUTPUT -p icmp -m icmp --icmp-type 8 -m comment --comment "firetool-core-statement" -j ICMPFLOOD 
+-A OUTPUT -s 127.0.0.1/32 -d 127.0.0.1/32 -m comment --comment "firetool-core-statement" -j ACCEPT 
+-A OUTPUT -m state --state RELATED,ESTABLISHED -m comment --comment "firetool-core-statement" -j ACCEPT 
+-A OUTPUT -m comment --comment "firetool-core-statement" -j NFLOG --nflog-prefix "output deny" --nflog-group 2 --nflog-range 80 
+-A OUTPUT -m comment --comment "firetool-core-statement" -j DROP 
+-A ALLOWED_IPv4 -m comment --comment "firetool-core-statement" -j ALLOWED_MAC 
+-A ALLOWED_MAC -m comment --comment "firetool-core-statement" -j IMM_INPUT 
+-A ALLOWED_TIME -m comment --comment "firetool-core-statement" -j ALLOWED_IPv4 
+-A Blackhole -j DROP 
+-A ICMPFLOOD -p icmp -m limit --limit 60/sec -m icmp --icmp-type 8 -m comment --comment "firetool-core-statement" -j ACCEPT 
+-A ICMPFLOOD -m comment --comment "firetool-core-statement" -j DROP 
+-A IMM_INPUT -p udp -m udp --dport 631 -j Blackhole 
+-A IMM_INPUT -p udp -m multiport --dports 137:138 -j Blackhole 
+-A IMM_INPUT -p tcp -m multiport --dports 137:138 -j Blackhole 
+-A IMM_INPUT -i usb0 -m state --state NEW -j UsbLog 
+-A IMM_INPUT -s 127.0.0.1/32 -d 127.0.0.1/32 -m comment --comment "firetool-core-statement" -j ACCEPT 
+-A IMM_INPUT -p icmp -m icmp --icmp-type 8 -m comment --comment "firetool-core-statement" -j ICMPFLOOD 
+-A IMM_INPUT -s 127.0.0.1/32 -d 127.0.0.1/32 -m comment --comment "firetool-core-statement" -j ACCEPT 
+-A IMM_INPUT -m state --state RELATED,ESTABLISHED -m comment --comment "firetool-core-statement" -j ACCEPT 
+-A IMM_INPUT -i any -p tcp -m tcp --tcp-flags FIN,SYN,RST,PSH,ACK,URG NONE -m comment --comment "firetool-core-statement" -j DROP 
+-A IMM_INPUT -i any -p tcp -m tcp --tcp-flags FIN,SYN FIN,SYN -m comment --comment "firetool-core-statement" -j DROP 
+-A IMM_INPUT -i any -p tcp -m tcp --tcp-flags SYN,RST SYN,RST -m comment --comment "firetool-core-statement" -j DROP 
+-A IMM_INPUT -i any -p tcp -m tcp --tcp-flags FIN,RST FIN,RST -m comment --comment "firetool-core-statement" -j DROP 
+-A IMM_INPUT -i any -p tcp -m tcp --tcp-flags FIN,ACK FIN -m comment --comment "firetool-core-statement" -j DROP 
+-A IMM_INPUT -i any -p tcp -m tcp --tcp-flags ACK,URG URG -m comment --comment "firetool-core-statement" -j DROP 
+-A IMM_INPUT -m comment --comment "firetool-core-statement" -j NFLOG --nflog-prefix "input deny" --nflog-group 1 --nflog-range 80 
+-A IMM_INPUT -m comment --comment "firetool-core-statement" -j DROP 
+-A SYNFLOOD -m limit --limit 12/sec --limit-burst 24 -m comment --comment "firetool-core-statement" -j ACCEPT 
+-A SYNFLOOD -m comment --comment "firetool-core-statement" -j DROP 
+-A UsbLog -j NFLOG --nflog-prefix "new usb0 connection" --nflog-group 3 --nflog-range 80 
