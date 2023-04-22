@@ -1,0 +1,55 @@
+20150609.170953 : BURN : TCOO10P : imm2 : all : - : initial burn
+20160626.081551 : XFLASH : buildid(primary) : bios : 09f89000 : inactive : (0000): No error. : no_error
+20160626.081737 : XFLASH : A9E130EUS(primary) : bios : 63713701 : update_completed : (0000): No error. : no_error
+20160626.081739 : XFLASH : buildid(primary) : imm2 : 2b073b00 : inactive : (0000): No error. : no_error
+20160626.082227 : XFLASH : TCOO16P(primary) : imm2 : 03afa201 : update_completed : (0000): No error. : no_error
+20160626.082230 : XFLASH : buildid(primary) : imm2 : 71bca700 : inactive : (0000): No error. : no_error
+20160626.092938 : XFLASH : buildid(primary) : imm2 : 02c43e00 : inactive : (0000): No error. : no_error
+20160626.092938 : XFLASH : buildid(primary) : dsa : 2daa4301 : inactive : (0000): No error. : no_error
+20160626.093755 : XFLASH : DSALA8E(primary) : dsa : 66da8202 : update_completed : (0000): No error. : no_error
+20160626.094540 : RESET : TCOO16P : imm2 : primary : - : reset to defaults
+20160626.095819 : XFLASH : buildid(primary) : bios : 4db50b00 : inactive : (0000): No error. : no_error
+20160626.100007 : XFLASH : A9E130EUS(backup) : bios : 68853b01 : update_completed : (0000): No error. : no_error
+20160626.100008 : XFLASH : buildid(primary) : imm2 : 38b54000 : inactive : (0000): No error. : no_error
+20160626.100743 : XFLASH : TCOO16P(backup) : imm2 : 66bea701 : update_completed : (0000): No error. : no_error
+20161019.073436 : SP : buildid(unknown_bank) : client : 10470c01 : unknown : (0000): No error. : no_error
+20161019.073436 : SP : buildid(primary) : web : 10470c01 : inactive : (0000): No error. : no_error
+20161019.073436 : SP : buildid(primary) : web : 10470c01 : inactive : (0000): No error. : no_error
+20161019.073437 : SP : buildid(primary) : web : 10470c01 : inactive : (0000): No error. : no_error
+20161019.073437 : SP : buildid(primary) : web : 10470c01 : inactive : (0000): No error. : no_error
+20161019.073438 : SP : buildid(primary) : web : 10470c01 : inactive : (0000): No error. : no_error
+20161019.075733 : SP : buildid(unknown_bank) : client : 5e226d01 : unknown : (0000): No error. : no_error
+20161019.075733 : SP : buildid(primary) : web : 5e226d01 : inactive : (0000): No error. : no_error
+20161019.075733 : SP : buildid(primary) : web : 5e226d01 : inactive : (0000): No error. : no_error
+20161019.075733 : SP : buildid(primary) : web : 5e226d01 : inactive : (0000): No error. : no_error
+20161019.075733 : SP : buildid(primary) : web : 5e226d01 : inactive : (0000): No error. : no_error
+20161019.075734 : SP : buildid(primary) : web : 5e226d01 : inactive : (0000): No error. : no_error
+20161019.080626 : SP : buildid(unknown_bank) : client : 50c78201 : unknown : (0000): No error. : no_error
+20161019.080627 : SP : buildid(primary) : web : 50c78201 : inactive : (0000): No error. : no_error
+20161019.080627 : SP : buildid(primary) : web : 50c78201 : inactive : (0000): No error. : no_error
+20161019.080627 : SP : buildid(primary) : web : 50c78201 : inactive : (0000): No error. : no_error
+20161019.080627 : SP : buildid(primary) : web : 50c78201 : inactive : (0000): No error. : no_error
+20161019.080628 : SP : buildid(primary) : web : 50c78201 : inactive : (0000): No error. : no_error
+20170324.143132 : XFLASH : buildid(primary) : bios : 07a29e00 : inactive : (0000): No error. : no_error
+20170324.143400 : XFLASH : A9E132WUS(primary) : bios : 02ccc301 : update_completed : (0000): No error. : no_error
+20170324.143415 : test : buildid(primary) : opt : 7731c800 : error : (001a): Optional firmware updating watchdog timeout.  : opt_firmware_timeout
+20170324.143518 : XFLASH : buildid(primary) : imm2 : 4e375c01 : inactive : (0000): No error. : no_error
+20170324.144219 : XFLASH : TCOO18Q(primary) : imm2 : 43c6a500 : update_completed : (0000): No error. : no_error
+20170324.144221 : XFLASH : buildid(primary) : imm2 : 6b13ab01 : inactive : (0000): No error. : no_error
+20170408.013026 : REC : A9E132WUS(backup) : bios : 28cc0b00 : update_completed : (0000): No error. : no_error
+20170409.030318 : PROMOT : TCOO18Q(backup) : imm2 : - : update_completed : 
+20230412.005627 : SP : buildid(unknown_bank) : client : 52bfbb01 : unknown : (0000): No error. : no_error
+20230412.005628 : SP : buildid(primary) : web : 52bfbb01 : inactive : (0000): No error. : no_error
+20230412.005628 : SP : buildid(primary) : web : 52bfbb01 : inactive : (0000): No error. : no_error
+20230412.005628 : SP : buildid(primary) : web : 52bfbb01 : inactive : (0000): No error. : no_error
+20230412.005628 : SP : buildid(primary) : web : 52bfbb01 : inactive : (0000): No error. : no_error
+20230412.005642 : SP : A9E164AUS(primary) : bios : 52bfbb01 : inactive : (0000): No error. : no_error
+20230412.005825 : SP : A9E164AUS(primary) : bios : 52bfbb01 : update_completed : (0000): No error. : no_error
+20230412.010003 : SP : A9E164AUS(backup) : bios : 52bfbb01 : update_completed : (0000): No error. : no_error
+20230412.010029 : SP : buildid(primary) : web : 52bfbb01 : inactive : (0000): No error. : no_error
+20230412.010029 : SP : buildid(primary) : web : 52bfbb01 : inactive : (0000): No error. : no_error
+20230412.010029 : SP : buildid(primary) : web : 52bfbb01 : inactive : (0000): No error. : no_error
+20230412.010029 : SP : buildid(primary) : web : 52bfbb01 : inactive : (0000): No error. : no_error
+20230412.010322 : SP : TCOO60A(primary) : imm2 : 52bfbb01 : inactive : (0000): No error. : no_error
+20230412.010635 : SP : TCOO60A(primary) : imm2 : 52bfbb01 : update_completed : (0000): No error. : no_error
+20230412.010955 : SP : TCOO60A(backup) : imm2 : 52bfbb01 : update_completed : (0000): No error. : no_error
