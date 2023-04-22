@@ -1,0 +1,13 @@
+#%PAM-1.0
+#LDAP First Redfish
+auth            sufficient      pam_session_manager.so sessiontype=webguis debug
+auth            sufficient      pam_ldap_manager.so use_first_pass sessiontype=webguis debug
+auth            sufficient      pam_local_ldap_manager_for_cmm.so use_first_pass sessiontype=webguis debug
+auth            required        pam_auth_status.so sessiontype=webguis debug
+account         sufficient      pam_session_manager.so sessiontype=webguis privilege=0x0004 debug
+account         sufficient      pam_ldap_manager.so check_deny_always sessiontype=webguis debug
+account         sufficient      pam_local_ldap_manager_for_cmm.so sessiontype=webguis debug
+account         required        pam_auth_status.so sessiontype=webguis debug
+session         required        pam_auth_status.so sessiontype=webguis debug
+session         required        pam_session_manager.so sessiontype=webguis maxsessionsconfigstr=gui_int_max_sessions debug
+

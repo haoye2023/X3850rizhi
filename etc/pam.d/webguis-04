@@ -1,0 +1,13 @@
+#%PAM-1.0
+#Local only Web GUI HTTPS
+auth            requisite       /var/secure/lib/libpam_ibmfilters.so
+auth            required        /var/secure/lib/libpam_firetool.so
+auth            sufficient      pam_session_manager.so sessiontype=webguis debug
+auth            sufficient      pam_local_ldap_manager_for_cmm.so sessiontype=webguis debug
+auth            required        pam_auth_status.so sessiontype=webguis debug
+account         sufficient      pam_session_manager.so sessiontype=webguis privilege=0x0004 debug
+account         sufficient      pam_local_ldap_manager_for_cmm.so sessiontype=webguis debug
+account         required        pam_auth_status.so sessiontype=webguis debug
+session         required        pam_auth_status.so sessiontype=webguis debug
+session         required        pam_session_manager.so sessiontype=webguis maxsessionsconfigstr=gui_int_max_sessions debug
+

@@ -1,0 +1,12 @@
+#%PAM-1.0
+#Local only
+auth     requisite  /var/secure/lib/libpam_ibmfilters.so
+auth     required   /var/secure/lib/libpam_firetool.so
+auth     sufficient pam_local_manager.so
+auth     required   pam_auth_status.so sessiontype=Telnet
+account  sufficient pam_local_manager.so
+account  required   pam_auth_status.so sessiontype=Telnet
+password sufficient pam_local_manager.so
+password required   pam_auth_status.so sessiontype=Telnet
+session  required   pam_auth_status.so sessiontype=Telnet
+session  required   pam_session_manager.so sessiontype=Telnet maxsessionsconfigstr=pm_int_telnet_max_sessions

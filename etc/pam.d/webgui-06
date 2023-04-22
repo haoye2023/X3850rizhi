@@ -1,0 +1,15 @@
+#%PAM-1.0
+#Local First Web GUI HTTP
+auth            requisite       /var/secure/lib/libpam_ibmfilters.so
+auth            required        /var/secure/lib/libpam_firetool.so
+auth            sufficient      pam_session_manager.so sessiontype=webgui debug
+auth            sufficient      pam_local_ldap_manager_for_cmm.so use_first_pass sessiontype=webgui debug
+auth            sufficient      pam_ldap_manager.so use_first_pass sessiontype=webgui debug
+auth            required        pam_auth_status.so sessiontype=webgui debug
+account         sufficient      pam_session_manager.so sessiontype=webgui privilege=0x0004 debug
+account         sufficient      pam_local_ldap_manager_for_cmm.so sessiontype=webgui debug
+account         sufficient      pam_ldap_manager.so check_deny_always sessiontype=webgui debug
+account         required        pam_auth_status.so sessiontype=webgui debug
+session         required        pam_auth_status.so sessiontype=webgui debug
+session         required        pam_session_manager.so sessiontype=webgui maxsessionsconfigstr=gui_int_max_sessions debug
+

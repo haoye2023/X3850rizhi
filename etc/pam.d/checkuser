@@ -1,0 +1,13 @@
+#%PAM-1.0
+auth		sufficient	pam_session_manager.so sessiontype=check_user
+auth		sufficient	pam_local_manager.so use_first_pass
+auth		sufficient	pam_ldap_manager.so use_first_pass
+auth		required	pam_auth_status.so
+account		sufficient	pam_session_manager.so sessiontype=check_user privilege=0x0001
+account		sufficient	pam_local_manager.so privilege=0x0001
+account		sufficient	pam_ldap_manager.so privilege=0x0001
+account		required	pam_auth_status.so
+password	sufficient	pam_local_manager.so privilege=0x01
+password	required	pam_auth_status.so
+session		required	pam_auth_status.so
+session		required	pam_session_manager.so sessiontype=check_user

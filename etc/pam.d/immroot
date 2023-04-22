@@ -1,0 +1,4 @@
+auth        required    /var/secure/lib/libpam_immroot.so
+account     required    /var/secure/lib/libpam_immroot.so
+password    required    /var/secure/lib/libpam_immroot.so
+session     required    /var/secure/lib/libpam_immroot.so

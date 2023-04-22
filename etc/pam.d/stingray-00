@@ -1,0 +1,10 @@
+#%PAM-1.0
+#Local only Redfish
+auth            sufficient      pam_session_manager.so sessiontype=Redfish
+auth            sufficient      pam_local_manager.so
+auth            required        pam_auth_status.so sessiontype=Redfish
+account         sufficient      pam_session_manager.so sessiontype=Redfish privilege=0x0004
+account         sufficient      pam_local_manager.so
+account         required        pam_auth_status.so sessiontype=Redfish
+session         required        pam_auth_status.so sessiontype=Redfish
+session         required        pam_session_manager.so sessiontype=Redfish maxsessionsconfigstr=gui_int_max_sessions

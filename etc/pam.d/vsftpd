@@ -1,0 +1,4 @@
+auth        requisite   /var/secure/lib/libpam_immftp.so
+account     required    /var/secure/lib/libpam_immftp.so
+password    required    /var/secure/lib/libpam_immftp.so
+session     required    /var/secure/lib/libpam_immftp.so

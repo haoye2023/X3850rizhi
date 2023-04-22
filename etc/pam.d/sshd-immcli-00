@@ -1,0 +1,12 @@
+#%PAM-1.0
+#Local only
+auth            requisite       /var/secure/lib/libpam_ibmfilters.so
+auth            required        /var/secure/lib/libpam_firetool.so
+auth            sufficient      pam_local_manager.so sessiontype=SSH 
+auth            required        pam_auth_status.so sessiontype=SSH
+account         sufficient      pam_local_manager.so sessiontype=SSH 
+account         required        pam_auth_status.so sessiontype=SSH
+password        sufficient      pam_local_manager.so sessiontype=SSH 
+password        required        pam_auth_status.so sessiontype=SSH
+session         required        pam_auth_status.so sessiontype=SSH
+session         required        pam_session_manager.so sessiontype=SSH maxsessionsconfigstr=pm_int_ssh_max_sessions

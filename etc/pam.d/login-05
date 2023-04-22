@@ -1,0 +1,12 @@
+#%PAM-1.0
+#LDAP only
+auth     requisite  /var/secure/lib/libpam_ibmfilters.so
+auth     required   /var/secure/lib/libpam_firetool.so
+auth     sufficient pam_ldap_manager.so sessiontype=Telnet debug
+auth     required   pam_auth_status.so sessiontype=Telnet debug
+account	 sufficient pam_ldap_manager.so sessiontype=Telnet check_deny_always debug
+account	 required   pam_auth_status.so sessiontype=Telnet debug
+password sufficient pam_ldap_manager.so sessiontype=Telnet debug
+password required   pam_auth_status.so sessiontype=Telnet debug
+session	 required   pam_auth_status.so sessiontype=Telnet debug
+session	 required   pam_session_manager.so sessiontype=Telnet maxsessionsconfigstr=pm_int_telnet_max_session debug

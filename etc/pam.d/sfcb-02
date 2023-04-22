@@ -1,0 +1,11 @@
+#%PAM-1.0
+#Local First CIM- HTTP
+#auth            requisite       /var/secure/lib/libpam_ibmfilters.so
+#auth            required        /var/secure/lib/libpam_firetool.so
+auth            sufficient      pam_session_manager_sfcb.so sessiontype=SFCB debug
+auth            sufficient      pam_local_manager_sfcb.so use_first_pass
+auth            sufficient      pam_ldap_manager_sfcb.so use_first_pass sessiontype=SFCB debug
+auth            requisite      pam_auth_status.so sessiontype=SFCB
+account         sufficient      pam_local_manager_sfcb.so sessiontype=SFCB
+account         sufficient      pam_ldap_manager_sfcb.so check_deny_always sessiontype=SFCB debug
+
