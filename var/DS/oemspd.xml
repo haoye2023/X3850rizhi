@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<OemSpd BUILDID="A9E164AUS">
+	<SystemSetting>
+		<Setting PLATFORM_MEMORY_TYPE="3"> </Setting>
+		<Setting PLATFORM_DIMM_NUMBERING_BASE="1"> </Setting>
+		<Setting PLATFORM_NUM_DIMM_EACH_CPU="24"> </Setting>
+		<Setting PLATFORM_NUM_DIMM_EACH_BRANCH="6"> </Setting>
+		<Setting PLATFORM_NUM_DIMM_EACH_CPU_MEMORY_EXPANSION="0"> </Setting>
+		<Setting PLATFORM_NUM_DIMM_EACH_BRANCH_MEMORY_EXPANSION="0"> </Setting>
+		<Setting MAX_DIMM_TIERS="24"> </Setting>
+		<Setting MAX_MEM_BRANCH_NUM="16"> </Setting>
+		<Setting SHOW_DIMM_BY_CPU="1"> </Setting>
+		<Setting MAX_DIMMS_PER_SOCKET="24"> </Setting>
+		<Setting MAX_DIMMS_PER_CPU_NODE="96"> </Setting>
+		<Setting MAX_DIMMS_PER_MEMORY_EXPANSION="1"> </Setting>
+		<Setting MAX_DIMMS_PER_CPU_NODE_INDEX="97"> </Setting>
+		<Setting MAX_DIMMS_PER_MEMORY_EXPANSION_INDEX="1"> </Setting>
+		<Setting SkipDimmOnBranchOffset="1"> </Setting>
+		<Setting SkipDimmOnBranchOffsetMax5="1"> </Setting>
+		<Setting DIMM_LOCATION_MASK="0"> </Setting>
+		<Setting PLATFORM_MAXNODES="2"> </Setting>
+		<Setting PLATFORM_CPU_PER_NODE="4"> </Setting>
+		<Setting PLATFORM_MAX_MEM_EXPANSION="1"> </Setting>
+		<Setting MEMCARD_ERR="0"> </Setting>
+		<Setting POPULATION_ERR="1"> </Setting>
+		<Setting MRCTEST_ERR="2"> </Setting>
+		<Setting RUNTIME_ERR="3"> </Setting>
+		<Setting DIMM_LOCATION_MASK="FFFFFFFF"> </Setting>
+		<Setting PLATFORM_TOTAL_DIMM_SLOT_NUM="96"> </Setting>
+	</SystemSetting>
+	<SpdReg>
+		<Spd ZERO="0"> </Spd>
+		<Spd ONE="1"> </Spd>
+		<Spd DDR2="1"> </Spd>
+		<Spd FBDIMM="2"> </Spd>
+		<Spd DDR3="3"> </Spd>
+		<Spd DDR4="4"> </Spd>
+		<Spd SPD_MODULE_TYPE_DDR3="0"> </Spd>
+		<Spd SPD_MODULE_TYPE_DDR4="0"> </Spd>
+		<Spd SPD_DRAM_DEVICE_TYPE="2"> </Spd>
+		<Spd SPD_MODULE_TYPE="3"> </Spd>
+		<Spd SPD_DENSITY_AND_BANKS="4"> </Spd>
+		<Spd SPD_SDRAM_PACKAGE_TYPE_DDR4="6"> </Spd>
+		<Spd SPD_MODULE_ORGANIZATION_DDR3="7"> </Spd>
+		<Spd SPD_MODULE_ORGANIZATION_DDR4="12"> </Spd>
+		<Spd SPD_MEMORY_BUS_WIDTH_DDR3="8"> </Spd>
+		<Spd SPD_MEMORY_BUS_WIDTH_DDR4="13"> </Spd>
+		<Spd SPD_MODULE_NOMINAL_VOLTAGE_DDR3="6"> </Spd>
+		<Spd SPD_MODULE_NOMINAL_VOLTAGE_DDR4="11"> </Spd>
+		<Spd SPD_MIN_TCK_CYCLE_TIME_DDR3="12"> </Spd>
+		<Spd SPD_MIN_TCK_CYCLE_TIME_DDR4="18"> </Spd>
+		<Spd SPD_JEDEC_ID_DDR3="117"> </Spd>
+		<Spd SPD_JEDEC_ID_DDR4="320"> </Spd>
+		<Spd SPD_JEDEC_ID_CONTINUED_DDR3="118"> </Spd>
+		<Spd SPD_JEDEC_ID_CONTINUED_DDR4="321"> </Spd>
+		<Spd SPD_MANUFACTURING_LOCATION_DDR3="119"> </Spd>
+		<Spd SPD_MANUFACTURING_LOCATION_DDR4="322"> </Spd>
+		<Spd SPD_MANUFACTURING_YEAR_DDR3="120"> </Spd>
+		<Spd SPD_MANUFACTURING_YEAR_DDR4="323"> </Spd>
+		<Spd SPD_MANUFACTURING_WEEK_DDR3="121"> </Spd>
+		<Spd SPD_MANUFACTURING_WEEK_DDR4="324"> </Spd>
+		<Spd SPD_MODULE_SERIAL_NUM_DDR3="122"> </Spd>
+		<Spd SPD_MODULE_SERIAL_NUM_DDR4="325"> </Spd>
+		<Spd SPD_MANUFACTURING_PART_NUM_DDR3="128"> </Spd>
+		<Spd SPD_MANUFACTURING_PART_NUM_DDR4="329"> </Spd>
+		<Spd SPD_PCB_ID_CODE_DDR3="146"> </Spd>
+		<Spd SPD_PCB_ID_CODE_CONTINUED_DDR3="147"> </Spd>
+		<Spd SPD_PCB_ID_CODE_DDR4="349"> </Spd>
+		<Spd SPD_JEDEC_ID="117"> </Spd>
+		<Spd SPD_JEDEC_ID_CONTINUED="118"> </Spd>
+		<Spd SPD_MANUFACTURING_LOCATION="119"> </Spd>
+		<Spd SPD_MANUFACTURING_PART_NUM="128"> </Spd>
+		<Spd SPD_PCB_ID_CODE="146"> </Spd>
+		<Spd SPD_PCB_ID_CODE_CONTINUED="147"> </Spd>
+		<Spd SPD_MANUFACTURING_YEAR="120"> </Spd>
+		<Spd SPD_MANUFACTURING_WEEK="121"> </Spd>
+		<Spd SPD_MODULE_SERIAL_NUM="122"> </Spd>
+		<Spd CPU_NODE_DIMM_SPD="0"> </Spd>
+		<Spd MEMORY_EXPANSION_DIMM_SPD="1"> </Spd>
+		<Spd DDR3_MAX_INDEX="255"> </Spd>
+		<Spd DDR4_MAX_INDEX="511"> </Spd>
+		<Spd SPD_DATA_SIZE_DDR3="256"> </Spd>
+		<Spd SPD_DATA_SIZE_DDR4="512"> </Spd>
+		<Spd DATA_STORE_TYPE_SPD="0"> </Spd>
+	</SpdReg>
+	<MfgSpdStruct>
+		<member name="SpdSlotNumber" type="UINT8" repeat="1"> </member>
+		<member name="SpdDimmPresent" type="UINT8" repeat="1"> </member>
+		<member name="SpdJedecId" type="UINT8" repeat="1"> </member>
+		<member name="SpdJedecIdContinued" type="UINT8" repeat="1"> </member>
+		<member name="Reserved" type="UINT8" repeat="6"> </member>
+		<member name="SpdJedecIdContinued" type="UINT8" repeat="1"> </member>
+		<member name="Reserved" type="UINT8" repeat="6"> </member>
+		<member name="SpdManufacturingLocation" type="UINT8" repeat="1"> </member>
+		<member name="SpdManufacturerPartNumber" type="UINT8" repeat="20"> </member>
+		<member name="SpdPcbIdCode" type="UINT8" repeat="1"> </member>
+		<member name="SpdPcbIdCodeContinued" type="UINT8" repeat="1"> </member>
+		<member name="SpdManufacturingYear" type="UINT8" repeat="1"> </member>
+		<member name="SpdManufacturingWeek" type="UINT8" repeat="1"> </member>
+		<member name="SpdModuleSerialNumber" type="UINT8" repeat="4"> </member>
+		<member name="SpdDRAMDeviceType" type="UINT8" repeat="1"> </member>
+		<member name="SpdDensityAndBanks" type="UINT8" repeat="1"> </member>
+		<member name="SpdModuleOrganization" type="UINT8" repeat="1"> </member>
+		<member name="SpdMemoryBusWidth" type="UINT8" repeat="1"> </member>
+		<member name="SpdMinTck" type="UINT8" repeat="1"> </member>
+		<member name="SpdModuleType" type="UINT8" repeat="1"> </member>
+		<member name="GlobalSlotNumber" type="UINT16" repeat="1"> </member>
+		<member name="SpdNominalVoltage" type="UINT8" repeat="1"> </member>
+		<member name="SpdSDRAMPackageType" type="UINT8" repeat="1"> </member>
+	</MfgSpdStruct>
+	<DimmSlotMap>
+		<Map Instance="0" NODE="0" CHANNEL="3" SPD_ADDR="A8"> </Map>
+		<Map Instance="1" NODE="0" CHANNEL="3" SPD_ADDR="AA"> </Map>
+		<Map Instance="2" NODE="0" CHANNEL="3" SPD_ADDR="AC"> </Map>
+		<Map Instance="3" NODE="1" CHANNEL="0" SPD_ADDR="A4"> </Map>
+		<Map Instance="4" NODE="1" CHANNEL="0" SPD_ADDR="A2"> </Map>
+		<Map Instance="5" NODE="1" CHANNEL="0" SPD_ADDR="A0"> </Map>
+		<Map Instance="6" NODE="0" CHANNEL="0" SPD_ADDR="A4"> </Map>
+		<Map Instance="7" NODE="0" CHANNEL="0" SPD_ADDR="A2"> </Map>
+		<Map Instance="8" NODE="0" CHANNEL="0" SPD_ADDR="A0"> </Map>
+		<Map Instance="9" NODE="1" CHANNEL="3" SPD_ADDR="A8"> </Map>
+		<Map Instance="10" NODE="1" CHANNEL="3" SPD_ADDR="AA"> </Map>
+		<Map Instance="11" NODE="1" CHANNEL="3" SPD_ADDR="AC"> </Map>
+		<Map Instance="12" NODE="0" CHANNEL="1" SPD_ADDR="AC"> </Map>
+		<Map Instance="13" NODE="0" CHANNEL="1" SPD_ADDR="AA"> </Map>
+		<Map Instance="14" NODE="0" CHANNEL="1" SPD_ADDR="A8"> </Map>
+		<Map Instance="15" NODE="1" CHANNEL="2" SPD_ADDR="A0"> </Map>
+		<Map Instance="16" NODE="1" CHANNEL="2" SPD_ADDR="A2"> </Map>
+		<Map Instance="17" NODE="1" CHANNEL="2" SPD_ADDR="A4"> </Map>
+		<Map Instance="18" NODE="0" CHANNEL="2" SPD_ADDR="A0"> </Map>
+		<Map Instance="19" NODE="0" CHANNEL="2" SPD_ADDR="A2"> </Map>
+		<Map Instance="20" NODE="0" CHANNEL="2" SPD_ADDR="A4"> </Map>
+		<Map Instance="21" NODE="1" CHANNEL="1" SPD_ADDR="AC"> </Map>
+		<Map Instance="22" NODE="1" CHANNEL="1" SPD_ADDR="AA"> </Map>
+		<Map Instance="23" NODE="1" CHANNEL="1" SPD_ADDR="A8"> </Map>
+		<Map Instance="24" NODE="2" CHANNEL="3" SPD_ADDR="A8"> </Map>
+		<Map Instance="25" NODE="2" CHANNEL="3" SPD_ADDR="AA"> </Map>
+		<Map Instance="26" NODE="2" CHANNEL="3" SPD_ADDR="AC"> </Map>
+		<Map Instance="27" NODE="3" CHANNEL="0" SPD_ADDR="A4"> </Map>
+		<Map Instance="28" NODE="3" CHANNEL="0" SPD_ADDR="A2"> </Map>
+		<Map Instance="29" NODE="3" CHANNEL="0" SPD_ADDR="A0"> </Map>
+		<Map Instance="30" NODE="2" CHANNEL="0" SPD_ADDR="A4"> </Map>
+		<Map Instance="31" NODE="2" CHANNEL="0" SPD_ADDR="A2"> </Map>
+		<Map Instance="32" NODE="2" CHANNEL="0" SPD_ADDR="A0"> </Map>
+		<Map Instance="33" NODE="3" CHANNEL="3" SPD_ADDR="A8"> </Map>
+		<Map Instance="34" NODE="3" CHANNEL="3" SPD_ADDR="AA"> </Map>
+		<Map Instance="35" NODE="3" CHANNEL="3" SPD_ADDR="AC"> </Map>
+		<Map Instance="36" NODE="2" CHANNEL="1" SPD_ADDR="AC"> </Map>
+		<Map Instance="37" NODE="2" CHANNEL="1" SPD_ADDR="AA"> </Map>
+		<Map Instance="38" NODE="2" CHANNEL="1" SPD_ADDR="A8"> </Map>
+		<Map Instance="39" NODE="3" CHANNEL="2" SPD_ADDR="A0"> </Map>
+		<Map Instance="40" NODE="3" CHANNEL="2" SPD_ADDR="A2"> </Map>
+		<Map Instance="41" NODE="3" CHANNEL="2" SPD_ADDR="A4"> </Map>
+		<Map Instance="42" NODE="2" CHANNEL="2" SPD_ADDR="A0"> </Map>
+		<Map Instance="43" NODE="2" CHANNEL="2" SPD_ADDR="A2"> </Map>
+		<Map Instance="44" NODE="2" CHANNEL="2" SPD_ADDR="A4"> </Map>
+		<Map Instance="45" NODE="3" CHANNEL="1" SPD_ADDR="AC"> </Map>
+		<Map Instance="46" NODE="3" CHANNEL="1" SPD_ADDR="AA"> </Map>
+		<Map Instance="47" NODE="3" CHANNEL="1" SPD_ADDR="A8"> </Map>
+		<Map Instance="48" NODE="4" CHANNEL="3" SPD_ADDR="A8"> </Map>
+		<Map Instance="49" NODE="4" CHANNEL="3" SPD_ADDR="AA"> </Map>
+		<Map Instance="50" NODE="4" CHANNEL="3" SPD_ADDR="AC"> </Map>
+		<Map Instance="51" NODE="5" CHANNEL="0" SPD_ADDR="A4"> </Map>
+		<Map Instance="52" NODE="5" CHANNEL="0" SPD_ADDR="A2"> </Map>
+		<Map Instance="53" NODE="5" CHANNEL="0" SPD_ADDR="A0"> </Map>
+		<Map Instance="54" NODE="4" CHANNEL="0" SPD_ADDR="A4"> </Map>
+		<Map Instance="55" NODE="4" CHANNEL="0" SPD_ADDR="A2"> </Map>
+		<Map Instance="56" NODE="4" CHANNEL="0" SPD_ADDR="A0"> </Map>
+		<Map Instance="57" NODE="5" CHANNEL="3" SPD_ADDR="A8"> </Map>
+		<Map Instance="58" NODE="5" CHANNEL="3" SPD_ADDR="AA"> </Map>
+		<Map Instance="59" NODE="5" CHANNEL="3" SPD_ADDR="AC"> </Map>
+		<Map Instance="60" NODE="4" CHANNEL="1" SPD_ADDR="AC"> </Map>
+		<Map Instance="61" NODE="4" CHANNEL="1" SPD_ADDR="AA"> </Map>
+		<Map Instance="62" NODE="4" CHANNEL="1" SPD_ADDR="A8"> </Map>
+		<Map Instance="63" NODE="5" CHANNEL="2" SPD_ADDR="A0"> </Map>
+		<Map Instance="64" NODE="5" CHANNEL="2" SPD_ADDR="A2"> </Map>
+		<Map Instance="65" NODE="5" CHANNEL="2" SPD_ADDR="A4"> </Map>
+		<Map Instance="66" NODE="4" CHANNEL="2" SPD_ADDR="A0"> </Map>
+		<Map Instance="67" NODE="4" CHANNEL="2" SPD_ADDR="A2"> </Map>
+		<Map Instance="68" NODE="4" CHANNEL="2" SPD_ADDR="A4"> </Map>
+		<Map Instance="69" NODE="5" CHANNEL="1" SPD_ADDR="AC"> </Map>
+		<Map Instance="70" NODE="5" CHANNEL="1" SPD_ADDR="AA"> </Map>
+		<Map Instance="71" NODE="5" CHANNEL="1" SPD_ADDR="A8"> </Map>
+		<Map Instance="72" NODE="6" CHANNEL="3" SPD_ADDR="A8"> </Map>
+		<Map Instance="73" NODE="6" CHANNEL="3" SPD_ADDR="AA"> </Map>
+		<Map Instance="74" NODE="6" CHANNEL="3" SPD_ADDR="AC"> </Map>
+		<Map Instance="75" NODE="7" CHANNEL="0" SPD_ADDR="A4"> </Map>
+		<Map Instance="76" NODE="7" CHANNEL="0" SPD_ADDR="A2"> </Map>
+		<Map Instance="77" NODE="7" CHANNEL="0" SPD_ADDR="A0"> </Map>
+		<Map Instance="78" NODE="6" CHANNEL="0" SPD_ADDR="A4"> </Map>
+		<Map Instance="79" NODE="6" CHANNEL="0" SPD_ADDR="A2"> </Map>
+		<Map Instance="80" NODE="6" CHANNEL="0" SPD_ADDR="A0"> </Map>
+		<Map Instance="81" NODE="7" CHANNEL="3" SPD_ADDR="A8"> </Map>
+		<Map Instance="82" NODE="7" CHANNEL="3" SPD_ADDR="AA"> </Map>
+		<Map Instance="83" NODE="7" CHANNEL="3" SPD_ADDR="AC"> </Map>
+		<Map Instance="84" NODE="6" CHANNEL="1" SPD_ADDR="AC"> </Map>
+		<Map Instance="85" NODE="6" CHANNEL="1" SPD_ADDR="AA"> </Map>
+		<Map Instance="86" NODE="6" CHANNEL="1" SPD_ADDR="A8"> </Map>
+		<Map Instance="87" NODE="7" CHANNEL="2" SPD_ADDR="A0"> </Map>
+		<Map Instance="88" NODE="7" CHANNEL="2" SPD_ADDR="A2"> </Map>
+		<Map Instance="89" NODE="7" CHANNEL="2" SPD_ADDR="A4"> </Map>
+		<Map Instance="90" NODE="6" CHANNEL="2" SPD_ADDR="A0"> </Map>
+		<Map Instance="91" NODE="6" CHANNEL="2" SPD_ADDR="A2"> </Map>
+		<Map Instance="92" NODE="6" CHANNEL="2" SPD_ADDR="A4"> </Map>
+		<Map Instance="93" NODE="7" CHANNEL="1" SPD_ADDR="AC"> </Map>
+		<Map Instance="94" NODE="7" CHANNEL="1" SPD_ADDR="AA"> </Map>
+		<Map Instance="95" NODE="7" CHANNEL="1" SPD_ADDR="A8"> </Map>
+		<Map Instance="96" NODE="8" CHANNEL="3" SPD_ADDR="A8"> </Map>
+		<Map Instance="97" NODE="8" CHANNEL="3" SPD_ADDR="AA"> </Map>
+		<Map Instance="98" NODE="8" CHANNEL="3" SPD_ADDR="AC"> </Map>
+		<Map Instance="99" NODE="9" CHANNEL="0" SPD_ADDR="A4"> </Map>
+		<Map Instance="100" NODE="9" CHANNEL="0" SPD_ADDR="A2"> </Map>
+		<Map Instance="101" NODE="9" CHANNEL="0" SPD_ADDR="A0"> </Map>
+		<Map Instance="102" NODE="8" CHANNEL="0" SPD_ADDR="A4"> </Map>
+		<Map Instance="103" NODE="8" CHANNEL="0" SPD_ADDR="A2"> </Map>
+		<Map Instance="104" NODE="8" CHANNEL="0" SPD_ADDR="A0"> </Map>
+		<Map Instance="105" NODE="9" CHANNEL="3" SPD_ADDR="A8"> </Map>
+		<Map Instance="106" NODE="9" CHANNEL="3" SPD_ADDR="AA"> </Map>
+		<Map Instance="107" NODE="9" CHANNEL="3" SPD_ADDR="AC"> </Map>
+		<Map Instance="108" NODE="8" CHANNEL="1" SPD_ADDR="AC"> </Map>
+		<Map Instance="109" NODE="8" CHANNEL="1" SPD_ADDR="AA"> </Map>
+		<Map Instance="110" NODE="8" CHANNEL="1" SPD_ADDR="A8"> </Map>
+		<Map Instance="111" NODE="9" CHANNEL="2" SPD_ADDR="A0"> </Map>
+		<Map Instance="112" NODE="9" CHANNEL="2" SPD_ADDR="A2"> </Map>
+		<Map Instance="113" NODE="9" CHANNEL="2" SPD_ADDR="A4"> </Map>
+		<Map Instance="114" NODE="8" CHANNEL="2" SPD_ADDR="A0"> </Map>
+		<Map Instance="115" NODE="8" CHANNEL="2" SPD_ADDR="A2"> </Map>
+		<Map Instance="116" NODE="8" CHANNEL="2" SPD_ADDR="A4"> </Map>
+		<Map Instance="117" NODE="9" CHANNEL="1" SPD_ADDR="AC"> </Map>
+		<Map Instance="118" NODE="9" CHANNEL="1" SPD_ADDR="AA"> </Map>
+		<Map Instance="119" NODE="9" CHANNEL="1" SPD_ADDR="A8"> </Map>
+		<Map Instance="120" NODE="10" CHANNEL="3" SPD_ADDR="A8"> </Map>
+		<Map Instance="121" NODE="10" CHANNEL="3" SPD_ADDR="AA"> </Map>
+		<Map Instance="122" NODE="10" CHANNEL="3" SPD_ADDR="AC"> </Map>
+		<Map Instance="123" NODE="11" CHANNEL="0" SPD_ADDR="A4"> </Map>
+		<Map Instance="124" NODE="11" CHANNEL="0" SPD_ADDR="A2"> </Map>
+		<Map Instance="125" NODE="11" CHANNEL="0" SPD_ADDR="A0"> </Map>
+		<Map Instance="126" NODE="10" CHANNEL="0" SPD_ADDR="A4"> </Map>
+		<Map Instance="127" NODE="10" CHANNEL="0" SPD_ADDR="A2"> </Map>
+		<Map Instance="128" NODE="10" CHANNEL="0" SPD_ADDR="A0"> </Map>
+		<Map Instance="129" NODE="11" CHANNEL="3" SPD_ADDR="A8"> </Map>
+		<Map Instance="130" NODE="11" CHANNEL="3" SPD_ADDR="AA"> </Map>
+		<Map Instance="131" NODE="11" CHANNEL="3" SPD_ADDR="AC"> </Map>
+		<Map Instance="132" NODE="10" CHANNEL="1" SPD_ADDR="AC"> </Map>
+		<Map Instance="133" NODE="10" CHANNEL="1" SPD_ADDR="AA"> </Map>
+		<Map Instance="134" NODE="10" CHANNEL="1" SPD_ADDR="A8"> </Map>
+		<Map Instance="135" NODE="11" CHANNEL="2" SPD_ADDR="A0"> </Map>
+		<Map Instance="136" NODE="11" CHANNEL="2" SPD_ADDR="A2"> </Map>
+		<Map Instance="137" NODE="11" CHANNEL="2" SPD_ADDR="A4"> </Map>
+		<Map Instance="138" NODE="10" CHANNEL="2" SPD_ADDR="A0"> </Map>
+		<Map Instance="139" NODE="10" CHANNEL="2" SPD_ADDR="A2"> </Map>
+		<Map Instance="140" NODE="10" CHANNEL="2" SPD_ADDR="A4"> </Map>
+		<Map Instance="141" NODE="11" CHANNEL="1" SPD_ADDR="AC"> </Map>
+		<Map Instance="142" NODE="11" CHANNEL="1" SPD_ADDR="AA"> </Map>
+		<Map Instance="143" NODE="11" CHANNEL="1" SPD_ADDR="A8"> </Map>
+		<Map Instance="144" NODE="12" CHANNEL="3" SPD_ADDR="A8"> </Map>
+		<Map Instance="145" NODE="12" CHANNEL="3" SPD_ADDR="AA"> </Map>
+		<Map Instance="146" NODE="12" CHANNEL="3" SPD_ADDR="AC"> </Map>
+		<Map Instance="147" NODE="13" CHANNEL="0" SPD_ADDR="A4"> </Map>
+		<Map Instance="148" NODE="13" CHANNEL="0" SPD_ADDR="A2"> </Map>
+		<Map Instance="149" NODE="13" CHANNEL="0" SPD_ADDR="A0"> </Map>
+		<Map Instance="150" NODE="12" CHANNEL="0" SPD_ADDR="A4"> </Map>
+		<Map Instance="151" NODE="12" CHANNEL="0" SPD_ADDR="A2"> </Map>
+		<Map Instance="152" NODE="12" CHANNEL="0" SPD_ADDR="A0"> </Map>
+		<Map Instance="153" NODE="13" CHANNEL="3" SPD_ADDR="A8"> </Map>
+		<Map Instance="154" NODE="13" CHANNEL="3" SPD_ADDR="AA"> </Map>
+		<Map Instance="155" NODE="13" CHANNEL="3" SPD_ADDR="AC"> </Map>
+		<Map Instance="156" NODE="12" CHANNEL="1" SPD_ADDR="AC"> </Map>
+		<Map Instance="157" NODE="12" CHANNEL="1" SPD_ADDR="AA"> </Map>
+		<Map Instance="158" NODE="12" CHANNEL="1" SPD_ADDR="A8"> </Map>
+		<Map Instance="159" NODE="13" CHANNEL="2" SPD_ADDR="A0"> </Map>
+		<Map Instance="160" NODE="13" CHANNEL="2" SPD_ADDR="A2"> </Map>
+		<Map Instance="161" NODE="13" CHANNEL="2" SPD_ADDR="A4"> </Map>
+		<Map Instance="162" NODE="12" CHANNEL="2" SPD_ADDR="A0"> </Map>
+		<Map Instance="163" NODE="12" CHANNEL="2" SPD_ADDR="A2"> </Map>
+		<Map Instance="164" NODE="12" CHANNEL="2" SPD_ADDR="A4"> </Map>
+		<Map Instance="165" NODE="13" CHANNEL="1" SPD_ADDR="AC"> </Map>
+		<Map Instance="166" NODE="13" CHANNEL="1" SPD_ADDR="AA"> </Map>
+		<Map Instance="167" NODE="13" CHANNEL="1" SPD_ADDR="A8"> </Map>
+		<Map Instance="168" NODE="14" CHANNEL="3" SPD_ADDR="A8"> </Map>
+		<Map Instance="169" NODE="14" CHANNEL="3" SPD_ADDR="AA"> </Map>
+		<Map Instance="170" NODE="14" CHANNEL="3" SPD_ADDR="AC"> </Map>
+		<Map Instance="171" NODE="15" CHANNEL="0" SPD_ADDR="A4"> </Map>
+		<Map Instance="172" NODE="15" CHANNEL="0" SPD_ADDR="A2"> </Map>
+		<Map Instance="173" NODE="15" CHANNEL="0" SPD_ADDR="A0"> </Map>
+		<Map Instance="174" NODE="14" CHANNEL="0" SPD_ADDR="A4"> </Map>
+		<Map Instance="175" NODE="14" CHANNEL="0" SPD_ADDR="A2"> </Map>
+		<Map Instance="176" NODE="14" CHANNEL="0" SPD_ADDR="A0"> </Map>
+		<Map Instance="177" NODE="15" CHANNEL="3" SPD_ADDR="A8"> </Map>
+		<Map Instance="178" NODE="15" CHANNEL="3" SPD_ADDR="AA"> </Map>
+		<Map Instance="179" NODE="15" CHANNEL="3" SPD_ADDR="AC"> </Map>
+		<Map Instance="180" NODE="14" CHANNEL="1" SPD_ADDR="AC"> </Map>
+		<Map Instance="181" NODE="14" CHANNEL="1" SPD_ADDR="AA"> </Map>
+		<Map Instance="182" NODE="14" CHANNEL="1" SPD_ADDR="A8"> </Map>
+		<Map Instance="183" NODE="15" CHANNEL="2" SPD_ADDR="A0"> </Map>
+		<Map Instance="184" NODE="15" CHANNEL="2" SPD_ADDR="A2"> </Map>
+		<Map Instance="185" NODE="15" CHANNEL="2" SPD_ADDR="A4"> </Map>
+		<Map Instance="186" NODE="14" CHANNEL="2" SPD_ADDR="A0"> </Map>
+		<Map Instance="187" NODE="14" CHANNEL="2" SPD_ADDR="A2"> </Map>
+		<Map Instance="188" NODE="14" CHANNEL="2" SPD_ADDR="A4"> </Map>
+		<Map Instance="189" NODE="15" CHANNEL="1" SPD_ADDR="AC"> </Map>
+		<Map Instance="190" NODE="15" CHANNEL="1" SPD_ADDR="AA"> </Map>
+		<Map Instance="191" NODE="15" CHANNEL="1" SPD_ADDR="A8"> </Map>
+	</DimmSlotMap>
+</OemSpd>

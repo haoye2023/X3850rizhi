@@ -1,0 +1,82 @@
+===== Sat Apr 22 01:19:39 GMT 2023: Bmc log flush by ffdc capture. =====
+2023-04-20T02:36:18.941459+00:00 (none) bmcapp: systemc [WARN]: fpga_ld::process_power_block() power on src=0x11
+2023-04-20T02:36:54.588117+00:00 (none) bmcapp: io [WARN]: transition twr15.4 = 1
+2023-04-20T02:37:03.002605+00:00 (none) bmcapp: systemc [WARN]: fpga_ld::process_power_block() reset src=0x20
+2023-04-20T02:37:11.726643+00:00 (none) bmcapp: io [WARN]: transition twr15.4 = 1
+2023-04-20T02:42:05.743047+00:00 (none) bmcapp: io [WARN]: transition twr15.4 = 1
+2023-04-20T02:44:01.684120+00:00 (none) bmcapp: systemc [WARN]: inactive(recovery):host booted, enabled=1,boots=1,hours=336,promoted=0,trusted img(A9E164AUS), rc=00
+2023-04-20T03:14:55.099673+00:00 (none) bmcapp: systemc [WARN]: inactive(recovery):refresh cmr setting, enabled=1,boots=1,hours=336,promoted=0,trusted img(A9E164AUS), rc=00
+2023-04-21T06:45:16.603536+00:00 (none) bmcapp: systemc [WARN]: vgpio_cmd: addr=00010001->00010001, event=08, op=DeAssert, l= 44 ID=0000 flags=01
+2023-04-21T06:46:18.640081+00:00 (none) bmcapp: systemc [WARN]: caterr_timer_state_handler: UEFi is hang. Need IMM work for PCI errors
+2023-04-21T06:46:19.557177+00:00 (none) bmcapp: rtmm [WARN]: RTMM:0: FEH Start so stop peci polling timer : System Thermal Exposure!!!
+2023-04-21T06:46:19.557385+00:00 (none) bmcapp: energy [WARN]: FEH begin, stop the fpm polling, set flag 1.
+2023-04-21T06:46:19.557731+00:00 (none) bmcapp: energy [WARN]: FEH begin, stop the energy polling.
+2023-04-21T06:46:23.737594+00:00 (none) bmcapp: systemc [WARN]: caterr_timer_state_handler: Do Error Pre Dump!!
+2023-04-21T06:55:32.617222+00:00 (none) bmcapp: systemc [WARN]: caterr_timer_state_handler: Do Reset
+2023-04-21T06:55:32.617410+00:00 (none) bmcapp: systemc [WARN]: caterr_timer_state_handler: Enhanced RAS mode ,PreDump finished, Reset system
+2023-04-21T06:55:33.013066+00:00 (none) bmcapp: avocent [WARN]: SetSystemRestart
+2023-04-21T06:55:33.013262+00:00 (none) bmcapp: io [WARN]: avocent_io_manager::server_power_control -> SetSystemReset,rc=0 and reason is 10
+2023-04-21T06:55:43.214614+00:00 (none) bmcapp: systemc [WARN]: caterr_timer_state_handler: Do Error Dump!!
+2023-04-21T06:55:55.262657+00:00 (none) bmcapp: systemc [WARN]: fpga_ld::process_power_block() reset src=0x22
+2023-04-21T06:56:03.014240+00:00 (none) bmcapp: io [WARN]: transition twr15.4 = 1
+2023-04-21T06:59:46.303266+00:00 (none) bmcapp: systemc [WARN]: vgpio_cmd: addr=00010004->00010004, event=13, op=Assert, l= 44 ID=0000 flags=01
+2023-04-21T06:59:46.373715+00:00 (none) bmcapp: systemc [WARN]: vgpio_cmd: addr=00010004->00010004, event=13, op=Assert, l= 44 ID=0002 flags=01
+2023-04-21T06:59:46.441676+00:00 (none) bmcapp: systemc [WARN]: vgpio_cmd: addr=00010004->00010004, event=13, op=Assert, l= 44 ID=0002 flags=01
+2023-04-21T06:59:46.510709+00:00 (none) bmcapp: systemc [WARN]: vgpio_cmd: addr=00010004->00010004, event=13, op=Assert, l= 37 ID=0002 flags=00
+2023-04-21T06:59:46.512249+00:00 (none) bmcapp: systemc [WARN]: sensor not find
+2023-04-21T06:59:47.518878+00:00 (none) bmcapp: rtmm [WARN]: RTMM:0: FEH Done so start peci thermal polling timer
+2023-04-21T06:59:47.518982+00:00 (none) bmcapp: energy [WARN]: Feh done, start the fpm polling, set flag 0.
+2023-04-21T06:59:47.519081+00:00 (none) bmcapp: energy [WARN]: FEH done, start the energy polling.
+2023-04-21T06:59:53.883563+00:00 (none) bmcapp: led [WARN]: LCD error_led_processing - SEL for LEDID [8025]: [t#d-ed123] 0x[1B 96 07 - 02 FF FF]
+2023-04-21T06:59:57.746938+00:00 (none) bmcapp: systemc [WARN]: caterr_timer_state_handler:  Power cycle system.
+2023-04-21T06:59:57.940006+00:00 (none) bmcapp: avocent [WARN]: SetSystemPowerCycle
+2023-04-21T06:59:57.942472+00:00 (none) bmcapp: io [WARN]: avocent_io_manager::server_power_control -> SetSystemPowerCycle,rc=0 and reason is 10
+2023-04-21T07:00:02.136846+00:00 (none) bmcapp: systemc [WARN]: fpga_ld::process_power_block() power off src=0x55
+2023-04-21T07:00:02.238463+00:00 (none) bmcapp: rtmm [WARN]: RTMM:0: FEH Done so start peci thermal polling timer
+2023-04-21T07:00:02.239933+00:00 (none) bmcapp: energy [WARN]: FEH done, start the energy polling.
+2023-04-21T07:00:11.962740+00:00 (none) bmcapp: systemc [WARN]: fpga_ld::process_power_block() power on src=0x55
+2023-04-21T07:00:22.271338+00:00 (none) bmcapp: io [WARN]: transition twr15.4 = 1
+2023-04-21T07:00:30.682698+00:00 (none) bmcapp: systemc [WARN]: fpga_ld::process_power_block() reset src=0x20
+2023-04-21T07:00:39.407784+00:00 (none) bmcapp: io [WARN]: transition twr15.4 = 1
+2023-04-21T07:05:25.203764+00:00 (none) bmcapp: io [WARN]: transition twr15.4 = 1
+2023-04-21T07:07:17.609579+00:00 (none) bmcapp: systemc [WARN]: inactive(recovery):host booted, enabled=1,boots=1,hours=336,promoted=0,trusted img(A9E164AUS), rc=00
+2023-04-21T07:38:04.343387+00:00 (none) bmcapp: systemc [WARN]: inactive(recovery):refresh cmr setting, enabled=1,boots=1,hours=336,promoted=0,trusted img(A9E164AUS), rc=00
+2023-04-21T22:04:37.633527+00:00 (none) bmcapp: systemc [WARN]: caterr_timer_state_handler: UEFi is hang. Need IMM work for PCI errors
+2023-04-21T22:04:37.744904+00:00 (none) bmcapp: rtmm [WARN]: RTMM:0: FEH Start so stop peci polling timer : System Thermal Exposure!!!
+2023-04-21T22:04:37.745095+00:00 (none) bmcapp: energy [WARN]: FEH begin, stop the fpm polling, set flag 1.
+2023-04-21T22:04:37.745207+00:00 (none) bmcapp: energy [WARN]: FEH begin, stop the energy polling.
+2023-04-21T22:04:42.746730+00:00 (none) bmcapp: systemc [WARN]: caterr_timer_state_handler: Do Error Pre Dump!!
+2023-04-21T22:13:46.383011+00:00 (none) bmcapp: systemc [WARN]: caterr_timer_state_handler: Do Reset
+2023-04-21T22:13:46.383207+00:00 (none) bmcapp: systemc [WARN]: caterr_timer_state_handler: Enhanced RAS mode ,PreDump finished, Reset system
+2023-04-21T22:13:46.553395+00:00 (none) bmcapp: avocent [WARN]: SetSystemRestart
+2023-04-21T22:13:46.555276+00:00 (none) bmcapp: io [WARN]: avocent_io_manager::server_power_control -> SetSystemReset,rc=0 and reason is 10
+2023-04-21T22:13:56.782598+00:00 (none) bmcapp: systemc [WARN]: caterr_timer_state_handler: Do Error Dump!!
+2023-04-21T22:14:08.830649+00:00 (none) bmcapp: systemc [WARN]: fpga_ld::process_power_block() reset src=0x22
+2023-04-21T22:14:16.530642+00:00 (none) bmcapp: io [WARN]: transition twr15.4 = 1
+2023-04-21T22:18:07.132298+00:00 (none) bmcapp: systemc [WARN]: vgpio_cmd: addr=00010002->00010002, event=13, op=Assert, l= 44 ID=0000 flags=01
+2023-04-21T22:18:07.201514+00:00 (none) bmcapp: systemc [WARN]: vgpio_cmd: addr=00010002->00010002, event=13, op=Assert, l= 44 ID=0003 flags=01
+2023-04-21T22:18:07.270020+00:00 (none) bmcapp: systemc [WARN]: vgpio_cmd: addr=00010002->00010002, event=13, op=Assert, l= 44 ID=0003 flags=01
+2023-04-21T22:18:07.342862+00:00 (none) bmcapp: systemc [WARN]: vgpio_cmd: addr=00010002->00010002, event=13, op=Assert, l= 37 ID=0003 flags=00
+2023-04-21T22:18:07.343047+00:00 (none) bmcapp: systemc [WARN]: sensor not find
+2023-04-21T22:18:07.901338+00:00 (none) bmcapp: systemc [WARN]: vgpio_cmd: addr=00010004->00010004, event=13, op=Assert, l= 44 ID=0000 flags=01
+2023-04-21T22:18:07.971142+00:00 (none) bmcapp: systemc [WARN]: vgpio_cmd: addr=00010004->00010004, event=13, op=Assert, l= 44 ID=0004 flags=01
+2023-04-21T22:18:08.041060+00:00 (none) bmcapp: systemc [WARN]: vgpio_cmd: addr=00010004->00010004, event=13, op=Assert, l= 44 ID=0004 flags=01
+2023-04-21T22:18:08.110729+00:00 (none) bmcapp: systemc [WARN]: vgpio_cmd: addr=00010004->00010004, event=13, op=Assert, l= 37 ID=0004 flags=00
+2023-04-21T22:18:08.112238+00:00 (none) bmcapp: systemc [WARN]: sensor not find
+2023-04-21T22:18:09.206909+00:00 (none) bmcapp: rtmm [WARN]: RTMM:0: FEH Done so start peci thermal polling timer
+2023-04-21T22:18:09.207013+00:00 (none) bmcapp: energy [WARN]: Feh done, start the fpm polling, set flag 0.
+2023-04-21T22:18:09.207106+00:00 (none) bmcapp: energy [WARN]: FEH done, start the energy polling.
+2023-04-21T22:18:14.074259+00:00 (none) bmcapp: led [WARN]: LCD error_led_processing - SEL for LEDID [8025]: [t#d-ed123] 0x[1B 94 07 - 02 FF FF]
+2023-04-21T22:18:19.448503+00:00 (none) bmcapp: systemc [WARN]: caterr_timer_state_handler:  Power cycle system.
+2023-04-21T22:18:19.632307+00:00 (none) bmcapp: avocent [WARN]: SetSystemPowerCycle
+2023-04-21T22:18:19.633738+00:00 (none) bmcapp: io [WARN]: avocent_io_manager::server_power_control -> SetSystemPowerCycle,rc=0 and reason is 10
+2023-04-21T22:18:24.374638+00:00 (none) bmcapp: systemc [WARN]: fpga_ld::process_power_block() power off src=0x55
+2023-04-21T22:18:24.419328+00:00 (none) bmcapp: rtmm [WARN]: RTMM:0: FEH Done so start peci thermal polling timer
+2023-04-21T22:18:24.420744+00:00 (none) bmcapp: energy [WARN]: FEH done, start the energy polling.
+2023-04-21T22:18:33.654734+00:00 (none) bmcapp: systemc [WARN]: fpga_ld::process_power_block() power on src=0x55
+2023-04-21T22:18:43.962612+00:00 (none) bmcapp: io [WARN]: transition twr15.4 = 1
+2023-04-21T22:18:52.378769+00:00 (none) bmcapp: systemc [WARN]: fpga_ld::process_power_block() reset src=0x20
+2023-04-21T22:19:01.108692+00:00 (none) bmcapp: io [WARN]: transition twr15.4 = 1
+2023-04-21T22:23:48.153192+00:00 (none) bmcapp: io [WARN]: transition twr15.4 = 1
+2023-04-21T22:25:42.555933+00:00 (none) bmcapp: systemc [WARN]: inactive(recovery):host booted, enabled=1,boots=1,hours=336,promoted=0,trusted img(A9E164AUS), rc=00
+2023-04-21T22:56:29.208152+00:00 (none) bmcapp: systemc [WARN]: inactive(recovery):refresh cmr setting, enabled=1,boots=1,hours=336,promoted=0,trusted img(A9E164AUS), rc=00

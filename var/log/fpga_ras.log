@@ -1,0 +1,129 @@
+
+System utility Ver 0.028 to dump FPGA registers run on Friday, April 21 2023  10:14 PM local time.
+FPGA Version 3.23 [OFFICIAL_BUILD] 05-20-16 for Andromeda board revision 71
+
+Hexdump of FPGA blocks
+======================
+Block 00 -   VALID Data[00]:   70 03 23 00 05 20 16 10-8B FB DF 00 00 00 47 00
+Block 01 -   VALID Data[00]:   07 00 00 00 01 00 00 00-00 00 FF 00 00 00 00 00
+Block 02 -   VALID Data[00]:   7F 00 00 00 00 00 00 00-00 04 E7 55 55 00 20 00
+Block 03 -   VALID Data[00]:   40 00 00 00 00 00 00 7F-00 00 00 00 00 00 00 00
+Block 04 -   VALID Data[00]:   81 2B 2E 32 00 19 00 64-73 7D 0F 1B 00 0D 00 06
+Block 05 - INVALID
+Block 06 -   VALID Data[00]:   88 FF FF 55 16 00 16 00-16 06 16 0F 3E 3F FF 00
+Block 07 -   VALID Data[00]:   BF 00 00 00 00 00 00 01-00 00 00 00 02 0F 30 20
+Block 08 -   VALID Data[00]:   0F 14 00 00 FF 00 00 FF-00 00 00 EF 00 00 00 00
+Block 09 -   VALID Data[00]:   07 30 F0 FF FF FF 0B 10-01 00 00 00 00 00 00 00
+Block 10 - INVALID
+Block 11 -   VALID Data[00]:   00 E0 E1 E2 E3 E4 00 00-00 00 00 00 00 00 00 00
+Block 12 -   VALID Data[00]:   80 00 00 00 00 FF FF FF-FF FF FF FF FF FF FF FF
+Block 13 -   VALID Data[00]:   01 01 00 00 00 00 00 10-00 00 00 00 00 00 00 00
+Block 14 -   VALID Data[00]:   0C 00 00 00 00 01 00 E0-A1 A2 A3 0F 0F 0F 0F 00
+Block 15 -   VALID Data[00]:   80 ED 8D 00 10 60 00 00-8E 00 00 00 00 37 00 00
+Block 16 -   VALID Data[00]:   20 00 00 00 01 00 0F FF-FB FF FE FF FF BF FF FF
+Block 17 -   VALID Data[00]:   02 00 00 00 00 00 00 00-00 00 00 00 00 00 00 00
+Block 18 - INVALID
+Block 19 -   VALID Data[00]:   00 B3 81 D0 83 86 8E 89-BF 80 80 80 80 80 80 00
+Block 20 - INVALID
+Block 21 - INVALID
+Block 22 - INVALID
+Block 23 -   VALID Data[00]:   07 C0 FE 00 FD 00 FD 00-FF 00 F7 00 FF 00 00 00
+Block 28 -   VALID Data[00]:   E1 F5 FF FF 0F FF FF FF-00 1F 00 00 03 00 00 00
+Block 29 -   VALID Data[00]:   3F 00 00 07 B6 0F 3C CF-0D 2B 81 CF 00 00 00 00
+Block 30 -   VALID Data[00]:   17 00 00 00 00 00 00 00-00 00 00 00 00 00 00 00
+Block 31 -   VALID Data[00]:   FF FF FF FF FD FF FF FF-FF FF FF FF FF FF FF FF
+
+========================================
+Hexdump of remote FPGA blocks for card 0
+========================================
+Block 00 -   VALID Data[00]:   5A 03 03 00 02 09 16 10-00 12 79 00 00 00 00 00
+Block 01 -   VALID Data[00]:   00 00 00 00 00 00 00 00-00 00 00 00 00 00 00 00
+Block 02 - INVALID
+Block 03 -   VALID Data[00]:   00 00 00 00 00 00 FF FF-00 00 00 00 00 00 00 00
+Block 04 -   VALID Data[00]:   00 00 00 00 00 00 00 00-00 00 00 00 00 00 00 00
+Block 05 -   VALID Data[00]:   09 00 00 00 00 00 00 00-00 00 00 00 00 00 00 02
+Block 06 -   VALID Data[00]:   DE 3C 7B 04 F0 6C 0F 01-1B 1C 1F 00 83 0D 02 00
+Block 07 - INVALID
+Block 08 - INVALID
+Block 09 -   VALID Data[00]:   06 30 00 00 00 00 0B 01-00 00 00 00 00 00 00 00
+Block 10 - INVALID
+Block 11 - INVALID
+Block 12 -   VALID Data[00]:   00 00 00 80 00 00 70 70-70 00 00 01 79 00 00 00
+Block 13 - INVALID
+Block 14 - INVALID
+Block 15 - INVALID
+========================================
+Block 6 offset 0-2 represents DIMM presence (Active Low). EX: Offset 0 bit 0 = DIMM1. EX: Offset 1 bit 5 = DIMM 15
+========================================
+
+========================================
+Hexdump of remote FPGA blocks for card 1
+========================================
+Block 00 -   VALID Data[00]:   5A 03 03 00 02 09 16 10-00 12 79 00 00 00 00 00
+Block 01 -   VALID Data[00]:   00 00 00 00 00 00 00 00-00 00 00 00 00 00 00 00
+Block 02 - INVALID
+Block 03 -   VALID Data[00]:   00 00 00 00 00 00 FF FF-00 00 00 00 00 00 00 00
+Block 04 -   VALID Data[00]:   00 00 00 00 00 00 00 00-00 00 00 00 00 00 00 00
+Block 05 -   VALID Data[00]:   09 00 00 00 00 00 00 00-00 00 00 00 00 00 00 02
+Block 06 -   VALID Data[00]:   DE 3C 7B 16 F1 04 0F 01-1C 1B 22 00 83 0F 00 00
+Block 07 - INVALID
+Block 08 - INVALID
+Block 09 -   VALID Data[00]:   06 30 00 00 00 00 0B 01-00 00 00 00 00 00 00 00
+Block 10 - INVALID
+Block 11 - INVALID
+Block 12 -   VALID Data[00]:   00 00 00 80 00 00 70 70-70 00 00 01 79 00 00 00
+Block 13 - INVALID
+Block 14 - INVALID
+Block 15 - INVALID
+========================================
+Block 6 offset 0-2 represents DIMM presence (Active Low). EX: Offset 0 bit 0 = DIMM1. EX: Offset 1 bit 5 = DIMM 15
+========================================
+
+========================================
+Hexdump of remote FPGA blocks for card 2
+========================================
+Block 00 -   VALID Data[00]:   5A 03 03 00 02 09 16 10-00 12 79 00 00 00 00 00
+Block 01 -   VALID Data[00]:   00 00 00 00 00 00 00 00-00 00 00 00 00 00 00 00
+Block 02 - INVALID
+Block 03 -   VALID Data[00]:   00 00 00 00 00 00 FF FF-00 00 00 00 00 00 00 00
+Block 04 -   VALID Data[00]:   00 00 00 00 00 00 00 00-00 00 00 00 00 00 00 00
+Block 05 -   VALID Data[00]:   09 00 00 00 00 00 00 00-00 00 00 00 00 00 00 02
+Block 06 -   VALID Data[00]:   DE 3C 7B 26 F2 04 0F 01-1C 1D 21 00 83 0F 00 00
+Block 07 - INVALID
+Block 08 - INVALID
+Block 09 -   VALID Data[00]:   06 30 00 00 00 00 0B 01-00 00 00 00 00 00 00 00
+Block 10 - INVALID
+Block 11 - INVALID
+Block 12 -   VALID Data[00]:   00 00 00 80 00 00 70 70-70 00 00 01 79 00 00 00
+Block 13 - INVALID
+Block 14 - INVALID
+Block 15 - INVALID
+========================================
+Block 6 offset 0-2 represents DIMM presence (Active Low). EX: Offset 0 bit 0 = DIMM1. EX: Offset 1 bit 5 = DIMM 15
+========================================
+
+========================================
+Hexdump of remote FPGA blocks for card 3
+========================================
+Block 00 -   VALID Data[00]:   5A 03 03 00 02 09 16 10-00 12 79 00 00 00 00 00
+Block 01 -   VALID Data[00]:   00 00 00 00 00 00 00 00-00 00 00 00 00 00 00 00
+Block 02 - INVALID
+Block 03 -   VALID Data[00]:   00 00 00 00 00 00 FF FF-00 00 00 00 00 00 00 00
+Block 04 -   VALID Data[00]:   00 00 00 00 00 00 00 00-00 00 00 00 00 00 00 00
+Block 05 -   VALID Data[00]:   09 00 00 00 00 00 00 00-00 00 00 00 00 00 00 02
+Block 06 -   VALID Data[00]:   DE 3C 7B 36 F3 04 0F 01-1C 1C 21 00 83 08 00 00
+Block 07 - INVALID
+Block 08 - INVALID
+Block 09 -   VALID Data[00]:   06 30 00 00 00 00 0B 01-00 00 00 00 00 00 00 00
+Block 10 - INVALID
+Block 11 - INVALID
+Block 12 -   VALID Data[00]:   00 00 00 80 00 00 70 70-70 00 00 01 79 00 00 00
+Block 13 - INVALID
+Block 14 - INVALID
+Block 15 - INVALID
+========================================
+Block 6 offset 0-2 represents DIMM presence (Active Low). EX: Offset 0 bit 0 = DIMM1. EX: Offset 1 bit 5 = DIMM 15
+========================================
+
+======================================================
+

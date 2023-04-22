@@ -1,0 +1,220 @@
+2023-04-12T01:14:06.708760+00:00 (none) logger: ==> Loading base drivers...
+2023-04-12T01:14:07.147264+00:00 (none) logger: ==> Base drivers loaded
+2023-04-12T01:14:07.199697+00:00 (none) logger:  -> Inside /etc/scripts/rfs.firstboot
+2023-04-12T01:14:07.292042+00:00 (none) logger:  -> bind script: bind-andromeda.sh 
+2023-04-12T01:14:07.333722+00:00 (none) logger:  -> Binding to andromeda
+2023-04-12T01:14:07.364684+00:00 (none) logger:  -> Configuring high performance (firstboot)
+2023-04-12T01:14:07.437685+00:00 (none) logger:  -> Create NVRAM folder for IMM
+2023-04-12T01:14:07.690254+00:00 (none) logger:  -> Andromeda (firstboot)
+2023-04-12T01:14:07.872565+00:00 (none) logger:  -> Next boot partition is currently 0x13
+2023-04-12T01:14:07.943664+00:00 (none) logger:  -> Next boot partition changed to   0x12
+2023-04-12T01:14:07.962203+00:00 (none) logger:  -> Performing autoreboot
+2023-04-12T01:14:08.764546+00:00 (none) logger: ==> cmr_init
+2023-04-12T01:14:08.799422+00:00 (none) logger:  -> cmr operation complete
+2023-04-12T01:14:08.856408+00:00 (none) logger: ==> Loading BMC drivers...
+2023-04-12T01:14:10.840512+00:00 (none) logger: ==> BMC drivers loaded
+2023-04-12T01:14:10.930549+00:00 (none) logger:  -> Configuring high performance (sysinit)
+2023-04-12T01:14:10.953288+00:00 (none) logger:  -> Andromeda (sysinit)
+2023-04-12T01:14:12.607011+00:00 (none) logger: ==> Loading Mbox drivers...
+2023-04-12T01:14:12.760058+00:00 (none) logger:  -> Installed /dev/aess_mboxdrv driver - (Major 232)
+2023-04-12T01:14:12.854937+00:00 (none) logger:  -> System time using RTC
+2023-04-12T01:14:15.821214+00:00 (none) logger:  -> Inside /etc/scripts/rfs.startup , raid 1
+2023-04-12T01:14:15.840743+00:00 (none) logger:  -> Inside /etc/scripts/rfs.startup , raid 2
+2023-04-12T01:14:15.860022+00:00 (none) logger:  -> Inside /etc/scripts/rfs.startup , raid 3
+2023-04-12T01:14:15.889527+00:00 (none) logger:  -> Starting provisioning phase3 process monitor
+2023-04-12T01:14:15.925116+00:00 (none) logger:  -> Starting Watchdog/Lifeguard daemon
+2023-04-12T01:14:16.005635+00:00 (none) logger:  -> Inside /etc/scripts/rfs.emerson-temp
+2023-04-12T01:14:16.034159+00:00 (none) logger:  Sync Hwclock time to sys time
+2023-04-12T01:14:17.470387+00:00 (none) logger:  -> Running /etc/scripts/rfs.fod
+2023-04-12T01:14:17.538296+00:00 (none) logger: remove old FoD directory
+2023-04-12T01:14:17.574228+00:00 (none) logger:  -> Checking SPI flash
+2023-04-12T01:14:17.622498+00:00 (none) logger:  -> Checking backup uboot
+2023-04-12T01:14:17.719471+00:00 (none) logger:  -> Starting sshd-immsftp
+2023-04-12T01:14:23.888503+00:00 (none) logger:  -> sftp service prepared
+2023-04-12T01:14:30.819670+00:00 (none) logger:  -> sftp service started
+2023-04-12T01:14:31.058886+00:00 (none) logger:  -> Starting install OEM script
+2023-04-12T01:14:31.884870+00:00 (none) logger: No OEM PKG, Don't need update
+2023-04-12T01:14:33.654216+00:00 (none) sysprof: new imm xml file
+2023-04-12T01:14:33.915731+00:00 (none) sysprof: recreate CLI descriptor file: /var/cli/imm2cli.xml
+2023-04-12T01:14:36.114217+00:00 (none) logger:  -> Secure debug ports are already open.
+2023-04-12T01:14:40.962610+00:00 (none) logger: ==> Exiting /etc/scripts/rfs.startup
+2023-04-12T01:14:58.958353+00:00 (none) bootperf: added type 0x0 , flags: 0x0, time 64, descr "boot start"  [2023-12-04 01:13:30]
+2023-04-12T01:14:59.004974+00:00 (none) bootperf: added type 0x8 , flags: 0x0, time 65, descr "uboot EPO START"  [2023-12-04 01:13:30]
+2023-04-12T01:14:59.007305+00:00 (none) bootperf: added type 0x8 , flags: 0x2, time 79, descr "uboot EPO.power ON"  [2023-12-04 01:13:31]
+2023-04-12T01:14:59.010899+00:00 (none) bootperf: added type 0x1 , flags: 0x0, time 84, descr "kernel validation start"  [2023-12-04 01:13:32]
+2023-04-12T01:14:59.046779+00:00 (none) bootperf: added type 0x2 , flags: 0x0, time 94, descr "kernel start"  [2023-12-04 01:13:33]
+2023-04-12T01:14:59.117423+00:00 (none) bootperf: added type 0x4 , flags: 0x0, time 229, descr "securefs START"  [2023-12-04 01:13:46]
+2023-04-12T01:14:59.119692+00:00 (none) bootperf: added type 0x5 , flags: 0x0, time 264, descr "PLU START"  [2023-12-04 01:13:50]
+2023-04-12T01:14:59.123412+00:00 (none) bootperf: added type 0x6 , flags: 0x0, time 323, descr "Phase 1 provisioning START"  [2023-12-04 01:13:56]
+2023-04-12T01:14:59.128592+00:00 (none) bootperf: added type 0x7 , flags: 0x0, time 382, descr "Securefs END"  [2023-12-04 01:14:02]
+2023-04-12T01:14:59.176162+00:00 (none) bootperf: added type 0x9 , flags: 0x0, time 414, descr "rfs.startup STARTS"  [2023-12-04 01:14:05]
+2023-04-12T01:14:59.179230+00:00 (none) bootperf: added type 0xb , flags: 0x1, time 950, descr "osinet up"  [2023-12-04 01:14:59]
+2023-04-12T01:15:06.366815+00:00 (none) logger: ==> rfs.memwatch - HWM - free=24% avail=64%
+2023-04-12T01:15:08.625545+00:00 (none) bootperf: added type 0xb , flags: 0x2, time 1040, descr "nic up"  [2023-12-04 01:15:08]
+2023-04-12T01:15:08.989136+00:00 (none) bootperf: added type 0xb , flags: 0x3, time 1040, descr "ipv4 avail"  [2023-12-04 01:15:08]
+2023-04-12T01:15:15.287289+00:00 (none) bootperf: added type 0xc , flags: 0x1, time 1110, descr "IPMI cmds ready"  [2023-12-04 01:15:15]
+2023-04-12T01:15:28.037340+00:00 (none) logger:  -> exporting SMBIOS for ConfigPatterns
+2023-04-12T01:15:29.532638+00:00 (none) bootperf: added type 0x3b , flags: 0x18, time 1250, descr "Legacy O/S boot"  [2023-12-04 01:15:29]
+2023-04-12T01:15:32.577811+00:00 (none) bootperf: added type 0xc , flags: 0xa, time 1280, descr "tklm ready"  [2023-12-04 01:15:32]
+2023-04-12T01:15:33.351700+00:00 (none) bootperf: added type 0xc , flags: 0x2, time 1290, descr "FM ready"  [2023-12-04 01:15:33]
+2023-04-12T01:15:34.064567+00:00 (none) bootperf: added type 0xc , flags: 0x5, time 1300, descr "CM ready"  [2023-12-04 01:15:34]
+2023-04-12T01:16:04.084242+00:00 (none) bootperf: added type 0xc , flags: 0x4, time 1590, descr "bmc_app power permission"  [2023-12-04 01:16:03]
+2023-04-12T01:18:17.966911+00:00 (none) logger: ==> rfs.memwatch - MWM - free=11% avail=39%
+2023-04-12T01:18:24.338212+00:00 (none) bootperf: added type 0xc , flags: 0x9, time 3000, descr "sfcb ready"  [2023-12-04 01:18:24]
+2023-04-12T01:20:16.100367+00:00 (none) logger: checkprocs failed: vsftpd 0/ 1 threads@
+MPcmdhdlr 1/ 2 threads@
+imm2_snmpCfgMgr 0/ 3 threads@
+snmpd 0/ 2 threads@
+imm2_configureSP 0/ 1 threads@
+imm2_monitors 0/ 1 threads@
+imm2_errorLogs 0/ 1 threads@
+imm2_system 0/ 1 threads@
+2023-04-12T01:23:03.409418+00:00 (none) bootperf: added type 0x3b , flags: 0x7, time 5790, descr "POST Started = Start of Pre-EFI (PEI)"  [2023-12-04 01:23:03]
+2023-04-12T01:23:18.652259+00:00 (none) bootperf: added type 0xc , flags: 0x4, time 5940, descr "bmc_app power permission"  [2023-12-04 01:23:18]
+2023-04-12T01:23:24.058149+00:00 (none) bootperf: added type 0x3b , flags: 0x7, time 6000, descr "POST Started = Start of Pre-EFI (PEI)"  [2023-12-04 01:23:24]
+2023-04-12T01:23:29.005257+00:00 (none) bootperf: added type 0x3b , flags: 0x8, time 6040, descr "Starting Memory Initialization"  [2023-12-04 01:23:28]
+2023-04-12T01:23:39.923410+00:00 (none) bootperf: added type 0x3b , flags: 0x7, time 6150, descr "POST Started = Start of Pre-EFI (PEI)"  [2023-12-04 01:23:39]
+2023-04-12T01:23:44.726869+00:00 (none) bootperf: added type 0x3b , flags: 0x8, time 6200, descr "Starting Memory Initialization"  [2023-12-04 01:23:44]
+2023-04-12T01:27:00.181663+00:00 (none) bootperf: added type 0x3b , flags: 0x7, time 8160, descr "POST Started = Start of Pre-EFI (PEI)"  [2023-12-04 01:27:00]
+2023-04-12T01:27:06.176016+00:00 (none) bootperf: added type 0x3b , flags: 0x8, time 8220, descr "Starting Memory Initialization"  [2023-12-04 01:27:06]
+2023-04-12T01:27:17.203045+00:00 (none) bootperf: added type 0x3b , flags: 0x7, time 8330, descr "POST Started = Start of Pre-EFI (PEI)"  [2023-12-04 01:27:17]
+2023-04-12T01:27:22.957861+00:00 (none) bootperf: added type 0x3b , flags: 0x8, time 8380, descr "Starting Memory Initialization"  [2023-12-04 01:27:22]
+2023-04-12T01:29:38.689099+00:00 (none) bootperf: added type 0x3b , flags: 0x7, time 9740, descr "POST Started = Start of Pre-EFI (PEI)"  [2023-12-04 01:29:38]
+2023-04-12T01:29:44.665825+00:00 (none) bootperf: added type 0x3b , flags: 0x8, time 9800, descr "Starting Memory Initialization"  [2023-12-04 01:29:44]
+2023-04-12T01:29:55.621772+00:00 (none) bootperf: added type 0x3b , flags: 0x7, time 9910, descr "POST Started = Start of Pre-EFI (PEI)"  [2023-12-04 01:29:55]
+2023-04-12T01:30:01.556410+00:00 (none) bootperf: added type 0x3b , flags: 0x8, time 9970, descr "Starting Memory Initialization"  [2023-12-04 01:30:01]
+2023-04-12T01:31:21.534600+00:00 (none) bootperf: added type 0x3b , flags: 0x9, time 10770, descr "Start of Driver Execution Environment (DXE) and PEI Complete"  [2023-12-04 01:31:21]
+2023-04-12T01:31:35.027247+00:00 (none) bootperf: added type 0x3b , flags: 0x7, time 10910, descr "POST Started = Start of Pre-EFI (PEI)"  [2023-12-04 01:31:35]
+2023-04-12T01:31:39.954115+00:00 (none) bootperf: added type 0x3b , flags: 0x8, time 10950, descr "Starting Memory Initialization"  [2023-12-04 01:31:39]
+2023-04-12T01:31:51.343311+00:00 (none) bootperf: added type 0x3b , flags: 0x7, time 11070, descr "POST Started = Start of Pre-EFI (PEI)"  [2023-12-04 01:31:51]
+2023-04-12T01:31:55.972664+00:00 (none) bootperf: added type 0x3b , flags: 0x8, time 11110, descr "Starting Memory Initialization"  [2023-12-04 01:31:55]
+2023-04-12T01:34:14.062922+00:00 (none) bootperf: added type 0x3b , flags: 0x9, time 12500, descr "Start of Driver Execution Environment (DXE) and PEI Complete"  [2023-12-04 01:34:14]
+2023-04-12T01:34:26.964017+00:00 (none) bootperf: added type 0x3b , flags: 0x7, time 12620, descr "POST Started = Start of Pre-EFI (PEI)"  [2023-12-04 01:34:26]
+2023-04-12T01:34:31.761421+00:00 (none) bootperf: added type 0x3b , flags: 0x8, time 12670, descr "Starting Memory Initialization"  [2023-12-04 01:34:31]
+2023-04-12T01:36:50.248138+00:00 (none) bootperf: added type 0x3b , flags: 0x9, time 14060, descr "Start of Driver Execution Environment (DXE) and PEI Complete"  [2023-12-04 01:36:50]
+2023-04-12T01:39:20.827451+00:00 (none) bootperf: added type 0x3b , flags: 0x7, time 15560, descr "POST Started = Start of Pre-EFI (PEI)"  [2023-12-04 01:39:20]
+2023-04-12T01:39:25.719977+00:00 (none) bootperf: added type 0x3b , flags: 0x8, time 15610, descr "Starting Memory Initialization"  [2023-12-04 01:39:25]
+2023-04-12T01:39:36.966861+00:00 (none) bootperf: added type 0x3b , flags: 0x7, time 15720, descr "POST Started = Start of Pre-EFI (PEI)"  [2023-12-04 01:39:36]
+2023-04-12T01:39:41.820895+00:00 (none) bootperf: added type 0x3b , flags: 0x8, time 15770, descr "Starting Memory Initialization"  [2023-12-04 01:39:41]
+2023-04-12T01:42:00.641063+00:00 (none) bootperf: added type 0x3b , flags: 0x9, time 17160, descr "Start of Driver Execution Environment (DXE) and PEI Complete"  [2023-12-04 01:42:00]
+2023-04-12T01:45:41.309376+00:00 (none) sysprof: new uefi xml file
+2023-04-12T01:45:41.457923+00:00 (none) sysprof: recreate CLI descriptor file: /var/cli/imm2cli.xml
+2023-04-12T01:45:43.546036+00:00 (none) bootperf: added type 0x3b , flags: 0x7, time 19390, descr "POST Started = Start of Pre-EFI (PEI)"  [2023-12-04 01:45:43]
+2023-04-12T01:45:48.654485+00:00 (none) bootperf: added type 0x3b , flags: 0x8, time 19440, descr "Starting Memory Initialization"  [2023-12-04 01:45:48]
+2023-04-12T01:45:59.666203+00:00 (none) bootperf: added type 0x3b , flags: 0x7, time 19550, descr "POST Started = Start of Pre-EFI (PEI)"  [2023-12-04 01:45:59]
+2023-04-12T01:46:04.747671+00:00 (none) bootperf: added type 0x3b , flags: 0x8, time 19600, descr "Starting Memory Initialization"  [2023-12-04 01:46:04]
+2023-04-12T01:48:31.695598+00:00 (none) bootperf: added type 0x3b , flags: 0x9, time 21070, descr "Start of Driver Execution Environment (DXE) and PEI Complete"  [2023-12-04 01:48:31]
+2023-04-12T01:51:05.941554+00:00 (none) bootperf: added type 0x3b , flags: 0x11, time 22610, descr "End of POST - Boot Device Selection Start"  [2023-12-04 01:51:05]
+2023-04-12T01:51:13.894878+00:00 (none) bootperf: added type 0x3b , flags: 0x14, time 22690, descr "Control passed to UEFI O/S Loader"  [2023-12-04 01:51:13]
+2023-04-12T01:53:17.992364+00:00 (none) bootperf: added type 0x3b , flags: 0x7, time 23930, descr "POST Started = Start of Pre-EFI (PEI)"  [2023-12-04 01:53:17]
+2023-04-12T01:53:22.437635+00:00 (none) bootperf: added type 0x3b , flags: 0x8, time 23980, descr "Starting Memory Initialization"  [2023-12-04 01:53:22]
+2023-04-12T01:55:48.798974+00:00 (none) bootperf: added type 0x3b , flags: 0x9, time 25440, descr "Start of Driver Execution Environment (DXE) and PEI Complete"  [2023-12-04 01:55:48]
+2023-04-12T01:57:24.707544+00:00 (none) bootperf: added type 0x3b , flags: 0x11, time 26400, descr "End of POST - Boot Device Selection Start"  [2023-12-04 01:57:24]
+2023-04-12T01:57:28.133621+00:00 (none) bootperf: added type 0x3b , flags: 0x14, time 26440, descr "Control passed to UEFI O/S Loader"  [2023-12-04 01:57:28]
+2023-04-12T01:58:28.723079+00:00 (none) bootperf: added type 0x3b , flags: 0x14, time 27040, descr "Control passed to UEFI O/S Loader"  [2023-12-04 01:58:28]
+2023-04-12T01:59:48.373138+00:00 (none) bootperf: added type 0x3b , flags: 0x18, time 27840, descr "Legacy O/S boot"  [2023-12-04 01:59:48]
+2023-04-12T02:00:02.351108+00:00 (none) logger: removing VPD file: /var/keep/vpd-backup.bin.6f8f4ac5c098c493c4060305c7a05c2e
+2023-04-19T07:09:15.859213+00:00 (none) bootperf: added type 0x3b , flags: 0x7, time 6261510, descr "POST Started = Start of Pre-EFI (PEI)"  [2023-19-04 07:09:15]
+2023-04-19T07:09:20.728848+00:00 (none) bootperf: added type 0x3b , flags: 0x8, time 6261560, descr "Starting Memory Initialization"  [2023-19-04 07:09:20]
+2023-04-19T07:09:33.006016+00:00 (none) bootperf: added type 0x3b , flags: 0x7, time 6261680, descr "POST Started = Start of Pre-EFI (PEI)"  [2023-19-04 07:09:32]
+2023-04-19T07:09:37.860951+00:00 (none) bootperf: added type 0x3b , flags: 0x8, time 6261730, descr "Starting Memory Initialization"  [2023-19-04 07:09:37]
+2023-04-19T07:12:07.078838+00:00 (none) bootperf: added type 0x3b , flags: 0x9, time 6263230, descr "Start of Driver Execution Environment (DXE) and PEI Complete"  [2023-19-04 07:12:07]
+2023-04-19T07:14:32.543306+00:00 (none) bootperf: added type 0x3b , flags: 0x11, time 6264680, descr "End of POST - Boot Device Selection Start"  [2023-19-04 07:14:32]
+2023-04-19T07:14:36.618247+00:00 (none) bootperf: added type 0x3b , flags: 0x14, time 6264720, descr "Control passed to UEFI O/S Loader"  [2023-19-04 07:14:36]
+2023-04-19T07:14:53.202667+00:00 (none) bootperf: added type 0x3b , flags: 0x14, time 6264890, descr "Control passed to UEFI O/S Loader"  [2023-19-04 07:14:53]
+2023-04-19T07:16:14.233972+00:00 (none) bootperf: added type 0x3b , flags: 0x18, time 6265700, descr "Legacy O/S boot"  [2023-19-04 07:16:14]
+2023-04-19T08:10:00.150582+00:00 (none) bootperf: added type 0x3b , flags: 0x7, time 6297960, descr "POST Started = Start of Pre-EFI (PEI)"  [2023-19-04 08:10:00]
+2023-04-19T08:14:36.688418+00:00 (none) bootperf: added type 0x3b , flags: 0x7, time 6300720, descr "POST Started = Start of Pre-EFI (PEI)"  [2023-19-04 08:14:36]
+2023-04-19T08:14:41.564182+00:00 (none) bootperf: added type 0x3b , flags: 0x8, time 6300770, descr "Starting Memory Initialization"  [2023-19-04 08:14:41]
+2023-04-19T08:14:53.869623+00:00 (none) bootperf: added type 0x3b , flags: 0x7, time 6300890, descr "POST Started = Start of Pre-EFI (PEI)"  [2023-19-04 08:14:53]
+2023-04-19T08:14:58.699322+00:00 (none) bootperf: added type 0x3b , flags: 0x8, time 6300940, descr "Starting Memory Initialization"  [2023-19-04 08:14:58]
+2023-04-19T08:17:28.442840+00:00 (none) bootperf: added type 0x3b , flags: 0x9, time 6302440, descr "Start of Driver Execution Environment (DXE) and PEI Complete"  [2023-19-04 08:17:28]
+2023-04-19T08:19:54.286876+00:00 (none) bootperf: added type 0x3b , flags: 0x11, time 6303900, descr "End of POST - Boot Device Selection Start"  [2023-19-04 08:19:54]
+2023-04-19T08:19:57.523222+00:00 (none) bootperf: added type 0x3b , flags: 0x14, time 6303930, descr "Control passed to UEFI O/S Loader"  [2023-19-04 08:19:57]
+2023-04-19T08:20:17.022869+00:00 (none) bootperf: added type 0x3b , flags: 0x14, time 6304130, descr "Control passed to UEFI O/S Loader"  [2023-19-04 08:20:17]
+2023-04-19T08:21:38.784913+00:00 (none) bootperf: added type 0x3b , flags: 0x18, time 6304940, descr "Legacy O/S boot"  [2023-19-04 08:21:38]
+2023-04-20T02:35:18.179637+00:00 (none) logger: ==> Loading base drivers...
+2023-04-20T02:35:18.701807+00:00 (none) logger: ==> Base drivers loaded
+2023-04-20T02:35:18.814362+00:00 (none) logger:  -> Next boot partition is currently 0x13
+2023-04-20T02:35:18.882507+00:00 (none) logger:  -> Next boot partition changed to   0x12
+2023-04-20T02:35:18.900813+00:00 (none) logger:  -> Performing autoreboot
+2023-04-20T02:35:19.653061+00:00 (none) logger: ==> cmr_init
+2023-04-20T02:35:20.782024+00:00 (none) logger:  -> cmr operation complete
+2023-04-20T02:35:20.878783+00:00 (none) logger:  -> md5sum signature check passed in rfs.aess-bmc
+2023-04-20T02:35:20.921822+00:00 (none) logger: !-> file stat mismatch in rfs.aess-bmc, create it again
+2023-04-20T02:35:20.940057+00:00 (none) logger: ==> Loading BMC drivers...
+2023-04-20T02:35:23.209030+00:00 (none) logger: ==> BMC drivers loaded
+2023-04-20T02:35:23.624376+00:00 (none) logger:  -> Configuring high performance (sysinit)
+2023-04-20T02:35:23.646308+00:00 (none) logger:  -> Andromeda (sysinit)
+2023-04-20T02:35:25.296667+00:00 (none) logger: ==> Loading Mbox drivers...
+2023-04-20T02:35:25.442826+00:00 (none) logger:  -> Installed /dev/aess_mboxdrv driver - (Major 232)
+2023-04-20T02:35:25.556950+00:00 (none) logger:  -> System time using RTC
+2023-04-20T02:35:26.073162+00:00 (none) logger:  -> Inside /etc/scripts/rfs.startup , raid 1
+2023-04-20T02:35:26.093041+00:00 (none) logger:  -> Starting provisioning phase3 process monitor
+2023-04-20T02:35:26.118367+00:00 (none) logger:  -> Starting Watchdog/Lifeguard daemon
+2023-04-20T02:35:26.209136+00:00 (none) logger:  -> Inside /etc/scripts/rfs.emerson-temp
+2023-04-20T02:35:26.245253+00:00 (none) logger:  Sync Hwclock time to sys time
+2023-04-20T02:35:27.595983+00:00 (none) logger:  -> Running /etc/scripts/rfs.fod
+2023-04-20T02:35:27.668238+00:00 (none) logger: remove old FoD directory
+2023-04-20T02:35:27.705091+00:00 (none) logger:  -> Checking SPI flash
+2023-04-20T02:35:27.760931+00:00 (none) logger:  -> Checking backup uboot
+2023-04-20T02:35:27.829832+00:00 (none) logger:  -> Starting sshd-immsftp
+2023-04-20T02:35:33.172330+00:00 (none) logger:  -> sftp service prepared
+2023-04-20T02:35:39.452354+00:00 (none) logger:  -> sftp service started
+2023-04-20T02:35:39.597568+00:00 (none) logger:  -> Starting install OEM script
+2023-04-20T02:35:40.162634+00:00 (none) logger: No OEM PKG, Don't need update
+2023-04-20T02:35:44.351898+00:00 (none) logger:  -> Secure debug ports are already open.
+2023-04-20T02:35:47.967229+00:00 (none) logger: ==> Exiting /etc/scripts/rfs.startup
+2023-04-20T02:36:06.366155+00:00 (none) logger: ==> rfs.memwatch - HWM - free=48% avail=68%
+2023-04-20T02:36:08.418138+00:00 (none) bootperf: added type 0x0 , flags: 0x0, time 60, descr "boot start"  [2023-20-04 02:34:40]
+2023-04-20T02:36:08.420732+00:00 (none) bootperf: added type 0x8 , flags: 0x0, time 62, descr "uboot EPO START"  [2023-20-04 02:34:40]
+2023-04-20T02:36:08.463085+00:00 (none) bootperf: added type 0x8 , flags: 0x1, time 62, descr "uboot EPO.power perm"  [2023-20-04 02:34:40]
+2023-04-20T02:36:08.465229+00:00 (none) bootperf: added type 0x8 , flags: 0x2, time 79, descr "uboot EPO.power ON"  [2023-20-04 02:34:41]
+2023-04-20T02:36:08.511822+00:00 (none) bootperf: added type 0x1 , flags: 0x0, time 84, descr "kernel validation start"  [2023-20-04 02:34:42]
+2023-04-20T02:36:08.516255+00:00 (none) bootperf: added type 0x2 , flags: 0x0, time 94, descr "kernel start"  [2023-20-04 02:34:43]
+2023-04-20T02:36:08.518498+00:00 (none) bootperf: added type 0x4 , flags: 0x0, time 250, descr "securefs START"  [2023-20-04 02:34:59]
+2023-04-20T02:36:08.520750+00:00 (none) bootperf: added type 0x5 , flags: 0x0, time 284, descr "PLU START"  [2023-20-04 02:35:02]
+2023-04-20T02:36:08.557871+00:00 (none) bootperf: added type 0x6 , flags: 0x0, time 341, descr "Phase 1 provisioning START"  [2023-20-04 02:35:08]
+2023-04-20T02:36:08.560471+00:00 (none) bootperf: added type 0x7 , flags: 0x0, time 398, descr "Securefs END"  [2023-20-04 02:35:13]
+2023-04-20T02:36:08.563834+00:00 (none) bootperf: added type 0x9 , flags: 0x0, time 438, descr "rfs.startup STARTS"  [2023-20-04 02:35:17]
+2023-04-20T02:36:08.566564+00:00 (none) bootperf: added type 0xb , flags: 0x1, time 940, descr "osinet up"  [2023-20-04 02:36:08]
+2023-04-20T02:36:14.958509+00:00 (none) bootperf: added type 0xb , flags: 0x2, time 1000, descr "nic up"  [2023-20-04 02:36:14]
+2023-04-20T02:36:15.133156+00:00 (none) bootperf: added type 0xb , flags: 0x3, time 1010, descr "ipv4 avail"  [2023-20-04 02:36:15]
+2023-04-20T02:36:22.365875+00:00 (none) bootperf: added type 0xc , flags: 0x1, time 1080, descr "IPMI cmds ready"  [2023-20-04 02:36:22]
+2023-04-20T02:36:30.253626+00:00 (none) logger:  -> exporting SMBIOS for ConfigPatterns
+2023-04-20T02:36:33.780149+00:00 (none) bootperf: added type 0x3b , flags: 0x7, time 1190, descr "POST Started = Start of Pre-EFI (PEI)"  [2023-20-04 02:36:33]
+2023-04-20T02:36:36.377021+00:00 (none) bootperf: added type 0xc , flags: 0xa, time 1220, descr "tklm ready"  [2023-20-04 02:36:36]
+2023-04-20T02:36:36.906021+00:00 (none) bootperf: added type 0xc , flags: 0x2, time 1220, descr "FM ready"  [2023-20-04 02:36:36]
+2023-04-20T02:36:37.885893+00:00 (none) bootperf: added type 0xc , flags: 0x5, time 1230, descr "CM ready"  [2023-20-04 02:36:37]
+2023-04-20T02:36:57.570893+00:00 (none) bootperf: added type 0xc , flags: 0x4, time 1420, descr "bmc_app power permission"  [2023-20-04 02:36:56]
+2023-04-20T02:36:59.006267+00:00 (none) bootperf: added type 0x3b , flags: 0x8, time 1450, descr "Starting Memory Initialization"  [2023-20-04 02:36:59]
+2023-04-20T02:37:09.367391+00:00 (none) bootperf: added type 0x3b , flags: 0x7, time 1550, descr "POST Started = Start of Pre-EFI (PEI)"  [2023-20-04 02:37:09]
+2023-04-20T02:37:14.787942+00:00 (none) bootperf: added type 0x3b , flags: 0x8, time 1600, descr "Starting Memory Initialization"  [2023-20-04 02:37:14]
+2023-04-20T02:38:56.458219+00:00 (none) bootperf: added type 0xc , flags: 0x9, time 2620, descr "sfcb ready"  [2023-20-04 02:38:56]
+2023-04-20T02:39:04.171874+00:00 (none) logger: ==> rfs.memwatch - MWM - free=10% avail=35%
+2023-04-20T02:39:42.552658+00:00 (none) bootperf: added type 0x3b , flags: 0x9, time 3080, descr "Start of Driver Execution Environment (DXE) and PEI Complete"  [2023-20-04 02:39:42]
+2023-04-20T02:41:09.512906+00:00 (none) logger: checkprocs failed: 
+2023-04-20T02:42:16.248064+00:00 (none) bootperf: added type 0x3b , flags: 0x11, time 4620, descr "End of POST - Boot Device Selection Start"  [2023-20-04 02:42:16]
+2023-04-20T02:42:21.197825+00:00 (none) bootperf: added type 0x3b , flags: 0x14, time 4670, descr "Control passed to UEFI O/S Loader"  [2023-20-04 02:42:21]
+2023-04-20T02:42:40.407407+00:00 (none) bootperf: added type 0x3b , flags: 0x14, time 4860, descr "Control passed to UEFI O/S Loader"  [2023-20-04 02:42:40]
+2023-04-20T02:44:01.435167+00:00 (none) bootperf: added type 0x3b , flags: 0x18, time 5670, descr "Legacy O/S boot"  [2023-20-04 02:44:01]
+2023-04-21T06:56:02.094260+00:00 (none) bootperf: added type 0x3b , flags: 0x7, time 1020880, descr "POST Started = Start of Pre-EFI (PEI)"  [2023-21-04 06:56:02]
+2023-04-21T07:00:18.592826+00:00 (none) bootperf: added type 0x3b , flags: 0x7, time 1023440, descr "POST Started = Start of Pre-EFI (PEI)"  [2023-21-04 07:00:18]
+2023-04-21T07:00:23.471072+00:00 (none) bootperf: added type 0x3b , flags: 0x8, time 1023490, descr "Starting Memory Initialization"  [2023-21-04 07:00:23]
+2023-04-21T07:00:35.766102+00:00 (none) bootperf: added type 0x3b , flags: 0x7, time 1023610, descr "POST Started = Start of Pre-EFI (PEI)"  [2023-21-04 07:00:35]
+2023-04-21T07:00:40.594491+00:00 (none) bootperf: added type 0x3b , flags: 0x8, time 1023660, descr "Starting Memory Initialization"  [2023-21-04 07:00:40]
+2023-04-21T07:03:10.551267+00:00 (none) bootperf: added type 0x3b , flags: 0x9, time 1025160, descr "Start of Driver Execution Environment (DXE) and PEI Complete"  [2023-21-04 07:03:10]
+2023-04-21T07:05:35.121611+00:00 (none) bootperf: added type 0x3b , flags: 0x11, time 1026610, descr "End of POST - Boot Device Selection Start"  [2023-21-04 07:05:35]
+2023-04-21T07:05:39.199603+00:00 (none) bootperf: added type 0x3b , flags: 0x14, time 1026650, descr "Control passed to UEFI O/S Loader"  [2023-21-04 07:05:39]
+2023-04-21T07:05:55.549961+00:00 (none) bootperf: added type 0x3b , flags: 0x10, time 1026810, descr "SMBIOS tables ready"  [2023-21-04 07:05:55]
+2023-04-21T07:07:17.438517+00:00 (none) bootperf: added type 0x3b , flags: 0x18, time 1027630, descr "Legacy O/S boot"  [2023-21-04 07:07:17]
+2023-04-21T22:15:03.623377+00:00 (none) bootperf: added type 0x3b , flags: 0x7, time 1572290, descr "POST Started = Start of Pre-EFI (PEI)"  [2023-21-04 22:15:03]
+2023-04-21T22:18:40.326905+00:00 (none) bootperf: added type 0x3b , flags: 0x7, time 1574460, descr "POST Started = Start of Pre-EFI (PEI)"  [2023-21-04 22:18:40]
+2023-04-21T22:18:45.159282+00:00 (none) bootperf: added type 0x3b , flags: 0x8, time 1574510, descr "Starting Memory Initialization"  [2023-21-04 22:18:45]
+2023-04-21T22:18:57.728795+00:00 (none) bootperf: added type 0x3b , flags: 0x7, time 1574630, descr "POST Started = Start of Pre-EFI (PEI)"  [2023-21-04 22:18:57]
+2023-04-21T22:19:02.436627+00:00 (none) bootperf: added type 0x3b , flags: 0x8, time 1574680, descr "Starting Memory Initialization"  [2023-21-04 22:19:02]
+2023-04-21T22:21:33.012450+00:00 (none) bootperf: added type 0x3b , flags: 0x9, time 1576190, descr "Start of Driver Execution Environment (DXE) and PEI Complete"  [2023-21-04 22:21:33]
+2023-04-21T22:23:58.154262+00:00 (none) bootperf: added type 0x3b , flags: 0x11, time 1577640, descr "End of POST - Boot Device Selection Start"  [2023-21-04 22:23:58]
+2023-04-21T22:24:02.548803+00:00 (none) bootperf: added type 0x3b , flags: 0x14, time 1577680, descr "Control passed to UEFI O/S Loader"  [2023-21-04 22:24:02]
+2023-04-21T22:24:19.610539+00:00 (none) bootperf: added type 0x3b , flags: 0x14, time 1577850, descr "Control passed to UEFI O/S Loader"  [2023-21-04 22:24:19]
+2023-04-21T22:25:42.383958+00:00 (none) bootperf: added type 0x3b , flags: 0x18, time 1578680, descr "Legacy O/S boot"  [2023-21-04 22:25:42]

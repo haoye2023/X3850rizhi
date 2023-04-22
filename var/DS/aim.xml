@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet type="text/xsl" href="setup.xsl" ?>
+<inventories ID="UEFI" type="update_template" schema-version="3.00" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:setup.xsd">
+<config ID="AVAGOMegaRAIDInventoryDataProvider-070" versionid="24.12.0-0024">
+<name>AVAGO MegaRAID Inventory Data Provider</name>
+<mriName>AVAGOMegaRAIDInventoryDataProvider-070</mriName>
+<pfa>
+<segment>0</segment>
+<bus>7</bus>
+<device>0</device>
+<function>0</function>
+</pfa>
+<desc><![CDATA[]]></desc>
+<group ID="F0385">
+<name>PCI Generic Information</name>
+<mriName>PCIGenericInformation</mriName>
+<setting ID="QD801" access="readonly">
+<name>UUID</name>
+<mriName>UUID</mriName>
+<text_data minchars="32" maxchars="32" default="">
+<instance>0000000000000000500605B00BD778B0</instance>
+</text_data>
+<desc><![CDATA[]]></desc>
+</setting>
+<setting ID="QD802" access="readonly">
+<name>Card Name</name>
+<mriName>CardName</mriName>
+<text_data minchars="1" maxchars="96" default="">
+<instance>ServeRAID M5210</instance>
+</text_data>
+<desc><![CDATA[]]></desc>
+</setting>
+<setting ID="QD803" access="readonly">
+<name>Manufacturer</name>
+<mriName>Manufacturer</mriName>
+<text_data minchars="1" maxchars="24" default="">
+<instance>IBM</instance>
+</text_data>
+<desc><![CDATA[]]></desc>
+</setting>
+<setting ID="QD804" access="readonly">
+<name>Serial Number</name>
+<mriName>SerialNumber</mriName>
+<text_data minchars="1" maxchars="12" default="">
+<instance>SK61623827</instance>
+</text_data>
+<desc><![CDATA[]]></desc>
+</setting>
+<setting ID="QD805" access="readonly">
+<name>Part Number</name>
+<mriName>PartNumber</mriName>
+<text_data minchars="1" maxchars="12" default="">
+<instance>N/A</instance>
+</text_data>
+<desc><![CDATA[]]></desc>
+</setting>
+<setting ID="QD806" access="readonly">
+<name>Model</name>
+<mriName>Model</mriName>
+<text_data minchars="1" maxchars="12" default="">
+<instance>M5210</instance>
+</text_data>
+<desc><![CDATA[]]></desc>
+</setting>
+<setting ID="QD807" access="readonly">
+<name>Card SKU</name>
+<mriName>CardSKU</mriName>
+<text_data minchars="1" maxchars="12" default="">
+<instance>N/A</instance>
+</text_data>
+<desc><![CDATA[]]></desc>
+</setting>
+<setting ID="QD808" access="readonly">
+<name>FoD UID</name>
+<mriName>FoDUID</mriName>
+<text_data minchars="3" maxchars="32" default="">
+<instance>N/A</instance>
+</text_data>
+<desc><![CDATA[]]></desc>
+</setting>
+<setting ID="QD809" access="readonly">
+<name>Max Data Width</name>
+<mriName>MaxDataWidth</mriName>
+<numeric_data min="0" max="65535" step="1" default="0">
+<instance>8</instance>
+</numeric_data>
+<desc><![CDATA[]]></desc>
+</setting>
+<setting ID="QD80A" access="readonly">
+<name>Connector Layout</name>
+<mriName>ConnectorLayout</mriName>
+<enumerate_data>
+<choice>
+<label>FlexSystem Mezzanine Connector</label>
+<value>32768</value>
+</choice>
+<choice>
+<label>Onboard</label>
+<value>32772</value>
+</choice>
+<choice>
+<label>Unknown</label>
+<value>0</value>
+<instance />
+</choice>
+</enumerate_data>
+<desc><![CDATA[]]></desc>
+</setting>
+<setting ID="QD80B" access="readonly">
+<name>Package Type</name>
+<mriName>PackageType</mriName>
+<enumerate_data>
+<choice>
+<label>Module/Card</label>
+<value>9</value>
+</choice>
+<choice>
+<label>Onboard</label>
+<value>32768</value>
+</choice>
+<choice>
+<label>Unknown</label>
+<value>0</value>
+<instance />
+</choice>
+</enumerate_data>
+<desc><![CDATA[]]></desc>
+</setting>
+<setting ID="QD80C" access="readonly">
+<name>Other Package Type</name>
+<mriName>OtherPackageType</mriName>
+<text_data minchars="1" maxchars="64" default="">
+<instance>N/A</instance>
+</text_data>
+<desc><![CDATA[]]></desc>
+</setting>
+<setting ID="QD80D" access="readonly">
+<name>AIM Spec Version</name>
+<mriName>AIMSpecVersion</mriName>
+<text_data minchars="3" maxchars="4" default="">
+<instance>1.24</instance>
+</text_data>
+<desc><![CDATA[]]></desc>
+</setting>
+<group ID="F0386" suppress-if="false">
+<name>Firmware Information</name>
+<mriName>FirmwareInformation</mriName>
+<setting ID="QD881" access="readonly">
+<name>Firmware Name</name>
+<mriName>FirmwareName</mriName>
+<text_data minchars="7" maxchars="32" default="">
+<instance>MegaRAID Controller Firmware</instance>
+</text_data>
+<desc><![CDATA[]]></desc>
+</setting>
+<setting ID="QD882" access="readonly">
+<name>Version String</name>
+<mriName>VersionString</mriName>
+<text_data minchars="7" maxchars="19" default="">
+<instance>24.12.0-0024</instance>
+</text_data>
+<desc><![CDATA[]]></desc>
+</setting>
+<setting ID="QD883" access="readonly">
+<name>Description</name>
+<mriName>Description</mriName>
+<text_data minchars="1" maxchars="96" default="">
+<instance>Firmware package containing controller firmware, UEFI Driver, and other sub components.</instance>
+</text_data>
+<desc><![CDATA[]]></desc>
+</setting>
+<setting ID="QD884" access="readonly">
+<name>Release Date</name>
+<mriName>ReleaseDate</mriName>
+<text_data minchars="0" maxchars="10" default="">
+<instance>02/08/2016</instance>
+</text_data>
+<desc><![CDATA[]]></desc>
+</setting>
+<setting ID="QD885" access="readonly">
+<name>Manufacturer</name>
+<mriName>Manufacturer</mriName>
+<text_data minchars="1" maxchars="24" default="">
+<instance>AVAGO Technologies</instance>
+</text_data>
+<desc><![CDATA[]]></desc>
+</setting>
+<setting ID="QD886" access="readonly">
+<name>Classification</name>
+<mriName>Classification</mriName>
+<enumerate_data>
+<choice>
+<label>Software Bundle</label>
+<value>13</value>
+<instance />
+</choice>
+</enumerate_data>
+<desc><![CDATA[]]></desc>
+</setting>
+<setting ID="QD887" access="readonly">
+<name>Software ID</name>
+<mriName>SoftwareID</mriName>
+<text_data minchars="8" maxchars="8" default="">
+<instance>10140454</instance>
+</text_data>
+<desc><![CDATA[]]></desc>
+</setting>
+</group>
+</group>
+</config>
+</inventories>

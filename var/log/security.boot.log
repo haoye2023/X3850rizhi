@@ -1,0 +1,1980 @@
+[1999/11/30 00:00:23] Security mode: NORMAL
+[1999/11/30 00:00:23] Reset reason: bp=0 eph=0 rs=0001 rs2=00
+[1999/11/30 00:00:23] Boot partition: 2
+[1999/11/30 00:00:23] Stay in current boot partition on failure (1)
+[1999/11/30 00:00:23] Tuning kernel security values.
+[1999/11/30 00:00:23]  > Done
+[1999/11/30 00:00:23] Enabling hardware entropy collection.
+[1999/11/30 00:00:24] Enabling firewall watchdog + daemon.
+[1999/11/30 00:00:25] Trusted image buildid TCOO10P
+[1999/11/30 00:00:25] Trusted image buildversion 1.80
+[1999/11/30 00:00:26] Begin to verify rtfs md5
+[1999/11/30 00:00:27] Finish rtfs md5, checked 2 files, skip 0 files
+[1999/11/30 00:00:27] rtfs check finished
+[1999/11/30 00:00:27] RTMM device supported.
+[1999/11/30 00:00:27] Found Andromeda PASS-9 hardware
+[1999/11/30 00:00:29] RTMM update not needed.
+[1999/11/30 00:00:29] FPGA device support.
+[1999/11/30 00:00:29] Attempting to flash system SYS-FPGA image.
+[1999/11/30 00:01:13] SYS-FPGA image successfully updated.
+[1999/11/30 00:01:13] Checking if any CRTM transitions are needed.
+[1999/11/30 00:01:13] Both transitions already completed. (CCSI)
+[1999/11/30 00:01:13] SPITOC format ready
+[1999/11/30 00:01:14] Current CRTM is 3.3
+[1999/11/30 00:01:14] Stepping not required
+[1999/11/30 00:01:14] Checking if Primary UBoot needs updating.
+[1999/11/30 00:01:15] Primary UBoot already updated.
+[1999/11/30 00:01:15] Checking if Backup UBoot needs updating.
+[1999/11/30 00:01:16] Backup UBoot already updated.
+[1999/11/30 00:01:16] Platform [0050001A] doesn't support Snoopy hardware
+[1999/11/30 00:01:16] Phase1 lock latch : Lock RTMM/FPGA done.
+[1999/11/30 00:01:16] Activate baseline firewall.
+[1999/11/30 00:01:17] Create certs database.
+[1999/11/30 00:01:18] Removing old IP addresses from certs db.
+[1999/11/30 00:01:18] sifs: Begin simulated provisioning.
+[1999/11/30 00:01:19] sifs: database version changed from 0 to 5.
+[1999/11/30 00:01:20] Disabled policies: CMR : 
+[1999/11/30 00:01:20] Disabled policies: PROV: 
+[1999/11/30 00:01:20] Enabled policies :   200 205 210 215 220 230 240 245 710 715 720 730 735 740 745 755 760 765 775 780 785 790 795 800
+[1999/11/30 00:01:25] Enable multiple policy ..done
+[1999/11/30 00:01:25] Protocol Analysis wedge in place.
+[1999/11/30 00:01:25] Locking firewall policy configuration.
+[1999/11/30 00:01:25] Restore original boot partition on success (0x13)
+[1999/11/30 00:05:02] Security mode: NORMAL
+[1999/11/30 00:05:02] Reset reason: bp=0 eph=0 rs=0001 rs2=00
+[1999/11/30 00:05:02] Boot partition: 2
+[1999/11/30 00:05:02] Stay in current boot partition on failure (1)
+[1999/11/30 00:05:02] Tuning kernel security values.
+[1999/11/30 00:05:02]  > Done
+[1999/11/30 00:05:02] Enabling hardware entropy collection.
+[1999/11/30 00:05:02] Enabling firewall watchdog + daemon.
+[1999/11/30 00:05:04] Trusted image buildid TCOO10P
+[1999/11/30 00:05:04] Trusted image buildversion 1.80
+[1999/11/30 00:05:05] Begin to verify rtfs md5
+[1999/11/30 00:05:05] Finish rtfs md5, checked 2 files, skip 0 files
+[1999/11/30 00:05:05] rtfs check finished
+[1999/11/30 00:05:05] RTMM device supported.
+[1999/11/30 00:05:06] Found Andromeda PASS-9 hardware
+[1999/11/30 00:05:07] RTMM update not needed.
+[1999/11/30 00:05:08] Platform RTMM flash failure detected and will try to reflash
+[1999/11/30 00:05:08] Attempting to flash RTMM image.
+[1999/11/30 00:05:21] RTMM image successfully updated.
+[1999/11/30 00:05:21] FPGA device support.
+[1999/11/30 00:05:21] FPGA update not needed.
+[1999/11/30 00:05:21] Checking if any CRTM transitions are needed.
+[1999/11/30 00:05:21] Both transitions already completed. (CCSI)
+[1999/11/30 00:05:21] SPITOC format ready
+[1999/11/30 00:05:21] Current CRTM is 3.3
+[1999/11/30 00:05:21] Stepping not required
+[1999/11/30 00:05:21] Checking if Primary UBoot needs updating.
+[1999/11/30 00:05:21] Primary UBoot already updated.
+[1999/11/30 00:05:21] Checking if Backup UBoot needs updating.
+[1999/11/30 00:05:21] Backup UBoot already updated.
+[1999/11/30 00:05:22] Platform [0050001A] doesn't support Snoopy hardware
+[1999/11/30 00:05:22] Phase1 lock latch : Lock RTMM/FPGA done.
+[1999/11/30 00:05:22] Activate baseline firewall.
+[1999/11/30 00:05:24] Removing old IP addresses from certs db.
+[1999/11/30 00:05:24] sifs: Begin simulated provisioning.
+[1999/11/30 00:05:25] Disabled policies: CMR : 
+[1999/11/30 00:05:25] Disabled policies: PROV: 
+[1999/11/30 00:05:25] Enabled policies :   200 205 210 215 220 230 240 245 710 715 720 730 735 740 745 755 760 765 775 780 785 790 795 800
+[1999/11/30 00:05:30] Enable multiple policy ..done
+[1999/11/30 00:05:30] Protocol Analysis wedge in place.
+[1999/11/30 00:05:31] Locking firewall policy configuration.
+[1999/11/30 00:05:31] Restore original boot partition on success (0x13)
+[1999/12/02 00:02:49] Security mode: NORMAL
+[1999/12/02 00:02:50] Reset reason: bp=0 eph=0 rs=0001 rs2=00
+[1999/12/02 00:02:50] Boot partition: 2
+[1999/12/02 00:02:50] Stay in current boot partition on failure (1)
+[1999/12/02 00:02:50] Tuning kernel security values.
+[1999/12/02 00:02:50]  > Done
+[1999/12/02 00:02:50] Enabling hardware entropy collection.
+[1999/12/02 00:02:50] Enabling firewall watchdog + daemon.
+[1999/12/02 00:02:51] Trusted image buildid TCOO10P
+[1999/12/02 00:02:52] Trusted image buildversion 1.80
+[1999/12/02 00:02:52] Begin to verify rtfs md5
+[1999/12/02 00:02:53] Finish rtfs md5, checked 2 files, skip 0 files
+[1999/12/02 00:02:53] rtfs check finished
+[1999/12/02 00:02:53] RTMM device supported.
+[1999/12/02 00:02:53] Found Andromeda PASS-9 hardware
+[1999/12/02 00:02:55] RTMM update not needed.
+[1999/12/02 00:02:55] FPGA device support.
+[1999/12/02 00:02:56] FPGA update not needed.
+[1999/12/02 00:02:56] Checking if any CRTM transitions are needed.
+[1999/12/02 00:02:56] Both transitions already completed. (CCSI)
+[1999/12/02 00:02:56] SPITOC format ready
+[1999/12/02 00:02:56] Current CRTM is 3.3
+[1999/12/02 00:02:56] Stepping not required
+[1999/12/02 00:02:56] Checking if Primary UBoot needs updating.
+[1999/12/02 00:02:56] Primary UBoot already updated.
+[1999/12/02 00:02:56] Checking if Backup UBoot needs updating.
+[1999/12/02 00:02:56] Backup UBoot already updated.
+[1999/12/02 00:02:56] Platform [0050001A] doesn't support Snoopy hardware
+[1999/12/02 00:02:57] Phase1 lock latch : Lock RTMM/FPGA done.
+[1999/12/02 00:02:57] Activate baseline firewall.
+[1999/12/02 00:02:59] Removing old IP addresses from certs db.
+[1999/12/02 00:02:59] sifs: Begin simulated provisioning.
+[1999/12/02 00:03:00] Disabled policies: CMR : 
+[1999/12/02 00:03:00] Disabled policies: PROV: 
+[1999/12/02 00:03:00] Enabled policies :   200 205 210 215 220 230 240 245 710 715 720 730 735 740 745 755 760 765 775 780 785 790 795 800
+[1999/12/02 00:03:05] Enable multiple policy ..done
+[1999/12/02 00:03:05] Protocol Analysis wedge in place.
+[1999/12/02 00:03:05] Locking firewall policy configuration.
+[1999/12/02 00:03:06] Restore original boot partition on success (0x13)
+[2016/06/26 08:25:09] Security mode: NORMAL
+[2016/06/26 08:25:09] Reset reason: bp=12 eph=0 rs=0100 rs2=03
+[2016/06/26 08:25:09] Boot partition: 2
+[2016/06/26 08:25:09] Stay in current boot partition on failure (1)
+[2016/06/26 08:25:09] Tuning kernel security values.
+[2016/06/26 08:25:09]  > Done
+[2016/06/26 08:25:09] Enabling hardware entropy collection.
+[2016/06/26 08:25:10] Enabling firewall watchdog + daemon.
+[2016/06/26 08:25:11] Trusted image buildid TCOO10P
+[2016/06/26 08:25:12] Trusted image buildversion 1.80
+[2016/06/26 08:25:12] Begin to verify rtfs md5
+[2016/06/26 08:25:13] Finish rtfs md5, checked 2 files, skip 0 files
+[2016/06/26 08:25:13] rtfs check finished
+[2016/06/26 08:25:13] FPGA update supported? 1
+[2016/06/26 08:25:13] RTMM device supported.
+[2016/06/26 08:25:13] Found Andromeda PASS-9 hardware
+[2016/06/26 08:25:14] RTMM update not needed.
+[2016/06/26 08:25:14] FPGA update supported? 1
+[2016/06/26 08:25:14] FPGA device support.
+[2016/06/26 08:25:14] Attempting to flash system SYS-FPGA image.
+[2016/06/26 08:25:47] SYS-FPGA image successfully updated.
+[2016/06/26 08:25:47] Checking if any CRTM transitions are needed.
+[2016/06/26 08:25:47] Both transitions already completed. (CCSI)
+[2016/06/26 08:25:47] SPITOC format ready
+[2016/06/26 08:25:47] Current CRTM is 3.3
+[2016/06/26 08:25:47] Stepping not required
+[2016/06/26 08:25:47] Checking if Primary UBoot needs updating.
+[2016/06/26 08:25:48] Starting UBoot Update Procedure on Primary
+[2016/06/26 08:25:48] Old:U-Boot 2009.06p(May 20 2015 - 23:36:03)
+[2016/06/26 08:25:48] New:U-Boot 2009.06p(Aug 27 2015 - 17:31:27)
+[2016/06/26 08:25:48] Primary Uboot update Step 1: writing image (pass 1)
+[2016/06/26 08:25:53] Primary Uboot update Step 2: verify image (pass 1)
+[2016/06/26 08:25:53] Primary UBoot updated successfully. Scheduling auto-reboot.
+[2016/06/26 08:25:53] Checking if Backup UBoot needs updating.
+[2016/06/26 08:25:54] Starting UBoot Update Procedure on Backup
+[2016/06/26 08:25:54] Old:U-Boot 2009.06p(May 20 2015 - 23:36:03)
+[2016/06/26 08:25:54] New:U-Boot 2009.06p(Aug 27 2015 - 17:31:27)
+[2016/06/26 08:25:54] Backup Uboot update Step 1: writing image (pass 1)
+[2016/06/26 08:25:59] Backup Uboot update Step 2: verify image (pass 1)
+[2016/06/26 08:25:59] Backup UBoot updated successfully.
+[2016/06/26 08:26:00] Platform [0050001A] doesn't support Snoopy hardware
+[2016/06/26 08:26:00] Reboot marker set. Rebooting IMM now.
+[2016/06/26 08:26:25] Security mode: NORMAL
+[2016/06/26 08:26:25] Reset reason: bp=12 eph=0 rs=0080 rs2=00
+[2016/06/26 08:26:25] Boot partition: 2
+[2016/06/26 08:26:25] Stay in current boot partition on failure (2)
+[2016/06/26 08:26:25] Tuning kernel security values.
+[2016/06/26 08:26:25]  > Done
+[2016/06/26 08:26:25] Enabling hardware entropy collection.
+[2016/06/26 08:26:26] Enabling firewall watchdog + daemon.
+[2016/06/26 08:26:27] Trusted image buildid TCOO10P
+[2016/06/26 08:26:27] Trusted image buildversion 1.80
+[2016/06/26 08:26:28] Begin to verify rtfs md5
+[2016/06/26 08:26:28] Finish rtfs md5, checked 2 files, skip 0 files
+[2016/06/26 08:26:28] rtfs check finished
+[2016/06/26 08:26:29] FPGA update supported? 1
+[2016/06/26 08:26:29] RTMM device supported.
+[2016/06/26 08:26:29] Found Andromeda PASS-9 hardware
+[2016/06/26 08:26:29] RTMM update not needed.
+[2016/06/26 08:26:29] FPGA update supported? 1
+[2016/06/26 08:26:29] FPGA device support.
+[2016/06/26 08:26:30] FPGA update not needed.
+[2016/06/26 08:26:30] Checking if any CRTM transitions are needed.
+[2016/06/26 08:26:30] Both transitions already completed. (CCSI)
+[2016/06/26 08:26:30] SPITOC format ready
+[2016/06/26 08:26:30] Current CRTM is 3.3
+[2016/06/26 08:26:30] Stepping not required
+[2016/06/26 08:26:30] Checking if Primary UBoot needs updating.
+[2016/06/26 08:26:31] Primary UBoot already updated.
+[2016/06/26 08:26:31] Checking if Backup UBoot needs updating.
+[2016/06/26 08:26:32] Backup UBoot already updated.
+[2016/06/26 08:26:32] Platform [0050001A] doesn't support Snoopy hardware
+[2016/06/26 08:26:32] Phase1 lock latch : Lock RTMM/FPGA done.
+[2016/06/26 08:26:33] Activate baseline firewall.
+[2016/06/26 08:26:33] calling firetool --init-accesscontrol
+[2016/06/26 08:26:33] calling firetool  --init
+[2016/06/26 08:26:35] Activate baseline firewall done
+[2016/06/26 08:26:35] Removing old IP addresses from certs db.
+[2016/06/26 08:26:36] sifs: Begin simulated provisioning.
+[2016/06/26 08:26:37] Disabled policies: CMR : 
+[2016/06/26 08:26:37] Disabled policies: PROV: 
+[2016/06/26 08:26:37] Enabled policies :   200 205 210 215 220 230 240 245 710 715 720 730 735 740 745 755 760 765 775 780 785 790 795 800
+[2016/06/26 08:26:43] Enable multiple policy ..done
+[2016/06/26 08:26:43] Protocol Analysis wedge in place.
+[2016/06/26 08:26:43] Locking firewall policy configuration.
+[2016/06/26 08:26:43] FPGA update supported? 1
+[2016/06/26 08:26:43] Restore original boot partition on success (0x13)
+[2016/06/26 09:46:35] Security mode: NORMAL
+[2016/06/26 09:46:35] Reset reason: bp=12 eph=0 rs=0080 rs2=00
+[2016/06/26 09:46:35] Boot partition: 2
+[2016/06/26 09:46:35] Stay in current boot partition on failure (1)
+[2016/06/26 09:46:35] Tuning kernel security values.
+[2016/06/26 09:46:35]  > Done
+[2016/06/26 09:46:35] Enabling hardware entropy collection.
+[2016/06/26 09:46:36] Enabling firewall watchdog + daemon.
+[2016/06/26 09:46:37] Trusted image buildid TCOO10P
+[2016/06/26 09:46:37] Trusted image buildversion 1.80
+[2016/06/26 09:46:38] Begin to verify rtfs md5
+[2016/06/26 09:46:39] Finish rtfs md5, checked 2 files, skip 0 files
+[2016/06/26 09:46:39] rtfs check finished
+[2016/06/26 09:46:39] FPGA update supported? 1
+[2016/06/26 09:46:39] RTMM device supported.
+[2016/06/26 09:46:39] Found Andromeda PASS-9 hardware
+[2016/06/26 09:46:39] RTMM update not needed.
+[2016/06/26 09:46:39] FPGA update supported? 1
+[2016/06/26 09:46:40] FPGA device support.
+[2016/06/26 09:46:40] FPGA update not needed.
+[2016/06/26 09:46:40] Checking if any CRTM transitions are needed.
+[2016/06/26 09:46:40] Both transitions already completed. (CCSI)
+[2016/06/26 09:46:40] SPITOC format ready
+[2016/06/26 09:46:40] Current CRTM is 3.3
+[2016/06/26 09:46:40] Stepping not required
+[2016/06/26 09:46:40] Checking if Primary UBoot needs updating.
+[2016/06/26 09:46:40] Primary UBoot already updated.
+[2016/06/26 09:46:40] Checking if Backup UBoot needs updating.
+[2016/06/26 09:46:41] Backup UBoot already updated.
+[2016/06/26 09:46:41] Platform [0050001A] doesn't support Snoopy hardware
+[2016/06/26 09:46:41] Phase1 lock latch : Lock RTMM/FPGA done.
+[2016/06/26 09:46:41] Activate baseline firewall.
+[2016/06/26 09:46:41] calling firetool --init-accesscontrol
+[2016/06/26 09:46:42] calling firetool  --init
+[2016/06/26 09:46:43] Activate baseline firewall done
+[2016/06/26 09:46:44] Create certs database.
+[2016/06/26 09:46:44] Removing old IP addresses from certs db.
+[2016/06/26 09:46:44] sifs: Begin simulated provisioning.
+[2016/06/26 09:46:45] sifs: database version changed from 0 to 5.
+[2016/06/26 09:46:46] Disabled policies: CMR : 
+[2016/06/26 09:46:46] Disabled policies: PROV: 
+[2016/06/26 09:46:46] Enabled policies :   200 205 210 215 220 230 240 245 710 715 720 730 735 740 745 755 760 765 775 780 785 790 795 800
+[2016/06/26 09:46:52] Enable multiple policy ..done
+[2016/06/26 09:46:52] Protocol Analysis wedge in place.
+[2016/06/26 09:46:52] Locking firewall policy configuration.
+[2016/06/26 09:46:53] FPGA update supported? 1
+[2016/06/26 09:46:53] Restore original boot partition on success (0x13)
+[2016/06/26 10:44:38] Security mode: NORMAL
+[2016/06/26 10:44:38] Reset reason: bp=0 eph=0 rs=0001 rs2=00
+[2016/06/26 10:44:38] Boot partition: 2
+[2016/06/26 10:44:39] Stay in current boot partition on failure (1)
+[2016/06/26 10:44:39] Tuning kernel security values.
+[2016/06/26 10:44:39]  > Done
+[2016/06/26 10:44:39] Enabling hardware entropy collection.
+[2016/06/26 10:44:39] Running PostEPO.
+[2016/06/26 10:44:40] Enabling firewall watchdog + daemon.
+[2016/06/26 10:44:41] Trusted image buildid TCOO10P
+[2016/06/26 10:44:41] Trusted image buildversion 1.80
+[2016/06/26 10:44:42] Begin to verify rtfs md5
+[2016/06/26 10:44:42] Finish rtfs md5, checked 2 files, skip 0 files
+[2016/06/26 10:44:42] rtfs check finished
+[2016/06/26 10:44:42] FPGA update supported? 1
+[2016/06/26 10:44:43] RTMM device supported.
+[2016/06/26 10:44:43] Found Andromeda PASS-9 hardware
+[2016/06/26 10:44:45] RTMM update not needed.
+[2016/06/26 10:44:45] FPGA update supported? 1
+[2016/06/26 10:44:45] FPGA device support.
+[2016/06/26 10:44:45] FPGA update not needed.
+[2016/06/26 10:44:45] Checking if any CRTM transitions are needed.
+[2016/06/26 10:44:45] Both transitions already completed. (CCSI)
+[2016/06/26 10:44:45] SPITOC format ready
+[2016/06/26 10:44:46] Current CRTM is 3.3
+[2016/06/26 10:44:46] Stepping not required
+[2016/06/26 10:44:46] Checking if Primary UBoot needs updating.
+[2016/06/26 10:44:46] Primary UBoot already updated.
+[2016/06/26 10:44:46] Checking if Backup UBoot needs updating.
+[2016/06/26 10:44:46] Backup UBoot already updated.
+[2016/06/26 10:44:46] Platform [0050001A] doesn't support Snoopy hardware
+[2016/06/26 10:44:46] Phase1 lock latch : Lock RTMM/FPGA done.
+[2016/06/26 10:44:46] Activate baseline firewall.
+[2016/06/26 10:44:46] calling firetool --init-accesscontrol
+[2016/06/26 10:44:47] calling firetool  --init
+[2016/06/26 10:44:48] Activate baseline firewall done
+[2016/06/26 10:44:49] Removing old IP addresses from certs db.
+[2016/06/26 10:44:49] sifs: Begin simulated provisioning.
+[2016/06/26 10:44:50] Disabled policies: CMR : 
+[2016/06/26 10:44:50] Disabled policies: PROV: 
+[2016/06/26 10:44:50] Enabled policies :   200 205 210 215 220 230 240 245 710 715 720 730 735 740 745 755 760 765 775 780 785 790 795 800
+[2016/06/26 10:44:55] Enable multiple policy ..done
+[2016/06/26 10:44:55] Protocol Analysis wedge in place.
+[2016/06/26 10:44:56] Locking firewall policy configuration.
+[2016/06/26 10:44:56] FPGA update supported? 1
+[2016/06/26 10:44:56] Restore original boot partition on success (0x13)
+[2016/06/26 10:56:48] Security mode: NORMAL
+[2016/06/26 10:56:49] Reset reason: bp=0 eph=0 rs=0001 rs2=00
+[2016/06/26 10:56:49] Boot partition: 2
+[2016/06/26 10:56:49] Stay in current boot partition on failure (1)
+[2016/06/26 10:56:49] Tuning kernel security values.
+[2016/06/26 10:56:49]  > Done
+[2016/06/26 10:56:49] Enabling hardware entropy collection.
+[2016/06/26 10:56:49] Running PostEPO.
+[2016/06/26 10:56:50] Enabling firewall watchdog + daemon.
+[2016/06/26 10:56:52] Trusted image buildid TCOO10P
+[2016/06/26 10:56:52] Trusted image buildversion 1.80
+[2016/06/26 10:56:52] Begin to verify rtfs md5
+[2016/06/26 10:56:52] Finish rtfs md5, checked 2 files, skip 0 files
+[2016/06/26 10:56:53] rtfs check finished
+[2016/06/26 10:56:53] FPGA update supported? 1
+[2016/06/26 10:56:53] RTMM device supported.
+[2016/06/26 10:56:53] Found Andromeda PASS-9 hardware
+[2016/06/26 10:56:55] RTMM update not needed.
+[2016/06/26 10:56:55] FPGA update supported? 1
+[2016/06/26 10:56:55] FPGA device support.
+[2016/06/26 10:56:55] FPGA update not needed.
+[2016/06/26 10:56:55] Checking if any CRTM transitions are needed.
+[2016/06/26 10:56:55] Both transitions already completed. (CCSI)
+[2016/06/26 10:56:55] SPITOC format ready
+[2016/06/26 10:56:56] Current CRTM is 3.3
+[2016/06/26 10:56:56] Stepping not required
+[2016/06/26 10:56:56] Checking if Primary UBoot needs updating.
+[2016/06/26 10:56:56] Primary UBoot already updated.
+[2016/06/26 10:56:56] Checking if Backup UBoot needs updating.
+[2016/06/26 10:56:56] Backup UBoot already updated.
+[2016/06/26 10:56:56] Platform [0050001A] doesn't support Snoopy hardware
+[2016/06/26 10:56:56] Phase1 lock latch : Lock RTMM/FPGA done.
+[2016/06/26 10:56:56] Activate baseline firewall.
+[2016/06/26 10:56:56] calling firetool --init-accesscontrol
+[2016/06/26 10:56:57] calling firetool  --init
+[2016/06/26 10:56:58] Activate baseline firewall done
+[2016/06/26 10:56:59] Removing old IP addresses from certs db.
+[2016/06/26 10:56:59] sifs: Begin simulated provisioning.
+[2016/06/26 10:57:00] Disabled policies: CMR : 
+[2016/06/26 10:57:00] Disabled policies: PROV: 
+[2016/06/26 10:57:01] Enabled policies :   200 205 210 215 220 230 240 245 710 715 720 730 735 740 745 755 760 765 775 780 785 790 795 800
+[2016/06/26 10:57:06] Enable multiple policy ..done
+[2016/06/26 10:57:06] Protocol Analysis wedge in place.
+[2016/06/26 10:57:06] Locking firewall policy configuration.
+[2016/06/26 10:57:06] FPGA update supported? 1
+[2016/06/26 10:57:06] Restore original boot partition on success (0x13)
+[2016/06/26 11:08:53] Security mode: NORMAL
+[2016/06/26 11:08:53] Reset reason: bp=0 eph=0 rs=0001 rs2=00
+[2016/06/26 11:08:53] Boot partition: 2
+[2016/06/26 11:08:54] Stay in current boot partition on failure (1)
+[2016/06/26 11:08:54] Tuning kernel security values.
+[2016/06/26 11:08:54]  > Done
+[2016/06/26 11:08:54] Enabling hardware entropy collection.
+[2016/06/26 11:08:54] Running PostEPO.
+[2016/06/26 11:08:55] Enabling firewall watchdog + daemon.
+[2016/06/26 11:08:56] Trusted image buildid TCOO10P
+[2016/06/26 11:08:57] Trusted image buildversion 1.80
+[2016/06/26 11:08:57] Begin to verify rtfs md5
+[2016/06/26 11:08:57] Finish rtfs md5, checked 2 files, skip 0 files
+[2016/06/26 11:08:57] rtfs check finished
+[2016/06/26 11:08:58] FPGA update supported? 1
+[2016/06/26 11:08:58] RTMM device supported.
+[2016/06/26 11:08:58] Found Andromeda PASS-9 hardware
+[2016/06/26 11:09:00] RTMM update not needed.
+[2016/06/26 11:09:00] FPGA update supported? 1
+[2016/06/26 11:09:00] FPGA device support.
+[2016/06/26 11:09:00] FPGA update not needed.
+[2016/06/26 11:09:00] Checking if any CRTM transitions are needed.
+[2016/06/26 11:09:00] Both transitions already completed. (CCSI)
+[2016/06/26 11:09:00] SPITOC format ready
+[2016/06/26 11:09:01] Current CRTM is 3.3
+[2016/06/26 11:09:01] Stepping not required
+[2016/06/26 11:09:01] Checking if Primary UBoot needs updating.
+[2016/06/26 11:09:01] Primary UBoot already updated.
+[2016/06/26 11:09:01] Checking if Backup UBoot needs updating.
+[2016/06/26 11:09:01] Backup UBoot already updated.
+[2016/06/26 11:09:01] Platform [0050001A] doesn't support Snoopy hardware
+[2016/06/26 11:09:01] Phase1 lock latch : Lock RTMM/FPGA done.
+[2016/06/26 11:09:01] Activate baseline firewall.
+[2016/06/26 11:09:01] calling firetool --init-accesscontrol
+[2016/06/26 11:09:02] calling firetool  --init
+[2016/06/26 11:09:03] Activate baseline firewall done
+[2016/06/26 11:09:04] Removing old IP addresses from certs db.
+[2016/06/26 11:09:04] sifs: Begin simulated provisioning.
+[2016/06/26 11:09:05] Disabled policies: CMR : 
+[2016/06/26 11:09:05] Disabled policies: PROV: 
+[2016/06/26 11:09:05] Enabled policies :   200 205 210 215 220 230 240 245 710 715 720 730 735 740 745 755 760 765 775 780 785 790 795 800
+[2016/06/26 11:09:11] Enable multiple policy ..done
+[2016/06/26 11:09:11] Protocol Analysis wedge in place.
+[2016/06/26 11:09:11] Locking firewall policy configuration.
+[2016/06/26 11:09:11] FPGA update supported? 1
+[2016/06/26 11:09:11] Restore original boot partition on success (0x13)
+[2016/06/26 11:21:00] Security mode: NORMAL
+[2016/06/26 11:21:00] Reset reason: bp=0 eph=0 rs=0001 rs2=00
+[2016/06/26 11:21:00] Boot partition: 2
+[2016/06/26 11:21:01] Stay in current boot partition on failure (1)
+[2016/06/26 11:21:01] Tuning kernel security values.
+[2016/06/26 11:21:01]  > Done
+[2016/06/26 11:21:01] Enabling hardware entropy collection.
+[2016/06/26 11:21:01] Running PostEPO.
+[2016/06/26 11:21:02] Enabling firewall watchdog + daemon.
+[2016/06/26 11:21:03] Trusted image buildid TCOO10P
+[2016/06/26 11:21:04] Trusted image buildversion 1.80
+[2016/06/26 11:21:04] Begin to verify rtfs md5
+[2016/06/26 11:21:04] Finish rtfs md5, checked 2 files, skip 0 files
+[2016/06/26 11:21:04] rtfs check finished
+[2016/06/26 11:21:05] FPGA update supported? 1
+[2016/06/26 11:21:05] RTMM device supported.
+[2016/06/26 11:21:05] Found Andromeda PASS-9 hardware
+[2016/06/26 11:21:07] RTMM update not needed.
+[2016/06/26 11:21:07] FPGA update supported? 1
+[2016/06/26 11:21:07] FPGA device support.
+[2016/06/26 11:21:07] FPGA update not needed.
+[2016/06/26 11:21:07] Checking if any CRTM transitions are needed.
+[2016/06/26 11:21:07] Both transitions already completed. (CCSI)
+[2016/06/26 11:21:07] SPITOC format ready
+[2016/06/26 11:21:08] Current CRTM is 3.3
+[2016/06/26 11:21:08] Stepping not required
+[2016/06/26 11:21:08] Checking if Primary UBoot needs updating.
+[2016/06/26 11:21:08] Primary UBoot already updated.
+[2016/06/26 11:21:08] Checking if Backup UBoot needs updating.
+[2016/06/26 11:21:08] Backup UBoot already updated.
+[2016/06/26 11:21:08] Platform [0050001A] doesn't support Snoopy hardware
+[2016/06/26 11:21:08] Phase1 lock latch : Lock RTMM/FPGA done.
+[2016/06/26 11:21:08] Activate baseline firewall.
+[2016/06/26 11:21:08] calling firetool --init-accesscontrol
+[2016/06/26 11:21:09] calling firetool  --init
+[2016/06/26 11:21:10] Activate baseline firewall done
+[2016/06/26 11:21:11] Removing old IP addresses from certs db.
+[2016/06/26 11:21:11] sifs: Begin simulated provisioning.
+[2016/06/26 11:21:12] Disabled policies: CMR : 
+[2016/06/26 11:21:12] Disabled policies: PROV: 
+[2016/06/26 11:21:12] Enabled policies :   200 205 210 215 220 230 240 245 710 715 720 730 735 740 745 755 760 765 775 780 785 790 795 800
+[2016/06/26 11:21:18] Enable multiple policy ..done
+[2016/06/26 11:21:18] Protocol Analysis wedge in place.
+[2016/06/26 11:21:18] Locking firewall policy configuration.
+[2016/06/26 11:21:18] FPGA update supported? 1
+[2016/06/26 11:21:18] Restore original boot partition on success (0x13)
+[2016/07/29 11:40:43] Security mode: NORMAL
+[2016/07/29 11:40:44] Reset reason: bp=0 eph=0 rs=0001 rs2=00
+[2016/07/29 11:40:44] Boot partition: 2
+[2016/07/29 11:40:44] Stay in current boot partition on failure (1)
+[2016/07/29 11:40:44] Tuning kernel security values.
+[2016/07/29 11:40:44]  > Done
+[2016/07/29 11:40:44] Enabling hardware entropy collection.
+[2016/07/29 11:40:44] Running PostEPO.
+[2016/07/29 11:40:45] Enabling firewall watchdog + daemon.
+[2016/07/29 11:40:47] Trusted image buildid TCOO10P
+[2016/07/29 11:40:47] Trusted image buildversion 1.80
+[2016/07/29 11:40:47] Begin to verify rtfs md5
+[2016/07/29 11:40:47] Finish rtfs md5, checked 2 files, skip 0 files
+[2016/07/29 11:40:48] rtfs check finished
+[2016/07/29 11:40:48] FPGA update supported? 1
+[2016/07/29 11:40:48] RTMM device supported.
+[2016/07/29 11:40:48] Found Andromeda PASS-9 hardware
+[2016/07/29 11:40:50] RTMM update not needed.
+[2016/07/29 11:40:50] FPGA update supported? 1
+[2016/07/29 11:40:50] FPGA device support.
+[2016/07/29 11:40:50] FPGA update not needed.
+[2016/07/29 11:40:50] Checking if any CRTM transitions are needed.
+[2016/07/29 11:40:50] Both transitions already completed. (CCSI)
+[2016/07/29 11:40:50] SPITOC format ready
+[2016/07/29 11:40:51] Current CRTM is 3.3
+[2016/07/29 11:40:51] Stepping not required
+[2016/07/29 11:40:51] Checking if Primary UBoot needs updating.
+[2016/07/29 11:40:51] Primary UBoot already updated.
+[2016/07/29 11:40:51] Checking if Backup UBoot needs updating.
+[2016/07/29 11:40:51] Backup UBoot already updated.
+[2016/07/29 11:40:51] Platform [0050001A] doesn't support Snoopy hardware
+[2016/07/29 11:40:51] Phase1 lock latch : Lock RTMM/FPGA done.
+[2016/07/29 11:40:51] Activate baseline firewall.
+[2016/07/29 11:40:51] calling firetool --init-accesscontrol
+[2016/07/29 11:40:52] calling firetool  --init
+[2016/07/29 11:40:53] Activate baseline firewall done
+[2016/07/29 11:40:54] Removing old IP addresses from certs db.
+[2016/07/29 11:40:54] sifs: Begin simulated provisioning.
+[2016/07/29 11:40:55] Disabled policies: CMR : 
+[2016/07/29 11:40:55] Disabled policies: PROV: 
+[2016/07/29 11:40:55] Enabled policies :   200 205 210 215 220 230 240 245 710 715 720 730 735 740 745 755 760 765 775 780 785 790 795 800
+[2016/07/29 11:41:01] Enable multiple policy ..done
+[2016/07/29 11:41:01] Protocol Analysis wedge in place.
+[2016/07/29 11:41:01] Locking firewall policy configuration.
+[2016/07/29 11:41:01] FPGA update supported? 1
+[2016/07/29 11:41:01] Restore original boot partition on success (0x13)
+[2016/07/29 13:15:31] Security mode: NORMAL
+[2016/07/29 13:15:31] Reset reason: bp=0 eph=0 rs=0001 rs2=00
+[2016/07/29 13:15:31] Boot partition: 2
+[2016/07/29 13:15:31] Stay in current boot partition on failure (1)
+[2016/07/29 13:15:32] Tuning kernel security values.
+[2016/07/29 13:15:32]  > Done
+[2016/07/29 13:15:32] Enabling hardware entropy collection.
+[2016/07/29 13:15:32] Running PostEPO.
+[2016/07/29 13:15:33] Enabling firewall watchdog + daemon.
+[2016/07/29 13:15:34] Trusted image buildid TCOO10P
+[2016/07/29 13:15:34] Trusted image buildversion 1.80
+[2016/07/29 13:15:35] Begin to verify rtfs md5
+[2016/07/29 13:15:35] Finish rtfs md5, checked 2 files, skip 0 files
+[2016/07/29 13:15:35] rtfs check finished
+[2016/07/29 13:15:35] FPGA update supported? 1
+[2016/07/29 13:15:36] RTMM device supported.
+[2016/07/29 13:15:36] Found Andromeda PASS-9 hardware
+[2016/07/29 13:15:38] RTMM update not needed.
+[2016/07/29 13:15:38] FPGA update supported? 1
+[2016/07/29 13:15:38] FPGA device support.
+[2016/07/29 13:15:38] FPGA update not needed.
+[2016/07/29 13:15:38] Checking if any CRTM transitions are needed.
+[2016/07/29 13:15:38] Both transitions already completed. (CCSI)
+[2016/07/29 13:15:38] SPITOC format ready
+[2016/07/29 13:15:38] Current CRTM is 3.3
+[2016/07/29 13:15:39] Stepping not required
+[2016/07/29 13:15:39] Checking if Primary UBoot needs updating.
+[2016/07/29 13:15:39] Primary UBoot already updated.
+[2016/07/29 13:15:39] Checking if Backup UBoot needs updating.
+[2016/07/29 13:15:39] Backup UBoot already updated.
+[2016/07/29 13:15:39] Platform [0050001A] doesn't support Snoopy hardware
+[2016/07/29 13:15:39] Phase1 lock latch : Lock RTMM/FPGA done.
+[2016/07/29 13:15:39] Activate baseline firewall.
+[2016/07/29 13:15:39] calling firetool --init-accesscontrol
+[2016/07/29 13:15:40] calling firetool  --init
+[2016/07/29 13:15:41] Activate baseline firewall done
+[2016/07/29 13:15:42] Removing old IP addresses from certs db.
+[2016/07/29 13:15:42] sifs: Begin simulated provisioning.
+[2016/07/29 13:15:43] Disabled policies: CMR : 
+[2016/07/29 13:15:43] Disabled policies: PROV: 
+[2016/07/29 13:15:43] Enabled policies :   200 205 210 215 220 230 240 245 710 715 720 730 735 740 745 755 760 765 775 780 785 790 795 800
+[2016/07/29 13:15:48] Enable multiple policy ..done
+[2016/07/29 13:15:48] Protocol Analysis wedge in place.
+[2016/07/29 13:15:49] Locking firewall policy configuration.
+[2016/07/29 13:15:49] FPGA update supported? 1
+[2016/07/29 13:15:49] Restore original boot partition on success (0x13)
+[2016/07/29 13:29:23] Security mode: NORMAL
+[2016/07/29 13:29:23] Reset reason: bp=0 eph=0 rs=0001 rs2=00
+[2016/07/29 13:29:23] Boot partition: 2
+[2016/07/29 13:29:23] Stay in current boot partition on failure (1)
+[2016/07/29 13:29:24] Tuning kernel security values.
+[2016/07/29 13:29:24]  > Done
+[2016/07/29 13:29:24] Enabling hardware entropy collection.
+[2016/07/29 13:29:24] Running PostEPO.
+[2016/07/29 13:29:25] Enabling firewall watchdog + daemon.
+[2016/07/29 13:29:26] Trusted image buildid TCOO10P
+[2016/07/29 13:29:26] Trusted image buildversion 1.80
+[2016/07/29 13:29:27] Begin to verify rtfs md5
+[2016/07/29 13:29:27] Finish rtfs md5, checked 2 files, skip 0 files
+[2016/07/29 13:29:27] rtfs check finished
+[2016/07/29 13:29:27] FPGA update supported? 1
+[2016/07/29 13:29:28] RTMM device supported.
+[2016/07/29 13:29:28] Found Andromeda PASS-9 hardware
+[2016/07/29 13:29:30] RTMM update not needed.
+[2016/07/29 13:29:30] FPGA update supported? 1
+[2016/07/29 13:29:30] FPGA device support.
+[2016/07/29 13:29:30] FPGA update not needed.
+[2016/07/29 13:29:30] Checking if any CRTM transitions are needed.
+[2016/07/29 13:29:30] Both transitions already completed. (CCSI)
+[2016/07/29 13:29:30] SPITOC format ready
+[2016/07/29 13:29:30] Current CRTM is 3.3
+[2016/07/29 13:29:31] Stepping not required
+[2016/07/29 13:29:31] Checking if Primary UBoot needs updating.
+[2016/07/29 13:29:31] Primary UBoot already updated.
+[2016/07/29 13:29:31] Checking if Backup UBoot needs updating.
+[2016/07/29 13:29:31] Backup UBoot already updated.
+[2016/07/29 13:29:31] Platform [0050001A] doesn't support Snoopy hardware
+[2016/07/29 13:29:31] Phase1 lock latch : Lock RTMM/FPGA done.
+[2016/07/29 13:29:31] Activate baseline firewall.
+[2016/07/29 13:29:31] calling firetool --init-accesscontrol
+[2016/07/29 13:29:32] calling firetool  --init
+[2016/07/29 13:29:33] Activate baseline firewall done
+[2016/07/29 13:29:34] Removing old IP addresses from certs db.
+[2016/07/29 13:29:34] sifs: Begin simulated provisioning.
+[2016/07/29 13:29:35] Disabled policies: CMR : 
+[2016/07/29 13:29:35] Disabled policies: PROV: 
+[2016/07/29 13:29:35] Enabled policies :   200 205 210 215 220 230 240 245 710 715 720 730 735 740 745 755 760 765 775 780 785 790 795 800
+[2016/07/29 13:29:40] Enable multiple policy ..done
+[2016/07/29 13:29:40] Protocol Analysis wedge in place.
+[2016/07/29 13:29:41] Locking firewall policy configuration.
+[2016/07/29 13:29:41] FPGA update supported? 1
+[2016/07/29 13:29:41] Restore original boot partition on success (0x13)
+[2016/08/05 04:49:39] Security mode: NORMAL
+[2016/08/05 04:49:39] Reset reason: bp=0 eph=0 rs=0001 rs2=00
+[2016/08/05 04:49:39] Boot partition: 2
+[2016/08/05 04:49:40] Stay in current boot partition on failure (1)
+[2016/08/05 04:49:40] Tuning kernel security values.
+[2016/08/05 04:49:40]  > Done
+[2016/08/05 04:49:40] Enabling hardware entropy collection.
+[2016/08/05 04:49:40] Enabling firewall watchdog + daemon.
+[2016/08/05 04:49:41] Trusted image buildid TCOO10P
+[2016/08/05 04:49:42] Trusted image buildversion 1.80
+[2016/08/05 04:49:42] Begin to verify rtfs md5
+[2016/08/05 04:49:43] Finish rtfs md5, checked 2 files, skip 0 files
+[2016/08/05 04:49:43] rtfs check finished
+[2016/08/05 04:49:43] FPGA update supported? 1
+[2016/08/05 04:49:43] RTMM device supported.
+[2016/08/05 04:49:43] Found Andromeda PASS-9 hardware
+[2016/08/05 04:49:45] RTMM update not needed.
+[2016/08/05 04:49:45] FPGA update supported? 1
+[2016/08/05 04:49:45] FPGA device support.
+[2016/08/05 04:49:46] FPGA update not needed.
+[2016/08/05 04:49:46] Checking if any CRTM transitions are needed.
+[2016/08/05 04:49:46] Both transitions already completed. (CCSI)
+[2016/08/05 04:49:46] SPITOC format ready
+[2016/08/05 04:49:46] Current CRTM is 3.3
+[2016/08/05 04:49:46] Stepping not required
+[2016/08/05 04:49:46] Checking if Primary UBoot needs updating.
+[2016/08/05 04:49:46] Primary UBoot already updated.
+[2016/08/05 04:49:46] Checking if Backup UBoot needs updating.
+[2016/08/05 04:49:46] Backup UBoot already updated.
+[2016/08/05 04:49:46] Platform [0050001A] doesn't support Snoopy hardware
+[2016/08/05 04:49:47] Phase1 lock latch : Lock RTMM/FPGA done.
+[2016/08/05 04:49:47] Activate baseline firewall.
+[2016/08/05 04:49:47] calling firetool --init-accesscontrol
+[2016/08/05 04:49:47] calling firetool  --init
+[2016/08/05 04:49:49] Activate baseline firewall done
+[2016/08/05 04:49:49] Removing old IP addresses from certs db.
+[2016/08/05 04:49:49] sifs: Begin simulated provisioning.
+[2016/08/05 04:49:51] Disabled policies: CMR : 
+[2016/08/05 04:49:51] Disabled policies: PROV: 
+[2016/08/05 04:49:51] Enabled policies :   200 205 210 215 220 230 240 245 710 715 720 730 735 740 745 755 760 765 775 780 785 790 795 800
+[2016/08/05 04:49:56] Enable multiple policy ..done
+[2016/08/05 04:49:56] Protocol Analysis wedge in place.
+[2016/08/05 04:49:56] Locking firewall policy configuration.
+[2016/08/05 04:49:56] FPGA update supported? 1
+[2016/08/05 04:49:56] Restore original boot partition on success (0x13)
+[2016/08/05 05:08:32] Security mode: NORMAL
+[2016/08/05 05:08:32] Reset reason: bp=0 eph=0 rs=0001 rs2=00
+[2016/08/05 05:08:33] Boot partition: 2
+[2016/08/05 05:08:33] Stay in current boot partition on failure (1)
+[2016/08/05 05:08:33] Tuning kernel security values.
+[2016/08/05 05:08:33]  > Done
+[2016/08/05 05:08:33] Enabling hardware entropy collection.
+[2016/08/05 05:08:33] Running PostEPO.
+[2016/08/05 05:08:34] Enabling firewall watchdog + daemon.
+[2016/08/05 05:08:35] Trusted image buildid TCOO10P
+[2016/08/05 05:08:36] Trusted image buildversion 1.80
+[2016/08/05 05:08:36] Begin to verify rtfs md5
+[2016/08/05 05:08:36] Finish rtfs md5, checked 2 files, skip 0 files
+[2016/08/05 05:08:36] rtfs check finished
+[2016/08/05 05:08:37] FPGA update supported? 1
+[2016/08/05 05:08:37] RTMM device supported.
+[2016/08/05 05:08:37] Found Andromeda PASS-9 hardware
+[2016/08/05 05:08:39] RTMM update not needed.
+[2016/08/05 05:08:39] FPGA update supported? 1
+[2016/08/05 05:08:39] FPGA device support.
+[2016/08/05 05:08:39] FPGA update not needed.
+[2016/08/05 05:08:39] Checking if any CRTM transitions are needed.
+[2016/08/05 05:08:39] Both transitions already completed. (CCSI)
+[2016/08/05 05:08:39] SPITOC format ready
+[2016/08/05 05:08:40] Current CRTM is 3.3
+[2016/08/05 05:08:40] Stepping not required
+[2016/08/05 05:08:40] Checking if Primary UBoot needs updating.
+[2016/08/05 05:08:40] Primary UBoot already updated.
+[2016/08/05 05:08:40] Checking if Backup UBoot needs updating.
+[2016/08/05 05:08:40] Backup UBoot already updated.
+[2016/08/05 05:08:40] Platform [0050001A] doesn't support Snoopy hardware
+[2016/08/05 05:08:40] Phase1 lock latch : Lock RTMM/FPGA done.
+[2016/08/05 05:08:40] Activate baseline firewall.
+[2016/08/05 05:08:40] calling firetool --init-accesscontrol
+[2016/08/05 05:08:41] calling firetool  --init
+[2016/08/05 05:08:42] Activate baseline firewall done
+[2016/08/05 05:08:43] Removing old IP addresses from certs db.
+[2016/08/05 05:08:43] sifs: Begin simulated provisioning.
+[2016/08/05 05:08:44] Disabled policies: CMR : 
+[2016/08/05 05:08:44] Disabled policies: PROV: 
+[2016/08/05 05:08:44] Enabled policies :   200 205 210 215 220 230 240 245 710 715 720 730 735 740 745 755 760 765 775 780 785 790 795 800
+[2016/08/05 05:08:50] Enable multiple policy ..done
+[2016/08/05 05:08:50] Protocol Analysis wedge in place.
+[2016/08/05 05:08:50] Locking firewall policy configuration.
+[2016/08/05 05:08:50] FPGA update supported? 1
+[2016/08/05 05:08:50] Restore original boot partition on success (0x13)
+[2016/08/05 08:44:04] Security mode: NORMAL
+[2016/08/05 08:44:04] Reset reason: bp=0 eph=0 rs=0001 rs2=00
+[2016/08/05 08:44:05] Boot partition: 2
+[2016/08/05 08:44:05] Stay in current boot partition on failure (1)
+[2016/08/05 08:44:05] Tuning kernel security values.
+[2016/08/05 08:44:05]  > Done
+[2016/08/05 08:44:05] Enabling hardware entropy collection.
+[2016/08/05 08:44:05] Running PostEPO.
+[2016/08/05 08:44:06] Enabling firewall watchdog + daemon.
+[2016/08/05 08:44:08] Trusted image buildid TCOO10P
+[2016/08/05 08:44:08] Trusted image buildversion 1.80
+[2016/08/05 08:44:08] Begin to verify rtfs md5
+[2016/08/05 08:44:08] Finish rtfs md5, checked 2 files, skip 0 files
+[2016/08/05 08:44:08] rtfs check finished
+[2016/08/05 08:44:09] FPGA update supported? 1
+[2016/08/05 08:44:09] RTMM device supported.
+[2016/08/05 08:44:09] Found Andromeda PASS-9 hardware
+[2016/08/05 08:44:11] RTMM update not needed.
+[2016/08/05 08:44:11] FPGA update supported? 1
+[2016/08/05 08:44:11] FPGA device support.
+[2016/08/05 08:44:11] FPGA update not needed.
+[2016/08/05 08:44:11] Checking if any CRTM transitions are needed.
+[2016/08/05 08:44:11] Both transitions already completed. (CCSI)
+[2016/08/05 08:44:11] SPITOC format ready
+[2016/08/05 08:44:12] Current CRTM is 3.3
+[2016/08/05 08:44:12] Stepping not required
+[2016/08/05 08:44:12] Checking if Primary UBoot needs updating.
+[2016/08/05 08:44:12] Primary UBoot already updated.
+[2016/08/05 08:44:12] Checking if Backup UBoot needs updating.
+[2016/08/05 08:44:12] Backup UBoot already updated.
+[2016/08/05 08:44:12] Platform [0050001A] doesn't support Snoopy hardware
+[2016/08/05 08:44:12] Phase1 lock latch : Lock RTMM/FPGA done.
+[2016/08/05 08:44:12] Activate baseline firewall.
+[2016/08/05 08:44:12] calling firetool --init-accesscontrol
+[2016/08/05 08:44:13] calling firetool  --init
+[2016/08/05 08:44:14] Activate baseline firewall done
+[2016/08/05 08:44:15] Removing old IP addresses from certs db.
+[2016/08/05 08:44:15] sifs: Begin simulated provisioning.
+[2016/08/05 08:44:16] Disabled policies: CMR : 
+[2016/08/05 08:44:16] Disabled policies: PROV: 
+[2016/08/05 08:44:16] Enabled policies :   200 205 210 215 220 230 240 245 710 715 720 730 735 740 745 755 760 765 775 780 785 790 795 800
+[2016/08/05 08:44:22] Enable multiple policy ..done
+[2016/08/05 08:44:22] Protocol Analysis wedge in place.
+[2016/08/05 08:44:22] Locking firewall policy configuration.
+[2016/08/05 08:44:22] FPGA update supported? 1
+[2016/08/05 08:44:22] Restore original boot partition on success (0x13)
+[2016/08/05 08:56:01] Security mode: NORMAL
+[2016/08/05 08:56:01] Reset reason: bp=0 eph=0 rs=0001 rs2=00
+[2016/08/05 08:56:01] Boot partition: 2
+[2016/08/05 08:56:01] Stay in current boot partition on failure (1)
+[2016/08/05 08:56:01] Tuning kernel security values.
+[2016/08/05 08:56:01]  > Done
+[2016/08/05 08:56:01] Enabling hardware entropy collection.
+[2016/08/05 08:56:02] Running PostEPO.
+[2016/08/05 08:56:03] Enabling firewall watchdog + daemon.
+[2016/08/05 08:56:04] Trusted image buildid TCOO10P
+[2016/08/05 08:56:04] Trusted image buildversion 1.80
+[2016/08/05 08:56:05] Begin to verify rtfs md5
+[2016/08/05 08:56:05] Finish rtfs md5, checked 2 files, skip 0 files
+[2016/08/05 08:56:05] rtfs check finished
+[2016/08/05 08:56:05] FPGA update supported? 1
+[2016/08/05 08:56:05] RTMM device supported.
+[2016/08/05 08:56:06] Found Andromeda PASS-9 hardware
+[2016/08/05 08:56:08] RTMM update not needed.
+[2016/08/05 08:56:08] FPGA update supported? 1
+[2016/08/05 08:56:08] FPGA device support.
+[2016/08/05 08:56:08] FPGA update not needed.
+[2016/08/05 08:56:08] Checking if any CRTM transitions are needed.
+[2016/08/05 08:56:08] Both transitions already completed. (CCSI)
+[2016/08/05 08:56:08] SPITOC format ready
+[2016/08/05 08:56:08] Current CRTM is 3.3
+[2016/08/05 08:56:08] Stepping not required
+[2016/08/05 08:56:08] Checking if Primary UBoot needs updating.
+[2016/08/05 08:56:09] Primary UBoot already updated.
+[2016/08/05 08:56:09] Checking if Backup UBoot needs updating.
+[2016/08/05 08:56:09] Backup UBoot already updated.
+[2016/08/05 08:56:09] Platform [0050001A] doesn't support Snoopy hardware
+[2016/08/05 08:56:09] Phase1 lock latch : Lock RTMM/FPGA done.
+[2016/08/05 08:56:09] Activate baseline firewall.
+[2016/08/05 08:56:09] calling firetool --init-accesscontrol
+[2016/08/05 08:56:10] calling firetool  --init
+[2016/08/05 08:56:11] Activate baseline firewall done
+[2016/08/05 08:56:12] Removing old IP addresses from certs db.
+[2016/08/05 08:56:12] sifs: Begin simulated provisioning.
+[2016/08/05 08:56:13] Disabled policies: CMR : 
+[2016/08/05 08:56:13] Disabled policies: PROV: 
+[2016/08/05 08:56:13] Enabled policies :   200 205 210 215 220 230 240 245 710 715 720 730 735 740 745 755 760 765 775 780 785 790 795 800
+[2016/08/05 08:56:18] Enable multiple policy ..done
+[2016/08/05 08:56:18] Protocol Analysis wedge in place.
+[2016/08/05 08:56:19] Locking firewall policy configuration.
+[2016/08/05 08:56:19] FPGA update supported? 1
+[2016/08/05 08:56:19] Restore original boot partition on success (0x13)
+[2016/08/05 09:59:50] Security mode: NORMAL
+[2016/08/05 09:59:50] Reset reason: bp=0 eph=0 rs=0001 rs2=00
+[2016/08/05 09:59:50] Boot partition: 2
+[2016/08/05 09:59:50] Stay in current boot partition on failure (1)
+[2016/08/05 09:59:50] Tuning kernel security values.
+[2016/08/05 09:59:50]  > Done
+[2016/08/05 09:59:50] Enabling hardware entropy collection.
+[2016/08/05 09:59:51] Running PostEPO.
+[2016/08/05 09:59:52] Enabling firewall watchdog + daemon.
+[2016/08/05 09:59:53] Trusted image buildid TCOO10P
+[2016/08/05 09:59:53] Trusted image buildversion 1.80
+[2016/08/05 09:59:54] Begin to verify rtfs md5
+[2016/08/05 09:59:54] Finish rtfs md5, checked 2 files, skip 0 files
+[2016/08/05 09:59:54] rtfs check finished
+[2016/08/05 09:59:54] FPGA update supported? 1
+[2016/08/05 09:59:54] RTMM device supported.
+[2016/08/05 09:59:55] Found Andromeda PASS-9 hardware
+[2016/08/05 09:59:56] RTMM update not needed.
+[2016/08/05 09:59:57] FPGA update supported? 1
+[2016/08/05 09:59:57] FPGA device support.
+[2016/08/05 09:59:57] FPGA update not needed.
+[2016/08/05 09:59:57] Checking if any CRTM transitions are needed.
+[2016/08/05 09:59:57] Both transitions already completed. (CCSI)
+[2016/08/05 09:59:57] SPITOC format ready
+[2016/08/05 09:59:57] Current CRTM is 3.3
+[2016/08/05 09:59:57] Stepping not required
+[2016/08/05 09:59:57] Checking if Primary UBoot needs updating.
+[2016/08/05 09:59:57] Primary UBoot already updated.
+[2016/08/05 09:59:58] Checking if Backup UBoot needs updating.
+[2016/08/05 09:59:58] Backup UBoot already updated.
+[2016/08/05 09:59:58] Platform [0050001A] doesn't support Snoopy hardware
+[2016/08/05 09:59:58] Phase1 lock latch : Lock RTMM/FPGA done.
+[2016/08/05 09:59:58] Activate baseline firewall.
+[2016/08/05 09:59:58] calling firetool --init-accesscontrol
+[2016/08/05 09:59:59] calling firetool  --init
+[2016/08/05 10:00:00] Activate baseline firewall done
+[2016/08/05 10:00:01] Removing old IP addresses from certs db.
+[2016/08/05 10:00:01] sifs: Begin simulated provisioning.
+[2016/08/05 10:00:02] Disabled policies: CMR : 
+[2016/08/05 10:00:02] Disabled policies: PROV: 
+[2016/08/05 10:00:02] Enabled policies :   200 205 210 215 220 230 240 245 710 715 720 730 735 740 745 755 760 765 775 780 785 790 795 800
+[2016/08/05 10:00:07] Enable multiple policy ..done
+[2016/08/05 10:00:07] Protocol Analysis wedge in place.
+[2016/08/05 10:00:08] Locking firewall policy configuration.
+[2016/08/05 10:00:08] FPGA update supported? 1
+[2016/08/05 10:00:08] Restore original boot partition on success (0x13)
+[2016/08/22 03:02:39] Security mode: NORMAL
+[2016/08/22 03:02:39] Reset reason: bp=0 eph=0 rs=0001 rs2=00
+[2016/08/22 03:02:39] Boot partition: 2
+[2016/08/22 03:02:40] Stay in current boot partition on failure (1)
+[2016/08/22 03:02:40] Tuning kernel security values.
+[2016/08/22 03:02:40]  > Done
+[2016/08/22 03:02:40] Enabling hardware entropy collection.
+[2016/08/22 03:02:40] Running PostEPO.
+[2016/08/22 03:02:41] Enabling firewall watchdog + daemon.
+[2016/08/22 03:02:42] Trusted image buildid TCOO10P
+[2016/08/22 03:02:42] Trusted image buildversion 1.80
+[2016/08/22 03:02:43] Begin to verify rtfs md5
+[2016/08/22 03:02:43] Finish rtfs md5, checked 2 files, skip 0 files
+[2016/08/22 03:02:43] rtfs check finished
+[2016/08/22 03:02:43] FPGA update supported? 1
+[2016/08/22 03:02:44] RTMM device supported.
+[2016/08/22 03:02:44] Found Andromeda PASS-9 hardware
+[2016/08/22 03:02:46] RTMM update not needed.
+[2016/08/22 03:02:46] FPGA update supported? 1
+[2016/08/22 03:02:46] FPGA device support.
+[2016/08/22 03:02:46] FPGA update not needed.
+[2016/08/22 03:02:46] Checking if any CRTM transitions are needed.
+[2016/08/22 03:02:46] Both transitions already completed. (CCSI)
+[2016/08/22 03:02:46] SPITOC format ready
+[2016/08/22 03:02:47] Current CRTM is 3.3
+[2016/08/22 03:02:47] Stepping not required
+[2016/08/22 03:02:47] Checking if Primary UBoot needs updating.
+[2016/08/22 03:02:47] Primary UBoot already updated.
+[2016/08/22 03:02:47] Checking if Backup UBoot needs updating.
+[2016/08/22 03:02:47] Backup UBoot already updated.
+[2016/08/22 03:02:47] Platform [0050001A] doesn't support Snoopy hardware
+[2016/08/22 03:02:47] Phase1 lock latch : Lock RTMM/FPGA done.
+[2016/08/22 03:02:47] Activate baseline firewall.
+[2016/08/22 03:02:47] calling firetool --init-accesscontrol
+[2016/08/22 03:02:48] calling firetool  --init
+[2016/08/22 03:02:49] Activate baseline firewall done
+[2016/08/22 03:02:50] Removing old IP addresses from certs db.
+[2016/08/22 03:02:50] sifs: Begin simulated provisioning.
+[2016/08/22 03:02:51] Disabled policies: CMR : 
+[2016/08/22 03:02:51] Disabled policies: PROV: 
+[2016/08/22 03:02:51] Enabled policies :   200 205 210 215 220 230 240 245 710 715 720 730 735 740 745 755 760 765 775 780 785 790 795 800
+[2016/08/22 03:02:56] Enable multiple policy ..done
+[2016/08/22 03:02:56] Protocol Analysis wedge in place.
+[2016/08/22 03:02:57] Locking firewall policy configuration.
+[2016/08/22 03:02:57] FPGA update supported? 1
+[2016/08/22 03:02:57] Restore original boot partition on success (0x13)
+[2016/08/22 03:28:17] Security mode: NORMAL
+[2016/08/22 03:28:17] Reset reason: bp=0 eph=0 rs=0001 rs2=00
+[2016/08/22 03:28:17] Boot partition: 2
+[2016/08/22 03:28:17] Stay in current boot partition on failure (1)
+[2016/08/22 03:28:17] Tuning kernel security values.
+[2016/08/22 03:28:17]  > Done
+[2016/08/22 03:28:17] Enabling hardware entropy collection.
+[2016/08/22 03:28:17] Enabling firewall watchdog + daemon.
+[2016/08/22 03:28:19] Trusted image buildid TCOO10P
+[2016/08/22 03:28:19] Trusted image buildversion 1.80
+[2016/08/22 03:28:20] Begin to verify rtfs md5
+[2016/08/22 03:28:20] Finish rtfs md5, checked 2 files, skip 0 files
+[2016/08/22 03:28:20] rtfs check finished
+[2016/08/22 03:28:20] FPGA update supported? 1
+[2016/08/22 03:28:20] RTMM device supported.
+[2016/08/22 03:28:20] Found Andromeda PASS-9 hardware
+[2016/08/22 03:28:22] RTMM update not needed.
+[2016/08/22 03:28:23] FPGA update supported? 1
+[2016/08/22 03:28:23] FPGA device support.
+[2016/08/22 03:28:23] FPGA update not needed.
+[2016/08/22 03:28:23] Checking if any CRTM transitions are needed.
+[2016/08/22 03:28:23] Both transitions already completed. (CCSI)
+[2016/08/22 03:28:23] SPITOC format ready
+[2016/08/22 03:28:23] Current CRTM is 3.3
+[2016/08/22 03:28:23] Stepping not required
+[2016/08/22 03:28:23] Checking if Primary UBoot needs updating.
+[2016/08/22 03:28:23] Primary UBoot already updated.
+[2016/08/22 03:28:23] Checking if Backup UBoot needs updating.
+[2016/08/22 03:28:23] Backup UBoot already updated.
+[2016/08/22 03:28:24] Platform [0050001A] doesn't support Snoopy hardware
+[2016/08/22 03:28:24] Phase1 lock latch : Lock RTMM/FPGA done.
+[2016/08/22 03:28:24] Activate baseline firewall.
+[2016/08/22 03:28:24] calling firetool --init-accesscontrol
+[2016/08/22 03:28:25] calling firetool  --init
+[2016/08/22 03:28:26] Activate baseline firewall done
+[2016/08/22 03:28:26] Removing old IP addresses from certs db.
+[2016/08/22 03:28:27] sifs: Begin simulated provisioning.
+[2016/08/22 03:28:28] Disabled policies: CMR : 
+[2016/08/22 03:28:28] Disabled policies: PROV: 
+[2016/08/22 03:28:28] Enabled policies :   200 205 210 215 220 230 240 245 710 715 720 730 735 740 745 755 760 765 775 780 785 790 795 800
+[2016/08/22 03:28:33] Enable multiple policy ..done
+[2016/08/22 03:28:33] Protocol Analysis wedge in place.
+[2016/08/22 03:28:33] Locking firewall policy configuration.
+[2016/08/22 03:28:34] FPGA update supported? 1
+[2016/08/22 03:28:34] Restore original boot partition on success (0x13)
+[2016/08/22 07:36:52] Security mode: NORMAL
+[2016/08/22 07:36:52] Reset reason: bp=0 eph=0 rs=0001 rs2=00
+[2016/08/22 07:36:52] Boot partition: 2
+[2016/08/22 07:36:52] Stay in current boot partition on failure (1)
+[2016/08/22 07:36:52] Tuning kernel security values.
+[2016/08/22 07:36:52]  > Done
+[2016/08/22 07:36:52] Enabling hardware entropy collection.
+[2016/08/22 07:36:52] Enabling firewall watchdog + daemon.
+[2016/08/22 07:36:54] Trusted image buildid TCOO10P
+[2016/08/22 07:36:54] Trusted image buildversion 1.80
+[2016/08/22 07:36:54] Begin to verify rtfs md5
+[2016/08/22 07:36:55] Finish rtfs md5, checked 2 files, skip 0 files
+[2016/08/22 07:36:55] rtfs check finished
+[2016/08/22 07:36:55] FPGA update supported? 1
+[2016/08/22 07:36:55] RTMM device supported.
+[2016/08/22 07:36:55] Found Andromeda PASS-9 hardware
+[2016/08/22 07:36:57] RTMM update not needed.
+[2016/08/22 07:36:57] FPGA update supported? 1
+[2016/08/22 07:36:58] FPGA device support.
+[2016/08/22 07:36:58] FPGA update not needed.
+[2016/08/22 07:36:58] Checking if any CRTM transitions are needed.
+[2016/08/22 07:36:58] Both transitions already completed. (CCSI)
+[2016/08/22 07:36:58] SPITOC format ready
+[2016/08/22 07:36:58] Current CRTM is 3.3
+[2016/08/22 07:36:58] Stepping not required
+[2016/08/22 07:36:58] Checking if Primary UBoot needs updating.
+[2016/08/22 07:36:58] Primary UBoot already updated.
+[2016/08/22 07:36:58] Checking if Backup UBoot needs updating.
+[2016/08/22 07:36:58] Backup UBoot already updated.
+[2016/08/22 07:36:59] Platform [0050001A] doesn't support Snoopy hardware
+[2016/08/22 07:36:59] Phase1 lock latch : Lock RTMM/FPGA done.
+[2016/08/22 07:36:59] Activate baseline firewall.
+[2016/08/22 07:36:59] calling firetool --init-accesscontrol
+[2016/08/22 07:37:00] calling firetool  --init
+[2016/08/22 07:37:01] Activate baseline firewall done
+[2016/08/22 07:37:01] Removing old IP addresses from certs db.
+[2016/08/22 07:37:02] sifs: Begin simulated provisioning.
+[2016/08/22 07:37:03] Disabled policies: CMR : 
+[2016/08/22 07:37:03] Disabled policies: PROV: 
+[2016/08/22 07:37:03] Enabled policies :   200 205 210 215 220 230 240 245 710 715 720 730 735 740 745 755 760 765 775 780 785 790 795 800
+[2016/08/22 07:37:08] Enable multiple policy ..done
+[2016/08/22 07:37:08] Protocol Analysis wedge in place.
+[2016/08/22 07:37:08] Locking firewall policy configuration.
+[2016/08/22 07:37:09] FPGA update supported? 1
+[2016/08/22 07:37:09] Restore original boot partition on success (0x13)
+[2016/08/30 08:23:33] Security mode: NORMAL
+[2016/08/30 08:23:33] Reset reason: bp=0 eph=0 rs=0001 rs2=00
+[2016/08/30 08:23:33] Boot partition: 2
+[2016/08/30 08:23:33] Stay in current boot partition on failure (1)
+[2016/08/30 08:23:33] Tuning kernel security values.
+[2016/08/30 08:23:33]  > Done
+[2016/08/30 08:23:33] Enabling hardware entropy collection.
+[2016/08/30 08:23:34] Enabling firewall watchdog + daemon.
+[2016/08/30 08:23:35] Trusted image buildid TCOO10P
+[2016/08/30 08:23:35] Trusted image buildversion 1.80
+[2016/08/30 08:23:36] Begin to verify rtfs md5
+[2016/08/30 08:23:36] Finish rtfs md5, checked 2 files, skip 0 files
+[2016/08/30 08:23:36] rtfs check finished
+[2016/08/30 08:23:36] FPGA update supported? 1
+[2016/08/30 08:23:37] RTMM device supported.
+[2016/08/30 08:23:37] Found Andromeda PASS-9 hardware
+[2016/08/30 08:23:39] RTMM update not needed.
+[2016/08/30 08:23:39] FPGA update supported? 1
+[2016/08/30 08:23:39] FPGA device support.
+[2016/08/30 08:23:39] FPGA update not needed.
+[2016/08/30 08:23:39] Checking if any CRTM transitions are needed.
+[2016/08/30 08:23:39] Both transitions already completed. (CCSI)
+[2016/08/30 08:23:39] SPITOC format ready
+[2016/08/30 08:23:39] Current CRTM is 3.3
+[2016/08/30 08:23:39] Stepping not required
+[2016/08/30 08:23:39] Checking if Primary UBoot needs updating.
+[2016/08/30 08:23:40] Primary UBoot already updated.
+[2016/08/30 08:23:40] Checking if Backup UBoot needs updating.
+[2016/08/30 08:23:40] Backup UBoot already updated.
+[2016/08/30 08:23:40] Platform [0050001A] doesn't support Snoopy hardware
+[2016/08/30 08:23:40] Phase1 lock latch : Lock RTMM/FPGA done.
+[2016/08/30 08:23:40] Activate baseline firewall.
+[2016/08/30 08:23:40] calling firetool --init-accesscontrol
+[2016/08/30 08:23:41] calling firetool  --init
+[2016/08/30 08:23:42] Activate baseline firewall done
+[2016/08/30 08:23:43] Removing old IP addresses from certs db.
+[2016/08/30 08:23:43] sifs: Begin simulated provisioning.
+[2016/08/30 08:23:44] Disabled policies: CMR : 
+[2016/08/30 08:23:44] Disabled policies: PROV: 
+[2016/08/30 08:23:44] Enabled policies :   200 205 210 215 220 230 240 245 710 715 720 730 735 740 745 755 760 765 775 780 785 790 795 800
+[2016/08/30 08:23:49] Enable multiple policy ..done
+[2016/08/30 08:23:49] Protocol Analysis wedge in place.
+[2016/08/30 08:23:50] Locking firewall policy configuration.
+[2016/08/30 08:23:50] FPGA update supported? 1
+[2016/08/30 08:23:50] Restore original boot partition on success (0x13)
+[2016/09/01 09:06:06] Security mode: NORMAL
+[2016/09/01 09:06:06] Reset reason: bp=0 eph=0 rs=0001 rs2=00
+[2016/09/01 09:06:06] Boot partition: 2
+[2016/09/01 09:06:07] Stay in current boot partition on failure (1)
+[2016/09/01 09:06:07] Tuning kernel security values.
+[2016/09/01 09:06:07]  > Done
+[2016/09/01 09:06:07] Enabling hardware entropy collection.
+[2016/09/01 09:06:07] Enabling firewall watchdog + daemon.
+[2016/09/01 09:06:08] Trusted image buildid TCOO10P
+[2016/09/01 09:06:09] Trusted image buildversion 1.80
+[2016/09/01 09:06:09] Begin to verify rtfs md5
+[2016/09/01 09:06:10] Finish rtfs md5, checked 2 files, skip 0 files
+[2016/09/01 09:06:10] rtfs check finished
+[2016/09/01 09:06:10] FPGA update supported? 1
+[2016/09/01 09:06:10] RTMM device supported.
+[2016/09/01 09:06:10] Found Andromeda PASS-9 hardware
+[2016/09/01 09:06:12] RTMM update not needed.
+[2016/09/01 09:06:12] FPGA update supported? 1
+[2016/09/01 09:06:12] FPGA device support.
+[2016/09/01 09:06:13] FPGA update not needed.
+[2016/09/01 09:06:13] Checking if any CRTM transitions are needed.
+[2016/09/01 09:06:13] Both transitions already completed. (CCSI)
+[2016/09/01 09:06:13] SPITOC format ready
+[2016/09/01 09:06:13] Current CRTM is 3.3
+[2016/09/01 09:06:13] Stepping not required
+[2016/09/01 09:06:13] Checking if Primary UBoot needs updating.
+[2016/09/01 09:06:13] Primary UBoot already updated.
+[2016/09/01 09:06:13] Checking if Backup UBoot needs updating.
+[2016/09/01 09:06:13] Backup UBoot already updated.
+[2016/09/01 09:06:13] Platform [0050001A] doesn't support Snoopy hardware
+[2016/09/01 09:06:14] Phase1 lock latch : Lock RTMM/FPGA done.
+[2016/09/01 09:06:14] Activate baseline firewall.
+[2016/09/01 09:06:14] calling firetool --init-accesscontrol
+[2016/09/01 09:06:15] calling firetool  --init
+[2016/09/01 09:06:16] Activate baseline firewall done
+[2016/09/01 09:06:16] Removing old IP addresses from certs db.
+[2016/09/01 09:06:16] sifs: Begin simulated provisioning.
+[2016/09/01 09:06:18] Disabled policies: CMR : 
+[2016/09/01 09:06:18] Disabled policies: PROV: 
+[2016/09/01 09:06:18] Enabled policies :   200 205 210 215 220 230 240 245 710 715 720 730 735 740 745 755 760 765 775 780 785 790 795 800
+[2016/09/01 09:06:23] Enable multiple policy ..done
+[2016/09/01 09:06:23] Protocol Analysis wedge in place.
+[2016/09/01 09:06:23] Locking firewall policy configuration.
+[2016/09/01 09:06:23] FPGA update supported? 1
+[2016/09/01 09:06:24] Restore original boot partition on success (0x13)
+[2016/09/13 09:43:59] Security mode: NORMAL
+[2016/09/13 09:43:59] Reset reason: bp=0 eph=0 rs=0001 rs2=00
+[2016/09/13 09:43:59] Boot partition: 2
+[2016/09/13 09:43:59] Stay in current boot partition on failure (1)
+[2016/09/13 09:43:59] Tuning kernel security values.
+[2016/09/13 09:43:59]  > Done
+[2016/09/13 09:43:59] Enabling hardware entropy collection.
+[2016/09/13 09:44:00] Enabling firewall watchdog + daemon.
+[2016/09/13 09:44:01] Trusted image buildid TCOO10P
+[2016/09/13 09:44:01] Trusted image buildversion 1.80
+[2016/09/13 09:44:02] Begin to verify rtfs md5
+[2016/09/13 09:44:02] Finish rtfs md5, checked 2 files, skip 0 files
+[2016/09/13 09:44:02] rtfs check finished
+[2016/09/13 09:44:02] FPGA update supported? 1
+[2016/09/13 09:44:02] RTMM device supported.
+[2016/09/13 09:44:03] Found Andromeda PASS-9 hardware
+[2016/09/13 09:44:05] RTMM update not needed.
+[2016/09/13 09:44:05] FPGA update supported? 1
+[2016/09/13 09:44:05] FPGA device support.
+[2016/09/13 09:44:05] FPGA update not needed.
+[2016/09/13 09:44:05] Checking if any CRTM transitions are needed.
+[2016/09/13 09:44:05] Both transitions already completed. (CCSI)
+[2016/09/13 09:44:05] SPITOC format ready
+[2016/09/13 09:44:05] Current CRTM is 3.3
+[2016/09/13 09:44:05] Stepping not required
+[2016/09/13 09:44:05] Checking if Primary UBoot needs updating.
+[2016/09/13 09:44:05] Primary UBoot already updated.
+[2016/09/13 09:44:05] Checking if Backup UBoot needs updating.
+[2016/09/13 09:44:06] Backup UBoot already updated.
+[2016/09/13 09:44:06] Platform [0050001A] doesn't support Snoopy hardware
+[2016/09/13 09:44:06] Phase1 lock latch : Lock RTMM/FPGA done.
+[2016/09/13 09:44:06] Activate baseline firewall.
+[2016/09/13 09:44:06] calling firetool --init-accesscontrol
+[2016/09/13 09:44:07] calling firetool  --init
+[2016/09/13 09:44:08] Activate baseline firewall done
+[2016/09/13 09:44:08] Removing old IP addresses from certs db.
+[2016/09/13 09:44:09] sifs: Begin simulated provisioning.
+[2016/09/13 09:44:10] Disabled policies: CMR : 
+[2016/09/13 09:44:10] Disabled policies: PROV: 
+[2016/09/13 09:44:10] Enabled policies :   200 205 210 215 220 230 240 245 710 715 720 730 735 740 745 755 760 765 775 780 785 790 795 800
+[2016/09/13 09:44:15] Enable multiple policy ..done
+[2016/09/13 09:44:15] Protocol Analysis wedge in place.
+[2016/09/13 09:44:15] Locking firewall policy configuration.
+[2016/09/13 09:44:16] FPGA update supported? 1
+[2016/09/13 09:44:16] Restore original boot partition on success (0x13)
+[2016/09/20 07:50:33] Security mode: NORMAL
+[2016/09/20 07:50:33] Reset reason: bp=0 eph=0 rs=0001 rs2=00
+[2016/09/20 07:50:33] Boot partition: 2
+[2016/09/20 07:50:33] Stay in current boot partition on failure (1)
+[2016/09/20 07:50:33] Tuning kernel security values.
+[2016/09/20 07:50:34]  > Done
+[2016/09/20 07:50:34] Enabling hardware entropy collection.
+[2016/09/20 07:50:34] Enabling firewall watchdog + daemon.
+[2016/09/20 07:50:35] Trusted image buildid TCOO10P
+[2016/09/20 07:50:35] Trusted image buildversion 1.80
+[2016/09/20 07:50:36] Begin to verify rtfs md5
+[2016/09/20 07:50:37] Finish rtfs md5, checked 2 files, skip 0 files
+[2016/09/20 07:50:37] rtfs check finished
+[2016/09/20 07:50:37] FPGA update supported? 1
+[2016/09/20 07:50:37] RTMM device supported.
+[2016/09/20 07:50:37] Found Andromeda PASS-9 hardware
+[2016/09/20 07:50:39] RTMM update not needed.
+[2016/09/20 07:50:39] FPGA update supported? 1
+[2016/09/20 07:50:39] FPGA device support.
+[2016/09/20 07:50:39] FPGA update not needed.
+[2016/09/20 07:50:40] Checking if any CRTM transitions are needed.
+[2016/09/20 07:50:40] Both transitions already completed. (CCSI)
+[2016/09/20 07:50:40] SPITOC format ready
+[2016/09/20 07:50:40] Current CRTM is 3.3
+[2016/09/20 07:50:40] Stepping not required
+[2016/09/20 07:50:40] Checking if Primary UBoot needs updating.
+[2016/09/20 07:50:40] Primary UBoot already updated.
+[2016/09/20 07:50:40] Checking if Backup UBoot needs updating.
+[2016/09/20 07:50:40] Backup UBoot already updated.
+[2016/09/20 07:50:40] Platform [0050001A] doesn't support Snoopy hardware
+[2016/09/20 07:50:40] Phase1 lock latch : Lock RTMM/FPGA done.
+[2016/09/20 07:50:41] Activate baseline firewall.
+[2016/09/20 07:50:41] calling firetool --init-accesscontrol
+[2016/09/20 07:50:41] calling firetool  --init
+[2016/09/20 07:50:43] Activate baseline firewall done
+[2016/09/20 07:50:43] Removing old IP addresses from certs db.
+[2016/09/20 07:50:43] sifs: Begin simulated provisioning.
+[2016/09/20 07:50:45] Disabled policies: CMR : 
+[2016/09/20 07:50:45] Disabled policies: PROV: 
+[2016/09/20 07:50:45] Enabled policies :   200 205 210 215 220 230 240 245 710 715 720 730 735 740 745 755 760 765 775 780 785 790 795 800
+[2016/09/20 07:50:50] Enable multiple policy ..done
+[2016/09/20 07:50:50] Protocol Analysis wedge in place.
+[2016/09/20 07:50:50] Locking firewall policy configuration.
+[2016/09/20 07:50:50] FPGA update supported? 1
+[2016/09/20 07:50:50] Restore original boot partition on success (0x13)
+[2016/09/20 08:00:56] Security mode: NORMAL
+[2016/09/20 08:00:56] Reset reason: bp=0 eph=0 rs=0001 rs2=00
+[2016/09/20 08:00:56] Boot partition: 2
+[2016/09/20 08:00:56] Stay in current boot partition on failure (1)
+[2016/09/20 08:00:56] Tuning kernel security values.
+[2016/09/20 08:00:56]  > Done
+[2016/09/20 08:00:56] Enabling hardware entropy collection.
+[2016/09/20 08:00:57] Enabling firewall watchdog + daemon.
+[2016/09/20 08:00:58] Trusted image buildid TCOO10P
+[2016/09/20 08:00:58] Trusted image buildversion 1.80
+[2016/09/20 08:00:59] Begin to verify rtfs md5
+[2016/09/20 08:00:59] Finish rtfs md5, checked 2 files, skip 0 files
+[2016/09/20 08:00:59] rtfs check finished
+[2016/09/20 08:01:00] FPGA update supported? 1
+[2016/09/20 08:01:00] RTMM device supported.
+[2016/09/20 08:01:00] Found Andromeda PASS-9 hardware
+[2016/09/20 08:01:02] RTMM update not needed.
+[2016/09/20 08:01:02] FPGA update supported? 1
+[2016/09/20 08:01:02] FPGA device support.
+[2016/09/20 08:01:02] FPGA update not needed.
+[2016/09/20 08:01:02] Checking if any CRTM transitions are needed.
+[2016/09/20 08:01:02] Both transitions already completed. (CCSI)
+[2016/09/20 08:01:02] SPITOC format ready
+[2016/09/20 08:01:03] Current CRTM is 3.3
+[2016/09/20 08:01:03] Stepping not required
+[2016/09/20 08:01:03] Checking if Primary UBoot needs updating.
+[2016/09/20 08:01:03] Primary UBoot already updated.
+[2016/09/20 08:01:03] Checking if Backup UBoot needs updating.
+[2016/09/20 08:01:03] Backup UBoot already updated.
+[2016/09/20 08:01:03] Platform [0050001A] doesn't support Snoopy hardware
+[2016/09/20 08:01:03] Phase1 lock latch : Lock RTMM/FPGA done.
+[2016/09/20 08:01:03] Activate baseline firewall.
+[2016/09/20 08:01:03] calling firetool --init-accesscontrol
+[2016/09/20 08:01:04] calling firetool  --init
+[2016/09/20 08:01:05] Activate baseline firewall done
+[2016/09/20 08:01:06] Removing old IP addresses from certs db.
+[2016/09/20 08:01:06] sifs: Begin simulated provisioning.
+[2016/09/20 08:01:07] Disabled policies: CMR : 
+[2016/09/20 08:01:07] Disabled policies: PROV: 
+[2016/09/20 08:01:07] Enabled policies :   200 205 210 215 220 230 240 245 710 715 720 730 735 740 745 755 760 765 775 780 785 790 795 800
+[2016/09/20 08:01:13] Enable multiple policy ..done
+[2016/09/20 08:01:13] Protocol Analysis wedge in place.
+[2016/09/20 08:01:13] Locking firewall policy configuration.
+[2016/09/20 08:01:13] FPGA update supported? 1
+[2016/09/20 08:01:13] Restore original boot partition on success (0x13)
+[2016/09/21 07:41:53] Security mode: NORMAL
+[2016/09/21 07:41:53] Reset reason: bp=0 eph=0 rs=0001 rs2=00
+[2016/09/21 07:41:53] Boot partition: 2
+[2016/09/21 07:41:54] Stay in current boot partition on failure (1)
+[2016/09/21 07:41:54] Tuning kernel security values.
+[2016/09/21 07:41:54]  > Done
+[2016/09/21 07:41:54] Enabling hardware entropy collection.
+[2016/09/21 07:41:54] Enabling firewall watchdog + daemon.
+[2016/09/21 07:41:55] Trusted image buildid TCOO10P
+[2016/09/21 07:41:56] Trusted image buildversion 1.80
+[2016/09/21 07:41:56] Begin to verify rtfs md5
+[2016/09/21 07:41:57] Finish rtfs md5, checked 2 files, skip 0 files
+[2016/09/21 07:41:57] rtfs check finished
+[2016/09/21 07:41:57] FPGA update supported? 1
+[2016/09/21 07:41:57] RTMM device supported.
+[2016/09/21 07:41:57] Found Andromeda PASS-9 hardware
+[2016/09/21 07:41:59] RTMM update not needed.
+[2016/09/21 07:41:59] FPGA update supported? 1
+[2016/09/21 07:41:59] FPGA device support.
+[2016/09/21 07:42:00] FPGA update not needed.
+[2016/09/21 07:42:00] Checking if any CRTM transitions are needed.
+[2016/09/21 07:42:00] Both transitions already completed. (CCSI)
+[2016/09/21 07:42:00] SPITOC format ready
+[2016/09/21 07:42:00] Current CRTM is 3.3
+[2016/09/21 07:42:00] Stepping not required
+[2016/09/21 07:42:00] Checking if Primary UBoot needs updating.
+[2016/09/21 07:42:00] Primary UBoot already updated.
+[2016/09/21 07:42:00] Checking if Backup UBoot needs updating.
+[2016/09/21 07:42:00] Backup UBoot already updated.
+[2016/09/21 07:42:00] Platform [0050001A] doesn't support Snoopy hardware
+[2016/09/21 07:42:01] Phase1 lock latch : Lock RTMM/FPGA done.
+[2016/09/21 07:42:01] Activate baseline firewall.
+[2016/09/21 07:42:01] calling firetool --init-accesscontrol
+[2016/09/21 07:42:01] calling firetool  --init
+[2016/09/21 07:42:03] Activate baseline firewall done
+[2016/09/21 07:42:03] Removing old IP addresses from certs db.
+[2016/09/21 07:42:03] sifs: Begin simulated provisioning.
+[2016/09/21 07:42:05] Disabled policies: CMR : 
+[2016/09/21 07:42:05] Disabled policies: PROV: 
+[2016/09/21 07:42:05] Enabled policies :   200 205 210 215 220 230 240 245 710 715 720 730 735 740 745 755 760 765 775 780 785 790 795 800
+[2016/09/21 07:42:10] Enable multiple policy ..done
+[2016/09/21 07:42:10] Protocol Analysis wedge in place.
+[2016/09/21 07:42:10] Locking firewall policy configuration.
+[2016/09/21 07:42:10] FPGA update supported? 1
+[2016/09/21 07:42:10] Restore original boot partition on success (0x13)
+[2016/09/30 09:37:35] Security mode: NORMAL
+[2016/09/30 09:37:35] Reset reason: bp=0 eph=0 rs=0001 rs2=00
+[2016/09/30 09:37:35] Boot partition: 2
+[2016/09/30 09:37:35] Stay in current boot partition on failure (1)
+[2016/09/30 09:37:35] Tuning kernel security values.
+[2016/09/30 09:37:35]  > Done
+[2016/09/30 09:37:35] Enabling hardware entropy collection.
+[2016/09/30 09:37:35] Enabling firewall watchdog + daemon.
+[2016/09/30 09:37:37] Trusted image buildid TCOO10P
+[2016/09/30 09:37:37] Trusted image buildversion 1.80
+[2016/09/30 09:37:37] Begin to verify rtfs md5
+[2016/09/30 09:37:38] Finish rtfs md5, checked 2 files, skip 0 files
+[2016/09/30 09:37:38] rtfs check finished
+[2016/09/30 09:37:38] FPGA update supported? 1
+[2016/09/30 09:37:38] RTMM device supported.
+[2016/09/30 09:37:38] Found Andromeda PASS-9 hardware
+[2016/09/30 09:37:40] RTMM update not needed.
+[2016/09/30 09:37:40] FPGA update supported? 1
+[2016/09/30 09:37:40] FPGA device support.
+[2016/09/30 09:37:41] FPGA update not needed.
+[2016/09/30 09:37:41] Checking if any CRTM transitions are needed.
+[2016/09/30 09:37:41] Both transitions already completed. (CCSI)
+[2016/09/30 09:37:41] SPITOC format ready
+[2016/09/30 09:37:41] Current CRTM is 3.3
+[2016/09/30 09:37:41] Stepping not required
+[2016/09/30 09:37:41] Checking if Primary UBoot needs updating.
+[2016/09/30 09:37:41] Primary UBoot already updated.
+[2016/09/30 09:37:41] Checking if Backup UBoot needs updating.
+[2016/09/30 09:37:41] Backup UBoot already updated.
+[2016/09/30 09:37:42] Platform [0050001A] doesn't support Snoopy hardware
+[2016/09/30 09:37:42] Phase1 lock latch : Lock RTMM/FPGA done.
+[2016/09/30 09:37:42] Activate baseline firewall.
+[2016/09/30 09:37:42] calling firetool --init-accesscontrol
+[2016/09/30 09:37:43] calling firetool  --init
+[2016/09/30 09:37:44] Activate baseline firewall done
+[2016/09/30 09:37:44] Removing old IP addresses from certs db.
+[2016/09/30 09:37:45] sifs: Begin simulated provisioning.
+[2016/09/30 09:37:46] Disabled policies: CMR : 
+[2016/09/30 09:37:46] Disabled policies: PROV: 
+[2016/09/30 09:37:46] Enabled policies :   200 205 210 215 220 230 240 245 710 715 720 730 735 740 745 755 760 765 775 780 785 790 795 800
+[2016/09/30 09:37:51] Enable multiple policy ..done
+[2016/09/30 09:37:51] Protocol Analysis wedge in place.
+[2016/09/30 09:37:51] Locking firewall policy configuration.
+[2016/09/30 09:37:51] FPGA update supported? 1
+[2016/09/30 09:37:52] Restore original boot partition on success (0x13)
+[2016/10/19 02:14:48] Security mode: NORMAL
+[2016/10/19 02:14:48] Reset reason: bp=0 eph=0 rs=0001 rs2=00
+[2016/10/19 02:14:48] Boot partition: 2
+[2016/10/19 02:14:49] Stay in current boot partition on failure (1)
+[2016/10/19 02:14:49] Tuning kernel security values.
+[2016/10/19 02:14:49]  > Done
+[2016/10/19 02:14:49] Enabling hardware entropy collection.
+[2016/10/19 02:14:49] Enabling firewall watchdog + daemon.
+[2016/10/19 02:14:50] Trusted image buildid TCOO10P
+[2016/10/19 02:14:51] Trusted image buildversion 1.80
+[2016/10/19 02:14:51] Begin to verify rtfs md5
+[2016/10/19 02:14:52] Finish rtfs md5, checked 2 files, skip 0 files
+[2016/10/19 02:14:52] rtfs check finished
+[2016/10/19 02:14:52] FPGA update supported? 1
+[2016/10/19 02:14:52] RTMM device supported.
+[2016/10/19 02:14:52] Found Andromeda PASS-9 hardware
+[2016/10/19 02:14:54] RTMM update not needed.
+[2016/10/19 02:14:54] FPGA update supported? 1
+[2016/10/19 02:14:54] FPGA device support.
+[2016/10/19 02:14:55] FPGA update not needed.
+[2016/10/19 02:14:55] Checking if any CRTM transitions are needed.
+[2016/10/19 02:14:55] Both transitions already completed. (CCSI)
+[2016/10/19 02:14:55] SPITOC format ready
+[2016/10/19 02:14:55] Current CRTM is 3.3
+[2016/10/19 02:14:55] Stepping not required
+[2016/10/19 02:14:55] Checking if Primary UBoot needs updating.
+[2016/10/19 02:14:55] Primary UBoot already updated.
+[2016/10/19 02:14:55] Checking if Backup UBoot needs updating.
+[2016/10/19 02:14:55] Backup UBoot already updated.
+[2016/10/19 02:14:55] Platform [0050001A] doesn't support Snoopy hardware
+[2016/10/19 02:14:56] Phase1 lock latch : Lock RTMM/FPGA done.
+[2016/10/19 02:14:56] Activate baseline firewall.
+[2016/10/19 02:14:56] calling firetool --init-accesscontrol
+[2016/10/19 02:14:56] calling firetool  --init
+[2016/10/19 02:14:58] Activate baseline firewall done
+[2016/10/19 02:14:58] Removing old IP addresses from certs db.
+[2016/10/19 02:14:58] sifs: Begin simulated provisioning.
+[2016/10/19 02:15:00] Disabled policies: CMR : 
+[2016/10/19 02:15:00] Disabled policies: PROV: 
+[2016/10/19 02:15:00] Enabled policies :   200 205 210 215 220 230 240 245 710 715 720 730 735 740 745 755 760 765 775 780 785 790 795 800
+[2016/10/19 02:15:05] Enable multiple policy ..done
+[2016/10/19 02:15:05] Protocol Analysis wedge in place.
+[2016/10/19 02:15:05] Locking firewall policy configuration.
+[2016/10/19 02:15:05] FPGA update supported? 1
+[2016/10/19 02:15:05] Restore original boot partition on success (0x13)
+[2016/10/19 02:33:55] Security mode: NORMAL
+[2016/10/19 02:33:55] Reset reason: bp=0 eph=0 rs=0001 rs2=00
+[2016/10/19 02:33:55] Boot partition: 2
+[2016/10/19 02:33:55] Stay in current boot partition on failure (1)
+[2016/10/19 02:33:55] Tuning kernel security values.
+[2016/10/19 02:33:55]  > Done
+[2016/10/19 02:33:55] Enabling hardware entropy collection.
+[2016/10/19 02:33:56] Enabling firewall watchdog + daemon.
+[2016/10/19 02:33:57] Trusted image buildid TCOO10P
+[2016/10/19 02:33:57] Trusted image buildversion 1.80
+[2016/10/19 02:33:58] Begin to verify rtfs md5
+[2016/10/19 02:33:58] Finish rtfs md5, checked 2 files, skip 0 files
+[2016/10/19 02:33:58] rtfs check finished
+[2016/10/19 02:33:58] FPGA update supported? 1
+[2016/10/19 02:33:59] RTMM device supported.
+[2016/10/19 02:33:59] Found Andromeda PASS-9 hardware
+[2016/10/19 02:34:01] RTMM update not needed.
+[2016/10/19 02:34:01] FPGA update supported? 1
+[2016/10/19 02:34:01] FPGA device support.
+[2016/10/19 02:34:01] FPGA update not needed.
+[2016/10/19 02:34:01] Checking if any CRTM transitions are needed.
+[2016/10/19 02:34:01] Both transitions already completed. (CCSI)
+[2016/10/19 02:34:01] SPITOC format ready
+[2016/10/19 02:34:01] Current CRTM is 3.3
+[2016/10/19 02:34:01] Stepping not required
+[2016/10/19 02:34:01] Checking if Primary UBoot needs updating.
+[2016/10/19 02:34:02] Primary UBoot already updated.
+[2016/10/19 02:34:02] Checking if Backup UBoot needs updating.
+[2016/10/19 02:34:02] Backup UBoot already updated.
+[2016/10/19 02:34:02] Platform [0050001A] doesn't support Snoopy hardware
+[2016/10/19 02:34:02] Phase1 lock latch : Lock RTMM/FPGA done.
+[2016/10/19 02:34:02] Activate baseline firewall.
+[2016/10/19 02:34:02] calling firetool --init-accesscontrol
+[2016/10/19 02:34:03] calling firetool  --init
+[2016/10/19 02:34:04] Activate baseline firewall done
+[2016/10/19 02:34:05] Removing old IP addresses from certs db.
+[2016/10/19 02:34:05] sifs: Begin simulated provisioning.
+[2016/10/19 02:34:06] Disabled policies: CMR : 
+[2016/10/19 02:34:06] Disabled policies: PROV: 
+[2016/10/19 02:34:06] Enabled policies :   200 205 210 215 220 230 240 245 710 715 720 730 735 740 745 755 760 765 775 780 785 790 795 800
+[2016/10/19 02:34:11] Enable multiple policy ..done
+[2016/10/19 02:34:11] Protocol Analysis wedge in place.
+[2016/10/19 02:34:12] Locking firewall policy configuration.
+[2016/10/19 02:34:12] FPGA update supported? 1
+[2016/10/19 02:34:12] Restore original boot partition on success (0x13)
+[2016/10/19 03:05:55] Security mode: NORMAL
+[2016/10/19 03:05:55] Reset reason: bp=0 eph=0 rs=0001 rs2=00
+[2016/10/19 03:05:55] Boot partition: 2
+[2016/10/19 03:05:55] Stay in current boot partition on failure (1)
+[2016/10/19 03:05:55] Tuning kernel security values.
+[2016/10/19 03:05:55]  > Done
+[2016/10/19 03:05:55] Enabling hardware entropy collection.
+[2016/10/19 03:05:56] Enabling firewall watchdog + daemon.
+[2016/10/19 03:05:57] Trusted image buildid TCOO10P
+[2016/10/19 03:05:57] Trusted image buildversion 1.80
+[2016/10/19 03:05:58] Begin to verify rtfs md5
+[2016/10/19 03:05:58] Finish rtfs md5, checked 2 files, skip 0 files
+[2016/10/19 03:05:59] rtfs check finished
+[2016/10/19 03:05:59] FPGA update supported? 1
+[2016/10/19 03:05:59] RTMM device supported.
+[2016/10/19 03:05:59] Found Andromeda PASS-9 hardware
+[2016/10/19 03:06:01] RTMM update not needed.
+[2016/10/19 03:06:01] FPGA update supported? 1
+[2016/10/19 03:06:01] FPGA device support.
+[2016/10/19 03:06:01] FPGA update not needed.
+[2016/10/19 03:06:01] Checking if any CRTM transitions are needed.
+[2016/10/19 03:06:02] Both transitions already completed. (CCSI)
+[2016/10/19 03:06:02] SPITOC format ready
+[2016/10/19 03:06:02] Current CRTM is 3.3
+[2016/10/19 03:06:02] Stepping not required
+[2016/10/19 03:06:02] Checking if Primary UBoot needs updating.
+[2016/10/19 03:06:02] Primary UBoot already updated.
+[2016/10/19 03:06:02] Checking if Backup UBoot needs updating.
+[2016/10/19 03:06:02] Backup UBoot already updated.
+[2016/10/19 03:06:02] Platform [0050001A] doesn't support Snoopy hardware
+[2016/10/19 03:06:02] Phase1 lock latch : Lock RTMM/FPGA done.
+[2016/10/19 03:06:02] Activate baseline firewall.
+[2016/10/19 03:06:02] calling firetool --init-accesscontrol
+[2016/10/19 03:06:03] calling firetool  --init
+[2016/10/19 03:06:04] Activate baseline firewall done
+[2016/10/19 03:06:05] Removing old IP addresses from certs db.
+[2016/10/19 03:06:05] sifs: Begin simulated provisioning.
+[2016/10/19 03:06:06] Disabled policies: CMR : 
+[2016/10/19 03:06:06] Disabled policies: PROV: 
+[2016/10/19 03:06:06] Enabled policies :   200 205 210 215 220 230 240 245 710 715 720 730 735 740 745 755 760 765 775 780 785 790 795 800
+[2016/10/19 03:06:12] Enable multiple policy ..done
+[2016/10/19 03:06:12] Protocol Analysis wedge in place.
+[2016/10/19 03:06:12] Locking firewall policy configuration.
+[2016/10/19 03:06:12] FPGA update supported? 1
+[2016/10/19 03:06:12] Restore original boot partition on success (0x13)
+[2016/10/19 06:53:05] Security mode: NORMAL
+[2016/10/19 06:53:05] Reset reason: bp=0 eph=0 rs=0001 rs2=00
+[2016/10/19 06:53:05] Boot partition: 2
+[2016/10/19 06:53:05] Stay in current boot partition on failure (1)
+[2016/10/19 06:53:05] Tuning kernel security values.
+[2016/10/19 06:53:05]  > Done
+[2016/10/19 06:53:05] Enabling hardware entropy collection.
+[2016/10/19 06:53:06] Enabling firewall watchdog + daemon.
+[2016/10/19 06:53:07] Trusted image buildid TCOO10P
+[2016/10/19 06:53:07] Trusted image buildversion 1.80
+[2016/10/19 06:53:08] Begin to verify rtfs md5
+[2016/10/19 06:53:08] Finish rtfs md5, checked 2 files, skip 0 files
+[2016/10/19 06:53:08] rtfs check finished
+[2016/10/19 06:53:09] FPGA update supported? 1
+[2016/10/19 06:53:09] RTMM device supported.
+[2016/10/19 06:53:09] Found Andromeda PASS-9 hardware
+[2016/10/19 06:53:11] RTMM update not needed.
+[2016/10/19 06:53:11] FPGA update supported? 1
+[2016/10/19 06:53:11] FPGA device support.
+[2016/10/19 06:53:11] FPGA update not needed.
+[2016/10/19 06:53:11] Checking if any CRTM transitions are needed.
+[2016/10/19 06:53:11] Both transitions already completed. (CCSI)
+[2016/10/19 06:53:11] SPITOC format ready
+[2016/10/19 06:53:12] Current CRTM is 3.3
+[2016/10/19 06:53:12] Stepping not required
+[2016/10/19 06:53:12] Checking if Primary UBoot needs updating.
+[2016/10/19 06:53:12] Primary UBoot already updated.
+[2016/10/19 06:53:12] Checking if Backup UBoot needs updating.
+[2016/10/19 06:53:12] Backup UBoot already updated.
+[2016/10/19 06:53:12] Platform [0050001A] doesn't support Snoopy hardware
+[2016/10/19 06:53:12] Phase1 lock latch : Lock RTMM/FPGA done.
+[2016/10/19 06:53:12] Activate baseline firewall.
+[2016/10/19 06:53:12] calling firetool --init-accesscontrol
+[2016/10/19 06:53:13] calling firetool  --init
+[2016/10/19 06:53:14] Activate baseline firewall done
+[2016/10/19 06:53:15] Removing old IP addresses from certs db.
+[2016/10/19 06:53:15] sifs: Begin simulated provisioning.
+[2016/10/19 06:53:16] Disabled policies: CMR : 
+[2016/10/19 06:53:16] Disabled policies: PROV: 
+[2016/10/19 06:53:16] Enabled policies :   200 205 210 215 220 230 240 245 710 715 720 730 735 740 745 755 760 765 775 780 785 790 795 800
+[2016/10/19 06:53:21] Enable multiple policy ..done
+[2016/10/19 06:53:21] Protocol Analysis wedge in place.
+[2016/10/19 06:53:22] Locking firewall policy configuration.
+[2016/10/19 06:53:22] FPGA update supported? 1
+[2016/10/19 06:53:22] Restore original boot partition on success (0x13)
+[2016/10/19 07:48:45] Security mode: NORMAL
+[2016/10/19 07:48:45] Reset reason: bp=0 eph=0 rs=0001 rs2=00
+[2016/10/19 07:48:45] Boot partition: 2
+[2016/10/19 07:48:45] Stay in current boot partition on failure (1)
+[2016/10/19 07:48:45] Tuning kernel security values.
+[2016/10/19 07:48:45]  > Done
+[2016/10/19 07:48:45] Enabling hardware entropy collection.
+[2016/10/19 07:48:46] Enabling firewall watchdog + daemon.
+[2016/10/19 07:48:47] Trusted image buildid TCOO10P
+[2016/10/19 07:48:47] Trusted image buildversion 1.80
+[2016/10/19 07:48:48] Begin to verify rtfs md5
+[2016/10/19 07:48:49] Finish rtfs md5, checked 2 files, skip 0 files
+[2016/10/19 07:48:49] rtfs check finished
+[2016/10/19 07:48:49] FPGA update supported? 1
+[2016/10/19 07:48:49] RTMM device supported.
+[2016/10/19 07:48:49] Found Andromeda PASS-9 hardware
+[2016/10/19 07:48:51] RTMM update not needed.
+[2016/10/19 07:48:51] FPGA update supported? 1
+[2016/10/19 07:48:51] FPGA device support.
+[2016/10/19 07:48:51] FPGA update not needed.
+[2016/10/19 07:48:51] Checking if any CRTM transitions are needed.
+[2016/10/19 07:48:52] Both transitions already completed. (CCSI)
+[2016/10/19 07:48:52] SPITOC format ready
+[2016/10/19 07:48:52] Current CRTM is 3.3
+[2016/10/19 07:48:52] Stepping not required
+[2016/10/19 07:48:52] Checking if Primary UBoot needs updating.
+[2016/10/19 07:48:52] Primary UBoot already updated.
+[2016/10/19 07:48:52] Checking if Backup UBoot needs updating.
+[2016/10/19 07:48:52] Backup UBoot already updated.
+[2016/10/19 07:48:52] Platform [0050001A] doesn't support Snoopy hardware
+[2016/10/19 07:48:52] Phase1 lock latch : Lock RTMM/FPGA done.
+[2016/10/19 07:48:52] Activate baseline firewall.
+[2016/10/19 07:48:52] calling firetool --init-accesscontrol
+[2016/10/19 07:48:53] calling firetool  --init
+[2016/10/19 07:48:55] Activate baseline firewall done
+[2016/10/19 07:48:55] Removing old IP addresses from certs db.
+[2016/10/19 07:48:55] sifs: Begin simulated provisioning.
+[2016/10/19 07:48:56] Disabled policies: CMR : 
+[2016/10/19 07:48:57] Disabled policies: PROV: 
+[2016/10/19 07:48:57] Enabled policies :   200 205 210 215 220 230 240 245 710 715 720 730 735 740 745 755 760 765 775 780 785 790 795 800
+[2016/10/19 07:49:02] Enable multiple policy ..done
+[2016/10/19 07:49:02] Protocol Analysis wedge in place.
+[2016/10/19 07:49:02] Locking firewall policy configuration.
+[2016/10/19 07:49:02] FPGA update supported? 1
+[2016/10/19 07:49:02] Restore original boot partition on success (0x13)
+[2016/10/19 07:58:42] Security mode: NORMAL
+[2016/10/19 07:58:42] Reset reason: bp=12 eph=0 rs=0080 rs2=02
+[2016/10/19 07:58:42] Boot partition: 2
+[2016/10/19 07:58:42] Stay in current boot partition on failure (1)
+[2016/10/19 07:58:42] Tuning kernel security values.
+[2016/10/19 07:58:42]  > Done
+[2016/10/19 07:58:42] Enabling hardware entropy collection.
+[2016/10/19 07:58:42] Enabling firewall watchdog + daemon.
+[2016/10/19 07:58:44] Trusted image buildid TCOO10P
+[2016/10/19 07:58:44] Trusted image buildversion 1.80
+[2016/10/19 07:58:44] Begin to verify rtfs md5
+[2016/10/19 07:58:45] Finish rtfs md5, checked 2 files, skip 0 files
+[2016/10/19 07:58:45] rtfs check finished
+[2016/10/19 07:58:45] FPGA update supported? 1
+[2016/10/19 07:58:45] RTMM device supported.
+[2016/10/19 07:58:45] Found Andromeda PASS-9 hardware
+[2016/10/19 07:58:46] RTMM update not needed.
+[2016/10/19 07:58:46] FPGA update supported? 1
+[2016/10/19 07:58:46] FPGA device support.
+[2016/10/19 07:58:46] FPGA update not needed.
+[2016/10/19 07:58:46] Checking if any CRTM transitions are needed.
+[2016/10/19 07:58:46] Both transitions already completed. (CCSI)
+[2016/10/19 07:58:46] SPITOC format ready
+[2016/10/19 07:58:46] Current CRTM is 3.3
+[2016/10/19 07:58:47] Stepping not required
+[2016/10/19 07:58:47] Checking if Primary UBoot needs updating.
+[2016/10/19 07:58:47] Primary UBoot already updated.
+[2016/10/19 07:58:47] Checking if Backup UBoot needs updating.
+[2016/10/19 07:58:47] Backup UBoot already updated.
+[2016/10/19 07:58:47] Platform [0050001A] doesn't support Snoopy hardware
+[2016/10/19 07:58:47] Phase1 lock latch : Lock RTMM/FPGA done.
+[2016/10/19 07:58:47] Activate baseline firewall.
+[2016/10/19 07:58:47] calling firetool --init-accesscontrol
+[2016/10/19 07:58:48] calling firetool  --init
+[2016/10/19 07:58:49] Activate baseline firewall done
+[2016/10/19 07:58:50] Removing old IP addresses from certs db.
+[2016/10/19 07:58:50] sifs: Begin simulated provisioning.
+[2016/10/19 07:58:51] Disabled policies: CMR : 
+[2016/10/19 07:58:51] Disabled policies: PROV: 
+[2016/10/19 07:58:51] Enabled policies :   200 205 210 215 220 230 240 245 710 715 720 730 735 740 745 755 760 765 775 780 785 790 795 800
+[2016/10/19 07:58:56] Enable multiple policy ..done
+[2016/10/19 07:58:56] Protocol Analysis wedge in place.
+[2016/10/19 07:58:57] Locking firewall policy configuration.
+[2016/10/19 07:58:57] FPGA update supported? 1
+[2016/10/19 07:58:57] Restore original boot partition on success (0x13)
+[2016/10/19 08:07:28] Security mode: NORMAL
+[2016/10/19 08:07:28] Reset reason: bp=12 eph=0 rs=0080 rs2=02
+[2016/10/19 08:07:28] Boot partition: 2
+[2016/10/19 08:07:28] Stay in current boot partition on failure (1)
+[2016/10/19 08:07:28] Tuning kernel security values.
+[2016/10/19 08:07:28]  > Done
+[2016/10/19 08:07:28] Enabling hardware entropy collection.
+[2016/10/19 08:07:29] Enabling firewall watchdog + daemon.
+[2016/10/19 08:07:30] Trusted image buildid TCOO10P
+[2016/10/19 08:07:30] Trusted image buildversion 1.80
+[2016/10/19 08:07:31] Begin to verify rtfs md5
+[2016/10/19 08:07:31] Finish rtfs md5, checked 2 files, skip 0 files
+[2016/10/19 08:07:31] rtfs check finished
+[2016/10/19 08:07:32] FPGA update supported? 1
+[2016/10/19 08:07:32] RTMM device supported.
+[2016/10/19 08:07:32] Found Andromeda PASS-9 hardware
+[2016/10/19 08:07:32] RTMM update not needed.
+[2016/10/19 08:07:32] FPGA update supported? 1
+[2016/10/19 08:07:32] FPGA device support.
+[2016/10/19 08:07:33] FPGA update not needed.
+[2016/10/19 08:07:33] Checking if any CRTM transitions are needed.
+[2016/10/19 08:07:33] Both transitions already completed. (CCSI)
+[2016/10/19 08:07:33] SPITOC format ready
+[2016/10/19 08:07:33] Current CRTM is 3.3
+[2016/10/19 08:07:33] Stepping not required
+[2016/10/19 08:07:33] Checking if Primary UBoot needs updating.
+[2016/10/19 08:07:33] Primary UBoot already updated.
+[2016/10/19 08:07:33] Checking if Backup UBoot needs updating.
+[2016/10/19 08:07:33] Backup UBoot already updated.
+[2016/10/19 08:07:33] Platform [0050001A] doesn't support Snoopy hardware
+[2016/10/19 08:07:34] Phase1 lock latch : Lock RTMM/FPGA done.
+[2016/10/19 08:07:34] Activate baseline firewall.
+[2016/10/19 08:07:34] calling firetool --init-accesscontrol
+[2016/10/19 08:07:35] calling firetool  --init
+[2016/10/19 08:07:36] Activate baseline firewall done
+[2016/10/19 08:07:36] Removing old IP addresses from certs db.
+[2016/10/19 08:07:36] sifs: Begin simulated provisioning.
+[2016/10/19 08:07:38] Disabled policies: CMR : 
+[2016/10/19 08:07:38] Disabled policies: PROV: 
+[2016/10/19 08:07:38] Enabled policies :   200 205 210 215 220 230 240 245 710 715 720 730 735 740 745 755 760 765 775 780 785 790 795 800
+[2016/10/19 08:07:43] Enable multiple policy ..done
+[2016/10/19 08:07:43] Protocol Analysis wedge in place.
+[2016/10/19 08:07:43] Locking firewall policy configuration.
+[2016/10/19 08:07:43] FPGA update supported? 1
+[2016/10/19 08:07:44] Restore original boot partition on success (0x13)
+[2016/10/19 08:33:41] Security mode: NORMAL
+[2016/10/19 08:33:41] Reset reason: bp=0 eph=0 rs=0001 rs2=00
+[2016/10/19 08:33:41] Boot partition: 2
+[2016/10/19 08:33:41] Stay in current boot partition on failure (1)
+[2016/10/19 08:33:41] Tuning kernel security values.
+[2016/10/19 08:33:41]  > Done
+[2016/10/19 08:33:41] Enabling hardware entropy collection.
+[2016/10/19 08:33:42] Enabling firewall watchdog + daemon.
+[2016/10/19 08:33:43] Trusted image buildid TCOO10P
+[2016/10/19 08:33:43] Trusted image buildversion 1.80
+[2016/10/19 08:33:44] Begin to verify rtfs md5
+[2016/10/19 08:33:44] Finish rtfs md5, checked 2 files, skip 0 files
+[2016/10/19 08:33:45] rtfs check finished
+[2016/10/19 08:33:45] FPGA update supported? 1
+[2016/10/19 08:33:45] RTMM device supported.
+[2016/10/19 08:33:45] Found Andromeda PASS-9 hardware
+[2016/10/19 08:33:47] RTMM update not needed.
+[2016/10/19 08:33:47] FPGA update supported? 1
+[2016/10/19 08:33:47] FPGA device support.
+[2016/10/19 08:33:47] FPGA update not needed.
+[2016/10/19 08:33:47] Checking if any CRTM transitions are needed.
+[2016/10/19 08:33:48] Both transitions already completed. (CCSI)
+[2016/10/19 08:33:48] SPITOC format ready
+[2016/10/19 08:33:48] Current CRTM is 3.3
+[2016/10/19 08:33:48] Stepping not required
+[2016/10/19 08:33:48] Checking if Primary UBoot needs updating.
+[2016/10/19 08:33:48] Primary UBoot already updated.
+[2016/10/19 08:33:48] Checking if Backup UBoot needs updating.
+[2016/10/19 08:33:48] Backup UBoot already updated.
+[2016/10/19 08:33:48] Platform [0050001A] doesn't support Snoopy hardware
+[2016/10/19 08:33:48] Phase1 lock latch : Lock RTMM/FPGA done.
+[2016/10/19 08:33:48] Activate baseline firewall.
+[2016/10/19 08:33:48] calling firetool --init-accesscontrol
+[2016/10/19 08:33:49] calling firetool  --init
+[2016/10/19 08:33:51] Activate baseline firewall done
+[2016/10/19 08:33:51] Removing old IP addresses from certs db.
+[2016/10/19 08:33:51] sifs: Begin simulated provisioning.
+[2016/10/19 08:33:52] Disabled policies: CMR : 
+[2016/10/19 08:33:53] Disabled policies: PROV: 
+[2016/10/19 08:33:53] Enabled policies :   200 205 210 215 220 230 240 245 710 715 720 730 735 740 745 755 760 765 775 780 785 790 795 800
+[2016/10/19 08:33:58] Enable multiple policy ..done
+[2016/10/19 08:33:58] Protocol Analysis wedge in place.
+[2016/10/19 08:33:58] Locking firewall policy configuration.
+[2016/10/19 08:33:58] FPGA update supported? 1
+[2016/10/19 08:33:58] Restore original boot partition on success (0x13)
+[2016/10/19 08:41:04] Security mode: NORMAL
+[2016/10/19 08:41:04] Reset reason: bp=0 eph=0 rs=0001 rs2=00
+[2016/10/19 08:41:04] Boot partition: 2
+[2016/10/19 08:41:04] Stay in current boot partition on failure (1)
+[2016/10/19 08:41:04] Tuning kernel security values.
+[2016/10/19 08:41:04]  > Done
+[2016/10/19 08:41:04] Enabling hardware entropy collection.
+[2016/10/19 08:41:04] Enabling firewall watchdog + daemon.
+[2016/10/19 08:41:06] Trusted image buildid TCOO10P
+[2016/10/19 08:41:06] Trusted image buildversion 1.80
+[2016/10/19 08:41:06] Begin to verify rtfs md5
+[2016/10/19 08:41:07] Finish rtfs md5, checked 2 files, skip 0 files
+[2016/10/19 08:41:07] rtfs check finished
+[2016/10/19 08:41:07] FPGA update supported? 1
+[2016/10/19 08:41:07] RTMM device supported.
+[2016/10/19 08:41:07] Found Andromeda PASS-9 hardware
+[2016/10/19 08:41:09] RTMM update not needed.
+[2016/10/19 08:41:09] FPGA update supported? 1
+[2016/10/19 08:41:09] FPGA device support.
+[2016/10/19 08:41:10] FPGA update not needed.
+[2016/10/19 08:41:10] Checking if any CRTM transitions are needed.
+[2016/10/19 08:41:10] Both transitions already completed. (CCSI)
+[2016/10/19 08:41:10] SPITOC format ready
+[2016/10/19 08:41:10] Current CRTM is 3.3
+[2016/10/19 08:41:10] Stepping not required
+[2016/10/19 08:41:10] Checking if Primary UBoot needs updating.
+[2016/10/19 08:41:10] Primary UBoot already updated.
+[2016/10/19 08:41:10] Checking if Backup UBoot needs updating.
+[2016/10/19 08:41:10] Backup UBoot already updated.
+[2016/10/19 08:41:10] Platform [0050001A] doesn't support Snoopy hardware
+[2016/10/19 08:41:11] Phase1 lock latch : Lock RTMM/FPGA done.
+[2016/10/19 08:41:11] Activate baseline firewall.
+[2016/10/19 08:41:11] calling firetool --init-accesscontrol
+[2016/10/19 08:41:12] calling firetool  --init
+[2016/10/19 08:41:13] Activate baseline firewall done
+[2016/10/19 08:41:13] Removing old IP addresses from certs db.
+[2016/10/19 08:41:13] sifs: Begin simulated provisioning.
+[2016/10/19 08:41:15] Disabled policies: CMR : 
+[2016/10/19 08:41:15] Disabled policies: PROV: 
+[2016/10/19 08:41:15] Enabled policies :   200 205 210 215 220 230 240 245 710 715 720 730 735 740 745 755 760 765 775 780 785 790 795 800
+[2016/10/19 08:41:20] Enable multiple policy ..done
+[2016/10/19 08:41:20] Protocol Analysis wedge in place.
+[2016/10/19 08:41:20] Locking firewall policy configuration.
+[2016/10/19 08:41:20] FPGA update supported? 1
+[2016/10/19 08:41:21] Restore original boot partition on success (0x13)
+[2016/10/21 07:05:18] Security mode: NORMAL
+[2016/10/21 07:05:18] Reset reason: bp=0 eph=0 rs=0001 rs2=00
+[2016/10/21 07:05:18] Boot partition: 2
+[2016/10/21 07:05:18] Stay in current boot partition on failure (1)
+[2016/10/21 07:05:18] Tuning kernel security values.
+[2016/10/21 07:05:18]  > Done
+[2016/10/21 07:05:18] Enabling hardware entropy collection.
+[2016/10/21 07:05:19] Enabling firewall watchdog + daemon.
+[2016/10/21 07:05:20] Trusted image buildid TCOO10P
+[2016/10/21 07:05:20] Trusted image buildversion 1.80
+[2016/10/21 07:05:21] Begin to verify rtfs md5
+[2016/10/21 07:05:21] Finish rtfs md5, checked 2 files, skip 0 files
+[2016/10/21 07:05:21] rtfs check finished
+[2016/10/21 07:05:21] FPGA update supported? 1
+[2016/10/21 07:05:22] RTMM device supported.
+[2016/10/21 07:05:22] Found Andromeda PASS-9 hardware
+[2016/10/21 07:05:24] RTMM update not needed.
+[2016/10/21 07:05:24] FPGA update supported? 1
+[2016/10/21 07:05:24] FPGA device support.
+[2016/10/21 07:05:24] FPGA update not needed.
+[2016/10/21 07:05:24] Checking if any CRTM transitions are needed.
+[2016/10/21 07:05:24] Both transitions already completed. (CCSI)
+[2016/10/21 07:05:24] SPITOC format ready
+[2016/10/21 07:05:25] Current CRTM is 3.3
+[2016/10/21 07:05:25] Stepping not required
+[2016/10/21 07:05:25] Checking if Primary UBoot needs updating.
+[2016/10/21 07:05:25] Primary UBoot already updated.
+[2016/10/21 07:05:25] Checking if Backup UBoot needs updating.
+[2016/10/21 07:05:25] Backup UBoot already updated.
+[2016/10/21 07:05:25] Platform [0050001A] doesn't support Snoopy hardware
+[2016/10/21 07:05:25] Phase1 lock latch : Lock RTMM/FPGA done.
+[2016/10/21 07:05:25] Activate baseline firewall.
+[2016/10/21 07:05:25] calling firetool --init-accesscontrol
+[2016/10/21 07:05:26] calling firetool  --init
+[2016/10/21 07:05:27] Activate baseline firewall done
+[2016/10/21 07:05:28] Removing old IP addresses from certs db.
+[2016/10/21 07:05:28] sifs: Begin simulated provisioning.
+[2016/10/21 07:05:29] Disabled policies: CMR : 
+[2016/10/21 07:05:29] Disabled policies: PROV: 
+[2016/10/21 07:05:29] Enabled policies :   200 205 210 215 220 230 240 245 710 715 720 730 735 740 745 755 760 765 775 780 785 790 795 800
+[2016/10/21 07:05:34] Enable multiple policy ..done
+[2016/10/21 07:05:34] Protocol Analysis wedge in place.
+[2016/10/21 07:05:35] Locking firewall policy configuration.
+[2016/10/21 07:05:35] FPGA update supported? 1
+[2016/10/21 07:05:35] Restore original boot partition on success (0x13)
+[2017/03/24 14:45:01] Security mode: NORMAL
+[2017/03/24 14:45:01] Reset reason: bp=12 eph=0 rs=0100 rs2=03
+[2017/03/24 14:45:01] Boot partition: 2
+[2017/03/24 14:45:01] Stay in current boot partition on failure (1)
+[2017/03/24 14:45:01] Tuning kernel security values.
+[2017/03/24 14:45:01]  > Done
+[2017/03/24 14:45:01] Enabling hardware entropy collection.
+[2017/03/24 14:45:02] Enabling firewall watchdog + daemon.
+[2017/03/24 14:45:03] Trusted image buildid TCOO10P
+[2017/03/24 14:45:03] Trusted image buildversion 1.80
+[2017/03/24 14:45:04] Begin to verify rtfs md5
+[2017/03/24 14:45:05] Finish rtfs md5, checked 2 files, skip 0 files
+[2017/03/24 14:45:05] rtfs check finished
+[2017/03/24 14:45:05] FPGA update supported? 1
+[2017/03/24 14:45:05] RTMM device supported.
+[2017/03/24 14:45:05] Found Andromeda PASS-9 hardware
+[2017/03/24 14:45:05] RTMM update not needed.
+[2017/03/24 14:45:06] FPGA update supported? 1
+[2017/03/24 14:45:06] FPGA device support.
+[2017/03/24 14:45:06] Attempting to flash system SYS-FPGA image.
+[2017/03/24 14:45:38] SYS-FPGA image successfully updated.
+[2017/03/24 14:45:38] Checking if any CRTM transitions are needed.
+[2017/03/24 14:45:38] Both transitions already completed. (CCSI)
+[2017/03/24 14:45:38] SPITOC format ready
+[2017/03/24 14:45:39] Current CRTM is 3.3
+[2017/03/24 14:45:39] Stepping not required
+[2017/03/24 14:45:39] Checking if Primary UBoot needs updating.
+[2017/03/24 14:45:40] Primary UBoot already updated.
+[2017/03/24 14:45:40] Checking if Backup UBoot needs updating.
+[2017/03/24 14:45:41] Backup UBoot already updated.
+[2017/03/24 14:45:41] Platform [0050001A] doesn't support Snoopy hardware
+[2017/03/24 14:45:41] Phase1 lock latch : Lock RTMM/FPGA done.
+[2017/03/24 14:45:41] Activate baseline firewall.
+[2017/03/24 14:45:41] calling firetool --init-accesscontrol
+[2017/03/24 14:45:42] calling firetool  --init
+[2017/03/24 14:45:43] Activate baseline firewall done
+[2017/03/24 14:45:44] Removing old IP addresses from certs db.
+[2017/03/24 14:45:44] sifs: Begin simulated provisioning.
+[2017/03/24 14:45:45] Disabled policies: CMR : 
+[2017/03/24 14:45:45] Disabled policies: PROV: 
+[2017/03/24 14:45:45] Enabled policies :   200 205 210 215 220 230 240 245 710 715 720 730 735 740 745 755 760 765 775 780 785 790 795 800
+[2017/03/24 14:45:51] Enable multiple policy ..done
+[2017/03/24 14:45:51] Protocol Analysis wedge in place.
+[2017/03/24 14:45:51] Locking firewall policy configuration.
+[2017/03/24 14:45:51] FPGA update supported? 1
+[2017/03/24 14:45:51] Restore original boot partition on success (0x13)
+[2017/03/24 15:34:22] Security mode: NORMAL
+[2017/03/24 15:34:22] Reset reason: bp=12 eph=0 rs=0080 rs2=02
+[2017/03/24 15:34:22] Boot partition: 2
+[2017/03/24 15:34:22] Stay in current boot partition on failure (1)
+[2017/03/24 15:34:22] Tuning kernel security values.
+[2017/03/24 15:34:22]  > Done
+[2017/03/24 15:34:22] Enabling hardware entropy collection.
+[2017/03/24 15:34:22] Enabling firewall watchdog + daemon.
+[2017/03/24 15:34:24] Trusted image buildid TCOO10P
+[2017/03/24 15:34:24] Trusted image buildversion 1.80
+[2017/03/24 15:34:25] Begin to verify rtfs md5
+[2017/03/24 15:34:25] Finish rtfs md5, checked 2 files, skip 0 files
+[2017/03/24 15:34:25] rtfs check finished
+[2017/03/24 15:34:25] FPGA update supported? 1
+[2017/03/24 15:34:25] RTMM device supported.
+[2017/03/24 15:34:26] Found Andromeda PASS-9 hardware
+[2017/03/24 15:34:26] RTMM update not needed.
+[2017/03/24 15:34:26] FPGA update supported? 1
+[2017/03/24 15:34:26] FPGA device support.
+[2017/03/24 15:34:26] FPGA update not needed.
+[2017/03/24 15:34:26] Checking if any CRTM transitions are needed.
+[2017/03/24 15:34:27] Both transitions already completed. (CCSI)
+[2017/03/24 15:34:27] SPITOC format ready
+[2017/03/24 15:34:27] Current CRTM is 3.3
+[2017/03/24 15:34:27] Stepping not required
+[2017/03/24 15:34:27] Checking if Primary UBoot needs updating.
+[2017/03/24 15:34:27] Primary UBoot already updated.
+[2017/03/24 15:34:27] Checking if Backup UBoot needs updating.
+[2017/03/24 15:34:27] Backup UBoot already updated.
+[2017/03/24 15:34:27] Platform [0050001A] doesn't support Snoopy hardware
+[2017/03/24 15:34:27] Phase1 lock latch : Lock RTMM/FPGA done.
+[2017/03/24 15:34:27] Activate baseline firewall.
+[2017/03/24 15:34:28] calling firetool --init-accesscontrol
+[2017/03/24 15:34:28] calling firetool  --init
+[2017/03/24 15:34:30] Activate baseline firewall done
+[2017/03/24 15:34:30] Removing old IP addresses from certs db.
+[2017/03/24 15:34:30] sifs: Begin simulated provisioning.
+[2017/03/24 15:34:32] Disabled policies: CMR : 
+[2017/03/24 15:34:32] Disabled policies: PROV: 
+[2017/03/24 15:34:32] Enabled policies :   200 205 210 215 220 230 240 245 710 715 720 730 735 740 745 755 760 765 775 780 785 790 795 800
+[2017/03/24 15:34:37] Enable multiple policy ..done
+[2017/03/24 15:34:37] Protocol Analysis wedge in place.
+[2017/03/24 15:34:38] Locking firewall policy configuration.
+[2017/03/24 15:34:38] FPGA update supported? 1
+[2017/03/24 15:34:38] Restore original boot partition on success (0x13)
+[2023/02/19 01:00:53] Security mode: NORMAL
+[2023/02/19 01:00:53] Reset reason: bp=0 eph=0 rs=0001 rs2=00
+[2023/02/19 01:00:53] Boot partition: 2
+[2023/02/19 01:00:54] Stay in current boot partition on failure (1)
+[2023/02/19 01:00:54] Tuning kernel security values.
+[2023/02/19 01:00:54]  > Done
+[2023/02/19 01:00:54] Enabling hardware entropy collection.
+[2023/02/19 01:00:54] Enabling firewall watchdog + daemon.
+[2023/02/19 01:00:55] Trusted image buildid TCOO18Q
+[2023/02/19 01:00:56] Trusted image buildversion 3.20
+[2023/02/19 01:00:56] Begin to verify rtfs md5
+[2023/02/19 01:00:57] Finish rtfs md5, checked 2 files, skip 0 files
+[2023/02/19 01:00:57] rtfs check finished
+[2023/02/19 01:00:57] FPGA update supported? 1
+[2023/02/19 01:00:57] RTMM device supported.
+[2023/02/19 01:00:57] Found Andromeda PASS-9 hardware
+[2023/02/19 01:00:59] RTMM update not needed.
+[2023/02/19 01:00:59] FPGA update supported? 1
+[2023/02/19 01:00:59] FPGA device support.
+[2023/02/19 01:01:00] FPGA update not needed.
+[2023/02/19 01:01:00] Checking if any CRTM transitions are needed.
+[2023/02/19 01:01:00] Both transitions already completed. (CCSI)
+[2023/02/19 01:01:00] SPITOC format ready
+[2023/02/19 01:01:00] Current CRTM is 3.3
+[2023/02/19 01:01:00] Stepping not required
+[2023/02/19 01:01:00] Checking if Primary UBoot needs updating.
+[2023/02/19 01:01:00] Primary UBoot already updated.
+[2023/02/19 01:01:00] Checking if Backup UBoot needs updating.
+[2023/02/19 01:01:00] Backup UBoot already updated.
+[2023/02/19 01:01:00] Platform [0050001A] doesn't support Snoopy hardware
+[2023/02/19 01:01:01] Phase1 lock latch : Lock RTMM/FPGA done.
+[2023/02/19 01:01:01] Activate baseline firewall.
+[2023/02/19 01:01:01] calling firetool --init-accesscontrol
+[2023/02/19 01:01:01] calling firetool  --init
+[2023/02/19 01:01:03] Activate baseline firewall done
+[2023/02/19 01:01:03] Removing old IP addresses from certs db.
+[2023/02/19 01:01:03] sifs: Begin simulated provisioning.
+[2023/02/19 01:01:05] Disabled policies: CMR : 
+[2023/02/19 01:01:05] Disabled policies: PROV: 
+[2023/02/19 01:01:05] Enabled policies :   200 205 210 215 220 230 240 245 710 715 720 730 735 740 745 755 760 765 775 780 785 790 795 800
+[2023/02/19 01:01:10] Enable multiple policy ..done
+[2023/02/19 01:01:10] Protocol Analysis wedge in place.
+[2023/02/19 01:01:10] Locking firewall policy configuration.
+[2023/02/19 01:01:10] FPGA update supported? 1
+[2023/02/19 01:01:10] Restore original boot partition on success (0x13)
+[2023/04/12 01:12:36] Security mode: NORMAL
+[2023/04/12 01:12:36] Reset reason: bp=12 eph=0 rs=0100 rs2=03
+[2023/04/12 01:12:36] Boot partition: 2
+[2023/04/12 01:12:36] Stay in current boot partition on failure (1)
+[2023/04/12 01:12:36] Tuning kernel security values.
+[2023/04/12 01:12:36]  > Done
+[2023/04/12 01:12:36] Enabling hardware entropy collection.
+[2023/04/12 01:12:37] Enabling firewall watchdog + daemon.
+[2023/04/12 01:12:38] Trusted image buildid TCOO18Q
+[2023/04/12 01:12:38] Trusted image buildversion 3.20
+[2023/04/12 01:12:38] Begin to verify rtfs md5
+[2023/04/12 01:12:39] Finish rtfs md5, checked 2 files, skip 0 files
+[2023/04/12 01:12:39] rtfs check finished
+[2023/04/12 01:12:39] FPGA update supported? 1
+[2023/04/12 01:12:39] RTMM device supported.
+[2023/04/12 01:12:39] Found Andromeda PASS-9 hardware
+[2023/04/12 01:12:40] RTMM update not needed.
+[2023/04/12 01:12:40] FPGA version is 0x03 0x05 0x00
+[2023/04/12 01:12:40] FPGA update supported? 1
+[2023/04/12 01:12:40] FPGA device support.
+[2023/04/12 01:12:40] Attempting to flash system SYS-FPGA image.
+[2023/04/12 01:13:12] SYS-FPGA image successfully updated.
+[2023/04/12 01:13:12] Checking if any CRTM transitions are needed.
+[2023/04/12 01:13:12] Both transitions already completed. (CCSI)
+[2023/04/12 01:13:12] SPITOC format ready
+[2023/04/12 01:13:12] Current CRTM is 4.0
+[2023/04/12 01:13:12] Stepping not required
+[2023/04/12 01:13:12] Checking if Primary UBoot needs updating.
+[2023/04/12 01:13:13] Starting UBoot Update Procedure on Primary
+[2023/04/12 01:13:13] Old:U-Boot 2009.06p(Aug 27 2015 - 17:31:27)
+[2023/04/12 01:13:13] New:U-Boot 2009.06psvn44650 (Jul 21 2021 - 04:15:48)
+[2023/04/12 01:13:13] Primary Uboot update Step 1: writing image (pass 1)
+[2023/04/12 01:13:18] Primary Uboot update Step 2: verify image (pass 1)
+[2023/04/12 01:13:18] Primary UBoot updated successfully. Scheduling auto-reboot.
+[2023/04/12 01:13:18] Checking if Backup UBoot needs updating.
+[2023/04/12 01:13:19] Starting UBoot Update Procedure on Backup
+[2023/04/12 01:13:19] Old:U-Boot 2009.06p(Aug 27 2015 - 17:31:27)
+[2023/04/12 01:13:19] New:U-Boot 2009.06psvn44650 (Jul 21 2021 - 04:15:48)
+[2023/04/12 01:13:19] Backup Uboot update Step 1: writing image (pass 1)
+[2023/04/12 01:13:24] Backup Uboot update Step 2: verify image (pass 1)
+[2023/04/12 01:13:24] Backup UBoot updated successfully.
+[2023/04/12 01:13:24] Platform [0050001A] doesn't support Snoopy hardware
+[2023/04/12 01:13:24] Reboot marker set. Rebooting IMM now.
+[2023/04/12 01:13:48] Security mode: NORMAL
+[2023/04/12 01:13:48] Reset reason: bp=12 eph=0 rs=0080 rs2=00
+[2023/04/12 01:13:48] Boot partition: 2
+[2023/04/12 01:13:48] Stay in current boot partition on failure (2)
+[2023/04/12 01:13:48] Tuning kernel security values.
+[2023/04/12 01:13:48]  > Done
+[2023/04/12 01:13:48] Enabling hardware entropy collection.
+[2023/04/12 01:13:48] Enabling firewall watchdog + daemon.
+[2023/04/12 01:13:50] Trusted image buildid TCOO18Q
+[2023/04/12 01:13:50] Trusted image buildversion 3.20
+[2023/04/12 01:13:50] Begin to verify rtfs md5
+[2023/04/12 01:13:51] Finish rtfs md5, checked 2 files, skip 0 files
+[2023/04/12 01:13:51] rtfs check finished
+[2023/04/12 01:13:51] FPGA update supported? 1
+[2023/04/12 01:13:51] RTMM device supported.
+[2023/04/12 01:13:51] Found Andromeda PASS-9 hardware
+[2023/04/12 01:13:52] RTMM update not needed.
+[2023/04/12 01:13:52] FPGA version is 0x03 0x05 0x00
+[2023/04/12 01:13:52] FPGA update supported? 1
+[2023/04/12 01:13:52] FPGA device support.
+[2023/04/12 01:13:52] FPGA update not needed.
+[2023/04/12 01:13:52] Checking if any CRTM transitions are needed.
+[2023/04/12 01:13:52] Both transitions already completed. (CCSI)
+[2023/04/12 01:13:52] SPITOC format ready
+[2023/04/12 01:13:52] Current CRTM is 4.0
+[2023/04/12 01:13:52] Stepping not required
+[2023/04/12 01:13:52] Checking if Primary UBoot needs updating.
+[2023/04/12 01:13:53] Primary UBoot already updated.
+[2023/04/12 01:13:53] Checking if Backup UBoot needs updating.
+[2023/04/12 01:13:54] Backup UBoot already updated.
+[2023/04/12 01:13:54] Platform [0050001A] doesn't support Snoopy hardware
+[2023/04/12 01:13:55] Phase1 lock latch : Lock RTMM/FPGA done.
+[2023/04/12 01:13:55] Activate baseline firewall.
+[2023/04/12 01:13:55] calling firetool --init-accesscontrol
+[2023/04/12 01:13:55] calling firetool  --init
+[2023/04/12 01:13:56] Activate baseline firewall done
+[2023/04/12 01:13:57] Removing old IP addresses from certs db.
+[2023/04/12 01:13:57] sifs: Begin simulated provisioning.
+[2023/04/12 01:13:58] Disabled policies: CMR : 
+[2023/04/12 01:13:58] Disabled policies: PROV: 
+[2023/04/12 01:13:58] Enabled policies :   200 205 210 215 220 230 240 245 710 715 720 730 735 740 745 755 760 765 775 780 785 790 795 800
+[2023/04/12 01:14:02] Enable multiple policy ..done
+[2023/04/12 01:14:02] Protocol Analysis wedge in place.
+[2023/04/12 01:14:03] Locking firewall policy configuration.
+[2023/04/12 01:14:03] FPGA update supported? 1
+[2023/04/12 01:14:03] Restore original boot partition on success (0x13)
+[2023/04/20 02:34:59] Security mode: NORMAL
+[2023/04/20 02:34:59] Reset reason: bp=0 eph=0 rs=0001 rs2=00
+[2023/04/20 02:34:59] Boot partition: 2
+[2023/04/20 02:34:59] Stay in current boot partition on failure (1)
+[2023/04/20 02:34:59] Tuning kernel security values.
+[2023/04/20 02:34:59]  > Done
+[2023/04/20 02:34:59] Enabling hardware entropy collection.
+[2023/04/20 02:35:00] Enabling firewall watchdog + daemon.
+[2023/04/20 02:35:01] Trusted image buildid TCOO60A
+[2023/04/20 02:35:01] Trusted image buildversion 5.90
+[2023/04/20 02:35:01] Begin to verify rtfs md5
+[2023/04/20 02:35:02] Finish rtfs md5, checked 2 files, skip 0 files
+[2023/04/20 02:35:02] rtfs check finished
+[2023/04/20 02:35:02] FPGA update supported? 1
+[2023/04/20 02:35:02] RTMM device supported.
+[2023/04/20 02:35:02] Found Andromeda PASS-9 hardware
+[2023/04/20 02:35:04] RTMM update not needed.
+[2023/04/20 02:35:04] FPGA version is 0x03 0x23 0x00
+[2023/04/20 02:35:05] FPGA update supported? 1
+[2023/04/20 02:35:05] FPGA device support.
+[2023/04/20 02:35:05] FPGA update not needed.
+[2023/04/20 02:35:05] Checking if any CRTM transitions are needed.
+[2023/04/20 02:35:05] Both transitions already completed. (CCSI)
+[2023/04/20 02:35:05] SPITOC format ready
+[2023/04/20 02:35:05] Current CRTM is 4.0
+[2023/04/20 02:35:05] Stepping not required
+[2023/04/20 02:35:05] Checking if Primary UBoot needs updating.
+[2023/04/20 02:35:05] Primary UBoot already updated.
+[2023/04/20 02:35:05] Checking if Backup UBoot needs updating.
+[2023/04/20 02:35:05] Backup UBoot already updated.
+[2023/04/20 02:35:05] Platform [0050001A] doesn't support Snoopy hardware
+[2023/04/20 02:35:06] Phase1 lock latch : Lock RTMM/FPGA done.
+[2023/04/20 02:35:06] Activate baseline firewall.
+[2023/04/20 02:35:06] calling firetool --init-accesscontrol
+[2023/04/20 02:35:06] calling firetool  --init
+[2023/04/20 02:35:07] Activate baseline firewall done
+[2023/04/20 02:35:08] Removing old IP addresses from certs db.
+[2023/04/20 02:35:08] sifs: Begin simulated provisioning.
+[2023/04/20 02:35:09] Disabled policies: CMR : 
+[2023/04/20 02:35:09] Disabled policies: PROV: 
+[2023/04/20 02:35:09] Enabled policies :   200 205 210 215 220 230 240 245 710 715 720 730 735 740 745 755 760 765 775 780 785 790 795 800
+[2023/04/20 02:35:13] Enable multiple policy ..done
+[2023/04/20 02:35:13] Protocol Analysis wedge in place.
+[2023/04/20 02:35:13] Locking firewall policy configuration.
+[2023/04/20 02:35:14] FPGA update supported? 1
+[2023/04/20 02:35:14] Restore original boot partition on success (0x13)

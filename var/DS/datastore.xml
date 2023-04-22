@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DS version="1.0">
+ <file name='scale-data' type='32768' maxlen='287' code='0'/>
+ <file name='sharedmem' type='32768' maxlen='769' code='0'/>
+ <file name='uefi-chipset-registers' type='32768' maxlen='10108' code='0'/>
+ <file name='feh-info.xml' type='32768' maxlen='144381' code='0'/>
+ <file name='rollback-policy' type='32776' maxlen='1' code='324471415'/>
+ <file name='oemspd.xml' type='32768' maxlen='18139' code='0'/>
+ <file name='dimm_spd' type='32768' maxlen='49920' code='0'/>
+ <file name='secureboot_info' type='32768' maxlen='7440' code='0'/>
+ <file name='tsod-data' type='32768' maxlen='700' code='0'/>
+ <file name='pciinventory' type='32768' maxlen='1024' code='0'/>
+ <file name='uefi-in.tcl' type='32768' maxlen='189426' code='0'/>
+ <file name='power_mode' type='32768' maxlen='1' code='0'/>
+ <file name='inventory' type='32768' maxlen='1241' code='0'/>
+ <file name='UEFI_SYS_INVENTORY' type='32768' maxlen='16246' code='0'/>
+ <file name='csr_err' type='32768' maxlen='54314' code='0'/>
+ <file name='cbo_err' type='32768' maxlen='26' code='0'/>
+ <file name='msr_err' type='32768' maxlen='15818' code='0'/>
+ <file name='mb_err' type='32768' maxlen='4058' code='0'/>
+ <file name='vgpio-err.log' type='32768' maxlen='63' code='0'/>
+ <file name='qpi_errinfo' type='32768' maxlen='150' code='0'/>
+ <file name='hiddenlog_20230420032153' type='32768' maxlen='442' code='0'/>
+ <file name='hiddenlog_format.xml' type='32768' maxlen='237154' code='0'/>
+ <file name='hiddenlog_rec' type='32768' maxlen='150' code='0'/>
+ <file name='hiddenlog_20230421074514' type='32768' maxlen='442' code='0'/>
+ <file name='hiddenlog_20230421230337' type='32768' maxlen='442' code='0'/>
+ <file name='hiddenlog_20230419075409' type='32768' maxlen='442' code='0'/>
+ <file name='hiddenlog_20230419085931' type='32768' maxlen='442' code='0'/>
+</DS>

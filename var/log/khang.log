@@ -1,0 +1,377 @@
+
+=========================================
+Capture Timestamp: 2023/04/12, 01:14:36
+vocent Video Driver installed
+<5>allocate_video_buffer_reserve_mem- video_buffer_phys (reserved mem): 4e000000 video_buffer_size: 0x00EAE000
+<1>hid_init: Desc: Keyboard/Mouse Function
+<1>hid_init: Name: g_kbdmouse
+<1>hid_init: Version: 20111018
+<6>Now registering USB0/func1
+<1>hid_bind: Using Major Number 230
+<1>hid_bind: using r8a66597_udc, Keyboard ep1 Mouse ep2
+<1>hid_bind: Mouse REL ep3
+<7>g_mass_storage: msd_init() Desc: Mass Storage Function
+<7>g_mass_storage: msd_init() Name: g_mass_storage
+<7>g_mass_storage: msd_init() Version: 20120124
+<6>Now registering USB0/func2
+<7>g_mass_storage: msd_bind() Using Major Number 229
+<7>g_mass_storage1: msd_init() Desc: Mass Storage Function
+<7>g_mass_storage1: msd_init() Name: g_mass_storage1
+<7>g_mass_storage1: msd_init() Version: 20120124-1
+<6>Now registering USB0/func3
+<7>g_mass_storage1: msd_bind() Using Major Number 228
+<7>g_mass_storage2: msd_init() Desc: Mass Storage Function
+<7>g_mass_storage2: msd_init() Name: g_mass_storage2
+<7>g_mass_storage2: msd_init() Version: 20120124-2
+<6>Now registering USB0/func4
+<7>g_mass_storage2: msd_bind() Using Major Number 227
+<4>IRQ 84/eth0: IRQF_DISABLED is not guaranteed on shared IRQs
+<4>imm2_wdt_open: User Hang WDT opened
+<4>imm2_wdt_start: index=1
+<3>wd_cnt_write - wdtn_max[1] updated to 0x8c9c
+<3>wd_cntew_write - wdte_max[1] updated to 0xca8
+<4>imm2_wdt_ioctl: WDIOC_SETTIMEOUT
+<4>	 Userspace timeout set to 60 secs
+<3>wd_cntew_write - wdte_max[1] updated to 0xe4e
+<3>wd_cntew_write - wdte_max[1] updated to 0xe7a
+<3>wd_cntew_write - wdte_max[1] updated to 0xf98
+<3>wd_cntew_write - wdte_max[1] updated to 0xfbe
+<3>wd_cntew_write - wdte_max[1] updated to 0xff5
+<6>kjournald starting.  Commit interval 15 seconds
+<6>EXT3-fs: mounted filesystem with writeback data mode.
+<4>imm2_wdt_open: Kernel Hang WDT opened
+<3>WDT imm2_wdt_release: Line: 571 - WARN: WDT0 refcnt is 0
+<3>WDT imm2_wdt_release: Line: 576 - WARN: You can only release Userspace WDT
+<4>IRQ 316/eth1: IRQF_DISABLED is not guaranteed on shared IRQs
+<6>net eth1: attached phy 3 to driver Generic PHY
+<3>sh_eth_phy_start: eth1
+<6>ADDRCONF(NETDEV_UP): eth1: link is not ready
+<3>wd_cntew_write - wdte_max[0] updated to 0x8015
+<6>Now registering USB0/func5
+<6>usb0: MAC 00:e0:ec:30:60:ea
+<6>usb0: HOST MAC 02:e0:ec:30:60:eb
+<6>g_ether gadget.5: Ethernet Gadget, version: 20100125
+<6>g_ether gadget.5: g_ether ready
+<6>ADDRCONF(NETDEV_UP): usb0: link is not ready
+<6>PHY: 1:03 - Link is Up - 1000/Full
+<6>ADDRCONF(NETDEV_CHANGE): eth1: link becomes ready
+<4>IRQ 274/dma_i2c2: IRQF_DISABLED is not guaranteed on shared IRQs
+<4>IRQ 276/dma_i2c4: IRQF_DISABLED is not guaranteed on shared IRQs
+<4>IRQ 12/GPIO ISR 6: IRQF_DISABLED is not guaranteed on shared IRQs
+<4>IRQ 0/GPIO ISR 0: IRQF_DISABLED is not guaranteed on shared IRQs
+<4>IRQ 2/GPIO ISR 1: IRQF_DISABLED is not guaranteed on shared IRQs
+<4>IRQ 25/GPIO ISR 9: IRQF_DISABLED is not guaranteed on shared IRQs
+<4>IRQ 55/GPIO ISR 13: IRQF_DISABLED is not guaranteed on shared IRQs
+<4>IRQ 39/GPIO ISR 11: IRQF_DISABLED is not guaranteed on shared IRQs
+<4>IRQ 24/GPIO ISR 8: IRQF_DISABLED is not guaranteed on shared IRQs
+<4>IRQ 14/GPIO ISR 7: IRQF_DISABLED is not guaranteed on shared IRQs
+<4>aess_kcs_ioctl::return(0) on AESS_KCSDRV_BAR_GET ch=0, 0CC0h
+<4>aess_kcs_ioctl::return(0) on AESS_KCSDRV_BAR_GET ch=1, 0CC2h
+<7>eth1: no IPv6 routers present
+<5>Unaligned userspace access in "slpmgr" pid=4140 pc=0x0040b9aa ins=0x6111
+<5>Fixing up unaligned userspace access in "slpmgr" pid=4140 pc=0x0040b9aa ins=0x6111
+<5>allocate_video_buffer_reserve_mem- video_buffer_phys (reserved mem): 4e000000 video_buffer_size: 0x00EAE000
+<7>kbdmouse_ioctl - IOCTL_KBDMOUSE_CONNECT -> arg=0 n
+<0>aess_spi1_switch_PSC_2()::can't switch to PSC!CR8/CR12 value is 0x50
+<4>aess_spi_io - errcode = 1
+<5>Unaligned userspace access in "slpmgr" pid=4140 pc=0x0040b9aa ins=0x6111
+<5>Fixing up unaligned userspace access in "slpmgr" pid=4140 pc=0x0040b9aa ins=0x6111
+<5>Unaligned userspace access in "slpmgr" pid=4140 pc=0x0040b9aa ins=0x6111
+<5>Fixing up unaligned userspace access in "slpmgr" pid=4140 pc=0x0040b9aa ins=0x6111
+<5>Unaligned userspace access in "slpmgr" pid=4140 pc=0x0040b9aa ins=0x6111
+<5>Fixing up unaligned userspace access in "slpmgr" pid=4140 pc=0x0040b9aa ins=0x6111
+<5>Unaligned userspace access in "slpmgr" pid=4140 pc=0x0040b9aa ins=0x6111
+<5>Fixing up unaligned userspace access in "slpmgr" pid=4140 pc=0x0040b9aa ins=0x6111
+<5>Unaligned userspace access in "slpmgr" pid=4140 pc=0x0040b9aa ins=0x6111
+<5>Fixing up unaligned userspace access in "slpmgr" pid=4140 pc=0x0040b9aa ins=0x6111
+<5>Unaligned userspace access in "slpmgr" pid=4140 pc=0x0040b9aa ins=0x6111
+<5>Fixing up unaligned userspace access in "slpmgr" pid=4140 pc=0x0040b9aa ins=0x6111
+<5>Unaligned userspace access in "slpmgr" pid=4140 pc=0x0040b9aa ins=0x6111
+<5>Fixing up unaligned userspace access in "slpmgr" pid=4140 pc=0x0040b9aa ins=0x6111
+<5>Unaligned userspace access in "slpmgr" pid=4140 pc=0x0040b9aa ins=0x6111
+<5>Fixing up unaligned userspace access in "slpmgr" pid=4140 pc=0x0040b9aa ins=0x6111
+<3>USB speed unknown
+<6>g_hub gadget.0: high speed connected
+<6>g_ether gadget.5: high speed config #2: RNDIS
+<6>ADDRCONF(NETDEV_CHANGE): usb0: link becomes ready
+<0>aess_spi1_switch_PSC_2()::can't switch to PSC!CR8/CR12 value is 0x50
+<4>aess_spi_io - errcode = 1
+<3>USB speed unknown
+<3>USB speed unknown
+<6>g_hub gadget.0: high speed connected
+<6>g_ether gadget.5: high speed config #2: RNDIS
+<6>g_ether gadget.5: high speed config #2: RNDIS
+<3>wd_cntew_write - wdte_max[0] updated to 0x80c1
+<3>USB speed unknown
+<3>USB speed unknown
+<6>g_hub gadget.0: high speed connected
+<6>g_ether gadget.5: high speed config #1: CDC Ethernet (ECM)
+<3>wd_cntew_write - wdte_max[0] updated to 0x81b2
+<3>wd_cntew_write - wdte_max[0] updated to 0x81c8
+<3>wd_cntew_write - wdte_max[1] updated to 0xffa
+<3>wd_cntew_write - wdte_max[1] updated to 0xffb
+<3>wd_cntew_write - wdte_max[0] updated to 0x81c9
+<3>wd_cntew_write - wdte_max[0] updated to 0x81cb
+<3>wd_cntew_write - wdte_max[1] updated to 0xffd
+<3>wd_cntew_write - wdte_max[0] updated to 0x81cf
+<3>wd_cntew_write - wdte_max[1] updated to 0x1001
+<4>imm2_wdt_write
+<4>imm2_wdt_write
+<0>aess_spi1_switch_PSC_2()::can't switch to PSC!CR8/CR12 value is 0x50
+<4>aess_spi_io - errcode = 1
+<4>FPGA READ checksum failure
+<0>aess_spi1_switch_PSC_2()::can't switch to PSC!CR8/CR12 value is 0x50
+<4>aess_spi_io - errcode = 1
+<3>USB speed unknown
+<3>USB speed unknown
+<6>g_hub gadget.0: high speed connected
+<6>g_ether gadget.5: high speed config #2: RNDIS
+<0>aess_spi1_switch_PSC_2()::can't switch to PSC!CR8/CR12 value is 0x50
+<4>aess_spi_io - errcode = 1
+<3>USB speed unknown
+<3>USB speed unknown
+<6>g_hub gadget.0: high speed connected
+<6>g_ether gadget.5: high speed config #2: RNDIS
+<6>g_ether gadget.5: high speed config #2: RNDIS
+<3>USB speed unknown
+<3>USB speed unknown
+<6>g_hub gadget.0: high speed connected
+<6>g_ether gadget.5: high speed config #1: CDC Ethernet (ECM)
+<6>kjournald starting.  Commit interval 15 seconds
+<6>EXT3-fs: mounted filesystem with writeback data mode.
+<6>kjournald starting.  Commit interval 1 seconds
+<4>EXT3-fs warning: maximal mount count reached, running e2fsck is recommended
+<6>EXT3 FS on mmcblk0p1, internal journal
+<6>EXT3-fs: mounted filesystem with journal data mode.
+<6>kjournald starting.  Commit interval 15 seconds
+<6>EXT3-fs: mounted filesystem with writeback data mode.
+<6>kjournald starting.  Commit interval 15 seconds
+<6>EXT3-fs: mounted filesystem with writeback data mode.
+<6>kjournald starting.  Commit interval 15 seconds
+<4>EXT3-fs warning: maximal mount count reached, running e2fsck is recommended
+<6>EXT3 FS on mmcblk0p3, internal journal
+<6>EXT3-fs: mounted filesystem with writeback data mode.
+<6>kjournald starting.  Commit interval 1 seconds
+<4>EXT3-fs warning: maximal mount count reached, running e2fsck is recommended
+<6>EXT3 FS on mmcblk0p1, internal journal
+<6>EXT3-fs: mounted filesystem with journal data mode.
+<6>kjournald starting.  Commit interval 5 seconds
+<4>EXT3-fs warning: maximal mount count reached, running e2fsck is recommended
+<6>EXT3 FS on mmcblk0p3, internal journal
+<6>EXT3-fs: mounted filesystem with journal data mode.
+<6>kjournald starting.  Commit interval 15 seconds
+<6>EXT3-fs: mounted filesystem with writeback data mode.
+<3>WDT imm2_wdt_release: Line: 571 - WARN: WDT1 refcnt is 0
+<3>WDT imm2_wdt_release: Line: 582 - WARN: Userspace WDT is not allowed to close
+<4>i2c reboot notifier called.
+<0>Restarting system.
+>hub 1-0:1.0: state 7 ports 2 chg 0000 evt 0000
+<7>usb usb2: usb_probe_device
+<6>usb usb2: configuration #1 chosen from 1 choice
+<7>usb usb2: adding 2-0:1.0 (config #1, interface 0)
+<7>hub 2-0:1.0: usb_probe_interface
+<7>hub 2-0:1.0: usb_probe_interface - got id
+<6>hub 2-0:1.0: USB hub found
+<6>hub 2-0:1.0: 2 ports detected
+<7>hub 2-0:1.0: standalone hub
+<7>hub 2-0:1.0: no power switching (usb 1.0)
+<7>hub 2-0:1.0: global over-current protection
+<7>hub 2-0:1.0: power on to power good time: 510ms
+<7>hub 2-0:1.0: local power source is good
+<7>hub 2-0:1.0: no over-current condition exists
+<7>hub 2-0:1.0: trying to enable port power on non-switchable hub
+<7>drivers/usb/core/inode.c: creating file '001'
+<6>Initializing USB Mass Storage driver...
+<6>usbcore: registered new interface driver usb-storage
+<6>USB Mass Storage support registered.
+<4>IRQ 34/sh_mmcif: IRQF_DISABLED is not guaranteed on shared IRQs
+<6>sh_mmcif: driver version 2010-03-17
+<6>sh_tmu: TMU0 kept as earlytimer
+<6>sh_tmu: TMU1 kept as earlytimer
+<6>cryptodev: driver 0.8 loaded.
+<4>mknod /dev/aess_adcsensordrv c 252 0
+<7>KN:init_aess_mem_module
+<4>mknod /dev/aess_eventhandlerdrv c 251 0
+<4>mknod /dev/aess_gpiodrv c 250 0
+<4>mknod /dev/imm2_fpga0 c 249 0
+<4>mknod /dev/aess_spi0drv c 248 0
+<4>imm2_fpga0: checksum enforced
+<4>imm2_fpga: found CHIP_ID=70, v3.05 within 0 ms
+<4>   block[ 00 ]: 0000
+<4>   block[ 01 ]: 0010
+<4>   block[ 02 ]: 0020
+<4>   block[ 03 ]: 0030
+<4>   block[ 04 ]: 0040
+<4>   block[ 06 ]: 0050
+<4>   block[ 07 ]: 0060
+<4>   block[ 08 ]: 0070
+<4>   block[ 09 ]: 0080
+<4>   block[ 11 ]: 0090
+<4>   block[ 12 ]: 00A0
+<4>   block[ 13 ]: 00B0
+<4>   block[ 14 ]: 00C0
+<4>   block[ 15 ]: 00D0
+<4>   block[ 16 ]: 00E0
+<4>   block[ 17 ]: 00F0
+<4>   block[ 19 ]: 0100
+<4>   block[ 23 ]: 0110
+<4>   block[ 28 ]: 0120
+<4>   block[ 29 ]: 0130
+<4>   block[ 30 ]: 0140
+<4>   block[ 31 ]: 0150
+<4>remote_fpga: found FPGA_ID=00, CHIP_ID=5A
+<4>   block[ 00 ]: 0000
+<4>   block[ 01 ]: 0010
+<4>   block[ 03 ]: 0020
+<4>   block[ 04 ]: 0030
+<4>   block[ 05 ]: 0040
+<4>   block[ 06 ]: 0050
+<4>   block[ 09 ]: 0060
+<4>   block[ 12 ]: 0070
+<4>   block[ 28 ]: 0080
+<4>   block[ 29 ]: 0090
+<4>   block[ 30 ]: 00A0
+<4>   block[ 31 ]: 00B0
+<4>remote_fpga: found FPGA_ID=01, CHIP_ID=5A
+<4>   block[ 00 ]: 0200
+<4>   block[ 01 ]: 0210
+<4>   block[ 03 ]: 0220
+<4>   block[ 04 ]: 0230
+<4>   block[ 05 ]: 0240
+<4>   block[ 06 ]: 0250
+<4>   block[ 09 ]: 0260
+<4>   block[ 12 ]: 0270
+<4>   block[ 28 ]: 0280
+<4>   block[ 29 ]: 0290
+<4>   block[ 30 ]: 02A0
+<4>   block[ 31 ]: 02B0
+<4>remote_fpga: found FPGA_ID=02, CHIP_ID=5A
+<4>   block[ 00 ]: 0400
+<4>   block[ 01 ]: 0410
+<4>   block[ 03 ]: 0420
+<4>   block[ 04 ]: 0430
+<4>   block[ 05 ]: 0440
+<4>   block[ 06 ]: 0450
+<4>   block[ 09 ]: 0460
+<4>   block[ 12 ]: 0470
+<4>   block[ 28 ]: 0480
+<4>   block[ 29 ]: 0490
+<4>   block[ 30 ]: 04A0
+<4>   block[ 31 ]: 04B0
+<4>remote_fpga: found FPGA_ID=03, CHIP_ID=5A
+<4>   block[ 00 ]: 0600
+<4>   block[ 01 ]: 0610
+<4>   block[ 03 ]: 0620
+<4>   block[ 04 ]: 0630
+<4>   block[ 05 ]: 0640
+<4>   block[ 06 ]: 0650
+<4>   block[ 09 ]: 0660
+<4>   block[ 12 ]: 0670
+<4>   block[ 28 ]: 0680
+<4>   block[ 29 ]: 0690
+<4>   block[ 30 ]: 06A0
+<4>   block[ 31 ]: 06B0
+<4>mknod /dev/aess_kcsdrv c 247 0
+<4>IRQ 69/kcsdrv_hwctrl: IRQF_DISABLED is not guaranteed on shared IRQs
+<4>mknod /dev/aess_memdrv c 246 0
+<4>mknod /dev/aess_sgpiodrv c 245 0
+<4>mknod /dev/aess_spi1drv c 244 0
+<4>mknod /dev/aess_spinorflashdrv0 c 243 0
+<4>mknod /dev/aess_spinorflashdrv1 c 243 1
+<4>aess_timerdrv_init
+<4>mknod /dev/aess_timerdrv c 242 0
+<4>TSIP HW Crypto accelerator: 
+<6> hwrng registration sucessed
+<4>cbc(aes) ecb(aes) ecb(des3_ede) cbc(des3_ede) 
+<6>alg: self-tests for sha1-tsip (sha1) passed
+<4>sha1 
+<6>alg: self-tests for sha256-tsip (sha256) passed
+<3>mmc0: unrecognised EXT_CSD revision 7.. CONTINUING with caution
+<4>Card type is 7
+<4>sha256 
+<6>alg: self-tests for sha1-hmac-tsip (hmac(sha1)) passed
+<4>hmac(sha1) 
+<6>mmc0: new high speed MMC card at address 0001
+<6>alg: self-tests for sha256-hmac-tsip (hmac(sha256)) passed
+<4>hmac(sha256) 
+<6>
+<4>mknod /dev/aess_twrdrv c 241 0
+<4>IRQ 69/twrdrv: IRQF_DISABLED is not guaranteed on shared IRQs
+<4>mknod /dev/aess_pbi_vdm c 240 0
+<6>mmcblk0: mmc0:0001 004GE0 1.84 GiB 
+<6> mmcblk0: p1 p2 p3 p4
+<6>sermux sermux: version 2010-05-26
+<4>Netfilter messages via NETLINK v0.30.
+<4>nf_conntrack version 0.5.0 (3396 buckets, 13584 max)
+<4>ctnetlink v0.93: registering with nfnetlink.
+<6>xt_time: kernel timezone is -0000
+<6>IPv4 over IPv4 tunneling driver
+<6>ip_tables: (C) 2000-2006 Netfilter Core Team
+<6>TCP cubic registered
+<6>Initializing XFRM netlink socket
+<6>NET: Registered protocol family 10
+<6>lo: Disabled Privacy Extensions
+<6>tunl0: Disabled Privacy Extensions
+<6>ip6_tables: (C) 2000-2006 Netfilter Core Team
+<4>Netfilter:nf_conntrack_frag6_timeout and ip6frag_time, nf_conntrack_frag6_low_thresh and ip6frag_low_thresh, nf_conntrack_frag6_high_thresh and ip6frag_high_thresh, the three sets are equivalent. nf_conntrack_frag6_timeout is just an alias for ip6frag_time. The former parameters of IPv6 conntrack will be removed in February 2011, please use the latter ones of IPv6.
+<6>IPv6 over IPv4 tunneling driver
+<6>sit0: Disabled Privacy Extensions
+<6>NET: Registered protocol family 17
+<6>NET: Registered protocol family 15
+<6>802.1Q VLAN Support v1.8 Ben Greear <greearb@candelatech.com>
+<6>All bugs added by David S. Miller <davem@redhat.com>
+<6>NET: Registered protocol family 27
+<6>eth0 device registered
+<6>eth1 device registered
+<4>IRQ 69/aess_biospostdrv: IRQF_DISABLED is not guaranteed on shared IRQs
+<4>mknod /dev/aess_biospostdrv c 239 0
+<4>mknod /dev/aess_cryptodrv c 238 0
+<4>mknod /dev/aess_dynairqdrv c 237 0
+<4>IRQ 236/aess_dynairqdrv: IRQF_DISABLED is not guaranteed on shared IRQs
+<4>mknod /dev/aess_fansensordrv_2 c 236 0
+<4>mknod /dev/aess_i2cdrv c 235 0
+<4>mknod /dev/aess_pwmdrv c 234 0
+<3>WDT imm2_wdt_init: Line: 725 - imm2_wdt_init
+<4>WDT light kernel thread created , id=375
+<7>hub 2-0:1.0: state 7 ports 2 chg 0000 evt 0000
+<4>IRQ 273/dma_i2c1: IRQF_DISABLED is not guaranteed on shared IRQs
+<4>wdt_khang_light_task
+<4>imm2_wdt_start: index=0
+<3>wd_cnt_write - wdtn_max[0] updated to 0x3cee
+<3>wd_cntew_write - wdte_max[0] updated to 0x3cfa
+<3>khang_light_task_hook
+<4>The system reboot cause: 1.
+<4>KHANG magic cleared, relocating printk buffer
+<3>wd_cntew_write - wdte_max[0] updated to 0x7477
+<4>
+<4> tpm_imm_device_init(): tpm_register_hardware 
+<4>tpm_i2c VID: 2FE1050 DID: 2FE RID: 02
+<7>m41t83_2: dev (254:0)
+<6>m41t83_2_rtc m41t83_2_rtc.0: rtc core: registered m41t83_2 as rtc0
+<4>Freeing unused kernel memory: 1544k freed
+<3>wd_cntew_write - wdte_max[0] updated to 0x7fd3
+<3>wd_cntew_write - wdte_max[0] updated to 0x7fe1
+<3>wd_cntew_write - wdte_max[0] updated to 0x7fe9
+<6>kjournald starting.  Commit interval 5 seconds
+<6>EXT3 FS on mmcblk0p4, internal journal
+<6>EXT3-fs: mounted filesystem with journal data mode.
+<6>kjournald starting.  Commit interval 5 seconds
+<6>EXT3 FS on mmcblk0p2, internal journal
+<6>EXT3-fs: mounted filesystem with journal data mode.
+<3>wd_cntew_write - wdte_max[0] updated to 0x8005
+<4>IRQ 272/dma_i2c0: IRQF_DISABLED is not guaranteed on shared IRQs
+<3>wd_cntew_write - wdte_max[0] updated to 0x8006
+<6>kjournald starting.  Commit interval 5 seconds
+<4>EXT3-fs warning: maximal mount count reached, running e2fsck is recommended
+<6>EXT3 FS on mmcblk0p4, internal journal
+<6>EXT3-fs: mounted filesystem with journal data mode.
+<4>IRQ 282/dma_i2c7: IRQF_DISABLED is not guaranteed on shared IRQs
+<4>IRQ 281/dma_i2c6: IRQF_DISABLED is not guaranteed on shared IRQs
+<4>IRQ 50/r8a66597_udc: IRQF_DISABLED is not guaranteed on shared IRQs
+<6>r8a66597_udc r8a66597_udc.0: version 2012-12-18
+<6>Now registering USB0/func0
+<6>Gadget USB HUB, version: 20101014
+<5>aess_video_in
+=========================================
+Capture Timestamp: 2023/04/20, 02:35:44
+INFO: KHANG magic number not present, exiting

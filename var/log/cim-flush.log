@@ -1,0 +1,9 @@
+2023-04-12T01:15:02.644368+00:00 (none) logger: cim monitor first run 
+2023-04-12T01:18:24.004261+00:00 (none) logger: enter into proc_sync_monitor sfcbd
+2023-04-12T01:23:19.256202+00:00 (none) sfcbd: [6135]-[CIMP:ERROR] : get_node_count, send_ipmi_cmd error, rc = 0, outbuf[0]=9
+2023-04-12T01:27:06.112107+00:00 (none) logger: Killing Profile-Provider 6041
+2023-04-12T01:27:06.156663+00:00 (none) logger: Launching fake SLP Provider
+2023-04-20T02:36:03.208907+00:00 (none) logger: cim monitor first run 
+2023-04-20T02:38:56.187215+00:00 (none) logger: enter into proc_sync_monitor sfcbd
+2023-04-20T02:48:08.341960+00:00 (none) logger: Killing Profile-Provider 5863
+2023-04-20T02:48:08.371095+00:00 (none) logger: Launching fake SLP Provider

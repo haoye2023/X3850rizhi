@@ -1,0 +1,1513 @@
+2023-04-12T01:14:18.437324+00:00 (none) dp:  Loading Data Parser Server Version (255,255)
+2023-04-12T01:14:18.438951+00:00 (none) dp:  Starting message queue server
+2023-04-12T01:14:18.468786+00:00 (none) dp:  Initialization complete
+2023-04-12T01:15:17.009600+00:00 (none) cmr:  Loading Configuration Manager Server Version (255,255)
+2023-04-12T01:15:17.085002+00:00 (none) cmr:  Starting message queue server
+2023-04-12T01:15:17.089248+00:00 (none) cmr:  CMR on init, copy stored uefi config file to tmp DS. 
+2023-04-12T01:15:17.100166+00:00 (none) dp:  Wakeup: immpci
+2023-04-12T01:15:17.875713+00:00 (none) cmr:  execution_manager, vpd offset 0x1ee000
+2023-04-12T01:15:17.876437+00:00 (none) cmr:  execution_manager, vpd length 0x2000
+2023-04-12T01:15:17.922628+00:00 (none) cmr:  Initialization complete
+2023-04-12T01:15:26.221583+00:00 (none) dp:  adding plugin library, library= libdp_plugins.so
+2023-04-12T01:15:26.255232+00:00 (none) dp:  immpci_plugin: send alert to flash manager and bmc at startup.
+2023-04-12T01:15:26.298797+00:00 (none) dp:  immpci_plugin::on_event: update_ucm_data
+2023-04-12T01:15:26.311897+00:00 (none) dp:  immpci_plugin::process_ucm_data
+2023-04-12T01:15:26.436679+00:00 (none) dp:  update_ucm_transaction::update_ucm_data: need_wipe flag - 0
+2023-04-12T01:15:26.438145+00:00 (none) dp:  update_ucm_transaction::update_ucm_data: create /tmp/dp.ucmparsing
+2023-04-12T01:15:27.413511+00:00 (none) dp:  immraidlink plugin::process_raid_data, transaction_flag = 2, param1 = 255, param2 = 
+2023-04-12T01:15:34.090666+00:00 (none) dp:  immraidlink plugin::process_raid_data, transaction_flag = 2, param1 = 255, param2 = 
+2023-04-12T01:15:34.090790+00:00 (none) dp:  Rebooting in progress, ignore any further request until raid init is finished
+2023-04-12T01:16:40.738693+00:00 (none) dp:  update_ucm_transaction::update_ucm_data: remove /tmp/dp.ucmparsing
+2023-04-12T01:16:40.738926+00:00 (none) dp:  update_ucm_transaction::update_ucm_data succeed
+2023-04-12T01:16:41.954213+00:00 (none) dp: [dbc_snd] socket 8 created
+2023-04-12T01:16:41.957206+00:00 (none) dp: [dbc_snd] successfully started
+2023-04-12T01:16:41.958579+00:00 (none) dp: [dbc_rcv] successfully started
+2023-04-12T01:16:43.357261+00:00 (none) dp: Not find matched record from PCIs table(ctrlDbIndex=1).
+2023-04-12T01:16:52.136061+00:00 (none) dp: reboot flag is set, will reset health status
+2023-04-12T01:18:42.877248+00:00 (none) dp:  Rebooting in progress, ignore any further request until raid init is finished
+2023-04-12T01:21:50.624722+00:00 (none) dp:  Rebooting in progress, ignore any further request until raid init is finished
+2023-04-12T01:22:42.444119+00:00 (none) dp:  ***ERROR*** transaction is stuck: id= immraidlink
+2023-04-12T01:22:42.444308+00:00 (none) dp:  unload full dp
+2023-04-12T01:22:42.447632+00:00 (none) dp:  Unloading Data Parser
+2023-04-12T01:22:45.252498+00:00 (none) dp:  Loading Data Parser Server Version (255,255)
+2023-04-12T01:22:45.254454+00:00 (none) dp:  Starting message queue server
+2023-04-12T01:22:45.265383+00:00 (none) dp:  This is not a DP first init. 
+2023-04-12T01:22:45.273338+00:00 (none) dp:  Initialization complete
+2023-04-12T01:23:36.109238+00:00 (none) cmr:  Wakeup: sp
+2023-04-12T01:23:37.739833+00:00 (none) cmr:  adding agent library, library= libcmr_agents.so
+2023-04-12T01:23:38.121352+00:00 (none) cmr:  ***ERROR*** Unable to initialize connection to SDRAID Library service.
+2023-04-12T01:23:42.139593+00:00 (none) cmr:  ***ERROR*** setting_store: failed restoring settings, file= /var/cmr/system_prod_data.txt
+2023-04-12T01:23:42.141671+00:00 (none) cmr:  ***ERROR*** setting_store: failed restoring settings, file= /var/cmr/system_prod_data.txt.bak
+2023-04-12T01:23:42.143080+00:00 (none) cmr:  ***ERROR*** setting_store: assuming no settings, file= /var/cmr/system_prod_data.txt
+2023-04-12T01:23:44.328299+00:00 (none) cmr:  post complete is received by CMR.
+2023-04-12T01:23:44.328500+00:00 (none) cmr:  unload full cmr
+2023-04-12T01:23:44.328601+00:00 (none) cmr:  Unloading Config Manager
+2023-04-12T01:23:47.644759+00:00 (none) cmr:  Loading Configuration Manager Server Version (255,255)
+2023-04-12T01:23:47.647239+00:00 (none) cmr:  Starting message queue server
+2023-04-12T01:23:47.650127+00:00 (none) cmr:  This is not a CMR first init. 
+2023-04-12T01:23:47.676077+00:00 (none) dp:  Wakeup: immpci
+2023-04-12T01:23:47.916048+00:00 (none) cmr:  execution_manager, vpd offset 0x1ee000
+2023-04-12T01:23:47.917496+00:00 (none) cmr:  execution_manager, vpd length 0x2000
+2023-04-12T01:23:47.943487+00:00 (none) cmr:  Initialization complete
+2023-04-12T01:23:50.858600+00:00 (none) dp:  adding plugin library, library= libdp_plugins.so
+2023-04-12T01:23:50.862280+00:00 (none) dp:  immpci_plugin: send alert to flash manager and bmc at startup.
+2023-04-12T01:23:50.896777+00:00 (none) dp:  immpci_plugin::on_event: update_ucm_data
+2023-04-12T01:23:50.898165+00:00 (none) dp:  immpci_plugin::process_ucm_data
+2023-04-12T01:23:51.008656+00:00 (none) dp:  update_ucm_transaction::update_ucm_data: need_wipe flag - 0
+2023-04-12T01:23:51.011004+00:00 (none) dp:  update_ucm_transaction::update_ucm_data: create /tmp/dp.ucmparsing
+2023-04-12T01:24:09.496344+00:00 (none) dp:  update_ucm_transaction::update_ucm_data: remove /tmp/dp.ucmparsing
+2023-04-12T01:24:09.496545+00:00 (none) dp:  update_ucm_transaction::update_ucm_data succeed
+2023-04-12T01:27:12.176583+00:00 (none) cmr:  Wakeup: sp
+2023-04-12T01:27:13.491309+00:00 (none) cmr:  adding agent library, library= libcmr_agents.so
+2023-04-12T01:27:13.837326+00:00 (none) cmr:  ***ERROR*** Unable to initialize connection to SDRAID Library service.
+2023-04-12T01:27:16.601533+00:00 (none) cmr:  ***ERROR*** setting_store: failed restoring settings, file= /var/cmr/system_prod_data.txt
+2023-04-12T01:27:16.603233+00:00 (none) cmr:  ***ERROR*** setting_store: failed restoring settings, file= /var/cmr/system_prod_data.txt.bak
+2023-04-12T01:27:16.606652+00:00 (none) cmr:  ***ERROR*** setting_store: assuming no settings, file= /var/cmr/system_prod_data.txt
+2023-04-12T01:31:20.318260+00:00 (none) cmr:  ipmi agent, setting dirty flag for vmmigration
+2023-04-12T01:31:21.883085+00:00 (none) dp:  immpci_plugin::on_event: update_ucm_data
+2023-04-12T01:31:21.883250+00:00 (none) dp:  immpci_plugin::process_ucm_data
+2023-04-12T01:31:22.090955+00:00 (none) dp:  update_ucm_transaction::update_ucm_data: need_wipe flag - 0
+2023-04-12T01:31:22.129197+00:00 (none) dp:  update_ucm_transaction::update_ucm_data: create /tmp/dp.ucmparsing
+2023-04-12T01:31:22.585251+00:00 (none) cmr:  ipmi agent, setting dirty flag for vmmigration
+2023-04-12T01:31:30.134703+00:00 (none) dp:  update_ucm_transaction::update_ucm_data: remove /tmp/dp.ucmparsing
+2023-04-12T01:31:30.134898+00:00 (none) dp:  update_ucm_transaction::update_ucm_data succeed
+2023-04-12T01:34:13.134795+00:00 (none) cmr:  ipmi agent, setting dirty flag for vmmigration
+2023-04-12T01:34:14.404118+00:00 (none) dp:  immpci_plugin::on_event: update_ucm_data
+2023-04-12T01:34:14.404301+00:00 (none) dp:  immpci_plugin::process_ucm_data
+2023-04-12T01:34:14.605071+00:00 (none) dp:  update_ucm_transaction::update_ucm_data: need_wipe flag - 0
+2023-04-12T01:34:14.606948+00:00 (none) dp:  update_ucm_transaction::update_ucm_data: create /tmp/dp.ucmparsing
+2023-04-12T01:34:27.600221+00:00 (none) dp:  update_ucm_transaction::update_ucm_data: remove /tmp/dp.ucmparsing
+2023-04-12T01:34:27.602100+00:00 (none) dp:  update_ucm_transaction::update_ucm_data succeed
+2023-04-12T01:36:50.413532+00:00 (none) dp:  immpci_plugin::on_event: update_ucm_data
+2023-04-12T01:36:50.413758+00:00 (none) dp:  immpci_plugin::process_ucm_data
+2023-04-12T01:36:50.632635+00:00 (none) dp:  update_ucm_transaction::update_ucm_data: need_wipe flag - 0
+2023-04-12T01:36:50.634320+00:00 (none) dp:  update_ucm_transaction::update_ucm_data: create /tmp/dp.ucmparsing
+2023-04-12T01:37:10.702873+00:00 (none) dp:  update_ucm_transaction::update_ucm_data: remove /tmp/dp.ucmparsing
+2023-04-12T01:37:10.703064+00:00 (none) dp:  update_ucm_transaction::update_ucm_data succeed
+2023-04-12T01:37:16.660204+00:00 (none) dp:  immpci_plugin::on_event: update_ucm_data
+2023-04-12T01:37:16.662751+00:00 (none) dp:  immpci_plugin::process_ucm_data
+2023-04-12T01:37:16.866116+00:00 (none) dp:  update_ucm_transaction::update_ucm_data: need_wipe flag - 0
+2023-04-12T01:37:16.868070+00:00 (none) dp:  update_ucm_transaction::update_ucm_data: create /tmp/dp.ucmparsing
+2023-04-12T01:37:27.370112+00:00 (none) dp:  update_ucm_transaction::update_ucm_data: remove /tmp/dp.ucmparsing
+2023-04-12T01:37:27.370286+00:00 (none) dp:  update_ucm_transaction::update_ucm_data succeed
+2023-04-12T01:39:08.351567+00:00 (none) cmr:  ipmi agent, setting dirty flag for vmmigration
+2023-04-12T01:41:59.955406+00:00 (none) cmr:  ipmi agent, setting dirty flag for vmmigration
+2023-04-12T01:42:01.037170+00:00 (none) dp:  immpci_plugin::on_event: update_ucm_data
+2023-04-12T01:42:01.037339+00:00 (none) dp:  immpci_plugin::process_ucm_data
+2023-04-12T01:42:01.240719+00:00 (none) dp:  update_ucm_transaction::update_ucm_data: need_wipe flag - 0
+2023-04-12T01:42:01.242266+00:00 (none) dp:  update_ucm_transaction::update_ucm_data: create /tmp/dp.ucmparsing
+2023-04-12T01:42:11.187975+00:00 (none) dp:  immpci_plugin::on_event: update_ucm_data
+2023-04-12T01:42:11.188153+00:00 (none) dp:  immpci_plugin::process_ucm_data
+2023-04-12T01:42:11.189392+00:00 (none) dp:  immpci need update ucm again
+2023-04-12T01:42:16.494577+00:00 (none) dp:  update_ucm_transaction::update_ucm_data: remove /tmp/dp.ucmparsing
+2023-04-12T01:42:16.494763+00:00 (none) dp:  update_ucm_transaction::update_ucm_data succeed
+2023-04-12T01:42:16.796642+00:00 (none) dp:  update_ucm_transaction::update_ucm_data: need_wipe flag - 0
+2023-04-12T01:42:16.798224+00:00 (none) dp:  update_ucm_transaction::update_ucm_data: create /tmp/dp.ucmparsing
+2023-04-12T01:42:33.329457+00:00 (none) dp:  update_ucm_transaction::update_ucm_data: remove /tmp/dp.ucmparsing
+2023-04-12T01:42:33.331378+00:00 (none) dp:  update_ucm_transaction::update_ucm_data succeed
+2023-04-12T01:43:39.982034+00:00 (none) dp:  immpci_plugin::on_event: update_ucm_data
+2023-04-12T01:43:39.982214+00:00 (none) dp:  immpci_plugin::process_ucm_data
+2023-04-12T01:43:40.202093+00:00 (none) dp:  update_ucm_transaction::update_ucm_data: need_wipe flag - 0
+2023-04-12T01:43:40.203644+00:00 (none) dp:  update_ucm_transaction::update_ucm_data: create /tmp/dp.ucmparsing
+2023-04-12T01:43:49.223273+00:00 (none) dp:  update_ucm_transaction::update_ucm_data: remove /tmp/dp.ucmparsing
+2023-04-12T01:43:49.223448+00:00 (none) dp:  update_ucm_transaction::update_ucm_data succeed
+2023-04-12T01:45:19.288341+00:00 (none) cmr:  uefi_agent, on event = process_config_file
+2023-04-12T01:45:19.288523+00:00 (none) cmr:  uefi_agent: process_config
+2023-04-12T01:45:19.801926+00:00 (none) dp:  immpci_plugin::on_event: need_wipe
+2023-04-12T01:45:19.822358+00:00 (none) cmr:  queueing a transaction: id= uefi
+2023-04-12T01:45:19.924307+00:00 (none) cmr:      uefi_settings_agent: unregister configuration PXE
+2023-04-12T01:45:20.098932+00:00 (none) cmr:      uefi_settings_agent: remove configuration PXE
+2023-04-12T01:45:20.102577+00:00 (none) cmr:      uefi_settings_agent: unregister configuration AdvancedRAS
+2023-04-12T01:45:20.279133+00:00 (none) cmr:      uefi_settings_agent: remove configuration AdvancedRAS
+2023-04-12T01:45:20.282763+00:00 (none) cmr:      uefi_settings_agent: unregister configuration POSTAttempts
+2023-04-12T01:45:20.434189+00:00 (none) cmr:      uefi_settings_agent: remove configuration POSTAttempts
+2023-04-12T01:45:20.437547+00:00 (none) cmr:      uefi_settings_agent: unregister configuration DiskGPTRecovery
+2023-04-12T01:45:21.064344+00:00 (none) cmr:      uefi_settings_agent: remove configuration DiskGPTRecovery
+2023-04-12T01:45:21.067242+00:00 (none) cmr:      uefi_settings_agent: unregister configuration OperatingModes
+2023-04-12T01:45:21.435086+00:00 (none) cmr:      uefi_settings_agent: remove configuration OperatingModes
+2023-04-12T01:45:21.442986+00:00 (none) cmr:      uefi_settings_agent: unregister configuration BackupBankManagement
+2023-04-12T01:45:21.965106+00:00 (none) cmr:      uefi_settings_agent: remove configuration BackupBankManagement
+2023-04-12T01:45:21.973168+00:00 (none) cmr:      uefi_settings_agent: unregister configuration SystemRecovery
+2023-04-12T01:45:22.602516+00:00 (none) cmr:      uefi_settings_agent: remove configuration SystemRecovery
+2023-04-12T01:45:22.628167+00:00 (none) cmr:      uefi_settings_agent: unregister configuration Processors
+2023-04-12T01:45:23.140345+00:00 (none) cmr:      uefi_settings_agent: remove configuration Processors
+2023-04-12T01:45:23.199982+00:00 (none) cmr:      uefi_settings_agent: unregister configuration Power
+2023-04-12T01:45:23.865206+00:00 (none) cmr:      uefi_settings_agent: remove configuration Power
+2023-04-12T01:45:23.885392+00:00 (none) cmr:      uefi_settings_agent: unregister configuration DevicesandIOPorts
+2023-04-12T01:45:24.344857+00:00 (none) cmr:      uefi_settings_agent: remove configuration DevicesandIOPorts
+2023-04-12T01:45:24.355988+00:00 (none) cmr:      uefi_settings_agent: unregister configuration Node1
+2023-04-12T01:45:24.858677+00:00 (none) cmr:      uefi_settings_agent: remove configuration Node1
+2023-04-12T01:45:24.923456+00:00 (none) cmr:      uefi_settings_agent: unregister configuration Memory
+2023-04-12T01:45:25.336690+00:00 (none) cmr:      uefi_settings_agent: remove configuration Memory
+2023-04-12T01:45:25.448479+00:00 (none) cmr:      uefi_settings_agent: unregister configuration LegacySupport
+2023-04-12T01:45:25.810792+00:00 (none) cmr:      uefi_settings_agent: remove configuration LegacySupport
+2023-04-12T01:45:25.902331+00:00 (none) cmr:      uefi_settings_agent: unregister configuration UEFIMisc
+2023-04-12T01:45:26.304148+00:00 (none) cmr:      uefi_settings_agent: remove configuration UEFIMisc
+2023-04-12T01:45:26.306970+00:00 (none) cmr:      uefi_settings_agent: unregister configuration SecureBootConfiguration
+2023-04-12T01:45:26.756623+00:00 (none) cmr:      uefi_settings_agent: remove configuration SecureBootConfiguration
+2023-04-12T01:45:26.759360+00:00 (none) cmr:      uefi_settings_agent: unregister configuration iSCSI
+2023-04-12T01:45:27.114398+00:00 (none) cmr:      uefi_settings_agent: remove configuration iSCSI
+2023-04-12T01:45:27.130048+00:00 (none) cmr:      uefi_settings_agent: unregister configuration BootModes
+2023-04-12T01:45:27.589788+00:00 (none) cmr:      uefi_settings_agent: remove configuration BootModes
+2023-04-12T01:45:27.593695+00:00 (none) cmr:      uefi_settings_agent: unregister configuration BootOrder
+2023-04-12T01:45:27.927646+00:00 (none) cmr:      uefi_settings_agent: remove configuration BootOrder
+2023-04-12T01:45:27.933099+00:00 (none) cmr:      uefi_settings_agent: unregister configuration LSIMegaRAIDConfigurationTool-070
+2023-04-12T01:45:28.082537+00:00 (none) cmr:      uefi_settings_agent: remove configuration LSIMegaRAIDConfigurationTool-070
+2023-04-12T01:45:28.197366+00:00 (none) cmr:      uefi_settings_agent: unregister configuration IntelRI350GigabitNetworkConnection-0100
+2023-04-12T01:45:28.231245+00:00 (none) cmr:      uefi_settings_agent: remove configuration IntelRI350GigabitNetworkConnection-0100
+2023-04-12T01:45:28.235008+00:00 (none) cmr:      uefi_settings_agent: unregister configuration IntelRI350GigabitNetworkConnection-0101
+2023-04-12T01:45:28.304409+00:00 (none) cmr:      uefi_settings_agent: remove configuration IntelRI350GigabitNetworkConnection-0101
+2023-04-12T01:45:28.312236+00:00 (none) cmr:      uefi_settings_agent: unregister configuration IntelRI350GigabitNetworkConnection-0102
+2023-04-12T01:45:28.349257+00:00 (none) cmr:      uefi_settings_agent: remove configuration IntelRI350GigabitNetworkConnection-0102
+2023-04-12T01:45:28.357185+00:00 (none) cmr:      uefi_settings_agent: unregister configuration IntelRI350GigabitNetworkConnection-0103
+2023-04-12T01:45:28.383986+00:00 (none) cmr:      uefi_settings_agent: remove configuration IntelRI350GigabitNetworkConnection-0103
+2023-04-12T01:45:28.389760+00:00 (none) cmr:      uefi_settings_agent: unregister configuration IntelREthernetServerAdapterI340-T4-1101
+2023-04-12T01:45:28.414916+00:00 (none) cmr:      uefi_settings_agent: remove configuration IntelREthernetServerAdapterI340-T4-1101
+2023-04-12T01:45:28.431527+00:00 (none) cmr:      uefi_settings_agent: unregister configuration IntelREthernetServerAdapterI340-T4-1102
+2023-04-12T01:45:28.479507+00:00 (none) cmr:      uefi_settings_agent: remove configuration IntelREthernetServerAdapterI340-T4-1102
+2023-04-12T01:45:28.482614+00:00 (none) cmr:      uefi_settings_agent: unregister configuration IntelREthernetServerAdapterI340-T4-1103
+2023-04-12T01:45:28.529913+00:00 (none) cmr:      uefi_settings_agent: remove configuration IntelREthernetServerAdapterI340-T4-1103
+2023-04-12T01:45:30.227683+00:00 (none) cmr:  ***ERROR*** setting_store: failed restoring settings, file= /var/cmr/uefi_settings.txt
+2023-04-12T01:45:30.230014+00:00 (none) cmr:  ***ERROR*** setting_store: failed restoring settings, file= /var/cmr/uefi_settings.txt.bak
+2023-04-12T01:45:30.232352+00:00 (none) cmr:  ***ERROR*** setting_store: assuming no settings, file= /var/cmr/uefi_settings.txt
+2023-04-12T01:45:31.172966+00:00 (none) cmr:  queueing a transaction: id= UEFI-2023-04-12-02-24-41
+2023-04-12T01:45:34.228031+00:00 (none) cmr:  uefi_agent, on event = process_ueficli_file
+2023-04-12T01:45:34.228216+00:00 (none) cmr:  uefi_agent: process_ueficli
+2023-04-12T01:45:43.464980+00:00 (none) cmr:  ipmi agent, setting dirty flag for vmmigration
+2023-04-12T01:45:45.944758+00:00 (none) uefisync:  uefi_settings::constructor 
+2023-04-12T01:45:45.946801+00:00 (none) uefisync:     load_records 
+2023-04-12T01:45:45.956222+00:00 (none) uefisync:  uefi_settings::load_records
+2023-04-12T01:45:45.957846+00:00 (none) uefisync:     load_settings 
+2023-04-12T01:45:45.959666+00:00 (none) uefisync:  uefi_settings::load_settings, record id = 0
+2023-04-12T01:45:45.961575+00:00 (none) uefisync:     init_settings 
+2023-04-12T01:45:45.963081+00:00 (none) uefisync:  uefi_settings::init_settings, record id = 0
+2023-04-12T01:45:45.964510+00:00 (none) uefisync:  uefi_remconred_rec::get_record
+2023-04-12T01:45:45.981789+00:00 (none) uefisync:  uefi_sync, load batch file, file = /tmp/uefi_batch_in.txt
+2023-04-12T01:45:46.013198+00:00 (none) uefisync:  uefi_settings::processing()
+2023-04-12T01:45:46.014782+00:00 (none) uefisync:  uefi_settings::set_value, rec_id = 0, sett_id = 7
+2023-04-12T01:45:46.016534+00:00 (none) uefisync:  uefi_remconred_rec::set_value
+2023-04-12T01:45:46.018725+00:00 (none) uefisync:  uefi_settings::set_value, rec_id = 0, sett_id = 1
+2023-04-12T01:45:46.020334+00:00 (none) uefisync:  uefi_remconred_rec::set_value
+2023-04-12T01:45:46.021844+00:00 (none) uefisync:  uefi_settings::set_value, rec_id = 0, sett_id = 2
+2023-04-12T01:45:46.023196+00:00 (none) uefisync:  uefi_remconred_rec::set_value
+2023-04-12T01:45:46.024866+00:00 (none) uefisync:  uefi_settings::set_value, rec_id = 0, sett_id = 0
+2023-04-12T01:45:46.026677+00:00 (none) uefisync:  uefi_remconred_rec::set_value
+2023-04-12T01:45:46.037314+00:00 (none) uefisync:  uefi_settings::set_value, rec_id = 0, sett_id = 3
+2023-04-12T01:45:46.038670+00:00 (none) uefisync:  uefi_remconred_rec::set_value
+2023-04-12T01:45:46.052403+00:00 (none) uefisync:  uefi_settings::set_value, rec_id = 0, sett_id = 4
+2023-04-12T01:45:46.053872+00:00 (none) uefisync:  uefi_remconred_rec::set_value
+2023-04-12T01:45:46.055479+00:00 (none) uefisync:  uefi_settings::set_value, rec_id = 0, sett_id = 5
+2023-04-12T01:45:46.057293+00:00 (none) uefisync:  uefi_remconred_rec::set_value
+2023-04-12T01:45:46.058771+00:00 (none) uefisync:  uefi_settings::set_value, rec_id = 0, sett_id = 6
+2023-04-12T01:45:46.068713+00:00 (none) uefisync:  uefi_remconred_rec::set_value
+2023-04-12T01:45:46.070330+00:00 (none) uefisync:  uefi_settings::finalizing()
+2023-04-12T01:45:46.071683+00:00 (none) uefisync:  uefi_remconred_rec::set_record
+2023-04-12T01:45:46.094237+00:00 (none) uefisync:   uefi_settings, write_output_log
+2023-04-12T01:45:46.167138+00:00 (none) cmr:  uefi_agent: done processing transaction 
+2023-04-12T01:45:46.231645+00:00 (none) cmr:  queueing a transaction: id= <cfgbld-uefi_config.efi-0>
+2023-04-12T01:45:49.556823+00:00 (none) uefisync:  uefi_settings::constructor 
+2023-04-12T01:45:49.558437+00:00 (none) uefisync:     load_records 
+2023-04-12T01:45:49.559968+00:00 (none) uefisync:  uefi_settings::load_records
+2023-04-12T01:45:49.561642+00:00 (none) uefisync:     load_settings 
+2023-04-12T01:45:49.563184+00:00 (none) uefisync:  uefi_settings::load_settings, record id = 0
+2023-04-12T01:45:49.565041+00:00 (none) uefisync:     init_settings 
+2023-04-12T01:45:49.566676+00:00 (none) uefisync:  uefi_settings::init_settings, record id = 0
+2023-04-12T01:45:49.568317+00:00 (none) uefisync:  uefi_remconred_rec::get_record
+2023-04-12T01:45:49.608314+00:00 (none) uefisync:  uefi_sync, load batch file, file = /tmp/uefi_batch_in.txt
+2023-04-12T01:45:49.675975+00:00 (none) uefisync:  uefi_settings::processing()
+2023-04-12T01:45:49.700909+00:00 (none) uefisync:  uefi_settings::set_value, rec_id = 0, sett_id = 7
+2023-04-12T01:45:49.702276+00:00 (none) uefisync:  uefi_remconred_rec::set_value
+2023-04-12T01:45:49.729672+00:00 (none) uefisync:  uefi_settings::set_value, rec_id = 0, sett_id = 1
+2023-04-12T01:45:49.731105+00:00 (none) uefisync:  uefi_remconred_rec::set_value
+2023-04-12T01:45:49.732628+00:00 (none) uefisync:  uefi_settings::set_value, rec_id = 0, sett_id = 2
+2023-04-12T01:45:49.733949+00:00 (none) uefisync:  uefi_remconred_rec::set_value
+2023-04-12T01:45:49.736486+00:00 (none) uefisync:  uefi_settings::set_value, rec_id = 0, sett_id = 0
+2023-04-12T01:45:49.737954+00:00 (none) uefisync:  uefi_remconred_rec::set_value
+2023-04-12T01:45:49.741241+00:00 (none) uefisync:  uefi_settings::set_value, rec_id = 0, sett_id = 3
+2023-04-12T01:45:49.742560+00:00 (none) uefisync:  uefi_remconred_rec::set_value
+2023-04-12T01:45:49.753745+00:00 (none) uefisync:  uefi_settings::set_value, rec_id = 0, sett_id = 4
+2023-04-12T01:45:49.756496+00:00 (none) uefisync:  uefi_remconred_rec::set_value
+2023-04-12T01:45:49.757957+00:00 (none) uefisync:  uefi_settings::set_value, rec_id = 0, sett_id = 5
+2023-04-12T01:45:49.759359+00:00 (none) uefisync:  uefi_remconred_rec::set_value
+2023-04-12T01:45:49.760887+00:00 (none) uefisync:  uefi_settings::set_value, rec_id = 0, sett_id = 6
+2023-04-12T01:45:49.762280+00:00 (none) uefisync:  uefi_remconred_rec::set_value
+2023-04-12T01:45:49.763705+00:00 (none) uefisync:  uefi_settings::finalizing()
+2023-04-12T01:45:49.765162+00:00 (none) uefisync:  uefi_remconred_rec::set_record
+2023-04-12T01:45:49.796019+00:00 (none) uefisync:   uefi_settings, write_output_log
+2023-04-12T01:45:56.183029+00:00 (none) dp:  immpci_plugin::on_event: update_ucm_data
+2023-04-12T01:45:56.183203+00:00 (none) dp:  immpci_plugin::process_ucm_data
+2023-04-12T01:45:56.392723+00:00 (none) dp:  update_ucm_transaction::update_ucm_data: need_wipe flag - 1
+2023-04-12T01:45:56.394328+00:00 (none) dp:  update_ucm_transaction::update_ucm_data: create /tmp/dp.ucmparsing
+2023-04-12T01:46:18.136337+00:00 (none) dp:  update_ucm_transaction::update_ucm_data: remove /tmp/dp.ucmparsing
+2023-04-12T01:46:18.136521+00:00 (none) dp:  update_ucm_transaction::update_ucm_data succeed
+2023-04-12T01:48:30.689991+00:00 (none) cmr:  ipmi agent, setting dirty flag for vmmigration
+2023-04-12T01:48:32.361568+00:00 (none) dp:  immpci_plugin::on_event: update_ucm_data
+2023-04-12T01:48:32.361742+00:00 (none) dp:  immpci_plugin::process_ucm_data
+2023-04-12T01:48:32.599455+00:00 (none) dp:  update_ucm_transaction::update_ucm_data: need_wipe flag - 0
+2023-04-12T01:48:32.601292+00:00 (none) dp:  update_ucm_transaction::update_ucm_data: create /tmp/dp.ucmparsing
+2023-04-12T01:48:42.254724+00:00 (none) dp:  immpci_plugin::on_event: update_ucm_data
+2023-04-12T01:48:42.254934+00:00 (none) dp:  immpci_plugin::process_ucm_data
+2023-04-12T01:48:42.255028+00:00 (none) dp:  immpci need update ucm again
+2023-04-12T01:48:53.327185+00:00 (none) dp:  update_ucm_transaction::update_ucm_data: remove /tmp/dp.ucmparsing
+2023-04-12T01:48:53.327362+00:00 (none) dp:  update_ucm_transaction::update_ucm_data succeed
+2023-04-12T01:48:53.636586+00:00 (none) dp:  update_ucm_transaction::update_ucm_data: need_wipe flag - 0
+2023-04-12T01:48:53.638323+00:00 (none) dp:  update_ucm_transaction::update_ucm_data: create /tmp/dp.ucmparsing
+2023-04-12T01:49:11.143002+00:00 (none) dp:  update_ucm_transaction::update_ucm_data: remove /tmp/dp.ucmparsing
+2023-04-12T01:49:11.143189+00:00 (none) dp:  update_ucm_transaction::update_ucm_data succeed
+2023-04-12T01:51:00.940024+00:00 (none) cmr:  uefi_agent, on event = process_config_file
+2023-04-12T01:51:00.941128+00:00 (none) cmr:  uefi_agent: process_config
+2023-04-12T01:51:01.401190+00:00 (none) dp:  immpci_plugin::on_event: need_wipe
+2023-04-12T01:51:01.596415+00:00 (none) cmr:  queueing a transaction: id= uefi
+2023-04-12T01:51:01.704023+00:00 (none) cmr:      uefi_settings_agent: unregister configuration PXE
+2023-04-12T01:51:03.641469+00:00 (none) cmr:      uefi_settings_agent: remove configuration PXE
+2023-04-12T01:51:03.696959+00:00 (none) cmr:      uefi_settings_agent: unregister configuration AdvancedRAS
+2023-04-12T01:51:04.799454+00:00 (none) cmr:      uefi_settings_agent: remove configuration AdvancedRAS
+2023-04-12T01:51:04.874548+00:00 (none) cmr:      uefi_settings_agent: unregister configuration TrustedComputingGroup
+2023-04-12T01:51:05.269328+00:00 (none) dp:  immraidlink plugin::process_raid_data, transaction_flag = 2, param1 = 255, param2 = 
+2023-04-12T01:51:06.266233+00:00 (none) cmr:      uefi_settings_agent: remove configuration TrustedComputingGroup
+2023-04-12T01:51:06.313279+00:00 (none) cmr:      uefi_settings_agent: unregister configuration POSTAttempts
+2023-04-12T01:51:07.030241+00:00 (none) dp: [dbc_rcv] successfully started
+2023-04-12T01:51:07.056131+00:00 (none) dp: [dbc_snd] socket 9 created
+2023-04-12T01:51:07.057591+00:00 (none) dp: [dbc_snd] successfully started
+2023-04-12T01:51:07.960590+00:00 (none) cmr:      uefi_settings_agent: remove configuration POSTAttempts
+2023-04-12T01:51:07.964036+00:00 (none) cmr:      uefi_settings_agent: unregister configuration DiskGPTRecovery
+2023-04-12T01:51:09.527049+00:00 (none) cmr:      uefi_settings_agent: remove configuration DiskGPTRecovery
+2023-04-12T01:51:09.529665+00:00 (none) cmr:      uefi_settings_agent: unregister configuration OperatingModes
+2023-04-12T01:51:09.642790+00:00 (none) dp: Not find matched record from PCIs table(ctrlDbIndex=1).
+2023-04-12T01:51:10.665232+00:00 (none) cmr:      uefi_settings_agent: remove configuration OperatingModes
+2023-04-12T01:51:10.680852+00:00 (none) cmr:      uefi_settings_agent: unregister configuration BackupBankManagement
+2023-04-12T01:51:11.214469+00:00 (none) cmr:      uefi_settings_agent: remove configuration BackupBankManagement
+2023-04-12T01:51:11.230718+00:00 (none) cmr:      uefi_settings_agent: unregister configuration TPMVersion
+2023-04-12T01:51:11.780472+00:00 (none) cmr:      uefi_settings_agent: remove configuration TPMVersion
+2023-04-12T01:51:11.783518+00:00 (none) cmr:      uefi_settings_agent: unregister configuration SystemRecovery
+2023-04-12T01:51:12.082514+00:00 (none) cmr:      uefi_settings_agent: remove configuration SystemRecovery
+2023-04-12T01:51:12.087246+00:00 (none) cmr:      uefi_settings_agent: unregister configuration Processors
+2023-04-12T01:51:12.253684+00:00 (none) cmr:      uefi_settings_agent: remove configuration Processors
+2023-04-12T01:51:12.270454+00:00 (none) cmr:      uefi_settings_agent: unregister configuration Power
+2023-04-12T01:51:12.428213+00:00 (none) cmr:      uefi_settings_agent: remove configuration Power
+2023-04-12T01:51:12.434856+00:00 (none) cmr:      uefi_settings_agent: unregister configuration DevicesandIOPorts
+2023-04-12T01:51:12.716219+00:00 (none) cmr:      uefi_settings_agent: remove configuration DevicesandIOPorts
+2023-04-12T01:51:12.727428+00:00 (none) cmr:      uefi_settings_agent: unregister configuration Node1
+2023-04-12T01:51:12.905235+00:00 (none) cmr:      uefi_settings_agent: remove configuration Node1
+2023-04-12T01:51:12.922882+00:00 (none) cmr:      uefi_settings_agent: unregister configuration Memory
+2023-04-12T01:51:13.042033+00:00 (none) cmr:      uefi_settings_agent: remove configuration Memory
+2023-04-12T01:51:13.075024+00:00 (none) cmr:      uefi_settings_agent: unregister configuration LegacySupport
+2023-04-12T01:51:13.160378+00:00 (none) cmr:      uefi_settings_agent: remove configuration LegacySupport
+2023-04-12T01:51:13.164569+00:00 (none) cmr:      uefi_settings_agent: unregister configuration UEFIMisc
+2023-04-12T01:51:13.251181+00:00 (none) cmr:      uefi_settings_agent: remove configuration UEFIMisc
+2023-04-12T01:51:13.253972+00:00 (none) cmr:      uefi_settings_agent: unregister configuration SecureBootConfiguration
+2023-04-12T01:51:13.393930+00:00 (none) cmr:      uefi_settings_agent: remove configuration SecureBootConfiguration
+2023-04-12T01:51:13.397489+00:00 (none) cmr:      uefi_settings_agent: unregister configuration iSCSI
+2023-04-12T01:51:13.570566+00:00 (none) cmr:      uefi_settings_agent: remove configuration iSCSI
+2023-04-12T01:51:13.576923+00:00 (none) cmr:      uefi_settings_agent: unregister configuration PhysicalPresencePolicyConfiguration
+2023-04-12T01:51:13.783324+00:00 (none) cmr:      uefi_settings_agent: remove configuration PhysicalPresencePolicyConfiguration
+2023-04-12T01:51:13.786373+00:00 (none) cmr:      uefi_settings_agent: unregister configuration BootModes
+2023-04-12T01:51:13.947581+00:00 (none) cmr:      uefi_settings_agent: remove configuration BootModes
+2023-04-12T01:51:13.952790+00:00 (none) cmr:      uefi_settings_agent: unregister configuration BootOrder
+2023-04-12T01:51:14.034052+00:00 (none) cmr:      uefi_settings_agent: remove configuration BootOrder
+2023-04-12T01:51:14.042709+00:00 (none) cmr:      uefi_settings_agent: unregister configuration LSIMegaRAIDConfigurationTool-070
+2023-04-12T01:51:14.091867+00:00 (none) cmr:      uefi_settings_agent: remove configuration LSIMegaRAIDConfigurationTool-070
+2023-04-12T01:51:14.117187+00:00 (none) cmr:      uefi_settings_agent: unregister configuration IntelRI350GigabitNetworkConnection-0100
+2023-04-12T01:51:14.137263+00:00 (none) cmr:      uefi_settings_agent: remove configuration IntelRI350GigabitNetworkConnection-0100
+2023-04-12T01:51:14.140559+00:00 (none) cmr:      uefi_settings_agent: unregister configuration IntelRI350GigabitNetworkConnection-0101
+2023-04-12T01:51:14.157294+00:00 (none) cmr:      uefi_settings_agent: remove configuration IntelRI350GigabitNetworkConnection-0101
+2023-04-12T01:51:14.160374+00:00 (none) cmr:      uefi_settings_agent: unregister configuration IntelRI350GigabitNetworkConnection-0102
+2023-04-12T01:51:14.176360+00:00 (none) cmr:      uefi_settings_agent: remove configuration IntelRI350GigabitNetworkConnection-0102
+2023-04-12T01:51:14.179260+00:00 (none) cmr:      uefi_settings_agent: unregister configuration IntelRI350GigabitNetworkConnection-0103
+2023-04-12T01:51:14.198071+00:00 (none) cmr:      uefi_settings_agent: remove configuration IntelRI350GigabitNetworkConnection-0103
+2023-04-12T01:51:14.202846+00:00 (none) cmr:      uefi_settings_agent: unregister configuration IntelREthernetServerAdapterI340-T4-1101
+2023-04-12T01:51:14.253913+00:00 (none) cmr:      uefi_settings_agent: remove configuration IntelREthernetServerAdapterI340-T4-1101
+2023-04-12T01:51:14.289061+00:00 (none) cmr:      uefi_settings_agent: unregister configuration IntelREthernetServerAdapterI340-T4-1102
+2023-04-12T01:51:14.311067+00:00 (none) cmr:      uefi_settings_agent: remove configuration IntelREthernetServerAdapterI340-T4-1102
+2023-04-12T01:51:14.326331+00:00 (none) cmr:      uefi_settings_agent: unregister configuration IntelREthernetServerAdapterI340-T4-1103
+2023-04-12T01:51:14.331541+00:00 (none) cmr:      uefi_settings_agent: remove configuration IntelREthernetServerAdapterI340-T4-1103
+2023-04-12T01:51:15.312364+00:00 (none) cmr:  ***ERROR*** setting_store: failed restoring settings, file= /var/cmr/uefi_settings.txt
+2023-04-12T01:51:15.314518+00:00 (none) cmr:  ***ERROR*** setting_store: failed restoring settings, file= /var/cmr/uefi_settings.txt.bak
+2023-04-12T01:51:15.324686+00:00 (none) cmr:  ***ERROR*** setting_store: assuming no settings, file= /var/cmr/uefi_settings.txt
+2023-04-12T01:51:16.227402+00:00 (none) dp: reboot flag is set, will reset health status
+2023-04-12T01:51:16.800618+00:00 (none) cmr:  queueing a transaction: id= UEFI-2023-04-12-02-30-23
+2023-04-12T01:51:20.603999+00:00 (none) dp:  update_plugin_transaction::update_raid_data, notify bmc of the dp ready
+2023-04-12T01:51:21.460065+00:00 (none) cmr:  uefi_agent, on event = process_ueficli_file
+2023-04-12T01:51:21.460251+00:00 (none) cmr:  uefi_agent: process_ueficli
+2023-04-12T01:51:22.287561+00:00 (none) dp: hh_dump_entity_list: DISK DEVICES 0x2ba14ce4 nCount = 17
+2023-04-12T01:51:22.852204+00:00 (none) dp:  immpci_plugin::on_event: update_pci_data
+2023-04-12T01:51:22.852397+00:00 (none) dp:  immpci_plugin::process_pci_data
+2023-04-12T01:51:22.857682+00:00 (none) dp:  immraidlink_plugin, need to update PCI data, send alert_update_pci alert
+2023-04-12T01:51:22.877360+00:00 (none) dp:  raid link proxy server is started.
+2023-04-12T01:51:31.173028+00:00 (none) uefisync:  uefi_settings::constructor 
+2023-04-12T01:51:31.175020+00:00 (none) uefisync:     load_records 
+2023-04-12T01:51:31.176943+00:00 (none) uefisync:  uefi_settings::load_records
+2023-04-12T01:51:31.178564+00:00 (none) uefisync:     load_settings 
+2023-04-12T01:51:31.211333+00:00 (none) uefisync:  uefi_settings::load_settings, record id = 0
+2023-04-12T01:51:31.213530+00:00 (none) uefisync:     init_settings 
+2023-04-12T01:51:31.214953+00:00 (none) uefisync:  uefi_settings::init_settings, record id = 0
+2023-04-12T01:51:31.216511+00:00 (none) uefisync:  uefi_remconred_rec::get_record
+2023-04-12T01:51:31.316067+00:00 (none) uefisync:  uefi_sync, load batch file, file = /tmp/uefi_batch_in.txt
+2023-04-12T01:51:31.436032+00:00 (none) dp: successfully parsed "/var/dp/cds.xml"
+2023-04-12T01:51:31.519335+00:00 (none) uefisync:  uefi_settings::processing()
+2023-04-12T01:51:31.521279+00:00 (none) uefisync:  uefi_settings::set_value, rec_id = 0, sett_id = 7
+2023-04-12T01:51:31.522806+00:00 (none) uefisync:  uefi_remconred_rec::set_value
+2023-04-12T01:51:31.580750+00:00 (none) uefisync:  uefi_settings::set_value, rec_id = 0, sett_id = 1
+2023-04-12T01:51:31.582141+00:00 (none) uefisync:  uefi_remconred_rec::set_value
+2023-04-12T01:51:31.583669+00:00 (none) uefisync:  uefi_settings::set_value, rec_id = 0, sett_id = 2
+2023-04-12T01:51:31.585213+00:00 (none) uefisync:  uefi_remconred_rec::set_value
+2023-04-12T01:51:31.590050+00:00 (none) uefisync:  uefi_settings::set_value, rec_id = 0, sett_id = 0
+2023-04-12T01:51:31.591469+00:00 (none) uefisync:  uefi_remconred_rec::set_value
+2023-04-12T01:51:31.593228+00:00 (none) uefisync:  uefi_settings::set_value, rec_id = 0, sett_id = 3
+2023-04-12T01:51:31.594647+00:00 (none) uefisync:  uefi_remconred_rec::set_value
+2023-04-12T01:51:31.597541+00:00 (none) uefisync:  uefi_settings::set_value, rec_id = 0, sett_id = 4
+2023-04-12T01:51:31.599231+00:00 (none) uefisync:  uefi_remconred_rec::set_value
+2023-04-12T01:51:31.637650+00:00 (none) uefisync:  uefi_settings::set_value, rec_id = 0, sett_id = 5
+2023-04-12T01:51:31.639589+00:00 (none) uefisync:  uefi_remconred_rec::set_value
+2023-04-12T01:51:31.641085+00:00 (none) uefisync:  uefi_settings::set_value, rec_id = 0, sett_id = 6
+2023-04-12T01:51:31.642333+00:00 (none) uefisync:  uefi_remconred_rec::set_value
+2023-04-12T01:51:31.643665+00:00 (none) uefisync:  uefi_settings::finalizing()
+2023-04-12T01:51:31.645382+00:00 (none) uefisync:  uefi_remconred_rec::set_record
+2023-04-12T01:51:31.888081+00:00 (none) uefisync:   uefi_settings, write_output_log
+2023-04-12T01:51:31.904951+00:00 (none) dp: AIM Doc: config AVAGOMegaRAIDInventoryDataProvider-070 is [OK]
+2023-04-12T01:51:31.943331+00:00 (none) dp: AIM PARSER: [AIM-supported] slot = 12, func_key = 458752
+2023-04-12T01:51:31.989913+00:00 (none) dp: AIM PARSER: Get UUID from AIM file, location/slot = 1/12, func_key = 458752, uuid = 0000000000000000500605B00BD778B0
+2023-04-12T01:51:32.015117+00:00 (none) cmr:  uefi_agent: done processing transaction 
+2023-04-12T01:51:32.082847+00:00 (none) dp: AIM PARSER: no need to update vpd, vendor:0x1000, sub_vendor:0x1014, device:0x005D, sub_device:0x0454, platform=0x50001a
+2023-04-12T01:51:32.188179+00:00 (none) cmr:  queueing a transaction: id= <cfgbld-uefi_config.efi-1>
+2023-04-12T01:51:32.794097+00:00 (none) dp: AIM PARSER: [VNIC Support] slot = 9, name = Adapter 11:00:00, table: PCIAdapter
+2023-04-12T01:51:32.945431+00:00 (none) dp: AIM PARSER: [VNIC Support] slot = 9, name = Adapter 11:00:01, table: PCIAdapter
+2023-04-12T01:51:33.086041+00:00 (none) dp: AIM PARSER: [VNIC Support] slot = 9, name = Adapter 11:00:02, table: PCIAdapter
+2023-04-12T01:51:33.214229+00:00 (none) dp: AIM PARSER: [VNIC Support] slot = 9, name = Adapter 11:00:03, table: PCIAdapter
+2023-04-12T01:51:33.345488+00:00 (none) dp: AIM PARSER: [VNIC Support] slot = 10, name = Adapter 01:00:00, table: PCIAdapter
+2023-04-12T01:51:33.538999+00:00 (none) dp: AIM PARSER: [VNIC Support] slot = 10, name = Adapter 01:00:01, table: PCIAdapter
+2023-04-12T01:51:33.679987+00:00 (none) dp: AIM PARSER: [VNIC Support] slot = 10, name = Adapter 01:00:02, table: PCIAdapter
+2023-04-12T01:51:33.857058+00:00 (none) dp: AIM PARSER: [VNIC Support] slot = 10, name = Adapter 01:00:03, table: PCIAdapter
+2023-04-12T01:51:34.293123+00:00 (none) dp: AIM PARSER: [No AIM Support] slot = 1, name = Adapter 1B:00:00, table: PCIAdapter
+2023-04-12T01:51:34.414240+00:00 (none) dp: AIM PARSER: [No AIM Support] slot = 7, name = Adapter 51:00:01, table: PCIAdapter
+2023-04-12T01:51:34.532488+00:00 (none) dp: AIM PARSER: [No AIM Support] slot = 8, name = Adapter 41:00:01, table: PCIAdapter
+2023-04-12T01:51:35.336004+00:00 (none) dp: AIM PARSER: successfully parsed "/tmp/aim_filtered.xml"
+2023-04-12T01:51:39.271565+00:00 (none) uefisync:  uefi_settings::constructor 
+2023-04-12T01:51:39.273155+00:00 (none) uefisync:     load_records 
+2023-04-12T01:51:39.274463+00:00 (none) uefisync:  uefi_settings::load_records
+2023-04-12T01:51:39.312693+00:00 (none) uefisync:     load_settings 
+2023-04-12T01:51:39.314233+00:00 (none) uefisync:  uefi_settings::load_settings, record id = 0
+2023-04-12T01:51:39.348579+00:00 (none) uefisync:     init_settings 
+2023-04-12T01:51:39.350087+00:00 (none) uefisync:  uefi_settings::init_settings, record id = 0
+2023-04-12T01:51:39.351513+00:00 (none) uefisync:  uefi_remconred_rec::get_record
+2023-04-12T01:51:39.476175+00:00 (none) uefisync:  uefi_sync, load batch file, file = /tmp/uefi_batch_in.txt
+2023-04-12T01:51:39.652601+00:00 (none) uefisync:  uefi_settings::processing()
+2023-04-12T01:51:39.654295+00:00 (none) uefisync:  uefi_settings::set_value, rec_id = 0, sett_id = 7
+2023-04-12T01:51:39.698807+00:00 (none) uefisync:  uefi_remconred_rec::set_value
+2023-04-12T01:51:39.706845+00:00 (none) uefisync:  uefi_settings::set_value, rec_id = 0, sett_id = 1
+2023-04-12T01:51:39.744423+00:00 (none) uefisync:  uefi_remconred_rec::set_value
+2023-04-12T01:51:39.746205+00:00 (none) uefisync:  uefi_settings::set_value, rec_id = 0, sett_id = 2
+2023-04-12T01:51:39.747550+00:00 (none) uefisync:  uefi_remconred_rec::set_value
+2023-04-12T01:51:39.749024+00:00 (none) uefisync:  uefi_settings::set_value, rec_id = 0, sett_id = 0
+2023-04-12T01:51:39.750233+00:00 (none) uefisync:  uefi_remconred_rec::set_value
+2023-04-12T01:51:39.780183+00:00 (none) uefisync:  uefi_settings::set_value, rec_id = 0, sett_id = 3
+2023-04-12T01:51:39.781527+00:00 (none) uefisync:  uefi_remconred_rec::set_value
+2023-04-12T01:51:39.783062+00:00 (none) uefisync:  uefi_settings::set_value, rec_id = 0, sett_id = 4
+2023-04-12T01:51:39.784439+00:00 (none) uefisync:  uefi_remconred_rec::set_value
+2023-04-12T01:51:39.786448+00:00 (none) uefisync:  uefi_settings::set_value, rec_id = 0, sett_id = 5
+2023-04-12T01:51:39.832510+00:00 (none) uefisync:  uefi_remconred_rec::set_value
+2023-04-12T01:51:39.834027+00:00 (none) uefisync:  uefi_settings::set_value, rec_id = 0, sett_id = 6
+2023-04-12T01:51:39.835837+00:00 (none) uefisync:  uefi_remconred_rec::set_value
+2023-04-12T01:51:39.837879+00:00 (none) uefisync:  uefi_settings::finalizing()
+2023-04-12T01:51:39.839273+00:00 (none) uefisync:  uefi_remconred_rec::set_record
+2023-04-12T01:51:40.032033+00:00 (none) uefisync:   uefi_settings, write_output_log
+2023-04-12T01:51:40.815394+00:00 (none) dp: system inventory changed
+2023-04-12T01:51:40.933932+00:00 (none) dp: pci inventory changed
+2023-04-12T01:51:41.050380+00:00 (none) dp:  update_pci_transaction::update_pci_data succeed
+2023-04-12T01:51:47.337690+00:00 (none) dp:  immpci_plugin::on_event: update_ucm_data
+2023-04-12T01:51:47.337880+00:00 (none) dp:  immpci_plugin::process_ucm_data
+2023-04-12T01:51:47.556764+00:00 (none) dp:  update_ucm_transaction::update_ucm_data: need_wipe flag - 1
+2023-04-12T01:51:47.558629+00:00 (none) dp:  update_ucm_transaction::update_ucm_data: create /tmp/dp.ucmparsing
+2023-04-12T01:51:48.988134+00:00 (none) cmr:  post complete is received by CMR.
+2023-04-12T01:51:48.990105+00:00 (none) cmr:  unload full cmr
+2023-04-12T01:51:48.992076+00:00 (none) cmr:  Unloading Config Manager
+2023-04-12T01:51:52.346045+00:00 (none) cmr:  Loading Configuration Manager Server Version (255,255)
+2023-04-12T01:51:52.357615+00:00 (none) cmr:  Starting message queue server
+2023-04-12T01:51:52.371253+00:00 (none) cmr:  This is not a CMR first init. 
+2023-04-12T01:51:52.384128+00:00 (none) dp:  immpci_plugin::on_event: update_ucm_data
+2023-04-12T01:51:52.386854+00:00 (none) dp:  immpci_plugin::process_ucm_data
+2023-04-12T01:51:52.387002+00:00 (none) dp:  immpci need update ucm again
+2023-04-12T01:51:52.572283+00:00 (none) cmr:  execution_manager, vpd offset 0x1ee000
+2023-04-12T01:51:52.572454+00:00 (none) cmr:  execution_manager, vpd length 0x2000
+2023-04-12T01:51:52.590860+00:00 (none) cmr:  Initialization complete
+2023-04-12T01:52:05.447503+00:00 (none) dp:  update_ucm_transaction::update_ucm_data: remove /tmp/dp.ucmparsing
+2023-04-12T01:52:05.447697+00:00 (none) dp:  update_ucm_transaction::update_ucm_data succeed
+2023-04-12T01:52:05.749878+00:00 (none) dp:  update_ucm_transaction::update_ucm_data: need_wipe flag - 0
+2023-04-12T01:52:05.751535+00:00 (none) dp:  update_ucm_transaction::update_ucm_data: create /tmp/dp.ucmparsing
+2023-04-12T01:52:14.929226+00:00 (none) dp:  update_ucm_transaction::update_ucm_data: remove /tmp/dp.ucmparsing
+2023-04-12T01:52:14.931382+00:00 (none) dp:  update_ucm_transaction::update_ucm_data succeed
+2023-04-12T01:53:12.616012+00:00 (none) cmr:  Wakeup: sp
+2023-04-12T01:53:14.863018+00:00 (none) cmr:  adding agent library, library= libcmr_agents.so
+2023-04-12T01:53:15.212628+00:00 (none) cmr:  ***ERROR*** Unable to initialize connection to SDRAID Library service.
+2023-04-12T01:53:19.175071+00:00 (none) cmr:  ***ERROR*** setting_store: failed restoring settings, file= /var/cmr/system_prod_data.txt
+2023-04-12T01:53:19.177362+00:00 (none) cmr:  ***ERROR*** setting_store: failed restoring settings, file= /var/cmr/system_prod_data.txt.bak
+2023-04-12T01:53:19.178829+00:00 (none) cmr:  ***ERROR*** setting_store: assuming no settings, file= /var/cmr/system_prod_data.txt
+2023-04-12T01:55:49.177725+00:00 (none) dp:  immpci_plugin::on_event: update_ucm_data
+2023-04-12T01:55:49.177895+00:00 (none) dp:  immpci_plugin::process_ucm_data
+2023-04-12T01:55:49.380783+00:00 (none) dp:  update_ucm_transaction::update_ucm_data: need_wipe flag - 0
+2023-04-12T01:55:49.382971+00:00 (none) dp:  update_ucm_transaction::update_ucm_data: create /tmp/dp.ucmparsing
+2023-04-12T01:55:57.842900+00:00 (none) dp:  immpci_plugin::on_event: update_ucm_data
+2023-04-12T01:55:57.843074+00:00 (none) dp:  immpci_plugin::process_ucm_data
+2023-04-12T01:55:57.843162+00:00 (none) dp:  immpci need update ucm again
+2023-04-12T01:56:05.474071+00:00 (none) dp:  update_ucm_transaction::update_ucm_data: remove /tmp/dp.ucmparsing
+2023-04-12T01:56:05.474254+00:00 (none) dp:  update_ucm_transaction::update_ucm_data succeed
+2023-04-12T01:56:05.777376+00:00 (none) dp:  update_ucm_transaction::update_ucm_data: need_wipe flag - 0
+2023-04-12T01:56:05.779067+00:00 (none) dp:  update_ucm_transaction::update_ucm_data: create /tmp/dp.ucmparsing
+2023-04-12T01:56:14.554779+00:00 (none) dp:  update_ucm_transaction::update_ucm_data: remove /tmp/dp.ucmparsing
+2023-04-12T01:56:14.554959+00:00 (none) dp:  update_ucm_transaction::update_ucm_data succeed
+2023-04-12T01:57:24.345100+00:00 (none) dp:  immraidlink plugin::process_raid_data, transaction_flag = 2, param1 = 255, param2 = 
+2023-04-12T01:57:26.381372+00:00 (none) dp: Not find matched record from PCIs table(ctrlDbIndex=1).
+2023-04-12T01:57:27.354257+00:00 (none) cmr:  post complete is received by CMR.
+2023-04-12T01:57:27.354430+00:00 (none) cmr:  unload full cmr
+2023-04-12T01:57:27.356063+00:00 (none) cmr:  Unloading Config Manager
+2023-04-12T01:57:30.594506+00:00 (none) cmr:  Loading Configuration Manager Server Version (255,255)
+2023-04-12T01:57:30.640465+00:00 (none) cmr:  Starting message queue server
+2023-04-12T01:57:30.643669+00:00 (none) cmr:  This is not a CMR first init. 
+2023-04-12T01:57:30.666994+00:00 (none) dp:  immpci_plugin::on_event: update_ucm_data
+2023-04-12T01:57:30.667178+00:00 (none) dp:  immpci_plugin::process_ucm_data
+2023-04-12T01:57:30.992307+00:00 (none) cmr:  execution_manager, vpd offset 0x1ee000
+2023-04-12T01:57:30.992488+00:00 (none) cmr:  execution_manager, vpd length 0x2000
+2023-04-12T01:57:31.040718+00:00 (none) cmr:  Initialization complete
+2023-04-12T01:57:34.415247+00:00 (none) dp: reboot flag is set, will reset health status
+2023-04-12T01:57:38.254475+00:00 (none) dp:  update_plugin_transaction::update_raid_data, notify bmc of the dp ready
+2023-04-12T01:57:50.122369+00:00 (none) dp: hh_dump_entity_list: DISK DEVICES 0x2ba14ce4 nCount = 17
+2023-04-12T01:57:50.589775+00:00 (none) dp:  immpci_plugin::on_event: update_pci_data
+2023-04-12T01:57:50.592060+00:00 (none) dp:  immpci_plugin::process_pci_data
+2023-04-12T01:57:50.618611+00:00 (none) dp:  immraidlink_plugin, need to update PCI data, send alert_update_pci alert
+2023-04-12T01:57:50.941523+00:00 (none) dp:  update_ucm_transaction::update_ucm_data: need_wipe flag - 0
+2023-04-12T01:57:50.950340+00:00 (none) dp:  update_ucm_transaction::update_ucm_data: create /tmp/dp.ucmparsing
+2023-04-12T01:58:00.580271+00:00 (none) dp:  update_ucm_transaction::update_ucm_data: remove /tmp/dp.ucmparsing
+2023-04-12T01:58:00.580475+00:00 (none) dp:  update_ucm_transaction::update_ucm_data succeed
+2023-04-12T01:58:05.915977+00:00 (none) dp: successfully parsed "/var/dp/cds.xml"
+2023-04-12T01:58:06.269594+00:00 (none) dp: AIM Doc: config AVAGOMegaRAIDInventoryDataProvider-070 is [OK]
+2023-04-12T01:58:06.314482+00:00 (none) dp: AIM PARSER: [AIM-supported] slot = 12, func_key = 458752
+2023-04-12T01:58:06.334442+00:00 (none) dp: AIM PARSER: Get UUID from AIM file, location/slot = 1/12, func_key = 458752, uuid = 0000000000000000500605B00BD778B0
+2023-04-12T01:58:06.376470+00:00 (none) dp: AIM PARSER: no need to update vpd, vendor:0x1000, sub_vendor:0x1014, device:0x005D, sub_device:0x0454, platform=0x50001a
+2023-04-12T01:58:06.785127+00:00 (none) dp: AIM PARSER: [VNIC Support] slot = 9, name = Adapter 11:00:00, table: PCIAdapter
+2023-04-12T01:58:06.932702+00:00 (none) dp: AIM PARSER: [VNIC Support] slot = 9, name = Adapter 11:00:01, table: PCIAdapter
+2023-04-12T01:58:07.040027+00:00 (none) dp: AIM PARSER: [VNIC Support] slot = 9, name = Adapter 11:00:02, table: PCIAdapter
+2023-04-12T01:58:07.084041+00:00 (none) dp: AIM PARSER: [VNIC Support] slot = 9, name = Adapter 11:00:03, table: PCIAdapter
+2023-04-12T01:58:07.126414+00:00 (none) dp: AIM PARSER: [VNIC Support] slot = 10, name = Adapter 01:00:00, table: PCIAdapter
+2023-04-12T01:58:07.169760+00:00 (none) dp: AIM PARSER: [VNIC Support] slot = 10, name = Adapter 01:00:01, table: PCIAdapter
+2023-04-12T01:58:07.242068+00:00 (none) dp: AIM PARSER: [VNIC Support] slot = 10, name = Adapter 01:00:02, table: PCIAdapter
+2023-04-12T01:58:07.287379+00:00 (none) dp: AIM PARSER: [VNIC Support] slot = 10, name = Adapter 01:00:03, table: PCIAdapter
+2023-04-12T01:58:07.353025+00:00 (none) dp: AIM PARSER: [No AIM Support] slot = 1, name = Adapter 1B:00:00, table: PCIAdapter
+2023-04-12T01:58:07.371165+00:00 (none) dp: AIM PARSER: [No AIM Support] slot = 7, name = Adapter 51:00:01, table: PCIAdapter
+2023-04-12T01:58:07.388601+00:00 (none) dp: AIM PARSER: [No AIM Support] slot = 8, name = Adapter 41:00:01, table: PCIAdapter
+2023-04-12T01:58:07.487287+00:00 (none) dp: AIM PARSER: successfully parsed "/tmp/aim_filtered.xml"
+2023-04-12T01:58:08.295316+00:00 (none) dp: no system inventory change
+2023-04-12T01:58:08.295515+00:00 (none) dp: no pci inventory change
+2023-04-12T01:58:08.309849+00:00 (none) dp:  update_pci_transaction::update_pci_data succeed
+2023-04-19T07:09:27.980148+00:00 (none) cmr:  Wakeup: sp
+2023-04-19T07:09:29.716012+00:00 (none) cmr:  adding agent library, library= libcmr_agents.so
+2023-04-19T07:09:30.106686+00:00 (none) cmr:  ***ERROR*** Unable to initialize connection to SDRAID Library service.
+2023-04-19T07:09:32.420988+00:00 (none) cmr:  ***ERROR*** setting_store: failed restoring settings, file= /var/cmr/system_prod_data.txt
+2023-04-19T07:09:32.422766+00:00 (none) cmr:  ***ERROR*** setting_store: failed restoring settings, file= /var/cmr/system_prod_data.txt.bak
+2023-04-19T07:09:32.424267+00:00 (none) cmr:  ***ERROR*** setting_store: assuming no settings, file= /var/cmr/system_prod_data.txt
+2023-04-19T07:12:06.199998+00:00 (none) cmr:  ipmi agent, setting dirty flag for vmmigration
+2023-04-19T07:12:07.748762+00:00 (none) dp:  immpci_plugin::on_event: update_ucm_data
+2023-04-19T07:12:07.748940+00:00 (none) dp:  immpci_plugin::process_ucm_data
+2023-04-19T07:12:07.964851+00:00 (none) dp:  update_ucm_transaction::update_ucm_data: need_wipe flag - 0
+2023-04-19T07:12:07.966717+00:00 (none) dp:  update_ucm_transaction::update_ucm_data: create /tmp/dp.ucmparsing
+2023-04-19T07:12:16.244000+00:00 (none) dp:  immpci_plugin::on_event: update_ucm_data
+2023-04-19T07:12:16.244191+00:00 (none) dp:  immpci_plugin::process_ucm_data
+2023-04-19T07:12:16.245688+00:00 (none) dp:  immpci need update ucm again
+2023-04-19T07:12:20.689096+00:00 (none) dp:  update_ucm_transaction::update_ucm_data: remove /tmp/dp.ucmparsing
+2023-04-19T07:12:20.691251+00:00 (none) dp:  update_ucm_transaction::update_ucm_data succeed
+2023-04-19T07:12:20.993165+00:00 (none) dp:  update_ucm_transaction::update_ucm_data: need_wipe flag - 0
+2023-04-19T07:12:20.994810+00:00 (none) dp:  update_ucm_transaction::update_ucm_data: create /tmp/dp.ucmparsing
+2023-04-19T07:12:29.732097+00:00 (none) dp:  update_ucm_transaction::update_ucm_data: remove /tmp/dp.ucmparsing
+2023-04-19T07:12:29.732277+00:00 (none) dp:  update_ucm_transaction::update_ucm_data succeed
+2023-04-19T07:14:28.896118+00:00 (none) cmr:  uefi_agent, on event = process_config_file
+2023-04-19T07:14:28.897428+00:00 (none) cmr:  uefi_agent: process_config
+2023-04-19T07:14:29.342598+00:00 (none) dp:  immpci_plugin::on_event: need_wipe
+2023-04-19T07:14:29.348387+00:00 (none) cmr:  queueing a transaction: id= uefi
+2023-04-19T07:14:29.451143+00:00 (none) cmr:      uefi_settings_agent: unregister configuration PXE
+2023-04-19T07:14:29.620617+00:00 (none) cmr:      uefi_settings_agent: remove configuration PXE
+2023-04-19T07:14:29.624559+00:00 (none) cmr:      uefi_settings_agent: unregister configuration AdvancedRAS
+2023-04-19T07:14:29.937725+00:00 (none) cmr:      uefi_settings_agent: remove configuration AdvancedRAS
+2023-04-19T07:14:29.946019+00:00 (none) cmr:      uefi_settings_agent: unregister configuration TrustedComputingGroup
+2023-04-19T07:14:30.500691+00:00 (none) cmr:      uefi_settings_agent: remove configuration TrustedComputingGroup
+2023-04-19T07:14:30.504014+00:00 (none) cmr:      uefi_settings_agent: unregister configuration POSTAttempts
+2023-04-19T07:14:31.085060+00:00 (none) cmr:      uefi_settings_agent: remove configuration POSTAttempts
+2023-04-19T07:14:31.092610+00:00 (none) cmr:      uefi_settings_agent: unregister configuration DiskGPTRecovery
+2023-04-19T07:14:31.400278+00:00 (none) cmr:      uefi_settings_agent: remove configuration DiskGPTRecovery
+2023-04-19T07:14:31.409007+00:00 (none) cmr:      uefi_settings_agent: unregister configuration OperatingModes
+2023-04-19T07:14:32.003240+00:00 (none) cmr:      uefi_settings_agent: remove configuration OperatingModes
+2023-04-19T07:14:32.006779+00:00 (none) cmr:      uefi_settings_agent: unregister configuration BackupBankManagement
+2023-04-19T07:14:32.285632+00:00 (none) dp:  immraidlink plugin::process_raid_data, transaction_flag = 2, param1 = 255, param2 = 
+2023-04-19T07:14:32.323124+00:00 (none) cmr:      uefi_settings_agent: remove configuration BackupBankManagement
+2023-04-19T07:14:32.327108+00:00 (none) cmr:      uefi_settings_agent: unregister configuration TPMVersion
+2023-04-19T07:14:33.128771+00:00 (none) cmr:      uefi_settings_agent: remove configuration TPMVersion
+2023-04-19T07:14:33.131562+00:00 (none) cmr:      uefi_settings_agent: unregister configuration SystemRecovery
+2023-04-19T07:14:33.938539+00:00 (none) cmr:      uefi_settings_agent: remove configuration SystemRecovery
+2023-04-19T07:14:33.945727+00:00 (none) cmr:      uefi_settings_agent: unregister configuration Processors
+2023-04-19T07:14:34.613646+00:00 (none) dp: Not find matched record from PCIs table(ctrlDbIndex=1).
+2023-04-19T07:14:34.652328+00:00 (none) cmr:      uefi_settings_agent: remove configuration Processors
+2023-04-19T07:14:34.728698+00:00 (none) cmr:      uefi_settings_agent: unregister configuration Power
+2023-04-19T07:14:35.465231+00:00 (none) cmr:      uefi_settings_agent: remove configuration Power
+2023-04-19T07:14:35.483052+00:00 (none) cmr:      uefi_settings_agent: unregister configuration DevicesandIOPorts
+2023-04-19T07:14:35.790542+00:00 (none) cmr:      uefi_settings_agent: remove configuration DevicesandIOPorts
+2023-04-19T07:14:35.826338+00:00 (none) cmr:      uefi_settings_agent: unregister configuration Node1
+2023-04-19T07:14:36.001273+00:00 (none) cmr:      uefi_settings_agent: remove configuration Node1
+2023-04-19T07:14:36.017531+00:00 (none) cmr:      uefi_settings_agent: unregister configuration Memory
+2023-04-19T07:14:36.136977+00:00 (none) cmr:      uefi_settings_agent: remove configuration Memory
+2023-04-19T07:14:36.161427+00:00 (none) cmr:      uefi_settings_agent: unregister configuration LegacySupport
+2023-04-19T07:14:36.246096+00:00 (none) cmr:      uefi_settings_agent: remove configuration LegacySupport
+2023-04-19T07:14:36.250246+00:00 (none) cmr:      uefi_settings_agent: unregister configuration UEFIMisc
+2023-04-19T07:14:36.328404+00:00 (none) cmr:      uefi_settings_agent: remove configuration UEFIMisc
+2023-04-19T07:14:36.333416+00:00 (none) cmr:      uefi_settings_agent: unregister configuration SecureBootConfiguration
+2023-04-19T07:14:36.565961+00:00 (none) cmr:      uefi_settings_agent: remove configuration SecureBootConfiguration
+2023-04-19T07:14:36.568713+00:00 (none) cmr:      uefi_settings_agent: unregister configuration iSCSI
+2023-04-19T07:14:36.733877+00:00 (none) cmr:      uefi_settings_agent: remove configuration iSCSI
+2023-04-19T07:14:36.743655+00:00 (none) cmr:      uefi_settings_agent: unregister configuration PhysicalPresencePolicyConfiguration
+2023-04-19T07:14:36.858514+00:00 (none) cmr:      uefi_settings_agent: remove configuration PhysicalPresencePolicyConfiguration
+2023-04-19T07:14:36.861056+00:00 (none) cmr:      uefi_settings_agent: unregister configuration BootModes
+2023-04-19T07:14:36.942946+00:00 (none) cmr:      uefi_settings_agent: remove configuration BootModes
+2023-04-19T07:14:36.946474+00:00 (none) cmr:      uefi_settings_agent: unregister configuration BootOrder
+2023-04-19T07:14:37.091214+00:00 (none) cmr:      uefi_settings_agent: remove configuration BootOrder
+2023-04-19T07:14:37.102001+00:00 (none) cmr:      uefi_settings_agent: unregister configuration LSIMegaRAIDConfigurationTool-070
+2023-04-19T07:14:37.181418+00:00 (none) cmr:      uefi_settings_agent: remove configuration LSIMegaRAIDConfigurationTool-070
+2023-04-19T07:14:37.233212+00:00 (none) cmr:      uefi_settings_agent: unregister configuration IntelRI350GigabitNetworkConnection-0100
+2023-04-19T07:14:37.299229+00:00 (none) cmr:      uefi_settings_agent: remove configuration IntelRI350GigabitNetworkConnection-0100
+2023-04-19T07:14:37.326322+00:00 (none) cmr:      uefi_settings_agent: unregister configuration IntelRI350GigabitNetworkConnection-0101
+2023-04-19T07:14:37.420135+00:00 (none) cmr:      uefi_settings_agent: remove configuration IntelRI350GigabitNetworkConnection-0101
+2023-04-19T07:14:37.423203+00:00 (none) cmr:      uefi_settings_agent: unregister configuration IntelRI350GigabitNetworkConnection-0102
+2023-04-19T07:14:37.559557+00:00 (none) cmr:      uefi_settings_agent: remove configuration IntelRI350GigabitNetworkConnection-0102
+2023-04-19T07:14:37.562246+00:00 (none) cmr:      uefi_settings_agent: unregister configuration IntelRI350GigabitNetworkConnection-0103
+2023-04-19T07:14:37.622725+00:00 (none) cmr:      uefi_settings_agent: remove configuration IntelRI350GigabitNetworkConnection-0103
+2023-04-19T07:14:37.634118+00:00 (none) cmr:      uefi_settings_agent: unregister configuration IntelREthernetServerAdapterI340-T4-1101
+2023-04-19T07:14:37.659964+00:00 (none) cmr:      uefi_settings_agent: remove configuration IntelREthernetServerAdapterI340-T4-1101
+2023-04-19T07:14:37.664057+00:00 (none) cmr:      uefi_settings_agent: unregister configuration IntelREthernetServerAdapterI340-T4-1102
+2023-04-19T07:14:37.700089+00:00 (none) cmr:      uefi_settings_agent: remove configuration IntelREthernetServerAdapterI340-T4-1102
+2023-04-19T07:14:37.712197+00:00 (none) cmr:      uefi_settings_agent: unregister configuration IntelREthernetServerAdapterI340-T4-1103
+2023-04-19T07:14:37.724085+00:00 (none) cmr:      uefi_settings_agent: remove configuration IntelREthernetServerAdapterI340-T4-1103
+2023-04-19T07:14:39.763995+00:00 (none) cmr:  ***ERROR*** setting_store: failed restoring settings, file= /var/cmr/uefi_settings.txt
+2023-04-19T07:14:39.766505+00:00 (none) cmr:  ***ERROR*** setting_store: failed restoring settings, file= /var/cmr/uefi_settings.txt.bak
+2023-04-19T07:14:39.768141+00:00 (none) cmr:  ***ERROR*** setting_store: assuming no settings, file= /var/cmr/uefi_settings.txt
+2023-04-19T07:14:41.533946+00:00 (none) cmr:  queueing a transaction: id= UEFI-2023-04-19-07-53-58
+2023-04-19T07:14:42.180002+00:00 (none) dp: reboot flag is set, will reset health status
+2023-04-19T07:14:45.214887+00:00 (none) dp:  update_plugin_transaction::update_raid_data, notify bmc of the dp ready
+2023-04-19T07:14:45.553598+00:00 (none) dp: hh_dump_entity_list: DISK DEVICES 0x2ba14ce4 nCount = 17
+2023-04-19T07:14:46.529650+00:00 (none) dp:  immpci_plugin::on_event: update_pci_data
+2023-04-19T07:14:46.529832+00:00 (none) dp:  immpci_plugin::process_pci_data
+2023-04-19T07:14:46.558526+00:00 (none) dp:  immraidlink_plugin, need to update PCI data, send alert_update_pci alert
+2023-04-19T07:14:51.226397+00:00 (none) cmr:  uefi_agent, on event = process_ueficli_file
+2023-04-19T07:14:51.228362+00:00 (none) cmr:  uefi_agent: process_ueficli
+2023-04-19T07:14:53.816069+00:00 (none) dp: successfully parsed "/var/dp/cds.xml"
+2023-04-19T07:14:54.006807+00:00 (none) dp: AIM Doc: config AVAGOMegaRAIDInventoryDataProvider-070 is [OK]
+2023-04-19T07:14:54.053362+00:00 (none) dp: AIM PARSER: [AIM-supported] slot = 12, func_key = 458752
+2023-04-19T07:14:54.063623+00:00 (none) dp: AIM PARSER: Get UUID from AIM file, location/slot = 1/12, func_key = 458752, uuid = 0000000000000000500605B00BD778B0
+2023-04-19T07:14:54.088568+00:00 (none) dp: AIM PARSER: no need to update vpd, vendor:0x1000, sub_vendor:0x1014, device:0x005D, sub_device:0x0454, platform=0x50001a
+2023-04-19T07:14:54.313506+00:00 (none) dp: AIM PARSER: [VNIC Support] slot = 9, name = Adapter 11:00:00, table: PCIAdapter
+2023-04-19T07:14:54.417018+00:00 (none) dp: AIM PARSER: [VNIC Support] slot = 9, name = Adapter 11:00:01, table: PCIAdapter
+2023-04-19T07:14:54.491382+00:00 (none) dp: AIM PARSER: [VNIC Support] slot = 9, name = Adapter 11:00:02, table: PCIAdapter
+2023-04-19T07:14:54.557856+00:00 (none) dp: AIM PARSER: [VNIC Support] slot = 9, name = Adapter 11:00:03, table: PCIAdapter
+2023-04-19T07:14:54.607393+00:00 (none) dp: AIM PARSER: [VNIC Support] slot = 10, name = Adapter 01:00:00, table: PCIAdapter
+2023-04-19T07:14:54.682579+00:00 (none) dp: AIM PARSER: [VNIC Support] slot = 10, name = Adapter 01:00:01, table: PCIAdapter
+2023-04-19T07:14:54.765668+00:00 (none) dp: AIM PARSER: [VNIC Support] slot = 10, name = Adapter 01:00:02, table: PCIAdapter
+2023-04-19T07:14:54.872616+00:00 (none) dp: AIM PARSER: [VNIC Support] slot = 10, name = Adapter 01:00:03, table: PCIAdapter
+2023-04-19T07:14:54.985150+00:00 (none) dp: AIM PARSER: [No AIM Support] slot = 1, name = Adapter 1B:00:00, table: PCIAdapter
+2023-04-19T07:14:55.013160+00:00 (none) dp: AIM PARSER: [No AIM Support] slot = 7, name = Adapter 51:00:01, table: PCIAdapter
+2023-04-19T07:14:55.050295+00:00 (none) dp: AIM PARSER: [No AIM Support] slot = 8, name = Adapter 41:00:01, table: PCIAdapter
+2023-04-19T07:14:55.255333+00:00 (none) dp: AIM PARSER: successfully parsed "/tmp/aim_filtered.xml"
+2023-04-19T07:14:56.847499+00:00 (none) dp: no system inventory change
+2023-04-19T07:14:56.847675+00:00 (none) dp: no pci inventory change
+2023-04-19T07:14:56.863107+00:00 (none) dp:  update_pci_transaction::update_pci_data succeed
+2023-04-19T07:15:00.006687+00:00 (none) uefisync:  uefi_settings::constructor 
+2023-04-19T07:15:00.012453+00:00 (none) uefisync:     load_records 
+2023-04-19T07:15:00.014224+00:00 (none) uefisync:  uefi_settings::load_records
+2023-04-19T07:15:00.017522+00:00 (none) uefisync:     load_settings 
+2023-04-19T07:15:00.019461+00:00 (none) uefisync:  uefi_settings::load_settings, record id = 0
+2023-04-19T07:15:00.032955+00:00 (none) uefisync:     init_settings 
+2023-04-19T07:15:00.034299+00:00 (none) uefisync:  uefi_settings::init_settings, record id = 0
+2023-04-19T07:15:00.044021+00:00 (none) uefisync:  uefi_remconred_rec::get_record
+2023-04-19T07:15:00.055311+00:00 (none) uefisync:  uefi_sync, load batch file, file = /tmp/uefi_batch_in.txt
+2023-04-19T07:15:00.124702+00:00 (none) uefisync:  uefi_settings::processing()
+2023-04-19T07:15:00.126540+00:00 (none) uefisync:  uefi_settings::set_value, rec_id = 0, sett_id = 7
+2023-04-19T07:15:00.132093+00:00 (none) uefisync:  uefi_remconred_rec::set_value
+2023-04-19T07:15:00.134506+00:00 (none) uefisync:  uefi_settings::set_value, rec_id = 0, sett_id = 1
+2023-04-19T07:15:00.140331+00:00 (none) uefisync:  uefi_remconred_rec::set_value
+2023-04-19T07:15:00.141852+00:00 (none) uefisync:  uefi_settings::set_value, rec_id = 0, sett_id = 2
+2023-04-19T07:15:00.143233+00:00 (none) uefisync:  uefi_remconred_rec::set_value
+2023-04-19T07:15:00.144791+00:00 (none) uefisync:  uefi_settings::set_value, rec_id = 0, sett_id = 0
+2023-04-19T07:15:00.146636+00:00 (none) uefisync:  uefi_remconred_rec::set_value
+2023-04-19T07:15:00.152581+00:00 (none) uefisync:  uefi_settings::set_value, rec_id = 0, sett_id = 3
+2023-04-19T07:15:00.153954+00:00 (none) uefisync:  uefi_remconred_rec::set_value
+2023-04-19T07:15:00.156084+00:00 (none) uefisync:  uefi_settings::set_value, rec_id = 0, sett_id = 4
+2023-04-19T07:15:00.158146+00:00 (none) uefisync:  uefi_remconred_rec::set_value
+2023-04-19T07:15:00.159855+00:00 (none) uefisync:  uefi_settings::set_value, rec_id = 0, sett_id = 5
+2023-04-19T07:15:00.162120+00:00 (none) uefisync:  uefi_remconred_rec::set_value
+2023-04-19T07:15:00.162970+00:00 (none) uefisync:  uefi_settings::set_value, rec_id = 0, sett_id = 6
+2023-04-19T07:15:00.164336+00:00 (none) uefisync:  uefi_remconred_rec::set_value
+2023-04-19T07:15:00.166033+00:00 (none) uefisync:  uefi_settings::finalizing()
+2023-04-19T07:15:00.167361+00:00 (none) uefisync:  uefi_remconred_rec::set_record
+2023-04-19T07:15:00.179179+00:00 (none) uefisync:   uefi_settings, write_output_log
+2023-04-19T07:15:00.211375+00:00 (none) cmr:  uefi_agent: done processing transaction 
+2023-04-19T07:15:00.276314+00:00 (none) cmr:  queueing a transaction: id= <cfgbld-uefi_config.efi-0>
+2023-04-19T07:15:01.366330+00:00 (none) uefisync:  uefi_settings::constructor 
+2023-04-19T07:15:01.368111+00:00 (none) uefisync:     load_records 
+2023-04-19T07:15:01.369521+00:00 (none) uefisync:  uefi_settings::load_records
+2023-04-19T07:15:01.371310+00:00 (none) uefisync:     load_settings 
+2023-04-19T07:15:01.373203+00:00 (none) uefisync:  uefi_settings::load_settings, record id = 0
+2023-04-19T07:15:01.376644+00:00 (none) uefisync:     init_settings 
+2023-04-19T07:15:01.380656+00:00 (none) uefisync:  uefi_settings::init_settings, record id = 0
+2023-04-19T07:15:01.383073+00:00 (none) uefisync:  uefi_remconred_rec::get_record
+2023-04-19T07:15:01.396084+00:00 (none) uefisync:  uefi_sync, load batch file, file = /tmp/uefi_batch_in.txt
+2023-04-19T07:15:01.416645+00:00 (none) uefisync:  uefi_settings::processing()
+2023-04-19T07:15:01.418382+00:00 (none) uefisync:  uefi_settings::set_value, rec_id = 0, sett_id = 7
+2023-04-19T07:15:01.419856+00:00 (none) uefisync:  uefi_remconred_rec::set_value
+2023-04-19T07:15:01.421638+00:00 (none) uefisync:  uefi_settings::set_value, rec_id = 0, sett_id = 1
+2023-04-19T07:15:01.423048+00:00 (none) uefisync:  uefi_remconred_rec::set_value
+2023-04-19T07:15:01.426008+00:00 (none) uefisync:  uefi_settings::set_value, rec_id = 0, sett_id = 2
+2023-04-19T07:15:01.427459+00:00 (none) uefisync:  uefi_remconred_rec::set_value
+2023-04-19T07:15:01.428991+00:00 (none) uefisync:  uefi_settings::set_value, rec_id = 0, sett_id = 0
+2023-04-19T07:15:01.430301+00:00 (none) uefisync:  uefi_remconred_rec::set_value
+2023-04-19T07:15:01.431833+00:00 (none) uefisync:  uefi_settings::set_value, rec_id = 0, sett_id = 3
+2023-04-19T07:15:01.433989+00:00 (none) uefisync:  uefi_remconred_rec::set_value
+2023-04-19T07:15:01.435945+00:00 (none) uefisync:  uefi_settings::set_value, rec_id = 0, sett_id = 4
+2023-04-19T07:15:01.437248+00:00 (none) uefisync:  uefi_remconred_rec::set_value
+2023-04-19T07:15:01.439625+00:00 (none) uefisync:  uefi_settings::set_value, rec_id = 0, sett_id = 5
+2023-04-19T07:15:01.452120+00:00 (none) uefisync:  uefi_remconred_rec::set_value
+2023-04-19T07:15:01.452846+00:00 (none) uefisync:  uefi_settings::set_value, rec_id = 0, sett_id = 6
+2023-04-19T07:15:01.453722+00:00 (none) uefisync:  uefi_remconred_rec::set_value
+2023-04-19T07:15:01.454562+00:00 (none) uefisync:  uefi_settings::finalizing()
+2023-04-19T07:15:01.455517+00:00 (none) uefisync:  uefi_remconred_rec::set_record
+2023-04-19T07:15:01.457811+00:00 (none) uefisync:   uefi_settings, write_output_log
+2023-04-19T07:15:06.737163+00:00 (none) dp:  immpci_plugin::on_event: update_ucm_data
+2023-04-19T07:15:06.738832+00:00 (none) dp:  immpci_plugin::process_ucm_data
+2023-04-19T07:15:06.949312+00:00 (none) dp:  update_ucm_transaction::update_ucm_data: need_wipe flag - 1
+2023-04-19T07:15:06.951303+00:00 (none) dp:  update_ucm_transaction::update_ucm_data: create /tmp/dp.ucmparsing
+2023-04-19T07:15:08.546468+00:00 (none) cmr:  post complete is received by CMR.
+2023-04-19T07:15:08.546630+00:00 (none) cmr:  unload full cmr
+2023-04-19T07:15:08.548265+00:00 (none) cmr:  Unloading Config Manager
+2023-04-19T07:15:11.181750+00:00 (none) cmr:  Loading Configuration Manager Server Version (255,255)
+2023-04-19T07:15:11.184193+00:00 (none) cmr:  Starting message queue server
+2023-04-19T07:15:11.187693+00:00 (none) cmr:  This is not a CMR first init. 
+2023-04-19T07:15:11.204002+00:00 (none) dp:  immpci_plugin::on_event: update_ucm_data
+2023-04-19T07:15:11.206107+00:00 (none) dp:  immpci_plugin::process_ucm_data
+2023-04-19T07:15:11.206267+00:00 (none) dp:  immpci need update ucm again
+2023-04-19T07:15:11.416040+00:00 (none) cmr:  execution_manager, vpd offset 0x1ee000
+2023-04-19T07:15:11.416209+00:00 (none) cmr:  execution_manager, vpd length 0x2000
+2023-04-19T07:15:11.426751+00:00 (none) cmr:  Initialization complete
+2023-04-19T07:15:25.220262+00:00 (none) dp:  update_ucm_transaction::update_ucm_data: remove /tmp/dp.ucmparsing
+2023-04-19T07:15:25.220487+00:00 (none) dp:  update_ucm_transaction::update_ucm_data succeed
+2023-04-19T07:15:25.524977+00:00 (none) dp:  update_ucm_transaction::update_ucm_data: need_wipe flag - 0
+2023-04-19T07:15:25.526787+00:00 (none) dp:  update_ucm_transaction::update_ucm_data: create /tmp/dp.ucmparsing
+2023-04-19T07:15:34.330395+00:00 (none) dp:  update_ucm_transaction::update_ucm_data: remove /tmp/dp.ucmparsing
+2023-04-19T07:15:34.330583+00:00 (none) dp:  update_ucm_transaction::update_ucm_data succeed
+2023-04-19T08:09:55.936088+00:00 (none) cmr:  Wakeup: sp
+2023-04-19T08:09:56.145349+00:00 (none) dp: Failed to get Disk Hw info: CtrlId=12, deviceId=13, rc=32791
+2023-04-19T08:09:56.239463+00:00 (none) dp: Failed to get Disk Hw info: CtrlId=12, deviceId=15, rc=32791
+2023-04-19T08:09:56.331537+00:00 (none) dp: Failed to get Disk Hw info: CtrlId=12, deviceId=16, rc=32791
+2023-04-19T08:09:56.448200+00:00 (none) dp: StoragePoolFactory--Failed to get mr bios data, rc=32791
+2023-04-19T08:09:56.449819+00:00 (none) dp: Failed to get storage pool list info: CtrlId=12
+2023-04-19T08:09:57.242031+00:00 (none) dp: Failed to get RAID event sequence info: CtrlId=12, CtrlDbId=1, rc=32791
+2023-04-19T08:09:57.282312+00:00 (none) dp: Disk Error: 0x2
+2023-04-19T08:09:57.282492+00:00 (none) dp: Array Error: 0x1
+2023-04-19T08:09:57.282587+00:00 (none) dp:  ***ERROR*** update_plugin_transaction::update_raid_data, load database failed, ret = -1 ,try again
+2023-04-19T08:09:57.849822+00:00 (none) cmr:  adding agent library, library= libcmr_agents.so
+2023-04-19T08:09:58.236473+00:00 (none) cmr:  ***ERROR*** Unable to initialize connection to SDRAID Library service.
+2023-04-19T08:09:58.352238+00:00 (none) dp: Failed to get Ctrl info: CtrlId=12, rc=32791
+2023-04-19T08:09:59.184766+00:00 (none) dp: Ctrl Error: 0x1
+2023-04-19T08:09:59.184942+00:00 (none) dp:  ***ERROR*** update_plugin_transaction::update_raid_data, load database failed, ret = -1 ,try again
+2023-04-19T08:10:00.396304+00:00 (none) dp: Failed to get Ctrl info: CtrlId=12, rc=32791
+2023-04-19T08:10:01.071101+00:00 (none) dp: Ctrl Error: 0x1
+2023-04-19T08:10:01.071289+00:00 (none) dp:  ***ERROR*** update_plugin_transaction::update_raid_data, load database failed, ret = -1 ,try again
+2023-04-19T08:10:03.864017+00:00 (none) cmr:  ***ERROR*** setting_store: failed restoring settings, file= /var/cmr/system_prod_data.txt
+2023-04-19T08:10:03.866189+00:00 (none) cmr:  ***ERROR*** setting_store: failed restoring settings, file= /var/cmr/system_prod_data.txt.bak
+2023-04-19T08:10:03.867639+00:00 (none) cmr:  ***ERROR*** setting_store: assuming no settings, file= /var/cmr/system_prod_data.txt
+2023-04-19T08:14:20.622613+00:00 (none) cmr:  ipmi agent, setting dirty flag for vmmigration
+2023-04-19T08:17:27.682239+00:00 (none) cmr:  ipmi agent, setting dirty flag for vmmigration
+2023-04-19T08:17:28.916367+00:00 (none) dp:  immpci_plugin::on_event: update_ucm_data
+2023-04-19T08:17:28.916551+00:00 (none) dp:  immpci_plugin::process_ucm_data
+2023-04-19T08:17:29.136726+00:00 (none) dp:  update_ucm_transaction::update_ucm_data: need_wipe flag - 0
+2023-04-19T08:17:29.138181+00:00 (none) dp:  update_ucm_transaction::update_ucm_data: create /tmp/dp.ucmparsing
+2023-04-19T08:17:37.640106+00:00 (none) dp:  immpci_plugin::on_event: update_ucm_data
+2023-04-19T08:17:37.640280+00:00 (none) dp:  immpci_plugin::process_ucm_data
+2023-04-19T08:17:37.642752+00:00 (none) dp:  immpci need update ucm again
+2023-04-19T08:17:42.289543+00:00 (none) dp:  update_ucm_transaction::update_ucm_data: remove /tmp/dp.ucmparsing
+2023-04-19T08:17:42.290902+00:00 (none) dp:  update_ucm_transaction::update_ucm_data succeed
+2023-04-19T08:17:42.594218+00:00 (none) dp:  update_ucm_transaction::update_ucm_data: need_wipe flag - 0
+2023-04-19T08:17:42.596510+00:00 (none) dp:  update_ucm_transaction::update_ucm_data: create /tmp/dp.ucmparsing
+2023-04-19T08:17:51.268190+00:00 (none) dp:  update_ucm_transaction::update_ucm_data: remove /tmp/dp.ucmparsing
+2023-04-19T08:17:51.269572+00:00 (none) dp:  update_ucm_transaction::update_ucm_data succeed
+2023-04-19T08:19:51.148328+00:00 (none) cmr:  uefi_agent, on event = process_config_file
+2023-04-19T08:19:51.148500+00:00 (none) cmr:  uefi_agent: process_config
+2023-04-19T08:19:51.960740+00:00 (none) dp:  immpci_plugin::on_event: need_wipe
+2023-04-19T08:19:51.965946+00:00 (none) cmr:  queueing a transaction: id= uefi
+2023-04-19T08:19:52.068893+00:00 (none) cmr:      uefi_settings_agent: unregister configuration PXE
+2023-04-19T08:19:52.554971+00:00 (none) cmr:      uefi_settings_agent: remove configuration PXE
+2023-04-19T08:19:52.559662+00:00 (none) cmr:      uefi_settings_agent: unregister configuration AdvancedRAS
+2023-04-19T08:19:53.272852+00:00 (none) cmr:      uefi_settings_agent: remove configuration AdvancedRAS
+2023-04-19T08:19:53.280812+00:00 (none) cmr:      uefi_settings_agent: unregister configuration TrustedComputingGroup
+2023-04-19T08:19:53.617048+00:00 (none) cmr:      uefi_settings_agent: remove configuration TrustedComputingGroup
+2023-04-19T08:19:53.620558+00:00 (none) cmr:      uefi_settings_agent: unregister configuration POSTAttempts
+2023-04-19T08:19:53.811612+00:00 (none) cmr:      uefi_settings_agent: remove configuration POSTAttempts
+2023-04-19T08:19:53.816422+00:00 (none) cmr:      uefi_settings_agent: unregister configuration DiskGPTRecovery
+2023-04-19T08:19:53.980656+00:00 (none) cmr:      uefi_settings_agent: remove configuration DiskGPTRecovery
+2023-04-19T08:19:53.983371+00:00 (none) cmr:      uefi_settings_agent: unregister configuration OperatingModes
+2023-04-19T08:19:54.005490+00:00 (none) dp:  immraidlink plugin::process_raid_data, transaction_flag = 2, param1 = 255, param2 = 
+2023-04-19T08:19:54.696487+00:00 (none) cmr:      uefi_settings_agent: remove configuration OperatingModes
+2023-04-19T08:19:54.699481+00:00 (none) cmr:      uefi_settings_agent: unregister configuration BackupBankManagement
+2023-04-19T08:19:55.175499+00:00 (none) cmr:      uefi_settings_agent: remove configuration BackupBankManagement
+2023-04-19T08:19:55.185024+00:00 (none) cmr:      uefi_settings_agent: unregister configuration TPMVersion
+2023-04-19T08:19:55.986148+00:00 (none) cmr:      uefi_settings_agent: remove configuration TPMVersion
+2023-04-19T08:19:55.997091+00:00 (none) cmr:      uefi_settings_agent: unregister configuration SystemRecovery
+2023-04-19T08:19:56.045902+00:00 (none) dp: Not find matched record from PCIs table(ctrlDbIndex=1).
+2023-04-19T08:19:56.730967+00:00 (none) cmr:      uefi_settings_agent: remove configuration SystemRecovery
+2023-04-19T08:19:56.746426+00:00 (none) cmr:      uefi_settings_agent: unregister configuration Processors
+2023-04-19T08:19:57.274662+00:00 (none) cmr:      uefi_settings_agent: remove configuration Processors
+2023-04-19T08:19:57.296422+00:00 (none) cmr:      uefi_settings_agent: unregister configuration Power
+2023-04-19T08:19:57.576244+00:00 (none) cmr:      uefi_settings_agent: remove configuration Power
+2023-04-19T08:19:57.580166+00:00 (none) cmr:      uefi_settings_agent: unregister configuration DevicesandIOPorts
+2023-04-19T08:19:57.722233+00:00 (none) cmr:      uefi_settings_agent: remove configuration DevicesandIOPorts
+2023-04-19T08:19:57.733486+00:00 (none) cmr:      uefi_settings_agent: unregister configuration Node1
+2023-04-19T08:19:57.868674+00:00 (none) cmr:      uefi_settings_agent: remove configuration Node1
+2023-04-19T08:19:57.886791+00:00 (none) cmr:      uefi_settings_agent: unregister configuration Memory
+2023-04-19T08:19:58.105005+00:00 (none) cmr:      uefi_settings_agent: remove configuration Memory
+2023-04-19T08:19:58.129277+00:00 (none) cmr:      uefi_settings_agent: unregister configuration LegacySupport
+2023-04-19T08:19:58.281473+00:00 (none) cmr:      uefi_settings_agent: remove configuration LegacySupport
+2023-04-19T08:19:58.289751+00:00 (none) cmr:      uefi_settings_agent: unregister configuration UEFIMisc
+2023-04-19T08:19:58.464755+00:00 (none) cmr:      uefi_settings_agent: remove configuration UEFIMisc
+2023-04-19T08:19:58.467657+00:00 (none) cmr:      uefi_settings_agent: unregister configuration SecureBootConfiguration
+2023-04-19T08:19:58.647520+00:00 (none) cmr:      uefi_settings_agent: remove configuration SecureBootConfiguration
+2023-04-19T08:19:58.650543+00:00 (none) cmr:      uefi_settings_agent: unregister configuration iSCSI
+2023-04-19T08:19:59.032741+00:00 (none) cmr:      uefi_settings_agent: remove configuration iSCSI
+2023-04-19T08:19:59.042737+00:00 (none) cmr:      uefi_settings_agent: unregister configuration PhysicalPresencePolicyConfiguration
+2023-04-19T08:19:59.271146+00:00 (none) cmr:      uefi_settings_agent: remove configuration PhysicalPresencePolicyConfiguration
+2023-04-19T08:19:59.273867+00:00 (none) cmr:      uefi_settings_agent: unregister configuration BootModes
+2023-04-19T08:19:59.452415+00:00 (none) cmr:      uefi_settings_agent: remove configuration BootModes
+2023-04-19T08:19:59.460656+00:00 (none) cmr:      uefi_settings_agent: unregister configuration BootOrder
+2023-04-19T08:19:59.635167+00:00 (none) cmr:      uefi_settings_agent: remove configuration BootOrder
+2023-04-19T08:19:59.646267+00:00 (none) cmr:      uefi_settings_agent: unregister configuration LSIMegaRAIDConfigurationTool-070
+2023-04-19T08:19:59.779655+00:00 (none) cmr:      uefi_settings_agent: remove configuration LSIMegaRAIDConfigurationTool-070
+2023-04-19T08:19:59.898593+00:00 (none) cmr:      uefi_settings_agent: unregister configuration IntelRI350GigabitNetworkConnection-0100
+2023-04-19T08:20:00.014505+00:00 (none) cmr:      uefi_settings_agent: remove configuration IntelRI350GigabitNetworkConnection-0100
+2023-04-19T08:20:00.026363+00:00 (none) cmr:      uefi_settings_agent: unregister configuration IntelRI350GigabitNetworkConnection-0101
+2023-04-19T08:20:00.067251+00:00 (none) cmr:      uefi_settings_agent: remove configuration IntelRI350GigabitNetworkConnection-0101
+2023-04-19T08:20:00.070393+00:00 (none) cmr:      uefi_settings_agent: unregister configuration IntelRI350GigabitNetworkConnection-0102
+2023-04-19T08:20:00.102073+00:00 (none) cmr:      uefi_settings_agent: remove configuration IntelRI350GigabitNetworkConnection-0102
+2023-04-19T08:20:00.109342+00:00 (none) cmr:      uefi_settings_agent: unregister configuration IntelRI350GigabitNetworkConnection-0103
+2023-04-19T08:20:00.136002+00:00 (none) cmr:      uefi_settings_agent: remove configuration IntelRI350GigabitNetworkConnection-0103
+2023-04-19T08:20:00.144981+00:00 (none) cmr:      uefi_settings_agent: unregister configuration IntelREthernetServerAdapterI340-T4-1101
+2023-04-19T08:20:00.177330+00:00 (none) cmr:      uefi_settings_agent: remove configuration IntelREthernetServerAdapterI340-T4-1101
+2023-04-19T08:20:00.186811+00:00 (none) cmr:      uefi_settings_agent: unregister configuration IntelREthernetServerAdapterI340-T4-1102
+2023-04-19T08:20:00.214640+00:00 (none) cmr:      uefi_settings_agent: remove configuration IntelREthernetServerAdapterI340-T4-1102
+2023-04-19T08:20:00.264889+00:00 (none) cmr:      uefi_settings_agent: unregister configuration IntelREthernetServerAdapterI340-T4-1103
+2023-04-19T08:20:00.279380+00:00 (none) cmr:      uefi_settings_agent: remove configuration IntelREthernetServerAdapterI340-T4-1103
+2023-04-19T08:20:02.201128+00:00 (none) cmr:  ***ERROR*** setting_store: failed restoring settings, file= /var/cmr/uefi_settings.txt
+2023-04-19T08:20:02.203015+00:00 (none) cmr:  ***ERROR*** setting_store: failed restoring settings, file= /var/cmr/uefi_settings.txt.bak
+2023-04-19T08:20:02.256847+00:00 (none) cmr:  ***ERROR*** setting_store: assuming no settings, file= /var/cmr/uefi_settings.txt
+2023-04-19T08:20:04.336754+00:00 (none) dp: reboot flag is set, will reset health status
+2023-04-19T08:20:06.500596+00:00 (none) cmr:  queueing a transaction: id= UEFI-2023-04-19-08-59-21
+2023-04-19T08:20:07.674928+00:00 (none) dp:  update_plugin_transaction::update_raid_data, notify bmc of the dp ready
+2023-04-19T08:20:08.174717+00:00 (none) dp: hh_dump_entity_list: DISK DEVICES 0x2ba14ce4 nCount = 17
+2023-04-19T08:20:08.941456+00:00 (none) dp:  immpci_plugin::on_event: update_pci_data
+2023-04-19T08:20:08.941641+00:00 (none) dp:  immpci_plugin::process_pci_data
+2023-04-19T08:20:08.978378+00:00 (none) dp:  immraidlink_plugin, need to update PCI data, send alert_update_pci alert
+2023-04-19T08:20:15.397029+00:00 (none) cmr:  uefi_agent, on event = process_ueficli_file
+2023-04-19T08:20:15.397221+00:00 (none) cmr:  uefi_agent: process_ueficli
+2023-04-19T08:20:17.124019+00:00 (none) dp: successfully parsed "/var/dp/cds.xml"
+2023-04-19T08:20:17.508121+00:00 (none) dp: AIM Doc: config AVAGOMegaRAIDInventoryDataProvider-070 is [OK]
+2023-04-19T08:20:17.575358+00:00 (none) dp: AIM PARSER: [AIM-supported] slot = 12, func_key = 458752
+2023-04-19T08:20:17.585223+00:00 (none) dp: AIM PARSER: Get UUID from AIM file, location/slot = 1/12, func_key = 458752, uuid = 0000000000000000500605B00BD778B0
+2023-04-19T08:20:17.620262+00:00 (none) dp: AIM PARSER: no need to update vpd, vendor:0x1000, sub_vendor:0x1014, device:0x005D, sub_device:0x0454, platform=0x50001a
+2023-04-19T08:20:17.970449+00:00 (none) dp: AIM PARSER: [VNIC Support] slot = 9, name = Adapter 11:00:00, table: PCIAdapter
+2023-04-19T08:20:18.047367+00:00 (none) dp: AIM PARSER: [VNIC Support] slot = 9, name = Adapter 11:00:01, table: PCIAdapter
+2023-04-19T08:20:18.127073+00:00 (none) dp: AIM PARSER: [VNIC Support] slot = 9, name = Adapter 11:00:02, table: PCIAdapter
+2023-04-19T08:20:18.217825+00:00 (none) dp: AIM PARSER: [VNIC Support] slot = 9, name = Adapter 11:00:03, table: PCIAdapter
+2023-04-19T08:20:18.296054+00:00 (none) dp: AIM PARSER: [VNIC Support] slot = 10, name = Adapter 01:00:00, table: PCIAdapter
+2023-04-19T08:20:18.380013+00:00 (none) dp: AIM PARSER: [VNIC Support] slot = 10, name = Adapter 01:00:01, table: PCIAdapter
+2023-04-19T08:20:18.476241+00:00 (none) dp: AIM PARSER: [VNIC Support] slot = 10, name = Adapter 01:00:02, table: PCIAdapter
+2023-04-19T08:20:18.556175+00:00 (none) dp: AIM PARSER: [VNIC Support] slot = 10, name = Adapter 01:00:03, table: PCIAdapter
+2023-04-19T08:20:18.684705+00:00 (none) dp: AIM PARSER: [No AIM Support] slot = 1, name = Adapter 1B:00:00, table: PCIAdapter
+2023-04-19T08:20:18.721404+00:00 (none) dp: AIM PARSER: [No AIM Support] slot = 7, name = Adapter 51:00:01, table: PCIAdapter
+2023-04-19T08:20:18.768026+00:00 (none) dp: AIM PARSER: [No AIM Support] slot = 8, name = Adapter 41:00:01, table: PCIAdapter
+2023-04-19T08:20:18.988074+00:00 (none) dp: AIM PARSER: successfully parsed "/tmp/aim_filtered.xml"
+2023-04-19T08:20:20.648102+00:00 (none) dp: no system inventory change
+2023-04-19T08:20:20.648704+00:00 (none) dp: no pci inventory change
+2023-04-19T08:20:20.664939+00:00 (none) dp:  update_pci_transaction::update_pci_data succeed
+2023-04-19T08:20:22.916155+00:00 (none) uefisync:  uefi_settings::constructor 
+2023-04-19T08:20:22.918725+00:00 (none) uefisync:     load_records 
+2023-04-19T08:20:22.924108+00:00 (none) uefisync:  uefi_settings::load_records
+2023-04-19T08:20:22.926039+00:00 (none) uefisync:     load_settings 
+2023-04-19T08:20:22.927921+00:00 (none) uefisync:  uefi_settings::load_settings, record id = 0
+2023-04-19T08:20:22.929649+00:00 (none) uefisync:     init_settings 
+2023-04-19T08:20:22.931007+00:00 (none) uefisync:  uefi_settings::init_settings, record id = 0
+2023-04-19T08:20:22.937316+00:00 (none) uefisync:  uefi_remconred_rec::get_record
+2023-04-19T08:20:22.957592+00:00 (none) uefisync:  uefi_sync, load batch file, file = /tmp/uefi_batch_in.txt
+2023-04-19T08:20:22.999218+00:00 (none) uefisync:  uefi_settings::processing()
+2023-04-19T08:20:23.001045+00:00 (none) uefisync:  uefi_settings::set_value, rec_id = 0, sett_id = 7
+2023-04-19T08:20:23.002382+00:00 (none) uefisync:  uefi_remconred_rec::set_value
+2023-04-19T08:20:23.004345+00:00 (none) uefisync:  uefi_settings::set_value, rec_id = 0, sett_id = 1
+2023-04-19T08:20:23.006089+00:00 (none) uefisync:  uefi_remconred_rec::set_value
+2023-04-19T08:20:23.007565+00:00 (none) uefisync:  uefi_settings::set_value, rec_id = 0, sett_id = 2
+2023-04-19T08:20:23.008980+00:00 (none) uefisync:  uefi_remconred_rec::set_value
+2023-04-19T08:20:23.010536+00:00 (none) uefisync:  uefi_settings::set_value, rec_id = 0, sett_id = 0
+2023-04-19T08:20:23.011919+00:00 (none) uefisync:  uefi_remconred_rec::set_value
+2023-04-19T08:20:23.017750+00:00 (none) uefisync:  uefi_settings::set_value, rec_id = 0, sett_id = 3
+2023-04-19T08:20:23.019121+00:00 (none) uefisync:  uefi_remconred_rec::set_value
+2023-04-19T08:20:23.020620+00:00 (none) uefisync:  uefi_settings::set_value, rec_id = 0, sett_id = 4
+2023-04-19T08:20:23.021777+00:00 (none) uefisync:  uefi_remconred_rec::set_value
+2023-04-19T08:20:23.023064+00:00 (none) uefisync:  uefi_settings::set_value, rec_id = 0, sett_id = 5
+2023-04-19T08:20:23.028456+00:00 (none) uefisync:  uefi_remconred_rec::set_value
+2023-04-19T08:20:23.029963+00:00 (none) uefisync:  uefi_settings::set_value, rec_id = 0, sett_id = 6
+2023-04-19T08:20:23.031265+00:00 (none) uefisync:  uefi_remconred_rec::set_value
+2023-04-19T08:20:23.032761+00:00 (none) uefisync:  uefi_settings::finalizing()
+2023-04-19T08:20:23.034293+00:00 (none) uefisync:  uefi_remconred_rec::set_record
+2023-04-19T08:20:23.053279+00:00 (none) uefisync:   uefi_settings, write_output_log
+2023-04-19T08:20:23.094669+00:00 (none) cmr:  uefi_agent: done processing transaction 
+2023-04-19T08:20:23.164163+00:00 (none) cmr:  queueing a transaction: id= <cfgbld-uefi_config.efi-0>
+2023-04-19T08:20:24.349253+00:00 (none) uefisync:  uefi_settings::constructor 
+2023-04-19T08:20:24.350919+00:00 (none) uefisync:     load_records 
+2023-04-19T08:20:24.352396+00:00 (none) uefisync:  uefi_settings::load_records
+2023-04-19T08:20:24.354197+00:00 (none) uefisync:     load_settings 
+2023-04-19T08:20:24.356381+00:00 (none) uefisync:  uefi_settings::load_settings, record id = 0
+2023-04-19T08:20:24.358189+00:00 (none) uefisync:     init_settings 
+2023-04-19T08:20:24.360632+00:00 (none) uefisync:  uefi_settings::init_settings, record id = 0
+2023-04-19T08:20:24.364964+00:00 (none) uefisync:  uefi_remconred_rec::get_record
+2023-04-19T08:20:24.376969+00:00 (none) uefisync:  uefi_sync, load batch file, file = /tmp/uefi_batch_in.txt
+2023-04-19T08:20:24.397657+00:00 (none) uefisync:  uefi_settings::processing()
+2023-04-19T08:20:24.399348+00:00 (none) uefisync:  uefi_settings::set_value, rec_id = 0, sett_id = 7
+2023-04-19T08:20:24.401481+00:00 (none) uefisync:  uefi_remconred_rec::set_value
+2023-04-19T08:20:24.403643+00:00 (none) uefisync:  uefi_settings::set_value, rec_id = 0, sett_id = 1
+2023-04-19T08:20:24.405651+00:00 (none) uefisync:  uefi_remconred_rec::set_value
+2023-04-19T08:20:24.407096+00:00 (none) uefisync:  uefi_settings::set_value, rec_id = 0, sett_id = 2
+2023-04-19T08:20:24.408463+00:00 (none) uefisync:  uefi_remconred_rec::set_value
+2023-04-19T08:20:24.409941+00:00 (none) uefisync:  uefi_settings::set_value, rec_id = 0, sett_id = 0
+2023-04-19T08:20:24.411646+00:00 (none) uefisync:  uefi_remconred_rec::set_value
+2023-04-19T08:20:24.413453+00:00 (none) uefisync:  uefi_settings::set_value, rec_id = 0, sett_id = 3
+2023-04-19T08:20:24.414770+00:00 (none) uefisync:  uefi_remconred_rec::set_value
+2023-04-19T08:20:24.416709+00:00 (none) uefisync:  uefi_settings::set_value, rec_id = 0, sett_id = 4
+2023-04-19T08:20:24.418033+00:00 (none) uefisync:  uefi_remconred_rec::set_value
+2023-04-19T08:20:24.419696+00:00 (none) uefisync:  uefi_settings::set_value, rec_id = 0, sett_id = 5
+2023-04-19T08:20:24.422040+00:00 (none) uefisync:  uefi_remconred_rec::set_value
+2023-04-19T08:20:24.423629+00:00 (none) uefisync:  uefi_settings::set_value, rec_id = 0, sett_id = 6
+2023-04-19T08:20:24.425573+00:00 (none) uefisync:  uefi_remconred_rec::set_value
+2023-04-19T08:20:24.427117+00:00 (none) uefisync:  uefi_settings::finalizing()
+2023-04-19T08:20:24.428501+00:00 (none) uefisync:  uefi_remconred_rec::set_record
+2023-04-19T08:20:24.446284+00:00 (none) uefisync:   uefi_settings, write_output_log
+2023-04-19T08:20:26.929883+00:00 (none) dp:  immpci_plugin::on_event: update_ucm_data
+2023-04-19T08:20:26.930061+00:00 (none) dp:  immpci_plugin::process_ucm_data
+2023-04-19T08:20:27.140749+00:00 (none) dp:  update_ucm_transaction::update_ucm_data: need_wipe flag - 1
+2023-04-19T08:20:27.142487+00:00 (none) dp:  update_ucm_transaction::update_ucm_data: create /tmp/dp.ucmparsing
+2023-04-19T08:20:28.347080+00:00 (none) cmr:  post complete is received by CMR.
+2023-04-19T08:20:28.347242+00:00 (none) cmr:  unload full cmr
+2023-04-19T08:20:28.349058+00:00 (none) cmr:  Unloading Config Manager
+2023-04-19T08:20:32.130219+00:00 (none) cmr:  Loading Configuration Manager Server Version (255,255)
+2023-04-19T08:20:32.152605+00:00 (none) cmr:  Starting message queue server
+2023-04-19T08:20:32.176107+00:00 (none) cmr:  This is not a CMR first init. 
+2023-04-19T08:20:32.210806+00:00 (none) dp:  immpci_plugin::on_event: update_ucm_data
+2023-04-19T08:20:32.210982+00:00 (none) dp:  immpci_plugin::process_ucm_data
+2023-04-19T08:20:32.211070+00:00 (none) dp:  immpci need update ucm again
+2023-04-19T08:20:32.508086+00:00 (none) cmr:  execution_manager, vpd offset 0x1ee000
+2023-04-19T08:20:32.508251+00:00 (none) cmr:  execution_manager, vpd length 0x2000
+2023-04-19T08:20:32.530959+00:00 (none) cmr:  Initialization complete
+2023-04-19T08:20:45.996209+00:00 (none) dp:  update_ucm_transaction::update_ucm_data: remove /tmp/dp.ucmparsing
+2023-04-19T08:20:45.996394+00:00 (none) dp:  update_ucm_transaction::update_ucm_data succeed
+2023-04-19T08:20:46.298353+00:00 (none) dp:  update_ucm_transaction::update_ucm_data: need_wipe flag - 0
+2023-04-19T08:20:46.300083+00:00 (none) dp:  update_ucm_transaction::update_ucm_data: create /tmp/dp.ucmparsing
+2023-04-19T08:20:54.001180+00:00 (none) dp:  update_ucm_transaction::update_ucm_data: remove /tmp/dp.ucmparsing
+2023-04-19T08:20:54.002552+00:00 (none) dp:  update_ucm_transaction::update_ucm_data succeed
+2023-04-20T02:35:28.611272+00:00 (none) dp:  Loading Data Parser Server Version (255,255)
+2023-04-20T02:35:28.612824+00:00 (none) dp:  Starting message queue server
+2023-04-20T02:35:28.655956+00:00 (none) dp:  Initialization complete
+2023-04-20T02:36:24.090032+00:00 (none) cmr:  Loading Configuration Manager Server Version (255,255)
+2023-04-20T02:36:24.092044+00:00 (none) cmr:  Starting message queue server
+2023-04-20T02:36:24.094089+00:00 (none) cmr:  CMR on init, copy stored uefi config file to tmp DS. 
+2023-04-20T02:36:24.099047+00:00 (none) dp:  Wakeup: immpci
+2023-04-20T02:36:24.506641+00:00 (none) cmr:  execution_manager, vpd offset 0x1ee000
+2023-04-20T02:36:24.506821+00:00 (none) cmr:  execution_manager, vpd length 0x2000
+2023-04-20T02:36:24.625352+00:00 (none) cmr:  Initialization complete
+2023-04-20T02:36:28.294822+00:00 (none) cmr:  Wakeup: osinet
+2023-04-20T02:36:32.051202+00:00 (none) dp:  adding plugin library, library= libdp_plugins.so
+2023-04-20T02:36:32.054186+00:00 (none) dp:  immpci_plugin: send alert to flash manager and bmc at startup.
+2023-04-20T02:36:32.091707+00:00 (none) dp:  immpci_plugin::on_event: update_ucm_data
+2023-04-20T02:36:32.092452+00:00 (none) dp:  immpci_plugin::process_ucm_data
+2023-04-20T02:36:32.203302+00:00 (none) dp:  update_ucm_transaction::update_ucm_data: need_wipe flag - 0
+2023-04-20T02:36:32.205160+00:00 (none) dp:  update_ucm_transaction::update_ucm_data: create /tmp/dp.ucmparsing
+2023-04-20T02:36:35.976745+00:00 (none) cmr:  adding agent library, library= libcmr_agents.so
+2023-04-20T02:36:36.476656+00:00 (none) cmr:  ***ERROR*** Unable to initialize connection to SDRAID Library service.
+2023-04-20T02:36:53.107910+00:00 (none) cmr:  ***ERROR*** setting_store: failed restoring settings, file= /var/cmr/system_prod_data.txt
+2023-04-20T02:36:53.109456+00:00 (none) cmr:  ***ERROR*** setting_store: failed restoring settings, file= /var/cmr/system_prod_data.txt.bak
+2023-04-20T02:36:53.142884+00:00 (none) cmr:  ***ERROR*** setting_store: assuming no settings, file= /var/cmr/system_prod_data.txt
+2023-04-20T02:36:53.561606+00:00 (none) cmr:  osinet agent, setting dirty flag
+2023-04-20T02:36:53.561794+00:00 (none) cmr:  osinet agent, setting dirty flag
+2023-04-20T02:37:32.030657+00:00 (none) dp:  update_ucm_transaction::update_ucm_data: remove /tmp/dp.ucmparsing
+2023-04-20T02:37:32.032034+00:00 (none) dp:  update_ucm_transaction::update_ucm_data succeed
+2023-04-20T02:39:41.862682+00:00 (none) cmr:  ipmi agent, setting dirty flag for vmmigration
+2023-04-20T02:39:42.896966+00:00 (none) dp:  immpci_plugin::on_event: update_ucm_data
+2023-04-20T02:39:42.897158+00:00 (none) dp:  immpci_plugin::process_ucm_data
+2023-04-20T02:39:43.175882+00:00 (none) dp:  update_ucm_transaction::update_ucm_data: need_wipe flag - 0
+2023-04-20T02:39:43.177530+00:00 (none) dp:  update_ucm_transaction::update_ucm_data: create /tmp/dp.ucmparsing
+2023-04-20T02:39:54.369870+00:00 (none) dp:  immpci_plugin::on_event: update_ucm_data
+2023-04-20T02:39:54.370046+00:00 (none) dp:  immpci_plugin::process_ucm_data
+2023-04-20T02:39:54.370152+00:00 (none) dp:  immpci need update ucm again
+2023-04-20T02:40:08.442698+00:00 (none) dp:  update_ucm_transaction::update_ucm_data: remove /tmp/dp.ucmparsing
+2023-04-20T02:40:08.444697+00:00 (none) dp:  update_ucm_transaction::update_ucm_data succeed
+2023-04-20T02:40:08.815577+00:00 (none) dp:  update_ucm_transaction::update_ucm_data: need_wipe flag - 0
+2023-04-20T02:40:08.817118+00:00 (none) dp:  update_ucm_transaction::update_ucm_data: create /tmp/dp.ucmparsing
+2023-04-20T02:40:29.521660+00:00 (none) dp:  update_ucm_transaction::update_ucm_data: remove /tmp/dp.ucmparsing
+2023-04-20T02:40:29.521894+00:00 (none) dp:  update_ucm_transaction::update_ucm_data succeed
+2023-04-20T02:42:12.382878+00:00 (none) cmr:  uefi_agent, on event = process_config_file
+2023-04-20T02:42:12.383090+00:00 (none) cmr:  uefi_agent: process_config
+2023-04-20T02:42:12.889811+00:00 (none) dp:  immpci_plugin::on_event: need_wipe
+2023-04-20T02:42:12.896724+00:00 (none) cmr:  queueing a transaction: id= uefi
+2023-04-20T02:42:12.998752+00:00 (none) cmr:      uefi_settings_agent: unregister configuration PXE
+2023-04-20T02:42:13.179302+00:00 (none) cmr:      uefi_settings_agent: remove configuration PXE
+2023-04-20T02:42:13.183303+00:00 (none) cmr:      uefi_settings_agent: unregister configuration AdvancedRAS
+2023-04-20T02:42:13.335737+00:00 (none) cmr:      uefi_settings_agent: remove configuration AdvancedRAS
+2023-04-20T02:42:13.340784+00:00 (none) cmr:      uefi_settings_agent: unregister configuration TrustedComputingGroup
+2023-04-20T02:42:13.604437+00:00 (none) cmr:      uefi_settings_agent: remove configuration TrustedComputingGroup
+2023-04-20T02:42:13.609148+00:00 (none) cmr:      uefi_settings_agent: unregister configuration POSTAttempts
+2023-04-20T02:42:14.079862+00:00 (none) cmr:      uefi_settings_agent: remove configuration POSTAttempts
+2023-04-20T02:42:14.087241+00:00 (none) cmr:      uefi_settings_agent: unregister configuration DiskGPTRecovery
+2023-04-20T02:42:14.548060+00:00 (none) cmr:      uefi_settings_agent: remove configuration DiskGPTRecovery
+2023-04-20T02:42:14.551139+00:00 (none) cmr:      uefi_settings_agent: unregister configuration OperatingModes
+2023-04-20T02:42:14.750731+00:00 (none) cmr:      uefi_settings_agent: remove configuration OperatingModes
+2023-04-20T02:42:14.753554+00:00 (none) cmr:      uefi_settings_agent: unregister configuration BackupBankManagement
+2023-04-20T02:42:15.204136+00:00 (none) cmr:      uefi_settings_agent: remove configuration BackupBankManagement
+2023-04-20T02:42:15.223711+00:00 (none) cmr:      uefi_settings_agent: unregister configuration TPMVersion
+2023-04-20T02:42:16.308724+00:00 (none) cmr:      uefi_settings_agent: remove configuration TPMVersion
+2023-04-20T02:42:16.339397+00:00 (none) cmr:      uefi_settings_agent: unregister configuration SystemRecovery
+2023-04-20T02:42:17.106286+00:00 (none) cmr:      uefi_settings_agent: remove configuration SystemRecovery
+2023-04-20T02:42:17.118974+00:00 (none) cmr:      uefi_settings_agent: unregister configuration Processors
+2023-04-20T02:42:17.711209+00:00 (none) dp:  immraidlink plugin::process_raid_data, transaction_flag = 2, param1 = 255, param2 = 
+2023-04-20T02:42:18.109309+00:00 (none) cmr:      uefi_settings_agent: remove configuration Processors
+2023-04-20T02:42:18.195542+00:00 (none) cmr:      uefi_settings_agent: unregister configuration Power
+2023-04-20T02:42:18.680292+00:00 (none) cmr:      uefi_settings_agent: remove configuration Power
+2023-04-20T02:42:18.692316+00:00 (none) cmr:      uefi_settings_agent: unregister configuration DevicesandIOPorts
+2023-04-20T02:42:18.920506+00:00 (none) dp: [dbc_snd] socket 8 created
+2023-04-20T02:42:18.921714+00:00 (none) dp: [dbc_snd] successfully started
+2023-04-20T02:42:18.923122+00:00 (none) dp: [dbc_rcv] successfully started
+2023-04-20T02:42:19.320581+00:00 (none) cmr:      uefi_settings_agent: remove configuration DevicesandIOPorts
+2023-04-20T02:42:19.359992+00:00 (none) cmr:      uefi_settings_agent: unregister configuration Node1
+2023-04-20T02:42:19.954710+00:00 (none) cmr:      uefi_settings_agent: remove configuration Node1
+2023-04-20T02:42:19.985833+00:00 (none) cmr:      uefi_settings_agent: unregister configuration Memory
+2023-04-20T02:42:20.691857+00:00 (none) cmr:      uefi_settings_agent: remove configuration Memory
+2023-04-20T02:42:20.772018+00:00 (none) dp: Not find matched record from PCIs table(ctrlDbIndex=1).
+2023-04-20T02:42:20.810083+00:00 (none) cmr:      uefi_settings_agent: unregister configuration LegacySupport
+2023-04-20T02:42:21.125259+00:00 (none) cmr:      uefi_settings_agent: remove configuration LegacySupport
+2023-04-20T02:42:21.149344+00:00 (none) cmr:      uefi_settings_agent: unregister configuration UEFIMisc
+2023-04-20T02:42:21.707750+00:00 (none) cmr:      uefi_settings_agent: remove configuration UEFIMisc
+2023-04-20T02:42:21.715567+00:00 (none) cmr:      uefi_settings_agent: unregister configuration SecureBootConfiguration
+2023-04-20T02:42:22.001141+00:00 (none) cmr:      uefi_settings_agent: remove configuration SecureBootConfiguration
+2023-04-20T02:42:22.015467+00:00 (none) cmr:      uefi_settings_agent: unregister configuration iSCSI
+2023-04-20T02:42:22.227823+00:00 (none) cmr:      uefi_settings_agent: remove configuration iSCSI
+2023-04-20T02:42:22.235283+00:00 (none) cmr:      uefi_settings_agent: unregister configuration PhysicalPresencePolicyConfiguration
+2023-04-20T02:42:22.347948+00:00 (none) cmr:      uefi_settings_agent: remove configuration PhysicalPresencePolicyConfiguration
+2023-04-20T02:42:22.351012+00:00 (none) cmr:      uefi_settings_agent: unregister configuration BootModes
+2023-04-20T02:42:22.480225+00:00 (none) cmr:      uefi_settings_agent: remove configuration BootModes
+2023-04-20T02:42:22.486547+00:00 (none) cmr:      uefi_settings_agent: unregister configuration BootOrder
+2023-04-20T02:42:22.595840+00:00 (none) cmr:      uefi_settings_agent: remove configuration BootOrder
+2023-04-20T02:42:22.619053+00:00 (none) cmr:      uefi_settings_agent: unregister configuration LSIMegaRAIDConfigurationTool-070
+2023-04-20T02:42:22.744660+00:00 (none) cmr:      uefi_settings_agent: remove configuration LSIMegaRAIDConfigurationTool-070
+2023-04-20T02:42:22.834119+00:00 (none) cmr:      uefi_settings_agent: unregister configuration IntelRI350GigabitNetworkConnection-0100
+2023-04-20T02:42:22.899195+00:00 (none) cmr:      uefi_settings_agent: remove configuration IntelRI350GigabitNetworkConnection-0100
+2023-04-20T02:42:22.931830+00:00 (none) cmr:      uefi_settings_agent: unregister configuration IntelRI350GigabitNetworkConnection-0101
+2023-04-20T02:42:23.012685+00:00 (none) cmr:      uefi_settings_agent: remove configuration IntelRI350GigabitNetworkConnection-0101
+2023-04-20T02:42:23.023859+00:00 (none) cmr:      uefi_settings_agent: unregister configuration IntelRI350GigabitNetworkConnection-0102
+2023-04-20T02:42:23.093987+00:00 (none) cmr:      uefi_settings_agent: remove configuration IntelRI350GigabitNetworkConnection-0102
+2023-04-20T02:42:23.110812+00:00 (none) cmr:      uefi_settings_agent: unregister configuration IntelRI350GigabitNetworkConnection-0103
+2023-04-20T02:42:23.148117+00:00 (none) cmr:      uefi_settings_agent: remove configuration IntelRI350GigabitNetworkConnection-0103
+2023-04-20T02:42:23.160761+00:00 (none) cmr:      uefi_settings_agent: unregister configuration IntelREthernetServerAdapterI340-T4-1101
+2023-04-20T02:42:23.218801+00:00 (none) cmr:      uefi_settings_agent: remove configuration IntelREthernetServerAdapterI340-T4-1101
+2023-04-20T02:42:23.224291+00:00 (none) cmr:      uefi_settings_agent: unregister configuration IntelREthernetServerAdapterI340-T4-1102
+2023-04-20T02:42:23.247412+00:00 (none) cmr:      uefi_settings_agent: remove configuration IntelREthernetServerAdapterI340-T4-1102
+2023-04-20T02:42:23.256686+00:00 (none) cmr:      uefi_settings_agent: unregister configuration IntelREthernetServerAdapterI340-T4-1103
+2023-04-20T02:42:23.264618+00:00 (none) cmr:      uefi_settings_agent: remove configuration IntelREthernetServerAdapterI340-T4-1103
+2023-04-20T02:42:27.129643+00:00 (none) cmr:  ***ERROR*** setting_store: failed restoring settings, file= /var/cmr/uefi_settings.txt
+2023-04-20T02:42:27.131742+00:00 (none) cmr:  ***ERROR*** setting_store: failed restoring settings, file= /var/cmr/uefi_settings.txt.bak
+2023-04-20T02:42:27.134648+00:00 (none) cmr:  ***ERROR*** setting_store: assuming no settings, file= /var/cmr/uefi_settings.txt
+2023-04-20T02:42:29.257548+00:00 (none) dp: reboot flag is set, will reset health status
+2023-04-20T02:42:29.920350+00:00 (none) cmr:  queueing a transaction: id= UEFI-2023-04-20-03-21-42
+2023-04-20T02:42:38.682622+00:00 (none) cmr:  uefi_agent, on event = process_ueficli_file
+2023-04-20T02:42:38.682811+00:00 (none) cmr:  uefi_agent: process_ueficli
+2023-04-20T02:42:44.899617+00:00 (none) uefisync:  uefi_settings::constructor 
+2023-04-20T02:42:44.923227+00:00 (none) uefisync:     load_records 
+2023-04-20T02:42:44.924652+00:00 (none) uefisync:  uefi_settings::load_records
+2023-04-20T02:42:44.928521+00:00 (none) uefisync:     load_settings 
+2023-04-20T02:42:44.931946+00:00 (none) uefisync:  uefi_settings::load_settings, record id = 0
+2023-04-20T02:42:44.933771+00:00 (none) uefisync:     init_settings 
+2023-04-20T02:42:44.936569+00:00 (none) uefisync:  uefi_settings::init_settings, record id = 0
+2023-04-20T02:42:44.938067+00:00 (none) uefisync:  uefi_remconred_rec::get_record
+2023-04-20T02:42:44.955769+00:00 (none) uefisync:  uefi_sync, load batch file, file = /tmp/uefi_batch_in.txt
+2023-04-20T02:42:45.066073+00:00 (none) uefisync:  uefi_settings::processing()
+2023-04-20T02:42:45.068634+00:00 (none) uefisync:  uefi_settings::set_value, rec_id = 0, sett_id = 7
+2023-04-20T02:42:45.087144+00:00 (none) uefisync:  uefi_remconred_rec::set_value
+2023-04-20T02:42:45.089852+00:00 (none) uefisync:  uefi_settings::set_value, rec_id = 0, sett_id = 1
+2023-04-20T02:42:45.091696+00:00 (none) uefisync:  uefi_remconred_rec::set_value
+2023-04-20T02:42:45.093177+00:00 (none) uefisync:  uefi_settings::set_value, rec_id = 0, sett_id = 2
+2023-04-20T02:42:45.115233+00:00 (none) uefisync:  uefi_remconred_rec::set_value
+2023-04-20T02:42:45.116721+00:00 (none) uefisync:  uefi_settings::set_value, rec_id = 0, sett_id = 0
+2023-04-20T02:42:45.118142+00:00 (none) uefisync:  uefi_remconred_rec::set_value
+2023-04-20T02:42:45.120380+00:00 (none) uefisync:  uefi_settings::set_value, rec_id = 0, sett_id = 3
+2023-04-20T02:42:45.122124+00:00 (none) uefisync:  uefi_remconred_rec::set_value
+2023-04-20T02:42:45.123633+00:00 (none) uefisync:  uefi_settings::set_value, rec_id = 0, sett_id = 4
+2023-04-20T02:42:45.125171+00:00 (none) uefisync:  uefi_remconred_rec::set_value
+2023-04-20T02:42:45.151083+00:00 (none) uefisync:  uefi_settings::set_value, rec_id = 0, sett_id = 5
+2023-04-20T02:42:45.152567+00:00 (none) uefisync:  uefi_remconred_rec::set_value
+2023-04-20T02:42:45.154043+00:00 (none) uefisync:  uefi_settings::set_value, rec_id = 0, sett_id = 6
+2023-04-20T02:42:45.155927+00:00 (none) uefisync:  uefi_remconred_rec::set_value
+2023-04-20T02:42:45.157462+00:00 (none) uefisync:  uefi_settings::finalizing()
+2023-04-20T02:42:45.179217+00:00 (none) uefisync:  uefi_remconred_rec::set_record
+2023-04-20T02:42:45.246775+00:00 (none) uefisync:   uefi_settings, write_output_log
+2023-04-20T02:42:45.514093+00:00 (none) cmr:  uefi_agent: done processing transaction 
+2023-04-20T02:42:45.687773+00:00 (none) cmr:  queueing a transaction: id= <cfgbld-uefi_config.efi-0>
+2023-04-20T02:42:48.852740+00:00 (none) uefisync:  uefi_settings::constructor 
+2023-04-20T02:42:48.854298+00:00 (none) uefisync:     load_records 
+2023-04-20T02:42:48.856361+00:00 (none) uefisync:  uefi_settings::load_records
+2023-04-20T02:42:48.857971+00:00 (none) uefisync:     load_settings 
+2023-04-20T02:42:48.859804+00:00 (none) uefisync:  uefi_settings::load_settings, record id = 0
+2023-04-20T02:42:48.861596+00:00 (none) uefisync:     init_settings 
+2023-04-20T02:42:48.864427+00:00 (none) uefisync:  uefi_settings::init_settings, record id = 0
+2023-04-20T02:42:48.866277+00:00 (none) uefisync:  uefi_remconred_rec::get_record
+2023-04-20T02:42:48.878254+00:00 (none) uefisync:  uefi_sync, load batch file, file = /tmp/uefi_batch_in.txt
+2023-04-20T02:42:48.903258+00:00 (none) uefisync:  uefi_settings::processing()
+2023-04-20T02:42:48.907631+00:00 (none) uefisync:  uefi_settings::set_value, rec_id = 0, sett_id = 7
+2023-04-20T02:42:48.910165+00:00 (none) uefisync:  uefi_remconred_rec::set_value
+2023-04-20T02:42:48.912186+00:00 (none) uefisync:  uefi_settings::set_value, rec_id = 0, sett_id = 1
+2023-04-20T02:42:48.915383+00:00 (none) uefisync:  uefi_remconred_rec::set_value
+2023-04-20T02:42:48.917005+00:00 (none) uefisync:  uefi_settings::set_value, rec_id = 0, sett_id = 2
+2023-04-20T02:42:48.919426+00:00 (none) uefisync:  uefi_remconred_rec::set_value
+2023-04-20T02:42:48.920935+00:00 (none) uefisync:  uefi_settings::set_value, rec_id = 0, sett_id = 0
+2023-04-20T02:42:48.924053+00:00 (none) uefisync:  uefi_remconred_rec::set_value
+2023-04-20T02:42:48.926644+00:00 (none) uefisync:  uefi_settings::set_value, rec_id = 0, sett_id = 3
+2023-04-20T02:42:48.928429+00:00 (none) uefisync:  uefi_remconred_rec::set_value
+2023-04-20T02:42:48.930108+00:00 (none) uefisync:  uefi_settings::set_value, rec_id = 0, sett_id = 4
+2023-04-20T02:42:48.932762+00:00 (none) uefisync:  uefi_remconred_rec::set_value
+2023-04-20T02:42:48.934221+00:00 (none) uefisync:  uefi_settings::set_value, rec_id = 0, sett_id = 5
+2023-04-20T02:42:48.937472+00:00 (none) uefisync:  uefi_remconred_rec::set_value
+2023-04-20T02:42:48.940324+00:00 (none) uefisync:  uefi_settings::set_value, rec_id = 0, sett_id = 6
+2023-04-20T02:42:48.941721+00:00 (none) uefisync:  uefi_remconred_rec::set_value
+2023-04-20T02:42:48.944041+00:00 (none) uefisync:  uefi_settings::finalizing()
+2023-04-20T02:42:48.946086+00:00 (none) uefisync:  uefi_remconred_rec::set_record
+2023-04-20T02:42:48.963630+00:00 (none) uefisync:   uefi_settings, write_output_log
+2023-04-20T02:42:51.660751+00:00 (none) dp:  immpci_plugin::on_event: update_ucm_data
+2023-04-20T02:42:51.660963+00:00 (none) dp:  immpci_plugin::process_ucm_data
+2023-04-20T02:42:53.641091+00:00 (none) cmr:  post complete is received by CMR.
+2023-04-20T02:42:53.641263+00:00 (none) cmr:  unload full cmr
+2023-04-20T02:42:53.642682+00:00 (none) cmr:  Unloading Config Manager
+2023-04-20T02:42:56.987833+00:00 (none) cmr:  Loading Configuration Manager Server Version (255,255)
+2023-04-20T02:42:56.990789+00:00 (none) cmr:  Starting message queue server
+2023-04-20T02:42:56.997823+00:00 (none) cmr:  This is not a CMR first init. 
+2023-04-20T02:42:57.010822+00:00 (none) dp:  immpci_plugin::on_event: update_ucm_data
+2023-04-20T02:42:57.012472+00:00 (none) dp:  immpci_plugin::process_ucm_data
+2023-04-20T02:42:57.016020+00:00 (none) dp:  immpci need update ucm again
+2023-04-20T02:42:57.214701+00:00 (none) cmr:  execution_manager, vpd offset 0x1ee000
+2023-04-20T02:42:57.216573+00:00 (none) cmr:  execution_manager, vpd length 0x2000
+2023-04-20T02:42:57.243262+00:00 (none) cmr:  Initialization complete
+2023-04-20T02:45:24.884034+00:00 (none) dp:  Rebooting in progress, ignore any further request until raid init is finished
+2023-04-20T02:48:18.370630+00:00 (none) dp:  ***ERROR*** transaction is stuck: id= immraidlink
+2023-04-20T02:48:18.373191+00:00 (none) dp:  unload full dp
+2023-04-20T02:48:18.374763+00:00 (none) dp:  Unloading Data Parser
+2023-04-20T02:48:20.834737+00:00 (none) dp:  Loading Data Parser Server Version (255,255)
+2023-04-20T02:48:20.836877+00:00 (none) dp:  Starting message queue server
+2023-04-20T02:48:20.839725+00:00 (none) dp:  This is not a DP first init. 
+2023-04-20T02:48:20.843383+00:00 (none) dp:  Initialization complete
+2023-04-20T02:48:32.866598+00:00 (none) dp:  Wakeup: immraidlink
+2023-04-20T02:48:33.799757+00:00 (none) dp:  adding plugin library, library= libdp_plugins.so
+2023-04-20T02:48:33.811648+00:00 (none) dp:  immpci_plugin: send alert to flash manager and bmc at startup.
+2023-04-20T02:48:34.716484+00:00 (none) dp: [dbc_rcv] successfully started
+2023-04-20T02:48:34.718040+00:00 (none) dp: [dbc_snd] socket 9 created
+2023-04-20T02:48:34.719637+00:00 (none) dp: [dbc_snd] successfully started
+2023-04-20T02:48:42.521890+00:00 (none) dp:  raid link proxy server is started.
+2023-04-21T06:55:55.315491+00:00 (none) cmr:  Wakeup: sp
+2023-04-21T06:55:57.535308+00:00 (none) cmr:  adding agent library, library= libcmr_agents.so
+2023-04-21T06:55:57.902055+00:00 (none) cmr:  ***ERROR*** Unable to initialize connection to SDRAID Library service.
+2023-04-21T06:56:00.908894+00:00 (none) cmr:  ***ERROR*** setting_store: failed restoring settings, file= /var/cmr/system_prod_data.txt
+2023-04-21T06:56:00.911010+00:00 (none) cmr:  ***ERROR*** setting_store: failed restoring settings, file= /var/cmr/system_prod_data.txt.bak
+2023-04-21T06:56:00.912464+00:00 (none) cmr:  ***ERROR*** setting_store: assuming no settings, file= /var/cmr/system_prod_data.txt
+2023-04-21T07:00:02.272197+00:00 (none) cmr:  ipmi agent, setting dirty flag for vmmigration
+2023-04-21T07:03:09.756865+00:00 (none) cmr:  ipmi agent, setting dirty flag for vmmigration
+2023-04-21T07:03:10.898687+00:00 (none) dp:  immpci_plugin::on_event: update_ucm_data
+2023-04-21T07:03:10.898871+00:00 (none) dp:  immpci_plugin::process_ucm_data
+2023-04-21T07:03:11.003369+00:00 (none) dp:  update_ucm_transaction::update_ucm_data: need_wipe flag - 0
+2023-04-21T07:03:11.013727+00:00 (none) dp:  update_ucm_transaction::update_ucm_data: create /tmp/dp.ucmparsing
+2023-04-21T07:03:19.448891+00:00 (none) dp:  immpci_plugin::on_event: update_ucm_data
+2023-04-21T07:03:19.449080+00:00 (none) dp:  immpci_plugin::process_ucm_data
+2023-04-21T07:03:19.449176+00:00 (none) dp:  immpci need update ucm again
+2023-04-21T07:03:31.490804+00:00 (none) dp:  update_ucm_transaction::update_ucm_data: remove /tmp/dp.ucmparsing
+2023-04-21T07:03:31.491763+00:00 (none) dp:  update_ucm_transaction::update_ucm_data succeed
+2023-04-21T07:03:31.795432+00:00 (none) dp:  update_ucm_transaction::update_ucm_data: need_wipe flag - 0
+2023-04-21T07:03:31.797048+00:00 (none) dp:  update_ucm_transaction::update_ucm_data: create /tmp/dp.ucmparsing
+2023-04-21T07:03:39.145010+00:00 (none) dp:  update_ucm_transaction::update_ucm_data: remove /tmp/dp.ucmparsing
+2023-04-21T07:03:39.145205+00:00 (none) dp:  update_ucm_transaction::update_ucm_data succeed
+2023-04-21T07:05:31.850769+00:00 (none) cmr:  uefi_agent, on event = process_config_file
+2023-04-21T07:05:31.850968+00:00 (none) cmr:  uefi_agent: process_config
+2023-04-21T07:05:32.649150+00:00 (none) dp:  immpci_plugin::on_event: need_wipe
+2023-04-21T07:05:32.654770+00:00 (none) cmr:  queueing a transaction: id= uefi
+2023-04-21T07:05:32.758763+00:00 (none) cmr:      uefi_settings_agent: unregister configuration PXE
+2023-04-21T07:05:33.293969+00:00 (none) cmr:      uefi_settings_agent: remove configuration PXE
+2023-04-21T07:05:33.297928+00:00 (none) cmr:      uefi_settings_agent: unregister configuration AdvancedRAS
+2023-04-21T07:05:34.100638+00:00 (none) cmr:      uefi_settings_agent: remove configuration AdvancedRAS
+2023-04-21T07:05:34.113632+00:00 (none) cmr:      uefi_settings_agent: unregister configuration TrustedComputingGroup
+2023-04-21T07:05:34.345894+00:00 (none) cmr:      uefi_settings_agent: remove configuration TrustedComputingGroup
+2023-04-21T07:05:34.349155+00:00 (none) cmr:      uefi_settings_agent: unregister configuration POSTAttempts
+2023-04-21T07:05:34.503036+00:00 (none) cmr:      uefi_settings_agent: remove configuration POSTAttempts
+2023-04-21T07:05:34.506582+00:00 (none) cmr:      uefi_settings_agent: unregister configuration DiskGPTRecovery
+2023-04-21T07:05:34.658762+00:00 (none) cmr:      uefi_settings_agent: remove configuration DiskGPTRecovery
+2023-04-21T07:05:34.661577+00:00 (none) cmr:      uefi_settings_agent: unregister configuration OperatingModes
+2023-04-21T07:05:34.868423+00:00 (none) dp:  immraidlink plugin::process_raid_data, transaction_flag = 2, param1 = 255, param2 = 
+2023-04-21T07:05:34.916236+00:00 (none) cmr:      uefi_settings_agent: remove configuration OperatingModes
+2023-04-21T07:05:34.919264+00:00 (none) cmr:      uefi_settings_agent: unregister configuration BackupBankManagement
+2023-04-21T07:05:35.695966+00:00 (none) cmr:      uefi_settings_agent: remove configuration BackupBankManagement
+2023-04-21T07:05:35.707305+00:00 (none) cmr:      uefi_settings_agent: unregister configuration TPMVersion
+2023-04-21T07:05:36.132664+00:00 (none) cmr:      uefi_settings_agent: remove configuration TPMVersion
+2023-04-21T07:05:36.137169+00:00 (none) cmr:      uefi_settings_agent: unregister configuration SystemRecovery
+2023-04-21T07:05:36.664238+00:00 (none) cmr:      uefi_settings_agent: remove configuration SystemRecovery
+2023-04-21T07:05:36.667606+00:00 (none) cmr:      uefi_settings_agent: unregister configuration Processors
+2023-04-21T07:05:36.887263+00:00 (none) dp: Not find matched record from PCIs table(ctrlDbIndex=1).
+2023-04-21T07:05:37.208062+00:00 (none) cmr:      uefi_settings_agent: remove configuration Processors
+2023-04-21T07:05:37.261908+00:00 (none) cmr:      uefi_settings_agent: unregister configuration Power
+2023-04-21T07:05:37.666638+00:00 (none) cmr:      uefi_settings_agent: remove configuration Power
+2023-04-21T07:05:37.670767+00:00 (none) cmr:      uefi_settings_agent: unregister configuration DevicesandIOPorts
+2023-04-21T07:05:38.267959+00:00 (none) cmr:      uefi_settings_agent: remove configuration DevicesandIOPorts
+2023-04-21T07:05:38.293636+00:00 (none) cmr:      uefi_settings_agent: unregister configuration Node1
+2023-04-21T07:05:38.977003+00:00 (none) cmr:      uefi_settings_agent: remove configuration Node1
+2023-04-21T07:05:39.099466+00:00 (none) cmr:      uefi_settings_agent: unregister configuration Memory
+2023-04-21T07:05:39.580972+00:00 (none) cmr:      uefi_settings_agent: remove configuration Memory
+2023-04-21T07:05:39.668464+00:00 (none) cmr:      uefi_settings_agent: unregister configuration LegacySupport
+2023-04-21T07:05:39.901426+00:00 (none) cmr:      uefi_settings_agent: remove configuration LegacySupport
+2023-04-21T07:05:39.909579+00:00 (none) cmr:      uefi_settings_agent: unregister configuration UEFIMisc
+2023-04-21T07:05:40.110069+00:00 (none) cmr:      uefi_settings_agent: remove configuration UEFIMisc
+2023-04-21T07:05:40.113852+00:00 (none) cmr:      uefi_settings_agent: unregister configuration SecureBootConfiguration
+2023-04-21T07:05:40.293664+00:00 (none) cmr:      uefi_settings_agent: remove configuration SecureBootConfiguration
+2023-04-21T07:05:40.301681+00:00 (none) cmr:      uefi_settings_agent: unregister configuration iSCSI
+2023-04-21T07:05:40.570674+00:00 (none) cmr:      uefi_settings_agent: remove configuration iSCSI
+2023-04-21T07:05:40.586620+00:00 (none) cmr:      uefi_settings_agent: unregister configuration PhysicalPresencePolicyConfiguration
+2023-04-21T07:05:40.766036+00:00 (none) cmr:      uefi_settings_agent: remove configuration PhysicalPresencePolicyConfiguration
+2023-04-21T07:05:40.768716+00:00 (none) cmr:      uefi_settings_agent: unregister configuration BootModes
+2023-04-21T07:05:41.008678+00:00 (none) cmr:      uefi_settings_agent: remove configuration BootModes
+2023-04-21T07:05:41.016276+00:00 (none) cmr:      uefi_settings_agent: unregister configuration BootOrder
+2023-04-21T07:05:41.186058+00:00 (none) cmr:      uefi_settings_agent: remove configuration BootOrder
+2023-04-21T07:05:41.193585+00:00 (none) cmr:      uefi_settings_agent: unregister configuration LSIMegaRAIDConfigurationTool-070
+2023-04-21T07:05:41.357860+00:00 (none) cmr:      uefi_settings_agent: remove configuration LSIMegaRAIDConfigurationTool-070
+2023-04-21T07:05:41.461793+00:00 (none) cmr:      uefi_settings_agent: unregister configuration IntelRI350GigabitNetworkConnection-0100
+2023-04-21T07:05:41.486160+00:00 (none) cmr:      uefi_settings_agent: remove configuration IntelRI350GigabitNetworkConnection-0100
+2023-04-21T07:05:41.490648+00:00 (none) cmr:      uefi_settings_agent: unregister configuration IntelRI350GigabitNetworkConnection-0101
+2023-04-21T07:05:41.512460+00:00 (none) cmr:      uefi_settings_agent: remove configuration IntelRI350GigabitNetworkConnection-0101
+2023-04-21T07:05:41.516490+00:00 (none) cmr:      uefi_settings_agent: unregister configuration IntelRI350GigabitNetworkConnection-0102
+2023-04-21T07:05:41.533227+00:00 (none) cmr:      uefi_settings_agent: remove configuration IntelRI350GigabitNetworkConnection-0102
+2023-04-21T07:05:41.536780+00:00 (none) cmr:      uefi_settings_agent: unregister configuration IntelRI350GigabitNetworkConnection-0103
+2023-04-21T07:05:41.552861+00:00 (none) cmr:      uefi_settings_agent: remove configuration IntelRI350GigabitNetworkConnection-0103
+2023-04-21T07:05:41.590921+00:00 (none) cmr:      uefi_settings_agent: unregister configuration IntelREthernetServerAdapterI340-T4-1101
+2023-04-21T07:05:41.621321+00:00 (none) cmr:      uefi_settings_agent: remove configuration IntelREthernetServerAdapterI340-T4-1101
+2023-04-21T07:05:41.644210+00:00 (none) cmr:      uefi_settings_agent: unregister configuration IntelREthernetServerAdapterI340-T4-1102
+2023-04-21T07:05:41.696262+00:00 (none) cmr:      uefi_settings_agent: remove configuration IntelREthernetServerAdapterI340-T4-1102
+2023-04-21T07:05:41.706777+00:00 (none) cmr:      uefi_settings_agent: unregister configuration IntelREthernetServerAdapterI340-T4-1103
+2023-04-21T07:05:41.735635+00:00 (none) cmr:      uefi_settings_agent: remove configuration IntelREthernetServerAdapterI340-T4-1103
+2023-04-21T07:05:43.711207+00:00 (none) dp: reboot flag is set, will reset health status
+2023-04-21T07:05:44.222948+00:00 (none) cmr:  ***ERROR*** setting_store: failed restoring settings, file= /var/cmr/uefi_settings.txt
+2023-04-21T07:05:44.239491+00:00 (none) cmr:  ***ERROR*** setting_store: failed restoring settings, file= /var/cmr/uefi_settings.txt.bak
+2023-04-21T07:05:44.255315+00:00 (none) cmr:  ***ERROR*** setting_store: assuming no settings, file= /var/cmr/uefi_settings.txt
+2023-04-21T07:05:46.040015+00:00 (none) cmr:  queueing a transaction: id= UEFI-2023-04-21-07-45-03
+2023-04-21T07:05:46.345180+00:00 (none) dp:  update_plugin_transaction::update_raid_data, notify bmc of the dp ready
+2023-04-21T07:05:48.940015+00:00 (none) dp: hh_dump_entity_list: DISK DEVICES 0x2bc7ace4 nCount = 17
+2023-04-21T07:05:49.994684+00:00 (none) dp:  immpci_plugin::on_event: update_pci_data
+2023-04-21T07:05:49.994884+00:00 (none) dp:  immpci_plugin::process_pci_data
+2023-04-21T07:05:50.001492+00:00 (none) dp:  immraidlink_plugin, need to update PCI data, send alert_update_pci alert
+2023-04-21T07:05:54.020787+00:00 (none) cmr:  uefi_agent, on event = process_ueficli_file
+2023-04-21T07:05:54.022661+00:00 (none) cmr:  uefi_agent: process_ueficli
+2023-04-21T07:05:57.222574+00:00 (none) dp: successfully parsed "/var/dp/cds.xml"
+2023-04-21T07:05:57.518751+00:00 (none) dp: AIM Doc: config AVAGOMegaRAIDInventoryDataProvider-070 is [OK]
+2023-04-21T07:05:57.551370+00:00 (none) dp: AIM PARSER: [AIM-supported] slot = 12, func_key = 458752
+2023-04-21T07:05:57.570832+00:00 (none) dp: AIM PARSER: Get UUID from AIM file, location/slot = 1/12, func_key = 458752, uuid = 0000000000000000500605B00BD778B0
+2023-04-21T07:05:57.638172+00:00 (none) dp: AIM PARSER: no need to update vpd, vendor:0x1000, sub_vendor:0x1014, device:0x005D, sub_device:0x0454, platform=0x50001a
+2023-04-21T07:05:58.089411+00:00 (none) dp: AIM PARSER: [VNIC Support] slot = 9, name = Adapter 11:00:00, table: PCIAdapter
+2023-04-21T07:05:58.156115+00:00 (none) dp: AIM PARSER: [VNIC Support] slot = 9, name = Adapter 11:00:01, table: PCIAdapter
+2023-04-21T07:05:58.278217+00:00 (none) dp: AIM PARSER: [VNIC Support] slot = 9, name = Adapter 11:00:02, table: PCIAdapter
+2023-04-21T07:05:58.360654+00:00 (none) dp: AIM PARSER: [VNIC Support] slot = 9, name = Adapter 11:00:03, table: PCIAdapter
+2023-04-21T07:05:58.448245+00:00 (none) dp: AIM PARSER: [VNIC Support] slot = 10, name = Adapter 01:00:00, table: PCIAdapter
+2023-04-21T07:05:58.511526+00:00 (none) dp: AIM PARSER: [VNIC Support] slot = 10, name = Adapter 01:00:01, table: PCIAdapter
+2023-04-21T07:05:58.588600+00:00 (none) dp: AIM PARSER: [VNIC Support] slot = 10, name = Adapter 01:00:02, table: PCIAdapter
+2023-04-21T07:05:58.658622+00:00 (none) dp: AIM PARSER: [VNIC Support] slot = 10, name = Adapter 01:00:03, table: PCIAdapter
+2023-04-21T07:05:58.795433+00:00 (none) dp: AIM PARSER: [No AIM Support] slot = 1, name = Adapter 1B:00:00, table: PCIAdapter
+2023-04-21T07:05:58.833371+00:00 (none) dp: AIM PARSER: [No AIM Support] slot = 7, name = Adapter 51:00:01, table: PCIAdapter
+2023-04-21T07:05:58.866621+00:00 (none) dp: AIM PARSER: [No AIM Support] slot = 8, name = Adapter 41:00:01, table: PCIAdapter
+2023-04-21T07:05:59.110588+00:00 (none) dp: AIM PARSER: successfully parsed "/tmp/aim_filtered.xml"
+2023-04-21T07:06:00.790823+00:00 (none) dp: no system inventory change
+2023-04-21T07:06:00.791017+00:00 (none) dp: no pci inventory change
+2023-04-21T07:06:00.812089+00:00 (none) dp:  update_pci_transaction::update_pci_data succeed
+2023-04-21T07:06:04.104292+00:00 (none) uefisync:  uefi_settings::constructor 
+2023-04-21T07:06:04.106444+00:00 (none) uefisync:     load_records 
+2023-04-21T07:06:04.107887+00:00 (none) uefisync:  uefi_settings::load_records
+2023-04-21T07:06:04.109667+00:00 (none) uefisync:     load_settings 
+2023-04-21T07:06:04.111526+00:00 (none) uefisync:  uefi_settings::load_settings, record id = 0
+2023-04-21T07:06:04.113377+00:00 (none) uefisync:     init_settings 
+2023-04-21T07:06:04.142906+00:00 (none) uefisync:  uefi_settings::init_settings, record id = 0
+2023-04-21T07:06:04.144302+00:00 (none) uefisync:  uefi_remconred_rec::get_record
+2023-04-21T07:06:04.229558+00:00 (none) uefisync:  uefi_sync, load batch file, file = /tmp/uefi_batch_in.txt
+2023-04-21T07:06:04.380646+00:00 (none) uefisync:  uefi_settings::processing()
+2023-04-21T07:06:04.382195+00:00 (none) uefisync:  uefi_settings::set_value, rec_id = 0, sett_id = 7
+2023-04-21T07:06:04.383738+00:00 (none) uefisync:  uefi_remconred_rec::set_value
+2023-04-21T07:06:04.386035+00:00 (none) uefisync:  uefi_settings::set_value, rec_id = 0, sett_id = 1
+2023-04-21T07:06:04.387013+00:00 (none) uefisync:  uefi_remconred_rec::set_value
+2023-04-21T07:06:04.388214+00:00 (none) uefisync:  uefi_settings::set_value, rec_id = 0, sett_id = 2
+2023-04-21T07:06:04.389093+00:00 (none) uefisync:  uefi_remconred_rec::set_value
+2023-04-21T07:06:04.390065+00:00 (none) uefisync:  uefi_settings::set_value, rec_id = 0, sett_id = 0
+2023-04-21T07:06:04.411077+00:00 (none) uefisync:  uefi_remconred_rec::set_value
+2023-04-21T07:06:04.412650+00:00 (none) uefisync:  uefi_settings::set_value, rec_id = 0, sett_id = 3
+2023-04-21T07:06:04.414161+00:00 (none) uefisync:  uefi_remconred_rec::set_value
+2023-04-21T07:06:04.416256+00:00 (none) uefisync:  uefi_settings::set_value, rec_id = 0, sett_id = 4
+2023-04-21T07:06:04.417587+00:00 (none) uefisync:  uefi_remconred_rec::set_value
+2023-04-21T07:06:04.435749+00:00 (none) uefisync:  uefi_settings::set_value, rec_id = 0, sett_id = 5
+2023-04-21T07:06:04.437123+00:00 (none) uefisync:  uefi_remconred_rec::set_value
+2023-04-21T07:06:04.463121+00:00 (none) uefisync:  uefi_settings::set_value, rec_id = 0, sett_id = 6
+2023-04-21T07:06:04.464491+00:00 (none) uefisync:  uefi_remconred_rec::set_value
+2023-04-21T07:06:04.466646+00:00 (none) uefisync:  uefi_settings::finalizing()
+2023-04-21T07:06:04.468033+00:00 (none) uefisync:  uefi_remconred_rec::set_record
+2023-04-21T07:06:04.556516+00:00 (none) uefisync:   uefi_settings, write_output_log
+2023-04-21T07:06:04.646112+00:00 (none) cmr:  uefi_agent: done processing transaction 
+2023-04-21T07:06:04.757664+00:00 (none) cmr:  queueing a transaction: id= <cfgbld-uefi_config.efi-0>
+2023-04-21T07:06:07.744514+00:00 (none) uefisync:  uefi_settings::constructor 
+2023-04-21T07:06:07.751009+00:00 (none) uefisync:     load_records 
+2023-04-21T07:06:07.752360+00:00 (none) uefisync:  uefi_settings::load_records
+2023-04-21T07:06:07.754168+00:00 (none) uefisync:     load_settings 
+2023-04-21T07:06:07.756065+00:00 (none) uefisync:  uefi_settings::load_settings, record id = 0
+2023-04-21T07:06:07.758011+00:00 (none) uefisync:     init_settings 
+2023-04-21T07:06:07.759482+00:00 (none) uefisync:  uefi_settings::init_settings, record id = 0
+2023-04-21T07:06:07.760899+00:00 (none) uefisync:  uefi_remconred_rec::get_record
+2023-04-21T07:06:07.818300+00:00 (none) uefisync:  uefi_sync, load batch file, file = /tmp/uefi_batch_in.txt
+2023-04-21T07:06:07.843572+00:00 (none) uefisync:  uefi_settings::processing()
+2023-04-21T07:06:07.845603+00:00 (none) uefisync:  uefi_settings::set_value, rec_id = 0, sett_id = 7
+2023-04-21T07:06:07.847136+00:00 (none) uefisync:  uefi_remconred_rec::set_value
+2023-04-21T07:06:07.849407+00:00 (none) uefisync:  uefi_settings::set_value, rec_id = 0, sett_id = 1
+2023-04-21T07:06:07.850813+00:00 (none) uefisync:  uefi_remconred_rec::set_value
+2023-04-21T07:06:07.852383+00:00 (none) uefisync:  uefi_settings::set_value, rec_id = 0, sett_id = 2
+2023-04-21T07:06:07.853747+00:00 (none) uefisync:  uefi_remconred_rec::set_value
+2023-04-21T07:06:07.855613+00:00 (none) uefisync:  uefi_settings::set_value, rec_id = 0, sett_id = 0
+2023-04-21T07:06:07.857109+00:00 (none) uefisync:  uefi_remconred_rec::set_value
+2023-04-21T07:06:07.858700+00:00 (none) uefisync:  uefi_settings::set_value, rec_id = 0, sett_id = 3
+2023-04-21T07:06:07.860113+00:00 (none) uefisync:  uefi_remconred_rec::set_value
+2023-04-21T07:06:07.861709+00:00 (none) uefisync:  uefi_settings::set_value, rec_id = 0, sett_id = 4
+2023-04-21T07:06:07.863181+00:00 (none) uefisync:  uefi_remconred_rec::set_value
+2023-04-21T07:06:07.864693+00:00 (none) uefisync:  uefi_settings::set_value, rec_id = 0, sett_id = 5
+2023-04-21T07:06:07.866575+00:00 (none) uefisync:  uefi_remconred_rec::set_value
+2023-04-21T07:06:07.868037+00:00 (none) uefisync:  uefi_settings::set_value, rec_id = 0, sett_id = 6
+2023-04-21T07:06:07.869394+00:00 (none) uefisync:  uefi_remconred_rec::set_value
+2023-04-21T07:06:07.870953+00:00 (none) uefisync:  uefi_settings::finalizing()
+2023-04-21T07:06:07.872476+00:00 (none) uefisync:  uefi_remconred_rec::set_record
+2023-04-21T07:06:07.885547+00:00 (none) uefisync:   uefi_settings, write_output_log
+2023-04-21T07:06:09.894612+00:00 (none) dp:  immpci_plugin::on_event: update_ucm_data
+2023-04-21T07:06:09.894801+00:00 (none) dp:  immpci_plugin::process_ucm_data
+2023-04-21T07:06:10.099329+00:00 (none) dp:  update_ucm_transaction::update_ucm_data: need_wipe flag - 1
+2023-04-21T07:06:10.101006+00:00 (none) dp:  update_ucm_transaction::update_ucm_data: create /tmp/dp.ucmparsing
+2023-04-21T07:06:11.366679+00:00 (none) cmr:  post complete is received by CMR.
+2023-04-21T07:06:11.368113+00:00 (none) cmr:  unload full cmr
+2023-04-21T07:06:11.370704+00:00 (none) cmr:  Unloading Config Manager
+2023-04-21T07:06:14.707275+00:00 (none) cmr:  Loading Configuration Manager Server Version (255,255)
+2023-04-21T07:06:14.709372+00:00 (none) cmr:  Starting message queue server
+2023-04-21T07:06:14.716742+00:00 (none) cmr:  This is not a CMR first init. 
+2023-04-21T07:06:14.746805+00:00 (none) dp:  immpci_plugin::on_event: update_ucm_data
+2023-04-21T07:06:14.747065+00:00 (none) dp:  immpci_plugin::process_ucm_data
+2023-04-21T07:06:14.747184+00:00 (none) dp:  immpci need update ucm again
+2023-04-21T07:06:14.906928+00:00 (none) cmr:  execution_manager, vpd offset 0x1ee000
+2023-04-21T07:06:14.908344+00:00 (none) cmr:  execution_manager, vpd length 0x2000
+2023-04-21T07:06:14.930845+00:00 (none) cmr:  Initialization complete
+2023-04-21T07:06:28.753891+00:00 (none) dp:  update_ucm_transaction::update_ucm_data: remove /tmp/dp.ucmparsing
+2023-04-21T07:06:28.754085+00:00 (none) dp:  update_ucm_transaction::update_ucm_data succeed
+2023-04-21T07:06:29.063296+00:00 (none) dp:  update_ucm_transaction::update_ucm_data: need_wipe flag - 0
+2023-04-21T07:06:29.065317+00:00 (none) dp:  update_ucm_transaction::update_ucm_data: create /tmp/dp.ucmparsing
+2023-04-21T07:06:36.730795+00:00 (none) dp:  update_ucm_transaction::update_ucm_data: remove /tmp/dp.ucmparsing
+2023-04-21T07:06:36.730988+00:00 (none) dp:  update_ucm_transaction::update_ucm_data succeed
+2023-04-21T22:14:08.863793+00:00 (none) cmr:  Wakeup: sp
+2023-04-21T22:14:11.021066+00:00 (none) cmr:  adding agent library, library= libcmr_agents.so
+2023-04-21T22:14:11.369368+00:00 (none) cmr:  ***ERROR*** Unable to initialize connection to SDRAID Library service.
+2023-04-21T22:14:13.843812+00:00 (none) cmr:  ***ERROR*** setting_store: failed restoring settings, file= /var/cmr/system_prod_data.txt
+2023-04-21T22:14:13.848671+00:00 (none) cmr:  ***ERROR*** setting_store: failed restoring settings, file= /var/cmr/system_prod_data.txt.bak
+2023-04-21T22:14:13.850067+00:00 (none) cmr:  ***ERROR*** setting_store: assuming no settings, file= /var/cmr/system_prod_data.txt
+2023-04-21T22:18:24.425466+00:00 (none) cmr:  ipmi agent, setting dirty flag for vmmigration
+2023-04-21T22:21:32.086611+00:00 (none) cmr:  ipmi agent, setting dirty flag for vmmigration
+2023-04-21T22:21:33.331784+00:00 (none) dp:  immpci_plugin::on_event: update_ucm_data
+2023-04-21T22:21:33.331960+00:00 (none) dp:  immpci_plugin::process_ucm_data
+2023-04-21T22:21:33.555339+00:00 (none) dp:  update_ucm_transaction::update_ucm_data: need_wipe flag - 0
+2023-04-21T22:21:33.557031+00:00 (none) dp:  update_ucm_transaction::update_ucm_data: create /tmp/dp.ucmparsing
+2023-04-21T22:21:42.070719+00:00 (none) dp:  immpci_plugin::on_event: update_ucm_data
+2023-04-21T22:21:42.072632+00:00 (none) dp:  immpci_plugin::process_ucm_data
+2023-04-21T22:21:42.072821+00:00 (none) dp:  immpci need update ucm again
+2023-04-21T22:21:46.662289+00:00 (none) dp:  update_ucm_transaction::update_ucm_data: remove /tmp/dp.ucmparsing
+2023-04-21T22:21:46.662910+00:00 (none) dp:  update_ucm_transaction::update_ucm_data succeed
+2023-04-21T22:21:46.964175+00:00 (none) dp:  update_ucm_transaction::update_ucm_data: need_wipe flag - 0
+2023-04-21T22:21:46.966121+00:00 (none) dp:  update_ucm_transaction::update_ucm_data: create /tmp/dp.ucmparsing
+2023-04-21T22:21:55.538631+00:00 (none) dp:  update_ucm_transaction::update_ucm_data: remove /tmp/dp.ucmparsing
+2023-04-21T22:21:55.540046+00:00 (none) dp:  update_ucm_transaction::update_ucm_data succeed
+2023-04-21T22:23:54.770658+00:00 (none) cmr:  uefi_agent, on event = process_config_file
+2023-04-21T22:23:54.770856+00:00 (none) cmr:  uefi_agent: process_config
+2023-04-21T22:23:55.257918+00:00 (none) dp:  immpci_plugin::on_event: need_wipe
+2023-04-21T22:23:55.263814+00:00 (none) cmr:  queueing a transaction: id= uefi
+2023-04-21T22:23:55.367872+00:00 (none) cmr:      uefi_settings_agent: unregister configuration PXE
+2023-04-21T22:23:55.552561+00:00 (none) cmr:      uefi_settings_agent: remove configuration PXE
+2023-04-21T22:23:55.556607+00:00 (none) cmr:      uefi_settings_agent: unregister configuration AdvancedRAS
+2023-04-21T22:23:55.760222+00:00 (none) cmr:      uefi_settings_agent: remove configuration AdvancedRAS
+2023-04-21T22:23:55.768033+00:00 (none) cmr:      uefi_settings_agent: unregister configuration TrustedComputingGroup
+2023-04-21T22:23:56.468653+00:00 (none) cmr:      uefi_settings_agent: remove configuration TrustedComputingGroup
+2023-04-21T22:23:56.496467+00:00 (none) cmr:      uefi_settings_agent: unregister configuration POSTAttempts
+2023-04-21T22:23:57.216180+00:00 (none) cmr:      uefi_settings_agent: remove configuration POSTAttempts
+2023-04-21T22:23:57.227314+00:00 (none) cmr:      uefi_settings_agent: unregister configuration DiskGPTRecovery
+2023-04-21T22:23:57.522721+00:00 (none) dp:  immraidlink plugin::process_raid_data, transaction_flag = 2, param1 = 255, param2 = 
+2023-04-21T22:23:58.360807+00:00 (none) cmr:      uefi_settings_agent: remove configuration DiskGPTRecovery
+2023-04-21T22:23:58.400054+00:00 (none) cmr:      uefi_settings_agent: unregister configuration OperatingModes
+2023-04-21T22:23:59.153066+00:00 (none) cmr:      uefi_settings_agent: remove configuration OperatingModes
+2023-04-21T22:23:59.157773+00:00 (none) cmr:      uefi_settings_agent: unregister configuration BackupBankManagement
+2023-04-21T22:23:59.645319+00:00 (none) cmr:      uefi_settings_agent: remove configuration BackupBankManagement
+2023-04-21T22:23:59.652563+00:00 (none) cmr:      uefi_settings_agent: unregister configuration TPMVersion
+2023-04-21T22:24:00.068405+00:00 (none) dp: Not find matched record from PCIs table(ctrlDbIndex=1).
+2023-04-21T22:24:00.336525+00:00 (none) cmr:      uefi_settings_agent: remove configuration TPMVersion
+2023-04-21T22:24:00.339585+00:00 (none) cmr:      uefi_settings_agent: unregister configuration SystemRecovery
+2023-04-21T22:24:00.951725+00:00 (none) cmr:      uefi_settings_agent: remove configuration SystemRecovery
+2023-04-21T22:24:00.955157+00:00 (none) cmr:      uefi_settings_agent: unregister configuration Processors
+2023-04-21T22:24:01.598070+00:00 (none) cmr:      uefi_settings_agent: remove configuration Processors
+2023-04-21T22:24:01.733366+00:00 (none) cmr:      uefi_settings_agent: unregister configuration Power
+2023-04-21T22:24:02.942187+00:00 (none) cmr:      uefi_settings_agent: remove configuration Power
+2023-04-21T22:24:02.958954+00:00 (none) cmr:      uefi_settings_agent: unregister configuration DevicesandIOPorts
+2023-04-21T22:24:03.793422+00:00 (none) cmr:      uefi_settings_agent: remove configuration DevicesandIOPorts
+2023-04-21T22:24:03.854639+00:00 (none) cmr:      uefi_settings_agent: unregister configuration Node1
+2023-04-21T22:24:04.428121+00:00 (none) cmr:      uefi_settings_agent: remove configuration Node1
+2023-04-21T22:24:04.496999+00:00 (none) cmr:      uefi_settings_agent: unregister configuration Memory
+2023-04-21T22:24:05.322420+00:00 (none) cmr:      uefi_settings_agent: remove configuration Memory
+2023-04-21T22:24:05.466013+00:00 (none) cmr:      uefi_settings_agent: unregister configuration LegacySupport
+2023-04-21T22:24:06.131183+00:00 (none) cmr:      uefi_settings_agent: remove configuration LegacySupport
+2023-04-21T22:24:06.159909+00:00 (none) cmr:      uefi_settings_agent: unregister configuration UEFIMisc
+2023-04-21T22:24:06.740171+00:00 (none) cmr:      uefi_settings_agent: remove configuration UEFIMisc
+2023-04-21T22:24:06.803202+00:00 (none) cmr:      uefi_settings_agent: unregister configuration SecureBootConfiguration
+2023-04-21T22:24:07.486172+00:00 (none) cmr:      uefi_settings_agent: remove configuration SecureBootConfiguration
+2023-04-21T22:24:07.562920+00:00 (none) cmr:      uefi_settings_agent: unregister configuration iSCSI
+2023-04-21T22:24:08.041197+00:00 (none) cmr:      uefi_settings_agent: remove configuration iSCSI
+2023-04-21T22:24:08.080446+00:00 (none) cmr:      uefi_settings_agent: unregister configuration PhysicalPresencePolicyConfiguration
+2023-04-21T22:24:08.767854+00:00 (none) cmr:      uefi_settings_agent: remove configuration PhysicalPresencePolicyConfiguration
+2023-04-21T22:24:08.770606+00:00 (none) cmr:      uefi_settings_agent: unregister configuration BootModes
+2023-04-21T22:24:09.619708+00:00 (none) dp: reboot flag is set, will reset health status
+2023-04-21T22:24:09.907925+00:00 (none) cmr:      uefi_settings_agent: remove configuration BootModes
+2023-04-21T22:24:09.927828+00:00 (none) cmr:      uefi_settings_agent: unregister configuration BootOrder
+2023-04-21T22:24:10.429992+00:00 (none) cmr:      uefi_settings_agent: remove configuration BootOrder
+2023-04-21T22:24:10.437098+00:00 (none) cmr:      uefi_settings_agent: unregister configuration LSIMegaRAIDConfigurationTool-070
+2023-04-21T22:24:10.591601+00:00 (none) cmr:      uefi_settings_agent: remove configuration LSIMegaRAIDConfigurationTool-070
+2023-04-21T22:24:10.710927+00:00 (none) cmr:      uefi_settings_agent: unregister configuration IntelRI350GigabitNetworkConnection-0100
+2023-04-21T22:24:10.858562+00:00 (none) cmr:      uefi_settings_agent: remove configuration IntelRI350GigabitNetworkConnection-0100
+2023-04-21T22:24:10.906775+00:00 (none) cmr:      uefi_settings_agent: unregister configuration IntelRI350GigabitNetworkConnection-0101
+2023-04-21T22:24:11.066754+00:00 (none) cmr:      uefi_settings_agent: remove configuration IntelRI350GigabitNetworkConnection-0101
+2023-04-21T22:24:11.100042+00:00 (none) cmr:      uefi_settings_agent: unregister configuration IntelRI350GigabitNetworkConnection-0102
+2023-04-21T22:24:11.180605+00:00 (none) cmr:      uefi_settings_agent: remove configuration IntelRI350GigabitNetworkConnection-0102
+2023-04-21T22:24:11.220821+00:00 (none) cmr:      uefi_settings_agent: unregister configuration IntelRI350GigabitNetworkConnection-0103
+2023-04-21T22:24:11.351994+00:00 (none) cmr:      uefi_settings_agent: remove configuration IntelRI350GigabitNetworkConnection-0103
+2023-04-21T22:24:11.356728+00:00 (none) cmr:      uefi_settings_agent: unregister configuration IntelREthernetServerAdapterI340-T4-1101
+2023-04-21T22:24:11.389462+00:00 (none) cmr:      uefi_settings_agent: remove configuration IntelREthernetServerAdapterI340-T4-1101
+2023-04-21T22:24:11.394554+00:00 (none) cmr:      uefi_settings_agent: unregister configuration IntelREthernetServerAdapterI340-T4-1102
+2023-04-21T22:24:11.455670+00:00 (none) cmr:      uefi_settings_agent: remove configuration IntelREthernetServerAdapterI340-T4-1102
+2023-04-21T22:24:11.460275+00:00 (none) cmr:      uefi_settings_agent: unregister configuration IntelREthernetServerAdapterI340-T4-1103
+2023-04-21T22:24:11.468131+00:00 (none) cmr:      uefi_settings_agent: remove configuration IntelREthernetServerAdapterI340-T4-1103
+2023-04-21T22:24:12.590691+00:00 (none) dp:  update_plugin_transaction::update_raid_data, notify bmc of the dp ready
+2023-04-21T22:24:12.820706+00:00 (none) dp: hh_dump_entity_list: DISK DEVICES 0x2bc7ace4 nCount = 17
+2023-04-21T22:24:13.414520+00:00 (none) dp:  immpci_plugin::on_event: update_pci_data
+2023-04-21T22:24:13.414797+00:00 (none) dp:  immpci_plugin::process_pci_data
+2023-04-21T22:24:13.423407+00:00 (none) dp:  immraidlink_plugin, need to update PCI data, send alert_update_pci alert
+2023-04-21T22:24:14.241263+00:00 (none) cmr:  ***ERROR*** setting_store: failed restoring settings, file= /var/cmr/uefi_settings.txt
+2023-04-21T22:24:14.328290+00:00 (none) cmr:  ***ERROR*** setting_store: failed restoring settings, file= /var/cmr/uefi_settings.txt.bak
+2023-04-21T22:24:14.329756+00:00 (none) cmr:  ***ERROR*** setting_store: assuming no settings, file= /var/cmr/uefi_settings.txt
+2023-04-21T22:24:16.857335+00:00 (none) cmr:  queueing a transaction: id= UEFI-2023-04-21-23-03-27
+2023-04-21T22:24:21.022620+00:00 (none) dp: successfully parsed "/var/dp/cds.xml"
+2023-04-21T22:24:21.186504+00:00 (none) dp: AIM Doc: config AVAGOMegaRAIDInventoryDataProvider-070 is [OK]
+2023-04-21T22:24:21.220043+00:00 (none) dp: AIM PARSER: [AIM-supported] slot = 12, func_key = 458752
+2023-04-21T22:24:21.233512+00:00 (none) dp: AIM PARSER: Get UUID from AIM file, location/slot = 1/12, func_key = 458752, uuid = 0000000000000000500605B00BD778B0
+2023-04-21T22:24:21.257604+00:00 (none) dp: AIM PARSER: no need to update vpd, vendor:0x1000, sub_vendor:0x1014, device:0x005D, sub_device:0x0454, platform=0x50001a
+2023-04-21T22:24:21.525021+00:00 (none) dp: AIM PARSER: [VNIC Support] slot = 9, name = Adapter 11:00:00, table: PCIAdapter
+2023-04-21T22:24:21.602082+00:00 (none) dp: AIM PARSER: [VNIC Support] slot = 9, name = Adapter 11:00:01, table: PCIAdapter
+2023-04-21T22:24:21.677386+00:00 (none) dp: AIM PARSER: [VNIC Support] slot = 9, name = Adapter 11:00:02, table: PCIAdapter
+2023-04-21T22:24:21.740954+00:00 (none) dp: AIM PARSER: [VNIC Support] slot = 9, name = Adapter 11:00:03, table: PCIAdapter
+2023-04-21T22:24:21.880790+00:00 (none) dp: AIM PARSER: [VNIC Support] slot = 10, name = Adapter 01:00:00, table: PCIAdapter
+2023-04-21T22:24:21.974678+00:00 (none) dp: AIM PARSER: [VNIC Support] slot = 10, name = Adapter 01:00:01, table: PCIAdapter
+2023-04-21T22:24:22.054615+00:00 (none) dp: AIM PARSER: [VNIC Support] slot = 10, name = Adapter 01:00:02, table: PCIAdapter
+2023-04-21T22:24:22.135737+00:00 (none) dp: AIM PARSER: [VNIC Support] slot = 10, name = Adapter 01:00:03, table: PCIAdapter
+2023-04-21T22:24:22.271956+00:00 (none) dp: AIM PARSER: [No AIM Support] slot = 1, name = Adapter 1B:00:00, table: PCIAdapter
+2023-04-21T22:24:22.322612+00:00 (none) dp: AIM PARSER: [No AIM Support] slot = 7, name = Adapter 51:00:01, table: PCIAdapter
+2023-04-21T22:24:22.370304+00:00 (none) dp: AIM PARSER: [No AIM Support] slot = 8, name = Adapter 41:00:01, table: PCIAdapter
+2023-04-21T22:24:22.666098+00:00 (none) dp: AIM PARSER: successfully parsed "/tmp/aim_filtered.xml"
+2023-04-21T22:24:23.354788+00:00 (none) cmr:  uefi_agent, on event = process_ueficli_file
+2023-04-21T22:24:23.354976+00:00 (none) cmr:  uefi_agent: process_ueficli
+2023-04-21T22:24:24.014899+00:00 (none) dp: no system inventory change
+2023-04-21T22:24:24.015082+00:00 (none) dp: no pci inventory change
+2023-04-21T22:24:24.026594+00:00 (none) dp:  update_pci_transaction::update_pci_data succeed
+2023-04-21T22:24:27.975942+00:00 (none) uefisync:  uefi_settings::constructor 
+2023-04-21T22:24:27.977661+00:00 (none) uefisync:     load_records 
+2023-04-21T22:24:27.983116+00:00 (none) uefisync:  uefi_settings::load_records
+2023-04-21T22:24:27.985219+00:00 (none) uefisync:     load_settings 
+2023-04-21T22:24:27.991111+00:00 (none) uefisync:  uefi_settings::load_settings, record id = 0
+2023-04-21T22:24:27.992978+00:00 (none) uefisync:     init_settings 
+2023-04-21T22:24:27.994546+00:00 (none) uefisync:  uefi_settings::init_settings, record id = 0
+2023-04-21T22:24:28.000824+00:00 (none) uefisync:  uefi_remconred_rec::get_record
+2023-04-21T22:24:28.031719+00:00 (none) uefisync:  uefi_sync, load batch file, file = /tmp/uefi_batch_in.txt
+2023-04-21T22:24:28.077248+00:00 (none) uefisync:  uefi_settings::processing()
+2023-04-21T22:24:28.091027+00:00 (none) uefisync:  uefi_settings::set_value, rec_id = 0, sett_id = 7
+2023-04-21T22:24:28.092530+00:00 (none) uefisync:  uefi_remconred_rec::set_value
+2023-04-21T22:24:28.094626+00:00 (none) uefisync:  uefi_settings::set_value, rec_id = 0, sett_id = 1
+2023-04-21T22:24:28.096262+00:00 (none) uefisync:  uefi_remconred_rec::set_value
+2023-04-21T22:24:28.097732+00:00 (none) uefisync:  uefi_settings::set_value, rec_id = 0, sett_id = 2
+2023-04-21T22:24:28.099745+00:00 (none) uefisync:  uefi_remconred_rec::set_value
+2023-04-21T22:24:28.101301+00:00 (none) uefisync:  uefi_settings::set_value, rec_id = 0, sett_id = 0
+2023-04-21T22:24:28.110991+00:00 (none) uefisync:  uefi_remconred_rec::set_value
+2023-04-21T22:24:28.112460+00:00 (none) uefisync:  uefi_settings::set_value, rec_id = 0, sett_id = 3
+2023-04-21T22:24:28.113875+00:00 (none) uefisync:  uefi_remconred_rec::set_value
+2023-04-21T22:24:28.116337+00:00 (none) uefisync:  uefi_settings::set_value, rec_id = 0, sett_id = 4
+2023-04-21T22:24:28.117788+00:00 (none) uefisync:  uefi_remconred_rec::set_value
+2023-04-21T22:24:28.119369+00:00 (none) uefisync:  uefi_settings::set_value, rec_id = 0, sett_id = 5
+2023-04-21T22:24:28.120781+00:00 (none) uefisync:  uefi_remconred_rec::set_value
+2023-04-21T22:24:28.130665+00:00 (none) uefisync:  uefi_settings::set_value, rec_id = 0, sett_id = 6
+2023-04-21T22:24:28.132105+00:00 (none) uefisync:  uefi_remconred_rec::set_value
+2023-04-21T22:24:28.133738+00:00 (none) uefisync:  uefi_settings::finalizing()
+2023-04-21T22:24:28.135608+00:00 (none) uefisync:  uefi_remconred_rec::set_record
+2023-04-21T22:24:28.153909+00:00 (none) uefisync:   uefi_settings, write_output_log
+2023-04-21T22:24:28.187371+00:00 (none) cmr:  uefi_agent: done processing transaction 
+2023-04-21T22:24:28.246153+00:00 (none) cmr:  queueing a transaction: id= <cfgbld-uefi_config.efi-0>
+2023-04-21T22:24:29.440206+00:00 (none) uefisync:  uefi_settings::constructor 
+2023-04-21T22:24:29.441928+00:00 (none) uefisync:     load_records 
+2023-04-21T22:24:29.443704+00:00 (none) uefisync:  uefi_settings::load_records
+2023-04-21T22:24:29.445670+00:00 (none) uefisync:     load_settings 
+2023-04-21T22:24:29.447425+00:00 (none) uefisync:  uefi_settings::load_settings, record id = 0
+2023-04-21T22:24:29.449202+00:00 (none) uefisync:     init_settings 
+2023-04-21T22:24:29.450836+00:00 (none) uefisync:  uefi_settings::init_settings, record id = 0
+2023-04-21T22:24:29.452372+00:00 (none) uefisync:  uefi_remconred_rec::get_record
+2023-04-21T22:24:29.465136+00:00 (none) uefisync:  uefi_sync, load batch file, file = /tmp/uefi_batch_in.txt
+2023-04-21T22:24:29.486185+00:00 (none) uefisync:  uefi_settings::processing()
+2023-04-21T22:24:29.487909+00:00 (none) uefisync:  uefi_settings::set_value, rec_id = 0, sett_id = 7
+2023-04-21T22:24:29.489306+00:00 (none) uefisync:  uefi_remconred_rec::set_value
+2023-04-21T22:24:29.491377+00:00 (none) uefisync:  uefi_settings::set_value, rec_id = 0, sett_id = 1
+2023-04-21T22:24:29.492885+00:00 (none) uefisync:  uefi_remconred_rec::set_value
+2023-04-21T22:24:29.494442+00:00 (none) uefisync:  uefi_settings::set_value, rec_id = 0, sett_id = 2
+2023-04-21T22:24:29.496206+00:00 (none) uefisync:  uefi_remconred_rec::set_value
+2023-04-21T22:24:29.497714+00:00 (none) uefisync:  uefi_settings::set_value, rec_id = 0, sett_id = 0
+2023-04-21T22:24:29.499189+00:00 (none) uefisync:  uefi_remconred_rec::set_value
+2023-04-21T22:24:29.501824+00:00 (none) uefisync:  uefi_settings::set_value, rec_id = 0, sett_id = 3
+2023-04-21T22:24:29.503323+00:00 (none) uefisync:  uefi_remconred_rec::set_value
+2023-04-21T22:24:29.505109+00:00 (none) uefisync:  uefi_settings::set_value, rec_id = 0, sett_id = 4
+2023-04-21T22:24:29.506596+00:00 (none) uefisync:  uefi_remconred_rec::set_value
+2023-04-21T22:24:29.508520+00:00 (none) uefisync:  uefi_settings::set_value, rec_id = 0, sett_id = 5
+2023-04-21T22:24:29.510547+00:00 (none) uefisync:  uefi_remconred_rec::set_value
+2023-04-21T22:24:29.510734+00:00 (none) uefisync:  uefi_settings::set_value, rec_id = 0, sett_id = 6
+2023-04-21T22:24:29.512776+00:00 (none) uefisync:  uefi_remconred_rec::set_value
+2023-04-21T22:24:29.512951+00:00 (none) uefisync:  uefi_settings::finalizing()
+2023-04-21T22:24:29.513049+00:00 (none) uefisync:  uefi_remconred_rec::set_record
+2023-04-21T22:24:29.525829+00:00 (none) uefisync:   uefi_settings, write_output_log
+2023-04-21T22:24:31.085320+00:00 (none) dp:  immpci_plugin::on_event: update_ucm_data
+2023-04-21T22:24:31.085503+00:00 (none) dp:  immpci_plugin::process_ucm_data
+2023-04-21T22:24:31.291360+00:00 (none) dp:  update_ucm_transaction::update_ucm_data: need_wipe flag - 1
+2023-04-21T22:24:31.293088+00:00 (none) dp:  update_ucm_transaction::update_ucm_data: create /tmp/dp.ucmparsing
+2023-04-21T22:24:32.022585+00:00 (none) cmr:  post complete is received by CMR.
+2023-04-21T22:24:32.022762+00:00 (none) cmr:  unload full cmr
+2023-04-21T22:24:32.026754+00:00 (none) cmr:  Unloading Config Manager
+2023-04-21T22:24:35.209854+00:00 (none) cmr:  Loading Configuration Manager Server Version (255,255)
+2023-04-21T22:24:35.212125+00:00 (none) cmr:  Starting message queue server
+2023-04-21T22:24:35.219234+00:00 (none) cmr:  This is not a CMR first init. 
+2023-04-21T22:24:35.244826+00:00 (none) dp:  immpci_plugin::on_event: update_ucm_data
+2023-04-21T22:24:35.245007+00:00 (none) dp:  immpci_plugin::process_ucm_data
+2023-04-21T22:24:35.245114+00:00 (none) dp:  immpci need update ucm again
+2023-04-21T22:24:35.478791+00:00 (none) cmr:  execution_manager, vpd offset 0x1ee000
+2023-04-21T22:24:35.479020+00:00 (none) cmr:  execution_manager, vpd length 0x2000
+2023-04-21T22:24:35.502420+00:00 (none) cmr:  Initialization complete
+2023-04-21T22:24:50.541507+00:00 (none) dp:  update_ucm_transaction::update_ucm_data: remove /tmp/dp.ucmparsing
+2023-04-21T22:24:50.541696+00:00 (none) dp:  update_ucm_transaction::update_ucm_data succeed
+2023-04-21T22:24:50.843674+00:00 (none) dp:  update_ucm_transaction::update_ucm_data: need_wipe flag - 0
+2023-04-21T22:24:50.845623+00:00 (none) dp:  update_ucm_transaction::update_ucm_data: create /tmp/dp.ucmparsing
+2023-04-21T22:24:58.908732+00:00 (none) dp:  update_ucm_transaction::update_ucm_data: remove /tmp/dp.ucmparsing
+2023-04-21T22:24:58.908917+00:00 (none) dp:  update_ucm_transaction::update_ucm_data succeed

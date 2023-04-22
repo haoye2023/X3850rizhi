@@ -1,0 +1,3578 @@
+===VARWATCH truncated on Wed Apr 12 02:00:06 GMT 2023===
+journal data mode.
+kjournald starting.  Commit interval 5 seconds
+EXT3 FS on mmcblk0p2, internal journal
+EXT3-fs: mounted filesystem with journal data mode.
+wd_cntew_write - wdte_max[0] updated to 0x7feb
+wd_cntew_write - wdte_max[0] updated to 0x7fff
+IRQ 272/dma_i2c0: IRQF_DISABLED is not guaranteed on shared IRQs
+kjournald starting.  Commit interval 5 seconds
+EXT3-fs warning: maximal mount count reached, running e2fsck is recommended
+EXT3 FS on mmcblk0p4, internal journal
+EXT3-fs: mounted filesystem with journal data mode.
+IRQ 282/dma_i2c7: IRQF_DISABLED is not guaranteed on shared IRQs
+IRQ 281/dma_i2c6: IRQF_DISABLED is not guaranteed on shared IRQs
+IRQ 50/r8a66597_udc: IRQF_DISABLED is not guaranteed on shared IRQs
+r8a66597_udc r8a66597_udc.0: version 2012-12-18
+Now registering USB0/func0
+Gadget USB HUB, version: 20101014
+aess_video_init Avocent Video Driver installed
+allocate_video_buffer_reserve_mem- video_buffer_phys (reserved mem): 4e000000 video_buffer_size: 0x00EAE000
+hid_init: Desc: Keyboard/Mouse Function
+hid_init: Name: g_kbdmouse
+hid_init: Version: 20111018
+Now registering USB0/func1
+hid_bind: Using Major Number 230
+hid_bind: using r8a66597_udc, Keyboard ep1 Mouse ep2
+hid_bind: Mouse REL ep3
+g_mass_storage: msd_init() Desc: Mass Storage Function
+g_mass_storage: msd_init() Name: g_mass_storage
+g_mass_storage: msd_init() Version: 20120124
+Now registering USB0/func2
+g_mass_storage: msd_bind() Using Major Number 229
+g_mass_storage1: msd_init() Desc: Mass Storage Function
+g_mass_storage1: msd_init() Name: g_mass_storage1
+g_mass_storage1: msd_init() Version: 20120124-1
+Now registering USB0/func3
+g_mass_storage1: msd_bind() Using Major Number 228
+g_mass_storage2: msd_init() Desc: Mass Storage Function
+g_mass_storage2: msd_init() Name: g_mass_storage2
+g_mass_storage2: msd_init() Version: 20120124-2
+Now registering USB0/func4
+g_mass_storage2: msd_bind() Using Major Number 227
+IRQ 84/eth0: IRQF_DISABLED is not guaranteed on shared IRQs
+imm2_wdt_open: User Hang WDT opened
+imm2_wdt_start: index=1
+wd_cnt_write - wdtn_max[1] updated to 0x01
+wd_cntew_write - wdte_max[1] updated to 0x01
+imm2_wdt_ioctl: WDIOC_SETTIMEOUT
+	 Userspace timeout set to 60 secs
+wd_cntew_write - wdte_max[1] updated to 0xe4e
+wd_cnt_write - wdtn_max[1] updated to 0x55e8
+wd_cntew_write - wdte_max[1] updated to 0xe66
+wd_cnt_write - wdtn_max[1] updated to 0x5741
+wd_cntew_write - wdte_max[1] updated to 0xfbf
+wd_cnt_write - wdtn_max[1] updated to 0x5755
+wd_cntew_write - wdte_max[1] updated to 0xfd3
+wd_cnt_write - wdtn_max[1] updated to 0x5764
+wd_cntew_write - wdte_max[1] updated to 0xfe2
+kjournald starting.  Commit interval 15 seconds
+EXT3-fs: mounted filesystem with writeback data mode.
+aess_spi1_switch_PSC_2()::can't switch to PSC!CR8/CR12 value is 0x40
+aess_spi_io - errcode = 1
+imm2_wdt_open: Kernel Hang WDT opened
+WDT imm2_wdt_release: Line: 571 - WARN: WDT0 refcnt is 0
+WDT imm2_wdt_release: Line: 576 - WARN: You can only release Userspace WDT
+------ end of init -------------------------------------------------------------
+[2000-01-01T00:00:05]  -> Running /etc/scripts/ifs.mmc
+[2000-01-01T00:00:05]  -> Creating RTC device nodes
+[2016-10-19T08:07:20]  -> Creating MMC device nodes
+[2016-10-19T08:07:20]  -> Creating initfs mount points
+[2016-10-19T08:07:20]  -> Repairing partitions
+e2fsck 1.41.9 (22-Aug-2009)
+/dev/mmcblk0p2: recovering journal
+/dev/mmcblk0p2 has been mounted 1 times without being checked, check forced.
+Pass 1: Checking inodes, blocks, and sizes
+Pass 2: Checking directory structure
+Pass 3: Checking directory connectivity
+Pass 4: Checking reference counts
+Pass 5: Checking group summary information
+
+/dev/mmcblk0p2: ***** FILE SYSTEM WAS MODIFIED *****
+/dev/mmcblk0p2: 7278/65536 files (9.4% non-contiguous), 101342/131072 blocks
+e2fsck 1.41.9 (22-Aug-2009)
+/dev/mmcblk0p4: recovering journal
+/dev/mmcblk0p4 has been mounted 2 times without being checked, check forced.
+Pass 1: Checking inodes, blocks, and sizes
+Pass 2: Checking directory structure
+Pass 3: Checking directory connectivity
+Pass 4: Checking reference counts
+Pass 5: Checking group summary information
+
+/dev/mmcblk0p4: ***** FILE SYSTEM WAS MODIFIED *****
+/dev/mmcblk0p4: 83/61440 files (8.4% non-contiguous), 239657/491520 blocks
+[2016-10-19T08:07:25]  -> 2G layout is converted
+[2016-10-19T08:07:25]  -> Attempting to mount /rootfs to /dev/mmcblk0p2
+[2016-10-19T08:07:25]  -> Creating rootfs mount points
+[2016-10-19T08:07:26]  -> Performing security operations.
+[2016-10-19T08:07:27]  -> SecureBoot found..
+[2016-10-19T08:07:27]  -> FW Ext3 found..
+[2016-10-19T08:07:27]  -> securefs mounted - running init
+[2016-10-19T08:07:28] Security mode: NORMAL
+[2016-10-19T08:07:28] Reset reason: bp=12 eph=0 rs=0080 rs2=02
+[2016-10-19T08:07:28] Boot partition: 2
+[2016-10-19T08:07:28] Stay in current boot partition on failure (1)
+[2016-10-19T08:07:28] Tuning kernel security values.
+[2016-10-19T08:07:28]  > Done
+[2016-10-19T08:07:28] Enabling hardware entropy collection.
+[2016-10-19T08:07:28]  -> Inside sfs/init/set_twr_revision
+[2016-10-19T08:07:29] Enabling firewall watchdog + daemon.
+[2016-10-19T08:07:30] Trusted image buildid TCOO10P
+[2016-10-19T08:07:30] Trusted image buildversion 1.80
+[2016-10-19T08:07:31] Begin to verify rtfs md5
+[2016-10-19T08:07:31] Finish rtfs md5, checked 2 files, skip 0 files
+[2016-10-19T08:07:31] rtfs check finished
+[2016-10-19T08:07:32] FPGA update supported? 1
+[2016-10-19T08:07:32] RTMM device supported.
+[2016-10-19T08:07:32] Found Andromeda PASS-9 hardware
+[2016-10-19T08:07:32] RTMM update not needed.
+[2016-10-19T08:07:32] FPGA update supported? 1
+[2016-10-19T08:07:32] FPGA device support.
+[2016-10-19T08:07:33] FPGA update not needed.
+[2016-10-19T08:07:33] Checking if any CRTM transitions are needed.
+[2016-10-19T08:07:33] Both transitions already completed. (CCSI)
+[2016-10-19T08:07:33] SPITOC format ready
+[2016-10-19T08:07:33] Current CRTM is 3.3
+[2016-10-19T08:07:33] Stepping not required
+[2016-10-19T08:07:33] Checking if Primary UBoot needs updating.
+[2016-10-19T08:07:33] Primary UBoot already updated.
+[2016-10-19T08:07:33] Checking if Backup UBoot needs updating.
+[2016-10-19T08:07:33] Backup UBoot already updated.
+[2016-10-19T08:07:33] Platform [0050001A] doesn't support Snoopy hardware
+[2016-10-19T08:07:34] Phase1 lock latch : Lock RTMM/FPGA done.
+[2016-10-19T08:07:34] Activate baseline firewall.
+[2016-10-19T08:07:34] calling firetool --init-accesscontrol
+[2016-10-19T08:07:35] calling firetool  --init
+[2016-10-19T08:07:36] Activate baseline firewall done
+[2016-10-19T08:07:36] Removing old IP addresses from certs db.
+[2016-10-19T08:07:36] sifs: Begin simulated provisioning.
+[2016-10-19T08:07:38] Disabled policies: CMR : 
+[2016-10-19T08:07:38] Disabled policies: PROV: 
+[2016-10-19T08:07:38] Enabled policies :   200 205 210 215 220 230 240 245 710 715 720 730 735 740 745 755 760 765 775 780 785 790 795 800
+[2016-10-19T08:07:43] Enable multiple policy ..done
+[2016-10-19T08:07:43] Protocol Analysis wedge in place.
+[2016-10-19T08:07:43] Locking firewall policy configuration.
+[2016-10-19T08:07:43] FPGA update supported? 1
+[2016-10-19T08:07:44] Restore original boot partition on success (0x13)
+[2016-10-19T08:07:46]  -> Inside /etc/scripts/rfs.startup
+[2016-10-19T08:07:46] ==> Loading base drivers...
+[2016-10-19T08:07:47] ==> Base drivers loaded
+[2016-10-19T08:07:47]  -> Next boot partition is currently 0x13
+[2016-10-19T08:07:47]  -> Next boot partition changed to   0x12
+[2016-10-19T08:07:47]  -> Performing autoreboot
+[2016-10-19T08:07:49]  -> md5sum signature check passed in rfs.aess-bmc
+[2016-10-19T08:07:49]  -> Configuring high performance (sysinit)
+[2016-10-19T08:07:49]  -> Andromeda (sysinit)
+[2016-10-19T08:07:51] ==> Loading Mbox drivers...
+[2016-10-19T08:07:52]  -> Installed /dev/aess_mboxdrv driver - (Major 232)
+[2016-10-19T08:07:52]  -> System time using RTC
+[2016-10-19T08:07:52]  -> Inside /etc/scripts/rfs.startup , raid 1
+[2016-10-19T08:07:52]  -> Starting provisioning phase3 process monitor
+[2016-10-19T08:07:52]  -> Starting Watchdog/Lifeguard daemon
+[2016-10-19T08:07:52]  -> Inside /etc/scripts/rfs.emerson-temp
+[2016-10-19T08:07:52]  Sync Hwclock time to sys time
+[2016-10-19T08:07:53]  -> Running /etc/scripts/rfs.fod
+[2016-10-19T08:07:53] remove old FoD directory
+[2016-10-19T08:07:53]  -> Checking SPI flash
+[2016-10-19T08:07:53]  -> Checking backup uboot
+[2016-10-19T08:07:53]  -> Starting sshd-immsftp
+[2016-10-19T08:07:58]  -> sftp service prepared
+[2016-10-19T08:08:06]  -> sftp service started
+[2016-10-19T08:08:06]  -> Starting install OEM script
+[2016-10-19T08:08:07] No OEM PKG, Don't need update
+[2016-10-19T08:08:14]  -> Secure debug ports FAILED to open.
+[2016-10-19T08:08:18] ==> Exiting /etc/scripts/rfs.startup
+------ kernel log  -------------------------------------------------------------
+
+bio: create slab <bio-0> at 0
+SCSI subsystem initialized
+usbcore: registered new interface driver usbfs
+usbcore: registered new interface driver hub
+usbcore: registered new device driver usb
+DMA: Registering sh_dmac handler (24 channels).
+DMA: Registering DMA API.
+Switching to clocksource TMU1
+sh_tmu: TMU0 used for oneshot clock events
+NET: Registered protocol family 2
+IP route cache hash table entries: 2048 (order: 1, 8192 bytes)
+TCP established hash table entries: 8192 (order: 4, 65536 bytes)
+TCP bind hash table entries: 8192 (order: 3, 32768 bytes)
+TCP: Hash tables configured (established 8192 bind 8192)
+TCP reno registered
+NET: Registered protocol family 1
+RPC: Registered udp transport module.
+RPC: Registered tcp transport module.
+RPC: Registered tcp NFSv4.1 backchannel transport module.
+squashfs: version 4.0 (2009/01/31) Phillip Lougher
+NTFS driver 2.1.29 [Flags: R/O].
+msgmni has been set to 106
+alg: No test for cipher_null (cipher_null-generic)
+alg: No test for ecb(cipher_null) (ecb-cipher_null)
+alg: No test for digest_null (digest_null-generic)
+alg: No test for compress_null (compress_null-generic)
+alg: self-tests for sha1-generic (sha1) passed
+alg: self-tests for sha224-generic (sha224) passed
+alg: self-tests for sha256-generic (sha256) passed
+alg: self-tests for sha384-generic (sha384) passed
+alg: self-tests for sha512-generic (sha512) passed
+alg: self-tests for des-generic (des) passed
+alg: self-tests for des3_ede-generic (des3_ede) passed
+alg: self-tests for aes-generic (aes) passed
+alg: self-tests for deflate-generic (deflate) passed
+alg: No test for stdrng (krng)
+alg: self-tests for ansi_cprng (stdrng) passed
+alg: No test for fips(ansi_cprng) (fips_ansi_cprng)
+alg: self-tests for hmac(sha256-generic) (hmac(sha256)) passed
+alg: self-tests for drbg_pr_hmac_sha1 (stdrng) passed
+alg: self-tests for drbg_pr_hmac_sha384 (stdrng) passed
+alg: self-tests for drbg_pr_hmac_sha512 (stdrng) passed
+alg: self-tests for drbg_pr_hmac_sha256 (stdrng) passed
+alg: self-tests for drbg_nopr_hmac_sha1 (stdrng) passed
+alg: self-tests for drbg_nopr_hmac_sha384 (stdrng) passed
+alg: self-tests for drbg_nopr_hmac_sha512 (stdrng) passed
+alg: self-tests for drbg_nopr_hmac_sha256 (stdrng) passed
+alg: self-tests for ghash-generic (ghash) passed
+io scheduler noop registered
+io scheduler anticipatory registered
+io scheduler deadline registered
+io scheduler cfq registered (default)
+Generic RTC Driver v1.07
+SuperH SCI(F) driver initialized
+sh-sci: ttySC0 at MMIO 0xfe4b0000 (irq = 40) is a scif
+sh-sci: ttySC1 at MMIO 0xfe4c0000 (irq = 76) is a scif
+sh-sci: ttySC2 at MMIO 0xfe4d0000 (irq = 104) is a scif
+console [ttySC2] enabled
+loop: module loaded
+nbd: registered device at major 43
+Kernel Build: 2:immv2_19_sh4_mcp61:mcp:2016:01:14:234024:6:1:0:
+max3107 spi2.0: REVID 0 does not match
+sh_rspi: version 2010-04-12
+IMM2 SH7757 CX chip, sh_eth driver
+sh_mii: probed
+Base address at 0xfef00000, 00:E0:EC:30:60:E8, IRQ 84.
+IMM2 SH7757 CX chip, sh_eth driver
+sh_mii: probed
+Base address at 0xfee00800, 00:E0:EC:30:60:E9, IRQ 316.
+ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+ehci_hcd: block sizes: qh 60 qtd 96 itd 160 sitd 96
+sh_ehci sh_ehci: SuperH EHCI
+drivers/usb/core/inode.c: creating file 'devices'
+drivers/usb/core/inode.c: creating file '001'
+sh_ehci sh_ehci: new USB bus registered, assigned bus number 1
+sh_ehci sh_ehci: park 0
+sh_ehci sh_ehci: reset command 080b02 park=3 ithresh=8 period=1024 Reset HALT
+sh_ehci sh_ehci: ...powerup ports...
+sh_ehci sh_ehci: irq 57, io mem 0xfe4f1000
+sh_ehci sh_ehci: reset command 080b02 park=3 ithresh=8 period=1024 Reset HALT
+sh_ehci sh_ehci: init command 010009 (park)=0 ithresh=1 period=256 RUN
+sh_ehci sh_ehci: USB 2.0 started, EHCI 1.00
+usb usb1: default language 0x0409
+usb usb1: udev 1, busnum 1, minor = 0
+usb usb1: New USB device found, idVendor=1d6b, idProduct=0002
+usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+usb usb1: Product: SuperH EHCI
+usb usb1: Manufacturer: Linux 2.6.32.12-454-initramfs_signed ehci_hcd
+usb usb1: SerialNumber: ehci_hcd
+usb usb1: usb_probe_device
+usb usb1: configuration #1 chosen from 1 choice
+usb usb1: adding 1-0:1.0 (config #1, interface 0)
+hub 1-0:1.0: usb_probe_interface
+hub 1-0:1.0: usb_probe_interface - got id
+hub 1-0:1.0: USB hub found
+hub 1-0:1.0: 2 ports detected
+hub 1-0:1.0: standalone hub
+hub 1-0:1.0: individual port power switching
+hub 1-0:1.0: individual port over-current protection
+hub 1-0:1.0: power on to power good time: 20ms
+hub 1-0:1.0: local power source is good
+hub 1-0:1.0: enabling power on all ports
+drivers/usb/core/inode.c: creating file '001'
+ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+ohci_hcd: block sizes: ed 64 td 64
+sh_ohci sh_ohci: SuperH OHCI
+drivers/usb/core/inode.c: creating file '002'
+sh_ohci sh_ohci: new USB bus registered, assigned bus number 2
+sh_ohci sh_ohci: irq 57, io mem 0xfe4f1800
+sh_ohci sh_ohci: created debug files
+sh_ohci sh_ohci: OHCI controller state
+sh_ohci sh_ohci: OHCI 1.0, NO legacy support registers
+sh_ohci sh_ohci: control 0x083 HCFS=operational CBSR=3
+sh_ohci sh_ohci: cmdstatus 0x00000 SOC=0
+sh_ohci sh_ohci: intrstatus 0x00000004 SF
+sh_ohci sh_ohci: intrenable 0x8000001a MIE UE RD WDH
+sh_ohci sh_ohci: hcca frame #03f7
+sh_ohci sh_ohci: roothub.a ff000202 POTPGT=255 NPS NDP=2(2)
+sh_ohci sh_ohci: roothub.b 00000000 PPCM=0000 DR=0000
+sh_ohci sh_ohci: roothub.status 00008000 DRWE
+sh_ohci sh_ohci: roothub.portstatus [0] 0x00000100 PPS
+sh_ohci sh_ohci: roothub.portstatus [1] 0x00000100 PPS
+usb usb2: default language 0x0409
+usb usb2: udev 1, busnum 2, minor = 128
+usb usb2: New USB device found, idVendor=1d6b, idProduct=0001
+usb usb2: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+usb usb2: Product: SuperH OHCI
+usb usb2: Manufacturer: Linux 2.6.32.12-454-initramfs_signed ohci_hcd
+usb usb2: SerialNumber: ohci_hcd
+hub 1-0:1.0: state 7 ports 2 chg 0000 evt 0000
+usb usb2: usb_probe_device
+usb usb2: configuration #1 chosen from 1 choice
+usb usb2: adding 2-0:1.0 (config #1, interface 0)
+hub 2-0:1.0: usb_probe_interface
+hub 2-0:1.0: usb_probe_interface - got id
+hub 2-0:1.0: USB hub found
+hub 2-0:1.0: 2 ports detected
+hub 2-0:1.0: standalone hub
+hub 2-0:1.0: no power switching (usb 1.0)
+hub 2-0:1.0: global over-current protection
+hub 2-0:1.0: power on to power good time: 510ms
+hub 2-0:1.0: local power source is good
+hub 2-0:1.0: no over-current condition exists
+hub 2-0:1.0: trying to enable port power on non-switchable hub
+drivers/usb/core/inode.c: creating file '001'
+Initializing USB Mass Storage driver...
+usbcore: registered new interface driver usb-storage
+USB Mass Storage support registered.
+IRQ 34/sh_mmcif: IRQF_DISABLED is not guaranteed on shared IRQs
+sh_mmcif: driver version 2010-03-17
+sh_tmu: TMU0 kept as earlytimer
+sh_tmu: TMU1 kept as earlytimer
+cryptodev: driver 0.8 loaded.
+mknod /dev/aess_adcsensordrv c 252 0
+KN:init_aess_mem_module
+mknod /dev/aess_eventhandlerdrv c 251 0
+mknod /dev/aess_gpiodrv c 250 0
+mknod /dev/imm2_fpga0 c 249 0
+mknod /dev/aess_spi0drv c 248 0
+imm2_fpga0: checksum enforced
+imm2_fpga: found CHIP_ID=70, v2.39 within 0 ms
+   block[ 00 ]: 0000
+   block[ 01 ]: 0010
+   block[ 02 ]: 0020
+   block[ 03 ]: 0030
+   block[ 04 ]: 0040
+   block[ 06 ]: 0050
+   block[ 07 ]: 0060
+   block[ 08 ]: 0070
+   block[ 09 ]: 0080
+   block[ 11 ]: 0090
+   block[ 12 ]: 00A0
+   block[ 13 ]: 00B0
+   block[ 14 ]: 00C0
+   block[ 15 ]: 00D0
+   block[ 16 ]: 00E0
+   block[ 17 ]: 00F0
+   block[ 19 ]: 0100
+   block[ 23 ]: 0110
+   block[ 28 ]: 0120
+   block[ 29 ]: 0130
+   block[ 30 ]: 0140
+   block[ 31 ]: 0150
+remote_fpga: found FPGA_ID=00, CHIP_ID=5A
+   block[ 00 ]: 0000
+   block[ 01 ]: 0010
+   block[ 03 ]: 0020
+   block[ 04 ]: 0030
+   block[ 05 ]: 0040
+   block[ 06 ]: 0050
+   block[ 09 ]: 0060
+   block[ 12 ]: 0070
+   block[ 28 ]: 0080
+   block[ 29 ]: 0090
+   block[ 30 ]: 00A0
+   block[ 31 ]: 00B0
+remote_fpga: found FPGA_ID=01, CHIP_ID=5A
+   block[ 00 ]: 0200
+   block[ 01 ]: 0210
+   block[ 03 ]: 0220
+   block[ 04 ]: 0230
+   block[ 05 ]: 0240
+   block[ 06 ]: 0250
+   block[ 09 ]: 0260
+   block[ 12 ]: 0270
+   block[ 28 ]: 0280
+   block[ 29 ]: 0290
+   block[ 30 ]: 02A0
+   block[ 31 ]: 02B0
+remote_fpga: found FPGA_ID=02, CHIP_ID=5A
+   block[ 00 ]: 0400
+   block[ 01 ]: 0410
+   block[ 03 ]: 0420
+   block[ 04 ]: 0430
+   block[ 05 ]: 0440
+   block[ 06 ]: 0450
+   block[ 09 ]: 0460
+   block[ 12 ]: 0470
+   block[ 28 ]: 0480
+   block[ 29 ]: 0490
+   block[ 30 ]: 04A0
+   block[ 31 ]: 04B0
+remote_fpga: found FPGA_ID=03, CHIP_ID=5A
+   block[ 00 ]: 0600
+   block[ 01 ]: 0610
+   block[ 03 ]: 0620
+   block[ 04 ]: 0630
+   block[ 05 ]: 0640
+   block[ 06 ]: 0650
+   block[ 09 ]: 0660
+   block[ 12 ]: 0670
+   block[ 28 ]: 0680
+   block[ 29 ]: 0690
+   block[ 30 ]: 06A0
+   block[ 31 ]: 06B0
+mknod /dev/aess_kcsdrv c 247 0
+IRQ 69/kcsdrv_hwctrl: IRQF_DISABLED is not guaranteed on shared IRQs
+mknod /dev/aess_memdrv c 246 0
+mknod /dev/aess_sgpiodrv c 245 0
+mknod /dev/aess_spi1drv c 244 0
+mknod /dev/aess_spinorflashdrv0 c 243 0
+mknod /dev/aess_spinorflashdrv1 c 243 1
+aess_timerdrv_init
+mknod /dev/aess_timerdrv c 242 0
+TSIP HW Crypto accelerator: 
+ hwrng registration sucessed
+cbc(aes) ecb(aes) ecb(des3_ede) cbc(des3_ede) 
+alg: self-tests for sha1-tsip (sha1) passed
+sha1 
+alg: self-tests for sha256-tsip (sha256) passed
+mmc0: unrecognised EXT_CSD revision 7.. CONTINUING with caution
+Card type is 7
+sha256 
+alg: self-tests for sha1-hmac-tsip (hmac(sha1)) passed
+hmac(sha1) 
+mmc0: new high speed MMC card at address 0001
+alg: self-tests for sha256-hmac-tsip (hmac(sha256)) passed
+hmac(sha256) 
+
+mknod /dev/aess_twrdrv c 241 0
+IRQ 69/twrdrv: IRQF_DISABLED is not guaranteed on shared IRQs
+mknod /dev/aess_pbi_vdm c 240 0
+mmcblk0: mmc0:0001 004GE0 1.84 GiB 
+ mmcblk0: p1 p2 p3 p4
+sermux sermux: version 2010-05-26
+Netfilter messages via NETLINK v0.30.
+nf_conntrack version 0.5.0 (3396 buckets, 13584 max)
+ctnetlink v0.93: registering with nfnetlink.
+xt_time: kernel timezone is -0000
+IPv4 over IPv4 tunneling driver
+ip_tables: (C) 2000-2006 Netfilter Core Team
+TCP cubic registered
+Initializing XFRM netlink socket
+NET: Registered protocol family 10
+lo: Disabled Privacy Extensions
+tunl0: Disabled Privacy Extensions
+ip6_tables: (C) 2000-2006 Netfilter Core Team
+Netfilter:nf_conntrack_frag6_timeout and ip6frag_time, nf_conntrack_frag6_low_thresh and ip6frag_low_thresh, nf_conntrack_frag6_high_thresh and ip6frag_high_thresh, the three sets are equivalent. nf_conntrack_frag6_timeout is just an alias for ip6frag_time. The former parameters of IPv6 conntrack will be removed in February 2011, please use the latter ones of IPv6.
+IPv6 over IPv4 tunneling driver
+sit0: Disabled Privacy Extensions
+NET: Registered protocol family 17
+NET: Registered protocol family 15
+802.1Q VLAN Support v1.8 Ben Greear <greearb@candelatech.com>
+All bugs added by David S. Miller <davem@redhat.com>
+NET: Registered protocol family 27
+eth0 device registered
+eth1 device registered
+IRQ 69/aess_biospostdrv: IRQF_DISABLED is not guaranteed on shared IRQs
+mknod /dev/aess_biospostdrv c 239 0
+mknod /dev/aess_cryptodrv c 238 0
+mknod /dev/aess_dynairqdrv c 237 0
+IRQ 236/aess_dynairqdrv: IRQF_DISABLED is not guaranteed on shared IRQs
+mknod /dev/aess_fansensordrv_2 c 236 0
+mknod /dev/aess_i2cdrv c 235 0
+mknod /dev/aess_pwmdrv c 234 0
+WDT imm2_wdt_init: Line: 725 - imm2_wdt_init
+hub 2-0:1.0: state 7 ports 2 chg 0000 evt 0000
+WDT light kernel thread created , id=388
+wdt_khang_light_task
+imm2_wdt_start: index=0
+wd_cnt_write - wdtn_max[0] updated to 0x3c4a
+wd_cntew_write - wdte_max[0] updated to 0x3c56
+khang_light_task_hook
+The system reboot cause: 80.
+KHANG magic cleared, relocating printk buffer
+IRQ 273/dma_i2c1: IRQF_DISABLED is not guaranteed on shared IRQs
+wd_cntew_write - wdte_max[0] updated to 0x7557
+
+ tpm_imm_device_init(): tpm_register_hardware 
+tpm_i2c VID: 2FE1050 DID: 2FE RID: 02
+m41t83_2: dev (254:0)
+m41t83_2_rtc m41t83_2_rtc.0: rtc core: registered m41t83_2 as rtc0
+Freeing unused kernel memory: 1544k freed
+wd_cntew_write - wdte_max[0] updated to 0x7fcf
+wd_cntew_write - wdte_max[0] updated to 0x7fda
+wd_cntew_write - wdte_max[0] updated to 0x7fdb
+kjournald starting.  Commit interval 5 seconds
+EXT3 FS on mmcblk0p4, internal journal
+EXT3-fs: mounted filesystem with journal data mode.
+kjournald starting.  Commit interval 5 seconds
+EXT3 FS on mmcblk0p2, internal journal
+EXT3-fs: mounted filesystem with journal data mode.
+IRQ 272/dma_i2c0: IRQF_DISABLED is not guaranteed on shared IRQs
+wd_cntew_write - wdte_max[0] updated to 0x7fe6
+kjournald starting.  Commit interval 5 seconds
+EXT3-fs warning: maximal mount count reached, running e2fsck is recommended
+EXT3 FS on mmcblk0p4, internal journal
+EXT3-fs: mounted filesystem with journal data mode.
+wd_cntew_write - wdte_max[0] updated to 0x7ff7
+IRQ 282/dma_i2c7: IRQF_DISABLED is not guaranteed on shared IRQs
+IRQ 281/dma_i2c6: IRQF_DISABLED is not guaranteed on shared IRQs
+wd_cntew_write - wdte_max[0] updated to 0x807d
+IRQ 50/r8a66597_udc: IRQF_DISABLED is not guaranteed on shared IRQs
+r8a66597_udc r8a66597_udc.0: version 2012-12-18
+Now registering USB0/func0
+Gadget USB HUB, version: 20101014
+aess_video_init Avocent Video Driver installed
+allocate_video_buffer_reserve_mem- video_buffer_phys (reserved mem): 4e000000 video_buffer_size: 0x00EAE000
+hid_init: Desc: Keyboard/Mouse Function
+hid_init: Name: g_kbdmouse
+hid_init: Version: 20111018
+Now registering USB0/func1
+hid_bind: Using Major Number 230
+hid_bind: using r8a66597_udc, Keyboard ep1 Mouse ep2
+hid_bind: Mouse REL ep3
+g_mass_storage: msd_init() Desc: Mass Storage Function
+g_mass_storage: msd_init() Name: g_mass_storage
+g_mass_storage: msd_init() Version: 20120124
+Now registering USB0/func2
+g_mass_storage: msd_bind() Using Major Number 229
+g_mass_storage1: msd_init() Desc: Mass Storage Function
+g_mass_storage1: msd_init() Name: g_mass_storage1
+g_mass_storage1: msd_init() Version: 20120124-1
+Now registering USB0/func3
+g_mass_storage1: msd_bind() Using Major Number 228
+g_mass_storage2: msd_init() Desc: Mass Storage Function
+g_mass_storage2: msd_init() Name: g_mass_storage2
+g_mass_storage2: msd_init() Version: 20120124-2
+Now registering USB0/func4
+g_mass_storage2: msd_bind() Using Major Number 227
+IRQ 84/eth0: IRQF_DISABLED is not guaranteed on shared IRQs
+imm2_wdt_open: User Hang WDT opened
+imm2_wdt_start: index=1
+wd_cnt_write - wdtn_max[1] updated to 0x01
+wd_cntew_write - wdte_max[1] updated to 0x01
+imm2_wdt_ioctl: WDIOC_SETTIMEOUT
+	 Userspace timeout set to 60 secs
+wd_cntew_write - wdte_max[1] updated to 0xe4e
+wd_cnt_write - wdtn_max[1] updated to 0x55ea
+wd_cntew_write - wdte_max[1] updated to 0xe68
+wd_cnt_write - wdtn_max[1] updated to 0x573f
+wd_cntew_write - wdte_max[1] updated to 0xfbd
+wd_cnt_write - wdtn_max[1] updated to 0x5740
+wd_cntew_write - wdte_max[1] updated to 0xfbe
+wd_cnt_write - wdtn_max[1] updated to 0x5754
+wd_cntew_write - wdte_max[1] updated to 0xfd2
+kjournald starting.  Commit interval 15 seconds
+EXT3-fs: mounted filesystem with writeback data mode.
+aess_spi1_switch_PSC_2()::can't switch to PSC!CR8/CR12 value is 0x40
+aess_spi_io - errcode = 1
+imm2_wdt_open: Kernel Hang WDT opened
+WDT imm2_wdt_release: Line: 571 - WARN: WDT0 refcnt is 0
+WDT imm2_wdt_release: Line: 576 - WARN: You can only release Userspace WDT
+------ end of init -------------------------------------------------------------
+[2000-01-01T00:00:05]  -> Running /etc/scripts/ifs.mmc
+[2000-01-01T00:00:05]  -> Creating RTC device nodes
+[2016-10-19T08:33:33]  -> Creating MMC device nodes
+[2016-10-19T08:33:33]  -> Creating initfs mount points
+[2016-10-19T08:33:33]  -> Repairing partitions
+e2fsck 1.41.9 (22-Aug-2009)
+/dev/mmcblk0p2: recovering journal
+/dev/mmcblk0p2 has been mounted 1 times without being checked, check forced.
+Pass 1: Checking inodes, blocks, and sizes
+Pass 2: Checking directory structure
+Pass 3: Checking directory connectivity
+Pass 4: Checking reference counts
+Pass 5: Checking group summary information
+
+/dev/mmcblk0p2: ***** FILE SYSTEM WAS MODIFIED *****
+/dev/mmcblk0p2: 7278/65536 files (9.3% non-contiguous), 101361/131072 blocks
+e2fsck 1.41.9 (22-Aug-2009)
+/dev/mmcblk0p4: recovering journal
+/dev/mmcblk0p4 has been mounted 2 times without being checked, check forced.
+Pass 1: Checking inodes, blocks, and sizes
+Pass 2: Checking directory structure
+Pass 3: Checking directory connectivity
+Pass 4: Checking reference counts
+Pass 5: Checking group summary information
+/dev/mmcblk0p4: 83/61440 files (8.4% non-contiguous), 239658/491520 blocks
+[2016-10-19T08:33:39]  -> 2G layout is converted
+[2016-10-19T08:33:39]  -> Attempting to mount /rootfs to /dev/mmcblk0p2
+[2016-10-19T08:33:39]  -> Creating rootfs mount points
+[2016-10-19T08:33:39]  -> Performing security operations.
+[2016-10-19T08:33:41]  -> SecureBoot found..
+[2016-10-19T08:33:41]  -> FW Ext3 found..
+[2016-10-19T08:33:41]  -> securefs mounted - running init
+[2016-10-19T08:33:41] Security mode: NORMAL
+[2016-10-19T08:33:41] Reset reason: bp=0 eph=0 rs=0001 rs2=00
+[2016-10-19T08:33:41] Boot partition: 2
+[2016-10-19T08:33:41] Stay in current boot partition on failure (1)
+[2016-10-19T08:33:41] Tuning kernel security values.
+[2016-10-19T08:33:41]  > Done
+[2016-10-19T08:33:41] Enabling hardware entropy collection.
+[2016-10-19T08:33:42]  -> Inside sfs/init/set_twr_revision
+[2016-10-19T08:33:42] Enabling firewall watchdog + daemon.
+[2016-10-19T08:33:43] Trusted image buildid TCOO10P
+[2016-10-19T08:33:43] Trusted image buildversion 1.80
+[2016-10-19T08:33:44] Begin to verify rtfs md5
+[2016-10-19T08:33:45] Finish rtfs md5, checked 2 files, skip 0 files
+[2016-10-19T08:33:45] rtfs check finished
+[2016-10-19T08:33:45] FPGA update supported? 1
+[2016-10-19T08:33:45] RTMM device supported.
+[2016-10-19T08:33:45] Found Andromeda PASS-9 hardware
+[2016-10-19T08:33:47] RTMM update not needed.
+[2016-10-19T08:33:47] FPGA update supported? 1
+[2016-10-19T08:33:47] FPGA device support.
+[2016-10-19T08:33:47] FPGA update not needed.
+[2016-10-19T08:33:47] Checking if any CRTM transitions are needed.
+[2016-10-19T08:33:48] Both transitions already completed. (CCSI)
+[2016-10-19T08:33:48] SPITOC format ready
+[2016-10-19T08:33:48] Current CRTM is 3.3
+[2016-10-19T08:33:48] Stepping not required
+[2016-10-19T08:33:48] Checking if Primary UBoot needs updating.
+[2016-10-19T08:33:48] Primary UBoot already updated.
+[2016-10-19T08:33:48] Checking if Backup UBoot needs updating.
+[2016-10-19T08:33:48] Backup UBoot already updated.
+[2016-10-19T08:33:48] Platform [0050001A] doesn't support Snoopy hardware
+[2016-10-19T08:33:48] Phase1 lock latch : Lock RTMM/FPGA done.
+[2016-10-19T08:33:48] Activate baseline firewall.
+[2016-10-19T08:33:48] calling firetool --init-accesscontrol
+[2016-10-19T08:33:49] calling firetool  --init
+[2016-10-19T08:33:51] Activate baseline firewall done
+[2016-10-19T08:33:51] Removing old IP addresses from certs db.
+[2016-10-19T08:33:51] sifs: Begin simulated provisioning.
+[2016-10-19T08:33:52] Disabled policies: CMR : 
+[2016-10-19T08:33:53] Disabled policies: PROV: 
+[2016-10-19T08:33:53] Enabled policies :   200 205 210 215 220 230 240 245 710 715 720 730 735 740 745 755 760 765 775 780 785 790 795 800
+[2016-10-19T08:33:58] Enable multiple policy ..done
+[2016-10-19T08:33:58] Protocol Analysis wedge in place.
+[2016-10-19T08:33:58] Locking firewall policy configuration.
+[2016-10-19T08:33:58] FPGA update supported? 1
+[2016-10-19T08:33:58] Restore original boot partition on success (0x13)
+[2016-10-19T08:34:00]  -> Inside /etc/scripts/rfs.devnodes, Create node again
+[2016-10-19T08:34:03]  -> Inside /etc/scripts/rfs.startup
+[2016-10-19T08:34:03] ==> Loading base drivers...
+[2016-10-19T08:34:03] ==> Base drivers loaded
+[2016-10-19T08:34:04]  -> Next boot partition is currently 0x13
+[2016-10-19T08:34:04]  -> Next boot partition changed to   0x12
+[2016-10-19T08:34:04]  -> Performing autoreboot
+[2016-10-19T08:34:06]  -> md5sum signature check passed in rfs.aess-bmc
+[2016-10-19T08:34:06]  -> Configuring high performance (sysinit)
+[2016-10-19T08:34:06]  -> Andromeda (sysinit)
+[2016-10-19T08:34:09] ==> Loading Mbox drivers...
+[2016-10-19T08:34:09]  -> Installed /dev/aess_mboxdrv driver - (Major 232)
+[2016-10-19T08:34:09]  -> System time using RTC
+[2016-10-19T08:34:09]  -> Inside /etc/scripts/rfs.startup , raid 1
+[2016-10-19T08:34:09]  -> Starting provisioning phase3 process monitor
+[2016-10-19T08:34:09]  -> Starting Watchdog/Lifeguard daemon
+[2016-10-19T08:34:09]  -> Inside /etc/scripts/rfs.emerson-temp
+[2016-10-19T08:34:09]  Sync Hwclock time to sys time
+[2016-10-19T08:34:11]  -> Running /etc/scripts/rfs.fod
+[2016-10-19T08:34:11] remove old FoD directory
+[2016-10-19T08:34:11]  -> Checking SPI flash
+[2016-10-19T08:34:12]  -> Checking backup uboot
+[2016-10-19T08:34:12]  -> Starting sshd-immsftp
+[2016-10-19T08:34:17]  -> sftp service prepared
+[2016-10-19T08:34:24]  -> sftp service started
+[2016-10-19T08:34:24]  -> Starting install OEM script
+[2016-10-19T08:34:25] No OEM PKG, Don't need update
+[2016-10-19T08:34:31]  -> Secure debug ports FAILED to open.
+[2016-10-19T08:34:35] ==> Exiting /etc/scripts/rfs.startup
+------ kernel log  -------------------------------------------------------------
+s: 512
+CPU: SH7757
+NET: Registered protocol family 16
+sh pinmux: sh7757_pfc handling gpio 0 -> 504
+IMM2 SH7757 xx chip
+IMM2 SH7757 C2/C3/C4 chip
+enable PCIe shared memory area for imm2
+bio: create slab <bio-0> at 0
+SCSI subsystem initialized
+usbcore: registered new interface driver usbfs
+usbcore: registered new interface driver hub
+usbcore: registered new device driver usb
+DMA: Registering sh_dmac handler (24 channels).
+DMA: Registering DMA API.
+Switching to clocksource TMU1
+sh_tmu: TMU0 used for oneshot clock events
+NET: Registered protocol family 2
+IP route cache hash table entries: 2048 (order: 1, 8192 bytes)
+TCP established hash table entries: 8192 (order: 4, 65536 bytes)
+TCP bind hash table entries: 8192 (order: 3, 32768 bytes)
+TCP: Hash tables configured (established 8192 bind 8192)
+TCP reno registered
+NET: Registered protocol family 1
+RPC: Registered udp transport module.
+RPC: Registered tcp transport module.
+RPC: Registered tcp NFSv4.1 backchannel transport module.
+squashfs: version 4.0 (2009/01/31) Phillip Lougher
+NTFS driver 2.1.29 [Flags: R/O].
+msgmni has been set to 106
+alg: No test for cipher_null (cipher_null-generic)
+alg: No test for ecb(cipher_null) (ecb-cipher_null)
+alg: No test for digest_null (digest_null-generic)
+alg: No test for compress_null (compress_null-generic)
+alg: self-tests for sha1-generic (sha1) passed
+alg: self-tests for sha224-generic (sha224) passed
+alg: self-tests for sha256-generic (sha256) passed
+alg: self-tests for sha384-generic (sha384) passed
+alg: self-tests for sha512-generic (sha512) passed
+alg: self-tests for des-generic (des) passed
+alg: self-tests for des3_ede-generic (des3_ede) passed
+alg: self-tests for aes-generic (aes) passed
+alg: self-tests for deflate-generic (deflate) passed
+alg: No test for stdrng (krng)
+alg: self-tests for ansi_cprng (stdrng) passed
+alg: No test for fips(ansi_cprng) (fips_ansi_cprng)
+alg: self-tests for hmac(sha256-generic) (hmac(sha256)) passed
+alg: self-tests for drbg_pr_hmac_sha1 (stdrng) passed
+alg: self-tests for drbg_pr_hmac_sha384 (stdrng) passed
+alg: self-tests for drbg_pr_hmac_sha512 (stdrng) passed
+alg: self-tests for drbg_pr_hmac_sha256 (stdrng) passed
+alg: self-tests for drbg_nopr_hmac_sha1 (stdrng) passed
+alg: self-tests for drbg_nopr_hmac_sha384 (stdrng) passed
+alg: self-tests for drbg_nopr_hmac_sha512 (stdrng) passed
+alg: self-tests for drbg_nopr_hmac_sha256 (stdrng) passed
+alg: self-tests for ghash-generic (ghash) passed
+io scheduler noop registered
+io scheduler anticipatory registered
+io scheduler deadline registered
+io scheduler cfq registered (default)
+Generic RTC Driver v1.07
+SuperH SCI(F) driver initialized
+sh-sci: ttySC0 at MMIO 0xfe4b0000 (irq = 40) is a scif
+sh-sci: ttySC1 at MMIO 0xfe4c0000 (irq = 76) is a scif
+sh-sci: ttySC2 at MMIO 0xfe4d0000 (irq = 104) is a scif
+console [ttySC2] enabled
+loop: module loaded
+nbd: registered device at major 43
+Kernel Build: 2:immv2_19_sh4_mcp61:mcp:2016:01:14:234024:6:1:0:
+max3107 spi2.0: REVID 0 does not match
+sh_rspi: version 2010-04-12
+IMM2 SH7757 CX chip, sh_eth driver
+sh_mii: probed
+Base address at 0xfef00000, 00:E0:EC:30:60:E8, IRQ 84.
+IMM2 SH7757 CX chip, sh_eth driver
+sh_mii: probed
+Base address at 0xfee00800, 00:E0:EC:30:60:E9, IRQ 316.
+ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+ehci_hcd: block sizes: qh 60 qtd 96 itd 160 sitd 96
+sh_ehci sh_ehci: SuperH EHCI
+drivers/usb/core/inode.c: creating file 'devices'
+drivers/usb/core/inode.c: creating file '001'
+sh_ehci sh_ehci: new USB bus registered, assigned bus number 1
+sh_ehci sh_ehci: park 0
+sh_ehci sh_ehci: reset command 080b02 park=3 ithresh=8 period=1024 Reset HALT
+sh_ehci sh_ehci: ...powerup ports...
+sh_ehci sh_ehci: irq 57, io mem 0xfe4f1000
+sh_ehci sh_ehci: reset command 080b02 park=3 ithresh=8 period=1024 Reset HALT
+sh_ehci sh_ehci: init command 010009 (park)=0 ithresh=1 period=256 RUN
+sh_ehci sh_ehci: USB 2.0 started, EHCI 1.00
+usb usb1: default language 0x0409
+usb usb1: udev 1, busnum 1, minor = 0
+usb usb1: New USB device found, idVendor=1d6b, idProduct=0002
+usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+usb usb1: Product: SuperH EHCI
+usb usb1: Manufacturer: Linux 2.6.32.12-454-initramfs_signed ehci_hcd
+usb usb1: SerialNumber: ehci_hcd
+usb usb1: usb_probe_device
+usb usb1: configuration #1 chosen from 1 choice
+usb usb1: adding 1-0:1.0 (config #1, interface 0)
+hub 1-0:1.0: usb_probe_interface
+hub 1-0:1.0: usb_probe_interface - got id
+hub 1-0:1.0: USB hub found
+hub 1-0:1.0: 2 ports detected
+hub 1-0:1.0: standalone hub
+hub 1-0:1.0: individual port power switching
+hub 1-0:1.0: individual port over-current protection
+hub 1-0:1.0: power on to power good time: 20ms
+hub 1-0:1.0: local power source is good
+hub 1-0:1.0: enabling power on all ports
+drivers/usb/core/inode.c: creating file '001'
+ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+ohci_hcd: block sizes: ed 64 td 64
+sh_ohci sh_ohci: SuperH OHCI
+drivers/usb/core/inode.c: creating file '002'
+sh_ohci sh_ohci: new USB bus registered, assigned bus number 2
+sh_ohci sh_ohci: irq 57, io mem 0xfe4f1800
+sh_ohci sh_ohci: created debug files
+sh_ohci sh_ohci: OHCI controller state
+sh_ohci sh_ohci: OHCI 1.0, NO legacy support registers
+sh_ohci sh_ohci: control 0x083 HCFS=operational CBSR=3
+sh_ohci sh_ohci: cmdstatus 0x00000 SOC=0
+sh_ohci sh_ohci: intrstatus 0x00000004 SF
+sh_ohci sh_ohci: intrenable 0x8000001a MIE UE RD WDH
+sh_ohci sh_ohci: hcca frame #03f7
+sh_ohci sh_ohci: roothub.a ff000202 POTPGT=255 NPS NDP=2(2)
+sh_ohci sh_ohci: roothub.b 00000000 PPCM=0000 DR=0000
+sh_ohci sh_ohci: roothub.status 00008000 DRWE
+sh_ohci sh_ohci: roothub.portstatus [0] 0x00000100 PPS
+sh_ohci sh_ohci: roothub.portstatus [1] 0x00000100 PPS
+usb usb2: default language 0x0409
+usb usb2: udev 1, busnum 2, minor = 128
+usb usb2: New USB device found, idVendor=1d6b, idProduct=0001
+usb usb2: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+usb usb2: Product: SuperH OHCI
+usb usb2: Manufacturer: Linux 2.6.32.12-454-initramfs_signed ohci_hcd
+usb usb2: SerialNumber: ohci_hcd
+hub 1-0:1.0: state 7 ports 2 chg 0000 evt 0000
+usb usb2: usb_probe_device
+usb usb2: configuration #1 chosen from 1 choice
+usb usb2: adding 2-0:1.0 (config #1, interface 0)
+hub 2-0:1.0: usb_probe_interface
+hub 2-0:1.0: usb_probe_interface - got id
+hub 2-0:1.0: USB hub found
+hub 2-0:1.0: 2 ports detected
+hub 2-0:1.0: standalone hub
+hub 2-0:1.0: no power switching (usb 1.0)
+hub 2-0:1.0: global over-current protection
+hub 2-0:1.0: power on to power good time: 510ms
+hub 2-0:1.0: local power source is good
+hub 2-0:1.0: no over-current condition exists
+hub 2-0:1.0: trying to enable port power on non-switchable hub
+drivers/usb/core/inode.c: creating file '001'
+Initializing USB Mass Storage driver...
+usbcore: registered new interface driver usb-storage
+USB Mass Storage support registered.
+IRQ 34/sh_mmcif: IRQF_DISABLED is not guaranteed on shared IRQs
+sh_mmcif: driver version 2010-03-17
+sh_tmu: TMU0 kept as earlytimer
+sh_tmu: TMU1 kept as earlytimer
+cryptodev: driver 0.8 loaded.
+mknod /dev/aess_adcsensordrv c 252 0
+KN:init_aess_mem_module
+mknod /dev/aess_eventhandlerdrv c 251 0
+mknod /dev/aess_gpiodrv c 250 0
+mknod /dev/imm2_fpga0 c 249 0
+mknod /dev/aess_spi0drv c 248 0
+imm2_fpga0: checksum enforced
+imm2_fpga: found CHIP_ID=70, v2.39 within 0 ms
+   block[ 00 ]: 0000
+   block[ 01 ]: 0010
+   block[ 02 ]: 0020
+   block[ 03 ]: 0030
+   block[ 04 ]: 0040
+   block[ 06 ]: 0050
+   block[ 07 ]: 0060
+   block[ 08 ]: 0070
+   block[ 09 ]: 0080
+   block[ 11 ]: 0090
+   block[ 12 ]: 00A0
+   block[ 13 ]: 00B0
+   block[ 14 ]: 00C0
+   block[ 15 ]: 00D0
+   block[ 16 ]: 00E0
+   block[ 17 ]: 00F0
+   block[ 19 ]: 0100
+   block[ 23 ]: 0110
+   block[ 28 ]: 0120
+   block[ 29 ]: 0130
+   block[ 30 ]: 0140
+   block[ 31 ]: 0150
+remote_fpga: found FPGA_ID=00, CHIP_ID=5A
+   block[ 00 ]: 0000
+   block[ 01 ]: 0010
+   block[ 03 ]: 0020
+   block[ 04 ]: 0030
+   block[ 05 ]: 0040
+   block[ 06 ]: 0050
+   block[ 09 ]: 0060
+   block[ 12 ]: 0070
+   block[ 28 ]: 0080
+   block[ 29 ]: 0090
+   block[ 30 ]: 00A0
+   block[ 31 ]: 00B0
+remote_fpga: found FPGA_ID=01, CHIP_ID=5A
+   block[ 00 ]: 0200
+   block[ 01 ]: 0210
+   block[ 03 ]: 0220
+   block[ 04 ]: 0230
+   block[ 05 ]: 0240
+   block[ 06 ]: 0250
+   block[ 09 ]: 0260
+   block[ 12 ]: 0270
+   block[ 28 ]: 0280
+   block[ 29 ]: 0290
+   block[ 30 ]: 02A0
+   block[ 31 ]: 02B0
+remote_fpga: found FPGA_ID=02, CHIP_ID=5A
+   block[ 00 ]: 0400
+   block[ 01 ]: 0410
+   block[ 03 ]: 0420
+   block[ 04 ]: 0430
+   block[ 05 ]: 0440
+   block[ 06 ]: 0450
+   block[ 09 ]: 0460
+   block[ 12 ]: 0470
+   block[ 28 ]: 0480
+   block[ 29 ]: 0490
+   block[ 30 ]: 04A0
+   block[ 31 ]: 04B0
+remote_fpga: found FPGA_ID=03, CHIP_ID=5A
+   block[ 00 ]: 0600
+   block[ 01 ]: 0610
+   block[ 03 ]: 0620
+   block[ 04 ]: 0630
+   block[ 05 ]: 0640
+   block[ 06 ]: 0650
+   block[ 09 ]: 0660
+   block[ 12 ]: 0670
+   block[ 28 ]: 0680
+   block[ 29 ]: 0690
+   block[ 30 ]: 06A0
+   block[ 31 ]: 06B0
+mknod /dev/aess_kcsdrv c 247 0
+IRQ 69/kcsdrv_hwctrl: IRQF_DISABLED is not guaranteed on shared IRQs
+mknod /dev/aess_memdrv c 246 0
+mknod /dev/aess_sgpiodrv c 245 0
+mknod /dev/aess_spi1drv c 244 0
+mknod /dev/aess_spinorflashdrv0 c 243 0
+mknod /dev/aess_spinorflashdrv1 c 243 1
+aess_timerdrv_init
+mknod /dev/aess_timerdrv c 242 0
+TSIP HW Crypto accelerator: 
+ hwrng registration sucessed
+cbc(aes) ecb(aes) ecb(des3_ede) cbc(des3_ede) 
+alg: self-tests for sha1-tsip (sha1) passed
+sha1 
+alg: self-tests for sha256-tsip (sha256) passed
+mmc0: unrecognised EXT_CSD revision 7.. CONTINUING with caution
+Card type is 7
+sha256 
+alg: self-tests for sha1-hmac-tsip (hmac(sha1)) passed
+hmac(sha1) 
+mmc0: new high speed MMC card at address 0001
+alg: self-tests for sha256-hmac-tsip (hmac(sha256)) passed
+hmac(sha256) 
+
+mknod /dev/aess_twrdrv c 241 0
+IRQ 69/twrdrv: IRQF_DISABLED is not guaranteed on shared IRQs
+mknod /dev/aess_pbi_vdm c 240 0
+mmcblk0: mmc0:0001 004GE0 1.84 GiB 
+ mmcblk0: p1 p2 p3 p4
+sermux sermux: version 2010-05-26
+Netfilter messages via NETLINK v0.30.
+nf_conntrack version 0.5.0 (3396 buckets, 13584 max)
+ctnetlink v0.93: registering with nfnetlink.
+xt_time: kernel timezone is -0000
+IPv4 over IPv4 tunneling driver
+ip_tables: (C) 2000-2006 Netfilter Core Team
+TCP cubic registered
+Initializing XFRM netlink socket
+NET: Registered protocol family 10
+lo: Disabled Privacy Extensions
+tunl0: Disabled Privacy Extensions
+ip6_tables: (C) 2000-2006 Netfilter Core Team
+Netfilter:nf_conntrack_frag6_timeout and ip6frag_time, nf_conntrack_frag6_low_thresh and ip6frag_low_thresh, nf_conntrack_frag6_high_thresh and ip6frag_high_thresh, the three sets are equivalent. nf_conntrack_frag6_timeout is just an alias for ip6frag_time. The former parameters of IPv6 conntrack will be removed in February 2011, please use the latter ones of IPv6.
+IPv6 over IPv4 tunneling driver
+sit0: Disabled Privacy Extensions
+NET: Registered protocol family 17
+NET: Registered protocol family 15
+802.1Q VLAN Support v1.8 Ben Greear <greearb@candelatech.com>
+All bugs added by David S. Miller <davem@redhat.com>
+NET: Registered protocol family 27
+eth0 device registered
+eth1 device registered
+IRQ 69/aess_biospostdrv: IRQF_DISABLED is not guaranteed on shared IRQs
+mknod /dev/aess_biospostdrv c 239 0
+mknod /dev/aess_cryptodrv c 238 0
+mknod /dev/aess_dynairqdrv c 237 0
+IRQ 236/aess_dynairqdrv: IRQF_DISABLED is not guaranteed on shared IRQs
+mknod /dev/aess_fansensordrv_2 c 236 0
+mknod /dev/aess_i2cdrv c 235 0
+mknod /dev/aess_pwmdrv c 234 0
+WDT imm2_wdt_init: Line: 725 - imm2_wdt_init
+WDT light kernel thread created , id=375
+hub 2-0:1.0: state 7 ports 2 chg 0000 evt 0000
+IRQ 273/dma_i2c1: IRQF_DISABLED is not guaranteed on shared IRQs
+wdt_khang_light_task
+imm2_wdt_start: index=0
+wd_cnt_write - wdtn_max[0] updated to 0x3ce4
+wd_cntew_write - wdte_max[0] updated to 0x3cf0
+khang_light_task_hook
+The system reboot cause: 1.
+KHANG magic cleared, relocating printk buffer
+wd_cntew_write - wdte_max[0] updated to 0x7478
+
+ tpm_imm_device_init(): tpm_register_hardware 
+tpm_i2c VID: 2FE1050 DID: 2FE RID: 02
+m41t83_2: dev (254:0)
+m41t83_2_rtc m41t83_2_rtc.0: rtc core: registered m41t83_2 as rtc0
+Freeing unused kernel memory: 1544k freed
+wd_cntew_write - wdte_max[0] updated to 0x7fd1
+wd_cntew_write - wdte_max[0] updated to 0x7fe1
+wd_cntew_write - wdte_max[0] updated to 0x7ff8
+kjournald starting.  Commit interval 5 seconds
+EXT3 FS on mmcblk0p4, internal journal
+EXT3-fs: mounted filesystem with journal data mode.
+kjournald starting.  Commit interval 5 seconds
+EXT3 FS on mmcblk0p2, internal journal
+EXT3-fs: mounted filesystem with journal data mode.
+IRQ 272/dma_i2c0: IRQF_DISABLED is not guaranteed on shared IRQs
+wd_cntew_write - wdte_max[0] updated to 0x7ff9
+kjournald starting.  Commit interval 5 seconds
+EXT3-fs warning: maximal mount count reached, running e2fsck is recommended
+EXT3 FS on mmcblk0p4, internal journal
+EXT3-fs: mounted filesystem with journal data mode.
+IRQ 282/dma_i2c7: IRQF_DISABLED is not guaranteed on shared IRQs
+IRQ 281/dma_i2c6: IRQF_DISABLED is not guaranteed on shared IRQs
+IRQ 50/r8a66597_udc: IRQF_DISABLED is not guaranteed on shared IRQs
+r8a66597_udc r8a66597_udc.0: version 2012-12-18
+Now registering USB0/func0
+Gadget USB HUB, version: 20101014
+aess_video_init Avocent Video Driver installed
+allocate_video_buffer_reserve_mem- video_buffer_phys (reserved mem): 4e000000 video_buffer_size: 0x00EAE000
+hid_init: Desc: Keyboard/Mouse Function
+hid_init: Name: g_kbdmouse
+hid_init: Version: 20111018
+Now registering USB0/func1
+hid_bind: Using Major Number 230
+hid_bind: using r8a66597_udc, Keyboard ep1 Mouse ep2
+hid_bind: Mouse REL ep3
+g_mass_storage: msd_init() Desc: Mass Storage Function
+g_mass_storage: msd_init() Name: g_mass_storage
+g_mass_storage: msd_init() Version: 20120124
+Now registering USB0/func2
+g_mass_storage: msd_bind() Using Major Number 229
+g_mass_storage1: msd_init() Desc: Mass Storage Function
+g_mass_storage1: msd_init() Name: g_mass_storage1
+g_mass_storage1: msd_init() Version: 20120124-1
+Now registering USB0/func3
+g_mass_storage1: msd_bind() Using Major Number 228
+g_mass_storage2: msd_init() Desc: Mass Storage Function
+g_mass_storage2: msd_init() Name: g_mass_storage2
+g_mass_storage2: msd_init() Version: 20120124-2
+Now registering USB0/func4
+g_mass_storage2: msd_bind() Using Major Number 227
+IRQ 84/eth0: IRQF_DISABLED is not guaranteed on shared IRQs
+imm2_wdt_open: User Hang WDT opened
+imm2_wdt_start: index=1
+wd_cnt_write - wdtn_max[1] updated to 0x01
+wd_cntew_write - wdte_max[1] updated to 0x01
+imm2_wdt_ioctl: WDIOC_SETTIMEOUT
+	 Userspace timeout set to 60 secs
+wd_cntew_write - wdte_max[1] updated to 0xe4e
+wd_cnt_write - wdtn_max[1] updated to 0x55e7
+wd_cntew_write - wdte_max[1] updated to 0xe65
+wd_cnt_write - wdtn_max[1] updated to 0x5740
+wd_cntew_write - wdte_max[1] updated to 0xfbe
+wd_cnt_write - wdtn_max[1] updated to 0x5741
+wd_cntew_write - wdte_max[1] updated to 0xfbf
+kjournald starting.  Commit interval 15 seconds
+EXT3-fs: mounted filesystem with writeback data mode.
+wd_cnt_write - wdtn_max[1] updated to 0x574c
+wd_cntew_write - wdte_max[1] updated to 0xfca
+imm2_wdt_open: Kernel Hang WDT opened
+WDT imm2_wdt_release: Line: 571 - WARN: WDT0 refcnt is 0
+WDT imm2_wdt_release: Line: 576 - WARN: You can only release Userspace WDT
+------ end of init -------------------------------------------------------------
+[2000-01-01T00:00:05]  -> Running /etc/scripts/ifs.mmc
+[2000-01-01T00:00:05]  -> Creating RTC device nodes
+[2016-10-19T08:40:55]  -> Creating MMC device nodes
+[2016-10-19T08:40:55]  -> Creating initfs mount points
+[2016-10-19T08:40:55]  -> Repairing partitions
+e2fsck 1.41.9 (22-Aug-2009)
+/dev/mmcblk0p2: recovering journal
+/dev/mmcblk0p2 has been mounted 1 times without being checked, check forced.
+Pass 1: Checking inodes, blocks, and sizes
+Pass 2: Checking directory structure
+Pass 3: Checking directory connectivity
+Pass 4: Checking reference counts
+Pass 5: Checking group summary information
+
+/dev/mmcblk0p2: ***** FILE SYSTEM WAS MODIFIED *****
+/dev/mmcblk0p2: 7279/65536 files (9.4% non-contiguous), 101386/131072 blocks
+e2fsck 1.41.9 (22-Aug-2009)
+/dev/mmcblk0p4: recovering journal
+/dev/mmcblk0p4 has been mounted 2 times without being checked, check forced.
+Pass 1: Checking inodes, blocks, and sizes
+Pass 2: Checking directory structure
+Pass 3: Checking directory connectivity
+Pass 4: Checking reference counts
+Pass 5: Checking group summary information
+
+/dev/mmcblk0p4: ***** FILE SYSTEM WAS MODIFIED *****
+/dev/mmcblk0p4: 82/61440 files (8.5% non-contiguous), 239659/491520 blocks
+[2016-10-19T08:41:01]  -> 2G layout is converted
+[2016-10-19T08:41:01]  -> Attempting to mount /rootfs to /dev/mmcblk0p2
+[2016-10-19T08:41:01]  -> Creating rootfs mount points
+[2016-10-19T08:41:01]  -> Performing security operations.
+[2016-10-19T08:41:03]  -> SecureBoot found..
+[2016-10-19T08:41:03]  -> FW Ext3 found..
+[2016-10-19T08:41:03]  -> securefs mounted - running init
+[2016-10-19T08:41:04] Security mode: NORMAL
+[2016-10-19T08:41:04] Reset reason: bp=0 eph=0 rs=0001 rs2=00
+[2016-10-19T08:41:04] Boot partition: 2
+[2016-10-19T08:41:04] Stay in current boot partition on failure (1)
+[2016-10-19T08:41:04] Tuning kernel security values.
+[2016-10-19T08:41:04]  > Done
+[2016-10-19T08:41:04] Enabling hardware entropy collection.
+[2016-10-19T08:41:04]  -> Inside sfs/init/set_twr_revision
+[2016-10-19T08:41:04] Enabling firewall watchdog + daemon.
+[2016-10-19T08:41:06] Trusted image buildid TCOO10P
+[2016-10-19T08:41:06] Trusted image buildversion 1.80
+[2016-10-19T08:41:06] Begin to verify rtfs md5
+[2016-10-19T08:41:07] Finish rtfs md5, checked 2 files, skip 0 files
+[2016-10-19T08:41:07] rtfs check finished
+[2016-10-19T08:41:07] FPGA update supported? 1
+[2016-10-19T08:41:07] RTMM device supported.
+[2016-10-19T08:41:07] Found Andromeda PASS-9 hardware
+[2016-10-19T08:41:09] RTMM update not needed.
+[2016-10-19T08:41:09] FPGA update supported? 1
+[2016-10-19T08:41:09] FPGA device support.
+[2016-10-19T08:41:10] FPGA update not needed.
+[2016-10-19T08:41:10] Checking if any CRTM transitions are needed.
+[2016-10-19T08:41:10] Both transitions already completed. (CCSI)
+[2016-10-19T08:41:10] SPITOC format ready
+[2016-10-19T08:41:10] Current CRTM is 3.3
+[2016-10-19T08:41:10] Stepping not required
+[2016-10-19T08:41:10] Checking if Primary UBoot needs updating.
+[2016-10-19T08:41:10] Primary UBoot already updated.
+[2016-10-19T08:41:10] Checking if Backup UBoot needs updating.
+[2016-10-19T08:41:10] Backup UBoot already updated.
+[2016-10-19T08:41:10] Platform [0050001A] doesn't support Snoopy hardware
+[2016-10-19T08:41:11] Phase1 lock latch : Lock RTMM/FPGA done.
+[2016-10-19T08:41:11] Activate baseline firewall.
+[2016-10-19T08:41:11] calling firetool --init-accesscontrol
+[2016-10-19T08:41:12] calling firetool  --init
+[2016-10-19T08:41:13] Activate baseline firewall done
+[2016-10-19T08:41:13] Removing old IP addresses from certs db.
+[2016-10-19T08:41:13] sifs: Begin simulated provisioning.
+[2016-10-19T08:41:15] Disabled policies: CMR : 
+[2016-10-19T08:41:15] Disabled policies: PROV: 
+[2016-10-19T08:41:15] Enabled policies :   200 205 210 215 220 230 240 245 710 715 720 730 735 740 745 755 760 765 775 780 785 790 795 800
+[2016-10-19T08:41:20] Enable multiple policy ..done
+[2016-10-19T08:41:20] Protocol Analysis wedge in place.
+[2016-10-19T08:41:20] Locking firewall policy configuration.
+[2016-10-19T08:41:20] FPGA update supported? 1
+[2016-10-19T08:41:21] Restore original boot partition on success (0x13)
+[2016-10-19T08:41:23]  -> Inside /etc/scripts/rfs.startup
+[2016-10-19T08:41:23] ==> Loading base drivers...
+[2016-10-19T08:41:24] ==> Base drivers loaded
+[2016-10-19T08:41:24]  -> Next boot partition is currently 0x13
+[2016-10-19T08:41:24]  -> Next boot partition changed to   0x12
+[2016-10-19T08:41:24]  -> Performing autoreboot
+[2016-10-19T08:41:26]  -> md5sum signature check passed in rfs.aess-bmc
+[2016-10-19T08:41:27]  -> Configuring high performance (sysinit)
+[2016-10-19T08:41:27]  -> Andromeda (sysinit)
+[2016-10-19T08:41:29] ==> Loading Mbox drivers...
+[2016-10-19T08:41:29]  -> Installed /dev/aess_mboxdrv driver - (Major 232)
+[2016-10-19T08:41:29]  -> System time using RTC
+[2016-10-19T08:41:29]  -> Inside /etc/scripts/rfs.startup , raid 1
+[2016-10-19T08:41:29]  -> Starting provisioning phase3 process monitor
+[2016-10-19T08:41:29]  -> Starting Watchdog/Lifeguard daemon
+[2016-10-19T08:41:29]  -> Inside /etc/scripts/rfs.emerson-temp
+[2016-10-19T08:41:30]  Sync Hwclock time to sys time
+[2016-10-19T08:41:31]  -> Running /etc/scripts/rfs.fod
+[2016-10-19T08:41:31] remove old FoD directory
+[2016-10-19T08:41:31]  -> Checking SPI flash
+[2016-10-19T08:41:32]  -> Checking backup uboot
+[2016-10-19T08:41:32]  -> Starting sshd-immsftp
+[2016-10-19T08:41:37]  -> sftp service prepared
+[2016-10-19T08:41:43]  -> sftp service started
+[2016-10-19T08:41:44]  -> Starting install OEM script
+[2016-10-19T08:41:45] No OEM PKG, Don't need update
+[2016-10-19T08:41:51]  -> Secure debug ports FAILED to open.
+[2016-10-19T08:41:55] ==> Exiting /etc/scripts/rfs.startup
+------ kernel log  -------------------------------------------------------------
+o 0 -> 504
+IMM2 SH7757 xx chip
+IMM2 SH7757 C2/C3/C4 chip
+enable PCIe shared memory area for imm2
+bio: create slab <bio-0> at 0
+SCSI subsystem initialized
+usbcore: registered new interface driver usbfs
+usbcore: registered new interface driver hub
+usbcore: registered new device driver usb
+DMA: Registering sh_dmac handler (24 channels).
+DMA: Registering DMA API.
+Switching to clocksource TMU1
+sh_tmu: TMU0 used for oneshot clock events
+NET: Registered protocol family 2
+IP route cache hash table entries: 2048 (order: 1, 8192 bytes)
+TCP established hash table entries: 8192 (order: 4, 65536 bytes)
+TCP bind hash table entries: 8192 (order: 3, 32768 bytes)
+TCP: Hash tables configured (established 8192 bind 8192)
+TCP reno registered
+NET: Registered protocol family 1
+RPC: Registered udp transport module.
+RPC: Registered tcp transport module.
+RPC: Registered tcp NFSv4.1 backchannel transport module.
+squashfs: version 4.0 (2009/01/31) Phillip Lougher
+NTFS driver 2.1.29 [Flags: R/O].
+msgmni has been set to 106
+alg: No test for cipher_null (cipher_null-generic)
+alg: No test for ecb(cipher_null) (ecb-cipher_null)
+alg: No test for digest_null (digest_null-generic)
+alg: No test for compress_null (compress_null-generic)
+alg: self-tests for sha1-generic (sha1) passed
+alg: self-tests for sha224-generic (sha224) passed
+alg: self-tests for sha256-generic (sha256) passed
+alg: self-tests for sha384-generic (sha384) passed
+alg: self-tests for sha512-generic (sha512) passed
+alg: self-tests for des-generic (des) passed
+alg: self-tests for des3_ede-generic (des3_ede) passed
+alg: self-tests for aes-generic (aes) passed
+alg: self-tests for deflate-generic (deflate) passed
+alg: No test for stdrng (krng)
+alg: self-tests for ansi_cprng (stdrng) passed
+alg: No test for fips(ansi_cprng) (fips_ansi_cprng)
+alg: self-tests for hmac(sha256-generic) (hmac(sha256)) passed
+alg: self-tests for drbg_pr_hmac_sha1 (stdrng) passed
+alg: self-tests for drbg_pr_hmac_sha384 (stdrng) passed
+alg: self-tests for drbg_pr_hmac_sha512 (stdrng) passed
+alg: self-tests for drbg_pr_hmac_sha256 (stdrng) passed
+alg: self-tests for drbg_nopr_hmac_sha1 (stdrng) passed
+alg: self-tests for drbg_nopr_hmac_sha384 (stdrng) passed
+alg: self-tests for drbg_nopr_hmac_sha512 (stdrng) passed
+alg: self-tests for drbg_nopr_hmac_sha256 (stdrng) passed
+alg: self-tests for ghash-generic (ghash) passed
+io scheduler noop registered
+io scheduler anticipatory registered
+io scheduler deadline registered
+io scheduler cfq registered (default)
+Generic RTC Driver v1.07
+SuperH SCI(F) driver initialized
+sh-sci: ttySC0 at MMIO 0xfe4b0000 (irq = 40) is a scif
+sh-sci: ttySC1 at MMIO 0xfe4c0000 (irq = 76) is a scif
+sh-sci: ttySC2 at MMIO 0xfe4d0000 (irq = 104) is a scif
+console [ttySC2] enabled
+loop: module loaded
+nbd: registered device at major 43
+Kernel Build: 2:immv2_19_sh4_mcp61:mcp:2016:01:14:234024:6:1:0:
+max3107 spi2.0: REVID 0 does not match
+sh_rspi: version 2010-04-12
+IMM2 SH7757 CX chip, sh_eth driver
+sh_mii: probed
+Base address at 0xfef00000, 00:E0:EC:30:60:E8, IRQ 84.
+IMM2 SH7757 CX chip, sh_eth driver
+sh_mii: probed
+Base address at 0xfee00800, 00:E0:EC:30:60:E9, IRQ 316.
+ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+ehci_hcd: block sizes: qh 60 qtd 96 itd 160 sitd 96
+sh_ehci sh_ehci: SuperH EHCI
+drivers/usb/core/inode.c: creating file 'devices'
+drivers/usb/core/inode.c: creating file '001'
+sh_ehci sh_ehci: new USB bus registered, assigned bus number 1
+sh_ehci sh_ehci: park 0
+sh_ehci sh_ehci: reset command 080b02 park=3 ithresh=8 period=1024 Reset HALT
+sh_ehci sh_ehci: ...powerup ports...
+sh_ehci sh_ehci: irq 57, io mem 0xfe4f1000
+sh_ehci sh_ehci: reset command 080b02 park=3 ithresh=8 period=1024 Reset HALT
+sh_ehci sh_ehci: init command 010009 (park)=0 ithresh=1 period=256 RUN
+sh_ehci sh_ehci: USB 2.0 started, EHCI 1.00
+usb usb1: default language 0x0409
+usb usb1: udev 1, busnum 1, minor = 0
+usb usb1: New USB device found, idVendor=1d6b, idProduct=0002
+usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+usb usb1: Product: SuperH EHCI
+usb usb1: Manufacturer: Linux 2.6.32.12-454-initramfs_signed ehci_hcd
+usb usb1: SerialNumber: ehci_hcd
+usb usb1: usb_probe_device
+usb usb1: configuration #1 chosen from 1 choice
+usb usb1: adding 1-0:1.0 (config #1, interface 0)
+hub 1-0:1.0: usb_probe_interface
+hub 1-0:1.0: usb_probe_interface - got id
+hub 1-0:1.0: USB hub found
+hub 1-0:1.0: 2 ports detected
+hub 1-0:1.0: standalone hub
+hub 1-0:1.0: individual port power switching
+hub 1-0:1.0: individual port over-current protection
+hub 1-0:1.0: power on to power good time: 20ms
+hub 1-0:1.0: local power source is good
+hub 1-0:1.0: enabling power on all ports
+drivers/usb/core/inode.c: creating file '001'
+ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+ohci_hcd: block sizes: ed 64 td 64
+sh_ohci sh_ohci: SuperH OHCI
+drivers/usb/core/inode.c: creating file '002'
+sh_ohci sh_ohci: new USB bus registered, assigned bus number 2
+sh_ohci sh_ohci: irq 57, io mem 0xfe4f1800
+sh_ohci sh_ohci: created debug files
+sh_ohci sh_ohci: OHCI controller state
+sh_ohci sh_ohci: OHCI 1.0, NO legacy support registers
+sh_ohci sh_ohci: control 0x083 HCFS=operational CBSR=3
+sh_ohci sh_ohci: cmdstatus 0x00000 SOC=0
+sh_ohci sh_ohci: intrstatus 0x00000004 SF
+sh_ohci sh_ohci: intrenable 0x8000001a MIE UE RD WDH
+sh_ohci sh_ohci: hcca frame #03f7
+sh_ohci sh_ohci: roothub.a ff000202 POTPGT=255 NPS NDP=2(2)
+sh_ohci sh_ohci: roothub.b 00000000 PPCM=0000 DR=0000
+sh_ohci sh_ohci: roothub.status 00008000 DRWE
+sh_ohci sh_ohci: roothub.portstatus [0] 0x00000100 PPS
+sh_ohci sh_ohci: roothub.portstatus [1] 0x00000100 PPS
+usb usb2: default language 0x0409
+usb usb2: udev 1, busnum 2, minor = 128
+usb usb2: New USB device found, idVendor=1d6b, idProduct=0001
+usb usb2: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+usb usb2: Product: SuperH OHCI
+usb usb2: Manufacturer: Linux 2.6.32.12-454-initramfs_signed ohci_hcd
+usb usb2: SerialNumber: ohci_hcd
+hub 1-0:1.0: state 7 ports 2 chg 0000 evt 0000
+usb usb2: usb_probe_device
+usb usb2: configuration #1 chosen from 1 choice
+usb usb2: adding 2-0:1.0 (config #1, interface 0)
+hub 2-0:1.0: usb_probe_interface
+hub 2-0:1.0: usb_probe_interface - got id
+hub 2-0:1.0: USB hub found
+hub 2-0:1.0: 2 ports detected
+hub 2-0:1.0: standalone hub
+hub 2-0:1.0: no power switching (usb 1.0)
+hub 2-0:1.0: global over-current protection
+hub 2-0:1.0: power on to power good time: 510ms
+hub 2-0:1.0: local power source is good
+hub 2-0:1.0: no over-current condition exists
+hub 2-0:1.0: trying to enable port power on non-switchable hub
+drivers/usb/core/inode.c: creating file '001'
+Initializing USB Mass Storage driver...
+usbcore: registered new interface driver usb-storage
+USB Mass Storage support registered.
+IRQ 34/sh_mmcif: IRQF_DISABLED is not guaranteed on shared IRQs
+sh_mmcif: driver version 2010-03-17
+sh_tmu: TMU0 kept as earlytimer
+sh_tmu: TMU1 kept as earlytimer
+cryptodev: driver 0.8 loaded.
+mknod /dev/aess_adcsensordrv c 252 0
+KN:init_aess_mem_module
+mknod /dev/aess_eventhandlerdrv c 251 0
+mknod /dev/aess_gpiodrv c 250 0
+mknod /dev/imm2_fpga0 c 249 0
+mknod /dev/aess_spi0drv c 248 0
+imm2_fpga0: checksum enforced
+imm2_fpga: found CHIP_ID=70, v2.39 within 0 ms
+   block[ 00 ]: 0000
+   block[ 01 ]: 0010
+   block[ 02 ]: 0020
+   block[ 03 ]: 0030
+   block[ 04 ]: 0040
+   block[ 06 ]: 0050
+   block[ 07 ]: 0060
+   block[ 08 ]: 0070
+   block[ 09 ]: 0080
+   block[ 11 ]: 0090
+   block[ 12 ]: 00A0
+   block[ 13 ]: 00B0
+   block[ 14 ]: 00C0
+   block[ 15 ]: 00D0
+   block[ 16 ]: 00E0
+   block[ 17 ]: 00F0
+   block[ 19 ]: 0100
+   block[ 23 ]: 0110
+   block[ 28 ]: 0120
+   block[ 29 ]: 0130
+   block[ 30 ]: 0140
+   block[ 31 ]: 0150
+remote_fpga: found FPGA_ID=00, CHIP_ID=5A
+   block[ 00 ]: 0000
+   block[ 01 ]: 0010
+   block[ 03 ]: 0020
+   block[ 04 ]: 0030
+   block[ 05 ]: 0040
+   block[ 06 ]: 0050
+   block[ 09 ]: 0060
+   block[ 12 ]: 0070
+   block[ 28 ]: 0080
+   block[ 29 ]: 0090
+   block[ 30 ]: 00A0
+   block[ 31 ]: 00B0
+remote_fpga: found FPGA_ID=01, CHIP_ID=5A
+   block[ 00 ]: 0200
+   block[ 01 ]: 0210
+   block[ 03 ]: 0220
+   block[ 04 ]: 0230
+   block[ 05 ]: 0240
+   block[ 06 ]: 0250
+   block[ 09 ]: 0260
+   block[ 12 ]: 0270
+   block[ 28 ]: 0280
+   block[ 29 ]: 0290
+   block[ 30 ]: 02A0
+   block[ 31 ]: 02B0
+remote_fpga: found FPGA_ID=02, CHIP_ID=5A
+   block[ 00 ]: 0400
+   block[ 01 ]: 0410
+   block[ 03 ]: 0420
+   block[ 04 ]: 0430
+   block[ 05 ]: 0440
+   block[ 06 ]: 0450
+   block[ 09 ]: 0460
+   block[ 12 ]: 0470
+   block[ 28 ]: 0480
+   block[ 29 ]: 0490
+   block[ 30 ]: 04A0
+   block[ 31 ]: 04B0
+remote_fpga: found FPGA_ID=03, CHIP_ID=5A
+   block[ 00 ]: 0600
+   block[ 01 ]: 0610
+   block[ 03 ]: 0620
+   block[ 04 ]: 0630
+   block[ 05 ]: 0640
+   block[ 06 ]: 0650
+   block[ 09 ]: 0660
+   block[ 12 ]: 0670
+   block[ 28 ]: 0680
+   block[ 29 ]: 0690
+   block[ 30 ]: 06A0
+   block[ 31 ]: 06B0
+mknod /dev/aess_kcsdrv c 247 0
+IRQ 69/kcsdrv_hwctrl: IRQF_DISABLED is not guaranteed on shared IRQs
+mknod /dev/aess_memdrv c 246 0
+mknod /dev/aess_sgpiodrv c 245 0
+mknod /dev/aess_spi1drv c 244 0
+mknod /dev/aess_spinorflashdrv0 c 243 0
+mknod /dev/aess_spinorflashdrv1 c 243 1
+aess_timerdrv_init
+mknod /dev/aess_timerdrv c 242 0
+TSIP HW Crypto accelerator: 
+ hwrng registration sucessed
+cbc(aes) ecb(aes) ecb(des3_ede) cbc(des3_ede) 
+alg: self-tests for sha1-tsip (sha1) passed
+sha1 
+alg: self-tests for sha256-tsip (sha256) passed
+mmc0: unrecognised EXT_CSD revision 7.. CONTINUING with caution
+Card type is 7
+sha256 
+alg: self-tests for sha1-hmac-tsip (hmac(sha1)) passed
+hmac(sha1) 
+mmc0: new high speed MMC card at address 0001
+alg: self-tests for sha256-hmac-tsip (hmac(sha256)) passed
+hmac(sha256) 
+
+mknod /dev/aess_twrdrv c 241 0
+IRQ 69/twrdrv: IRQF_DISABLED is not guaranteed on shared IRQs
+mknod /dev/aess_pbi_vdm c 240 0
+mmcblk0: mmc0:0001 004GE0 1.84 GiB 
+ mmcblk0: p1 p2 p3 p4
+sermux sermux: version 2010-05-26
+Netfilter messages via NETLINK v0.30.
+nf_conntrack version 0.5.0 (3396 buckets, 13584 max)
+ctnetlink v0.93: registering with nfnetlink.
+xt_time: kernel timezone is -0000
+IPv4 over IPv4 tunneling driver
+ip_tables: (C) 2000-2006 Netfilter Core Team
+TCP cubic registered
+Initializing XFRM netlink socket
+NET: Registered protocol family 10
+lo: Disabled Privacy Extensions
+tunl0: Disabled Privacy Extensions
+ip6_tables: (C) 2000-2006 Netfilter Core Team
+Netfilter:nf_conntrack_frag6_timeout and ip6frag_time, nf_conntrack_frag6_low_thresh and ip6frag_low_thresh, nf_conntrack_frag6_high_thresh and ip6frag_high_thresh, the three sets are equivalent. nf_conntrack_frag6_timeout is just an alias for ip6frag_time. The former parameters of IPv6 conntrack will be removed in February 2011, please use the latter ones of IPv6.
+IPv6 over IPv4 tunneling driver
+sit0: Disabled Privacy Extensions
+NET: Registered protocol family 17
+NET: Registered protocol family 15
+802.1Q VLAN Support v1.8 Ben Greear <greearb@candelatech.com>
+All bugs added by David S. Miller <davem@redhat.com>
+NET: Registered protocol family 27
+eth0 device registered
+eth1 device registered
+IRQ 69/aess_biospostdrv: IRQF_DISABLED is not guaranteed on shared IRQs
+mknod /dev/aess_biospostdrv c 239 0
+mknod /dev/aess_cryptodrv c 238 0
+mknod /dev/aess_dynairqdrv c 237 0
+IRQ 236/aess_dynairqdrv: IRQF_DISABLED is not guaranteed on shared IRQs
+mknod /dev/aess_fansensordrv_2 c 236 0
+mknod /dev/aess_i2cdrv c 235 0
+mknod /dev/aess_pwmdrv c 234 0
+WDT imm2_wdt_init: Line: 725 - imm2_wdt_init
+WDT light kernel thread created , id=375
+hub 2-0:1.0: state 7 ports 2 chg 0000 evt 0000
+IRQ 273/dma_i2c1: IRQF_DISABLED is not guaranteed on shared IRQs
+wdt_khang_light_task
+imm2_wdt_start: index=0
+wd_cnt_write - wdtn_max[0] updated to 0x3ce4
+wd_cntew_write - wdte_max[0] updated to 0x3cef
+khang_light_task_hook
+The system reboot cause: 1.
+KHANG magic cleared, relocating printk buffer
+wd_cntew_write - wdte_max[0] updated to 0x7477
+
+ tpm_imm_device_init(): tpm_register_hardware 
+tpm_i2c VID: 2FE1050 DID: 2FE RID: 02
+m41t83_2: dev (254:0)
+m41t83_2_rtc m41t83_2_rtc.0: rtc core: registered m41t83_2 as rtc0
+Freeing unused kernel memory: 1544k freed
+wd_cntew_write - wdte_max[0] updated to 0x7fd3
+wd_cntew_write - wdte_max[0] updated to 0x7fe2
+wd_cntew_write - wdte_max[0] updated to 0x7fe3
+kjournald starting.  Commit interval 5 seconds
+EXT3 FS on mmcblk0p4, internal journal
+EXT3-fs: mounted filesystem with journal data mode.
+kjournald starting.  Commit interval 5 seconds
+EXT3 FS on mmcblk0p2, internal journal
+EXT3-fs: mounted filesystem with journal data mode.
+wd_cntew_write - wdte_max[0] updated to 0x7fef
+IRQ 272/dma_i2c0: IRQF_DISABLED is not guaranteed on shared IRQs
+kjournald starting.  Commit interval 5 seconds
+EXT3-fs warning: maximal mount count reached, running e2fsck is recommended
+EXT3 FS on mmcblk0p4, internal journal
+EXT3-fs: mounted filesystem with journal data mode.
+IRQ 282/dma_i2c7: IRQF_DISABLED is not guaranteed on shared IRQs
+IRQ 281/dma_i2c6: IRQF_DISABLED is not guaranteed on shared IRQs
+IRQ 50/r8a66597_udc: IRQF_DISABLED is not guaranteed on shared IRQs
+r8a66597_udc r8a66597_udc.0: version 2012-12-18
+Now registering USB0/func0
+Gadget USB HUB, version: 20101014
+aess_video_init Avocent Video Driver installed
+allocate_video_buffer_reserve_mem- video_buffer_phys (reserved mem): 4e000000 video_buffer_size: 0x00EAE000
+hid_init: Desc: Keyboard/Mouse Function
+hid_init: Name: g_kbdmouse
+hid_init: Version: 20111018
+Now registering USB0/func1
+hid_bind: Using Major Number 230
+hid_bind: using r8a66597_udc, Keyboard ep1 Mouse ep2
+hid_bind: Mouse REL ep3
+g_mass_storage: msd_init() Desc: Mass Storage Function
+g_mass_storage: msd_init() Name: g_mass_storage
+g_mass_storage: msd_init() Version: 20120124
+Now registering USB0/func2
+g_mass_storage: msd_bind() Using Major Number 229
+g_mass_storage1: msd_init() Desc: Mass Storage Function
+g_mass_storage1: msd_init() Name: g_mass_storage1
+g_mass_storage1: msd_init() Version: 20120124-1
+Now registering USB0/func3
+g_mass_storage1: msd_bind() Using Major Number 228
+g_mass_storage2: msd_init() Desc: Mass Storage Function
+g_mass_storage2: msd_init() Name: g_mass_storage2
+g_mass_storage2: msd_init() Version: 20120124-2
+Now registering USB0/func4
+g_mass_storage2: msd_bind() Using Major Number 227
+IRQ 84/eth0: IRQF_DISABLED is not guaranteed on shared IRQs
+imm2_wdt_open: User Hang WDT opened
+imm2_wdt_start: index=1
+wd_cnt_write - wdtn_max[1] updated to 0x01
+wd_cntew_write - wdte_max[1] updated to 0x01
+imm2_wdt_ioctl: WDIOC_SETTIMEOUT
+	 Userspace timeout set to 60 secs
+wd_cntew_write - wdte_max[1] updated to 0xe4e
+wd_cnt_write - wdtn_max[1] updated to 0x55f9
+wd_cntew_write - wdte_max[1] updated to 0xe77
+wd_cnt_write - wdtn_max[1] updated to 0x5726
+wd_cntew_write - wdte_max[1] updated to 0xfa4
+wd_cnt_write - wdtn_max[1] updated to 0x5741
+wd_cntew_write - wdte_max[1] updated to 0xfbf
+wd_cnt_write - wdtn_max[1] updated to 0x5750
+wd_cntew_write - wdte_max[1] updated to 0xfce
+wd_cnt_write - wdtn_max[1] updated to 0x5753
+wd_cntew_write - wdte_max[1] updated to 0xfd1
+kjournald starting.  Commit interval 15 seconds
+EXT3-fs: mounted filesystem with writeback data mode.
+imm2_wdt_open: Kernel Hang WDT opened
+WDT imm2_wdt_release: Line: 571 - WARN: WDT0 refcnt is 0
+WDT imm2_wdt_release: Line: 576 - WARN: You can only release Userspace WDT
+------ end of init -------------------------------------------------------------
+[2000-01-01T00:00:05]  -> Running /etc/scripts/ifs.mmc
+[2000-01-01T00:00:05]  -> Creating RTC device nodes
+[2016-10-21T07:05:08]  -> Creating MMC device nodes
+[2016-10-21T07:05:08]  -> Creating initfs mount points
+[2016-10-21T07:05:08]  -> Repairing partitions
+e2fsck 1.41.9 (22-Aug-2009)
+/dev/mmcblk0p2: recovering journal
+/dev/mmcblk0p2 has been mounted 1 times without being checked, check forced.
+Pass 1: Checking inodes, blocks, and sizes
+Pass 2: Checking directory structure
+Pass 3: Checking directory connectivity
+Pass 4: Checking reference counts
+Pass 5: Checking group summary information
+
+/dev/mmcblk0p2: ***** FILE SYSTEM WAS MODIFIED *****
+/dev/mmcblk0p2: 7283/65536 files (9.4% non-contiguous), 101703/131072 blocks
+e2fsck 1.41.9 (22-Aug-2009)
+/dev/mmcblk0p4: recovering journal
+/dev/mmcblk0p4 has been mounted 2 times without being checked, check forced.
+Pass 1: Checking inodes, blocks, and sizes
+Pass 2: Checking directory structure
+Pass 3: Checking directory connectivity
+Pass 4: Checking reference counts
+Pass 5: Checking group summary information
+
+/dev/mmcblk0p4: ***** FILE SYSTEM WAS MODIFIED *****
+/dev/mmcblk0p4: 82/61440 files (8.5% non-contiguous), 239743/491520 blocks
+[2016-10-21T07:05:15]  -> 2G layout is converted
+[2016-10-21T07:05:15]  -> Attempting to mount /rootfs to /dev/mmcblk0p2
+[2016-10-21T07:05:15]  -> Creating rootfs mount points
+[2016-10-21T07:05:15]  -> Performing security operations.
+[2016-10-21T07:05:17]  -> SecureBoot found..
+[2016-10-21T07:05:17]  -> FW Ext3 found..
+[2016-10-21T07:05:17]  -> securefs mounted - running init
+[2016-10-21T07:05:18] Security mode: NORMAL
+[2016-10-21T07:05:18] Reset reason: bp=0 eph=0 rs=0001 rs2=00
+[2016-10-21T07:05:18] Boot partition: 2
+[2016-10-21T07:05:18] Stay in current boot partition on failure (1)
+[2016-10-21T07:05:18] Tuning kernel security values.
+[2016-10-21T07:05:18]  > Done
+[2016-10-21T07:05:18] Enabling hardware entropy collection.
+[2016-10-21T07:05:18]  -> Inside sfs/init/set_twr_revision
+[2016-10-21T07:05:19] Enabling firewall watchdog + daemon.
+[2016-10-21T07:05:20] Trusted image buildid TCOO10P
+[2016-10-21T07:05:20] Trusted image buildversion 1.80
+[2016-10-21T07:05:21] Begin to verify rtfs md5
+[2016-10-21T07:05:21] Finish rtfs md5, checked 2 files, skip 0 files
+[2016-10-21T07:05:21] rtfs check finished
+[2016-10-21T07:05:22] FPGA update supported? 1
+[2016-10-21T07:05:22] RTMM device supported.
+[2016-10-21T07:05:22] Found Andromeda PASS-9 hardware
+[2016-10-21T07:05:24] RTMM update not needed.
+[2016-10-21T07:05:24] FPGA update supported? 1
+[2016-10-21T07:05:24] FPGA device support.
+[2016-10-21T07:05:24] FPGA update not needed.
+[2016-10-21T07:05:24] Checking if any CRTM transitions are needed.
+[2016-10-21T07:05:24] Both transitions already completed. (CCSI)
+[2016-10-21T07:05:24] SPITOC format ready
+[2016-10-21T07:05:25] Current CRTM is 3.3
+[2016-10-21T07:05:25] Stepping not required
+[2016-10-21T07:05:25] Checking if Primary UBoot needs updating.
+[2016-10-21T07:05:25] Primary UBoot already updated.
+[2016-10-21T07:05:25] Checking if Backup UBoot needs updating.
+[2016-10-21T07:05:25] Backup UBoot already updated.
+[2016-10-21T07:05:25] Platform [0050001A] doesn't support Snoopy hardware
+[2016-10-21T07:05:25] Phase1 lock latch : Lock RTMM/FPGA done.
+[2016-10-21T07:05:25] Activate baseline firewall.
+[2016-10-21T07:05:25] calling firetool --init-accesscontrol
+[2016-10-21T07:05:26] calling firetool  --init
+[2016-10-21T07:05:27] Activate baseline firewall done
+[2016-10-21T07:05:28] Removing old IP addresses from certs db.
+[2016-10-21T07:05:28] sifs: Begin simulated provisioning.
+[2016-10-21T07:05:29] Disabled policies: CMR : 
+[2016-10-21T07:05:29] Disabled policies: PROV: 
+[2016-10-21T07:05:29] Enabled policies :   200 205 210 215 220 230 240 245 710 715 720 730 735 740 745 755 760 765 775 780 785 790 795 800
+[2016-10-21T07:05:34] Enable multiple policy ..done
+[2016-10-21T07:05:34] Protocol Analysis wedge in place.
+[2016-10-21T07:05:35] Locking firewall policy configuration.
+[2016-10-21T07:05:35] FPGA update supported? 1
+[2016-10-21T07:05:35] Restore original boot partition on success (0x13)
+[2016-10-21T07:05:37]  -> Inside /etc/scripts/rfs.startup
+[2016-10-21T07:05:37] ==> Loading base drivers...
+[2016-10-21T07:05:38] ==> Base drivers loaded
+[2016-10-21T07:05:38]  -> Next boot partition is currently 0x13
+[2016-10-21T07:05:38]  -> Next boot partition changed to   0x12
+[2016-10-21T07:05:38]  -> Performing autoreboot
+[2016-10-21T07:05:41]  -> md5sum signature check passed in rfs.aess-bmc
+[2016-10-21T07:05:41]  -> Configuring high performance (sysinit)
+[2016-10-21T07:05:41]  -> Andromeda (sysinit)
+[2016-10-21T07:05:43] ==> Loading Mbox drivers...
+[2016-10-21T07:05:43]  -> Installed /dev/aess_mboxdrv driver - (Major 232)
+[2016-10-21T07:05:44]  -> System time using RTC
+[2016-10-21T07:05:44]  -> Inside /etc/scripts/rfs.startup , raid 1
+[2016-10-21T07:05:44]  -> Starting provisioning phase3 process monitor
+[2016-10-21T07:05:44]  -> Starting Watchdog/Lifeguard daemon
+[2016-10-21T07:05:44]  -> Inside /etc/scripts/rfs.emerson-temp
+[2016-10-21T07:05:44]  Sync Hwclock time to sys time
+[2016-10-21T07:05:46]  -> Running /etc/scripts/rfs.fod
+[2016-10-21T07:05:46] remove old FoD directory
+[2016-10-21T07:05:46]  -> Checking SPI flash
+[2016-10-21T07:05:47]  -> Checking backup uboot
+[2016-10-21T07:05:47]  -> Starting sshd-immsftp
+[2016-10-21T07:05:52]  -> sftp service prepared
+[2016-10-21T07:05:59]  -> sftp service started
+[2016-10-21T07:06:00]  -> Starting install OEM script
+[2016-10-21T07:06:01] No OEM PKG, Don't need update
+[2016-10-21T07:06:07]  -> Secure debug ports FAILED to open.
+[2016-10-21T07:06:11] ==> Exiting /etc/scripts/rfs.startup
+------ kernel log  -------------------------------------------------------------
+family 16
+sh pinmux: sh7757_pfc handling gpio 0 -> 504
+IMM2 SH7757 xx chip
+IMM2 SH7757 C2/C3/C4 chip
+enable PCIe shared memory area for imm2
+bio: create slab <bio-0> at 0
+SCSI subsystem initialized
+usbcore: registered new interface driver usbfs
+usbcore: registered new interface driver hub
+usbcore: registered new device driver usb
+DMA: Registering sh_dmac handler (24 channels).
+DMA: Registering DMA API.
+Switching to clocksource TMU1
+sh_tmu: TMU0 used for oneshot clock events
+NET: Registered protocol family 2
+IP route cache hash table entries: 2048 (order: 1, 8192 bytes)
+TCP established hash table entries: 8192 (order: 4, 65536 bytes)
+TCP bind hash table entries: 8192 (order: 3, 32768 bytes)
+TCP: Hash tables configured (established 8192 bind 8192)
+TCP reno registered
+NET: Registered protocol family 1
+RPC: Registered udp transport module.
+RPC: Registered tcp transport module.
+RPC: Registered tcp NFSv4.1 backchannel transport module.
+squashfs: version 4.0 (2009/01/31) Phillip Lougher
+NTFS driver 2.1.29 [Flags: R/O].
+msgmni has been set to 106
+alg: No test for cipher_null (cipher_null-generic)
+alg: No test for ecb(cipher_null) (ecb-cipher_null)
+alg: No test for digest_null (digest_null-generic)
+alg: No test for compress_null (compress_null-generic)
+alg: self-tests for sha1-generic (sha1) passed
+alg: self-tests for sha224-generic (sha224) passed
+alg: self-tests for sha256-generic (sha256) passed
+alg: self-tests for sha384-generic (sha384) passed
+alg: self-tests for sha512-generic (sha512) passed
+alg: self-tests for des-generic (des) passed
+alg: self-tests for des3_ede-generic (des3_ede) passed
+alg: self-tests for aes-generic (aes) passed
+alg: self-tests for deflate-generic (deflate) passed
+alg: No test for stdrng (krng)
+alg: self-tests for ansi_cprng (stdrng) passed
+alg: No test for fips(ansi_cprng) (fips_ansi_cprng)
+alg: self-tests for hmac(sha256-generic) (hmac(sha256)) passed
+alg: self-tests for drbg_pr_hmac_sha1 (stdrng) passed
+alg: self-tests for drbg_pr_hmac_sha384 (stdrng) passed
+alg: self-tests for drbg_pr_hmac_sha512 (stdrng) passed
+alg: self-tests for drbg_pr_hmac_sha256 (stdrng) passed
+alg: self-tests for drbg_nopr_hmac_sha1 (stdrng) passed
+alg: self-tests for drbg_nopr_hmac_sha384 (stdrng) passed
+alg: self-tests for drbg_nopr_hmac_sha512 (stdrng) passed
+alg: self-tests for drbg_nopr_hmac_sha256 (stdrng) passed
+alg: self-tests for ghash-generic (ghash) passed
+io scheduler noop registered
+io scheduler anticipatory registered
+io scheduler deadline registered
+io scheduler cfq registered (default)
+Generic RTC Driver v1.07
+SuperH SCI(F) driver initialized
+sh-sci: ttySC0 at MMIO 0xfe4b0000 (irq = 40) is a scif
+sh-sci: ttySC1 at MMIO 0xfe4c0000 (irq = 76) is a scif
+sh-sci: ttySC2 at MMIO 0xfe4d0000 (irq = 104) is a scif
+console [ttySC2] enabled
+loop: module loaded
+nbd: registered device at major 43
+Kernel Build: 2:immv2_19_sh4_mcp61:mcp:2016:01:14:234024:6:1:0:
+max3107 spi2.0: REVID 0 does not match
+sh_rspi: version 2010-04-12
+IMM2 SH7757 CX chip, sh_eth driver
+sh_mii: probed
+Base address at 0xfef00000, 00:E0:EC:30:60:E8, IRQ 84.
+IMM2 SH7757 CX chip, sh_eth driver
+sh_mii: probed
+Base address at 0xfee00800, 00:E0:EC:30:60:E9, IRQ 316.
+ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+ehci_hcd: block sizes: qh 60 qtd 96 itd 160 sitd 96
+sh_ehci sh_ehci: SuperH EHCI
+drivers/usb/core/inode.c: creating file 'devices'
+drivers/usb/core/inode.c: creating file '001'
+sh_ehci sh_ehci: new USB bus registered, assigned bus number 1
+sh_ehci sh_ehci: park 0
+sh_ehci sh_ehci: reset command 080b02 park=3 ithresh=8 period=1024 Reset HALT
+sh_ehci sh_ehci: ...powerup ports...
+sh_ehci sh_ehci: irq 57, io mem 0xfe4f1000
+sh_ehci sh_ehci: reset command 080b02 park=3 ithresh=8 period=1024 Reset HALT
+sh_ehci sh_ehci: init command 010009 (park)=0 ithresh=1 period=256 RUN
+sh_ehci sh_ehci: USB 2.0 started, EHCI 1.00
+usb usb1: default language 0x0409
+usb usb1: udev 1, busnum 1, minor = 0
+usb usb1: New USB device found, idVendor=1d6b, idProduct=0002
+usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+usb usb1: Product: SuperH EHCI
+usb usb1: Manufacturer: Linux 2.6.32.12-454-initramfs_signed ehci_hcd
+usb usb1: SerialNumber: ehci_hcd
+usb usb1: usb_probe_device
+usb usb1: configuration #1 chosen from 1 choice
+usb usb1: adding 1-0:1.0 (config #1, interface 0)
+hub 1-0:1.0: usb_probe_interface
+hub 1-0:1.0: usb_probe_interface - got id
+hub 1-0:1.0: USB hub found
+hub 1-0:1.0: 2 ports detected
+hub 1-0:1.0: standalone hub
+hub 1-0:1.0: individual port power switching
+hub 1-0:1.0: individual port over-current protection
+hub 1-0:1.0: power on to power good time: 20ms
+hub 1-0:1.0: local power source is good
+hub 1-0:1.0: enabling power on all ports
+drivers/usb/core/inode.c: creating file '001'
+ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+ohci_hcd: block sizes: ed 64 td 64
+sh_ohci sh_ohci: SuperH OHCI
+drivers/usb/core/inode.c: creating file '002'
+sh_ohci sh_ohci: new USB bus registered, assigned bus number 2
+sh_ohci sh_ohci: irq 57, io mem 0xfe4f1800
+sh_ohci sh_ohci: created debug files
+sh_ohci sh_ohci: OHCI controller state
+sh_ohci sh_ohci: OHCI 1.0, NO legacy support registers
+sh_ohci sh_ohci: control 0x083 HCFS=operational CBSR=3
+sh_ohci sh_ohci: cmdstatus 0x00000 SOC=0
+sh_ohci sh_ohci: intrstatus 0x00000004 SF
+sh_ohci sh_ohci: intrenable 0x8000001a MIE UE RD WDH
+sh_ohci sh_ohci: hcca frame #03f7
+sh_ohci sh_ohci: roothub.a ff000202 POTPGT=255 NPS NDP=2(2)
+sh_ohci sh_ohci: roothub.b 00000000 PPCM=0000 DR=0000
+sh_ohci sh_ohci: roothub.status 00008000 DRWE
+sh_ohci sh_ohci: roothub.portstatus [0] 0x00000100 PPS
+sh_ohci sh_ohci: roothub.portstatus [1] 0x00000100 PPS
+usb usb2: default language 0x0409
+usb usb2: udev 1, busnum 2, minor = 128
+usb usb2: New USB device found, idVendor=1d6b, idProduct=0001
+usb usb2: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+usb usb2: Product: SuperH OHCI
+usb usb2: Manufacturer: Linux 2.6.32.12-454-initramfs_signed ohci_hcd
+usb usb2: SerialNumber: ohci_hcd
+hub 1-0:1.0: state 7 ports 2 chg 0000 evt 0000
+usb usb2: usb_probe_device
+usb usb2: configuration #1 chosen from 1 choice
+usb usb2: adding 2-0:1.0 (config #1, interface 0)
+hub 2-0:1.0: usb_probe_interface
+hub 2-0:1.0: usb_probe_interface - got id
+hub 2-0:1.0: USB hub found
+hub 2-0:1.0: 2 ports detected
+hub 2-0:1.0: standalone hub
+hub 2-0:1.0: no power switching (usb 1.0)
+hub 2-0:1.0: global over-current protection
+hub 2-0:1.0: power on to power good time: 510ms
+hub 2-0:1.0: local power source is good
+hub 2-0:1.0: no over-current condition exists
+hub 2-0:1.0: trying to enable port power on non-switchable hub
+drivers/usb/core/inode.c: creating file '001'
+Initializing USB Mass Storage driver...
+usbcore: registered new interface driver usb-storage
+USB Mass Storage support registered.
+IRQ 34/sh_mmcif: IRQF_DISABLED is not guaranteed on shared IRQs
+sh_mmcif: driver version 2010-03-17
+sh_tmu: TMU0 kept as earlytimer
+sh_tmu: TMU1 kept as earlytimer
+cryptodev: driver 0.8 loaded.
+mknod /dev/aess_adcsensordrv c 252 0
+KN:init_aess_mem_module
+mknod /dev/aess_eventhandlerdrv c 251 0
+mknod /dev/aess_gpiodrv c 250 0
+mknod /dev/imm2_fpga0 c 249 0
+mknod /dev/aess_spi0drv c 248 0
+imm2_fpga0: checksum enforced
+imm2_fpga: found CHIP_ID=70, v2.39 within 0 ms
+   block[ 00 ]: 0000
+   block[ 01 ]: 0010
+   block[ 02 ]: 0020
+   block[ 03 ]: 0030
+   block[ 04 ]: 0040
+   block[ 06 ]: 0050
+   block[ 07 ]: 0060
+   block[ 08 ]: 0070
+   block[ 09 ]: 0080
+   block[ 11 ]: 0090
+   block[ 12 ]: 00A0
+   block[ 13 ]: 00B0
+   block[ 14 ]: 00C0
+   block[ 15 ]: 00D0
+   block[ 16 ]: 00E0
+   block[ 17 ]: 00F0
+   block[ 19 ]: 0100
+   block[ 23 ]: 0110
+   block[ 28 ]: 0120
+   block[ 29 ]: 0130
+   block[ 30 ]: 0140
+   block[ 31 ]: 0150
+remote_fpga: found FPGA_ID=00, CHIP_ID=5A
+   block[ 00 ]: 0000
+   block[ 01 ]: 0010
+   block[ 03 ]: 0020
+   block[ 04 ]: 0030
+   block[ 05 ]: 0040
+   block[ 06 ]: 0050
+   block[ 09 ]: 0060
+   block[ 12 ]: 0070
+   block[ 28 ]: 0080
+   block[ 29 ]: 0090
+   block[ 30 ]: 00A0
+   block[ 31 ]: 00B0
+remote_fpga: found FPGA_ID=01, CHIP_ID=5A
+   block[ 00 ]: 0200
+   block[ 01 ]: 0210
+   block[ 03 ]: 0220
+   block[ 04 ]: 0230
+   block[ 05 ]: 0240
+   block[ 06 ]: 0250
+   block[ 09 ]: 0260
+   block[ 12 ]: 0270
+   block[ 28 ]: 0280
+   block[ 29 ]: 0290
+   block[ 30 ]: 02A0
+   block[ 31 ]: 02B0
+remote_fpga: found FPGA_ID=02, CHIP_ID=5A
+   block[ 00 ]: 0400
+   block[ 01 ]: 0410
+   block[ 03 ]: 0420
+   block[ 04 ]: 0430
+   block[ 05 ]: 0440
+   block[ 06 ]: 0450
+   block[ 09 ]: 0460
+   block[ 12 ]: 0470
+   block[ 28 ]: 0480
+   block[ 29 ]: 0490
+   block[ 30 ]: 04A0
+   block[ 31 ]: 04B0
+remote_fpga: found FPGA_ID=03, CHIP_ID=5A
+   block[ 00 ]: 0600
+   block[ 01 ]: 0610
+   block[ 03 ]: 0620
+   block[ 04 ]: 0630
+   block[ 05 ]: 0640
+   block[ 06 ]: 0650
+   block[ 09 ]: 0660
+   block[ 12 ]: 0670
+   block[ 28 ]: 0680
+   block[ 29 ]: 0690
+   block[ 30 ]: 06A0
+   block[ 31 ]: 06B0
+mknod /dev/aess_kcsdrv c 247 0
+IRQ 69/kcsdrv_hwctrl: IRQF_DISABLED is not guaranteed on shared IRQs
+mknod /dev/aess_memdrv c 246 0
+mknod /dev/aess_sgpiodrv c 245 0
+mknod /dev/aess_spi1drv c 244 0
+mknod /dev/aess_spinorflashdrv0 c 243 0
+mknod /dev/aess_spinorflashdrv1 c 243 1
+aess_timerdrv_init
+mknod /dev/aess_timerdrv c 242 0
+TSIP HW Crypto accelerator: 
+ hwrng registration sucessed
+cbc(aes) ecb(aes) ecb(des3_ede) cbc(des3_ede) 
+alg: self-tests for sha1-tsip (sha1) passed
+sha1 
+alg: self-tests for sha256-tsip (sha256) passed
+mmc0: unrecognised EXT_CSD revision 7.. CONTINUING with caution
+Card type is 7
+sha256 
+alg: self-tests for sha1-hmac-tsip (hmac(sha1)) passed
+hmac(sha1) 
+mmc0: new high speed MMC card at address 0001
+alg: self-tests for sha256-hmac-tsip (hmac(sha256)) passed
+hmac(sha256) 
+
+mknod /dev/aess_twrdrv c 241 0
+IRQ 69/twrdrv: IRQF_DISABLED is not guaranteed on shared IRQs
+mknod /dev/aess_pbi_vdm c 240 0
+mmcblk0: mmc0:0001 004GE0 1.84 GiB 
+ mmcblk0: p1 p2 p3 p4
+sermux sermux: version 2010-05-26
+Netfilter messages via NETLINK v0.30.
+nf_conntrack version 0.5.0 (3396 buckets, 13584 max)
+ctnetlink v0.93: registering with nfnetlink.
+xt_time: kernel timezone is -0000
+IPv4 over IPv4 tunneling driver
+ip_tables: (C) 2000-2006 Netfilter Core Team
+TCP cubic registered
+Initializing XFRM netlink socket
+NET: Registered protocol family 10
+lo: Disabled Privacy Extensions
+tunl0: Disabled Privacy Extensions
+ip6_tables: (C) 2000-2006 Netfilter Core Team
+Netfilter:nf_conntrack_frag6_timeout and ip6frag_time, nf_conntrack_frag6_low_thresh and ip6frag_low_thresh, nf_conntrack_frag6_high_thresh and ip6frag_high_thresh, the three sets are equivalent. nf_conntrack_frag6_timeout is just an alias for ip6frag_time. The former parameters of IPv6 conntrack will be removed in February 2011, please use the latter ones of IPv6.
+IPv6 over IPv4 tunneling driver
+sit0: Disabled Privacy Extensions
+NET: Registered protocol family 17
+NET: Registered protocol family 15
+802.1Q VLAN Support v1.8 Ben Greear <greearb@candelatech.com>
+All bugs added by David S. Miller <davem@redhat.com>
+NET: Registered protocol family 27
+eth0 device registered
+eth1 device registered
+IRQ 69/aess_biospostdrv: IRQF_DISABLED is not guaranteed on shared IRQs
+mknod /dev/aess_biospostdrv c 239 0
+mknod /dev/aess_cryptodrv c 238 0
+mknod /dev/aess_dynairqdrv c 237 0
+IRQ 236/aess_dynairqdrv: IRQF_DISABLED is not guaranteed on shared IRQs
+mknod /dev/aess_fansensordrv_2 c 236 0
+mknod /dev/aess_i2cdrv c 235 0
+mknod /dev/aess_pwmdrv c 234 0
+WDT imm2_wdt_init: Line: 725 - imm2_wdt_init
+WDT light kernel thread created , id=375
+hub 2-0:1.0: state 7 ports 2 chg 0000 evt 0000
+IRQ 273/dma_i2c1: IRQF_DISABLED is not guaranteed on shared IRQs
+wdt_khang_light_task
+imm2_wdt_start: index=0
+wd_cnt_write - wdtn_max[0] updated to 0x3ce4
+wd_cntew_write - wdte_max[0] updated to 0x3cef
+khang_light_task_hook
+The system reboot cause: 1.
+KHANG magic cleared, relocating printk buffer
+wd_cntew_write - wdte_max[0] updated to 0x7477
+
+ tpm_imm_device_init(): tpm_register_hardware 
+tpm_i2c VID: 2FE1050 DID: 2FE RID: 02
+m41t83_2: dev (254:0)
+m41t83_2_rtc m41t83_2_rtc.0: rtc core: registered m41t83_2 as rtc0
+Freeing unused kernel memory: 1544k freed
+wd_cntew_write - wdte_max[0] updated to 0x7fd2
+wd_cntew_write - wdte_max[0] updated to 0x7fe1
+wd_cntew_write - wdte_max[0] updated to 0x7fe5
+kjournald starting.  Commit interval 5 seconds
+EXT3 FS on mmcblk0p4, internal journal
+EXT3-fs: mounted filesystem with journal data mode.
+kjournald starting.  Commit interval 5 seconds
+EXT3 FS on mmcblk0p2, internal journal
+EXT3-fs: mounted filesystem with journal data mode.
+IRQ 272/dma_i2c0: IRQF_DISABLED is not guaranteed on shared IRQs
+kjournald starting.  Commit interval 5 seconds
+EXT3-fs warning: maximal mount count reached, running e2fsck is recommended
+EXT3 FS on mmcblk0p4, internal journal
+EXT3-fs: mounted filesystem with journal data mode.
+IRQ 282/dma_i2c7: IRQF_DISABLED is not guaranteed on shared IRQs
+IRQ 281/dma_i2c6: IRQF_DISABLED is not guaranteed on shared IRQs
+wd_cntew_write - wdte_max[0] updated to 0x7fe8
+IRQ 50/r8a66597_udc: IRQF_DISABLED is not guaranteed on shared IRQs
+r8a66597_udc r8a66597_udc.0: version 2012-12-18
+Now registering USB0/func0
+Gadget USB HUB, version: 20101014
+aess_video_init Avocent Video Driver installed
+allocate_video_buffer_reserve_mem- video_buffer_phys (reserved mem): 4e000000 video_buffer_size: 0x00EAE000
+hid_init: Desc: Keyboard/Mouse Function
+hid_init: Name: g_kbdmouse
+hid_init: Version: 20111018
+Now registering USB0/func1
+hid_bind: Using Major Number 230
+hid_bind: using r8a66597_udc, Keyboard ep1 Mouse ep2
+hid_bind: Mouse REL ep3
+g_mass_storage: msd_init() Desc: Mass Storage Function
+g_mass_storage: msd_init() Name: g_mass_storage
+g_mass_storage: msd_init() Version: 20120124
+Now registering USB0/func2
+g_mass_storage: msd_bind() Using Major Number 229
+g_mass_storage1: msd_init() Desc: Mass Storage Function
+g_mass_storage1: msd_init() Name: g_mass_storage1
+g_mass_storage1: msd_init() Version: 20120124-1
+Now registering USB0/func3
+g_mass_storage1: msd_bind() Using Major Number 228
+g_mass_storage2: msd_init() Desc: Mass Storage Function
+g_mass_storage2: msd_init() Name: g_mass_storage2
+g_mass_storage2: msd_init() Version: 20120124-2
+Now registering USB0/func4
+g_mass_storage2: msd_bind() Using Major Number 227
+IRQ 84/eth0: IRQF_DISABLED is not guaranteed on shared IRQs
+imm2_wdt_open: User Hang WDT opened
+imm2_wdt_start: index=1
+wd_cnt_write - wdtn_max[1] updated to 0x01
+wd_cntew_write - wdte_max[1] updated to 0x01
+imm2_wdt_ioctl: WDIOC_SETTIMEOUT
+	 Userspace timeout set to 60 secs
+wd_cntew_write - wdte_max[1] updated to 0xe4e
+wd_cnt_write - wdtn_max[1] updated to 0x55e5
+wd_cntew_write - wdte_max[1] updated to 0xe63
+wd_cnt_write - wdtn_max[1] updated to 0x5743
+wd_cntew_write - wdte_max[1] updated to 0xfc1
+wd_cntew_write - wdte_max[0] updated to 0x802a
+kjournald starting.  Commit interval 15 seconds
+EXT3-fs: mounted filesystem with writeback data mode.
+wd_cnt_write - wdtn_max[1] updated to 0x5744
+wd_cntew_write - wdte_max[1] updated to 0xfc2
+wd_cnt_write - wdtn_max[1] updated to 0x5756
+wd_cntew_write - wdte_max[1] updated to 0xfd4
+imm2_wdt_open: Kernel Hang WDT opened
+WDT imm2_wdt_release: Line: 571 - WARN: WDT0 refcnt is 0
+WDT imm2_wdt_release: Line: 576 - WARN: You can only release Userspace WDT
+------ end of init -------------------------------------------------------------
+[2000-01-01T00:00:06]  -> Running /etc/scripts/ifs.mmc
+[2000-01-01T00:00:06]  -> Creating RTC device nodes
+[2017-03-24T14:43:23]  -> Creating MMC device nodes
+[2017-03-24T14:43:23]  -> Creating initfs mount points
+[2017-03-24T14:43:23]  -> Repairing partitions
+e2fsck 1.41.9 (22-Aug-2009)
+/dev/mmcblk0p2: recovering journal
+/dev/mmcblk0p2 has been mounted 1 times without being checked, check forced.
+Pass 1: Checking inodes, blocks, and sizes
+Pass 2: Checking directory structure
+Pass 3: Checking directory connectivity
+Pass 4: Checking reference counts
+Pass 5: Checking group summary information
+
+/dev/mmcblk0p2: ***** FILE SYSTEM WAS MODIFIED *****
+/dev/mmcblk0p2: 7281/65536 files (9.5% non-contiguous), 103099/131072 blocks
+e2fsck 1.41.9 (22-Aug-2009)
+/dev/mmcblk0p4: recovering journal
+/dev/mmcblk0p4 has been mounted 2 times without being checked, check forced.
+Pass 1: Checking inodes, blocks, and sizes
+Pass 2: Checking directory structure
+Pass 3: Checking directory connectivity
+Pass 4: Checking reference counts
+Pass 5: Checking group summary information
+
+/dev/mmcblk0p4: ***** FILE SYSTEM WAS MODIFIED *****
+/dev/mmcblk0p4: 96/61440 files (10.4% non-contiguous), 247053/491520 blocks
+[2017-03-24T14:43:32]  -> 2G layout is converted
+[2017-03-24T14:43:32]  -> upd.flash verified
+[2017-03-24T14:43:32]  -> Flashing script is running (install_main)
+[2017-03-24T14:43:32]  -> Starting to flash primary partition
+[2017-03-24T14:43:32] -> Upd is for all platform
+[2017-03-24T14:43:32]  -> Mounting /dev/mmcblk0p2 to /mmc2
+[2017-03-24T14:43:32]   -> saving system files
+[2017-03-24T14:43:32]   -> saving bmc files
+[2017-03-24T14:43:34]   -> saving datastore files
+[2017-03-24T14:43:35]   -> saving sfcb files
+[2017-03-24T14:43:36]   -> saving log files
+[2017-03-24T14:43:36]   -> cleaning global keep areas
+[2017-03-24T14:43:36]   -> populating global keep areas
+[2017-03-24T14:43:37]  -> Unmounting /mmc2
+[2017-03-24T14:43:38]  -> Extracting the rootfs to /dev/mmcblk0p2
+[2017-03-24T14:44:38]  -> Mounting /dev/mmcblk0p2 to /mmc2
+[2017-03-24T14:44:38]  -> Copying over the new kernel image
+[2017-03-24T14:44:39]   -> populating local keep areas
+[2017-03-24T14:44:42]   -> restoring system files
+[2017-03-24T14:44:42]   -> restoring bmc files
+[2017-03-24T14:44:44]   -> restoring datastore files
+[2017-03-24T14:44:47]   -> restoring sfcb files
+[2017-03-24T14:44:48] sfcb cim_* files keep consistent during upd update
+[2017-03-24T14:44:48]   -> restoring log files
+[2017-03-24T14:44:48]   -> remove /tmp/keepfiles
+[2017-03-24T14:44:50]  -> Checking mount dev after updating
+[2017-03-24T14:44:52]  -> Saving candidate images
+[2017-03-24T14:44:56]  -> Cleaning up temporary files
+[2017-03-24T14:44:56]  -> Flashing of primary partition completed!
+[2017-03-24T14:44:56]  -> remove IIR file to ensure full provisiong takes place after flash
+[2017-03-24T14:44:58]  -> Attempting to mount /rootfs to /dev/mmcblk0p2
+[2017-03-24T14:44:58]  -> Creating rootfs mount points
+[2017-03-24T14:44:58]  -> Performing security operations.
+[2017-03-24T14:45:00]  -> SecureBoot found..
+[2017-03-24T14:45:00]  -> FW Ext3 found..
+[2017-03-24T14:45:00]  -> securefs mounted - running init
+[2017-03-24T14:45:01] Security mode: NORMAL
+[2017-03-24T14:45:01] Reset reason: bp=12 eph=0 rs=0100 rs2=03
+[2017-03-24T14:45:01] Boot partition: 2
+[2017-03-24T14:45:01] Stay in current boot partition on failure (1)
+[2017-03-24T14:45:01] Tuning kernel security values.
+[2017-03-24T14:45:01]  > Done
+[2017-03-24T14:45:01] Enabling hardware entropy collection.
+[2017-03-24T14:45:01]  -> Inside sfs/init/set_twr_revision
+[2017-03-24T14:45:02] Enabling firewall watchdog + daemon.
+[2017-03-24T14:45:03] Trusted image buildid TCOO10P
+[2017-03-24T14:45:03] Trusted image buildversion 1.80
+[2017-03-24T14:45:04] Begin to verify rtfs md5
+[2017-03-24T14:45:05] Finish rtfs md5, checked 2 files, skip 0 files
+[2017-03-24T14:45:05] rtfs check finished
+[2017-03-24T14:45:05] FPGA update supported? 1
+[2017-03-24T14:45:05] RTMM device supported.
+[2017-03-24T14:45:05] Found Andromeda PASS-9 hardware
+[2017-03-24T14:45:05] RTMM update not needed.
+[2017-03-24T14:45:06] FPGA update supported? 1
+[2017-03-24T14:45:06] FPGA device support.
+[2017-03-24T14:45:06] Attempting to flash system SYS-FPGA image.
+[2017-03-24T14:45:38] SYS-FPGA image successfully updated.
+[2017-03-24T14:45:38] Checking if any CRTM transitions are needed.
+[2017-03-24T14:45:38] Both transitions already completed. (CCSI)
+[2017-03-24T14:45:38] SPITOC format ready
+[2017-03-24T14:45:39] Current CRTM is 3.3
+[2017-03-24T14:45:39] Stepping not required
+[2017-03-24T14:45:39] Checking if Primary UBoot needs updating.
+[2017-03-24T14:45:40] Primary UBoot already updated.
+[2017-03-24T14:45:40] Checking if Backup UBoot needs updating.
+[2017-03-24T14:45:41] Backup UBoot already updated.
+[2017-03-24T14:45:41] Platform [0050001A] doesn't support Snoopy hardware
+[2017-03-24T14:45:41] Phase1 lock latch : Lock RTMM/FPGA done.
+[2017-03-24T14:45:41] Activate baseline firewall.
+[2017-03-24T14:45:41] calling firetool --init-accesscontrol
+[2017-03-24T14:45:42] calling firetool  --init
+[2017-03-24T14:45:43] Activate baseline firewall done
+[2017-03-24T14:45:44] Removing old IP addresses from certs db.
+[2017-03-24T14:45:44] sifs: Begin simulated provisioning.
+[2017-03-24T14:45:45] Disabled policies: CMR : 
+[2017-03-24T14:45:45] Disabled policies: PROV: 
+[2017-03-24T14:45:45] Enabled policies :   200 205 210 215 220 230 240 245 710 715 720 730 735 740 745 755 760 765 775 780 785 790 795 800
+[2017-03-24T14:45:51] Enable multiple policy ..done
+[2017-03-24T14:45:51] Protocol Analysis wedge in place.
+[2017-03-24T14:45:51] Locking firewall policy configuration.
+[2017-03-24T14:45:51] FPGA update supported? 1
+[2017-03-24T14:45:51] Restore original boot partition on success (0x13)
+[2017-03-24T14:45:54]  -> Inside /etc/scripts/rfs.devnodes, Create node again
+[2017-03-24T14:45:56]  -> Inside /etc/scripts/rfs.startup
+[2017-03-24T14:45:56] ==> Loading base drivers...
+[2017-03-24T14:45:57] ==> Base drivers loaded
+[2017-03-24T14:45:57]  -> Inside /etc/scripts/rfs.firstboot
+[2017-03-24T14:45:57]  -> bind script: bind-andromeda.sh 
+[2017-03-24T14:45:57]  -> Binding to andromeda
+[2017-03-24T14:45:57]  -> Configuring high performance (firstboot)
+[2017-03-24T14:45:57]  -> Create NVRAM folder for IMM
+[2017-03-24T14:45:58]  -> Andromeda (firstboot)
+[2017-03-24T14:45:59]  -> updating ptables in uboot
+[2017-03-24T14:45:59]  -> Next boot partition is currently 0x13
+[2017-03-24T14:45:59]  -> Next boot partition changed to   0x12
+[2017-03-24T14:45:59]  -> Performing autoreboot
+[2017-03-24T14:46:00] ==> Loading BMC drivers...
+[2017-03-24T14:46:03] ==> BMC drivers loaded
+[2017-03-24T14:46:03]  -> Configuring high performance (sysinit)
+[2017-03-24T14:46:03]  -> Andromeda (sysinit)
+[2017-03-24T14:46:05] ==> Loading Mbox drivers...
+[2017-03-24T14:46:05]  -> Installed /dev/aess_mboxdrv driver - (Major 232)
+[2017-03-24T14:46:05]  -> System time using RTC
+[2017-03-24T14:46:09]  -> Inside /etc/scripts/rfs.startup , raid 1
+[2017-03-24T14:46:09]  -> Inside /etc/scripts/rfs.startup , raid 2
+[2017-03-24T14:46:09]  -> Inside /etc/scripts/rfs.startup , raid 3
+[2017-03-24T14:46:09]  -> Starting provisioning phase3 process monitor
+[2017-03-24T14:46:09]  -> Starting Watchdog/Lifeguard daemon
+[2017-03-24T14:46:10]  -> Inside /etc/scripts/rfs.emerson-temp
+[2017-03-24T14:46:10]  Sync Hwclock time to sys time
+[2017-03-24T14:46:11]  -> Running /etc/scripts/rfs.fod
+[2017-03-24T14:46:11] remove old FoD directory
+[2017-03-24T14:46:12]  -> Checking SPI flash
+[2017-03-24T14:46:12]  -> Checking backup uboot
+[2017-03-24T14:46:12]  -> Starting sshd-immsftp
+[2017-03-24T14:46:16]  -> Recovery VPD MD5 image saved - /var/keep/vpd-backup.bin.bdeb5d17ebd1106415ce9a5bfbe91fb3
+[2017-03-24T14:46:17]  -> Recovery VPD image saved - /var/keep/vpd-backup.bin
+[2017-03-24T14:46:18]  -> Backup VPD Sector needs to be updated
+[2017-03-24T14:46:21]  -> sftp service prepared
+[2017-03-24T14:46:27]  -> Backup VPD Sector updated
+[2017-03-24T14:46:30]  -> sftp service started
+[2017-03-24T14:46:30]  -> Starting install OEM script
+[2017-03-24T14:46:31] No OEM PKG, Don't need update
+[2017-03-24T14:46:37]  -> Secure debug ports FAILED to open.
+[2017-03-24T14:46:41] ==> Exiting /etc/scripts/rfs.startup
+------ kernel log  -------------------------------------------------------------
+MA: Registering DMA API.
+Switching to clocksource TMU1
+sh_tmu: TMU0 used for oneshot clock events
+NET: Registered protocol family 2
+IP route cache hash table entries: 2048 (order: 1, 8192 bytes)
+TCP established hash table entries: 8192 (order: 4, 65536 bytes)
+TCP bind hash table entries: 8192 (order: 3, 32768 bytes)
+TCP: Hash tables configured (established 8192 bind 8192)
+TCP reno registered
+NET: Registered protocol family 1
+RPC: Registered udp transport module.
+RPC: Registered tcp transport module.
+RPC: Registered tcp NFSv4.1 backchannel transport module.
+squashfs: version 4.0 (2009/01/31) Phillip Lougher
+NTFS driver 2.1.29 [Flags: R/O].
+msgmni has been set to 106
+alg: No test for cipher_null (cipher_null-generic)
+alg: No test for ecb(cipher_null) (ecb-cipher_null)
+alg: No test for digest_null (digest_null-generic)
+alg: No test for compress_null (compress_null-generic)
+alg: self-tests for sha1-generic (sha1) passed
+alg: self-tests for sha224-generic (sha224) passed
+alg: self-tests for sha256-generic (sha256) passed
+alg: self-tests for sha384-generic (sha384) passed
+alg: self-tests for sha512-generic (sha512) passed
+alg: self-tests for des-generic (des) passed
+alg: self-tests for des3_ede-generic (des3_ede) passed
+alg: self-tests for aes-generic (aes) passed
+alg: self-tests for deflate-generic (deflate) passed
+alg: No test for stdrng (krng)
+alg: self-tests for ansi_cprng (stdrng) passed
+alg: No test for fips(ansi_cprng) (fips_ansi_cprng)
+alg: self-tests for hmac(sha256-generic) (hmac(sha256)) passed
+alg: self-tests for drbg_pr_hmac_sha1 (stdrng) passed
+alg: self-tests for drbg_pr_hmac_sha384 (stdrng) passed
+alg: self-tests for drbg_pr_hmac_sha512 (stdrng) passed
+alg: self-tests for drbg_pr_hmac_sha256 (stdrng) passed
+alg: self-tests for drbg_nopr_hmac_sha1 (stdrng) passed
+alg: self-tests for drbg_nopr_hmac_sha384 (stdrng) passed
+alg: self-tests for drbg_nopr_hmac_sha512 (stdrng) passed
+alg: self-tests for drbg_nopr_hmac_sha256 (stdrng) passed
+alg: self-tests for ghash-generic (ghash) passed
+io scheduler noop registered
+io scheduler anticipatory registered
+io scheduler deadline registered
+io scheduler cfq registered (default)
+Generic RTC Driver v1.07
+SuperH SCI(F) driver initialized
+sh-sci: ttySC0 at MMIO 0xfe4b0000 (irq = 40) is a scif
+sh-sci: ttySC1 at MMIO 0xfe4c0000 (irq = 76) is a scif
+sh-sci: ttySC2 at MMIO 0xfe4d0000 (irq = 104) is a scif
+console [ttySC2] enabled
+loop: module loaded
+nbd: registered device at major 43
+Kernel Build: 2:immv2_19_sh4_mcp61:mcp:2016:03:10:222514:6:1:0:
+max3107 spi2.0: REVID 0 does not match
+sh_rspi: version 2010-04-12
+IMM2 SH7757 CX chip, sh_eth driver
+sh_mii: probed
+Base address at 0xfef00000, 00:E0:EC:30:60:E8, IRQ 84.
+IMM2 SH7757 CX chip, sh_eth driver
+sh_mii: probed
+Base address at 0xfee00800, 00:E0:EC:30:60:E9, IRQ 316.
+ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+ehci_hcd: block sizes: qh 60 qtd 96 itd 160 sitd 96
+sh_ehci sh_ehci: SuperH EHCI
+drivers/usb/core/inode.c: creating file 'devices'
+drivers/usb/core/inode.c: creating file '001'
+sh_ehci sh_ehci: new USB bus registered, assigned bus number 1
+sh_ehci sh_ehci: park 0
+sh_ehci sh_ehci: reset command 080b02 park=3 ithresh=8 period=1024 Reset HALT
+sh_ehci sh_ehci: ...powerup ports...
+sh_ehci sh_ehci: irq 57, io mem 0xfe4f1000
+sh_ehci sh_ehci: reset command 080b02 park=3 ithresh=8 period=1024 Reset HALT
+sh_ehci sh_ehci: init command 010009 (park)=0 ithresh=1 period=256 RUN
+sh_ehci sh_ehci: USB 2.0 started, EHCI 1.00
+usb usb1: default language 0x0409
+usb usb1: udev 1, busnum 1, minor = 0
+usb usb1: New USB device found, idVendor=1d6b, idProduct=0002
+usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+usb usb1: Product: SuperH EHCI
+usb usb1: Manufacturer: Linux 2.6.32.12-455-initramfs_signed ehci_hcd
+usb usb1: SerialNumber: ehci_hcd
+usb usb1: usb_probe_device
+usb usb1: configuration #1 chosen from 1 choice
+usb usb1: adding 1-0:1.0 (config #1, interface 0)
+hub 1-0:1.0: usb_probe_interface
+hub 1-0:1.0: usb_probe_interface - got id
+hub 1-0:1.0: USB hub found
+hub 1-0:1.0: 2 ports detected
+hub 1-0:1.0: standalone hub
+hub 1-0:1.0: individual port power switching
+hub 1-0:1.0: individual port over-current protection
+hub 1-0:1.0: power on to power good time: 20ms
+hub 1-0:1.0: local power source is good
+hub 1-0:1.0: enabling power on all ports
+drivers/usb/core/inode.c: creating file '001'
+ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+ohci_hcd: block sizes: ed 64 td 64
+sh_ohci sh_ohci: SuperH OHCI
+drivers/usb/core/inode.c: creating file '002'
+sh_ohci sh_ohci: new USB bus registered, assigned bus number 2
+sh_ohci sh_ohci: irq 57, io mem 0xfe4f1800
+sh_ohci sh_ohci: created debug files
+sh_ohci sh_ohci: OHCI controller state
+sh_ohci sh_ohci: OHCI 1.0, NO legacy support registers
+sh_ohci sh_ohci: control 0x083 HCFS=operational CBSR=3
+sh_ohci sh_ohci: cmdstatus 0x00000 SOC=0
+sh_ohci sh_ohci: intrstatus 0x00000004 SF
+sh_ohci sh_ohci: intrenable 0x8000001a MIE UE RD WDH
+sh_ohci sh_ohci: hcca frame #03f7
+sh_ohci sh_ohci: roothub.a ff000202 POTPGT=255 NPS NDP=2(2)
+sh_ohci sh_ohci: roothub.b 00000000 PPCM=0000 DR=0000
+sh_ohci sh_ohci: roothub.status 00008000 DRWE
+sh_ohci sh_ohci: roothub.portstatus [0] 0x00000100 PPS
+sh_ohci sh_ohci: roothub.portstatus [1] 0x00000100 PPS
+usb usb2: default language 0x0409
+usb usb2: udev 1, busnum 2, minor = 128
+usb usb2: New USB device found, idVendor=1d6b, idProduct=0001
+usb usb2: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+usb usb2: Product: SuperH OHCI
+usb usb2: Manufacturer: Linux 2.6.32.12-455-initramfs_signed ohci_hcd
+usb usb2: SerialNumber: ohci_hcd
+hub 1-0:1.0: state 7 ports 2 chg 0000 evt 0000
+usb usb2: usb_probe_device
+usb usb2: configuration #1 chosen from 1 choice
+usb usb2: adding 2-0:1.0 (config #1, interface 0)
+hub 2-0:1.0: usb_probe_interface
+hub 2-0:1.0: usb_probe_interface - got id
+hub 2-0:1.0: USB hub found
+hub 2-0:1.0: 2 ports detected
+hub 2-0:1.0: standalone hub
+hub 2-0:1.0: no power switching (usb 1.0)
+hub 2-0:1.0: global over-current protection
+hub 2-0:1.0: power on to power good time: 510ms
+hub 2-0:1.0: local power source is good
+hub 2-0:1.0: no over-current condition exists
+hub 2-0:1.0: trying to enable port power on non-switchable hub
+drivers/usb/core/inode.c: creating file '001'
+Initializing USB Mass Storage driver...
+usbcore: registered new interface driver usb-storage
+USB Mass Storage support registered.
+IRQ 34/sh_mmcif: IRQF_DISABLED is not guaranteed on shared IRQs
+sh_mmcif: driver version 2010-03-17
+sh_tmu: TMU0 kept as earlytimer
+sh_tmu: TMU1 kept as earlytimer
+cryptodev: driver 0.8 loaded.
+mknod /dev/aess_adcsensordrv c 252 0
+KN:init_aess_mem_module
+mknod /dev/aess_eventhandlerdrv c 251 0
+mknod /dev/aess_gpiodrv c 250 0
+mknod /dev/imm2_fpga0 c 249 0
+mknod /dev/aess_spi0drv c 248 0
+imm2_fpga0: checksum enforced
+imm2_fpga: found CHIP_ID=70, v2.39 within 0 ms
+   block[ 00 ]: 0000
+   block[ 01 ]: 0010
+   block[ 02 ]: 0020
+   block[ 03 ]: 0030
+   block[ 04 ]: 0040
+   block[ 06 ]: 0050
+   block[ 07 ]: 0060
+   block[ 08 ]: 0070
+   block[ 09 ]: 0080
+   block[ 11 ]: 0090
+   block[ 12 ]: 00A0
+   block[ 13 ]: 00B0
+   block[ 14 ]: 00C0
+   block[ 15 ]: 00D0
+   block[ 16 ]: 00E0
+   block[ 17 ]: 00F0
+   block[ 19 ]: 0100
+   block[ 23 ]: 0110
+   block[ 28 ]: 0120
+   block[ 29 ]: 0130
+   block[ 30 ]: 0140
+   block[ 31 ]: 0150
+remote_fpga: found FPGA_ID=00, CHIP_ID=5A
+   block[ 00 ]: 0000
+   block[ 01 ]: 0010
+   block[ 03 ]: 0020
+   block[ 04 ]: 0030
+   block[ 05 ]: 0040
+   block[ 06 ]: 0050
+   block[ 09 ]: 0060
+   block[ 12 ]: 0070
+   block[ 28 ]: 0080
+   block[ 29 ]: 0090
+   block[ 30 ]: 00A0
+   block[ 31 ]: 00B0
+remote_fpga: found FPGA_ID=01, CHIP_ID=5A
+   block[ 00 ]: 0200
+   block[ 01 ]: 0210
+   block[ 03 ]: 0220
+   block[ 04 ]: 0230
+   block[ 05 ]: 0240
+   block[ 06 ]: 0250
+   block[ 09 ]: 0260
+   block[ 12 ]: 0270
+   block[ 28 ]: 0280
+   block[ 29 ]: 0290
+   block[ 30 ]: 02A0
+   block[ 31 ]: 02B0
+remote_fpga: found FPGA_ID=02, CHIP_ID=5A
+   block[ 00 ]: 0400
+   block[ 01 ]: 0410
+   block[ 03 ]: 0420
+   block[ 04 ]: 0430
+   block[ 05 ]: 0440
+   block[ 06 ]: 0450
+   block[ 09 ]: 0460
+   block[ 12 ]: 0470
+   block[ 28 ]: 0480
+   block[ 29 ]: 0490
+   block[ 30 ]: 04A0
+   block[ 31 ]: 04B0
+remote_fpga: found FPGA_ID=03, CHIP_ID=5A
+   block[ 00 ]: 0600
+   block[ 01 ]: 0610
+   block[ 03 ]: 0620
+   block[ 04 ]: 0630
+   block[ 05 ]: 0640
+   block[ 06 ]: 0650
+   block[ 09 ]: 0660
+   block[ 12 ]: 0670
+   block[ 28 ]: 0680
+   block[ 29 ]: 0690
+   block[ 30 ]: 06A0
+   block[ 31 ]: 06B0
+mknod /dev/aess_kcsdrv c 247 0
+IRQ 69/kcsdrv_hwctrl: IRQF_DISABLED is not guaranteed on shared IRQs
+mknod /dev/aess_memdrv c 246 0
+mknod /dev/aess_sgpiodrv c 245 0
+mknod /dev/aess_spi1drv c 244 0
+mknod /dev/aess_spinorflashdrv0 c 243 0
+mknod /dev/aess_spinorflashdrv1 c 243 1
+aess_timerdrv_init
+mknod /dev/aess_timerdrv c 242 0
+TSIP HW Crypto accelerator: 
+ hwrng registration sucessed
+cbc(aes) ecb(aes) ecb(des3_ede) cbc(des3_ede) 
+alg: self-tests for sha1-tsip (sha1) passed
+sha1 
+alg: self-tests for sha256-tsip (sha256) passed
+mmc0: unrecognised EXT_CSD revision 7.. CONTINUING with caution
+Card type is 7
+sha256 
+alg: self-tests for sha1-hmac-tsip (hmac(sha1)) passed
+hmac(sha1) 
+mmc0: new high speed MMC card at address 0001
+alg: self-tests for sha256-hmac-tsip (hmac(sha256)) passed
+hmac(sha256) 
+
+mknod /dev/aess_twrdrv c 241 0
+IRQ 69/twrdrv: IRQF_DISABLED is not guaranteed on shared IRQs
+mknod /dev/aess_pbi_vdm c 240 0
+mmcblk0: mmc0:0001 004GE0 1.84 GiB 
+ mmcblk0: p1 p2 p3 p4
+sermux sermux: version 2010-05-26
+Netfilter messages via NETLINK v0.30.
+nf_conntrack version 0.5.0 (3396 buckets, 13584 max)
+ctnetlink v0.93: registering with nfnetlink.
+xt_time: kernel timezone is -0000
+IPv4 over IPv4 tunneling driver
+ip_tables: (C) 2000-2006 Netfilter Core Team
+TCP cubic registered
+Initializing XFRM netlink socket
+NET: Registered protocol family 10
+lo: Disabled Privacy Extensions
+tunl0: Disabled Privacy Extensions
+ip6_tables: (C) 2000-2006 Netfilter Core Team
+Netfilter:nf_conntrack_frag6_timeout and ip6frag_time, nf_conntrack_frag6_low_thresh and ip6frag_low_thresh, nf_conntrack_frag6_high_thresh and ip6frag_high_thresh, the three sets are equivalent. nf_conntrack_frag6_timeout is just an alias for ip6frag_time. The former parameters of IPv6 conntrack will be removed in February 2011, please use the latter ones of IPv6.
+IPv6 over IPv4 tunneling driver
+sit0: Disabled Privacy Extensions
+NET: Registered protocol family 17
+NET: Registered protocol family 15
+802.1Q VLAN Support v1.8 Ben Greear <greearb@candelatech.com>
+All bugs added by David S. Miller <davem@redhat.com>
+NET: Registered protocol family 27
+eth0 device registered
+eth1 device registered
+IRQ 69/aess_biospostdrv: IRQF_DISABLED is not guaranteed on shared IRQs
+mknod /dev/aess_biospostdrv c 239 0
+mknod /dev/aess_cryptodrv c 238 0
+mknod /dev/aess_dynairqdrv c 237 0
+IRQ 236/aess_dynairqdrv: IRQF_DISABLED is not guaranteed on shared IRQs
+mknod /dev/aess_fansensordrv_2 c 236 0
+mknod /dev/aess_i2cdrv c 235 0
+mknod /dev/aess_pwmdrv c 234 0
+hub 2-0:1.0: state 7 ports 2 chg 0000 evt 0000
+WDT imm2_wdt_init: Line: 725 - imm2_wdt_init
+WDT light kernel thread created , id=388
+wdt_khang_light_task
+imm2_wdt_start: index=0
+wd_cnt_write - wdtn_max[0] updated to 0x3cfc
+wd_cntew_write - wdte_max[0] updated to 0x3d08
+khang_light_task_hook
+The system reboot cause: 100.
+	abnormal reboot detected - setting KHANG magic
+KHANG magic not cleared, waiting for khang util to capture info
+IRQ 273/dma_i2c1: IRQF_DISABLED is not guaranteed on shared IRQs
+wd_cntew_write - wdte_max[0] updated to 0x7568
+
+ tpm_imm_device_init(): tpm_register_hardware 
+tpm_i2c VID: 2FE1050 DID: 2FE RID: 02
+m41t83_2: dev (254:0)
+m41t83_2_rtc m41t83_2_rtc.0: rtc core: registered m41t83_2 as rtc0
+Freeing unused kernel memory: 1544k freed
+wd_cntew_write - wdte_max[0] updated to 0x7fd9
+wd_cntew_write - wdte_max[0] updated to 0x7fda
+wd_cntew_write - wdte_max[0] updated to 0x7fe3
+kjournald starting.  Commit interval 5 seconds
+EXT3 FS on mmcblk0p4, internal journal
+EXT3-fs: mounted filesystem with journal data mode.
+kjournald starting.  Commit interval 1 seconds
+EXT3 FS on mmcblk0p2, internal journal
+EXT3-fs: mounted filesystem with journal data mode.
+kjournald starting.  Commit interval 5 seconds
+EXT3-fs warning: maximal mount count reached, running e2fsck is recommended
+EXT3 FS on mmcblk0p2, internal journal
+EXT3-fs: mounted filesystem with journal data mode.
+wd_cntew_write - wdte_max[0] updated to 0x7fe9
+kjournald starting.  Commit interval 1 seconds
+EXT3-fs warning: maximal mount count reached, running e2fsck is recommended
+EXT3 FS on mmcblk0p2, internal journal
+EXT3-fs: mounted filesystem with journal data mode.
+wd_cntew_write - wdte_max[0] updated to 0x7ff3
+kjournald starting.  Commit interval 5 seconds
+EXT3 FS on mmcblk0p2, internal journal
+EXT3-fs: mounted filesystem with journal data mode.
+IRQ 272/dma_i2c0: IRQF_DISABLED is not guaranteed on shared IRQs
+wd_cntew_write - wdte_max[0] updated to 0x8001
+kjournald starting.  Commit interval 5 seconds
+EXT3-fs warning: maximal mount count reached, running e2fsck is recommended
+EXT3 FS on mmcblk0p4, internal journal
+EXT3-fs: mounted filesystem with journal data mode.
+IRQ 282/dma_i2c7: IRQF_DISABLED is not guaranteed on shared IRQs
+IRQ 281/dma_i2c6: IRQF_DISABLED is not guaranteed on shared IRQs
+IRQ 50/r8a66597_udc: IRQF_DISABLED is not guaranteed on shared IRQs
+r8a66597_udc r8a66597_udc.0: version 2012-12-18
+Now registering USB0/func0
+Gadget USB HUB, version: 20101014
+aess_video_init Avocent Video Driver installed
+allocate_video_buffer_reserve_mem- video_buffer_phys (reserved mem): 4e000000 video_buffer_size: 0x00EAE000
+hid_init: Desc: Keyboard/Mouse Function
+hid_init: Name: g_kbdmouse
+hid_init: Version: 20111018
+Now registering USB0/func1
+hid_bind: Using Major Number 230
+hid_bind: using r8a66597_udc, Keyboard ep1 Mouse ep2
+hid_bind: Mouse REL ep3
+g_mass_storage: msd_init() Desc: Mass Storage Function
+g_mass_storage: msd_init() Name: g_mass_storage
+g_mass_storage: msd_init() Version: 20120124
+Now registering USB0/func2
+g_mass_storage: msd_bind() Using Major Number 229
+g_mass_storage1: msd_init() Desc: Mass Storage Function
+g_mass_storage1: msd_init() Name: g_mass_storage1
+g_mass_storage1: msd_init() Version: 20120124-1
+Now registering USB0/func3
+g_mass_storage1: msd_bind() Using Major Number 228
+g_mass_storage2: msd_init() Desc: Mass Storage Function
+g_mass_storage2: msd_init() Name: g_mass_storage2
+g_mass_storage2: msd_init() Version: 20120124-2
+Now registering USB0/func4
+g_mass_storage2: msd_bind() Using Major Number 227
+g_hub gadget.0: high speed connected
+IRQ 84/eth0: IRQF_DISABLED is not guaranteed on shared IRQs
+imm2_wdt_open: User Hang WDT opened
+imm2_wdt_start: index=1
+wd_cnt_write - wdtn_max[1] updated to 0x9652
+wd_cntew_write - wdte_max[1] updated to 0x165f
+imm2_wdt_ioctl: WDIOC_SETTIMEOUT
+	 Userspace timeout set to 60 secs
+kjournald starting.  Commit interval 15 seconds
+EXT3-fs: mounted filesystem with writeback data mode.
+imm2_wdt_open: Kernel Hang WDT opened
+khang_ioctl: valid khang_virt_addr
+KHANG magic cleared, relocating printk buffer
+WDT imm2_wdt_release: Line: 571 - WARN: WDT0 refcnt is 0
+WDT imm2_wdt_release: Line: 576 - WARN: You can only release Userspace WDT
+------ end of init -------------------------------------------------------------
+[2000-01-01T00:00:06]  -> Running /etc/scripts/ifs.mmc
+[2000-01-01T00:00:06]  -> Creating RTC device nodes
+[2017-03-24T15:34:13]  -> Creating MMC device nodes
+[2017-03-24T15:34:13]  -> Creating initfs mount points
+[2017-03-24T15:34:13]  -> Repairing partitions
+e2fsck 1.41.9 (22-Aug-2009)
+/dev/mmcblk0p2: recovering journal
+/dev/mmcblk0p2 has been mounted 1 times without being checked, check forced.
+Pass 1: Checking inodes, blocks, and sizes
+Pass 2: Checking directory structure
+Pass 3: Checking directory connectivity
+Pass 4: Checking reference counts
+Pass 5: Checking group summary information
+
+/dev/mmcblk0p2: ***** FILE SYSTEM WAS MODIFIED *****
+/dev/mmcblk0p2: 7319/65536 files (9.0% non-contiguous), 104223/131072 blocks
+e2fsck 1.41.9 (22-Aug-2009)
+/dev/mmcblk0p4: recovering journal
+/dev/mmcblk0p4 has been mounted 2 times without being checked, check forced.
+Pass 1: Checking inodes, blocks, and sizes
+Pass 2: Checking directory structure
+Pass 3: Checking directory connectivity
+Pass 4: Checking reference counts
+Pass 5: Checking group summary information
+
+/dev/mmcblk0p4: ***** FILE SYSTEM WAS MODIFIED *****
+/dev/mmcblk0p4: 89/61440 files (9.0% non-contiguous), 242716/491520 blocks
+[2017-03-24T15:34:19]  -> 2G layout is converted
+[2017-03-24T15:34:19]  -> Attempting to mount /rootfs to /dev/mmcblk0p2
+[2017-03-24T15:34:19]  -> Creating rootfs mount points
+[2017-03-24T15:34:19]  -> Performing security operations.
+[2017-03-24T15:34:21]  -> SecureBoot found..
+[2017-03-24T15:34:21]  -> FW Ext3 found..
+[2017-03-24T15:34:21]  -> securefs mounted - running init
+[2017-03-24T15:34:22] Security mode: NORMAL
+[2017-03-24T15:34:22] Reset reason: bp=12 eph=0 rs=0080 rs2=02
+[2017-03-24T15:34:22] Boot partition: 2
+[2017-03-24T15:34:22] Stay in current boot partition on failure (1)
+[2017-03-24T15:34:22] Tuning kernel security values.
+[2017-03-24T15:34:22]  > Done
+[2017-03-24T15:34:22] Enabling hardware entropy collection.
+[2017-03-24T15:34:22]  -> Inside sfs/init/set_twr_revision
+[2017-03-24T15:34:22] Enabling firewall watchdog + daemon.
+[2017-03-24T15:34:24] Trusted image buildid TCOO10P
+[2017-03-24T15:34:24] Trusted image buildversion 1.80
+[2017-03-24T15:34:25] Begin to verify rtfs md5
+[2017-03-24T15:34:25] Finish rtfs md5, checked 2 files, skip 0 files
+[2017-03-24T15:34:25] rtfs check finished
+[2017-03-24T15:34:25] FPGA update supported? 1
+[2017-03-24T15:34:25] RTMM device supported.
+[2017-03-24T15:34:26] Found Andromeda PASS-9 hardware
+[2017-03-24T15:34:26] RTMM update not needed.
+[2017-03-24T15:34:26] FPGA update supported? 1
+[2017-03-24T15:34:26] FPGA device support.
+[2017-03-24T15:34:26] FPGA update not needed.
+[2017-03-24T15:34:26] Checking if any CRTM transitions are needed.
+[2017-03-24T15:34:27] Both transitions already completed. (CCSI)
+[2017-03-24T15:34:27] SPITOC format ready
+[2017-03-24T15:34:27] Current CRTM is 3.3
+[2017-03-24T15:34:27] Stepping not required
+[2017-03-24T15:34:27] Checking if Primary UBoot needs updating.
+[2017-03-24T15:34:27] Primary UBoot already updated.
+[2017-03-24T15:34:27] Checking if Backup UBoot needs updating.
+[2017-03-24T15:34:27] Backup UBoot already updated.
+[2017-03-24T15:34:27] Platform [0050001A] doesn't support Snoopy hardware
+[2017-03-24T15:34:27] Phase1 lock latch : Lock RTMM/FPGA done.
+[2017-03-24T15:34:27] Activate baseline firewall.
+[2017-03-24T15:34:28] calling firetool --init-accesscontrol
+[2017-03-24T15:34:28] calling firetool  --init
+[2017-03-24T15:34:30] Activate baseline firewall done
+[2017-03-24T15:34:30] Removing old IP addresses from certs db.
+[2017-03-24T15:34:30] sifs: Begin simulated provisioning.
+[2017-03-24T15:34:32] Disabled policies: CMR : 
+[2017-03-24T15:34:32] Disabled policies: PROV: 
+[2017-03-24T15:34:32] Enabled policies :   200 205 210 215 220 230 240 245 710 715 720 730 735 740 745 755 760 765 775 780 785 790 795 800
+[2017-03-24T15:34:37] Enable multiple policy ..done
+[2017-03-24T15:34:37] Protocol Analysis wedge in place.
+[2017-03-24T15:34:38] Locking firewall policy configuration.
+[2017-03-24T15:34:38] FPGA update supported? 1
+[2017-03-24T15:34:38] Restore original boot partition on success (0x13)
+[2017-03-24T15:34:40]  -> Inside /etc/scripts/rfs.devnodes, Create node again
+[2017-03-24T15:34:43]  -> Inside /etc/scripts/rfs.startup
+[2017-03-24T15:34:43] ==> Loading base drivers...
+[2017-03-24T15:34:44] ==> Base drivers loaded
+[2017-03-24T15:34:44]  -> Next boot partition is currently 0x13
+[2017-03-24T15:34:44]  -> Next boot partition changed to   0x12
+[2017-03-24T15:34:44]  -> Performing autoreboot
+[2017-03-24T15:34:47]  -> md5sum signature check passed in rfs.aess-bmc
+[2017-03-24T15:34:47] !-> file stat mismatch in rfs.aess-bmc, create it again
+[2017-03-24T15:34:47] ==> Loading BMC drivers...
+[2017-03-24T15:34:50] ==> BMC drivers loaded
+[2017-03-24T15:34:50]  -> Configuring high performance (sysinit)
+[2017-03-24T15:34:50]  -> Andromeda (sysinit)
+[2017-03-24T15:34:52] ==> Loading Mbox drivers...
+[2017-03-24T15:34:52]  -> Installed /dev/aess_mboxdrv driver - (Major 232)
+[2017-03-24T15:34:53]  -> System time using RTC
+[2017-03-24T15:34:53]  -> Inside /etc/scripts/rfs.startup , raid 1
+[2017-03-24T15:34:53]  -> Starting provisioning phase3 process monitor
+[2017-03-24T15:34:53]  -> Starting Watchdog/Lifeguard daemon
+[2017-03-24T15:34:53]  -> Inside /etc/scripts/rfs.emerson-temp
+[2017-03-24T15:34:53]  Sync Hwclock time to sys time
+[2017-03-24T15:34:54]  -> Running /etc/scripts/rfs.fod
+[2017-03-24T15:34:54] remove old FoD directory
+[2017-03-24T15:34:54]  -> Checking SPI flash
+[2017-03-24T15:34:54]  -> Checking backup uboot
+[2017-03-24T15:34:55]  -> Starting sshd-immsftp
+[2017-03-24T15:35:00]  -> sftp service prepared
+[2017-03-24T15:35:08]  -> sftp service started
+[2017-03-24T15:35:09]  -> Starting install OEM script
+[2017-03-24T15:35:10] No OEM PKG, Don't need update
+[2017-03-24T15:35:18]  -> Secure debug ports FAILED to open.
+[2017-03-24T15:35:21] ==> Exiting /etc/scripts/rfs.startup
+------ kernel log  -------------------------------------------------------------
+tion.
+NR_IRQS:512
+sh_tmu: TMU0 used for clock events
+sh_tmu: TMU0 used for periodic clock events
+sh_tmu: TMU1 used as clock source
+Calibrating delay loop (skipped)... 576.00 BogoMIPS PRESET (lpj=1152000)
+pid_max: default: 32768 minimum: 301
+Mount-cache hash table entries: 512
+CPU: SH7757
+NET: Registered protocol family 16
+sh pinmux: sh7757_pfc handling gpio 0 -> 504
+IMM2 SH7757 xx chip
+IMM2 SH7757 C2/C3/C4 chip
+enable PCIe shared memory area for imm2
+bio: create slab <bio-0> at 0
+SCSI subsystem initialized
+usbcore: registered new interface driver usbfs
+usbcore: registered new interface driver hub
+usbcore: registered new device driver usb
+DMA: Registering sh_dmac handler (24 channels).
+DMA: Registering DMA API.
+Switching to clocksource TMU1
+sh_tmu: TMU0 used for oneshot clock events
+NET: Registered protocol family 2
+IP route cache hash table entries: 2048 (order: 1, 8192 bytes)
+TCP established hash table entries: 8192 (order: 4, 65536 bytes)
+TCP bind hash table entries: 8192 (order: 3, 32768 bytes)
+TCP: Hash tables configured (established 8192 bind 8192)
+TCP reno registered
+NET: Registered protocol family 1
+RPC: Registered udp transport module.
+RPC: Registered tcp transport module.
+RPC: Registered tcp NFSv4.1 backchannel transport module.
+squashfs: version 4.0 (2009/01/31) Phillip Lougher
+NTFS driver 2.1.29 [Flags: R/O].
+msgmni has been set to 106
+alg: No test for cipher_null (cipher_null-generic)
+alg: No test for ecb(cipher_null) (ecb-cipher_null)
+alg: No test for digest_null (digest_null-generic)
+alg: No test for compress_null (compress_null-generic)
+alg: self-tests for sha1-generic (sha1) passed
+alg: self-tests for sha224-generic (sha224) passed
+alg: self-tests for sha256-generic (sha256) passed
+alg: self-tests for sha384-generic (sha384) passed
+alg: self-tests for sha512-generic (sha512) passed
+alg: self-tests for des-generic (des) passed
+alg: self-tests for des3_ede-generic (des3_ede) passed
+alg: self-tests for aes-generic (aes) passed
+alg: self-tests for deflate-generic (deflate) passed
+alg: No test for stdrng (krng)
+alg: self-tests for ansi_cprng (stdrng) passed
+alg: No test for fips(ansi_cprng) (fips_ansi_cprng)
+alg: self-tests for hmac(sha256-generic) (hmac(sha256)) passed
+alg: self-tests for drbg_pr_hmac_sha1 (stdrng) passed
+alg: self-tests for drbg_pr_hmac_sha384 (stdrng) passed
+alg: self-tests for drbg_pr_hmac_sha512 (stdrng) passed
+alg: self-tests for drbg_pr_hmac_sha256 (stdrng) passed
+alg: self-tests for drbg_nopr_hmac_sha1 (stdrng) passed
+alg: self-tests for drbg_nopr_hmac_sha384 (stdrng) passed
+alg: self-tests for drbg_nopr_hmac_sha512 (stdrng) passed
+alg: self-tests for drbg_nopr_hmac_sha256 (stdrng) passed
+alg: self-tests for ghash-generic (ghash) passed
+io scheduler noop registered
+io scheduler anticipatory registered
+io scheduler deadline registered
+io scheduler cfq registered (default)
+Generic RTC Driver v1.07
+SuperH SCI(F) driver initialized
+sh-sci: ttySC0 at MMIO 0xfe4b0000 (irq = 40) is a scif
+sh-sci: ttySC1 at MMIO 0xfe4c0000 (irq = 76) is a scif
+sh-sci: ttySC2 at MMIO 0xfe4d0000 (irq = 104) is a scif
+console [ttySC2] enabled
+loop: module loaded
+nbd: registered device at major 43
+Kernel Build: 2:immv2_19_sh4_mcp61:mcp:2016:03:10:222514:6:1:0:
+max3107 spi2.0: REVID 0 does not match
+sh_rspi: version 2010-04-12
+IMM2 SH7757 CX chip, sh_eth driver
+sh_mii: probed
+Base address at 0xfef00000, 00:E0:EC:30:60:E8, IRQ 84.
+IMM2 SH7757 CX chip, sh_eth driver
+sh_mii: probed
+Base address at 0xfee00800, 00:E0:EC:30:60:E9, IRQ 316.
+ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+ehci_hcd: block sizes: qh 60 qtd 96 itd 160 sitd 96
+sh_ehci sh_ehci: SuperH EHCI
+drivers/usb/core/inode.c: creating file 'devices'
+drivers/usb/core/inode.c: creating file '001'
+sh_ehci sh_ehci: new USB bus registered, assigned bus number 1
+sh_ehci sh_ehci: park 0
+sh_ehci sh_ehci: reset command 080b02 park=3 ithresh=8 period=1024 Reset HALT
+sh_ehci sh_ehci: ...powerup ports...
+sh_ehci sh_ehci: irq 57, io mem 0xfe4f1000
+sh_ehci sh_ehci: reset command 080b02 park=3 ithresh=8 period=1024 Reset HALT
+sh_ehci sh_ehci: init command 010009 (park)=0 ithresh=1 period=256 RUN
+sh_ehci sh_ehci: USB 2.0 started, EHCI 1.00
+usb usb1: default language 0x0409
+usb usb1: udev 1, busnum 1, minor = 0
+usb usb1: New USB device found, idVendor=1d6b, idProduct=0002
+usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+usb usb1: Product: SuperH EHCI
+usb usb1: Manufacturer: Linux 2.6.32.12-455-initramfs_signed ehci_hcd
+usb usb1: SerialNumber: ehci_hcd
+usb usb1: usb_probe_device
+usb usb1: configuration #1 chosen from 1 choice
+usb usb1: adding 1-0:1.0 (config #1, interface 0)
+hub 1-0:1.0: usb_probe_interface
+hub 1-0:1.0: usb_probe_interface - got id
+hub 1-0:1.0: USB hub found
+hub 1-0:1.0: 2 ports detected
+hub 1-0:1.0: standalone hub
+hub 1-0:1.0: individual port power switching
+hub 1-0:1.0: individual port over-current protection
+hub 1-0:1.0: power on to power good time: 20ms
+hub 1-0:1.0: local power source is good
+hub 1-0:1.0: enabling power on all ports
+drivers/usb/core/inode.c: creating file '001'
+ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+ohci_hcd: block sizes: ed 64 td 64
+sh_ohci sh_ohci: SuperH OHCI
+drivers/usb/core/inode.c: creating file '002'
+sh_ohci sh_ohci: new USB bus registered, assigned bus number 2
+sh_ohci sh_ohci: irq 57, io mem 0xfe4f1800
+sh_ohci sh_ohci: created debug files
+sh_ohci sh_ohci: OHCI controller state
+sh_ohci sh_ohci: OHCI 1.0, NO legacy support registers
+sh_ohci sh_ohci: control 0x083 HCFS=operational CBSR=3
+sh_ohci sh_ohci: cmdstatus 0x00000 SOC=0
+sh_ohci sh_ohci: intrstatus 0x00000004 SF
+sh_ohci sh_ohci: intrenable 0x8000001a MIE UE RD WDH
+sh_ohci sh_ohci: hcca frame #03f7
+sh_ohci sh_ohci: roothub.a ff000202 POTPGT=255 NPS NDP=2(2)
+sh_ohci sh_ohci: roothub.b 00000000 PPCM=0000 DR=0000
+sh_ohci sh_ohci: roothub.status 00008000 DRWE
+sh_ohci sh_ohci: roothub.portstatus [0] 0x00000100 PPS
+sh_ohci sh_ohci: roothub.portstatus [1] 0x00000100 PPS
+usb usb2: default language 0x0409
+usb usb2: udev 1, busnum 2, minor = 128
+usb usb2: New USB device found, idVendor=1d6b, idProduct=0001
+usb usb2: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+usb usb2: Product: SuperH OHCI
+usb usb2: Manufacturer: Linux 2.6.32.12-455-initramfs_signed ohci_hcd
+usb usb2: SerialNumber: ohci_hcd
+hub 1-0:1.0: state 7 ports 2 chg 0000 evt 0000
+usb usb2: usb_probe_device
+usb usb2: configuration #1 chosen from 1 choice
+usb usb2: adding 2-0:1.0 (config #1, interface 0)
+hub 2-0:1.0: usb_probe_interface
+hub 2-0:1.0: usb_probe_interface - got id
+hub 2-0:1.0: USB hub found
+hub 2-0:1.0: 2 ports detected
+hub 2-0:1.0: standalone hub
+hub 2-0:1.0: no power switching (usb 1.0)
+hub 2-0:1.0: global over-current protection
+hub 2-0:1.0: power on to power good time: 510ms
+hub 2-0:1.0: local power source is good
+hub 2-0:1.0: no over-current condition exists
+hub 2-0:1.0: trying to enable port power on non-switchable hub
+drivers/usb/core/inode.c: creating file '001'
+Initializing USB Mass Storage driver...
+usbcore: registered new interface driver usb-storage
+USB Mass Storage support registered.
+IRQ 34/sh_mmcif: IRQF_DISABLED is not guaranteed on shared IRQs
+sh_mmcif: driver version 2010-03-17
+sh_tmu: TMU0 kept as earlytimer
+sh_tmu: TMU1 kept as earlytimer
+cryptodev: driver 0.8 loaded.
+mknod /dev/aess_adcsensordrv c 252 0
+KN:init_aess_mem_module
+mknod /dev/aess_eventhandlerdrv c 251 0
+mknod /dev/aess_gpiodrv c 250 0
+mknod /dev/imm2_fpga0 c 249 0
+mknod /dev/aess_spi0drv c 248 0
+imm2_fpga0: checksum enforced
+imm2_fpga: found CHIP_ID=70, v3.05 within 0 ms
+   block[ 00 ]: 0000
+   block[ 01 ]: 0010
+   block[ 02 ]: 0020
+   block[ 03 ]: 0030
+   block[ 04 ]: 0040
+   block[ 06 ]: 0050
+   block[ 07 ]: 0060
+   block[ 08 ]: 0070
+   block[ 09 ]: 0080
+   block[ 11 ]: 0090
+   block[ 12 ]: 00A0
+   block[ 13 ]: 00B0
+   block[ 14 ]: 00C0
+   block[ 15 ]: 00D0
+   block[ 16 ]: 00E0
+   block[ 17 ]: 00F0
+   block[ 19 ]: 0100
+   block[ 23 ]: 0110
+   block[ 28 ]: 0120
+   block[ 29 ]: 0130
+   block[ 30 ]: 0140
+   block[ 31 ]: 0150
+remote_fpga: found FPGA_ID=00, CHIP_ID=5A
+   block[ 00 ]: 0000
+   block[ 01 ]: 0010
+   block[ 03 ]: 0020
+   block[ 04 ]: 0030
+   block[ 05 ]: 0040
+   block[ 06 ]: 0050
+   block[ 09 ]: 0060
+   block[ 12 ]: 0070
+   block[ 28 ]: 0080
+   block[ 29 ]: 0090
+   block[ 30 ]: 00A0
+   block[ 31 ]: 00B0
+remote_fpga: found FPGA_ID=01, CHIP_ID=5A
+   block[ 00 ]: 0200
+   block[ 01 ]: 0210
+   block[ 03 ]: 0220
+   block[ 04 ]: 0230
+   block[ 05 ]: 0240
+   block[ 06 ]: 0250
+   block[ 09 ]: 0260
+   block[ 12 ]: 0270
+   block[ 28 ]: 0280
+   block[ 29 ]: 0290
+   block[ 30 ]: 02A0
+   block[ 31 ]: 02B0
+remote_fpga: found FPGA_ID=02, CHIP_ID=5A
+   block[ 00 ]: 0400
+   block[ 01 ]: 0410
+   block[ 03 ]: 0420
+   block[ 04 ]: 0430
+   block[ 05 ]: 0440
+   block[ 06 ]: 0450
+   block[ 09 ]: 0460
+   block[ 12 ]: 0470
+   block[ 28 ]: 0480
+   block[ 29 ]: 0490
+   block[ 30 ]: 04A0
+   block[ 31 ]: 04B0
+remote_fpga: found FPGA_ID=03, CHIP_ID=5A
+   block[ 00 ]: 0600
+   block[ 01 ]: 0610
+   block[ 03 ]: 0620
+   block[ 04 ]: 0630
+   block[ 05 ]: 0640
+   block[ 06 ]: 0650
+   block[ 09 ]: 0660
+   block[ 12 ]: 0670
+   block[ 28 ]: 0680
+   block[ 29 ]: 0690
+   block[ 30 ]: 06A0
+   block[ 31 ]: 06B0
+mknod /dev/aess_kcsdrv c 247 0
+IRQ 69/kcsdrv_hwctrl: IRQF_DISABLED is not guaranteed on shared IRQs
+mknod /dev/aess_memdrv c 246 0
+mknod /dev/aess_sgpiodrv c 245 0
+mknod /dev/aess_spi1drv c 244 0
+mknod /dev/aess_spinorflashdrv0 c 243 0
+mknod /dev/aess_spinorflashdrv1 c 243 1
+aess_timerdrv_init
+mknod /dev/aess_timerdrv c 242 0
+TSIP HW Crypto accelerator: 
+ hwrng registration sucessed
+cbc(aes) ecb(aes) ecb(des3_ede) cbc(des3_ede) 
+alg: self-tests for sha1-tsip (sha1) passed
+sha1 
+alg: self-tests for sha256-tsip (sha256) passed
+mmc0: unrecognised EXT_CSD revision 7.. CONTINUING with caution
+Card type is 7
+sha256 
+alg: self-tests for sha1-hmac-tsip (hmac(sha1)) passed
+hmac(sha1) 
+mmc0: new high speed MMC card at address 0001
+alg: self-tests for sha256-hmac-tsip (hmac(sha256)) passed
+hmac(sha256) 
+
+mknod /dev/aess_twrdrv c 241 0
+IRQ 69/twrdrv: IRQF_DISABLED is not guaranteed on shared IRQs
+mknod /dev/aess_pbi_vdm c 240 0
+mmcblk0: mmc0:0001 004GE0 1.84 GiB 
+ mmcblk0: p1 p2 p3 p4
+sermux sermux: version 2010-05-26
+Netfilter messages via NETLINK v0.30.
+nf_conntrack version 0.5.0 (3396 buckets, 13584 max)
+ctnetlink v0.93: registering with nfnetlink.
+xt_time: kernel timezone is -0000
+IPv4 over IPv4 tunneling driver
+ip_tables: (C) 2000-2006 Netfilter Core Team
+TCP cubic registered
+Initializing XFRM netlink socket
+NET: Registered protocol family 10
+lo: Disabled Privacy Extensions
+tunl0: Disabled Privacy Extensions
+ip6_tables: (C) 2000-2006 Netfilter Core Team
+Netfilter:nf_conntrack_frag6_timeout and ip6frag_time, nf_conntrack_frag6_low_thresh and ip6frag_low_thresh, nf_conntrack_frag6_high_thresh and ip6frag_high_thresh, the three sets are equivalent. nf_conntrack_frag6_timeout is just an alias for ip6frag_time. The former parameters of IPv6 conntrack will be removed in February 2011, please use the latter ones of IPv6.
+IPv6 over IPv4 tunneling driver
+sit0: Disabled Privacy Extensions
+NET: Registered protocol family 17
+NET: Registered protocol family 15
+802.1Q VLAN Support v1.8 Ben Greear <greearb@candelatech.com>
+All bugs added by David S. Miller <davem@redhat.com>
+NET: Registered protocol family 27
+eth0 device registered
+eth1 device registered
+IRQ 69/aess_biospostdrv: IRQF_DISABLED is not guaranteed on shared IRQs
+mknod /dev/aess_biospostdrv c 239 0
+mknod /dev/aess_cryptodrv c 238 0
+mknod /dev/aess_dynairqdrv c 237 0
+IRQ 236/aess_dynairqdrv: IRQF_DISABLED is not guaranteed on shared IRQs
+mknod /dev/aess_fansensordrv_2 c 236 0
+mknod /dev/aess_i2cdrv c 235 0
+mknod /dev/aess_pwmdrv c 234 0
+hub 2-0:1.0: state 7 ports 2 chg 0000 evt 0000
+WDT imm2_wdt_init: Line: 725 - imm2_wdt_init
+WDT light kernel thread created , id=388
+wdt_khang_light_task
+imm2_wdt_start: index=0
+wd_cnt_write - wdtn_max[0] updated to 0x3d4d
+wd_cntew_write - wdte_max[0] updated to 0x3d59
+khang_light_task_hook
+The system reboot cause: 80.
+KHANG magic cleared, relocating printk buffer
+IRQ 273/dma_i2c1: IRQF_DISABLED is not guaranteed on shared IRQs
+wd_cntew_write - wdte_max[0] updated to 0x7557
+
+ tpm_imm_device_init(): tpm_register_hardware 
+tpm_i2c VID: 2FE1050 DID: 2FE RID: 02
+m41t83_2: dev (254:0)
+m41t83_2_rtc m41t83_2_rtc.0: rtc core: registered m41t83_2 as rtc0
+Freeing unused kernel memory: 1544k freed
+wd_cntew_write - wdte_max[0] updated to 0x7fd8
+wd_cntew_write - wdte_max[0] updated to 0x7fda
+wd_cntew_write - wdte_max[0] updated to 0x7fe8
+kjournald starting.  Commit interval 5 seconds
+EXT3 FS on mmcblk0p4, internal journal
+EXT3-fs: mounted filesystem with journal data mode.
+kjournald starting.  Commit interval 5 seconds
+EXT3 FS on mmcblk0p2, internal journal
+EXT3-fs: mounted filesystem with journal data mode.
+wd_cntew_write - wdte_max[0] updated to 0x815d
+IRQ 272/dma_i2c0: IRQF_DISABLED is not guaranteed on shared IRQs
+kjournald starting.  Commit interval 5 seconds
+EXT3-fs warning: maximal mount count reached, running e2fsck is recommended
+EXT3 FS on mmcblk0p4, internal journal
+EXT3-fs: mounted filesystem with journal data mode.
+IRQ 282/dma_i2c7: IRQF_DISABLED is not guaranteed on shared IRQs
+IRQ 281/dma_i2c6: IRQF_DISABLED is not guaranteed on shared IRQs
+IRQ 50/r8a66597_udc: IRQF_DISABLED is not guaranteed on shared IRQs
+r8a66597_udc r8a66597_udc.0: version 2012-12-18
+Now registering USB0/func0
+Gadget USB HUB, version: 20101014
+aess_video_init Avocent Video Driver installed
+allocate_video_buffer_reserve_mem- video_buffer_phys (reserved mem): 4e000000 video_buffer_size: 0x00EAE000
+hid_init: Desc: Keyboard/Mouse Function
+hid_init: Name: g_kbdmouse
+hid_init: Version: 20111018
+Now registering USB0/func1
+hid_bind: Using Major Number 230
+hid_bind: using r8a66597_udc, Keyboard ep1 Mouse ep2
+hid_bind: Mouse REL ep3
+g_mass_storage: msd_init() Desc: Mass Storage Function
+g_mass_storage: msd_init() Name: g_mass_storage
+g_mass_storage: msd_init() Version: 20120124
+Now registering USB0/func2
+g_mass_storage: msd_bind() Using Major Number 229
+g_mass_storage1: msd_init() Desc: Mass Storage Function
+g_mass_storage1: msd_init() Name: g_mass_storage1
+g_mass_storage1: msd_init() Version: 20120124-1
+Now registering USB0/func3
+g_mass_storage1: msd_bind() Using Major Number 228
+g_hub gadget.0: high speed connected
+g_mass_storage2: msd_init() Desc: Mass Storage Function
+g_mass_storage2: msd_init() Name: g_mass_storage2
+g_mass_storage2: msd_init() Version: 20120124-2
+Now registering USB0/func4
+g_mass_storage2: msd_bind() Using Major Number 227
+IRQ 84/eth0: IRQF_DISABLED is not guaranteed on shared IRQs
+imm2_wdt_open: User Hang WDT opened
+imm2_wdt_start: index=1
+wd_cnt_write - wdtn_max[1] updated to 0x9148
+wd_cntew_write - wdte_max[1] updated to 0x1155
+imm2_wdt_ioctl: WDIOC_SETTIMEOUT
+	 Userspace timeout set to 60 secs
+kjournald starting.  Commit interval 15 seconds
+EXT3-fs: mounted filesystem with writeback data mode.
+aess_spi1_switch_PSC_2()::can't switch to PSC!CR8/CR12 value is 0x40
+aess_spi_io - errcode = 1
+imm2_wdt_open: Kernel Hang WDT opened
+WDT imm2_wdt_release: Line: 571 - WARN: WDT0 refcnt is 0
+WDT imm2_wdt_release: Line: 576 - WARN: You can only release Userspace WDT
+------ end of init -------------------------------------------------------------
+[2000-01-01T00:00:05]  -> Running /etc/scripts/ifs.mmc
+[2000-01-01T00:00:05]  -> Creating RTC device nodes
+[2023-02-19T01:00:44]  -> Creating MMC device nodes
+[2023-02-19T01:00:44]  -> Creating initfs mount points
+[2023-02-19T01:00:44]  -> Repairing partitions
+e2fsck 1.41.9 (22-Aug-2009)
+/dev/mmcblk0p2: recovering journal
+/dev/mmcblk0p2 has been mounted 1 times without being checked, check forced.
+Pass 1: Checking inodes, blocks, and sizes
+Pass 2: Checking directory structure
+Pass 3: Checking directory connectivity
+Pass 4: Checking reference counts
+Pass 5: Checking group summary information
+
+/dev/mmcblk0p2: ***** FILE SYSTEM WAS MODIFIED *****
+/dev/mmcblk0p2: 7326/65536 files (9.2% non-contiguous), 104706/131072 blocks
+e2fsck 1.41.9 (22-Aug-2009)
+/dev/mmcblk0p4: recovering journal
+/dev/mmcblk0p4 has been mounted 2 times without being checked, check forced.
+Pass 1: Checking inodes, blocks, and sizes
+Pass 2: Checking directory structure
+Pass 3: Checking directory connectivity
+Pass 4: Checking reference counts
+Pass 5: Checking group summary information
+
+/dev/mmcblk0p4: ***** FILE SYSTEM WAS MODIFIED *****
+/dev/mmcblk0p4: 82/61440 files (9.8% non-contiguous), 204778/491520 blocks
+[2023-02-19T01:00:51]  -> 2G layout is converted
+[2023-02-19T01:00:51]  -> Attempting to mount /rootfs to /dev/mmcblk0p2
+[2023-02-19T01:00:51]  -> Creating rootfs mount points
+[2023-02-19T01:00:51]  -> Performing security operations.
+[2023-02-19T01:00:53]  -> SecureBoot found..
+[2023-02-19T01:00:53]  -> FW Ext3 found..
+[2023-02-19T01:00:53]  -> securefs mounted - running init
+[2023-02-19T01:00:53] Security mode: NORMAL
+[2023-02-19T01:00:53] Reset reason: bp=0 eph=0 rs=0001 rs2=00
+[2023-02-19T01:00:53] Boot partition: 2
+[2023-02-19T01:00:54] Stay in current boot partition on failure (1)
+[2023-02-19T01:00:54] Tuning kernel security values.
+[2023-02-19T01:00:54]  > Done
+[2023-02-19T01:00:54] Enabling hardware entropy collection.
+[2023-02-19T01:00:54]  -> Inside sfs/init/set_twr_revision
+[2023-02-19T01:00:54] Enabling firewall watchdog + daemon.
+[2023-02-19T01:00:55] Trusted image buildid TCOO18Q
+[2023-02-19T01:00:56] Trusted image buildversion 3.20
+[2023-02-19T01:00:56] Begin to verify rtfs md5
+[2023-02-19T01:00:57] Finish rtfs md5, checked 2 files, skip 0 files
+[2023-02-19T01:00:57] rtfs check finished
+[2023-02-19T01:00:57] FPGA update supported? 1
+[2023-02-19T01:00:57] RTMM device supported.
+[2023-02-19T01:00:57] Found Andromeda PASS-9 hardware
+[2023-02-19T01:00:59] RTMM update not needed.
+[2023-02-19T01:00:59] FPGA update supported? 1
+[2023-02-19T01:00:59] FPGA device support.
+[2023-02-19T01:01:00] FPGA update not needed.
+[2023-02-19T01:01:00] Checking if any CRTM transitions are needed.
+[2023-02-19T01:01:00] Both transitions already completed. (CCSI)
+[2023-02-19T01:01:00] SPITOC format ready
+[2023-02-19T01:01:00] Current CRTM is 3.3
+[2023-02-19T01:01:00] Stepping not required
+[2023-02-19T01:01:00] Checking if Primary UBoot needs updating.
+[2023-02-19T01:01:00] Primary UBoot already updated.
+[2023-02-19T01:01:00] Checking if Backup UBoot needs updating.
+[2023-02-19T01:01:00] Backup UBoot already updated.
+[2023-02-19T01:01:00] Platform [0050001A] doesn't support Snoopy hardware
+[2023-02-19T01:01:01] Phase1 lock latch : Lock RTMM/FPGA done.
+[2023-02-19T01:01:01] Activate baseline firewall.
+[2023-02-19T01:01:01] calling firetool --init-accesscontrol
+[2023-02-19T01:01:01] calling firetool  --init
+[2023-02-19T01:01:03] Activate baseline firewall done
+[2023-02-19T01:01:03] Removing old IP addresses from certs db.
+[2023-02-19T01:01:03] sifs: Begin simulated provisioning.
+[2023-02-19T01:01:05] Disabled policies: CMR : 
+[2023-02-19T01:01:05] Disabled policies: PROV: 
+[2023-02-19T01:01:05] Enabled policies :   200 205 210 215 220 230 240 245 710 715 720 730 735 740 745 755 760 765 775 780 785 790 795 800
+[2023-02-19T01:01:10] Enable multiple policy ..done
+[2023-02-19T01:01:10] Protocol Analysis wedge in place.
+[2023-02-19T01:01:10] Locking firewall policy configuration.
+[2023-02-19T01:01:10] FPGA update supported? 1
+[2023-02-19T01:01:10] Restore original boot partition on success (0x13)
+[2023-02-19T01:01:12]  -> Inside /etc/scripts/rfs.devnodes, Create node again
+[2023-02-19T01:01:15]  -> Inside /etc/scripts/rfs.startup
+[2023-02-19T01:01:15] ==> Loading base drivers...
+[2023-02-19T01:01:16] ==> Base drivers loaded
+[2023-02-19T01:01:16]  -> Next boot partition is currently 0x13
+[2023-02-19T01:01:16]  -> Next boot partition changed to   0x12
+[2023-02-19T01:01:16]  -> Performing autoreboot
+[2023-02-19T01:01:19]  -> md5sum signature check passed in rfs.aess-bmc
+[2023-02-19T01:01:19]  -> Configuring high performance (sysinit)
+[2023-02-19T01:01:19]  -> Andromeda (sysinit)
+[2023-02-19T01:01:21] ==> Loading Mbox drivers...
+[2023-02-19T01:01:21]  -> Installed /dev/aess_mboxdrv driver - (Major 232)
+[2023-02-19T01:01:21]  -> System time using RTC
+[2023-02-19T01:01:22]  -> Inside /etc/scripts/rfs.startup , raid 1
+[2023-02-19T01:01:22]  -> Starting provisioning phase3 process monitor
+[2023-02-19T01:01:22]  -> Starting Watchdog/Lifeguard daemon
+[2023-02-19T01:01:22]  -> Inside /etc/scripts/rfs.emerson-temp
+[2023-02-19T01:01:22]  Sync Hwclock time to sys time
+[2023-02-19T01:01:23]  -> Running /etc/scripts/rfs.fod
+[2023-02-19T01:01:23] remove old FoD directory
+[2023-02-19T01:01:23]  -> Checking SPI flash
+[2023-02-19T01:01:24]  -> Checking backup uboot
+[2023-02-19T01:01:24]  -> Starting sshd-immsftp
+[2023-02-19T01:01:29]  -> sftp service prepared
+[2023-02-19T01:01:36]  -> sftp service started
+[2023-02-19T01:01:36]  -> Starting install OEM script
+[2023-02-19T01:01:37] No OEM PKG, Don't need update
+[2023-02-19T01:01:44]  -> Secure debug ports FAILED to open.
+[2023-02-19T01:01:47] ==> Exiting /etc/scripts/rfs.startup
+------ kernel log  -------------------------------------------------------------
+ating delay loop (skipped)... 576.00 BogoMIPS PRESET (lpj=1152000)
+pid_max: default: 32768 minimum: 301
+Mount-cache hash table entries: 512
+CPU: SH7757
+NET: Registered protocol family 16
+sh pinmux: sh7757_pfc handling gpio 0 -> 504
+IMM2 SH7757 xx chip
+IMM2 SH7757 C2/C3/C4 chip
+enable PCIe shared memory area for imm2
+bio: create slab <bio-0> at 0
+SCSI subsystem initialized
+usbcore: registered new interface driver usbfs
+usbcore: registered new interface driver hub
+usbcore: registered new device driver usb
+DMA: Registering sh_dmac handler (24 channels).
+DMA: Registering DMA API.
+Switching to clocksource TMU1
+sh_tmu: TMU0 used for oneshot clock events
+NET: Registered protocol family 2
+IP route cache hash table entries: 2048 (order: 1, 8192 bytes)
+TCP established hash table entries: 8192 (order: 4, 65536 bytes)
+TCP bind hash table entries: 8192 (order: 3, 32768 bytes)
+TCP: Hash tables configured (established 8192 bind 8192)
+TCP reno registered
+NET: Registered protocol family 1
+RPC: Registered udp transport module.
+RPC: Registered tcp transport module.
+RPC: Registered tcp NFSv4.1 backchannel transport module.
+squashfs: version 4.0 (2009/01/31) Phillip Lougher
+NTFS driver 2.1.29 [Flags: R/O].
+msgmni has been set to 106
+alg: No test for cipher_null (cipher_null-generic)
+alg: No test for ecb(cipher_null) (ecb-cipher_null)
+alg: No test for digest_null (digest_null-generic)
+alg: No test for compress_null (compress_null-generic)
+alg: self-tests for sha1-generic (sha1) passed
+alg: self-tests for sha224-generic (sha224) passed
+alg: self-tests for sha256-generic (sha256) passed
+alg: self-tests for sha384-generic (sha384) passed
+alg: self-tests for sha512-generic (sha512) passed
+alg: self-tests for des-generic (des) passed
+alg: self-tests for des3_ede-generic (des3_ede) passed
+alg: self-tests for aes-generic (aes) passed
+alg: self-tests for deflate-generic (deflate) passed
+alg: No test for stdrng (krng)
+alg: self-tests for ansi_cprng (stdrng) passed
+alg: No test for fips(ansi_cprng) (fips_ansi_cprng)
+alg: self-tests for hmac(sha256-generic) (hmac(sha256)) passed
+alg: self-tests for drbg_pr_hmac_sha1 (stdrng) passed
+alg: self-tests for drbg_pr_hmac_sha384 (stdrng) passed
+alg: self-tests for drbg_pr_hmac_sha512 (stdrng) passed
+alg: self-tests for drbg_pr_hmac_sha256 (stdrng) passed
+alg: self-tests for drbg_nopr_hmac_sha1 (stdrng) passed
+alg: self-tests for drbg_nopr_hmac_sha384 (stdrng) passed
+alg: self-tests for drbg_nopr_hmac_sha512 (stdrng) passed
+alg: self-tests for drbg_nopr_hmac_sha256 (stdrng) passed
+alg: self-tests for ghash-generic (ghash) passed
+io scheduler noop registered
+io scheduler anticipatory registered
+io scheduler deadline registered
+io scheduler cfq registered (default)
+Generic RTC Driver v1.07
+SuperH SCI(F) driver initialized
+sh-sci: ttySC0 at MMIO 0xfe4b0000 (irq = 40) is a scif
+sh-sci: ttySC1 at MMIO 0xfe4c0000 (irq = 76) is a scif
+sh-sci: ttySC2 at MMIO 0xfe4d0000 (irq = 104) is a scif
+console [ttySC2] enabled
+loop: module loaded
+nbd: registered device at major 43
+Kernel Build: 2:immv2_19_sh4_mcp61:mcp:2016:03:10:222514:6:1:0:
+max3107 spi2.0: REVID 0 does not match
+sh_rspi: version 2010-04-12
+IMM2 SH7757 CX chip, sh_eth driver
+sh_mii: probed
+Base address at 0xfef00000, 00:E0:EC:30:60:E8, IRQ 84.
+IMM2 SH7757 CX chip, sh_eth driver
+sh_mii: probed
+Base address at 0xfee00800, 00:E0:EC:30:60:E9, IRQ 316.
+ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+ehci_hcd: block sizes: qh 60 qtd 96 itd 160 sitd 96
+sh_ehci sh_ehci: SuperH EHCI
+drivers/usb/core/inode.c: creating file 'devices'
+drivers/usb/core/inode.c: creating file '001'
+sh_ehci sh_ehci: new USB bus registered, assigned bus number 1
+sh_ehci sh_ehci: park 0
+sh_ehci sh_ehci: reset command 080b02 park=3 ithresh=8 period=1024 Reset HALT
+sh_ehci sh_ehci: ...powerup ports...
+sh_ehci sh_ehci: irq 57, io mem 0xfe4f1000
+sh_ehci sh_ehci: reset command 080b02 park=3 ithresh=8 period=1024 Reset HALT
+sh_ehci sh_ehci: init command 010009 (park)=0 ithresh=1 period=256 RUN
+sh_ehci sh_ehci: USB 2.0 started, EHCI 1.00
+usb usb1: default language 0x0409
+usb usb1: udev 1, busnum 1, minor = 0
+usb usb1: New USB device found, idVendor=1d6b, idProduct=0002
+usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+usb usb1: Product: SuperH EHCI
+usb usb1: Manufacturer: Linux 2.6.32.12-455-initramfs_signed ehci_hcd
+usb usb1: SerialNumber: ehci_hcd
+usb usb1: usb_probe_device
+usb usb1: configuration #1 chosen from 1 choice
+usb usb1: adding 1-0:1.0 (config #1, interface 0)
+hub 1-0:1.0: usb_probe_interface
+hub 1-0:1.0: usb_probe_interface - got id
+hub 1-0:1.0: USB hub found
+hub 1-0:1.0: 2 ports detected
+hub 1-0:1.0: standalone hub
+hub 1-0:1.0: individual port power switching
+hub 1-0:1.0: individual port over-current protection
+hub 1-0:1.0: power on to power good time: 20ms
+hub 1-0:1.0: local power source is good
+hub 1-0:1.0: enabling power on all ports
+drivers/usb/core/inode.c: creating file '001'
+ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+ohci_hcd: block sizes: ed 64 td 64
+sh_ohci sh_ohci: SuperH OHCI
+drivers/usb/core/inode.c: creating file '002'
+sh_ohci sh_ohci: new USB bus registered, assigned bus number 2
+sh_ohci sh_ohci: irq 57, io mem 0xfe4f1800
+sh_ohci sh_ohci: created debug files
+sh_ohci sh_ohci: OHCI controller state
+sh_ohci sh_ohci: OHCI 1.0, NO legacy support registers
+sh_ohci sh_ohci: control 0x083 HCFS=operational CBSR=3
+sh_ohci sh_ohci: cmdstatus 0x00000 SOC=0
+sh_ohci sh_ohci: intrstatus 0x00000004 SF
+sh_ohci sh_ohci: intrenable 0x8000001a MIE UE RD WDH
+sh_ohci sh_ohci: hcca frame #03f7
+sh_ohci sh_ohci: roothub.a ff000202 POTPGT=255 NPS NDP=2(2)
+sh_ohci sh_ohci: roothub.b 00000000 PPCM=0000 DR=0000
+sh_ohci sh_ohci: roothub.status 00008000 DRWE
+sh_ohci sh_ohci: roothub.portstatus [0] 0x00000100 PPS
+sh_ohci sh_ohci: roothub.portstatus [1] 0x00000100 PPS
+usb usb2: default language 0x0409
+usb usb2: udev 1, busnum 2, minor = 128
+usb usb2: New USB device found, idVendor=1d6b, idProduct=0001
+usb usb2: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+usb usb2: Product: SuperH OHCI
+usb usb2: Manufacturer: Linux 2.6.32.12-455-initramfs_signed ohci_hcd
+usb usb2: SerialNumber: ohci_hcd
+hub 1-0:1.0: state 7 ports 2 chg 0000 evt 0000
+usb usb2: usb_probe_device
+usb usb2: configuration #1 chosen from 1 choice
+usb usb2: adding 2-0:1.0 (config #1, interface 0)
+hub 2-0:1.0: usb_probe_interface
+hub 2-0:1.0: usb_probe_interface - got id
+hub 2-0:1.0: USB hub found
+hub 2-0:1.0: 2 ports detected
+hub 2-0:1.0: standalone hub
+hub 2-0:1.0: no power switching (usb 1.0)
+hub 2-0:1.0: global over-current protection
+hub 2-0:1.0: power on to power good time: 510ms
+hub 2-0:1.0: local power source is good
+hub 2-0:1.0: no over-current condition exists
+hub 2-0:1.0: trying to enable port power on non-switchable hub
+drivers/usb/core/inode.c: creating file '001'
+Initializing USB Mass Storage driver...
+usbcore: registered new interface driver usb-storage
+USB Mass Storage support registered.
+IRQ 34/sh_mmcif: IRQF_DISABLED is not guaranteed on shared IRQs
+sh_mmcif: driver version 2010-03-17
+sh_tmu: TMU0 kept as earlytimer
+sh_tmu: TMU1 kept as earlytimer
+cryptodev: driver 0.8 loaded.
+mknod /dev/aess_adcsensordrv c 252 0
+KN:init_aess_mem_module
+mknod /dev/aess_eventhandlerdrv c 251 0
+mknod /dev/aess_gpiodrv c 250 0
+mknod /dev/imm2_fpga0 c 249 0
+mknod /dev/aess_spi0drv c 248 0
+imm2_fpga0: checksum enforced
+imm2_fpga: found CHIP_ID=70, v3.05 within 0 ms
+   block[ 00 ]: 0000
+   block[ 01 ]: 0010
+   block[ 02 ]: 0020
+   block[ 03 ]: 0030
+   block[ 04 ]: 0040
+   block[ 06 ]: 0050
+   block[ 07 ]: 0060
+   block[ 08 ]: 0070
+   block[ 09 ]: 0080
+   block[ 11 ]: 0090
+   block[ 12 ]: 00A0
+   block[ 13 ]: 00B0
+   block[ 14 ]: 00C0
+   block[ 15 ]: 00D0
+   block[ 16 ]: 00E0
+   block[ 17 ]: 00F0
+   block[ 19 ]: 0100
+   block[ 23 ]: 0110
+   block[ 28 ]: 0120
+   block[ 29 ]: 0130
+   block[ 30 ]: 0140
+   block[ 31 ]: 0150
+remote_fpga: found FPGA_ID=00, CHIP_ID=5A
+   block[ 00 ]: 0000
+   block[ 01 ]: 0010
+   block[ 03 ]: 0020
+   block[ 04 ]: 0030
+   block[ 05 ]: 0040
+   block[ 06 ]: 0050
+   block[ 09 ]: 0060
+   block[ 12 ]: 0070
+   block[ 28 ]: 0080
+   block[ 29 ]: 0090
+   block[ 30 ]: 00A0
+   block[ 31 ]: 00B0
+remote_fpga: found FPGA_ID=01, CHIP_ID=5A
+   block[ 00 ]: 0200
+   block[ 01 ]: 0210
+   block[ 03 ]: 0220
+   block[ 04 ]: 0230
+   block[ 05 ]: 0240
+   block[ 06 ]: 0250
+   block[ 09 ]: 0260
+   block[ 12 ]: 0270
+   block[ 28 ]: 0280
+   block[ 29 ]: 0290
+   block[ 30 ]: 02A0
+   block[ 31 ]: 02B0
+remote_fpga: found FPGA_ID=02, CHIP_ID=5A
+   block[ 00 ]: 0400
+   block[ 01 ]: 0410
+   block[ 03 ]: 0420
+   block[ 04 ]: 0430
+   block[ 05 ]: 0440
+   block[ 06 ]: 0450
+   block[ 09 ]: 0460
+   block[ 12 ]: 0470
+   block[ 28 ]: 0480
+   block[ 29 ]: 0490
+   block[ 30 ]: 04A0
+   block[ 31 ]: 04B0
+remote_fpga: found FPGA_ID=03, CHIP_ID=5A
+   block[ 00 ]: 0600
+   block[ 01 ]: 0610
+   block[ 03 ]: 0620
+   block[ 04 ]: 0630
+   block[ 05 ]: 0640
+   block[ 06 ]: 0650
+   block[ 09 ]: 0660
+   block[ 12 ]: 0670
+   block[ 28 ]: 0680
+   block[ 29 ]: 0690
+   block[ 30 ]: 06A0
+   block[ 31 ]: 06B0
+mknod /dev/aess_kcsdrv c 247 0
+IRQ 69/kcsdrv_hwctrl: IRQF_DISABLED is not guaranteed on shared IRQs
+mknod /dev/aess_memdrv c 246 0
+mknod /dev/aess_sgpiodrv c 245 0
+mknod /dev/aess_spi1drv c 244 0
+mknod /dev/aess_spinorflashdrv0 c 243 0
+mknod /dev/aess_spinorflashdrv1 c 243 1
+aess_timerdrv_init
+mknod /dev/aess_timerdrv c 242 0
+TSIP HW Crypto accelerator: 
+ hwrng registration sucessed
+cbc(aes) ecb(aes) ecb(des3_ede) cbc(des3_ede) 
+alg: self-tests for sha1-tsip (sha1) passed
+sha1 
+alg: self-tests for sha256-tsip (sha256) passed
+mmc0: unrecognised EXT_CSD revision 7.. CONTINUING with caution
+Card type is 7
+sha256 
+alg: self-tests for sha1-hmac-tsip (hmac(sha1)) passed
+hmac(sha1) 
+mmc0: new high speed MMC card at address 0001
+alg: self-tests for sha256-hmac-tsip (hmac(sha256)) passed
+hmac(sha256) 
+
+mknod /dev/aess_twrdrv c 241 0
+IRQ 69/twrdrv: IRQF_DISABLED is not guaranteed on shared IRQs
+mknod /dev/aess_pbi_vdm c 240 0
+mmcblk0: mmc0:0001 004GE0 1.84 GiB 
+ mmcblk0: p1 p2 p3 p4
+sermux sermux: version 2010-05-26
+Netfilter messages via NETLINK v0.30.
+nf_conntrack version 0.5.0 (3396 buckets, 13584 max)
+ctnetlink v0.93: registering with nfnetlink.
+xt_time: kernel timezone is -0000
+IPv4 over IPv4 tunneling driver
+ip_tables: (C) 2000-2006 Netfilter Core Team
+TCP cubic registered
+Initializing XFRM netlink socket
+NET: Registered protocol family 10
+lo: Disabled Privacy Extensions
+tunl0: Disabled Privacy Extensions
+ip6_tables: (C) 2000-2006 Netfilter Core Team
+Netfilter:nf_conntrack_frag6_timeout and ip6frag_time, nf_conntrack_frag6_low_thresh and ip6frag_low_thresh, nf_conntrack_frag6_high_thresh and ip6frag_high_thresh, the three sets are equivalent. nf_conntrack_frag6_timeout is just an alias for ip6frag_time. The former parameters of IPv6 conntrack will be removed in February 2011, please use the latter ones of IPv6.
+IPv6 over IPv4 tunneling driver
+sit0: Disabled Privacy Extensions
+NET: Registered protocol family 17
+NET: Registered protocol family 15
+802.1Q VLAN Support v1.8 Ben Greear <greearb@candelatech.com>
+All bugs added by David S. Miller <davem@redhat.com>
+NET: Registered protocol family 27
+eth0 device registered
+eth1 device registered
+IRQ 69/aess_biospostdrv: IRQF_DISABLED is not guaranteed on shared IRQs
+mknod /dev/aess_biospostdrv c 239 0
+mknod /dev/aess_cryptodrv c 238 0
+mknod /dev/aess_dynairqdrv c 237 0
+IRQ 236/aess_dynairqdrv: IRQF_DISABLED is not guaranteed on shared IRQs
+mknod /dev/aess_fansensordrv_2 c 236 0
+mknod /dev/aess_i2cdrv c 235 0
+mknod /dev/aess_pwmdrv c 234 0
+WDT imm2_wdt_init: Line: 725 - imm2_wdt_init
+WDT light kernel thread created , id=375
+hub 2-0:1.0: state 7 ports 2 chg 0000 evt 0000
+IRQ 273/dma_i2c1: IRQF_DISABLED is not guaranteed on shared IRQs
+wdt_khang_light_task
+imm2_wdt_start: index=0
+wd_cnt_write - wdtn_max[0] updated to 0x3cee
+wd_cntew_write - wdte_max[0] updated to 0x3cfa
+khang_light_task_hook
+The system reboot cause: 1.
+KHANG magic cleared, relocating printk buffer
+wd_cntew_write - wdte_max[0] updated to 0x7477
+
+ tpm_imm_device_init(): tpm_register_hardware 
+tpm_i2c VID: 2FE1050 DID: 2FE RID: 02
+m41t83_2: dev (254:0)
+m41t83_2_rtc m41t83_2_rtc.0: rtc core: registered m41t83_2 as rtc0
+Freeing unused kernel memory: 1544k freed
+wd_cntew_write - wdte_max[0] updated to 0x7fd3
+wd_cntew_write - wdte_max[0] updated to 0x7fe1
+wd_cntew_write - wdte_max[0] updated to 0x7fe9
+kjournald starting.  Commit interval 5 seconds
+EXT3 FS on mmcblk0p4, internal journal
+EXT3-fs: mounted filesystem with journal data mode.
+kjournald starting.  Commit interval 5 seconds
+EXT3 FS on mmcblk0p2, internal journal
+EXT3-fs: mounted filesystem with journal data mode.
+wd_cntew_write - wdte_max[0] updated to 0x8005
+IRQ 272/dma_i2c0: IRQF_DISABLED is not guaranteed on shared IRQs
+wd_cntew_write - wdte_max[0] updated to 0x8006
+kjournald starting.  Commit interval 5 seconds
+EXT3-fs warning: maximal mount count reached, running e2fsck is recommended
+EXT3 FS on mmcblk0p4, internal journal
+EXT3-fs: mounted filesystem with journal data mode.
+IRQ 282/dma_i2c7: IRQF_DISABLED is not guaranteed on shared IRQs
+IRQ 281/dma_i2c6: IRQF_DISABLED is not guaranteed on shared IRQs
+IRQ 50/r8a66597_udc: IRQF_DISABLED is not guaranteed on shared IRQs
+r8a66597_udc r8a66597_udc.0: version 2012-12-18
+Now registering USB0/func0
+Gadget USB HUB, version: 20101014
+aess_video_init Avocent Video Driver installed
+allocate_video_buffer_reserve_mem- video_buffer_phys (reserved mem): 4e000000 video_buffer_size: 0x00EAE000
+hid_init: Desc: Keyboard/Mouse Function
+hid_init: Name: g_kbdmouse
+hid_init: Version: 20111018
+Now registering USB0/func1
+hid_bind: Using Major Number 230
+hid_bind: using r8a66597_udc, Keyboard ep1 Mouse ep2
+hid_bind: Mouse REL ep3
+g_mass_storage: msd_init() Desc: Mass Storage Function
+g_mass_storage: msd_init() Name: g_mass_storage
+g_mass_storage: msd_init() Version: 20120124
+Now registering USB0/func2
+g_mass_storage: msd_bind() Using Major Number 229
+g_mass_storage1: msd_init() Desc: Mass Storage Function
+g_mass_storage1: msd_init() Name: g_mass_storage1
+g_mass_storage1: msd_init() Version: 20120124-1
+Now registering USB0/func3
+g_mass_storage1: msd_bind() Using Major Number 228
+g_mass_storage2: msd_init() Desc: Mass Storage Function
+g_mass_storage2: msd_init() Name: g_mass_storage2
+g_mass_storage2: msd_init() Version: 20120124-2
+Now registering USB0/func4
+g_mass_storage2: msd_bind() Using Major Number 227
+IRQ 84/eth0: IRQF_DISABLED is not guaranteed on shared IRQs
+imm2_wdt_open: User Hang WDT opened
+imm2_wdt_start: index=1
+wd_cnt_write - wdtn_max[1] updated to 0x8c9c
+wd_cntew_write - wdte_max[1] updated to 0xca8
+imm2_wdt_ioctl: WDIOC_SETTIMEOUT
+	 Userspace timeout set to 60 secs
+wd_cntew_write - wdte_max[1] updated to 0xe4e
+wd_cntew_write - wdte_max[1] updated to 0xe7a
+wd_cntew_write - wdte_max[1] updated to 0xf98
+wd_cntew_write - wdte_max[1] updated to 0xfbe
+wd_cntew_write - wdte_max[1] updated to 0xff5
+kjournald starting.  Commit interval 15 seconds
+EXT3-fs: mounted filesystem with writeback data mode.
+imm2_wdt_open: Kernel Hang WDT opened
+WDT imm2_wdt_release: Line: 571 - WARN: WDT0 refcnt is 0
+WDT imm2_wdt_release: Line: 576 - WARN: You can only release Userspace WDT
+------ end of init -------------------------------------------------------------

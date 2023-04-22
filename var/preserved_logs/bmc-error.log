@@ -1,0 +1,31 @@
+2016-07-29T11:45:04.707421+00:00 (none) bmcapp: systemc [ERR]: running_from_primary_uefi(recovery):ABR timeout occurred (Pri), post progress = 0x00
+2016-07-29T11:45:04.707525+00:00 (none) bmcapp: systemc [ERR]: running_from_primary_uefi(recovery):failed to detec trusted uEFI img
+2016-07-29T11:45:04.707625+00:00 (none) bmcapp: systemc [ERR]: running_from_primary_uefi(recovery):trying to boot from backup image
+2016-07-29T13:19:50.329581+00:00 (none) bmcapp: systemc [ERR]: running_from_primary_uefi(recovery):ABR timeout occurred (Pri), post progress = 0x00
+2016-07-29T13:19:50.329687+00:00 (none) bmcapp: systemc [ERR]: running_from_primary_uefi(recovery):failed to detec trusted uEFI img
+2016-07-29T13:19:50.334813+00:00 (none) bmcapp: systemc [ERR]: running_from_primary_uefi(recovery):trying to boot from backup image
+2016-07-29T13:33:45.361487+00:00 (none) bmcapp: systemc [ERR]: running_from_primary_uefi(recovery):ABR timeout occurred (Pri), post progress = 0x00
+2016-07-29T13:33:45.361687+00:00 (none) bmcapp: systemc [ERR]: running_from_primary_uefi(recovery):failed to detec trusted uEFI img
+2016-07-29T13:33:45.361809+00:00 (none) bmcapp: systemc [ERR]: running_from_primary_uefi(recovery):trying to boot from backup image
+2016-10-19T02:22:23.463828+00:00 (none) bmcapp: systemc [ERR]: running_from_primary_uefi(recovery):uEFI issue recover_pri TWR request: (pri_nonCRTM)
+2016-10-19T02:22:23.467374+00:00 (none) bmcapp: systemc [ERR]: running_from_primary_uefi(recovery):failed to detec trusted uEFI image
+2016-10-19T02:51:34.399753+00:00 (none) bmcapp: systemc [ERR]: running_from_primary_uefi(recovery):uEFI issue recover_pri TWR request: (pri_nonCRTM)
+2016-10-19T02:51:34.402825+00:00 (none) bmcapp: systemc [ERR]: running_from_primary_uefi(recovery):failed to detec trusted uEFI image
+2016-10-19T03:02:55.165014+00:00 (none) bmcapp: systemc [ERR]: running_from_backup_uefi(recovery):uEFI issue recover_bkp TWR request: (bkp_nonCRTM)
+2016-10-19T03:02:55.165195+00:00 (none) bmcapp: systemc [ERR]: running_from_backup_uefi(recovery):failed to detec trusted uEFI image
+2016-10-19T03:09:46.553924+00:00 (none) bmcapp: systemc [ERR]: running_from_primary_uefi(recovery):uEFI issue recover_pri TWR request: (pri_nonCRTM)
+2016-10-19T03:09:46.554123+00:00 (none) bmcapp: systemc [ERR]: running_from_primary_uefi(recovery):failed to detec trusted uEFI image
+2016-10-19T06:57:34.481030+00:00 (none) bmcapp: systemc [ERR]: running_from_primary_uefi(recovery):uEFI issue recover_pri TWR request: (pri_nonCRTM)
+2016-10-19T06:57:34.485369+00:00 (none) bmcapp: systemc [ERR]: running_from_primary_uefi(recovery):failed to detec trusted uEFI image
+2016-10-19T07:53:09.465705+00:00 (none) bmcapp: systemc [ERR]: running_from_primary_uefi(recovery):uEFI issue recover_pri TWR request: (pri_nonCRTM)
+2016-10-19T07:53:09.474634+00:00 (none) bmcapp: systemc [ERR]: running_from_primary_uefi(recovery):failed to detec trusted uEFI image
+2016-10-19T08:13:47.129400+00:00 (none) bmcapp: systemc [ERR]: running_from_backup_uefi(recovery):uEFI issue recover_bkp TWR request: (bkp_nonCRTM)
+2016-10-19T08:13:47.131024+00:00 (none) bmcapp: systemc [ERR]: running_from_backup_uefi(recovery):failed to detec trusted uEFI image
+2016-10-19T08:38:35.839193+00:00 (none) bmcapp: systemc [ERR]: running_from_primary_uefi(recovery):uEFI issue recover_pri TWR request: (pri_nonCRTM)
+2016-10-19T08:38:35.841098+00:00 (none) bmcapp: systemc [ERR]: running_from_primary_uefi(recovery):failed to detec trusted uEFI image
+2017-04-08T01:28:44.320246+00:00 (none) bmcapp: systemc [ERR]: inactive(recovery):host status(uptime=20160mins,boots=2,hours=336,bkup_img[A9E130EUS ])
+2017-04-08T01:28:44.372079+00:00 (none) bmcapp: systemc [ERR]: inactive(recovery):uEFI (Bkp) auto promotion start.
+2017-04-08T01:28:44.377957+00:00 (none) bmcapp: systemc [ERR]: fm_ready(recovery):flash prepare for recover bkp uEFI, param=2
+2017-04-08T01:28:46.458733+00:00 (none) bmcapp: systemc [ERR]: fm_available(recovery):issue begin_update request
+2017-04-08T01:30:27.664773+00:00 (none) bmcapp: systemc [ERR]: fm_available(recovery):flash completion achieved, publish flash_done signal
+2017-04-08T01:30:27.672166+00:00 (none) bmcapp: systemc [ERR]: inactive(recovery):uEFI (Bkp) auto promotion done.

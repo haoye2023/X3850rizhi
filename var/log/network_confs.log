@@ -1,0 +1,745 @@
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/webgui_int_timeout
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/webgui_int_max_sessions
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/webgui_int_https_port
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/webgui_int_http_port
+-rwxrwxrwx    1 0        0                1 Jun 26  2016 /mmc2/flash/data0/aim/persistent/webgui_bool_https_enable
+-rwxrwxrwx    1 0        0                1 Jun 26  2016 /mmc2/flash/data0/aim/persistent/web_trespass_string
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/web_security_level
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/web_security_exception
+-rwxrwxrwx    1 0        0                1 Jun 26  2016 /mmc2/flash/data0/aim/persistent/watchdog_timer_enable
+-rwxrwxrwx    1 0        0                1 Jun 26  2016 /mmc2/flash/data0/aim/persistent/watchdog_timer_active
+-rwxrwxrwx    1 0        0                1 Jun 26  2016 /mmc2/flash/data0/aim/persistent/watchdog_sys_reset_flag
+-rwxrwxrwx    1 0        0                4 Apr 11 11:45 /mmc2/flash/data0/aim/persistent/watchdog_server_state
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/watchdog_power_off_delay
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/watchdog_loader_watchdog_timeout
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/watchdog_int_disable_timeout
+-rwxrwxrwx    1 0        0               15 Jun 26  2016 /mmc2/flash/data0/aim/persistent/watchdog_arpecho_finish
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/watchdog_OS_watchdog_timeout
+-rwxrwxrwx    1 0        0               33 Jun 26  2016 /mmc2/flash/data0/aim/persistent/vpd_sysvpd_uuid
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/vm_plugin_type
+-rwxrwxrwx    1 0        0                1 Sep 28  2016 /mmc2/flash/data0/aim/persistent/vm_bool_enabled
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/vkvm_plugin_type
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/vkvm_int_attach_state
+-rwxrwxrwx    1 0        0                1 Jun 26  2016 /mmc2/flash/data0/aim/persistent/vkvm_bool_show_power_controls
+-rwxrwxrwx    1 0        0                1 Jun 26  2016 /mmc2/flash/data0/aim/persistent/vkvm_bool_enabled
+-rwxrwxrwx    1 0        0               48 Sep 28  2016 /mmc2/flash/data0/aim/persistent/vdisk_str_setup3
+-rwxrwxrwx    1 0        0               48 Sep 28  2016 /mmc2/flash/data0/aim/persistent/vdisk_str_setup2
+-rwxrwxrwx    1 0        0               48 Sep 30  2016 /mmc2/flash/data0/aim/persistent/vdisk_str_setup1
+-rwxrwxrwx    1 0        0                1 Jun 26  2016 /mmc2/flash/data0/aim/persistent/tm_ntp_str_server4
+-rwxrwxrwx    1 0        0                1 Jun 26  2016 /mmc2/flash/data0/aim/persistent/tm_ntp_str_server3
+-rwxrwxrwx    1 0        0                1 Jun 26  2016 /mmc2/flash/data0/aim/persistent/tm_ntp_str_server2
+-rwxrwxrwx    1 0        0                1 Jun 26  2016 /mmc2/flash/data0/aim/persistent/tm_ntp_str_server1
+-rwxrwxrwx    1 0        0                3 Jun 26  2016 /mmc2/flash/data0/aim/persistent/tm_ntp_str_maxdist
+-rwxrwxrwx    1 0        0               14 Jun 26  2016 /mmc2/flash/data0/aim/persistent/tm_ntp_str_auth_key_file
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/tm_ntp_int_updfreq
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/tm_ntp_int_port
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/tm_ntp_int_opmode
+-rwxrwxrwx    1 0        0                1 Jun 26  2016 /mmc2/flash/data0/aim/persistent/tm_ntp_bool_stepmode
+-rwxrwxrwx    1 0        0                6 Jun 26  2016 /mmc2/flash/data0/aim/persistent/tklm_str_server4_info
+-rwxrwxrwx    1 0        0                6 Jun 26  2016 /mmc2/flash/data0/aim/persistent/tklm_str_server3_info
+-rwxrwxrwx    1 0        0                6 Jun 26  2016 /mmc2/flash/data0/aim/persistent/tklm_str_server2_info
+-rwxrwxrwx    1 0        0                6 Jun 26  2016 /mmc2/flash/data0/aim/persistent/tklm_str_server1_info
+-rwxrwxrwx    1 0        0               17 Jun 26  2016 /mmc2/flash/data0/aim/persistent/tklm_str_device_group_info
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/tklm_security_level
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/tklm_security_exception
+-rwxrwxrwx    1 0        0                4 Apr 11 11:39 /mmc2/flash/data0/aim/persistent/system_int_number_of_reboot
+-rwxrwxrwx    1 0        0                1 Jun 26  2016 /mmc2/flash/data0/aim/persistent/sysprof_str_ldap_client_password_1
+-rwxrwxrwx    1 0        0                1 Jun 26  2016 /mmc2/flash/data0/aim/persistent/sysprof_str_ldap_client_dn_1
+-rwxrwxrwx    1 0        0                1 Jun 26  2016 /mmc2/flash/data0/aim/persistent/sysprof_str_ldap_addr_1
+-rwxrwxrwx    1 0        0               22 Jun 26  2016 /mmc2/flash/data0/aim/persistent/sysprof_str_cert_path
+-rwxrwxrwx    1 0        0               26 Jun 26  2016 /mmc2/flash/data0/aim/persistent/sysprof_str_ca_cert_path
+-rwxrwxrwx    1 0        0                9 Jun 26  2016 /mmc2/flash/data0/aim/persistent/sysprof_server_type
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/sysprof_int_ldap_port_1
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/sysprof_int_config_mode
+-rwxrwxrwx    1 0        0                1 Jun 26  2016 /mmc2/flash/data0/aim/persistent/sysprof_bool_req_client_cert
+-rwxrwxrwx    1 0        0                1 Jun 26  2016 /mmc2/flash/data0/aim/persistent/sysprof_bool_ldap_ssl
+-rwxrwxrwx    1 0        0                1 Jun 26  2016 /mmc2/flash/data0/aim/persistent/sysprof_bool_enabled
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/ssh_security_level
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/ssh_security_exception
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/snmp_trap_zero_trail
+-rwxrwxrwx    1 0        0                1 Jun 26  2016 /mmc2/flash/data0/aim/persistent/snmp_str_location
+-rwxrwxrwx    1 0        0                1 Jun 26  2016 /mmc2/flash/data0/aim/persistent/snmp_str_contact_person
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/snmp_security_level
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/snmp_security_exception
+-rwxrwxrwx    1 0        0               18 Jun 26  2016 /mmc2/flash/data0/aim/persistent/snmp_rfc1213_sysname
+-rwxrwxrwx    1 0        0               18 Jun 26  2016 /mmc2/flash/data0/aim/persistent/snmp_engineID_key
+-rwxrwxrwx    1 0        0                1 Jun 26  2016 /mmc2/flash/data0/aim/persistent/snmp_bool_snmpv3_enable
+-rwxrwxrwx    1 0        0                1 Jun 26  2016 /mmc2/flash/data0/aim/persistent/snmp_bool_snmpv1_enable
+-rwxrwxrwx    1 0        0                1 Apr 12 01:09 /mmc2/flash/data0/aim/persistent/smm_mode_flag
+-rwxrwxrwx    1 0        0                2 Jun 26  2016 /mmc2/flash/data0/aim/persistent/sm_snmp_default_restricted_source
+-rwxrwxrwx    1 0        0                2 Jun 26  2016 /mmc2/flash/data0/aim/persistent/sm_snmp_default_priv_password_key
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/sm_snmp_default_priv_algorithm
+-rwxrwxrwx    1 0        0                3 Jun 26  2016 /mmc2/flash/data0/aim/persistent/sm_snmp_default_oid
+-rwxrwxrwx    1 0        0                1 Jun 26  2016 /mmc2/flash/data0/aim/persistent/sm_snmp_default_disabled_snmp
+-rwxrwxrwx    1 0        0                2 Jun 26  2016 /mmc2/flash/data0/aim/persistent/sm_snmp_default_auth_password_key
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/sm_snmp_default_auth_algorithm
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/sm_snmp_default_access_priv
+-rwxrwxrwx    1 0        0               16 Jun 26  2016 /mmc2/flash/data0/aim/persistent/slp_str_multicast_address
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/slp_int_address_type
+-rwxrwxrwx    1 0        0                4 Sep 28  2016 /mmc2/flash/data0/aim/persistent/session_timeout_method
+-rwxrwxrwx    1 0        0                1 Jun 26  2016 /mmc2/flash/data0/aim/persistent/security_provisioning_ipmi_lockout_enabled
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/security_int_max_auth_failure_ser
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/security_int_max_auth_failure
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/security_int_lockout_window_ser
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/security_int_lockout_window
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/security_int_lockout_time_ser
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/security_int_lockout_time
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/security_int_generate_event_ser
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/security_int_generate_event
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/sec_setting_int_pw_min_length
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/sec_setting_int_pw_min_diff_char
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/sec_setting_int_pw_history_deep
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/sec_max_lv_tklms
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/sec_max_lv_tklmc
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/sec_max_lv_ssh
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/sec_max_lv_ldaps4
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/sec_max_lv_ldaps3
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/sec_max_lv_ldaps2
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/sec_max_lv_ldaps1
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/sec_max_lv_ldapc
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/sec_max_lv_https
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/sec_max_lv_cim
+-rwxrwxrwx    1 0        0                1 Jun 26  2016 /mmc2/flash/data0/aim/persistent/scl_bool_crl_check_enabled
+-rwxrwxrwx    1 0        0                5 Jun 26  2016 /mmc2/flash/data0/aim/persistent/rp_str_video_encrypt
+-rwxrwxrwx    1 0        0                5 Jun 26  2016 /mmc2/flash/data0/aim/persistent/rp_str_media_encrypt
+-rwxrwxrwx    1 0        0                5 Jun 26  2016 /mmc2/flash/data0/aim/persistent/rp_str_keyboard_encrypt
+-rwxrwxrwx    1 0        0               20 Jun 26  2016 /mmc2/flash/data0/aim/persistent/rp_str_default_init
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/rp_int_token_lifetime_val
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/rp_int_max_vm_sessions
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/rp_int_max_kvm_sessions
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/rp_int_host_video_capture_DVC_mode
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/rp_int_apcp_port
+-rwxrwxrwx    1 0        0                1 Jun 26  2016 /mmc2/flash/data0/aim/persistent/rp_bool_video_on_primary_socket
+-rwxrwxrwx    1 0        0                1 Jun 26  2016 /mmc2/flash/data0/aim/persistent/rp_bool_disable_authentication
+-rwxrwxrwx    1 0        0                4 Sep 30  2016 /mmc2/flash/data0/aim/persistent/requested_pwr_state
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/proc_int_sleep_time
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/proc_int_max_timeout
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/power_specified_power_on_year
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/power_specified_power_on_month
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/power_specified_power_on_minute
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/power_specified_power_on_hour
+-rwxrwxrwx    1 0        0                1 Jun 26  2016 /mmc2/flash/data0/aim/persistent/power_specified_power_on_enable
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/power_specified_power_on_day
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/power_schedule_restart_week
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/power_schedule_restart_minute
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/power_schedule_restart_hour
+-rwxrwxrwx    1 0        0                1 Jun 26  2016 /mmc2/flash/data0/aim/persistent/power_schedule_restart_enable
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/power_schedule_cycle_up_week
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/power_schedule_cycle_up_minute
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/power_schedule_cycle_up_hour
+-rwxrwxrwx    1 0        0                1 Jun 26  2016 /mmc2/flash/data0/aim/persistent/power_schedule_cycle_up_enable
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/power_schedule_cycle_restart_week
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/power_schedule_cycle_restart_minute
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/power_schedule_cycle_restart_hour
+-rwxrwxrwx    1 0        0                1 Jun 26  2016 /mmc2/flash/data0/aim/persistent/power_schedule_cycle_restart_enable
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/power_schedule_cycle_down_week
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/power_schedule_cycle_down_minute
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/power_schedule_cycle_down_hour
+-rwxrwxrwx    1 0        0                1 Jun 26  2016 /mmc2/flash/data0/aim/persistent/power_schedule_cycle_down_enable
+-rwxrwxrwx    1 0        0                1 Jun 26  2016 /mmc2/flash/data0/aim/persistent/pm_time_max_login_retries_expires
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/pm_time_login_retries_delta
+-rwxrwxrwx    1 0        0                8 Jun 26  2016 /mmc2/flash/data0/aim/persistent/pm_str_valid_client_network
+-rwxrwxrwx    1 0        0               14 Jun 26  2016 /mmc2/flash/data0/aim/persistent/pm_str_valid_client_netmask
+-rwxrwxrwx    1 0        0               11 Jun 26  2016 /mmc2/flash/data0/aim/persistent/pm_str_bsod_capture_file_path
+-rwxrwxrwx    1 0        0                9 Jun 26  2016 /mmc2/flash/data0/aim/persistent/pm_str_bsod_capture_file_name
+-rwxrwxrwx    1 0        0               17 Jun 26  2016 /mmc2/flash/data0/aim/persistent/pm_str_boot_capture_file_path
+-rwxrwxrwx    1 0        0               12 Jun 26  2016 /mmc2/flash/data0/aim/persistent/pm_str_boot_capture_file_name
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/pm_security_tls_ver
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/pm_security_level
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/pm_security_invalid_certs_flag
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/pm_int_telnet_session_timeout
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/pm_int_telnet_port
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/pm_int_telnet_max_sessions
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/pm_int_ssh_session_timeout
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/pm_int_ssh_port
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/pm_int_ssh_max_sessions
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/pm_int_sfcb_https_port
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/pm_int_sfcb_http_port
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/pm_int_max_login_retries
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/pm_int_max_boot_capture_file_size
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/pm_int_blank_local_delay
+-rwxrwxrwx    1 0        0                1 Jun 26  2016 /mmc2/flash/data0/aim/persistent/pm_bool_usb_hub_present
+-rwxrwxrwx    1 0        0                1 Jun 26  2016 /mmc2/flash/data0/aim/persistent/pm_bool_telnet_enabled
+-rwxrwxrwx    1 0        0                1 Jun 26  2016 /mmc2/flash/data0/aim/persistent/pm_bool_ssh_enabled
+-rwxrwxrwx    1 0        0                1 Jun 26  2016 /mmc2/flash/data0/aim/persistent/pm_bool_sfcb_ssl_enable
+-rwxrwxrwx    1 0        0                1 Jun 26  2016 /mmc2/flash/data0/aim/persistent/pm_bool_sfcb_secure_ind_enable
+-rwxrwxrwx    1 0        0                1 Jun 26  2016 /mmc2/flash/data0/aim/persistent/pm_bool_restrict_client_network
+-rwxrwxrwx    1 0        0                1 Jun 26  2016 /mmc2/flash/data0/aim/persistent/pm_bool_reboot_server_after_crash
+-rwxrwxrwx    1 0        0                1 Jun 26  2016 /mmc2/flash/data0/aim/persistent/pm_bool_post_vkvm_disable
+-rwxrwxrwx    1 0        0                1 Jun 26  2016 /mmc2/flash/data0/aim/persistent/pm_bool_notification_server_crash
+-rwxrwxrwx    1 0        0                1 Jun 26  2016 /mmc2/flash/data0/aim/persistent/pm_bool_max_login_retries_exceeded
+-rwxrwxrwx    1 0        0                1 Jun 26  2016 /mmc2/flash/data0/aim/persistent/pm_bool_capture_boot_sequence
+-rwxrwxrwx    1 0        0                1 Jun 26  2016 /mmc2/flash/data0/aim/persistent/pm_bool_blank_local_video
+-rwxrwxrwx    1 0        0                4 Oct 19  2016 /mmc2/flash/data0/aim/persistent/pcap_soft_min_aim_element_aem
+-rwxrwxrwx    1 0        0                4 Mar 24  2017 /mmc2/flash/data0/aim/persistent/pcap_min_aim_element_aem
+-rwxrwxrwx    1 0        0                4 Mar 24  2017 /mmc2/flash/data0/aim/persistent/pcap_max_aim_element_aem
+-rwxrwxrwx    1 0        0               15 Jun 26  2016 /mmc2/flash/data0/aim/persistent/pam_ldap_str_uid_search_attr
+-rwxrwxrwx    1 0        0                1 Jun 26  2016 /mmc2/flash/data0/aim/persistent/pam_ldap_str_role_group_9_privileges
+-rwxrwxrwx    1 0        0                1 Jun 26  2016 /mmc2/flash/data0/aim/persistent/pam_ldap_str_role_group_9_name
+-rwxrwxrwx    1 0        0                1 Jun 26  2016 /mmc2/flash/data0/aim/persistent/pam_ldap_str_role_group_8_privileges
+-rwxrwxrwx    1 0        0                1 Jun 26  2016 /mmc2/flash/data0/aim/persistent/pam_ldap_str_role_group_8_name
+-rwxrwxrwx    1 0        0                1 Jun 26  2016 /mmc2/flash/data0/aim/persistent/pam_ldap_str_role_group_7_privileges
+-rwxrwxrwx    1 0        0                1 Jun 26  2016 /mmc2/flash/data0/aim/persistent/pam_ldap_str_role_group_7_name
+-rwxrwxrwx    1 0        0                1 Jun 26  2016 /mmc2/flash/data0/aim/persistent/pam_ldap_str_role_group_6_privileges
+-rwxrwxrwx    1 0        0                1 Jun 26  2016 /mmc2/flash/data0/aim/persistent/pam_ldap_str_role_group_6_name
+-rwxrwxrwx    1 0        0                1 Jun 26  2016 /mmc2/flash/data0/aim/persistent/pam_ldap_str_role_group_5_privileges
+-rwxrwxrwx    1 0        0                1 Jun 26  2016 /mmc2/flash/data0/aim/persistent/pam_ldap_str_role_group_5_name
+-rwxrwxrwx    1 0        0                1 Jun 26  2016 /mmc2/flash/data0/aim/persistent/pam_ldap_str_role_group_4_privileges
+-rwxrwxrwx    1 0        0                1 Jun 26  2016 /mmc2/flash/data0/aim/persistent/pam_ldap_str_role_group_4_name
+-rwxrwxrwx    1 0        0                1 Jun 26  2016 /mmc2/flash/data0/aim/persistent/pam_ldap_str_role_group_3_privileges
+-rwxrwxrwx    1 0        0                1 Jun 26  2016 /mmc2/flash/data0/aim/persistent/pam_ldap_str_role_group_3_name
+-rwxrwxrwx    1 0        0                1 Jun 26  2016 /mmc2/flash/data0/aim/persistent/pam_ldap_str_role_group_2_privileges
+-rwxrwxrwx    1 0        0                1 Jun 26  2016 /mmc2/flash/data0/aim/persistent/pam_ldap_str_role_group_2_name
+-rwxrwxrwx    1 0        0                1 Jun 26  2016 /mmc2/flash/data0/aim/persistent/pam_ldap_str_role_group_1_privileges
+-rwxrwxrwx    1 0        0                1 Jun 26  2016 /mmc2/flash/data0/aim/persistent/pam_ldap_str_role_group_1_name
+-rwxrwxrwx    1 0        0                1 Jun 26  2016 /mmc2/flash/data0/aim/persistent/pam_ldap_str_role_group_16_privileges
+-rwxrwxrwx    1 0        0                1 Jun 26  2016 /mmc2/flash/data0/aim/persistent/pam_ldap_str_role_group_16_name
+-rwxrwxrwx    1 0        0                1 Jun 26  2016 /mmc2/flash/data0/aim/persistent/pam_ldap_str_role_group_15_privileges
+-rwxrwxrwx    1 0        0                1 Jun 26  2016 /mmc2/flash/data0/aim/persistent/pam_ldap_str_role_group_15_name
+-rwxrwxrwx    1 0        0                1 Jun 26  2016 /mmc2/flash/data0/aim/persistent/pam_ldap_str_role_group_14_privileges
+-rwxrwxrwx    1 0        0                1 Jun 26  2016 /mmc2/flash/data0/aim/persistent/pam_ldap_str_role_group_14_name
+-rwxrwxrwx    1 0        0                1 Jun 26  2016 /mmc2/flash/data0/aim/persistent/pam_ldap_str_role_group_13_privileges
+-rwxrwxrwx    1 0        0                1 Jun 26  2016 /mmc2/flash/data0/aim/persistent/pam_ldap_str_role_group_13_name
+-rwxrwxrwx    1 0        0                1 Jun 26  2016 /mmc2/flash/data0/aim/persistent/pam_ldap_str_role_group_12_privileges
+-rwxrwxrwx    1 0        0                1 Jun 26  2016 /mmc2/flash/data0/aim/persistent/pam_ldap_str_role_group_12_name
+-rwxrwxrwx    1 0        0                1 Jun 26  2016 /mmc2/flash/data0/aim/persistent/pam_ldap_str_role_group_11_privileges
+-rwxrwxrwx    1 0        0                1 Jun 26  2016 /mmc2/flash/data0/aim/persistent/pam_ldap_str_role_group_11_name
+-rwxrwxrwx    1 0        0                1 Jun 26  2016 /mmc2/flash/data0/aim/persistent/pam_ldap_str_role_group_10_privileges
+-rwxrwxrwx    1 0        0                1 Jun 26  2016 /mmc2/flash/data0/aim/persistent/pam_ldap_str_role_group_10_name
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/pam_ldap_str_port_4
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/pam_ldap_str_port_3
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/pam_ldap_str_port_2
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/pam_ldap_str_port_1
+-rwxrwxrwx    1 0        0                1 Jun 26  2016 /mmc2/flash/data0/aim/persistent/pam_ldap_str_login_permission_attr
+-rwxrwxrwx    1 0        0                9 Jun 26  2016 /mmc2/flash/data0/aim/persistent/pam_ldap_str_group_search_attr
+-rwxrwxrwx    1 0        0                1 Jun 26  2016 /mmc2/flash/data0/aim/persistent/pam_ldap_str_group_filter
+-rwxrwxrwx    1 0        0                1 Jun 26  2016 /mmc2/flash/data0/aim/persistent/pam_ldap_str_erbs_target_server
+-rwxrwxrwx    1 0        0                5 Jun 26  2016 /mmc2/flash/data0/aim/persistent/pam_ldap_str_dns_service_name
+-rwxrwxrwx    1 0        0                1 Jun 26  2016 /mmc2/flash/data0/aim/persistent/pam_ldap_str_dns_search_forest
+-rwxrwxrwx    1 0        0                1 Jun 26  2016 /mmc2/flash/data0/aim/persistent/pam_ldap_str_dns_search_domain
+-rwxrwxrwx    1 0        0                1 Jun 26  2016 /mmc2/flash/data0/aim/persistent/pam_ldap_str_dc_4
+-rwxrwxrwx    1 0        0                1 Jun 26  2016 /mmc2/flash/data0/aim/persistent/pam_ldap_str_dc_3
+-rwxrwxrwx    1 0        0                1 Jun 26  2016 /mmc2/flash/data0/aim/persistent/pam_ldap_str_dc_2
+-rwxrwxrwx    1 0        0                8 Jun 26  2016 /mmc2/flash/data0/aim/persistent/pam_ldap_str_dc_1
+-rw-rw-rw-    1 0        0               80 Jun 26  2016 /mmc2/flash/data0/aim/persistent/pam_ldap_str_client_password_enc
+-rwxrwxrwx    1 0        0                1 Jun 26  2016 /mmc2/flash/data0/aim/persistent/pam_ldap_str_client_id
+-rwxrwxrwx    1 0        0                1 Jun 26  2016 /mmc2/flash/data0/aim/persistent/pam_ldap_str_base_dn
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/pam_ldap_int_dns_domain_source
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/pam_ldap_int_binding_method
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/pam_ldap_int_authentication_mode
+-rwxrwxrwx    1 0        0                1 Jun 26  2016 /mmc2/flash/data0/aim/persistent/pam_ldap_bool_use_dns_to_find_servers
+-rwxrwxrwx    1 0        0                1 Jun 26  2016 /mmc2/flash/data0/aim/persistent/pam_ldap_bool_srv_cert_validation
+-rwxrwxrwx    1 0        0                1 Jun 26  2016 /mmc2/flash/data0/aim/persistent/pam_ldap_bool_enhanced_role_based_security
+-rwxrwxrwx    1 0        0                1 Jun 26  2016 /mmc2/flash/data0/aim/persistent/pam_ldap_bool_encryption_enabled
+-rwxrwxrwx    1 0        0                1 Jun 26  2016 /mmc2/flash/data0/aim/persistent/pam_ldap_bool_enabled
+-rwxrwxrwx    1 0        0                1 Jun 26  2016 /mmc2/flash/data0/aim/persistent/pam_ldap_bool_chase_referrals
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/pam_arbd_auth_mode
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/osinet_pfw_use_cmm11
+-rwxrwxrwx    1 0        0               20 Jun 26  2016 /mmc2/flash/data0/aim/persistent/os_str_main_key_path
+-rwxrwxrwx    1 0        0               21 Jun 26  2016 /mmc2/flash/data0/aim/persistent/os_str_main_cert_path
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/netmode_fail_count
+-rwxrwxrwx    1 0        0               11 Jun 26  2016 /mmc2/flash/data0/aim/persistent/net_mode_crc
+-rwxrwxrwx    1 0        0               11 Feb  6 07:32 /mmc2/flash/data0/aim/persistent/net_conf_crc
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/ldap_security_level
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/ldap_security_exception
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/kvm_security_level
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/kvm_security_exception
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/ipmi_security_level
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/ipmi_security_exception
+-rwxrwxrwx    1 0        0               11 Jun 26  2016 /mmc2/flash/data0/aim/persistent/ipmi_conf_crc
+-rwxrwxrwx    1 0        0                1 Jun 26  2016 /mmc2/flash/data0/aim/persistent/ipmb_channel_receive_state
+-rwxrwxrwx    1 0        0                1 Jun 26  2016 /mmc2/flash/data0/aim/persistent/ifm_str_ldap_addr_1
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/ifm_int_ldap_port_1
+-rwxrwxrwx    1 0        0                1 Jun 26  2016 /mmc2/flash/data0/aim/persistent/ifm_bool_enabled
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/gui_int_plat_type
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/gui_int_max_sessions
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/gui_firmware_update_timeout_seconds
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/gui_firmware_reboot_wait_seconds
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/fru_product_lang_code
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/fru_product_asset_tl_type
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/fod_tklm_feature_state
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/fod_sp_feature_state
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/fod_rp_feature_state
+-rwxrwxrwx    1 0        0               14 Jun 26  2016 /mmc2/flash/data0/aim/persistent/firewall_str_net_block_mask
+-rwxrwxrwx    1 0        0               12 Jun 26  2016 /mmc2/flash/data0/aim/persistent/firewall_str_net_block_addr
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/firewall_int_ip_block_penalty_time
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/firewall_int_ip_block_fail_window
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/firewall_int_ip_block_fail_count
+-rwxrwxrwx    1 0        0                1 Jun 26  2016 /mmc2/flash/data0/aim/persistent/firewall_bool_net_block_enabled
+-rwxrwxrwx    1 0        0                1 Jun 26  2016 /mmc2/flash/data0/aim/persistent/firewall_bool_ip_block_enabled
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/encapsulation_mode_state
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/dhcp_int_wait_interval
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/dhcp_int_retry_timeout
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/dhcp_int_packet_timeout
+-rwxrwxrwx    1 0        0                1 Jun 26  2016 /mmc2/flash/data0/aim/persistent/dhcp_bool_random_back_off
+-rwxrwxrwx    1 0        0                1 Jun 26  2016 /mmc2/flash/data0/aim/persistent/dhcp_bool_opt60_opt43
+-rwxrwxrwx    1 0        0                1 Jun 26  2016 /mmc2/flash/data0/aim/persistent/dhcp_bool_opt12
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/custom_sec_setting_int_pw_min_length
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/custom_sec_setting_int_pw_min_diff_char
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/custom_sec_setting_int_pw_history_deep
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/custom_avct_int_password_change_interval
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/custom_avct_int_login_failures_allowed
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/custom_avct_int_lockout_time_period
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/custom_avct_int_force_defaultuser_password_change
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/custom_avct_int_enable_pw_age_checking
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/custom_avct_int_duration_pw_days
+-rwxrwxrwx    1 0        0                1 Jun 26  2016 /mmc2/flash/data0/aim/persistent/custom_avct_bool_pw_strength_check_enabled
+-rwxrwxrwx    1 0        0                1 Jun 26  2016 /mmc2/flash/data0/aim/persistent/custom_avct_bool_permit_empty_passwords
+-rwxrwxrwx    1 0        0                1 Jun 26  2016 /mmc2/flash/data0/aim/persistent/custom_avct_bool_force_password_change
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/clock_set_request_blocked
+-rwxrwxrwx    1 0        0                6 Jun 26  2016 /mmc2/flash/data0/aim/persistent/clock_gmt
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/clock_dst_status
+-rwxrwxrwx    1 0        0                1 Jun 26  2016 /mmc2/flash/data0/aim/persistent/clock_dst_special_type
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/cim_security_level
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/cim_security_exception
+-rwxrwxrwx    1 0        0                4 Feb 19 01:02 /mmc2/flash/data0/aim/persistent/cem_warn_act_event_cnt
+-rwxrwxrwx    1 0        0                4 Apr 11 11:23 /mmc2/flash/data0/aim/persistent/cem_critical_act_event_cnt
+-rwxrwxrwx    1 0        0                1 Oct 14  2016 /mmc2/flash/data0/aim/persistent/bool_ipmi_enabled
+-rwxrwxrwx    1 0        0                1 Jun 26  2016 /mmc2/flash/data0/aim/persistent/bool_console_redirection_enable
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/avct_user_pub_key_num
+-rwxrwxrwx    1 0        0               65 Jun 26  2016 /mmc2/flash/data0/aim/persistent/avct_str_user_allowed_chars
+-rwxrwxrwx    1 0        0               26 Jun 26  2016 /mmc2/flash/data0/aim/persistent/avct_str_pw_policy_component
+-rwxrwxrwx    1 0        0               24 Jun 26  2016 /mmc2/flash/data0/aim/persistent/avct_str_pending_csr_path
+-rwxrwxrwx    1 0        0               24 Jun 26  2016 /mmc2/flash/data0/aim/persistent/avct_str_pending_csr_key_path
+-rwxrwxrwx    1 0        0               20 Jun 26  2016 /mmc2/flash/data0/aim/persistent/avct_str_main_key_path
+-rwxrwxrwx    1 0        0               21 Jun 26  2016 /mmc2/flash/data0/aim/persistent/avct_str_main_cert_path
+-rwxrwxrwx    1 0        0               11 Jun 26  2016 /mmc2/flash/data0/aim/persistent/avct_str_csr_gen_path
+-rwxrwxrwx    1 0        0               11 Jun 26  2016 /mmc2/flash/data0/aim/persistent/avct_str_certmgr_service4
+-rwxrwxrwx    1 0        0               11 Jun 26  2016 /mmc2/flash/data0/aim/persistent/avct_str_certmgr_service3
+-rwxrwxrwx    1 0        0               14 Jun 26  2016 /mmc2/flash/data0/aim/persistent/avct_str_certmgr_service2
+-rwxrwxrwx    1 0        0               10 Jun 26  2016 /mmc2/flash/data0/aim/persistent/avct_str_certmgr_service1
+-rwxrwxrwx    1 0        0               13 Jun 26  2016 /mmc2/flash/data0/aim/persistent/avct_str_certmgr_lock_file
+-rwxrwxrwx    1 0        0               34 Jun 26  2016 /mmc2/flash/data0/aim/persistent/avct_str_certmgr_last_loaded_cert_web-https
+-rwxrwxrwx    1 0        0                5 Jun 26  2016 /mmc2/flash/data0/aim/persistent/avct_str_certmgr_last_loaded_cert_storekey-server
+-rwxrwxrwx    1 0        0                5 Jun 26  2016 /mmc2/flash/data0/aim/persistent/avct_str_certmgr_last_loaded_cert_storekey-client
+-rwxrwxrwx    1 0        0                5 Jun 26  2016 /mmc2/flash/data0/aim/persistent/avct_str_certmgr_last_loaded_cert_ldapserver
+-rwxrwxrwx    1 0        0                5 Jun 26  2016 /mmc2/flash/data0/aim/persistent/avct_str_certmgr_last_loaded_cert_ldapclient
+-rwxrwxrwx    1 0        0               38 Jun 26  2016 /mmc2/flash/data0/aim/persistent/avct_str_certmgr_last_loaded_cert_cim-xml-https
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/avct_str_certmgr_format
+-rwxrwxrwx    1 0        0               11 Jun 26  2016 /mmc2/flash/data0/aim/persistent/avct_str_cert_store_path
+-rwxrwxrwx    1 0        0                5 Jun 26  2016 /mmc2/flash/data0/aim/persistent/avct_str_cert_crl_path
+-rwxrwxrwx    1 0        0                5 Jun 26  2016 /mmc2/flash/data0/aim/persistent/avct_str_cert_cachain_path
+-rwxrwxrwx    1 0        0               23 Jun 26  2016 /mmc2/flash/data0/aim/persistent/avct_str_ca_cert_path
+-rwxrwxrwx    1 0        0               37 Jun 26  2016 /mmc2/flash/data0/aim/persistent/avct_str_avctpasswdini_path
+-rwxrwxrwx    1 0        0               19 Jun 26  2016 /mmc2/flash/data0/aim/persistent/avct_str_ad_cert_path
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/avct_security_level
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/avct_int_trusted_cert_max_count
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/avct_int_restore_xfer_status
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/avct_int_restore_status
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/avct_int_password_change_interval
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/avct_int_min_pw_days
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/avct_int_login_failures_allowed
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/avct_int_lockout_time_period
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/avct_int_force_defaultuser_password_change
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/avct_int_enable_pw_age_checking
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/avct_int_duration_pw_days
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/avct_int_csr_status
+-rwxrwxrwx    1 0        0                2 Jun 26  2016 /mmc2/flash/data0/aim/persistent/avct_int_csr_gen_status_web-https
+-rwxrwxrwx    1 0        0                2 Jun 26  2016 /mmc2/flash/data0/aim/persistent/avct_int_csr_gen_status_ldapserver
+-rwxrwxrwx    1 0        0                2 Jun 26  2016 /mmc2/flash/data0/aim/persistent/avct_int_csr_gen_status_ldapclient
+-rwxrwxrwx    1 0        0                2 Jun 26  2016 /mmc2/flash/data0/aim/persistent/avct_int_csr_gen_status_cim-xml-https
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/avct_int_csr_gen_status
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/avct_int_certmgr_services
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/avct_int_backup_status
+-rwxrwxrwx    1 0        0                1 Jun 26  2016 /mmc2/flash/data0/aim/persistent/avct_bool_pw_strength_check_enabled
+-rwxrwxrwx    1 0        0                1 Jun 26  2016 /mmc2/flash/data0/aim/persistent/avct_bool_permit_empty_passwords
+-rwxrwxrwx    1 0        0                1 Jun 26  2016 /mmc2/flash/data0/aim/persistent/avct_bool_force_password_change
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/aps_security_level
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/aps_security_exception
+-rwxrwxrwx    1 0        0                7 Jun 26  2016 /mmc2/flash/data0/aim/persistent/alert_str_snmp_community
+-rwxrwxrwx    1 0        0                1 Jun 26  2016 /mmc2/flash/data0/aim/persistent/alert_str_smtp_user
+-rwxrwxrwx    1 0        0               18 Jun 26  2016 /mmc2/flash/data0/aim/persistent/alert_str_smtp_starttls_list
+-rwxrwxrwx    1 0        0               36 Jun 26  2016 /mmc2/flash/data0/aim/persistent/alert_str_smtp_sasl_list
+-rwxrwxrwx    1 0        0                1 Jun 26  2016 /mmc2/flash/data0/aim/persistent/alert_str_smtp_reverse_path
+-rwxrwxrwx    1 0        0                1 Jun 26  2016 /mmc2/flash/data0/aim/persistent/alert_str_smtp_auth_uname
+-rwxrwxrwx    1 0        0                1 Jun 26  2016 /mmc2/flash/data0/aim/persistent/alert_str_settings_9
+-rwxrwxrwx    1 0        0                1 Jun 26  2016 /mmc2/flash/data0/aim/persistent/alert_str_settings_8
+-rwxrwxrwx    1 0        0                1 Jun 26  2016 /mmc2/flash/data0/aim/persistent/alert_str_settings_7
+-rwxrwxrwx    1 0        0                1 Jun 26  2016 /mmc2/flash/data0/aim/persistent/alert_str_settings_6
+-rwxrwxrwx    1 0        0                1 Jun 26  2016 /mmc2/flash/data0/aim/persistent/alert_str_settings_5
+-rwxrwxrwx    1 0        0                1 Jun 26  2016 /mmc2/flash/data0/aim/persistent/alert_str_settings_4
+-rwxrwxrwx    1 0        0                1 Jun 26  2016 /mmc2/flash/data0/aim/persistent/alert_str_settings_3
+-rwxrwxrwx    1 0        0                1 Jun 26  2016 /mmc2/flash/data0/aim/persistent/alert_str_settings_2
+-rwxrwxrwx    1 0        0                1 Jun 26  2016 /mmc2/flash/data0/aim/persistent/alert_str_settings_12
+-rwxrwxrwx    1 0        0                1 Jun 26  2016 /mmc2/flash/data0/aim/persistent/alert_str_settings_11
+-rwxrwxrwx    1 0        0                1 Jun 26  2016 /mmc2/flash/data0/aim/persistent/alert_str_settings_10
+-rwxrwxrwx    1 0        0                1 Jun 26  2016 /mmc2/flash/data0/aim/persistent/alert_str_settings_1
+-rwxrwxrwx    1 0        0               11 Jun 26  2016 /mmc2/flash/data0/aim/persistent/alert_str_settings_0
+-rwxrwxrwx    1 0        0                1 Jun 26  2016 /mmc2/flash/data0/aim/persistent/alert_str_extra_data2
+-rwxrwxrwx    1 0        0                1 Jun 26  2016 /mmc2/flash/data0/aim/persistent/alert_str_extra_data1
+-rwxrwxrwx    1 0        0                8 Jun 26  2016 /mmc2/flash/data0/aim/persistent/alert_str_email_server_address
+-rwxrwxrwx    1 0        0               23 Jun 26  2016 /mmc2/flash/data0/aim/persistent/alert_str_email_alert4_subject
+-rwxrwxrwx    1 0        0                1 Jun 26  2016 /mmc2/flash/data0/aim/persistent/alert_str_email_alert4_destination
+-rwxrwxrwx    1 0        0               23 Jun 26  2016 /mmc2/flash/data0/aim/persistent/alert_str_email_alert3_subject
+-rwxrwxrwx    1 0        0                1 Jun 26  2016 /mmc2/flash/data0/aim/persistent/alert_str_email_alert3_destination
+-rwxrwxrwx    1 0        0               23 Jun 26  2016 /mmc2/flash/data0/aim/persistent/alert_str_email_alert2_subject
+-rwxrwxrwx    1 0        0                1 Jun 26  2016 /mmc2/flash/data0/aim/persistent/alert_str_email_alert2_destination
+-rwxrwxrwx    1 0        0               23 Jun 26  2016 /mmc2/flash/data0/aim/persistent/alert_str_email_alert1_subject
+-rwxrwxrwx    1 0        0                1 Jun 26  2016 /mmc2/flash/data0/aim/persistent/alert_str_email_alert1_destination
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/alert_int_smtp_starttls
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/alert_int_smtp_sasl
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/alert_int_smtp_auth_mode
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/alert_int_smtp_auth_enable
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/alert_int_retry_limit
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/alert_int_retry_delay
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/alert_int_email_server_port
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/alert_int_agent_delay
+-rwxrwxrwx    1 0        0                1 Jun 26  2016 /mmc2/flash/data0/aim/persistent/alert_bool_snmp_enabled
+-rwxrwxrwx    1 0        0                1 Jun 26  2016 /mmc2/flash/data0/aim/persistent/alert_bool_smtp_auth_enable
+-rwxrwxrwx    1 0        0                1 Jun 26  2016 /mmc2/flash/data0/aim/persistent/alert_bool_email_alert4_enabled
+-rwxrwxrwx    1 0        0                1 Jun 26  2016 /mmc2/flash/data0/aim/persistent/alert_bool_email_alert3_enabled
+-rwxrwxrwx    1 0        0                1 Jun 26  2016 /mmc2/flash/data0/aim/persistent/alert_bool_email_alert2_enabled
+-rwxrwxrwx    1 0        0                1 Jun 26  2016 /mmc2/flash/data0/aim/persistent/alert_bool_email_alert1_enabled
+-rwxrwxrwx    1 0        0                1 Feb 19 01:02 /mmc2/flash/data0/aim/persistent/aem_supported_0
+-rwxrwxrwx    1 0        0                4 Jun 26  2016 /mmc2/flash/data0/aim/persistent/aem_module_handle_0
+===================================
+/mmc2/flash/data0/aim/persistent/net_conf_crc:0x7cb7d039
+/mmc2/flash/data0/aim/persistent/net_mode_crc:0xfb8c5575
+/mmc2/flash/data0/aim/persistent/netmode_fail_count:
+===================================
+[lan channel-0]
+listen_mode=4
+IPv6_traffic=1
+IPv6_listening_address=255
+lan_mapped_osinetif=1
+lan_rmcp_prim_port=623
+
+[lan channel-1]
+listen_mode=1
+IPv6_traffic=0
+IPv6_listening_address=255
+lan_mapped_osinetif=2
+lan_rmcp_prim_port=623
+
+[header]
+conf_set_num = 3
+current_net_mode = 2
+apply_delay = 5
+syspfw_enable = yes
+
+[glbconfig]
+host_name = IMM2-00e0ec3060e9
+domain_name = 
+dns_enable = yes
+ddns_enable = yes
+v6dns_preference = yes
+
+[ifconfig-1]
+ifconfig_enable = yes
+ifconfig_linkstatus = yes
+ifconfig_dev_mac = 0:0:0:0:0:0
+ifconfig_dev_autoneg = on
+ifconfig_dev_speed = 100
+ifconfig_dev_duplex = full
+ifconfig_dev_mtu = 1500
+ifconfig_vlan_enable = no
+ifconfig_vlan_id = 1
+ifconfig_vlan_priority = 0
+ifconfig_vlan_ncsi_filter = 1
+ifconfig_v4_enable = yes
+ifconfig_v4_dhcp_opt = v4_dhcp_get_domain,v4_dhcp_get_dns,v4_dhcp_send_hostname,
+ifconfig_v4_addr = 141.1.194.54
+ifconfig_v4_netmask = 255.255.255.0
+ifconfig_v4_gateway = 141.1.194.1
+ifconfig_v4_dns1 = 0.0.0.0
+ifconfig_v4_dns2 = 0.0.0.0
+ifconfig_v4_dns3 = 0.0.0.0
+ifconfig_v4_ddns = no
+ifconfig_v4_arp_resp = yes
+ifconfig_v6_enable = yes
+ifconfig_v6_autoconf_opt = v6_dhcp_en,v6_ra_en,v6_dhcp_get_domain,v6_dhcp_get_dns,
+ifconfig_v6_prefix = 64
+ifconfig_v6_addr = ::
+ifconfig_v6_gateway = ::
+ifconfig_v6_dns1 = ::
+ifconfig_v6_dns2 = ::
+ifconfig_v6_dns3 = ::
+ifconfig_v6_ddns = no
+ifconfig_v6_prefix1 = 64
+ifconfig_v6_addr1 = ::
+
+[ifconfig-2]
+ifconfig_enable = yes
+ifconfig_linkstatus = yes
+ifconfig_dev_mac = 00:00:00:00:00:00
+ifconfig_dev_autoneg = on
+ifconfig_dev_speed = 100
+ifconfig_dev_duplex = full
+ifconfig_dev_mtu = 1500
+ifconfig_vlan_enable = no
+ifconfig_vlan_id = 1
+ifconfig_vlan_priority = 0
+ifconfig_vlan_ncsi_filter = 1
+ifconfig_v4_enable = yes
+ifconfig_v4_dhcp_opt = v4_dhcp_en,v4_dhcp_get_domain,v4_dhcp_get_dns,v4_dhcp_send_hostname,v4_dhcp_failover
+ifconfig_v4_addr = 192.168.70.125
+ifconfig_v4_netmask = 255.255.255.0
+ifconfig_v4_gateway = 0.0.0.0
+ifconfig_v4_dns1 = 
+ifconfig_v4_dns2 = 
+ifconfig_v4_dns3 = 
+ifconfig_v4_ddns = no
+ifconfig_v4_arp_resp = yes
+ifconfig_v6_enable = yes
+ifconfig_v6_autoconf_opt = v6_dhcp_en,v6_ra_en,v6_dhcp_get_domain,v6_dhcp_get_dns
+ifconfig_v6_prefix = 64
+ifconfig_v6_addr = ::
+ifconfig_v6_gateway = ::
+ifconfig_v6_dns1 = ::
+ifconfig_v6_dns2 = ::
+ifconfig_v6_dns3 = ::
+ifconfig_v6_ddns = no
+ifconfig_v6_prefix1 = 64
+ifconfig_v6_addr1 = ::
+
+[ifconfig-3]
+ifconfig_enable = yes
+ifconfig_linkstatus = yes
+ifconfig_dev_mac = 0:0:0:0:0:0
+ifconfig_dev_autoneg = off
+ifconfig_dev_speed = 100
+ifconfig_dev_duplex = full
+ifconfig_dev_mtu = 1500
+ifconfig_vlan_enable = no
+ifconfig_vlan_id = 1
+ifconfig_vlan_priority = 0
+ifconfig_vlan_ncsi_filter = 1
+ifconfig_v4_enable = yes
+ifconfig_v4_dhcp_opt = 
+ifconfig_v4_addr = 169.254.95.118
+ifconfig_v4_netmask = 255.255.0.0
+ifconfig_v4_gateway = 0.0.0.0
+ifconfig_v4_dns1 = 
+ifconfig_v4_dns2 = 
+ifconfig_v4_dns3 = 
+ifconfig_v4_ddns = no
+ifconfig_v4_arp_resp = yes
+ifconfig_v6_enable = no
+ifconfig_v6_autoconf_opt = v6_dhcp_en,v6_ra_en,
+ifconfig_v6_prefix = 64
+ifconfig_v6_addr = ::
+ifconfig_v6_gateway = ::
+ifconfig_v6_dns1 = ::
+ifconfig_v6_dns2 = ::
+ifconfig_v6_dns3 = ::
+ifconfig_v6_ddns = no
+ifconfig_v6_prefix1 = 64
+ifconfig_v6_addr1 = ::
+
+[pfw-01]
+enable = yes
+servicename = RDP Pass Through
+protocol = TCP,
+ipver = IPv4,IPv6,
+ingressif = 1
+ingressport = 3389
+egressaddr = 169.254.95.120
+egressport = 3389
+
+[pfw-02]
+enable = yes
+servicename = VNC Pass Through
+protocol = TCP,
+ipver = IPv4,IPv6,
+ingressif = 1
+ingressport = 5900
+egressaddr = 169.254.95.120
+egressport = 5900
+
+[pfw-03]
+enable = no
+servicename = null
+protocol = 
+ipver = IPv4
+ingressif = 0
+ingressport = 0
+egressaddr = 
+egressport = 0
+
+[pfw-04]
+enable = no
+servicename = null
+protocol = 
+ipver = IPv4
+ingressif = 0
+ingressport = 0
+egressaddr = 
+egressport = 0
+
+[pfw-05]
+enable = no
+servicename = null
+protocol = 
+ipver = IPv4
+ingressif = 0
+ingressport = 0
+egressaddr = 
+egressport = 0
+
+[pfw-06]
+enable = no
+servicename = null
+protocol = 
+ipver = IPv4
+ingressif = 0
+ingressport = 0
+egressaddr = 
+egressport = 0
+
+[pfw-07]
+enable = no
+servicename = null
+protocol = 
+ipver = IPv4
+ingressif = 0
+ingressport = 0
+egressaddr = 
+egressport = 0
+
+[pfw-08]
+enable = no
+servicename = null
+protocol = 
+ipver = IPv4
+ingressif = 0
+ingressport = 0
+egressaddr = 
+egressport = 0
+
+[pfw-09]
+enable = no
+servicename = null
+protocol = 
+ipver = IPv4
+ingressif = 0
+ingressport = 0
+egressaddr = 
+egressport = 0
+
+[pfw-10]
+enable = no
+servicename = null
+protocol = 
+ipver = IPv4
+ingressif = 0
+ingressport = 0
+egressaddr = 
+egressport = 0
+
+[pfw-11]
+enable = no
+servicename = null
+protocol = 
+ipver = IPv4
+ingressif = 0
+ingressport = 0
+egressaddr = 
+egressport = 0
+
+
+[header]
+netmode_num                    = 3
+netmode_enabled                = 1,2,3
+
+[netmode-1]
+device_num                     = 2
+abs_if_num                     = 2
+descriptor                     = SHARED
+max_ncsi_ch_num                = 4
+mcad_priority                  = 0
+
+[netmode-1_dev-1]
+type                           = DEDICATED
+devname                        = eth0
+autoneg                        = on,off
+speed                          = 10,100
+duplex                         = full,half
+ncsi_channel                   = 64
+
+[netmode-1_abs-1]
+deviceid                       = 1
+configid                       = 1
+ifname                         = PrimaryNetwork
+route_entry-1                  = default
+
+[netmode-1_dev-2]
+type                           = USB
+devname                        = usb0
+autoneg                        = on,off
+speed                          = 10,100
+duplex                         = full,half
+ncsi_channel                   = 0
+
+[netmode-1_abs-2]
+deviceid                       = 2
+configid                       = 3
+ifname                         = Usb
+
+[netmode-2]
+device_num                     = 2
+abs_if_num                     = 2
+descriptor                     = DEDICATED
+max_ncsi_ch_num                = 0
+mcad_priority                  = 0
+
+[netmode-2_dev-1]
+type                           = NCSI
+devname                        = eth1
+autoneg                        = on,off
+speed                          = 10,100
+duplex                         = full,half
+ncsi_channel                   = 0
+
+[netmode-2_abs-1]
+deviceid                       = 1
+configid                       = 1
+ifname                         = PrimaryNetwork
+route_entry-1                  = default
+
+[netmode-2_dev-2]
+type                           = USB
+devname                        = usb0
+autoneg                        = on,off
+speed                          = 10,100
+duplex                         = full,half
+ncsi_channel                   = 0
+
+[netmode-2_abs-2]
+deviceid                       = 2
+configid                       = 3
+ifname                         = Usb
+
+[netmode-3]
+device_num                     = 2
+abs_if_num                     = 2
+descriptor                     = SHARED_1
+max_ncsi_ch_num                = 2
+mcad_priority                  = 0 
+
+[netmode-3_dev-1]
+type                           = NCSI
+devname                        = eth0
+autoneg                        = on,off
+speed                          = 10,100
+duplex                         = full,half
+ncsi_channel                   = 64
+
+[netmode-3_abs-1]
+deviceid                       = 1
+configid                       = 1
+ifname                         = PrimaryNetwork
+route_entry-1                  = default
+
+[netmode-3_dev-2]
+type                           = USB
+devname                        = usb0
+autoneg                        = on,off
+speed                          = 10,100
+duplex                         = full,half
+ncsi_channel                   = 0
+
+[netmode-3_abs-2]
+deviceid                       = 2
+configid                       = 3
+ifname                         = Usb
+

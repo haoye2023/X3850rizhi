@@ -1,0 +1,3841 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<Rule Family="Brickland" BUILDID="TESTBLD" SUM8="3B">
+	<MsrDump>
+		<Content name="MTM" size="7" type="ascii"/>
+		<Content name="Serial" size="7" type="ascii"/>
+		<Content name="Time Stamp" size="12" type="ascii"/>
+		<Repeat>
+			<Content name="Entry" size="1" type="hex" />
+			<Content name="Core_CPU" size="1" type="hex" >
+				<SubField name="Core" bits="7:4" />
+				<SubField name="CPU" bits="3:0" />
+			</Content>
+			<Content name="Address" size="2" type="hex" />
+			<Content name="Value" size="8" type="hex" />
+		</Repeat>
+	</MsrDump>
+	<CsrDump>
+		<Content name="MTM" size="7" type="ascii"/>
+		<Content name="Serial" size="7" type="ascii"/>
+		<Content name="Time Stamp" size="12" type="ascii"/>
+		<Repeat>
+			<Content name="Entry" size="1" type="hex" />
+			<Content name="IIO" size="1" type="hex" />
+			<Content name="RSVD" size="2" type="hex" />
+			<Content name="Address" size="4" type="hex" />
+			<Content name="Value" size="4" type="hex" />
+		</Repeat>
+	</CsrDump>
+	<MbDump>
+		<Content name="MTM" size="7" type="ascii"/>
+		<Content name="Serial" size="7" type="ascii"/>
+		<Content name="Time Stamp" size="12" type="ascii"/>	
+		<Repeat>
+			<Content name="Entry" size="1" type="hex" />
+			<Content name="Instance" size="1" type="hex" />
+			<Content name="Completion" size="2" type="hex" />
+			<Content name="CompletionCode" size="2" type="hex" />
+			<Content name="Address" size="2" type="hex" />
+			<Content name="Value" size="4" type="hex" />
+		</Repeat>			
+	</MbDump>
+	<Template name="MCi_STATUS_63_38">
+		<Field name="VAL" bits="63:63" >
+			<Match value="1">VAL bit is set.  This bank contains a valid MCE.</Match>
+		</Field>
+		<Field name="OVER" bits="62:62" >
+			<Match value="1">Overflow-A 2nd MCE occurred before previous error was read and cleared.</Match>
+		</Field>
+		<Field name="UC" bits="61:61" >
+			<Match value="1">Uncorrected Error occurred.</Match>
+		</Field>
+		<Field name="EN" bits="60:60" >
+			<Match value="0">Error Not Enabled in MCi_CTL.</Match>
+		</Field>
+		<Field name="MISCV" bits="59:59" >
+			<Match value="1">MCi_MISC is valid.  See decoding below.</Match>
+			<Match value="0">MCi_MISC is not valid</Match>
+		</Field>
+		<Field name="ADDRV" bits="58:58" >
+			<Match value="1">MCi_ADDR is valid.  See decoding below.</Match>
+			<Match value="0">MCi_ADDR is not valid</Match>
+		</Field>
+		<Field name="PCC" bits="57:57" >
+			<Match value="1">Processor Context Corrupt.</Match>		
+		</Field>
+		<Field name="S" bits="56:56" Condition="MCG_CAP[24]==1 AND [57]==0 AND [61]==1">
+			<Match value="1" >MCE generated for UC (but recoverable) error.</Match>		
+			<Match value="0" >Error not recoverable.</Match>		
+		</Field>
+		<Field name="AR" bits="55:55" Condition="MCG_CAP[24]==1 AND [57]==0 AND [61]==1">
+			<Match value="1" >Software recovery Action Required.</Match>		
+			<Match value="0" >Software may defer the recovery action till a later point.</Match>	
+		</Field>
+		<Field name="Threshold-based Erorr Status Indicator" bits="54:53" Condition="MCG_CAP[11]==1 AND [61]==0">
+			<Match value="00" >No tracking.</Match>		
+			<Match value="01" >Green. and Healthy.</Match>	
+			<Match value="10" >Yellow. Operating correctly but with degraded status.</Match>		
+			<Match value="01" >RSVD.</Match>	
+		</Field>
+		<Field name="Corrected Error Count" bits="52:38" >
+			<Match value="xxxxxxxxxxxxxxx">Corrected error count: %d</Match>
+		</Field>
+	</Template>
+	<Template name="MCi_STATUS_31_16forMC8toMC11">
+		<Field name="MSCOD" bits="31:16">
+			<Match value="0000000000000001">Address parity error</Match>
+			<Match value="0000000000000010">Home Agent write data parity error</Match>
+			<Match value="0000000000000100">Home Agent write BE parity error</Match>
+			<Match value="0000000000001000">Corretable patrol scrub error</Match>
+			<Match value="0000000000010000">Uncorretable patrol scrub error</Match>
+			<Match value="0000000000100000">Corretable spare error</Match>
+			<Match value="0000000001000000">Uncorretable spare error</Match>
+		</Field>
+	</Template>
+	<Template name="MCi_STATUS_31_16forMC12toMC19">
+		<Field name="MSCOD" bits="31:16">
+			<Match value="0000000000000001">CBO Uncorretable data error</Match>
+			<Match value="0000000000000010">CBO Uncorretable data tag error</Match>
+			<Match value="0000000000000011">CBO SAD error WB to MMIO</Match>
+			<Match value="0000000000000100">CBO SAD error IA accesss to GSM</Match>
+			<Match value="0000000000000101">CBO SAD error corrupting other</Match>
+			<Match value="0000000000000110">CBO SAD error non-corrupting other</Match>
+			<Match value="0000000000000111">CBO Correctable data error</Match>
+			<Match value="0000000000001000">CBO Memory poison data error</Match>
+			<Match value="0000000000001001">CBO Memory posion data</Match>
+			<Match value="0000000000001010">CBO Parity error</Match>
+		</Field>
+	</Template>
+	<Template name="MCi_STATUS_15_0">
+		<Field name="MCACOD" bits="15:0">
+			<Match value="xxxxxxxxxxxxxxxx">MCA Error Code: 0b%016b</Match>
+			<Match value="0000000000000000">No Error</Match>
+			<Match value="0000000000000001">Unclassified</Match>
+			<Match value="0000000000100000">Microcode ROM Parity Error</Match>
+			<Match value="0000000000000011">BINIT# from another CPU caused error</Match>
+			<Match value="0000000000000100">FRC (Functional Redundancy Check) Error</Match>
+			<Match value="0000000000000101">Internal Pipeline Error</Match>
+			<Match value="0000010000000000">Internal Timer Error</Match>
+			<Match value="000001xxxxxxxxxx">Unclassified Error</Match>
+			<Match value="0001000000000000">No Error</Match>
+			<Match value="0001000000000001">Unclassified</Match>
+			<Match value="0001000000100000">Microcode ROM Parity Error</Match>
+			<Match value="0001000000000011">BINIT# from another CPU caused error</Match>
+			<Match value="0001000000000100">FRC (Functional Redundancy Check) Error</Match>
+			<Match value="0001000000000101">Internal Pipeline Error</Match>
+			<Match value="0001010000000000">Internal Timer Error</Match>
+			<Match value="000101xxxxxxxxxx">Unclassified Error</Match>
+		</Field>
+		<Field bits="2:0" Condition="[15:2]==00000000000011 OR [15:2]==00010000000011">
+			<Match value="000">Cache Hierarchy Error in Cache Level 0 L1</Match>
+			<Match value="001">Cache Hierarchy Error in Cache Level 1 L2</Match>
+			<Match value="010">Cache Hierarchy Error in Cache Level 2 L3</Match>
+			<Match value="011">Cache Hierarchy Error in Cache Level Generic LG</Match>
+		</Field>
+		<Field bits="3:0" Condition="[15:4]==000000010000 OR [15:4]==000100010000">
+			<Match value="0000">Cache Hirarchy Error during Transaction Type=Instruction in Cache Level 0 L1</Match>
+			<Match value="0001">Cache Hirarchy Error during Transaction Type=Instruction in Cache Level 1 L2</Match>
+			<Match value="0010">Cache Hirarchy Error during Transaction Type=Instruction in Cache Level 2 L3</Match>
+			<Match value="0011">Cache Hirarchy Error during Transaction Type=Instruction in Cache Level Generic LG</Match>
+			<Match value="0100">Cache Hirarchy Error during Transaction Type=Data in Cache Level 0 L1</Match>
+			<Match value="0101">Cache Hirarchy Error during Transaction Type=Data in Cache Level 1 L2</Match>
+			<Match value="0110">Cache Hirarchy Error during Transaction Type=Data in Cache Level 2 L3</Match>
+			<Match value="0111">Cache Hirarchy Error during Transaction Type=Data in Cache Level Generic LG</Match>
+			<Match value="1000">Cache Hirarchy Error during Transaction Type=Generic in Cache Level 0 L1</Match>
+			<Match value="1001">Cache Hirarchy Error during Transaction Type=Generic in Cache Level 1 L2</Match>
+			<Match value="1010">Cache Hirarchy Error during Transaction Type=Generic in Cache Level 2 L3</Match>
+			<Match value="1011">Cache Hirarchy Error during Transaction Type=Generic in Cache Level Generic LG</Match>
+		</Field>
+		<Field bits="3:0" Condition="[15:7]==000000001 OR [15:7]==000100001">
+			<Match value="0000">Memory Error on Channel 0</Match>
+			<Match value="0001">Memory Error on Channel 1</Match>
+			<Match value="0010">Memory Error on Channel 2</Match>
+			<Match value="0011">Memory Error on Channel 3</Match>
+			<Match value="0100">Memory Error on Channel 4</Match>
+			<Match value="0101">Memory Error on Channel 5</Match>
+			<Match value="0110">Memory Error on Channel 6</Match>
+			<Match value="0111">Memory Error on Channel 7</Match>
+			<Match value="1000">Memory Error on Channel 8</Match>
+			<Match value="1001">Memory Error on Channel 9</Match>
+			<Match value="1010">Memory Error on Channel 10</Match>
+			<Match value="1011">Memory Error on Channel 11</Match>
+			<Match value="1100">Memory Error on Channel 12</Match>
+			<Match value="1101">Memory Error on Channel 13</Match>
+			<Match value="1110">Memory Error on Channel 14</Match>
+		</Field>
+		<Field bits="6:4" Condition="[15:7]==000000001 OR [15:7]==000100001">
+			<Match value="000">Memory Controller - Generic undefined request</Match>
+			<Match value="001">Memory Controller - Memory Read Error</Match>
+			<Match value="010">Memory Controller - Memory Write Error</Match>
+			<Match value="011">Memory Controller - Address/Command Error</Match>
+			<Match value="100">Memory Controller - Memory scrubbing Error</Match>
+		</Field>
+		<Field bits="11:11">
+			<Match value="1">Bus Interconnect Error</Match>
+		</Field>
+		<Field bits="10:9" Condition="[11]==1">
+			<Match value="00">Local processor originated request</Match>
+			<Match value="01">Local processor responded to request</Match>
+			<Match value="10">Local processor observed error as third party</Match>
+			<Match value="11">Generic PP</Match>
+		</Field>
+		<Field bits="8:8" Condition="[11]==1">
+			<Match value="1">Request timed out</Match>
+			<Match value="0">Request did not time-out</Match>
+		</Field>
+		<Field bits="7:4" Condition="[11]==1">
+			<Match value="0000">Generic Error</Match>
+			<Match value="0001">Generic Read</Match>
+			<Match value="0010">Generic Write</Match>
+			<Match value="0011">Data Read</Match>
+			<Match value="0100">Data Write</Match>
+			<Match value="0101">Instruction Fetch</Match>
+			<Match value="0110">Prefetch</Match>
+			<Match value="0111">Eviction</Match>
+			<Match value="1000">Snoop</Match>
+		</Field>
+		<Field bits="3:2" Condition="[11]==1">
+			<Match value="00">Memory Access</Match>
+			<Match value="01">RSVD</Match>
+			<Match value="10">I/O</Match>
+			<Match value="11">Other Transaction</Match>
+		</Field>
+		<Field bits="1:0" Condition="[11]==1">
+			<Match value="00">Bus Interconnect Error LL Level 0 L1</Match>
+			<Match value="01">Bus Interconnect Error LL Level 1 L2</Match>
+			<Match value="10">Bus Interconnect Error LL Level 2 L3</Match>
+			<Match value="11">Bus Interconnect Error LL Generic LL</Match>
+		</Field>
+	</Template>
+	<Template name="MCi_CTL2"> 
+		<Field name="Corrected Error Count Threshold" bits="14:0">
+			<Match value="x{15}">Corrected Error Threshold: 0b%015b</Match>
+		</Field>
+		<Field name="CMCI_EN" bits="30:30">
+			<Match value="1">Corrected Error Interrupt Enabled</Match>
+			<Match value="0">Corrected Error Interrupt Disabled</Match>
+		</Field>
+	</Template>
+	<Template name="MC6to7_CTL">
+		<Field name="Error 1F" bits="31:31">
+			<Match value="1"> Enable Unsupported Config Request </Match>
+		</Field>
+		<Field name="Error 16" bits="22:22">
+			<Match value="1"> Enable LL Debug FLIT CRC Error </Match>
+		</Field>
+		<Field name="Error 15" bits="21:21">
+			<Match value="1"> Enable LL Route back table error </Match>
+		</Field>
+		<Field name="Error 14" bits="20:20">
+			<Match value="1"> Enable LL Rx L0p Retrain Error </Match>
+		</Field>
+		<Field name="Error 13" bits="19:19">
+			<Match value="1"> Enable LL Control Error </Match>
+		</Field>
+		<Field name="Error 12" bits="18:18">
+			<Match value="1"> Enable LL Unsupported/undefined Packet (Bad Packet) Error </Match>
+		</Field>
+		<Field name="Error 11" bits="17:17">
+			<Match value="1"> Enable LL Tx Unsuccessful Link Layer Retry Error </Match>
+		</Field>
+		<Field name="Error 10" bits="16:16">
+			<Match value="1"> Enable R3QPI General Control Error </Match>
+		</Field>
+		<Field name="Error 03" bits="3:3">
+			<Match value="1"> Enable Phy Latency Buffer Overflow</Match>
+		</Field>
+		<Field name="Error 02" bits="2:2">
+			<Match value="1"> Enable Phy Detected Drift Buffer Alarm </Match>
+		</Field>
+		<Field name="Error 00" bits="0:0">
+			<Match value="1"> Enable Phy Generic Control Error </Match>
+		</Field>
+	</Template>
+	<Template name="MC8to11_CTL">
+		<Field name="Corr_Read_Error" bits="5:5">
+			<Match value="1">Enables exception signalling for normal read errors </Match>
+		</Field>
+		<Field name="Addr_error" bits="4:4">
+			<Match value="1">Enable exception signaling for address errors </Match>
+		</Field>
+		<Field name="HA_Wr_Buffer_ByteEnable_Error" bits="3:3">
+			<Match value="1">Enable exception signaling for HA Write Buffer Byte Enable errors </Match>
+		</Field>
+		<Field name="HA_Wr_Buffer_Date_Error" bits="2:2">
+			<Match value="1">Enable exception signaling for HA Write Buffer data errors </Match>
+		</Field>
+		<Field name="Data_Scrub_error" bits="1:1">
+			<Match value="1">Enable exception signaling for data scrubbing errors. </Match>
+		</Field>
+		<Field name="Data_Spare_error" bits="0:0">
+			<Match value="1">Enable exception signaling for data sparing errors </Match>
+		</Field>
+	</Template>
+	<Template name="MC12to19_CTL">
+		<Field name="SAD_NON_CORRUPING_ERR_OTHER" bits="5:5">
+			<Match value="1">Enables SAD: Other sources of LLC noncorrupting errors </Match>
+		</Field>
+		<Field name="SAD_CORRUPING_ERR_OTHER" bits="4:4">
+			<Match value="1">Enable SAD: Other sources of LLC corrupting errors </Match>
+		</Field>
+		<Field name="SAD_ERR_IA_Access_to_MESEG" bits="3:3">
+			<Match value="1">Enable SAD: Enables SAD error for IA access to MESeg Region </Match>
+		</Field>
+		<Field name="SAD_ERR_WB_TO_TYPE" bits="2:2">
+			<Match value="1">Enable SAD: Enables signaling of Uncorrected error </Match>
+		</Field>
+		<Field name="LLC_data_error" bits="1:1">
+			<Match value="1">Enable LLC: Uncorrected Data Error Flag </Match>
+		</Field>
+		<Field name="LLC_tag_error" bits="0:0">
+			<Match value="1">Enable Uncorrected Tag Error Flag </Match>
+		</Field>
+	</Template>
+	<Template name="MC8to11_ADDR">
+		<Field name="" bits="63:0">
+			<Match value="x{64}">MCi_ADDR: 0x%016I64x</Match>
+		</Field>
+		<Field name="PhyAddr" bits="45:12">
+			<Match value="x{34}">Physical Address = 0x%016I64x</Match>
+		</Field>
+	</Template>
+	<Template name="MC_Status_for_HA">
+		<Field template="MCi_STATUS_63_38">
+		</Field>
+		<Field name="Other Info" bits="37:32">
+			<Match value="xxxxxx">Other Info: 0b%06b</Match>
+		</Field>
+		<Field name="MSCOD" bits="31:16">
+			<Match value="xxxxxxxxxxxxxxxx">Model Specific Error Code: 0b%016b</Match>
+			<!--bits(mc0_status,0n16,0n15)??-->
+			<Match value="xxxxxxxxxxx1xxxx">RTID Out of Range Error</Match>
+			<Match value="xxxxxxxxxxxx1xxx">Data timing Error</Match>
+			<Match value="xxxxxxxxxxxxx1xx">Partial Wr Error</Match>
+			<Match value="xxxxxxxxxxxxxx1x">DB Parity Error</Match>
+			<Match value="xxxxxxxxxxxxxxx1">Data Read Error</Match>
+		</Field>
+		<Field template="MCi_STATUS_15_0">
+		</Field>
+		<Field name="" bits="1:0">
+			<Match value="xx">Channel with memory error being reported %d</Match>
+		</Field>
+	</Template>
+	<Template name="MC_Status_for_QPI">
+		<Field template="MCi_STATUS_63_38">
+		</Field>
+		<Field name="Corrected Error Count" bits="52:38">
+			<Match value="xxxxxxxxxxxxxxx">Corrected error count: %d</Match>
+		</Field>
+		<Field name="Other Info" bits="37:32">
+			<Match value="xxxxxx">Other Info: 0b%06b</Match>
+		</Field>
+		<Field name="MSCOD" bits="31:16">
+			<Match value="xxxxxxxxxxxxxxxx">Model Specific Error Code: 0b%016b</Match>
+			<!--bits(mc0_status,0n16,0n15)??-->
+			<Match value="xxxxxxxxxx011111">Uncorrectable: Unsupported Config Request from Message Channel</Match>
+			<Match value="xxxxxxxxxx010110">Uncorrectable: Debug Flit CRC</Match>
+			<Match value="xxxxxxxxxx010101">Uncorrectable: Link Layer RBT used un-initialized value</Match>
+			<Match value="xxxxxxxxxx010100">Uncorrectable: Link Layer L0p Retrain error</Match>
+			<Match value="xxxxxxxxxx010011">Uncorrectable: QPI Link Layer Detected Control Error</Match>
+			<Match value="xxxxxxxxxx010010">Uncorrectable: QPI Link Layer detected Unsupported/Undefined Packet</Match>
+			<Match value="xxxxxxxxxx010001">Uncorrectable: Rx detected CRC error -- Unsuccessful Link Level Retry - entered LLR abort state</Match>
+			<Match value="xxxxxxxxxx010000">Uncorrectable: QPI Link Layer Detected R3QPI Control Error</Match>
+			<Match value="xxxxxxxxxx000011">Uncorrectable: latency buffer over/under run</Match>
+			<Match value="xxxxxxxxxx000010">Uncorrectable: QPI Physical Layer Detected Drift Buffer Alarm</Match>
+			<Match value="xxxxxxxxxx000000">Uncorrectable: QPI Physical Layer Control Error</Match>
+			<Match value="xxxxxxxxxx110010">Correctable: Tx CRC Error (initiates LLR_Req sequence)</Match>
+			<Match value="xxxxxxxxxx110001">Correctable: Rx CRC Error with LLR Success (no phy re-init)</Match>
+			<Match value="xxxxxxxxxx110000">Correctable: Rx CRC Error with LLR Success after phy re-init</Match>
+			<Match value="xxxxxxxxxx100010">Correctable: Phy In-band Reset completed successfully with no width change</Match>
+			<Match value="xxxxxxxxxx100000">Correctable: QPI Physical Layer Detected a QPI in-band Reset but aborted initialization</Match>
+		</Field>
+		<Field template="MCi_STATUS_15_0">
+		</Field>
+		<Field name="MISCV" bits="59:59">
+			<Match value="1">IA32_MC6_MISC: 0x%016I64x</Match>
+		</Field>
+		<Field name="ADDRV" bits="58:58">
+			<Match value="1">IA32_MC6_ADDR: 0x%016I64x</Match>
+		</Field>
+	</Template>
+	<Template name="MCi_MISC_AddresMode">
+		<Field name="Address_Mode" bits="8:6">
+			<Match value="000">Segment Offset</Match>
+			<Match value="001">Linear Address</Match>
+			<Match value="010">Physical (system) Address</Match>
+			<Match value="011">Memory Address</Match>
+			<Match value="111">Generic</Match>
+		</Field>
+	</Template>
+  <Template name="MCi_QPI_CTL">
+ 
+    <Field name="EN_QPI_ERR_14_SIGNALING" bits="20:20">
+      <Match value="1"> Enable the QPI Error 14 (LL Rx L0p Retrain Error) signaling </Match>
+    </Field>
+    <Field name="EN_QPI_ERR_13_SIGNALING" bits="19:19">
+      <Match value="1"> Enable the QPI Error 13 (LL Control Error) signaling </Match>
+    </Field>
+    <Field name="EN_QPI_ERR_12_SIGNALING" bits="18:18">
+      <Match value="1"> Enable the QPI Error 12 (LL Unsupported/undefined Packet (Bad Packet) Error) signaling </Match>
+    </Field>
+    <Field name="EN_QPI_ERR_11_SIGNALING" bits="17:17">
+      <Match value="1"> Enable the QPI Error 11 (LL Tx Unsuccessful Link Layer Retry Error) signaling </Match>
+    </Field>
+    <Field name="EN_QPI_ERR_10_SIGNALING" bits="16:16">
+      <Match value="1"> Enable the QPI Error 10 (R3QPI General Control Error) signaling </Match>
+    </Field>
+    <Field name="EN_QPI_ERR_03_SIGNALING" bits="3:3">
+      <Match value="1"> Enable the QPI Error 03 (Phy Latency Buffer Overflow) signaling </Match>
+    </Field>
+    <Field name="EN_QPI_ERR_02_SIGNALING" bits="2:2">
+      <Match value="1"> Enable the QPI Error 02 (Phy Detected Drift Buffer Alarm)signaling </Match>
+    </Field>
+    <Field name="EN_QPI_ERR_00_SIGNALING" bits="0:0">
+      <Match value="1"> Enable the QPI Error 00 (Phy Generic Control Error) signaling </Match>
+    </Field>
+  </Template>
+	<MSR address="0x178" alias="MCG_CONTAIN" Condition="0" />
+	<MSR address="0x179" alias="MCG_CAP" Condition="0">
+		<!--mcg_cap_ord8 = nhm_msr(0x179);      //IA32_MCG_CAP register-->
+	</MSR>
+	<MSR address="0x17A" alias="MCG_STATUS" Condition="0"/>
+	<MSR address="0x280" alias="MC0_CTL2" Condition="MC0_STATUS[63]==1">
+		<Field template="MCi_CTL2"> </Field>
+	</MSR>
+	<MSR address="0x281" alias="MC1_CTL2" Condition="MC1_STATUS[63]==1"> 
+		<Field template="MCi_CTL2"> </Field>
+	</MSR>
+	<MSR address="0x283" alias="MC3_CTL2" Condition="MC3_STATUS[63]==1">
+		<Field template="MCi_CTL2"> </Field>
+	</MSR>
+  <MSR address="0x284" alias="MC4_CTL2" Condition="MC4_STATUS[63]==1">
+    <Field template="MCi_CTL2"> </Field>
+  </MSR>
+	<MSR address="0x285" alias="MC5_CTL2" Condition="MC5_STATUS[63]==1"> 
+		<Field template="MCi_CTL2"> </Field>
+	</MSR>
+	<MSR address="0x286" alias="MC6_CTL2" Condition="MC6_STATUS[63]==1">
+		<Field template="MCi_CTL2"> </Field>
+	</MSR>
+	<MSR address="0x287" alias="MC7_CTL2" Condition="MC7_STATUS[63]==1"> 
+		<Field template="MCi_CTL2"> </Field>
+	</MSR>
+	<MSR address="0x288" alias="MC8_CTL2" Condition="MC8_STATUS[63]==1"> 
+		<Field template="MCi_CTL2"> </Field>
+	</MSR>
+	<MSR address="0x289" alias="MC9_CTL2" Condition="MC9_STATUS[63]==1">
+		<Field template="MCi_CTL2"> </Field>
+	</MSR>
+	<MSR address="0x28A" alias="MC10_CTL2" Condition="MC10_STATUS[63]==1">
+		<Field template="MCi_CTL2"> </Field>
+	</MSR>
+	<MSR address="0x28B" alias="MC11_CTL2" Condition="MC11_STATUS[63]==1"> 
+		<Field template="MCi_CTL2"> </Field>
+	</MSR>
+	<MSR address="0x28C" alias="MC12_CTL2" Condition="MC12_STATUS[63]==1">
+		<Field template="MCi_CTL2"> </Field>
+	</MSR>
+	<MSR address="0x28D" alias="MC13_CTL2" Condition="MC13_STATUS[63]==1"> 
+		<Field template="MCi_CTL2"> </Field>
+	</MSR>
+	<MSR address="0x28E" alias="MC14_CTL2" Condition="MC14_STATUS[63]==1"> 
+		<Field template="MCi_CTL2"> </Field>
+	</MSR>
+	<MSR address="0x28F" alias="MC15_CTL2" Condition="MC15_STATUS[63]==1"> 
+		<Field template="MCi_CTL2"> </Field>
+	</MSR>
+	<MSR address="0x290" alias="MC16_CTL2" Condition="MC16_STATUS[63]==1"> 
+		<Field template="MCi_CTL2"> </Field>
+	</MSR>
+	<MSR address="0x291" alias="MC17_CTL2" Condition="MC17_STATUS[63]==1">
+		<Field template="MCi_CTL2"> </Field>
+	</MSR>
+	<MSR address="0x292" alias="MC18_CTL2" Condition="MC18_STATUS[63]==1">
+		<Field template="MCi_CTL2"> </Field>
+	</MSR>
+	<MSR address="0x293" alias="MC19_CTL2" Condition="MC19_STATUS[63]==1"> 
+		<Field template="MCi_CTL2"> </Field>
+	</MSR>
+	<MSR address="0x294" alias="MC20_CTL2" Condition="MC20_STATUS[63]==1"> 
+		<Field template="MCi_CTL2"> </Field>
+	</MSR>
+	<MSR address="0x295" alias="MC21_CTL2" Condition="MC21_STATUS[63]==1"> 
+		<Field template="MCi_CTL2"> </Field>
+	</MSR>	
+	<MSR address="0x296" alias="MC22_CTL2" Condition="MC22_STATUS[63]==1"> 
+		<Field template="MCi_CTL2"> </Field>
+	</MSR>
+	<MSR address="0x297" alias="MC23_CTL2" Condition="MC23_STATUS[63]==1"> 
+		<Field template="MCi_CTL2"> </Field>
+	</MSR>	
+	<MSR address="0x298" alias="MC24_CTL2" Condition="MC24_STATUS[63]==1"> 
+		<Field template="MCi_CTL2"> </Field>
+	</MSR>
+	<MSR address="0x299" alias="MC25_CTL2" Condition="MC25_STATUS[63]==1"> 
+		<Field template="MCi_CTL2"> </Field>
+	</MSR>	
+	<MSR address="0x29A" alias="MC26_CTL2" Condition="MC26_STATUS[63]==1"> 
+		<Field template="MCi_CTL2"> </Field>
+	</MSR>
+	<MSR address="0x29B" alias="MC27_CTL2" Condition="MC27_STATUS[63]==1"> 
+		<Field template="MCi_CTL2"> </Field>
+	</MSR>	
+	<MSR address="0x29C" alias="MC28_CTL2" Condition="MC28_STATUS[63]==1"> 
+		<Field template="MCi_CTL2"> </Field>
+	</MSR>
+	<MSR address="0x29D" alias="MC29_CTL2" Condition="MC29_STATUS[63]==1"> 
+		<Field template="MCi_CTL2"> </Field>
+	</MSR>
+	<MSR address="0x29E" alias="MC30_CTL2" Condition="MC30_STATUS[63]==1"> 
+		<Field template="MCi_CTL2"> </Field>
+	</MSR>
+	<MSR address="0x29F" alias="MC31_CTL2" Condition="MC31_STATUS[63]==1"> 
+		<Field template="MCi_CTL2"> </Field>
+	</MSR>
+	<MSR address="0x400" alias="MC0_CTL" Condition="MC0_STATUS[63]==1">
+		<Field name="ENABLE_DSB" bits="4:4">
+			<Match value="1"> DSB (Data Sequencing Buffer) MCA error reporting enalbed </Match>
+		</Field>
+		<Field name="ENABLE_IFU" bits="3:3">
+			<Match value="1"> IFU (Instruction Fetch Unit) MCA error reporting enalbed </Match>
+		</Field>
+		<Field name="ENABLE_IQ" bits="2:2">
+			<Match value="1"> IQ (Instruction Queue) MCA error reporting enalbed </Match>
+		</Field>
+		<Field name="ENABLE_MS" bits="1:1">
+			<Match value="1"> MS (Micro Sequencer) MCA error reporting enalbed </Match>
+		</Field>
+		<Field name="ENABLE_ROB" bits="0:0">
+			<Match value="1"> ROB (Re-Order Buffer) MCA error reporting enalbed </Match>
+		</Field>
+	</MSR>
+	<MSR address="0x401" alias="MC0_STATUS" Condition="[63]==1">
+		<Field template="MCi_STATUS_63_38">
+		</Field>
+		<Field name="Other Info" bits="37:32">
+			<Match value="xxxxxx">Other Info: 0b%06b</Match>
+		</Field>
+		<Field name="MSCOD" bits="31:16">
+			<Match value="xxxxxxxxxxxxxxxx">Model Specific Error Code: 0b%016b</Match>
+		</Field>
+		<Field template="MCi_STATUS_15_0">
+		</Field>
+		<Field bits="8:6" Condition="[59]==1">
+			<Match value="000">Address Mode = Segment Offset</Match>
+			<Match value="001">Address Mode = Linear Address</Match>
+			<Match value="010">Address Mode = Physical Address</Match>
+			<Match value="011">Address Mode = Memory Address</Match>
+			<Match value="111">Address Mode = Generic</Match>
+		</Field>
+	</MSR>
+	<MSR address="0x402" alias="MC0_ADDR" Condition="MC0_STATUS[63]==1 AND MC0_STATUS[58]==1">
+		<Field name="ADDR" bits="48:0">
+			<Match value="x{49}">LIP of access: 0x%016I64x</Match>
+		</Field>
+	</MSR>
+	<MSR address="0x403" alias="MC0_MISC" Condition="MC0_STATUS[63]==1 AND MC0_STATUS[59]==1">	
+		<Field template="MCi_MISC_AddresMode"></Field>
+		<Field name="IFU_Addr_LSB" bits="5:0">
+			<Match value="xxxxxx">IFU Addr LSB: 0b%06b</Match>
+		</Field>
+	</MSR>
+	<MSR address="0x404" alias="MC1_CTL" Condition="MC1_STATUS[63]==1"> 
+		<Field name="EN_DTLB" bits="1:1">
+			<Match value="1"> Enable all error reporting in the DTLB </Match>
+		</Field>
+		<Field name="EN" bits="0:0">
+			<Match value="1"> Enable all error reporting in the DCU </Match>
+		</Field>
+	</MSR>
+	<MSR address="0x405" alias="MC1_STATUS" Condition="[63]==1">
+		<Field template="MCi_STATUS_63_38">
+		</Field>
+		<Field name="Other Info" bits="37:32">
+			<Match value="xxxxxx">Other Info: 0b%06b</Match>
+		</Field>
+		<Field name="MSCOD" bits="31:16">
+			<Match value="xxxxxxxxxxxxxxxx">Model Specific Error Code: 0b%016b</Match>
+			<Match value="0000000000100000">APIC Error</Match>
+			<Match value="0000000000010000">WBINVD Error</Match>
+			<Match value="0000000000000000">Non-Apic Error</Match>
+		</Field>
+		<Field template="MCi_STATUS_15_0">
+		</Field>
+	</MSR>
+	<MSR address="0x406" alias="MC1_ADDR" Condition="MC1_STATUS[63]==1 AND MC1_STATUS[58]==1">
+		<Field name="" bits="63:0">
+			<Match value="x{64}">IA32_MC1_ADDR: 0x%016I64x</Match>
+		</Field>
+	</MSR>
+	<MSR address="0x407" alias="MC1_MISC" Condition="MC1_STATUS[63]==1 AND MC1_STATUS[59]==1">
+		<Field template="MCi_MISC_AddresMode"></Field>
+		<Field name="RecAddrLSB" bits="5:0">
+			<Match value="xxxxxx">Rec Addr LSB: 0b%06b</Match>
+		</Field>
+	</MSR>
+	<MSR address="0x408" alias="MC2_CTL" Condition="MC2_STATUS[63]==1"> 
+		<Field name="EN_DTLB" bits="1:1">
+			<Match value="1"> Enable all error reporting in the DTLB </Match>
+		</Field>
+		<Field name="EN" bits="0:0">
+			<Match value="1"> Enable all error reporting in the DCU </Match>
+		</Field>
+	</MSR>
+	<MSR address="0x409" alias="MC2_STATUS" Condition="[63]==1">
+		<Field template="MCi_STATUS_63_38">
+		</Field>
+		<Field name="Other Info" bits="37:32">
+			<Match value="xxxxxx">Other Info: 0b%06b</Match>
+		</Field>
+		<Field name="MSCOD" bits="31:16">
+			<Match value="xxxxxxxxxxxxxxxx">Model Specific Error Code: 0b%016b</Match>
+			<!--bits(mc0_status,0n16,0n15)??-->
+			<Match value="0000000000000001">Data Parity Error</Match>
+			<Match value="0000000000000000">Tag Parity Error</Match>
+		</Field>
+		<Field template="MCi_STATUS_15_0">
+		</Field>
+	</MSR>
+	<MSR address="0x40C" alias="MC3_CTL" Condition="MC3_STATUS[63]==1"> 
+		<Field name="mlc_data_poison_error" bits="2:2">
+			<Match value="1"> Enable Uncorrectable MLC Data poison ECC Error </Match>
+		</Field>
+		<Field name="mlc_mesi_state_error" bits="1:1">
+			<Match value="1"> Enable Uncorrectable MLC MESI State Array</Match>
+		</Field>
+		<Field name="mlc_tag_error" bits="0:0">
+			<Match value="1"> Enable Uncorrectable MLC Tag ECC Error MCERR </Match>
+		</Field>
+	</MSR>
+	<MSR address="0x40D" alias="MC3_STATUS" Condition="[63]==1">
+		<Field template="MCi_STATUS_63_38">
+		</Field>
+		<Field name="Other Info" bits="37:32">
+			<Match value="xxxxxx">Other Info: 0b%06b</Match>
+		</Field>
+		<Field name="MSCOD" bits="31:16">
+			<Match value="xxxxxxxxxxxxxxxx">Model Specific Error Code: 0b%016b</Match>
+			<!--bits(mc0_status,0n16,0n15)??-->
+			<Match value="0000000010000000">MLC Watchdog timer (3-strike) error</Match>
+			<Match value="0000000000110000">Poisoned Data detected</Match>
+			<Match value="0000000000100000">Data Read uncorrected error</Match>
+			<Match value="0000000000010000">Data Read Corrected error</Match>
+			<Match value="0000000000001000">MESI State Uncorrected error</Match>
+			<Match value="0000000000000100">MESI State Corrected error</Match>
+			<Match value="0000000000000010">Tag Uncorrected error</Match>
+			<Match value="0000000000000001">Tag Corrected error</Match>
+		</Field>
+		<Field template="MCi_STATUS_15_0">
+		</Field>
+		<Field name="MCA Error Code" bits="15:0">
+			<Match value="0000000110100101">Data Prefetch errors</Match>
+			<Match value="0000000100110101">Data Read errors:</Match>
+			<Match value="0000000100001001">MESI or Tag errors</Match>
+		</Field>
+	</MSR>
+	<MSR address="0x40E" alias="MC3_ADDR" Condition="MC3_STATUS[63]==1 AND MC3_STATUS[58]==1">
+		<Field name="" bits="63:0">
+			<Match value="x{64}">IA32_MC3_ADDR: 0x%016I64x</Match>
+		</Field>
+	</MSR>
+	<MSR address="0x40F" alias="MC3_MISC" Condition="MC3_STATUS[63]==1 AND MC3_STATUS[59]==1">
+		<Field name="" bits="63:0">
+			<Match value="x{64}">IA32_MC3_MISC: 0x%016I64x</Match>
+		</Field>
+	</MSR>
+	<MSR address="0x410" alias="MC4_CTL" Condition="MC4_STATUS[63]==1">
+    <Field name="EN_PCU_ERR_SIGNALING" bits="30:27">
+      <Match value="x{4}"> Enable PCU MCA Error Signaling: 0b%04b</Match>
+    </Field>
+    <Field template="MCi_QPI_CTL"/>
+	</MSR>
+	<MSR address="0x411" alias="MC4_STATUS" Condition="[63]==1">
+		<Field template="MCi_STATUS_63_38">
+		</Field>
+		<Field name="Other Info" bits="37:32">
+			<Match value="xxxxxx">Other Info: 0b%06b</Match>
+		</Field>
+		<Field name="MSCOD" bits="31:16">
+			<Match value="xxxxxxxxxxxxxxxx">Model Specific Error Code: 0b%016b</Match>
+			<!--bits(mc0_status,0n16,0n15)??-->
+			<Match value="xxxxxxxxxxxx0001">PCU Micro controller Generated Error - NON_IMEM_SEL</Match>
+			<Match value="xxxxxxxxxxxx0010">PCU Micro controller Generated Error - I_PARITY_ERROR</Match>
+			<Match value="xxxxxxxxxxxx0011">PCU Micro controller Generated Error - BAD_OPCODE</Match>
+			<Match value="xxxxxxxxxxxx0100">PCU Micro controller Generated Error - I_STACK_UNDERFLOW</Match>
+			<Match value="xxxxxxxxxxxx0101">PCU Micro controller Generated Error - I_STACK_OVERFLOW</Match>
+			<Match value="xxxxxxxxxxxx0110">PCU Micro controller Generated Error - D_STACK_UNDERFLOW</Match>
+			<Match value="xxxxxxxxxxxx0111">PCU Micro controller Generated Error - D_STACK_OVERFLOW</Match>
+			<Match value="xxxxxxxxxxxx1000">PCU Micro controller Generated Error - NON_DMEM_SEL</Match>
+			<Match value="xxxxxxxxxxxx1001">PCU Micro controller Generated Error - D_PARITY_ERROR</Match>
+			<Match value="0000000000010000">PCU Hardware Error detected on SVID bus</Match>
+			<Match value="xxxxxxxxxxx1xxxx">PCU Hardware Error detected on SVID bus</Match>
+			<Match value="0000001100000000">Boot VID Set Timeout</Match>
+			<Match value="0000010000000000">Boot Frequency Set Timeout</Match>
+			<Match value="0000010100000000">Start IA Cores Timeout</Match>
+			<Match value="0001001100000000">DMI Training Timeout</Match>
+			<Match value="0010000000000000">MC_RCLK_PLL_LOCK_TIMEOUT</Match>
+			<Match value="0010000100000000">MC_PCIE_PLL_LOCK_TIMEOUT</Match>
+			<Match value="0010001000000000">MC_BOOT_VID_SEL_SET_TIMEOUT</Match>
+			<Match value="0010001100000000">MC_BOOT_FREQUENCY_SET_TIMEOUT</Match>
+			<Match value="0010010000000000">MC_START_IA_CORES_TIMEOUT</Match>
+			<Match value="0010010100000000">MC_PMA_FUSE_DOWNLOAD_TIMEOUT</Match>
+			<Match value="0010011000000000">MC_PCIE_RCOMP_TIMEOUT</Match>
+			<Match value="0010011100000000">MC_PMA_DNS_COMMAND_TIMEOUT</Match>
+			<Match value="0010100000000000">MC_MESSAGE_CHANNEL_TIMEOUT</Match>
+			<Match value="0010100100000000">MC_GVFSM_BGF_PROGRAM_TIMEOUT</Match>
+			<Match value="0010101000000000">MC_MC_PLL_LOCK_TIMEOUT</Match>
+			<Match value="0010101100000000">MC_MC_BGF_PROGRAM_TIMEOUT</Match>
+			<Match value="01110000xxxxxxxx">MCA_WATCHDOG_TIMEOUT_PKGC_SLAVE</Match>
+			<Match value="01110011xxxxxxxx">MCA_WATCHDOG_TIMEOUT_MSG_CH_FSM</Match>
+			<Match value="00101110xxxxxxxx">MCA_PKGC_WATCHDOG_HANG_C2_DOWN</Match>
+			<Match value="00000001xxxxxxxx">MCA_RCLK_PLL_LOCK_TIMEOUT During reset, RCLK PLL was not locked within time-out.</Match>
+			<Match value="00000010xxxxxxxx">MCA_PCIE_PLL_LOCK_TIMEOUT During reset, PCI Express PLL was not locked within timeout.</Match>
+			<Match value="00000011xxxxxxxx">MCA_BOOT_VID_SET_TIMEOUT During reset, setting the initial VID did not settled within time-out.</Match>
+			<Match value="00000100xxxxxxxx">MCA_BOOT_FREQUENCY_SET_TIMEOUT During reset, locking the Ring PLL to boot ratio did not settled within time-out.</Match>
+			<Match value="00000101xxxxxxxx">MCA_START_IA_CORES_TIMEOUT During reset, starting IA cores CRST-->C0 did not happen within time-out.</Match>
+			<Match value="00000110xxxxxxxx">MCA_PMA_FUSE_DOWNLOAD_TIMEOUT During reset, the fuse download using PMA did not complete within time-out.</Match>
+			<Match value="00000111xxxxxxxx">MCA_SSKU_CPU_OFF During reset, the FUSE_CPU_OFF fuse is set, but Soft SKU did not enable it (not even MTP).</Match>
+			<Match value="00001000xxxxxxxx">MCA_PMA_DNS_COMMAND_TIMEOUT time-out while sending PMA Downstream command. Probably during reset.</Match>
+			<Match value="00001001xxxxxxxx">MCA_MESSAGE_CHANNEL_TIMEOUT time-out while sending something to the Message Channel (posted or non-posted).</Match>
+			<Match value="00001010xxxxxxxx">MCA_GVFSM_BGF_PROGRAM_TIMEOUT During reset, program PP0 BGFs timed-out.</Match>
+			<Match value="00001011xxxxxxxx">MCA_MC_PLL_LOCK_TIMEOUT During reset, iMC PLL was not locked within time-out.</Match>
+			<Match value="00001100xxxxxxxx">MCA_MC_BGF_PROGRAM_TIMEOUT During reset, program iMC BGFs timed-out.</Match>
+			<Match value="00001101xxxxxxxx">MCA_IMC_FORCE_SR_S3_TIMEOUT Got time-out to force iMC self-refresh during Pkg S3.</Match>
+			<Match value="00001110xxxxxxxx">MCA_CPD_UNCPD_S1_TIMEOUT During reset-warn flow, got time-out to CPD-S1 or to UNCPD-S1 direct GV.</Match>
+			<Match value="00001111xxxxxxxx">MCA_PKGS_SAFE_WP_TIMEOUT During reset-warn flow, got time-out to change VID / Frequency</Match>
+			<Match value="00010000xxxxxxxx">MCA_LLC_BIST_ACTIVE_TIMEOUT Got time-out on LLC-BIST active.</Match>
+			<Match value="00010001xxxxxxxx">MCA_BULKCR_FSM_TIMEOUT Got time-out on Bulk CR FSM.</Match>
+			<Match value="00010010xxxxxxxx">MCA_HARD_SKU_AUTO_DETECT_ERROR During cold reset, no IA cores are found, or something is found after a GT.</Match>
+			<Match value="00010011xxxxxxxx">MCA_DMI_TRAINING_TIMEOUT During reset, DMI training failed to complete within time-out.</Match>
+			<Match value="00010100xxxxxxxx">MCA_DMI_STRAP_SET_ARRIVAL_TIMEOUT During reset, DMI Strap Set message did not arrive within time-out.</Match>
+			<Match value="00010101xxxxxxxx">DMI_CPU_RESET_ACK_TIMEOUT During reset, DMI message for CPU Reset Ack did not arrive within time-out.</Match>
+			<Match value="00010111xxxxxxxx">MCA_PME_TO_ACK_TIMEOUT During reset-warn flow, PME turnoff did not ack within timeout. C-step: issued only in special DFX mode.</Match>
+			<Match value="00011000xxxxxxxx">MCA_BANDING_COMMAND_TIMEOUT During reset, banding FSM didn't response within time-out during PLL banding process.</Match>
+			<Match value="00011001xxxxxxxx">MCA_LLC_COMMAND_TIMEOUT LLC command time-out.</Match>
+			<Match value="00011010xxxxxxxx">MCA_DE_RESET_WARN_ACK_TIMEOUT During reset-warn flow, DE did not ack within time-out.</Match>
+			<Match value="00011011xxxxxxxx">MCA_PKGS_RECOVERY_MODE_TIMEOUT During reset-warn flow, got to recovery mode, but PCH did not ack.</Match>
+			<Match value="00100000xxxxxxxx">MCA_PMACR_WRITE_TIMEOUT PMA CR write command time-out.</Match>
+			<Match value="00100001xxxxxxxx">MCA_PMACR_READ_TIMEOUT PMA CR read command time-out.</Match>
+			<Match value="00100010xxxxxxxx">MCA_DISPLAY_RCOMP_TIMEOUT During reset, the Display RCOMP timed-out.</Match>
+			<Match value="00100011xxxxxxxx">MCA_PCIE_RCOMP_TIMEOUT During reset, the PCI Express RCOMP (first or second) timedout.</Match>
+			<Match value="00100100xxxxxxxx">MCA_MEMORY_RCOMP_TIMEOUT During reset, the Memory RCOMP timed-out.</Match>
+			<Match value="00100101xxxxxxxx">MCA_SVID_COMMAND_TIMEOUT SVID command time-out (busy bit was not cleared fast enough).</Match>
+			<Match value="00100110xxxxxxxx">MCA_PKGC_DIRECT_WAKE_RING_TIMEOUT Got time-out to wake ring at PKGC direct GV. Review sighting 3876011</Match>
+			<Match value="00100111xxxxxxxx">MCA_IMPH_VDM_CREDITS_TIMEOUT Got time-out during Soft SKU interaction, as iMPH does not return credits to PCU microcode.</Match>
+			<Match value="00101000xxxxxxxx">MCA_IA_BOOT_RATIO_IS_SET_TO_ZERO Fuses are not burned correctly in this unit.</Match>
+			<Match value="00101001xxxxxxxx">MCA_SHUTDOWN_GT_VID_TIMEOUT Issue VID decay to GT on warm reset during phase-1 did not complete within time-out.</Match>
+			<Match value="00101010xxxxxxxx">Not in use</Match>
+			<Match value="00101011xxxxxxxx">MCA_PKGC_WATCHDOG_HANG_CBZ_DOWN Pkg C-state hanged at transient state: In Buffer Zone, going Down (towards C2/C3), waiting for PM_RSP(EA=0).</Match>
+			<Match value="00101100xxxxxxxx">MCA_PKGC_WATCHDOG_HANG_CBZ_UP Pkg C-state hanged at transient state: In Buffer Zone, going Up (towards C0), waiting for PM_RSP(EA=1).</Match>
+			<Match value="00101101xxxxxxxx">Not in use (not in use)</Match>
+			<Match value="00101110xxxxxxxx">MCA_PKGC_WATCHDOG_HANG_C2_DOWN Pkg C-state hanged at transient state: In C2, going down towards C3. Ring Off was sent, but not ack.</Match>
+			<Match value="00101111xxxxxxxx">MCA_PKGC_WATCHDOG_HANG_C2_WAIT_CF1 Pkg C-state hanged at transient state: In C2, when PM_REQ(CF=1) was sent, but not ack.</Match>
+			<Match value="00110000xxxxxxxx">MCA_PKGC_WATCHDOG_HANG_C2_UP_LLC_ABORT Pkg C-state hanged at transient state: In C2, towards Buffer Zone, when LLC abort was sent, but not ack.</Match>
+			<Match value="00110001xxxxxxxx">Not in use</Match>
+			<Match value="00110010xxxxxxxx">MCA_PKGC_WATCHDOG_HANG_C3_UP_SF Pkg C-state hanged at transient state: In C3, towards C2, slow/fast Voltage ramp. Waiting for GV FSM idle ack.</Match>
+			<Match value="01000000xxxxxxxx">MCA_CPU_ONLY_CORES_TO_CC1_TIMEOUT Cores did not go to CC1 in time</Match>
+			<Match value="01000001xxxxxxxx">MCA_CPU_ONLY_QET_EXPIRY_TIMEOUT The QET does not expire accordingly</Match>
+			<Match value="01000010xxxxxxxx">MCA_CPU_ONLY_RESET_DEASSERTION_TIMEOUT RESET IN is never de-asserted</Match>
+			<Match value="01000011xxxxxxxx">MCA_PECI_MAILBOX_QUIESCE_TIMEOUT PECI mailbox quiesce time-out</Match>
+			<Match value="01000100xxxxxxxx">MCA_CRITICAL_VR_FAILED In Config SVID IFC it was detected that either Core VR or SA VR failed to respond.</Match>
+			<Match value="01000101xxxxxxxx">MCA_ICC_MAX_NOTSUPPORTED Core VR does not support required current for the part.</Match>
+			<Match value="01000110xxxxxxxx">MCA_VID_RAMP_DOWN_FAILED VID Ramp-down failed in phase 4.</Match>
+			<Match value="01000111xxxxxxxx">MCA_EXCL_MODE_NO_PMREQ_CMP On Exclusive Mode entry, wait for QPI completion of PMReq messages timed out.</Match>
+			<Match value="01001000xxxxxxxx">MCA_SVID_READ_REG_ICC_MAX_FAILED SVID command to read ICC_MAX register failed.</Match>
+			<Match value="01001001xxxxxxxx">MCA_SVID_WRITE_REG_VOUT_MAX_FAILED SVID command to write VOUT MAX register failed.</Match>
+			<Match value="01001010xxxxxxxx">MCA_SA_BOOT_VID_TIMEOUT time-out setting boot VID for SA PP</Match>
+			<Match value="01001011xxxxxxxx">MCA_PP1_BOOT_VID_TIMEOUT time-out setting boot VID for PP1 (DRAM 0)</Match>
+			<Match value="01001100xxxxxxxx">MCA_AUX_BOOT_VID_TIMEOUT time-out setting boot VID for AUX PP (DRAM 1)</Match>
+			<Match value="01010000xxxxxxxx">MCA_QPI_PLL_LOCK_FAILED QPI PLL didn't lock (can happen in phase 1 and phase 4).</Match>
+			<Match value="01010001xxxxxxxx">MCA_MC_PLL_LOCK_FAILED MC PLL didn't lock (can happen in phase 1 and phase 4).</Match>
+			<Match value="01010010xxxxxxxx">MCA_UNCORE_CCOMP_TIMEOUT The uncore clock compensation did not complete within timeout.</Match>
+			<Match value="01010011xxxxxxxx">MCA_RESET_RCLK_PLL_UNLOCK_TIMEOUT time-out when unlocking RCLK during warm reset</Match>
+			<Match value="01011000xxxxxxxx">MCA_PCUIIO_BGF_TIMEOUT_START_DOWNLOAD Starting the PCU/IIOLink BGF timed out on setting the Download bit.</Match>
+			<Match value="01011001xxxxxxxx">MCA_PCUIIO_BGF_TIMEOUT_START_RUN Starting the PCU/IIOLink BGF timed out on setting the Run bit.</Match>
+			<Match value="01011010xxxxxxxx">MCA_PCUIIO_BGF_TIMEOUT_STOP Stopping the PCU/IIOLink BGF timed out.</Match>
+			<Match value="01011011xxxxxxxx">MCA_SMA_FAILED Small array init did not initialize within the time-out</Match>
+			<Match value="01011100xxxxxxxx">MCA_MORE_THAN_ONE_LT_AGENT During Boot Mode Processing, >1 LT Agent detected</Match>
+			<Match value="01011101xxxxxxxx">MCA_BAD_MC_REFCLK_SYNCPULSE_COMBO During reset, programming of the PCU/IIOLink BGF encountered a time-out.</Match>
+			<Match value="01011110xxxxxxxx">MCA_INVALID_FUSED_IA_CORES_KILL</Match>
+			<Match value="01100000xxxxxxxx">MCA_INVALID_PKGS_REQ_PCH PkgS Master detected improper request from PCH</Match>
+			<Match value="01100001xxxxxxxx">MCA_INVALID_PKGS_REQ_QPI PkgS Slave detected improper request from Master</Match>
+			<Match value="01100010xxxxxxxx">MCA_INVALID_PKGS_RSP_QPI PkgS Master detected improper response from Slave</Match>
+			<Match value="01100011xxxxxxxx">MCA_INVALID_PKGC_RSP_PCH PkgC Master detected improper response from PCH for EA request</Match>
+			<Match value="01100100xxxxxxxx">MCA_INVALID_PKG_STATE_CONFIG Invalid pkg-state configuration detected (Master and no slave mask)</Match>
+			<Match value="01100101xxxxxxxx">MCA_QUIESCE_MSG_CH_DRIVER_TIMEOUT Message channel driver: time-out when quiescing the IOs</Match>
+			<Match value="01110000xxxxxxxx">MCA_WATCHDOG_TIMEOUT_PKGC_SLAVE PkgC slave timed-out waiting for PmRsp from Master</Match>
+			<Match value="01110001xxxxxxxx">MCA_WATCHDOG_TIMEOUT_PKGC_MASTER PkgC master timed-out waiting for PmRsp from PCH</Match>
+			<Match value="01110010xxxxxxxx">MCA_WATCHDOG_TIMEOUT_PKGS_MASTER PkgS master timed-out waiting for PmRsp from slave</Match>
+			<Match value="01110011xxxxxxxx">MCA_WATCHDOG_TIMEOUT_MSG_CH_FSM time-out waiting for IO_MESSAGE_CHANNEL FSM to go idle</Match>
+			<Match value="01110100xxxxxxxx">MCA_WATCHDOG_TIMEOUT_BULK_CR_FSM time-out waiting for SA_BULK_CR_READ FSM to go idle</Match>
+			<Match value="01110101xxxxxxxx">MCA_MSGCH_PMREQ_CMP_TIMEOUT time-out waiting for PMReq.CMP to be set - MsgCh driver</Match>
+			<Match value="01110110xxxxxxxx">MCA_MSGCH_HALT_TIMEOUT time-out waiting for MsgCh Run/Busy in HALT routine</Match>
+			<Match value="01110111xxxxxxxx">MCA_HA_RW_BLOCK_ACK_TIMEOUT time-out waiting for BlockAck from HA in S3/RW flow</Match>
+			<Match value="01111000xxxxxxxx">MCA_IMC_RW_BLOCK_ACK_TIMEOUT time-out waiting for BlockAck from iMC in S3/RW flow</Match>
+			<Match value="01111001xxxxxxxx">MCA_IMC_RW_SMBUS_TIMEOUT time-out waiting for iMC SMBUS not-busy in S3/RW flow</Match>
+			<Match value="01111010xxxxxxxx">MCA_HA_FAILSTS_CHANGE_DETECTED Detected change in HACHFAILSTS - mirroring fail-over error detected</Match>
+			<Match value="01111011xxxxxxxx">MCA_PCIE_R2PCIE_RW_BLOCK_ACK_TIMEOUT time-out waiting for BlockAck from PCIE or R2PCIE in CPU Only Reset flow</Match>
+			<Match value="10000001xxxxxxxx">MCA_RECOVERABLE_DIE_THERMAL_TOO_HOT During slow loop, it was detected that internal die thermals is too hot.</Match>
+			<Match value="10000011xxxxxxxx">MCA_RECOVERABLE_EDP_CANT_ATTAIN_PN_IA When phase-4 complete, or during slow loop, discovered core cannot attain Pn in EDP calcs.</Match>
+			<Match value="10000100xxxxxxxx">MCA_RECOVERABLE_EDP_CANT_ATTAIN_PN_GT When phase-4 complete, or during</Match>
+		</Field>
+		<Field template="MCi_STATUS_15_0">
+		</Field>
+	</MSR>
+	<MSR address="0x412" alias="MC4_ADDR" Condition="MC4_STATUS[63]==1 AND MC4_STATUS[58]==1">
+		<Field name="" bits="63:0">
+			<Match value="x{64}">IA32_MC4_ADDR: 0x%016I64x</Match>
+		</Field>
+	</MSR>
+	<MSR address="0x414" alias="MC5_CTL" Condition="MC5_STATUS[63]==1">
+    <Field template="MCi_QPI_CTL"/>
+	</MSR>
+	<MSR address="0x415" alias="MC5_STATUS" Condition="[63]==1">
+	</MSR>
+	<MSR address="0x416" alias="MC5_ADDR" Condition="MC5_STATUS[63]==1 AND MC5_STATUS[58]==1">
+		<Field name="" bits="63:0">
+			<Match value="x{64}">IA32_MC5_ADDR: 0x%016I64x</Match>
+		</Field>
+		<Field name="PhyAddr" bits="45:6">
+			<Match value="x{40}">MC5 Physical Address = 0x%016I64x</Match>
+		</Field>
+	</MSR>
+	<MSR address="0x417" alias="MC5_MISC" Condition="MC5_STATUS[63]==1 AND MC5_STATUS[59]==1">
+		<Field name="" bits="63:0">
+			<Match value="x{64}">IA32_MC5_MISC: 0x%016I64x</Match>
+		</Field>
+		<Field name="ReqOpcode" bits="25:20">
+			<Match value="xxxxx1">Request Opcode: INVD</Match>
+			<Match value="xxxx1x">Request Opcode: Read</Match>
+			<Match value="xxx1xx">Request Opcode: Write</Match>
+			<Match value="xx1xxx">Request Opcode: Read Data</Match>
+			<Match value="x1xxxx">Request Opcode: No Snoop</Match>
+			<Match value="1xxxxx">Request Opcode: Read Current</Match>
+		</Field>
+		<Field name="RNID" bits="18:16">
+			<Match value="x{3}">Requested Node ID failing transaction: 0x%02x</Match>
+		</Field>
+		<Field name="RTID" bits="13:8">
+			<Match value="x{6}">RTID of failed transaction: 0x%02x</Match>
+		</Field>
+	</MSR>
+	<MSR address="0x418" alias="MC6_CTL" Condition="MC6_STATUS[63]==1">
+		<Field template="MC6to7_CTL"> </Field>
+	</MSR>
+	<MSR address="0x419" alias="MC6_STATUS" Condition="[63]==1">
+		<Field template="MCi_STATUS_63_38">
+		</Field>
+		<Field name="Corrected Error Count" bits="52:38">
+			<Match value="xxxxxxxxxxxxxxx">Corrected error count: %d</Match>
+		</Field>
+		<Field name="Other Info" bits="37:32">
+			<Match value="xxxxxx">Other Info: 0b%06b</Match>
+		</Field>
+		<Field name="MSCOD" bits="31:16">
+			<Match value="xxxxxxxxxxxxxxxx">Model Specific Error Code: 0b%016b</Match>
+			<!--bits(mc0_status,0n16,0n15)??-->
+			<Match value="xxxxxxxxxx011111">Uncorrectable: Unsupported Config Request from Message Channel</Match>
+			<Match value="xxxxxxxxxx010110">Uncorrectable: Debug Flit CRC</Match>
+			<Match value="xxxxxxxxxx010101">Uncorrectable: Link Layer RBT used un-initialized value</Match>
+			<Match value="xxxxxxxxxx010100">Uncorrectable: Link Layer L0p Retrain error</Match>
+			<Match value="xxxxxxxxxx010011">Uncorrectable: QPI Link Layer Detected Control Error</Match>
+			<Match value="xxxxxxxxxx010010">Uncorrectable: QPI Link Layer detected Unsupported/Undefined Packet</Match>
+			<Match value="xxxxxxxxxx010001">Uncorrectable: Rx detected CRC error -- Unsuccessful Link Level Retry - entered LLR abort state</Match>
+			<Match value="xxxxxxxxxx010000">Uncorrectable: QPI Link Layer Detected R3QPI Control Error</Match>
+			<Match value="xxxxxxxxxx000011">Uncorrectable: latency buffer over/under run</Match>
+			<Match value="xxxxxxxxxx000010">Uncorrectable: QPI Physical Layer Detected Drift Buffer Alarm</Match>
+			<Match value="xxxxxxxxxx000000">Uncorrectable: QPI Physical Layer Control Error</Match>
+			<Match value="xxxxxxxxxx110010">Correctable: Tx CRC Error (initiates LLR_Req sequence)</Match>
+			<Match value="xxxxxxxxxx110001">Correctable: Rx CRC Error with LLR Success (no phy re-init)</Match>
+			<Match value="xxxxxxxxxx110000">Correctable: Rx CRC Error with LLR Success after phy re-init</Match>
+			<Match value="xxxxxxxxxx100010">Correctable: Phy In-band Reset completed successfully with no width change</Match>
+			<Match value="xxxxxxxxxx100000">Correctable: QPI Physical Layer Detected a QPI in-band Reset but aborted initialization</Match>
+		</Field>
+		<Field template="MCi_STATUS_15_0">
+		</Field>
+		<Field name="MISCV" bits="59:59">
+			<Match value="1">IA32_MC6_MISC: 0x%016I64x</Match>
+		</Field>
+		<Field name="ADDRV" bits="58:58">
+			<Match value="1">IA32_MC6_ADDR: 0x%016I64x</Match>
+		</Field>
+	</MSR>
+	<MSR address="0x41A" alias="MC6_ADDR*" Condition="0"> </MSR>
+	<MSR address="0x41B" alias="MC6_MISC*" Condition="0"> </MSR>
+	<MSR address="0x41C" alias="MC7_CTL" Condition="MC7_STATUS[63]==1">
+		<Field template="MC6to7_CTL"> </Field>
+	</MSR>
+	<MSR address="0x41D" alias="MC7_STATUS" Condition="[63]==1">
+		<Field template="MCi_STATUS_63_38">
+		</Field>
+		<Field name="Other Info" bits="37:32">
+			<Match value="xxxxxx">Other Info: 0b%06b</Match>
+		</Field>
+		<Field name="MSCOD" bits="31:16">
+			<Match value="xxxxxxxxxxxxxxxx">Model Specific Error Code: 0b%016b</Match>
+			<!--bits(mc0_status,0n16,0n15)??-->
+			<Match value="xxxxxxxxxx011111">Uncorrectable: Unsupported Config Request from Message Channel</Match>
+			<Match value="xxxxxxxxxx010110">Uncorrectable: Debug Flit CRC</Match>
+			<Match value="xxxxxxxxxx010101">Uncorrectable: Link Layer RBT used un-initialized value</Match>
+			<Match value="xxxxxxxxxx010100">Uncorrectable: Link Layer L0p Retrain error</Match>
+			<Match value="xxxxxxxxxx010011">Uncorrectable: QPI Link Layer Detected Control Error</Match>
+			<Match value="xxxxxxxxxx010010">Uncorrectable: QPI Link Layer detected Unsupported/Undefined Packet</Match>
+			<Match value="xxxxxxxxxx010001">Uncorrectable: Rx detected CRC error -- Unsuccessful Link Level Retry - entered LLR abort state</Match>
+			<Match value="xxxxxxxxxx010000">Uncorrectable: QPI Link Layer Detected R3QPI Control Error</Match>
+			<Match value="xxxxxxxxxx000011">Uncorrectable: latency buffer over/under run</Match>
+			<Match value="xxxxxxxxxx000010">Uncorrectable: QPI Physical Layer Detected Drift Buffer Alarm</Match>
+			<Match value="xxxxxxxxxx000000">Uncorrectable: QPI Physical Layer Control Error</Match>
+			<Match value="xxxxxxxxxx110010">Correctable: Tx CRC Error (initiates LLR_Req sequence)</Match>
+			<Match value="xxxxxxxxxx110001">Correctable: Rx CRC Error with LLR Success (no phy re-init)</Match>
+			<Match value="xxxxxxxxxx110000">Correctable: Rx CRC Error with LLR Success after phy re-init</Match>
+			<Match value="xxxxxxxxxx100010">Correctable: Phy In-band Reset completed successfully with no width change</Match>
+			<Match value="xxxxxxxxxx100000">Correctable: QPI Physical Layer Detected a QPI in-band Reset but aborted initialization</Match>
+		</Field>
+		<Field template="MCi_STATUS_15_0">
+		</Field>
+		<Field name="MISCV" bits="59:59">
+			<Match value="1">IA32_MC7_MISC: 0x%016I64x</Match>
+		</Field>
+		<Field name="ADDRV" bits="58:58">
+			<Match value="1">IA32_MC7_ADDR: 0x%016I64x</Match>
+		</Field>
+	</MSR>
+	<MSR address="0x41E" alias="MC7_ADDR*" Condition="0"> </MSR>
+	<MSR address="0x41F" alias="MC7_MISC*" Condition="0"> </MSR>
+	<MSR address="0x420" alias="MC8_CTL" Condition="MC8_STATUS[63]==1">
+		<Field template="MC8to11_CTL"> </Field>
+	</MSR>
+	<MSR address="0x421" alias="MC8_STATUS" Condition="[63]==1">
+		<Field template="MCi_STATUS_63_38">
+		</Field>
+		<Field name="Other Info" bits="37:32">
+			<Match value="xxxxxx">Other Info: 0b%06b</Match>
+			<Match value="x00000">DRAM Device = 0</Match>
+			<Match value="x00001">DRAM Device = 1</Match>
+			<Match value="x00010">DRAM Device = 2</Match>
+			<Match value="x00011">DRAM Device = 3</Match>
+			<Match value="x00100">DRAM Device = 4</Match>
+			<Match value="x00101">DRAM Device = 5</Match>
+			<Match value="x00110">DRAM Device = 6</Match>
+			<Match value="x00111">DRAM Device = 7</Match>
+			<Match value="x01000">DRAM Device = 8</Match>
+			<Match value="x01001">DRAM Device = 9</Match>
+			<Match value="x01010">DRAM Device = 10</Match>
+			<Match value="x01011">DRAM Device = 11</Match>
+			<Match value="x01100">DRAM Device = 12</Match>
+			<Match value="x01101">DRAM Device = 13</Match>
+			<Match value="x01110">DRAM Device = 14</Match>
+			<Match value="x01111">DRAM Device = 15</Match>
+			<Match value="x10000">DRAM Device = 16</Match>
+			<Match value="x10001">DRAM Device = 17</Match>
+		</Field>
+		<Field name="MSCOD" bits="31:16">
+			<Match value="xxxxxxxxxxxxxxxx">Model Specific Error Code: 0b%016b</Match>
+			<!--bits(mc0_status,0n16,0n15)??-->
+		</Field>
+		<Field template="MCi_STATUS_31_16forMC8toMC11">
+		</Field>
+		<Field template="MCi_STATUS_15_0">
+		</Field>
+		
+		<Field name="ADDRV" bits="58:58">
+			<Match value="1">IA32_MC8_ADDR: 0x%016I64x</Match>
+		</Field>
+	</MSR>
+	<MSR address="0x422" alias="MC8_ADDR" Condition="MC8_STATUS[63]==1 AND MC8_STATUS[58]==1">
+		<Field template="MC8to11_ADDR"> </Field>
+	</MSR>
+	<MSR address="0x423" alias="MC8_MISC" Condition="MC8_STATUS[63]==1 AND MC8_STATUS[59]==1">
+		<Field name="Address Mode" bits="8:6"  >
+			<Match value="000">Address Mode = Segment Offset</Match>
+			<Match value="001">Address Mode = Linear Address</Match>
+			<Match value="010">Address Mode = Physical Address</Match>
+			<Match value="011">Address Mode = Memory Address</Match>
+			<Match value="111">Address Mode = Generic</Match>
+		</Field>
+		<Field name="Model Specific Information" bits="29:14">
+			<Match value="xxxxxxxxxxxxxxx1">Burst 0, DQ line = %d</Match>
+			<Match value="xxxxxxxxxxxxxx1x">Burst 0, DQ line = %d</Match>
+			<Match value="xxxxxxxxxxxxx1xx">Burst 0, DQ line = %d</Match>
+			<Match value="xxxxxxxxxxxx1xxx">Burst 0, DQ line = %d</Match>
+			<Match value="xxxxxxxxxxx1xxxx">Burst 1, DQ line = %d</Match>
+			<Match value="xxxxxxxxxx1xxxxx">Burst 1, DQ line = %d</Match>
+			<Match value="xxxxxxxxx1xxxxxx">Burst 1, DQ line = %d</Match>
+			<Match value="xxxxxxxx1xxxxxxx">Burst 1, DQ line = %d</Match>
+			<Match value="xxxxxxx1xxxxxxxx">Burst 2, DQ line = %d</Match>
+			<Match value="xxxxxx1xxxxxxxxx">Burst 2, DQ line = %d</Match>
+			<Match value="xxxxx1xxxxxxxxxx">Burst 2, DQ line = %d</Match>
+			<Match value="xxxx1xxxxxxxxxxx">Burst 2, DQ line = %d</Match>
+			<Match value="xxx1xxxxxxxxxxxx">Burst 3, DQ line = %d</Match>
+			<Match value="xx1xxxxxxxxxxxxx">Burst 3, DQ line = %d</Match>
+			<Match value="x1xxxxxxxxxxxxxx">Burst 3, DQ line = %d</Match>
+			<Match value="1xxxxxxxxxxxxxxx">Burst 3, DQ line = %d</Match>
+		</Field>
+	</MSR>
+	<MSR address="0x424" alias="MC9_CTL" Condition="MC9_STATUS[63]==1"> 
+		<Field template="MC8to11_CTL"> </Field>
+	</MSR>
+	<MSR address="0x425" alias="MC9_STATUS" Condition="[63]==1">
+		<Field template="MCi_STATUS_63_38">
+		</Field>
+		<Field name="Other Info" bits="37:32">
+			<Match value="xxxxxx">Other Info: 0b%06b</Match>
+			<Match value="x00000">DRAM Device = 0</Match>
+			<Match value="x00001">DRAM Device = 1</Match>
+			<Match value="x00010">DRAM Device = 2</Match>
+			<Match value="x00011">DRAM Device = 3</Match>
+			<Match value="x00100">DRAM Device = 4</Match>
+			<Match value="x00101">DRAM Device = 5</Match>
+			<Match value="x00110">DRAM Device = 6</Match>
+			<Match value="x00111">DRAM Device = 7</Match>
+			<Match value="x01000">DRAM Device = 8</Match>
+			<Match value="x01001">DRAM Device = 9</Match>
+			<Match value="x01010">DRAM Device = 10</Match>
+			<Match value="x01011">DRAM Device = 11</Match>
+			<Match value="x01100">DRAM Device = 12</Match>
+			<Match value="x01101">DRAM Device = 13</Match>
+			<Match value="x01110">DRAM Device = 14</Match>
+			<Match value="x01111">DRAM Device = 15</Match>
+			<Match value="x10000">DRAM Device = 16</Match>
+			<Match value="x10001">DRAM Device = 17</Match>
+		</Field>
+		<Field name="MSCOD" bits="31:16">
+			<Match value="xxxxxxxxxxxxxxxx">Model Specific Error Code: 0b%016b</Match>
+			<!--bits(mc0_status,0n16,0n15)??-->
+		</Field>
+		<Field template="MCi_STATUS_31_16forMC8toMC11">
+		</Field>
+		<Field template="MCi_STATUS_15_0">
+		</Field>
+		<Field name="MISCV" bits="59:59">
+			<Match value="1">IA32_MC9_MISC: 0x%016I64x</Match>
+		</Field>
+		<Field name="ADDRV" bits="58:58">
+			<Match value="1">IA32_MC9_ADDR: 0x%016I64x</Match>
+		</Field>
+	</MSR>
+	<MSR address="0x426" alias="MC9_ADDR" Condition="MC9_STATUS[63]==1 AND MC9_STATUS[58]==1"> 
+		<Field template="MC8to11_ADDR"> </Field>
+	</MSR>
+	<MSR address="0x427" alias="MC9_MISC" Condition="MC9_STATUS[63]==1 AND MC9_STATUS[59]==1">
+		<Field name="Model Specific Information" bits="29:14">
+			<Match value="xxxxxxxxxxxxxxx1">Burst 0, DQ line = %d</Match>
+			<Match value="xxxxxxxxxxxxxx1x">Burst 0, DQ line = %d</Match>
+			<Match value="xxxxxxxxxxxxx1xx">Burst 0, DQ line = %d</Match>
+			<Match value="xxxxxxxxxxxx1xxx">Burst 0, DQ line = %d</Match>
+			<Match value="xxxxxxxxxxx1xxxx">Burst 1, DQ line = %d</Match>
+			<Match value="xxxxxxxxxx1xxxxx">Burst 1, DQ line = %d</Match>
+			<Match value="xxxxxxxxx1xxxxxx">Burst 1, DQ line = %d</Match>
+			<Match value="xxxxxxxx1xxxxxxx">Burst 1, DQ line = %d</Match>
+			<Match value="xxxxxxx1xxxxxxxx">Burst 2, DQ line = %d</Match>
+			<Match value="xxxxxx1xxxxxxxxx">Burst 2, DQ line = %d</Match>
+			<Match value="xxxxx1xxxxxxxxxx">Burst 2, DQ line = %d</Match>
+			<Match value="xxxx1xxxxxxxxxxx">Burst 2, DQ line = %d</Match>
+			<Match value="xxx1xxxxxxxxxxxx">Burst 3, DQ line = %d</Match>
+			<Match value="xx1xxxxxxxxxxxxx">Burst 3, DQ line = %d</Match>
+			<Match value="x1xxxxxxxxxxxxxx">Burst 3, DQ line = %d</Match>
+			<Match value="1xxxxxxxxxxxxxxx">Burst 3, DQ line = %d</Match>
+		</Field>
+	</MSR>
+	<MSR address="0x428" alias="MC10_CTL" Condition="MC10_STATUS[63]==1"> 
+		<Field template="MC8to11_CTL"> </Field>
+	</MSR>
+	<MSR address="0x429" alias="MC10_STATUS" Condition="[63]==1">
+		<Field template="MCi_STATUS_63_38">
+		</Field>
+		<Field name="Other Info" bits="37:32">
+			<Match value="xxxxxx">Other Info: 0b%06b</Match>
+			<Match value="x00000">DRAM Device = 0</Match>
+			<Match value="x00001">DRAM Device = 1</Match>
+			<Match value="x00010">DRAM Device = 2</Match>
+			<Match value="x00011">DRAM Device = 3</Match>
+			<Match value="x00100">DRAM Device = 4</Match>
+			<Match value="x00101">DRAM Device = 5</Match>
+			<Match value="x00110">DRAM Device = 6</Match>
+			<Match value="x00111">DRAM Device = 7</Match>
+			<Match value="x01000">DRAM Device = 8</Match>
+			<Match value="x01001">DRAM Device = 9</Match>
+			<Match value="x01010">DRAM Device = 10</Match>
+			<Match value="x01011">DRAM Device = 11</Match>
+			<Match value="x01100">DRAM Device = 12</Match>
+			<Match value="x01101">DRAM Device = 13</Match>
+			<Match value="x01110">DRAM Device = 14</Match>
+			<Match value="x01111">DRAM Device = 15</Match>
+			<Match value="x10000">DRAM Device = 16</Match>
+			<Match value="x10001">DRAM Device = 17</Match>
+		</Field>
+		<Field name="MSCOD" bits="31:16">
+			<Match value="xxxxxxxxxxxxxxxx">Model Specific Error Code: 0b%016b</Match>
+			<!--bits(mc0_status,0n16,0n15)??-->
+		</Field>
+		<Field template="MCi_STATUS_31_16forMC8toMC11">
+		</Field>
+		<Field template="MCi_STATUS_15_0">
+		</Field>
+		<Field name="MISCV" bits="59:59">
+			<Match value="1">IA32_MC10_MISC: 0x%016I64x</Match>
+		</Field>
+		<Field name="ADDRV" bits="58:58">
+			<Match value="1">IA32_MC10_ADDR: 0x%016I64x</Match>
+		</Field>
+	</MSR>
+	<MSR address="0x42A" alias="MC10_ADDR" Condition="MC10_STATUS[63]==1 AND MC10_STATUS[58]==1"> 
+		<Field template="MC8to11_ADDR"> </Field>
+	</MSR>
+	<MSR address="0x42B" alias="MC10_MISC" Condition="MC10_STATUS[63]==1 AND MC10_STATUS[59]==1">
+		<Field name="Model Specific Information" bits="29:14">
+			<Match value="xxxxxxxxxxxxxxx1">Burst 0, DQ line = %d</Match>
+			<Match value="xxxxxxxxxxxxxx1x">Burst 0, DQ line = %d</Match>
+			<Match value="xxxxxxxxxxxxx1xx">Burst 0, DQ line = %d</Match>
+			<Match value="xxxxxxxxxxxx1xxx">Burst 0, DQ line = %d</Match>
+			<Match value="xxxxxxxxxxx1xxxx">Burst 1, DQ line = %d</Match>
+			<Match value="xxxxxxxxxx1xxxxx">Burst 1, DQ line = %d</Match>
+			<Match value="xxxxxxxxx1xxxxxx">Burst 1, DQ line = %d</Match>
+			<Match value="xxxxxxxx1xxxxxxx">Burst 1, DQ line = %d</Match>
+			<Match value="xxxxxxx1xxxxxxxx">Burst 2, DQ line = %d</Match>
+			<Match value="xxxxxx1xxxxxxxxx">Burst 2, DQ line = %d</Match>
+			<Match value="xxxxx1xxxxxxxxxx">Burst 2, DQ line = %d</Match>
+			<Match value="xxxx1xxxxxxxxxxx">Burst 2, DQ line = %d</Match>
+			<Match value="xxx1xxxxxxxxxxxx">Burst 3, DQ line = %d</Match>
+			<Match value="xx1xxxxxxxxxxxxx">Burst 3, DQ line = %d</Match>
+			<Match value="x1xxxxxxxxxxxxxx">Burst 3, DQ line = %d</Match>
+			<Match value="1xxxxxxxxxxxxxxx">Burst 3, DQ line = %d</Match>
+		</Field>
+	</MSR>
+	<MSR address="0x42C" alias="MC11_CTL" Condition="MC11_STATUS[63]==1"> 
+		<Field template="MC8to11_CTL"> </Field>
+	</MSR>
+	<MSR address="0x42D" alias="MC11_STATUS" Condition="[63]==1">
+		<Field template="MCi_STATUS_63_38">
+		</Field>
+		<Field name="Other Info" bits="37:32">
+			<Match value="xxxxxx">Other Info: 0b%06b</Match>
+			<Match value="x00000">DRAM Device = 0</Match>
+			<Match value="x00001">DRAM Device = 1</Match>
+			<Match value="x00010">DRAM Device = 2</Match>
+			<Match value="x00011">DRAM Device = 3</Match>
+			<Match value="x00100">DRAM Device = 4</Match>
+			<Match value="x00101">DRAM Device = 5</Match>
+			<Match value="x00110">DRAM Device = 6</Match>
+			<Match value="x00111">DRAM Device = 7</Match>
+			<Match value="x01000">DRAM Device = 8</Match>
+			<Match value="x01001">DRAM Device = 9</Match>
+			<Match value="x01010">DRAM Device = 10</Match>
+			<Match value="x01011">DRAM Device = 11</Match>
+			<Match value="x01100">DRAM Device = 12</Match>
+			<Match value="x01101">DRAM Device = 13</Match>
+			<Match value="x01110">DRAM Device = 14</Match>
+			<Match value="x01111">DRAM Device = 15</Match>
+			<Match value="x10000">DRAM Device = 16</Match>
+			<Match value="x10001">DRAM Device = 17</Match>
+		</Field>
+		<Field name="MSCOD" bits="31:16">
+			<Match value="xxxxxxxxxxxxxxxx">Model Specific Error Code: 0b%016b</Match>
+			<!--bits(mc0_status,0n16,0n15)??-->
+		</Field>
+		<Field template="MCi_STATUS_31_16forMC8toMC11">
+		</Field>
+		<Field template="MCi_STATUS_15_0">
+		</Field>
+		<Field name="MISCV" bits="59:59">
+			<Match value="1">IA32_MC11_MISC: 0x%016I64x</Match>
+		</Field>
+		<Field name="ADDRV" bits="58:58">
+			<Match value="1">IA32_MC11_ADDR: 0x%016I64x</Match>
+		</Field>
+	</MSR>
+	<MSR address="0x42E" alias="MC11_ADDR" Condition="MC11_STATUS[63]==1 AND MC11_STATUS[58]==1">
+		<Field template="MC8to11_ADDR"> </Field>
+	</MSR>
+	<MSR address="0x42F" alias="MC11_MISC" Condition="MC11_STATUS[63]==1 AND MC11_STATUS[59]==1">
+		<Field name="Model Specific Information" bits="29:14">
+			<Match value="xxxxxxxxxxxxxxx1">Burst 0, DQ line = %d</Match>
+			<Match value="xxxxxxxxxxxxxx1x">Burst 0, DQ line = %d</Match>
+			<Match value="xxxxxxxxxxxxx1xx">Burst 0, DQ line = %d</Match>
+			<Match value="xxxxxxxxxxxx1xxx">Burst 0, DQ line = %d</Match>
+			<Match value="xxxxxxxxxxx1xxxx">Burst 1, DQ line = %d</Match>
+			<Match value="xxxxxxxxxx1xxxxx">Burst 1, DQ line = %d</Match>
+			<Match value="xxxxxxxxx1xxxxxx">Burst 1, DQ line = %d</Match>
+			<Match value="xxxxxxxx1xxxxxxx">Burst 1, DQ line = %d</Match>
+			<Match value="xxxxxxx1xxxxxxxx">Burst 2, DQ line = %d</Match>
+			<Match value="xxxxxx1xxxxxxxxx">Burst 2, DQ line = %d</Match>
+			<Match value="xxxxx1xxxxxxxxxx">Burst 2, DQ line = %d</Match>
+			<Match value="xxxx1xxxxxxxxxxx">Burst 2, DQ line = %d</Match>
+			<Match value="xxx1xxxxxxxxxxxx">Burst 3, DQ line = %d</Match>
+			<Match value="xx1xxxxxxxxxxxxx">Burst 3, DQ line = %d</Match>
+			<Match value="x1xxxxxxxxxxxxxx">Burst 3, DQ line = %d</Match>
+			<Match value="1xxxxxxxxxxxxxxx">Burst 3, DQ line = %d</Match>
+		</Field>
+	</MSR>
+	<MSR address="0x430" alias="MC12_CTL" Condition="MC12_STATUS[63]==1">
+		<Field template="MC12to19_CTL"> </Field>
+	</MSR>
+	<MSR address="0x431" alias="MC12_STATUS" Condition="[63]==1">
+		<Field template="MCi_STATUS_63_38">
+		</Field>
+		<Field name="Other Info" bits="37:32">
+			<Match value="xxxxxx">Other Info: 0b%06b</Match>
+		</Field>
+		<Field name="MSCOD" bits="31:16">
+			<Match value="xxxxxxxxxxxxxxxx">Model Specific Error Code: 0b%016b</Match>
+			<!--bits(mc0_status,0n16,0n15)??-->
+		</Field>
+		<Field template="MCi_STATUS_31_16forMC12toMC19">
+		</Field>
+		<Field template="MCi_STATUS_15_0">
+		</Field>
+		<Field name="MISCV" bits="59:59">
+			<Match value="1">IA32_MC12_MISC: 0x%016I64x</Match>
+		</Field>
+		<Field name="ADDRV" bits="58:58">
+			<Match value="1">IA32_MC12_ADDR: 0x%016I64x</Match>
+		</Field>
+	</MSR>
+	<MSR address="0x432" alias="MC12_ADDR*" Condition="0"> </MSR>
+	<MSR address="0x433" alias="MC12_MISC*" Condition="0"> </MSR>
+	<MSR address="0x434" alias="MC13_CTL" Condition="MC13_STATUS[63]==1"> 
+		<Field template="MC12to19_CTL"> </Field>
+	</MSR>
+	<MSR address="0x435" alias="MC13_STATUS" Condition="[63]==1">
+		<Field template="MCi_STATUS_63_38">
+		</Field>
+		<Field name="Other Info" bits="37:32">
+			<Match value="xxxxxx">Other Info: 0b%06b</Match>
+		</Field>
+		<Field name="MSCOD" bits="31:16">
+			<Match value="xxxxxxxxxxxxxxxx">Model Specific Error Code: 0b%016b</Match>
+			<!--bits(mc0_status,0n16,0n15)??-->
+		</Field>
+		<Field template="MCi_STATUS_31_16forMC12toMC19">
+		</Field>
+		<Field template="MCi_STATUS_15_0">
+		</Field>
+		<Field name="MISCV" bits="59:59">
+			<Match value="1">IA32_MC13_MISC: 0x%016I64x</Match>
+		</Field>
+		<Field name="ADDRV" bits="58:58">
+			<Match value="1">IA32_MC13_ADDR: 0x%016I64x</Match>
+		</Field>
+	</MSR>
+	<MSR address="0x436" alias="MC13_ADDR*" Condition="0"> </MSR>
+	<MSR address="0x437" alias="MC13_MISC*" Condition="0"> </MSR>
+	<MSR address="0x438" alias="MC14_CTL" Condition="MC14_STATUS[63]==1">
+		<Field template="MC12to19_CTL"> </Field>
+	</MSR>
+	<MSR address="0x439" alias="MC14_STATUS" Condition="[63]==1">
+		<Field template="MCi_STATUS_63_38">
+		</Field>
+		<Field name="Other Info" bits="37:32">
+			<Match value="xxxxxx">Other Info: 0b%06b</Match>
+		</Field>
+		<Field name="MSCOD" bits="31:16">
+			<Match value="xxxxxxxxxxxxxxxx">Model Specific Error Code: 0b%016b</Match>
+			<!--bits(mc0_status,0n16,0n15)??-->
+		</Field>
+		<Field template="MCi_STATUS_31_16forMC12toMC19">
+		</Field>
+		<Field template="MCi_STATUS_15_0">
+		</Field>
+		<Field name="MISCV" bits="59:59">
+			<Match value="1">IA32_MC14_MISC: 0x%016I64x</Match>
+		</Field>
+		<Field name="ADDRV" bits="58:58">
+			<Match value="1">IA32_MC14_ADDR: 0x%016I64x</Match>
+		</Field>
+	</MSR>
+	<MSR address="0x43A" alias="MC14_ADDR*" Condition="0"> </MSR>
+	<MSR address="0x43B" alias="MC14_MISC*" Condition="0"> </MSR>
+	<MSR address="0x43C" alias="MC15_CTL" Condition="MC15_STATUS[63]==1">
+		<Field template="MC12to19_CTL"> </Field>
+	</MSR>
+	<MSR address="0x43D" alias="MC15_STATUS" Condition="[63]==1">
+		<Field template="MCi_STATUS_63_38">
+		</Field>
+		<Field name="Other Info" bits="37:32">
+			<Match value="xxxxxx">Other Info: 0b%06b</Match>
+		</Field>
+		<Field name="MSCOD" bits="31:16">
+			<Match value="xxxxxxxxxxxxxxxx">Model Specific Error Code: 0b%016b</Match>
+			<!--bits(mc0_status,0n16,0n15)??-->
+		</Field>
+		<Field template="MCi_STATUS_31_16forMC12toMC19">
+		</Field>
+		<Field template="MCi_STATUS_15_0">
+		</Field>
+		<Field name="MISCV" bits="59:59">
+			<Match value="1">IA32_MC15_MISC: 0x%016I64x</Match>
+		</Field>
+		<Field name="ADDRV" bits="58:58">
+			<Match value="1">IA32_MC15_ADDR: 0x%016I64x</Match>
+		</Field>
+	</MSR>
+	<MSR address="0x43E" alias="MC15_ADDR*" Condition="0"> </MSR>
+	<MSR address="0x43F" alias="MC15_MISC*" Condition="0"> </MSR>
+	<MSR address="0x440" alias="MC16_CTL" Condition="MC16_STATUS[63]==1"> 
+		<Field template="MC12to19_CTL"> </Field>
+	</MSR>
+	<MSR address="0x441" alias="MC16_STATUS" Condition="[63]==1">
+		<Field template="MCi_STATUS_63_38">
+		</Field>
+		<Field name="Other Info" bits="37:32">
+			<Match value="xxxxxx">Other Info: 0b%06b</Match>
+		</Field>
+		<Field name="MSCOD" bits="31:16">
+			<Match value="xxxxxxxxxxxxxxxx">Model Specific Error Code: 0b%016b</Match>
+			<!--bits(mc0_status,0n16,0n15)??-->
+		</Field>
+		<Field template="MCi_STATUS_31_16forMC12toMC19">
+		</Field>
+		<Field template="MCi_STATUS_15_0">
+		</Field>
+		<Field name="MISCV" bits="59:59">
+			<Match value="1">IA32_MC16_MISC: 0x%016I64x</Match>
+		</Field>
+		<Field name="ADDRV" bits="58:58">
+			<Match value="1">IA32_MC16_ADDR: 0x%016I64x</Match>
+		</Field>
+	</MSR>
+	<MSR address="0x442" alias="MC16_ADDR*" Condition="0"> </MSR>
+	<MSR address="0x443" alias="MC16_MISC*" Condition="0"> </MSR>
+	<MSR address="0x444" alias="MC17_CTL" Condition="MC17_STATUS[63]==1">
+		<Field template="MC12to19_CTL"> </Field>
+	</MSR>
+	<MSR address="0x445" alias="MC17_STATUS" Condition="[63]==1">
+	<Field template="MCi_STATUS_63_38">
+		</Field>
+		<Field name="Other Info" bits="37:32">
+			<Match value="xxxxxx">Other Info: 0b%06b</Match>
+		</Field>
+		<Field name="MSCOD" bits="31:16">
+			<Match value="xxxxxxxxxxxxxxxx">Model Specific Error Code: 0b%016b</Match>
+			<!--bits(mc0_status,0n16,0n15)??-->
+		</Field>
+		<Field template="MCi_STATUS_31_16forMC12toMC19">
+		</Field>
+		<Field template="MCi_STATUS_15_0">
+		</Field>
+		<Field name="MISCV" bits="59:59">
+			<Match value="1">IA32_MC17_MISC: 0x%016I64x</Match>
+		</Field>
+		<Field name="ADDRV" bits="58:58">
+			<Match value="1">IA32_MC17_ADDR: 0x%016I64x</Match>
+		</Field>
+	</MSR>
+	<MSR address="0x446" alias="MC17_ADDR*" Condition="0"> </MSR>
+	<MSR address="0x447" alias="MC17_MISC*" Condition="0"> </MSR>
+	<MSR address="0x448" alias="MC18_CTL" Condition="MC18_STATUS[63]==1"> 
+		<Field template="MC12to19_CTL"> </Field>
+	</MSR>
+	<MSR address="0x449" alias="MC18_STATUS" Condition="[63]==1">
+		<Field template="MCi_STATUS_63_38">
+		</Field>
+		<Field name="Other Info" bits="37:32">
+			<Match value="xxxxxx">Other Info: 0b%06b</Match>
+		</Field>
+		<Field name="MSCOD" bits="31:16">
+			<Match value="xxxxxxxxxxxxxxxx">Model Specific Error Code: 0b%016b</Match>
+			<!--bits(mc0_status,0n16,0n15)??-->
+		</Field>
+		<Field template="MCi_STATUS_31_16forMC12toMC19">
+		</Field>
+		<Field template="MCi_STATUS_15_0">
+		</Field>
+		<Field name="MISCV" bits="59:59">
+			<Match value="1">IA32_MC18_MISC: 0x%016I64x</Match>
+		</Field>
+		<Field name="ADDRV" bits="58:58">
+			<Match value="1">IA32_MC18_ADDR: 0x%016I64x</Match>
+		</Field>
+	</MSR>
+	<MSR address="0x44A" alias="MC18_ADDR*" Condition="0"> </MSR>
+	<MSR address="0x44B" alias="MC18_MISC*" Condition="0"> </MSR>
+	<MSR address="0x44C" alias="MC19_CTL" Condition="MC19_STATUS[63]==1"> 
+		<Field template="MC12to19_CTL"> </Field>
+	</MSR>
+	<MSR address="0x44D" alias="MC19_STATUS" Condition="[63]==1">
+		<Field template="MCi_STATUS_63_38">
+		</Field>
+		<Field name="Other Info" bits="37:32">
+			<Match value="xxxxxx">Other Info: 0b%06b</Match>
+		</Field>
+		<Field name="MSCOD" bits="31:16">
+			<Match value="xxxxxxxxxxxxxxxx">Model Specific Error Code: 0b%016b</Match>
+			<!--bits(mc0_status,0n16,0n15)??-->
+		</Field>
+		<Field template="MCi_STATUS_31_16forMC12toMC19">
+		</Field>
+		<Field template="MCi_STATUS_15_0">
+		</Field>
+		<Field name="MISCV" bits="59:59">
+			<Match value="1">IA32_MC19_MISC: 0x%016I64x</Match>
+		</Field>
+		<Field name="ADDRV" bits="58:58">
+			<Match value="1">IA32_MC19_ADDR: 0x%016I64x</Match>
+		</Field>
+	</MSR>
+  <MSR address="0x44E" alias="MC19_ADDR*" Condition="0"> </MSR>
+  <MSR address="0x44F" alias="MC19_MISC*" Condition="0"> </MSR>
+  <MSR address="0x450" alias="MC20_CTL"></MSR>
+  <MSR address="0x451" alias="MC20_STATUS"></MSR>
+  <MSR address="0x452" alias="MC20_ADDR"></MSR>
+  <MSR address="0x453" alias="MC20_MISC"></MSR>
+  <MSR address="0x454" alias="MC21_CTL"></MSR>
+  <MSR address="0x455" alias="MC21_STATUS"></MSR>
+  <MSR address="0x456" alias="MC21_ADDR"></MSR>
+  <MSR address="0x457" alias="MC21_MISC"></MSR>
+  <MSR address="0x458" alias="MC22_CTL"></MSR>
+  <MSR address="0x459" alias="MC22_STATUS"></MSR>
+  <MSR address="0x45A" alias="MC22_ADDR"></MSR>
+  <MSR address="0x45B" alias="MC22_MISC"></MSR>
+  <MSR address="0x45C" alias="MC23_CTL"></MSR>
+  <MSR address="0x45D" alias="MC23_STATUS"></MSR>
+  <MSR address="0x45E" alias="MC23_ADDR"></MSR>
+  <MSR address="0x45F" alias="MC23_MISC"></MSR>
+  <MSR address="0x460" alias="MC24_CTL"></MSR>
+  <MSR address="0x461" alias="MC24_STATUS"></MSR>
+  <MSR address="0x462" alias="MC24_ADDR"></MSR>
+  <MSR address="0x463" alias="MC24_MISC"></MSR>
+  <MSR address="0x464" alias="MC25_CTL"></MSR>
+  <MSR address="0x465" alias="MC25_STATUS"></MSR>
+  <MSR address="0x466" alias="MC25_ADDR"></MSR>
+  <MSR address="0x467" alias="MC25_MISC"></MSR>
+  <MSR address="0x468" alias="MC26_CTL"></MSR>
+  <MSR address="0x469" alias="MC26_STATUS"></MSR>
+  <MSR address="0x46A" alias="MC26_ADDR"></MSR>
+  <MSR address="0x46B" alias="MC26_MISC"></MSR>
+  <MSR address="0x46C" alias="MC27_CTL"></MSR>
+  <MSR address="0x46D" alias="MC27_STATUS"></MSR>
+  <MSR address="0x46E" alias="MC27_ADDR"></MSR>
+  <MSR address="0x46F" alias="MC27_MISC"></MSR>
+  <MSR address="0x470" alias="MC28_CTL"></MSR>
+  <MSR address="0x471" alias="MC28_STATUS"></MSR>
+  <MSR address="0x472" alias="MC28_ADDR"></MSR>
+  <MSR address="0x473" alias="MC28_MISC"></MSR>
+  <MSR address="0x474" alias="MC29_CTL"></MSR>
+  <MSR address="0x475" alias="MC29_STATUS"></MSR>
+  <MSR address="0x476" alias="MC29_ADDR"></MSR>
+  <MSR address="0x477" alias="MC29_MISC"></MSR>
+  <MSR address="0x478" alias="MC30_CTL"></MSR>
+  <MSR address="0x479" alias="MC30_STATUS"></MSR>
+  <MSR address="0x47A" alias="MC30_ADDR"></MSR>
+  <MSR address="0x47B" alias="MC30_MISC"></MSR>
+  <MSR address="0x47C" alias="MC31_CTL"></MSR>
+  <MSR address="0x47D" alias="MC31_STATUS"></MSR>
+  <MSR address="0x47E" alias="MC31_ADDR"></MSR>
+  <MSR address="0x47F" alias="MC31_MISC"></MSR>
+  <MSR address="0x5E0" alias="QPI_MC0_CTL"> </MSR>
+  <MSR address="0x5F0" alias="QPI_MC0_CTL2"> </MSR>
+  <MSR address="0x5E1" alias="QPI_MC0_STATUS"> </MSR>
+  <MSR address="0x5E2" alias="QPI_MC0_ADDR"> </MSR>
+  <MSR address="0x5E3" alias="QPI_MC0_MISC"> </MSR>
+  <MSR address="0x5E4" alias="QPI_MC1_CTL"> </MSR>
+  <MSR address="0x5F1" alias="QPI_MC1_CTL2"> </MSR>
+  <MSR address="0x5E5" alias="QPI_MC1_STATUS"> </MSR>
+  <MSR address="0x5E6" alias="QPI_MC1_ADDR"> </MSR>
+  <MSR address="0x5E7" alias="QPI_MC1_MISC"> </MSR>
+  <MSR address="0x5E8" alias="QPI_MC2_CTL"> </MSR>
+  <MSR address="0x5F2" alias="QPI_MC2_CTL2"> </MSR>
+  <MSR address="0x5E9" alias="QPI_MC2_STATUS"> </MSR>
+  <MSR address="0x5EA" alias="QPI_MC2_ADDR"> </MSR>
+  <MSR address="0x5EB" alias="QPI_MC2_MISC"> </MSR>
+  
+	<!-- Start of CSR part -->
+	<Template name="QPIERRDIS">
+		<Field name="" bits="21:16">
+			<Match value="xxxxx1">Corrected Error Disable Mask: 20h</Match>
+			<Match value="xxxx1x">Corrected Error Disable Mask: Reserved</Match>
+			<Match value="xxx1xx">Corrected Error Disable Mask: 22h</Match>
+			<Match value="xx1xxx">Corrected Error Disable Mask: 30h</Match>
+			<Match value="x1xxxx">Corrected Error Disable Mask: 31h</Match>
+			<Match value="1xxxxx">Corrected Error Disable Mask: 32h</Match>
+		</Field>
+		<Field name="" bits="10:0">
+			<Match value="xxxxxxxxxx1">Uncorrectable Disable Mask: 00h</Match>
+			<Match value="xxxxxxxxx1x">Uncorrectable Disable Mask: 02h</Match>
+			<Match value="xxxxxxxx1xx">Uncorrectable Disable Mask: 03h</Match>
+			<Match value="xxxxxxx1xxx">Uncorrectable Disable Mask: 10h</Match>
+			<Match value="xxxxxx1xxxx">Uncorrectable Disable Mask: 11h</Match>
+			<Match value="xxxxx1xxxxx">Uncorrectable Disable Mask: 12h</Match>
+			<Match value="xxxx1xxxxxx">Uncorrectable Disable Mask: 13h</Match>
+			<Match value="xxx1xxxxxxx">Uncorrectable Disable Mask: 14h</Match>
+			<Match value="xx1xxxxxxxx">Uncorrectable Disable Mask: 15h</Match>
+			<Match value="x1xxxxxxxxx">Uncorrectable Disable Mask: 16h</Match>
+			<Match value="1xxxxxxxxxx">Uncorrectable Disable Mask: 1Fh</Match>
+		</Field>
+	</Template>
+	<CSR address="0x15b054" alias="BIOSScratchpad3" />
+	<CSR address="0x1520ec" alias="MCA_ERR_SRC_LOG" />
+  <CSR address="0x140048" alias="QPILS0" />
+  <CSR address="0x148048" alias="QPILS1" />
+  <CSR address="0x1c0048" alias="QPILS2" />
+	<CSR address="0x140074" alias="QPIERRDIS0">
+		<Field template="QPIERRDIS">
+		</Field>
+	</CSR>
+	<CSR address="0x148074" alias="QPIERRDIS1">
+		<Field template="QPIERRDIS">
+		</Field>
+	</CSR>
+  <CSR address="0x1c0074" alias="QPIERRDIS2">
+    <Field template="QPIERRDIS">
+    </Field>
+  </CSR>
+	<Template name="QPIERRCNT">
+		<Field name="" bits="31:16">
+			<Match value="xxxxxxxxxxxxxxx1">Error Mask: 20h</Match>
+			<Match value="xxxxxxxxxxxxxx1x">Error Mask: Reserved</Match>
+			<Match value="xxxxxxxxxxxxx1xx">Error Mask: 22h</Match>
+			<Match value="xxxxxxxxxxxx1xxx">Error Mask: 30h</Match>
+			<Match value="xxxxxxxxxxx1xxxx">Error Mask: 31h</Match>
+			<Match value="xxxxxxxxxx1xxxxx">Error Mask: 32h</Match>
+			<Match value="xxxxxxxxx1xxxxxx">Error Mask: 00</Match>
+			<Match value="xxxxxxxx1xxxxxxx">Error Mask: 02</Match>
+			<Match value="xxxxxxx1xxxxxxxx">Error Mask: 03</Match>
+			<Match value="xxxxxx1xxxxxxxxx">Error Mask: 10</Match>
+			<Match value="xxxxx1xxxxxxxxxx">Error Mask: 11</Match>
+			<Match value="xxxx1xxxxxxxxxxx">Error Mask: 12</Match>
+			<Match value="xxx1xxxxxxxxxxxx">Error Mask: 13</Match>
+			<Match value="xx1xxxxxxxxxxxxx">Error Mask: 14</Match>
+			<Match value="x1xxxxxxxxxxxxxx">Error Mask: 15</Match>
+			<Match value="1xxxxxxxxxxxxxxx">Error Mask: 1F or 16</Match>
+		</Field>
+		<Field name="" bits="15:0">
+			<Match value="x{16}">Counter</Match>
+		</Field>
+	</Template>
+	<CSR address="0x140078" alias="QPIERRCNT">
+		<Field template="QPIERRCNT">
+		</Field>
+	</CSR>
+	<CSR address="0x14007c" alias="QPIERRCNT">
+		<Field template="QPIERRCNT">
+		</Field>
+	</CSR>
+	<CSR address="0x148078" alias="QPIERRCNT">
+		<Field template="QPIERRCNT">
+		</Field>
+	</CSR>
+	<CSR address="0x14807c" alias="QPIERRCNT">
+		<Field template="QPIERRCNT">
+		</Field>
+	</CSR>
+  <CSR address="0x1c0078" alias="QPIERRCNT">
+    <Field template="QPIERRCNT">
+    </Field>
+  </CSR>
+  <CSR address="0x1c007c" alias="QPIERRCNT">
+    <Field template="QPIERRCNT">
+    </Field>
+  </CSR>
+  <CSR address="0x143134" alias="QPIREUT_PH_TDS" />
+  <CSR address="0x14b134" alias="QPIREUT_PH_TDS" />
+  <CSR address="0x1c3134" alias="QPIREUT_PH_TDS" />
+  <CSR address="0x143138" alias="QPIREUT_PH_RDS" />
+  <CSR address="0x14b138" alias="QPIREUT_PH_RDS" />
+  <CSR address="0x1c3138" alias="QPIREUT_PH_RDS" />
+  <CSR address="0x143140" alias="QPIREUT_PH_PIS" />
+  <CSR address="0x14b140" alias="QPIREUT_PH_PIS" />
+  <CSR address="0x1c3140" alias="QPIREUT_PH_PIS" />
+	<Template name="IRPP0ERRCTL">
+		<Field name="" bits="14:14">
+			<Match value="1">Protocol Parity Error: DBh</Match>
+		</Field>
+		<Field name="" bits="13:13">
+			<Match value="1">Protocol Queue/Table Overflow or Underflow: DAh</Match>
+		</Field>
+		<Field name="" bits="10:10">
+			<Match value="1">Protocol Layer Received Unexpected Response/Completion: D7h</Match>
+		</Field>
+		<Field name="" bits="4:4">
+			<Match value="1">CSR access crossing 32-bit boundary: C3h</Match>
+		</Field>
+		<Field name="" bits="3:3">
+			<Match value="1">Write Cache Un-Corrected ECC: C2h</Match>
+		</Field>
+		<Field name="" bits="2:2">
+			<Match value="1">Protocol Layer Received Poisoned Packet: C1h</Match>
+		</Field>
+		<Field name="" bits="1:1">
+			<Match value="1">Write Cache Corrected ECC: B4h</Match>
+		</Field>
+	</Template>
+	<CSR address="0x2a234" alias="IRPP0ERRCTL">
+		<Field template="IRPP0ERRCTL">
+		</Field>
+	</CSR>
+	<CSR address="0x2a2b4" alias="IRPP1ERRCTL">
+		<Field template="IRPP0ERRCTL">
+		</Field>
+	</CSR>
+	<CSR address="0x2a230" alias="IRPP0ERRST">
+		<Field template="IRPP0ERRCTL">
+		</Field>
+	</CSR>
+	<CSR address="0x2a2b0" alias="IRPP1ERRST">
+		<Field template="IRPP0ERRCTL">
+		</Field>
+	</CSR>
+	<CSR address="0x2a080" alias="IRPPERRSV">
+		<Field name="" bits="1:0">
+			<Match value="00">Error Severity Level 0 (Corrected)</Match>
+			<Match value="01">Error Severity Level 1 (Recoverable)</Match>
+			<Match value="10">Error Severity Level 2 (Fatal)</Match>
+			<Match value="11">Reserved</Match>
+		</Field>
+	</CSR>
+	<CSR address="0x2a250" alias="IRPP0NFERRST">
+		<Field template="IRPP0ERRCTL">
+		</Field>
+	</CSR>
+	<CSR address="0x2a2d0" alias="IRPP1NFERRST">
+		<Field template="IRPP0ERRCTL">
+		</Field>
+	</CSR>
+	<CSR address="0x2a238" alias="IRPP0FFERRST">
+		<Field template="IRPP0ERRCTL">
+		</Field>
+	</CSR>
+	<CSR address="0x2a2b8" alias="IRPP1FFERRST">
+		<Field template="IRPP0ERRCTL">
+		</Field>
+	</CSR>
+	<CSR address="0x2a23c" alias="IRPP0FNERRST">
+		<Field template="IRPP0ERRCTL">
+		</Field>
+	</CSR>
+	<CSR address="0x2a2bc" alias="IRPP1FNERRST">
+		<Field template="IRPP0ERRCTL">
+		</Field>
+	</CSR>
+	<CSR address="0x2a250" alias="IRPP0NNERRST">
+		<Field template="IRPP0ERRCTL">
+		</Field>
+	</CSR>
+	<CSR address="0x2a2d0" alias="IRPP1NNERRST">
+		<Field template="IRPP0ERRCTL">
+		</Field>
+	</CSR>
+	<Template name="IRPP0NFERRHD">
+		<Field name ="" bits="31:0">
+			<Match value="x{32}">%d</Match>
+		</Field>
+	</Template>
+	<CSR address="0x2a258" alias="IRPP0NFERRHD">
+		<Field template="IRPP0NFERRHD">
+		</Field>
+	</CSR>
+	<CSR address="0x2a25c" alias="IRPP0NFERRHD">
+		<Field template="IRPP0NFERRHD">
+		</Field>
+	</CSR>
+	<CSR address="0x2a260" alias="IRPP0NFERRHD">
+		<Field template="IRPP0NFERRHD">
+		</Field>
+	</CSR>
+	<CSR address="0x2a264" alias="IRPP0NFERRHD">
+		<Field template="IRPP0NFERRHD">
+		</Field>
+	</CSR>
+	<CSR address="0x2a2d8" alias="IRPP1NFERRHD">
+		<Field template="IRPP0NFERRHD">
+		</Field>
+	</CSR>
+	<CSR address="0x2a2dc" alias="IRPP1NFERRHD">
+		<Field template="IRPP0NFERRHD">
+		</Field>
+	</CSR>
+	<CSR address="0x2a2e0" alias="IRPP1NFERRHD">
+		<Field template="IRPP0NFERRHD">
+		</Field>
+	</CSR>
+	<CSR address="0x2a2e4" alias="IRPP1NFERRHD">
+		<Field template="IRPP0NFERRHD">
+		</Field>
+	</CSR>
+	<CSR address="0x2a240" alias="IRPP0FFERRHD">
+		<Field template="IRPP0NFERRHD">
+		</Field>
+	</CSR>
+	<CSR address="0x2a244" alias="IRPP0FFERRHD">
+		<Field template="IRPP0NFERRHD">
+		</Field>
+	</CSR>
+	<CSR address="0x2a248" alias="IRPP0FFERRHD">
+		<Field template="IRPP0NFERRHD">
+		</Field>
+	</CSR>
+	<CSR address="0x2a24c" alias="IRPP0FFERRHD">
+		<Field template="IRPP0NFERRHD">
+		</Field>
+	</CSR>
+	<CSR address="0x2a2c0" alias="IRPP1FFERRHD">
+		<Field template="IRPP0NFERRHD">
+		</Field>
+	</CSR>
+	<CSR address="0x2a2c4" alias="IRPP1FFERRHD">
+		<Field template="IRPP0NFERRHD">
+		</Field>
+	</CSR>
+	<CSR address="0x2a2c8" alias="IRPP1FFERRHD">
+		<Field template="IRPP0NFERRHD">
+		</Field>
+	</CSR>
+	<CSR address="0x2a2cc" alias="IRPP1FFERRHD">
+		<Field template="IRPP0NFERRHD">
+		</Field>
+	</CSR>
+	<CSR address="0x2a268" alias="IRPP0ERRCNTSEL">
+		<Field template="IRPP0ERRCTL">
+		</Field>
+	</CSR>
+	<CSR address="0x2a2E8" alias="IRPP1ERRCNTSEL">
+		<Field template="IRPP0ERRCTL">
+		</Field>
+	</CSR>
+	<Template name="IRPP0ERRCNT">
+		<Field name="ERROVF" bits="7:7">
+			<Match value="0">No overflow occurred</Match>
+			<Match value="1">Error overflow. The error count may not be valid.</Match>
+		</Field>
+		<Field name="ErrorAccumulator" bits="6:0">
+			<Match value="x{7}">%d</Match>
+		</Field>
+	</Template>
+	<CSR address="0x2a26c" alias="IRPP0ERRCNT">	
+		<Field template="IRPP0ERRCNT">
+		</Field>
+	</CSR>
+	<CSR address="0x2a2ec" alias="IRPP1ERRCNT">	
+		<Field template="IRPP0ERRCNT">
+		</Field>
+	</CSR>
+	<Template name="IIOERRCTL">
+		<Field name="" bits="6:6">
+			<Match value="1">Overflow/Underflow Error(C6h): Enabled </Match>
+		</Field>
+		<Field name="" bits="5:5">
+			<Match value="1">Completer Abort Error(C5h): Enabled</Match>
+		</Field>
+		<Field name="" bits="4:4">
+			<Match value="1">Master Abort Error(C4h): Enabled</Match>
+		</Field>
+	</Template>
+	<CSR address="0x2a304" alias="IIOERRCTL">
+		<Field template="IIOERRCTL">
+		</Field>
+	</CSR>
+	<CSR address="0x2a300" alias="IIOERRST">
+		<Field template="IIOERRCTL">
+		</Field>
+	</CSR>
+	<CSR address="0x2a08c" alias="IIOERSV">	
+		<Field name="" bits="1:0">
+			<Match value="00">Error Severity Level 0 (Corrected)</Match>
+			<Match value="01">Error Severity Level 1 (Recoverable)</Match>
+			<Match value="10">Error Severity Level 2 (Fatal)</Match>
+			<Match value="11">Reserved</Match>
+		</Field>
+	</CSR>
+	<CSR address="0x2a308" alias="IIOFFERRST">
+		<Field template="IIOERRCTL">
+		</Field>
+	</CSR>
+	<Template name="IIOFFERRHD">
+		<Field name="" bits="31:0">
+			<Match value="x{32}">%d</Match>
+		</Field>
+	</Template>
+	<CSR address="0x2a30c" alias="IIOFFERRHD">
+		<Field template="IIOFFERRHD">
+		</Field>
+	</CSR>
+	<CSR address="0x2a310" alias="IIOFFERRHD">
+		<Field template="IIOFFERRHD">
+		</Field>
+	</CSR>
+	<CSR address="0x2a314" alias="IIOFFERRHD">
+		<Field template="IIOFFERRHD">
+		</Field>
+	</CSR>
+	<CSR address="0x2a318" alias="IIOFFERRHD">
+		<Field template="IIOFFERRHD">
+		</Field>
+	</CSR>
+	<CSR address="0x2a31c" alias="IIOFNERRST">
+		<Field template="IIOERRCTL">
+		</Field>
+	</CSR>
+	<Template name="RPERRCMD">
+		<Field name="RW" bits="2:0">
+			<Match value="xx1">FATAL Error Reporting Enable </Match>
+			<Match value="x1x">Non-fATAL Error Reporting Enable</Match>
+			<Match value="1xx">Correctable Error Reporting Enable </Match>
+		</Field>
+	</Template>
+	<Template name="RPERRSTS">
+		<Field name="RW1CS" bits="31:27">
+			<Match value="xxxxx">Advanced_Error_Interrupt_Message_Number %d</Match>
+		</Field>
+		<Field name="RW1CS" bits="6:0">
+			<Match value="xxxxxx1">Correctable_Error_Received</Match>
+			<Match value="xxxxx1x">Multiple_Correctable_Error_Received</Match>
+			<Match value="xxxx1xx">Error_Fatal_Nonfatal_Received</Match>
+			<Match value="xxx1xxx">Multiple_Error_Fatal_Nonfatal_Received</Match>
+			<Match value="xx1xxxx">First_Uncorrectable_Fatal</Match>
+			<Match value="x1xxxxx">Non_Fatal_Error_Messages_Received</Match>
+			<Match value="1xxxxxx">Fatal_Error_Messages_Received</Match>
+		</Field>
+	</Template>
+	<Template name="ERRSID">
+		<Field name="ROS" bits="31:16">
+			<Match value="xxxxxxxxxxxxxxxx">Fatal/Non Fatal Error Source ID %d</Match>
+		</Field>
+		<Field name="ROS" bits="15:0">
+			<Match value="xxxxxxxxxxxxxxxx">Correctable Error Source ID %d</Match>
+		</Field>
+	</Template>
+	<Template name="MISCCTRLSTS">
+		<Field name="RW" bits="4:4">
+			<Match value="1">Enable System Error only for AER</Match>
+		</Field>
+	</Template>
+	<Template name="MISIPENDING">
+		<Field name="RO" bits="1:0">
+			<Match value="01">MSI pending bits</Match>
+		</Field>
+	</Template>
+	<Template name="UNCEDMASK">
+		<Field bits="5:4">
+			<Match value="x1">Data Link Layer Protocol Error Mask</Match>
+			<Match value="1x">Surprise Down Error Mask</Match>
+		</Field>
+		<Field bits="21:12">
+			<Match value="xxxxxxxxx1">Poisoned TLP Mask</Match>
+			<Match value="xxxxxxxx1x">Flow Control Protocol Error Mask</Match>
+			<Match value="xxxxxxx1xx">Completion Time-out Mask</Match>
+			<Match value="xxxxxx1xxx">Completer Abort Mask</Match>
+			<Match value="xxxxx1xxxx">Unexpected Completion Mask </Match>
+			<Match value="xxxx1xxxxx">Receiver Buffer Overflow Mask</Match>
+			<Match value="xxx1xxxxxx">Malformed TLP Mask</Match>
+			<Match value="x1xxxxxxxx">Unsupported Request Error Mask</Match>
+			<Match value="1xxxxxxxxx">ACS Violation Mask</Match>
+		</Field>
+	</Template>
+	<Template name="COREDMASK">
+		<Field bits="13:0">
+			<Match value="xxxxxxxxxxxxx1">Receiver Error Mask</Match>
+			<Match value="xxxxxxx1xxxxxx">Bad TLP Mask</Match>
+			<Match value="xxxxxx1xxxxxxx">Bad DLLP Mask</Match>
+			<Match value="xxxxx1xxxxxxxx">Replay_Num Rollover Mask</Match>
+			<Match value="x1xxxxxxxxxxxx">Replay Timer Time-out Mask</Match>
+			<Match value="1xxxxxxxxxxxxx">Advisory Non-fatal Error Mask</Match>
+		</Field>
+	</Template>
+	<Template name="CORERRSTS">
+		<Field bits="13:0">
+			<Match value="xxxxxxxxxxxxx1">Receiver Error Mask</Match>
+			<Match value="xxxxxxx1xxxxxx">Bad TLP Mask</Match>
+			<Match value="xxxxxx1xxxxxxx">Bad DLLP Mask</Match>
+			<Match value="xxxxx1xxxxxxxx">Replay_Num Rollover Mask</Match>
+			<Match value="x1xxxxxxxxxxxx">Replay Timer Time-out Mask</Match>
+			<Match value="1xxxxxxxxxxxxx">Advisory Non-fatal Error Mask</Match>
+		</Field>
+	</Template>
+	<Template name="UNCERRMSK">
+		<Field bits="5:4">
+			<Match value="x1">Data Link Layer Protocol Error Mask</Match>
+			<Match value="1x">Surprise Down Error Mask</Match>
+		</Field>
+		<Field bits="21:12">
+			<Match value="xxxxxxxxx1">Poisoned TLP Mask</Match>
+			<Match value="xxxxxxxx1x">Flow Control Protocol Error Mask</Match>
+			<Match value="xxxxxxx1xx">Completion Time-out Mask</Match>
+			<Match value="xxxxxx1xxx">Completer Abort Mask</Match>
+			<Match value="xxxxx1xxxx">Unexpected Completion Mask </Match>
+			<Match value="xxxx1xxxxx">Receiver Buffer Overflow Mask</Match>
+			<Match value="xxx1xxxxxx">Malformed TLP Mask</Match>
+			<Match value="x1xxxxxxxx">Unsupported Request Error Mask</Match>
+			<Match value="1xxxxxxxxx">ACS Violation Mask</Match>
+		</Field>
+	</Template>
+	<Template name="CORERRMSK">
+		<Field bits="13:0">
+			<Match value="xxxxxxxxxxxxx1">Receiver Error Mask</Match>
+			<Match value="xxxxxxx1xxxxxx">Bad TLP Mask</Match>
+			<Match value="xxxxxx1xxxxxxx">Bad DLLP Mask</Match>
+			<Match value="xxxxx1xxxxxxxx">Replay_Num Rollover Mask</Match>
+			<Match value="x1xxxxxxxxxxxx">Replay Timer Time-out Mask</Match>
+			<Match value="1xxxxxxxxxxxxx">Advisory Non-fatal Error Mask</Match>
+		</Field>
+	</Template>
+	<Template name="UNCERRSTS">
+		<Field bits="5:4">
+			<Match value="x1">Data Link Layer Protocol Error Mask</Match>
+			<Match value="1x">Surprise Down Error Mask</Match>
+		</Field>
+		<Field bits="21:12">
+			<Match value="xxxxxxxxx1">Poisoned TLP Mask</Match>
+			<Match value="xxxxxxxx1x">Flow Control Protocol Error Mask</Match>
+			<Match value="xxxxxxx1xx">Completion Time-out Mask</Match>
+			<Match value="xxxxxx1xxx">Completer Abort Mask</Match>
+			<Match value="xxxxx1xxxx">Unexpected Completion Mask </Match>
+			<Match value="xxxx1xxxxx">Receiver Buffer Overflow Mask</Match>
+			<Match value="xxx1xxxxxx">Malformed TLP Mask</Match>
+			<Match value="x1xxxxxxxx">Unsupported Request Error Mask</Match>
+			<Match value="1xxxxxxxxx">ACS Violation Mask</Match>
+		</Field>
+	</Template>
+	<Template name="UNCERRSEV">
+		<Field bits="31:0">
+			<Match value="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx">Uncorrected Error Severity mapping %d</Match>
+		</Field>
+	</Template>
+	<Template name="HDRLOG0">
+		<Field bits="31:0">
+			<Match value="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx">%x</Match>
+		</Field>
+	</Template>
+	<Template name="HDRLOG1">
+		<Field bits="31:0">
+			<Match value="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx">%x</Match>
+		</Field>
+	</Template>
+	<Template name="HDRLOG2">
+		<Field bits="31:0">
+			<Match value="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx">%x</Match>
+		</Field>
+	</Template>
+	<Template name="HDRLOG3">
+		<Field bits="31:0">
+			<Match value="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx">%x</Match>
+		</Field>
+	</Template>
+	<Template name="PCICMD">
+		<Field bits="2:2">
+			<Match value="1">Bus Master Enable (BME)</Match>
+		</Field>
+		<Field bits="6:6">
+			<Match value="1">Parity Error Reporting Enable (PERE)</Match>
+		</Field>
+		<Field bits="8:8">
+			<Match value="1">System Error Reporting Enable (SERRE)</Match>
+		</Field>
+	</Template>
+	<Template name="PCISTS">
+		<Field bits="15:8">
+			<Match value="xxxxxxx1">Master Data Parity Error</Match>
+			<Match value="xxxx1xxx">Signaled Target Abort</Match>
+			<Match value="xxx1xxxx">Received Target Abort</Match>
+			<Match value="xx1xxxxx">Received Master Abort</Match>
+			<Match value="x1xxxxxx">Signaled System Error</Match>
+			<Match value="1xxxxxxx">Detected Parity Error</Match>
+		</Field>
+	</Template>
+	<Template name="DEVCTRL">
+		<Field bits="3:0">
+			<Match value="xxx1">Corrected Error Reporting Enable </Match>
+			<Match value="xx1x">Non-fatal Error Reporting Enable</Match>
+			<Match value="x1xx">Fatal Error Reporting Enable</Match>
+			<Match value="1xxx">Unsupported Request Reporting Enable</Match>
+		</Field>
+	</Template>
+	<Template name="ROOTCON">
+		<Field bits="3:0">
+			<Match value="xxx1">Corrected Error Reporting Enable </Match>
+			<Match value="xx1x">Non-fatal Error Reporting Enable</Match>
+			<Match value="x1xx">Fatal Error Reporting Enable</Match>
+			<Match value="1xxx">Unsupported Request Reporting Enable</Match>
+		</Field>
+	</Template>
+	<Template name="MISCCTRLSTS">
+		<Field bits="35:33">
+			<Match value="xx1">Override System Error on PCI Express Correctable Error Enable </Match>
+			<Match value="x1x">Override System Error on PCI Express Non-Fatal Error Enable</Match>
+			<Match value="1xx">Override System Error on PCI Express Fatal Error Enable</Match>
+		</Field>
+	</Template>
+	<Template name="XPGLBERRSTS">
+		<Field bits="2:0">
+			<Match value="xx1">PCIE AER Fatal error</Match>
+			<Match value="x1x">PCI Express AER Non-fatal error</Match>
+			<Match value="1xx">PCI Express AER Correctable error</Match>
+		</Field>
+	</Template>
+	<Template name="XPGLBERRPTR">
+		<Field bits="2:0">
+			<Match value="xx1">PCIE AER Fatal error</Match>
+			<Match value="x1x">PCI Express AER Non-fatal error</Match>
+			<Match value="1xx">PCI Express AER Correctable error</Match>
+		</Field>
+	</Template>
+	<Template name="SECSTS">
+		<Field bits="15:8">
+			<Match value="xxxxxxx1">Master Data Parity Error</Match>
+			<Match value="xxxx1xxx">Signaled Target Abort</Match>
+			<Match value="xxx1xxxx">Received Target Abort</Match>
+			<Match value="xx1xxxxx">Received Master Abort</Match>
+			<Match value="x1xxxxxx">Signaled System Error</Match>
+			<Match value="1xxxxxxx">Detected Parity Error</Match>
+		</Field>
+	</Template>
+	<Template name="BCTRL">
+		<Field bits="1:0">
+			<Match value="x1">Parity Error Response Enable</Match>
+			<Match value="1x">System Error Response Enable</Match>
+		</Field>
+	</Template>
+	<Template name="DEVSTS">
+		<Field bits="3:0">
+			<Match value="xxx1">Correctable Error Detected</Match>
+			<Match value="xx1x">Non-fatal Error Detected</Match>
+			<Match value="x1xx">Fatal Error Detected</Match>
+			<Match value="1xxx">Unsupported Request Detected</Match>
+		</Field>
+	</Template>
+	<Template name="XPUNCEDMASK">
+		<Field bits="9:1">
+			<Match value="xxxxxxxx1">Outbound Switch FIFO data parity error Detect Mask</Match>
+			<Match value="xxxxxx1xx">Sent completion with Completer Abort Detect Mask</Match>
+			<Match value="xxxxx1xxx">Sent completion with Unsupported Request Detect Mask</Match>
+			<Match value="xxxx1xxxx">Received PCIe completion with CA Detect Mask</Match>
+			<Match value="xxx1xxxxx">Received PCIe completion with UR Detect Mask</Match>
+			<Match value="1xxxxxxxx">Outbound Poisoned Data Detect Mask</Match>
+		</Field>
+	</Template>
+	<Template name="XPCOREDMASK">
+		<Field bits="0:0">
+			<Match value="1">PCI link bandwidth changed Detect Mask</Match>
+		</Field>
+	</Template>
+	<Template name="XPUNCERRSTS">
+		<Field bits="9:1">
+			<Match value="xxxxxxxx1">Outbound Switch FIFO data parity error Detect Mask</Match>
+			<Match value="xxxxxx1xx">Sent completion with Completer Abort Detect Mask</Match>
+			<Match value="xxxxx1xxx">Sent completion with Unsupported Request Detect Mask </Match>
+			<Match value="xxxx1xxxx">Received PCIe completion with CA Detect Mask</Match>
+			<Match value="xxx1xxxxx">Received PCIe completion with UR Detect Mask</Match>
+			<Match value="1xxxxxxxx">Outbound Poisoned Data Detect Mask</Match>
+		</Field>
+	</Template>
+	<Template name="XPCORERRSTS">
+		<Field bits="9:1">
+			<Match value="xxxxxxxx1">Outbound Switch FIFO data parity error Detect Mask</Match>
+			<Match value="xxxxxx1xx">Sent completion with Completer Abort Detect Mask</Match>
+			<Match value="xxxxx1xxx">Sent completion with Unsupported Request Detect Mask </Match>
+			<Match value="xxxx1xxxx">Received PCIe completion with CA Detect Mask</Match>
+			<Match value="xxx1xxxxx">Received PCIe completion with UR Detect Mask</Match>
+			<Match value="1xxxxxxxx">Outbound Poisoned Data Detect Mask</Match>
+		</Field>
+	</Template>
+	<Template name="XPUNCERRMSK">
+		<Field bits="9:1">
+			<Match value="xxxxxxxx1">Outbound Switch FIFO data parity error Detect Mask</Match>
+			<Match value="xxxxxx1xx">Sent completion with Completer Abort Detect Mask</Match>
+			<Match value="xxxxx1xxx">Sent completion with Unsupported Request Detect Mask </Match>
+			<Match value="xxxx1xxxx">Received PCIe completion with CA Detect Mask</Match>
+			<Match value="xxx1xxxxx">Received PCIe completion with UR Detect Mask</Match>
+			<Match value="1xxxxxxxx">Outbound Poisoned Data Detect Mask</Match>
+		</Field>
+	</Template>
+	<Template name="XPCORERRMSK">
+		<Field bits="0:0">
+			<Match value="1">PCI link bandwidth changed Detect Mask</Match>
+		</Field>
+	</Template>
+	<Template name="XPUNCERRPTR">
+		<Field bits="4:0">
+			<Match value="xxxxx">XP Uncorrectable First Error Pointer</Match>
+		</Field>
+	</Template>
+	<Template name="XPUNCERRSEV">
+		<Field bits="31:0">
+			<Match value="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx">%x</Match>
+		</Field>
+	</Template>
+	<CSR address="0x2a320" alias="IIONFERRST">
+		<Field bits="31:0">
+			<Match value="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx">%x</Match>
+		</Field>
+	</CSR>
+	<CSR address="0x2a324" alias="IIONFERRHD[0]">
+		<Field bits="31:0">
+			<Match value="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx">%x</Match>
+		</Field>
+	</CSR>
+	<CSR address="0x2a328" alias="IIONFERRHD[1]">
+		<Field bits="31:0">
+			<Match value="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx">%x</Match>
+		</Field>
+	</CSR>
+	<CSR address="0x2a32c" alias="IIONFERRHD[2]">
+		<Field bits="31:0">
+			<Match value="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx">%x</Match>
+		</Field>
+	</CSR>
+	<CSR address="0x2a330" alias="IIONFERRHD[3]">
+		<Field bits="31:0">
+			<Match value="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx">%x</Match>
+		</Field>
+	</CSR>
+	<CSR address="0x2a334" alias="IIONNERRST">
+		<Field bits="10:0">
+			<Match value="xxxxxxxxxxx">IIO Core Error Status Log %d</Match>
+		</Field>
+	</CSR>
+	<CSR address="0x2a33c" alias="IIOERRCNTSEL">
+		<Field bits="6:4">
+			<Match value="xx1">Master Abort Error Enable</Match>
+			<Match value="xx0">Master Abort Error Disable</Match>
+			<Match value="x1x">Completer Abort Error Enable</Match>
+			<Match value="x0x">Completer Abort Error Disable</Match>
+			<Match value="1xx">Overflow/Underflow error Enable</Match>
+			<Match value="0xx">Overflow/Underflow error Disable</Match>
+		</Field>
+	</CSR>
+	<CSR address="0x2a340" alias="IIOERRCNT">
+		<Field bits="7:7">
+			<Match value="1">Error overflow. The error count may not be valid.</Match>
+			<Match value="0">No overflow occurred</Match>
+		</Field>
+		<Field bits="6:0">
+			<Match value="xxxxxxx">%d</Match>
+		</Field>
+	</CSR>
+	<CSR address="0x281ac" alias="VTUNCERRMSK">
+		<Field bits="31:31">
+			<Match value="1">Mask reporting Intel® VT-d specification defined errors to IIO core logic</Match>
+		</Field>
+		<Field bits="8:0">
+			<Match value="xxxxxxxx1">Data parity error while doing a context cache look up mask</Match>
+			<Match value="xxxxxxx1x">Data parity error while doing a L1 lookup mask</Match>
+			<Match value="xxxxxx1xx">Data parity error while doing a L2 lookup mask</Match>
+			<Match value="xxxxx1xxx">Data parity error while doing a L3 lookup mask</Match>
+			<Match value="xxxx1xxxx">TLB0 parity error mask</Match>
+			<Match value="xxx1xxxxx">TLB1 parity error mask</Match>
+			<Match value="xx1xxxxxx">Unsuccessful status received in the coherent interface read completion mask</Match>
+			<Match value="x1xxxxxxx">Illegal request to 0xFEE mask</Match>
+			<Match value="1xxxxxxxx">Protected memory region space violated mask</Match>
+		</Field>
+	</CSR>
+	<CSR address="0x281a8" alias="VTUNCERRSTS">
+		<Field bits="31:31">
+			<Match value="1">Intel® VT-d specification defined error has been detected and logged in VTD0_FLTRECn_SRC register</Match>
+		</Field>
+		<Field bits="8:0">
+			<Match value="xxxxxxxx1">Data parity error while doing a context cache look up mask</Match>
+			<Match value="xxxxxxx1x">Data parity error while doing a L1 lookup mask</Match>
+			<Match value="xxxxxx1xx">Data parity error while doing a L2 lookup mask</Match>
+			<Match value="xxxxx1xxx">Data parity error while doing a L3 lookup mask</Match>
+			<Match value="xxxx1xxxx">TLB0 parity error mask</Match>
+			<Match value="xxx1xxxxx">TLB1 parity error mask</Match>
+			<Match value="xx1xxxxxx">Unsuccessful status received in the coherent interface read completion mask</Match>
+			<Match value="x1xxxxxxx">Illegal request to 0xFEE mask</Match>
+			<Match value="1xxxxxxxx">Protected memory region space violated mask</Match>
+		</Field>
+	</CSR>
+	<CSR address="0x281b0" alias="VTUNCERRSEV">
+		<Field bits="31:31">
+			<Match value="1">Intel VT-d spec defined errors, as FATAL errors.</Match>
+			<Match value="0">Intel VT-d spec defined errors, as Nonfatal errors.</Match>
+		</Field>
+		<Field bits="8:0">
+			<Match value="xxxxxxxx1">Data parity error while doing a context cache look up mask FATAL</Match>
+			<Match value="xxxxxxxx0">Data parity error while doing a context cache look up mask Non-FATAL </Match>
+			<Match value="xxxxxxx1x">Data parity error while doing a L1 lookup mask FATAL</Match>
+			<Match value="xxxxxxx0x">Data parity error while doing a L1 lookup mask Non-FATAL</Match>
+			<Match value="xxxxxx1xx">Data parity error while doing a L2 lookup mask FATAL</Match>
+			<Match value="xxxxxx0xx">Data parity error while doing a L2 lookup mask Non-FATAL</Match>
+			<Match value="xxxxx1xxx">Data parity error while doing a L3 lookup mask FATAL</Match>
+			<Match value="xxxxx0xxx">Data parity error while doing a L3 lookup mask Non-FATAL</Match>
+			<Match value="xxxx1xxxx">TLB0 parity error mask FATAL</Match>
+			<Match value="xxxx0xxxx">TLB0 parity error mask Non-FATAL</Match>
+			<Match value="xxx1xxxxx">TLB1 parity error mask FATAL</Match>
+			<Match value="xxx0xxxxx">TLB1 parity error mask Non-FATAL</Match>
+			<Match value="xx1xxxxxx">Unsuccessful status received in the coherent interface read completion mask FATAL</Match>
+			<Match value="xx0xxxxxx">Unsuccessful status received in the coherent interface read completion mask Non-FATAL</Match>
+			<Match value="x1xxxxxxx">Illegal request to 0xFEE mask FATAL</Match>
+			<Match value="x0xxxxxxx">Illegal request to 0xFEE mask Non-FATAL</Match>
+			<Match value="1xxxxxxxx">Protected memory region space violated mask FATAL</Match>
+			<Match value="0xxxxxxxx">Protected memory region space violated mask Non-FATAL</Match>
+		</Field>
+	</CSR>
+	<CSR address="0x281b4" alias="VTUNCERRPTR">
+		<Field bits="31:0">
+			<Match value="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx">%x</Match>
+		</Field>
+	</CSR>
+	<CSR address="0x224" alias="XPUNCEDMASK">
+		<Field template="XPUNCEDMASK">
+		</Field>
+	</CSR>
+	<CSR address="0x228" alias="XPCOREDMASK">
+		<Field template="XPCOREDMASK">
+		</Field>
+	</CSR>
+	<CSR address="0x208" alias="XPUNCERRSTS">
+		<Field template="XPUNCERRSTS">
+		</Field>
+	</CSR>
+	<CSR address="0x200" alias="XPCORERRSTS">
+		<Field template="XPCORERRSTS">
+		</Field>
+	</CSR>
+	<CSR address="0x20c" alias="XPUNCERRMSK">
+		<Field template="XPUNCERRMSK">
+		</Field>
+	</CSR>
+	<CSR address="0x204" alias="XPCORERRMSK">
+		<Field template="XPCORERRMSK">
+		</Field>
+	</CSR>
+	<CSR address="0x214" alias="XPUNCERRPTR">
+		<Field template="XPUNCERRPTR">
+		</Field>
+	</CSR>
+	<CSR address="0x210" alias="XPUNCERRSEV">
+		<Field template="XPUNCERRSEV">
+		</Field>
+	</CSR>
+	<CSR address="0x8224" alias="XPUNCEDMASK">
+		<Field template="XPUNCEDMASK">
+		</Field>
+	</CSR>
+	<CSR address="0x8228" alias="XPCOREDMASK">
+		<Field template="XPCOREDMASK">
+		</Field>
+	</CSR>
+	<CSR address="0x8208" alias="XPUNCERRSTS">
+		<Field template="XPUNCERRSTS">
+		</Field>
+	</CSR>
+	<CSR address="0x8200" alias="XPCORERRSTS">
+		<Field template="XPCORERRSTS">
+		</Field>
+	</CSR>
+	<CSR address="0x820c" alias="XPUNCERRMSK">
+		<Field template="XPUNCERRMSK">
+		</Field>
+	</CSR>
+	<CSR address="0x8204" alias="XPCORERRMSK">
+		<Field template="XPCORERRMSK">
+		</Field>
+	</CSR>
+	<CSR address="0x8214" alias="XPUNCERRPTR">
+		<Field template="XPUNCERRPTR">
+		</Field>
+	</CSR>
+	<CSR address="0x8210" alias="XPUNCERRSEV">
+		<Field template="XPUNCERRSEV">
+		</Field>
+	</CSR>
+	<CSR address="0x9224" alias="XPUNCEDMASK">
+		<Field template="XPUNCEDMASK">
+		</Field>
+	</CSR>
+	<CSR address="0x9228" alias="XPCOREDMASK">
+		<Field template="XPCOREDMASK">
+		</Field>
+	</CSR>
+	<CSR address="0x9208" alias="XPUNCERRSTS">
+		<Field template="XPUNCERRSTS">
+		</Field>
+	</CSR>
+	<CSR address="0x9200" alias="XPCORERRSTS">
+		<Field template="XPCORERRSTS">
+		</Field>
+	</CSR>
+	<CSR address="0x920c" alias="XPUNCERRMSK">
+		<Field template="XPUNCERRMSK">
+		</Field>
+	</CSR>
+	<CSR address="0x9204" alias="XPCORERRMSK">
+		<Field template="XPCORERRMSK">
+		</Field>
+	</CSR>
+	<CSR address="0x9214" alias="XPUNCERRPTR">
+		<Field template="XPUNCERRPTR">
+		</Field>
+	</CSR>
+	<CSR address="0x9210" alias="XPUNCERRSEV">
+		<Field template="XPUNCERRSEV">
+		</Field>
+	</CSR>
+	<CSR address="0x10224" alias="XPUNCEDMASK">
+		<Field template="XPUNCEDMASK">
+		</Field>
+	</CSR>
+	<CSR address="0x10228" alias="XPCOREDMASK">
+		<Field template="XPCOREDMASK">
+		</Field>
+	</CSR>
+	<CSR address="0x10208" alias="XPUNCERRSTS">
+		<Field template="XPUNCERRSTS">
+		</Field>
+	</CSR>
+	<CSR address="0x10200" alias="XPCORERRSTS">
+		<Field template="XPCORERRSTS">
+		</Field>
+	</CSR>
+	<CSR address="0x1020c" alias="XPUNCERRMSK">
+		<Field template="XPUNCERRMSK">
+		</Field>
+	</CSR>
+	<CSR address="0x10204" alias="XPCORERRMSK">
+		<Field template="XPCORERRMSK">
+		</Field>
+	</CSR>
+	<CSR address="0x10214" alias="XPUNCERRPTR">
+		<Field template="XPUNCERRPTR">
+		</Field>
+	</CSR>
+	<CSR address="0x10210" alias="XPUNCERRSEV">
+		<Field template="XPUNCERRSEV">
+		</Field>
+	</CSR>
+	<CSR address="0x11224" alias="XPUNCEDMASK">
+		<Field template="XPUNCEDMASK">
+		</Field>
+	</CSR>
+	<CSR address="0x11228" alias="XPCOREDMASK">
+		<Field template="XPCOREDMASK">
+		</Field>
+	</CSR>
+	<CSR address="0x11208" alias="XPUNCERRSTS">
+		<Field template="XPUNCERRSTS">
+		</Field>
+	</CSR>
+	<CSR address="0x11200" alias="XPCORERRSTS">
+		<Field template="XPCORERRSTS">
+		</Field>
+	</CSR>
+	<CSR address="0x1120c" alias="XPUNCERRMSK">
+		<Field template="XPUNCERRMSK">
+		</Field>
+	</CSR>
+	<CSR address="0x11204" alias="XPCORERRMSK">
+		<Field template="XPCORERRMSK">
+		</Field>
+	</CSR>
+	<CSR address="0x11214" alias="XPUNCERRPTR">
+		<Field template="XPUNCERRPTR">
+		</Field>
+	</CSR>
+	<CSR address="0x11210" alias="XPUNCERRSEV">
+		<Field template="XPUNCERRSEV">
+		</Field>
+	</CSR>
+	<CSR address="0x12224" alias="XPUNCEDMASK">
+		<Field template="XPUNCEDMASK">
+		</Field>
+	</CSR>
+	<CSR address="0x12228" alias="XPCOREDMASK">
+		<Field template="XPCOREDMASK">
+		</Field>
+	</CSR>
+	<CSR address="0x12208" alias="XPUNCERRSTS">
+		<Field template="XPUNCERRSTS">
+		</Field>
+	</CSR>
+	<CSR address="0x12200" alias="XPCORERRSTS">
+		<Field template="XPCORERRSTS">
+		</Field>
+	</CSR>
+	<CSR address="0x1220c" alias="XPUNCERRMSK">
+		<Field template="XPUNCERRMSK">
+		</Field>
+	</CSR>
+	<CSR address="0x12204" alias="XPCORERRMSK">
+		<Field template="XPCORERRMSK">
+		</Field>
+	</CSR>
+	<CSR address="0x12214" alias="XPUNCERRPTR">
+		<Field template="XPUNCERRPTR">
+		</Field>
+	</CSR>
+	<CSR address="0x12210" alias="XPUNCERRSEV">
+		<Field template="XPUNCERRSEV">
+		</Field>
+	</CSR>
+	<CSR address="0x13224" alias="XPUNCEDMASK">
+		<Field template="XPUNCEDMASK">
+		</Field>
+	</CSR>
+	<CSR address="0x13228" alias="XPCOREDMASK">
+		<Field template="XPCOREDMASK">
+		</Field>
+	</CSR>
+	<CSR address="0x13208" alias="XPUNCERRSTS">
+		<Field template="XPUNCERRSTS">
+		</Field>
+	</CSR>
+	<CSR address="0x13200" alias="XPCORERRSTS">
+		<Field template="XPCORERRSTS">
+		</Field>
+	</CSR>
+	<CSR address="0x1320c" alias="XPUNCERRMSK">
+		<Field template="XPUNCERRMSK">
+		</Field>
+	</CSR>
+	<CSR address="0x13204" alias="XPCORERRMSK">
+		<Field template="XPCORERRMSK">
+		</Field>
+	</CSR>
+	<CSR address="0x13214" alias="XPUNCERRPTR">
+		<Field template="XPUNCERRPTR">
+		</Field>
+	</CSR>
+	<CSR address="0x13210" alias="XPUNCERRSEV">
+		<Field template="XPUNCERRSEV">
+		</Field>
+	</CSR>
+	<CSR address="0x18224" alias="XPUNCEDMASK">
+		<Field template="XPUNCEDMASK">
+		</Field>
+	</CSR>
+	<CSR address="0x18228" alias="XPCOREDMASK">
+		<Field template="XPCOREDMASK">
+		</Field>
+	</CSR>
+	<CSR address="0x18208" alias="XPUNCERRSTS">
+		<Field template="XPUNCERRSTS">
+		</Field>
+	</CSR>
+	<CSR address="0x18200" alias="XPCORERRSTS">
+		<Field template="XPCORERRSTS">
+		</Field>
+	</CSR>
+	<CSR address="0x1820c" alias="XPUNCERRMSK">
+		<Field template="XPUNCERRMSK">
+		</Field>
+	</CSR>
+	<CSR address="0x18204" alias="XPCORERRMSK">
+		<Field template="XPCORERRMSK">
+		</Field>
+	</CSR>
+	<CSR address="0x18214" alias="XPUNCERRPTR">
+		<Field template="XPUNCERRPTR">
+		</Field>
+	</CSR>
+	<CSR address="0x18210" alias="XPUNCERRSEV">
+		<Field template="XPUNCERRSEV">
+		</Field>
+	</CSR>
+	<CSR address="0x19224" alias="XPUNCEDMASK">
+		<Field template="XPUNCEDMASK">
+		</Field>
+	</CSR>
+	<CSR address="0x19228" alias="XPCOREDMASK">
+		<Field template="XPCOREDMASK">
+		</Field>
+	</CSR>
+	<CSR address="0x19208" alias="XPUNCERRSTS">
+		<Field template="XPUNCERRSTS">
+		</Field>
+	</CSR>
+	<CSR address="0x19200" alias="XPCORERRSTS">
+		<Field template="XPCORERRSTS">
+		</Field>
+	</CSR>
+	<CSR address="0x1920c" alias="XPUNCERRMSK">
+		<Field template="XPUNCERRMSK">
+		</Field>
+	</CSR>
+	<CSR address="0x19204" alias="XPCORERRMSK">
+		<Field template="XPCORERRMSK">
+		</Field>
+	</CSR>
+	<CSR address="0x19214" alias="XPUNCERRPTR">
+		<Field template="XPUNCERRPTR">
+		</Field>
+	</CSR>
+	<CSR address="0x19210" alias="XPUNCERRSEV">
+		<Field template="XPUNCERRSEV">
+		</Field>
+	</CSR>
+	<CSR address="0x1a224" alias="XPUNCEDMASK">
+		<Field template="XPUNCEDMASK">
+		</Field>
+	</CSR>
+	<CSR address="0x1a228" alias="XPCOREDMASK">
+		<Field template="XPCOREDMASK">
+		</Field>
+	</CSR>
+	<CSR address="0x1a208" alias="XPUNCERRSTS">
+		<Field template="XPUNCERRSTS">
+		</Field>
+	</CSR>
+	<CSR address="0x1a200" alias="XPCORERRSTS">
+		<Field template="XPCORERRSTS">
+		</Field>
+	</CSR>
+	<CSR address="0x1a20c" alias="XPUNCERRMSK">
+		<Field template="XPUNCERRMSK">
+		</Field>
+	</CSR>
+	<CSR address="0x1a204" alias="XPCORERRMSK">
+		<Field template="XPCORERRMSK">
+		</Field>
+	</CSR>
+	<CSR address="0x1a214" alias="XPUNCERRPTR">
+		<Field template="XPUNCERRPTR">
+		</Field>
+	</CSR>
+	<CSR address="0x1a210" alias="XPUNCERRSEV">
+		<Field template="XPUNCERRSEV">
+		</Field>
+	</CSR>
+	<CSR address="0x1b224" alias="XPUNCEDMASK">
+		<Field template="XPUNCEDMASK">
+		</Field>
+	</CSR>
+	<CSR address="0x1b228" alias="XPCOREDMASK">
+		<Field template="XPCOREDMASK">
+		</Field>
+	</CSR>
+	<CSR address="0x1b208" alias="XPUNCERRSTS">
+		<Field template="XPUNCERRSTS">
+		</Field>
+	</CSR>
+	<CSR address="0x1b200" alias="XPCORERRSTS">
+		<Field template="XPCORERRSTS">
+		</Field>
+	</CSR>
+	<CSR address="0x1b20c" alias="XPUNCERRMSK">
+		<Field template="XPUNCERRMSK">
+		</Field>
+	</CSR>
+	<CSR address="0x1b204" alias="XPCORERRMSK">
+		<Field template="XPCORERRMSK">
+		</Field>
+	</CSR>
+	<CSR address="0x1b214" alias="XPUNCERRPTR">
+		<Field template="XPUNCERRPTR">
+		</Field>
+	</CSR>
+	<CSR address="0x1b210" alias="XPUNCERRSEV">
+		<Field template="XPUNCERRSEV">
+		</Field>
+	</CSR>
+	<CSR address="0x2a1c8" alias="GERRCTL">
+		<Field bits="1:0">
+			<Match value="xx">IRP1 and IRP0 Protocol Error enable</Match>
+		</Field>
+		<Field bits="15:5">
+			<Match value="xxxxxxxxxx1">PCI Express Error enable Port 0</Match>
+			<Match value="xxxxxxxxx1x">PCI Express Error enable Port 1a</Match>
+			<Match value="xxxxxxxx1xx">PCI Express Error enable Port 1b</Match>
+			<Match value="xxxxxxx1xxx">PCI Express Error enable Port 2a</Match>
+			<Match value="xxxxxx1xxxx">PCI Express Error enable Port 2b</Match>
+			<Match value="xxxxx1xxxxx">PCI Express Error enable Port 2c</Match>
+			<Match value="xxxx1xxxxxx">PCI Express Error enable Port 2d</Match>
+			<Match value="xxx1xxxxxxx">PCI Express Error enable Port 3a</Match>
+			<Match value="xx1xxxxxxxx">PCI Express Error enable Port 3b</Match>
+			<Match value="x1xxxxxxxxx">PCI Express Error enable Port 3c</Match>
+			<Match value="1xxxxxxxxxx">PCI Express Error enable Port 3d</Match>
+		</Field>
+		<Field bits="25:20">
+			<Match value="xxxxx1">DMI2 Error Enable</Match>
+			<Match value="xx1xxx">IIO Core Error Enable</Match>
+			<Match value="x1xxxx">Miscellaneous Error Enable</Match>
+			<Match value="1xxxxx">Intel® VT-d Error Enable</Match>
+		</Field>
+	</CSR>
+	<CSR address="0x2a1c0" alias="GNERRST">
+		<Field bits="1:0">
+			<Match value="xx">IRP1 and IRP0 Protocol Error enable</Match>
+		</Field>
+		<Field bits="15:5">
+			<Match value="xxxxxxxxxx1">PCI Express Error enable Port 0</Match>
+			<Match value="xxxxxxxxx1x">PCI Express Error enable Port 1a</Match>
+			<Match value="xxxxxxxx1xx">PCI Express Error enable Port 1b</Match>
+			<Match value="xxxxxxx1xxx">PCI Express Error enable Port 2a</Match>
+			<Match value="xxxxxx1xxxx">PCI Express Error enable Port 2b</Match>
+			<Match value="xxxxx1xxxxx">PCI Express Error enable Port 2c</Match>
+			<Match value="xxxx1xxxxxx">PCI Express Error enable Port 2d</Match>
+			<Match value="xxx1xxxxxxx">PCI Express Error enable Port 3a</Match>
+			<Match value="xx1xxxxxxxx">PCI Express Error enable Port 3b</Match>
+			<Match value="x1xxxxxxxxx">PCI Express Error enable Port 3c</Match>
+			<Match value="1xxxxxxxxxx">PCI Express Error enable Port 3d</Match>
+		</Field>
+		<Field bits="25:20">
+			<Match value="xxxxx1">DMI2 Error Enable</Match>
+			<Match value="xx1xxx">IIO Core Error Enable</Match>
+			<Match value="x1xxxx">Miscellaneous Error Enable</Match>
+			<Match value="1xxxxx">Intel® VT-d Error Enable</Match>
+		</Field>
+	</CSR>
+	<CSR address="0x2a1c4" alias="GFERRST">
+		<Field bits="1:0">
+			<Match value="xx">IRP1 and IRP0 Protocol Error enable</Match>
+		</Field>
+		<Field bits="15:5">
+			<Match value="xxxxxxxxxx1">PCI Express Error enable Port 0</Match>
+			<Match value="xxxxxxxxx1x">PCI Express Error enable Port 1a</Match>
+			<Match value="xxxxxxxx1xx">PCI Express Error enable Port 1b</Match>
+			<Match value="xxxxxxx1xxx">PCI Express Error enable Port 2a</Match>
+			<Match value="xxxxxx1xxxx">PCI Express Error enable Port 2b</Match>
+			<Match value="xxxxx1xxxxx">PCI Express Error enable Port 2c</Match>
+			<Match value="xxxx1xxxxxx">PCI Express Error enable Port 2d</Match>
+			<Match value="xxx1xxxxxxx">PCI Express Error enable Port 3a</Match>
+			<Match value="xx1xxxxxxxx">PCI Express Error enable Port 3b</Match>
+			<Match value="x1xxxxxxxxx">PCI Express Error enable Port 3c</Match>
+			<Match value="1xxxxxxxxxx">PCI Express Error enable Port 3d</Match>
+		</Field>
+		<Field bits="25:20">
+			<Match value="xxxxx1">DMI2 Error Enable</Match>
+			<Match value="xx1xxx">IIO Core Error Enable</Match>
+			<Match value="x1xxxx">Miscellaneous Error Enable</Match>
+			<Match value="1xxxxx">Intel® VT-d Error Enable</Match>
+		</Field>
+	</CSR>
+	<CSR address="0x2a1dc" alias="GFFERRST">
+		<Field bits="24:0">
+			<Match value="xxxxxxxxxxxxxxxxxxxxxxxxx">Global Error Status Log %x</Match>
+		</Field>
+	</CSR>
+	<CSR address="0x2a1e8" alias="GFNERRST">
+		<Field bits="24:0">
+			<Match value="xxxxxxxxxxxxxxxxxxxxxxxxx">Global Error Status Log %x</Match>
+		</Field>
+	</CSR>
+	<CSR address="0x2a1ec" alias="GFNERRST">
+		<Field bits="24:0">
+			<Match value="xxxxxxxxxxxxxxxxxxxxxxxxx">Global Error Status Log %x</Match>
+		</Field>
+	</CSR>
+	<CSR address="0x2a1f8" alias="GFNERRST">
+		<Field bits="24:0">
+			<Match value="xxxxxxxxxxxxxxxxxxxxxxxxx">Global Error Status Log %x</Match>
+		</Field>
+	</CSR>
+	<CSR address="0x2a1d0" alias="GSYSCTL">
+		<Field bits="2:0">
+			<Match value="xx1">Severity 0 Error Status</Match>
+			<Match value="x1x">Severity 1 Error Status</Match>
+			<Match value="1xx">Severity 2 Error Enable</Match>
+		</Field>
+	</CSR>
+	<CSR address="0x2a1cc" alias="GSYSST">
+		<Field bits="2:0">
+			<Match value="xx1">Severity 0 Error Status</Match>
+			<Match value="x1x">Severity 1 Error Status</Match>
+			<Match value="1xx">Severity 2 Error Status</Match>
+		</Field>
+	</CSR>
+	<CSR address="0x2a094" alias="PCIERRSV">
+		<Field bits="1:0">
+			<Match value="10">Map this PCI-E error type to Error Severity 2</Match>
+			<Match value="01">Map this PCI-E error type to Error Severity 1</Match>
+			<Match value="00">Map this PCI-E error type to Error Severity 0</Match>
+		</Field>
+		<Field bits="3:2">
+			<Match value="10">Map this PCI-E error type to Error Severity 2</Match>
+			<Match value="01">Map this PCI-E error type to Error Severity 1</Match>
+			<Match value="00">Map this PCI-E error type to Error Severity 0</Match>
+		</Field>
+		<Field bits="5:4">
+			<Match value="10">Map this PCI-E error type to Error Severity 2</Match>
+			<Match value="01">Map this PCI-E error type to Error Severity 1</Match>
+			<Match value="00">Map this PCI-E error type to Error Severity 0</Match>
+		</Field>
+	</CSR>
+	<CSR address="0x2a0a4" alias="ERRPINCTL">
+		<Field bits="1:0">
+			<Match value="11">Reserved</Match>
+			<Match value="10">Assert Error Pin when error severity 2 is set in the system event status reg</Match>
+			<Match value="01">Assert and De-assert Error pin according to error pin data register</Match>
+			<Match value="00">Disable Error pin assertion</Match>
+		</Field>
+		<Field bits="3:2">
+			<Match value="11">Reserved</Match>
+			<Match value="10">Assert Error Pin when error severity 1is set in the system event status reg</Match>
+			<Match value="01">Assert and De-assert Error pin according to error pin data register</Match>
+			<Match value="00">Disable Error pin assertion </Match>
+		</Field>
+		<Field bits="5:4">
+			<Match value="11">Reserved</Match>
+			<Match value="10">Assert Error Pin when error severity 0 is set in the system event status reg</Match>
+			<Match value="01">Assert and De-assert Error pin according to error pin data register</Match>
+			<Match value="00">Disable Error pin assertion</Match>
+		</Field>
+	</CSR>
+	<CSR address="0x2a0a8" alias="ERRPINST">
+		<Field bits="2:0">
+			<Match value="xx1">ERROR_N[0] Pin Status</Match>
+			<Match value="x1x">ERROR_N[1] Pin Status</Match>
+			<Match value="1xx">ERROR_N[2] Pin Status</Match>
+		</Field>
+	</CSR>
+	<CSR address="0x2a090" alias="MIERRSV">
+		<Field bits="31:0">
+			<Match value="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx">%x</Match>
+		</Field>
+	</CSR>
+  <CSR address="0x2a09c" alias="SYSMAP"/>
+  <CSR address="0x218" alias="UNCEDMASK">
+		<Field template="UNCEDMASK">
+		</Field>
+	</CSR>
+	<CSR address="0x21c" alias="COREDMASK">
+		<Field template="COREDMASK">
+		</Field>
+	</CSR>
+	<CSR address="0x14c" alias="UNCERRSTS">
+		<Field template="UNCERRSTS">
+		</Field>
+	</CSR>
+	<CSR address="0x158" alias="CORERRSTS">
+		<Field template="CORERRSTS">
+		</Field>
+	</CSR>
+	<CSR address="0x150" alias="UNCERRMSK">
+		<Field template="UNCERRMSK">
+		</Field>
+	</CSR>
+	<CSR address="0x15C" alias="CORERRMSK">
+		<Field template="CORERRMSK">
+		</Field>
+	</CSR>
+	<CSR address="0x154" alias="UNCERRSEV">
+		<Field template="UNCERRSEV">
+		</Field>
+	</CSR>
+	<CSR address="0x164" alias="HDRLOG0">
+		<Field template="HDRLOG0">
+		</Field>
+	</CSR>
+	<CSR address="0x168" alias="HDRLOG1">
+		<Field template="HDRLOG1">
+		</Field>
+	</CSR>
+	<CSR address="0x16C" alias="HDRLOG2">
+		<Field template="HDRLOG2">
+		</Field>
+	</CSR>
+	<CSR address="0x170" alias="HDRLOG3">
+		<Field template="HDRLOG3">
+		</Field>
+	</CSR>
+	<CSR address="0x04" alias="PCICMD">
+		<Field template="PCICMD">
+		</Field>
+	</CSR>
+	<CSR address="0x06" alias="PCISTS">
+		<Field template="PCISTS">
+		</Field>
+	</CSR>
+	<CSR address="0x98" alias="DEVCTRL">
+		<Field template="DEVCTRL">
+		</Field>
+	</CSR>
+	<CSR address="0xac" alias="ROOTCON">
+		<Field template="ROOTCON">
+		</Field>
+	</CSR>
+	<CSR address="0x188" alias="MISCCTRLSTS">
+		<Field template="MISCCTRLSTS">
+		</Field>
+	</CSR>
+	<CSR address="0x230" alias="XPGLBERRSTS">
+		<Field template="XPGLBERRSTS">
+		</Field>
+	</CSR>
+	<CSR address="0x232" alias="XPGLBERRPTR">
+		<Field template="XPGLBERRPTR">
+		</Field>
+	</CSR>
+	<CSR address="0x1e" alias="SECSTS">
+		<Field template="SECSTS">
+		</Field>
+	</CSR>
+	<CSR address="0x3e" alias="BCTRL">
+		<Field template="BCTRL">
+		</Field>
+	</CSR>
+	<CSR address="0x9a" alias="DEVSTS">
+		<Field template="DEVSTS">
+		</Field>
+	</CSR>
+	<CSR address="0x8218" alias="UNCEDMASK">
+		<Field template="UNCEDMASK">
+		</Field>
+	</CSR>
+	<CSR address="0x821c" alias="COREDMASK">
+		<Field template="COREDMASK">
+		</Field>
+	</CSR>
+	<CSR address="0x814c" alias="UNCERRSTS">
+		<Field template="UNCERRSTS">
+		</Field>
+	</CSR>
+	<CSR address="0x8158" alias="CORERRSTS">
+		<Field template="CORERRSTS">
+		</Field>
+	</CSR>
+	<CSR address="0x8150" alias="UNCERRMSK">
+		<Field template="UNCERRMSK">
+		</Field>
+	</CSR>
+	<CSR address="0x815C" alias="CORERRMSK">
+		<Field template="CORERRMSK">
+		</Field>
+	</CSR>
+	<CSR address="0x8154" alias="UNCERRSEV">
+		<Field template="UNCERRSEV">
+		</Field>
+	</CSR>
+	<CSR address="0x8164" alias="HDRLOG0">
+		<Field template="HDRLOG0">
+		</Field>
+	</CSR>
+	<CSR address="0x8168" alias="HDRLOG1">
+		<Field template="HDRLOG1">
+		</Field>
+	</CSR>
+	<CSR address="0x816C" alias="HDRLOG2">
+		<Field template="HDRLOG2">
+		</Field>
+	</CSR>
+	<CSR address="0x8170" alias="HDRLOG3">
+		<Field template="HDRLOG3">
+		</Field>
+	</CSR>
+	<CSR address="0x8004" alias="PCICMD">
+		<Field template="PCICMD">
+		</Field>
+	</CSR>
+	<CSR address="0x8006" alias="PCISTS">
+		<Field template="PCISTS">
+		</Field>
+	</CSR>
+	<CSR address="0x8098" alias="DEVCTRL">
+		<Field template="DEVCTRL">
+		</Field>
+	</CSR>
+	<CSR address="0x80ac" alias="ROOTCON">
+		<Field template="ROOTCON">
+		</Field>
+	</CSR>
+	<CSR address="0x8188" alias="MISCCTRLSTS">
+		<Field template="MISCCTRLSTS">
+		</Field>
+	</CSR>
+	<CSR address="0x8230" alias="XPGLBERRSTS">
+		<Field template="XPGLBERRSTS">
+		</Field>
+	</CSR>
+	<CSR address="0x8232" alias="XPGLBERRPTR">
+		<Field template="XPGLBERRPTR">
+		</Field>
+	</CSR>
+	<CSR address="0x801e" alias="SECSTS">
+		<Field template="SECSTS">
+		</Field>
+	</CSR>
+	<CSR address="0x803e" alias="BCTRL">
+		<Field template="BCTRL">
+		</Field>
+	</CSR>
+	<CSR address="0x809a" alias="DEVSTS">
+		<Field template="DEVSTS">
+		</Field>
+	</CSR>
+	<CSR address="0x9218" alias="UNCEDMASK">
+		<Field template="UNCEDMASK">
+		</Field>
+	</CSR>
+	<CSR address="0x921c" alias="COREDMASK">
+		<Field template="COREDMASK">
+		</Field>
+	</CSR>
+	<CSR address="0x914c" alias="UNCERRSTS">
+		<Field template="UNCERRSTS">
+		</Field>
+	</CSR>
+	<CSR address="0x9158" alias="CORERRSTS">
+		<Field template="CORERRSTS">
+		</Field>
+	</CSR>
+	<CSR address="0x9150" alias="UNCERRMSK">
+		<Field template="UNCERRMSK">
+		</Field>
+	</CSR>
+	<CSR address="0x915C" alias="CORERRMSK">
+		<Field template="CORERRMSK">
+		</Field>
+	</CSR>
+	<CSR address="0x9154" alias="UNCERRSEV">
+		<Field template="UNCERRSEV">
+		</Field>
+	</CSR>
+	<CSR address="0x9164" alias="HDRLOG0">
+		<Field template="HDRLOG0">
+		</Field>
+	</CSR>
+	<CSR address="0x9168" alias="HDRLOG1">
+		<Field template="HDRLOG1">
+		</Field>
+	</CSR>
+	<CSR address="0x916C" alias="HDRLOG2">
+		<Field template="HDRLOG2">
+		</Field>
+	</CSR>
+	<CSR address="0x9170" alias="HDRLOG3">
+		<Field template="HDRLOG3">
+		</Field>
+	</CSR>
+	<CSR address="0x9004" alias="PCICMD">
+		<Field template="PCICMD">
+		</Field>
+	</CSR>
+	<CSR address="0x9006" alias="PCISTS">
+		<Field template="PCISTS">
+		</Field>
+	</CSR>
+	<CSR address="0x9098" alias="DEVCTRL">
+		<Field template="DEVCTRL">
+		</Field>
+	</CSR>
+	<CSR address="0x90ac" alias="ROOTCON">
+		<Field template="ROOTCON">
+		</Field>
+	</CSR>
+	<CSR address="0x9188" alias="MISCCTRLSTS">
+		<Field template="MISCCTRLSTS">
+		</Field>
+	</CSR>
+	<CSR address="0x9230" alias="XPGLBERRSTS">
+		<Field template="XPGLBERRSTS">
+		</Field>
+	</CSR>
+	<CSR address="0x9232" alias="XPGLBERRPTR">
+		<Field template="XPGLBERRPTR">
+		</Field>
+	</CSR>
+	<CSR address="0x901e" alias="SECSTS">
+		<Field template="SECSTS">
+		</Field>
+	</CSR>
+	<CSR address="0x903e" alias="BCTRL">
+		<Field template="BCTRL">
+		</Field>
+	</CSR>
+	<CSR address="0x909a" alias="DEVSTS">
+		<Field template="DEVSTS">
+		</Field>
+	</CSR>
+	<CSR address="0x10218" alias="UNCEDMASK">
+		<Field template="UNCEDMASK">
+		</Field>
+	</CSR>
+	<CSR address="0x1021c" alias="COREDMASK">
+		<Field template="COREDMASK">
+		</Field>
+	</CSR>
+	<CSR address="0x1014c" alias="UNCERRSTS">
+		<Field template="UNCERRSTS">
+		</Field>
+	</CSR>
+	<CSR address="0x10158" alias="CORERRSTS">
+		<Field template="CORERRSTS">
+		</Field>
+	</CSR>
+	<CSR address="0x10150" alias="UNCERRMSK">
+		<Field template="UNCERRMSK">
+		</Field>
+	</CSR>
+	<CSR address="0x1015C" alias="CORERRMSK">
+		<Field template="CORERRMSK">
+		</Field>
+	</CSR>
+	<CSR address="0x10154" alias="UNCERRSEV">
+		<Field template="UNCERRSEV">
+		</Field>
+	</CSR>
+	<CSR address="0x10164" alias="HDRLOG0">
+		<Field template="HDRLOG0">
+		</Field>
+	</CSR>
+	<CSR address="0x10168" alias="HDRLOG1">
+		<Field template="HDRLOG1">
+		</Field>
+	</CSR>
+	<CSR address="0x1016C" alias="HDRLOG2">
+		<Field template="HDRLOG2">
+		</Field>
+	</CSR>
+	<CSR address="0x10170" alias="HDRLOG3">
+		<Field template="HDRLOG3">
+		</Field>
+	</CSR>
+	<CSR address="0x10004" alias="PCICMD">
+		<Field template="PCICMD">
+		</Field>
+	</CSR>
+	<CSR address="0x10006" alias="PCISTS">
+		<Field template="PCISTS">
+		</Field>
+	</CSR>
+	<CSR address="0x10098" alias="DEVCTRL">
+		<Field template="DEVCTRL">
+		</Field>
+	</CSR>
+	<CSR address="0x100ac" alias="ROOTCON">
+		<Field template="ROOTCON">
+		</Field>
+	</CSR>
+	<CSR address="0x10188" alias="MISCCTRLSTS">
+		<Field template="MISCCTRLSTS">
+		</Field>
+	</CSR>
+	<CSR address="0x10230" alias="XPGLBERRSTS">
+		<Field template="XPGLBERRSTS">
+		</Field>
+	</CSR>
+	<CSR address="0x10232" alias="XPGLBERRPTR">
+		<Field template="XPGLBERRPTR">
+		</Field>
+	</CSR>
+	<CSR address="0x1001e" alias="SECSTS">
+		<Field template="SECSTS">
+		</Field>
+	</CSR>
+	<CSR address="0x1003e" alias="BCTRL">
+		<Field template="BCTRL">
+		</Field>
+	</CSR>
+	<CSR address="0x1009a" alias="DEVSTS">
+		<Field template="DEVSTS">
+		</Field>
+	</CSR>
+	<CSR address="0x11218" alias="UNCEDMASK">
+		<Field template="UNCEDMASK">
+		</Field>
+	</CSR>
+	<CSR address="0x1121c" alias="COREDMASK">
+		<Field template="COREDMASK">
+		</Field>
+	</CSR>
+	<CSR address="0x1114c" alias="UNCERRSTS">
+		<Field template="UNCERRSTS">
+		</Field>
+	</CSR>
+	<CSR address="0x11158" alias="CORERRSTS">
+		<Field template="CORERRSTS">
+		</Field>
+	</CSR>
+	<CSR address="0x11150" alias="UNCERRMSK">
+		<Field template="UNCERRMSK">
+		</Field>
+	</CSR>
+	<CSR address="0x1115C" alias="CORERRMSK">
+		<Field template="CORERRMSK">
+		</Field>
+	</CSR>
+	<CSR address="0x11154" alias="UNCERRSEV">
+		<Field template="UNCERRSEV">
+		</Field>
+	</CSR>
+	<CSR address="0x11164" alias="HDRLOG0">
+		<Field template="HDRLOG0">
+		</Field>
+	</CSR>
+	<CSR address="0x11168" alias="HDRLOG1">
+		<Field template="HDRLOG1">
+		</Field>
+	</CSR>
+	<CSR address="0x1116C" alias="HDRLOG2">
+		<Field template="HDRLOG2">
+		</Field>
+	</CSR>
+	<CSR address="0x11170" alias="HDRLOG3">
+		<Field template="HDRLOG3">
+		</Field>
+	</CSR>
+	<CSR address="0x11004" alias="PCICMD">
+		<Field template="PCICMD">
+		</Field>
+	</CSR>
+	<CSR address="0x11006" alias="PCISTS">
+		<Field template="PCISTS">
+		</Field>
+	</CSR>
+	<CSR address="0x11098" alias="DEVCTRL">
+		<Field template="DEVCTRL">
+		</Field>
+	</CSR>
+	<CSR address="0x110ac" alias="ROOTCON">
+		<Field template="ROOTCON">
+		</Field>
+	</CSR>
+	<CSR address="0x11188" alias="MISCCTRLSTS">
+		<Field template="MISCCTRLSTS">
+		</Field>
+	</CSR>
+	<CSR address="0x11230" alias="XPGLBERRSTS">
+		<Field template="XPGLBERRSTS">
+		</Field>
+	</CSR>
+	<CSR address="0x11232" alias="XPGLBERRPTR">
+		<Field template="XPGLBERRPTR">
+		</Field>
+	</CSR>
+	<CSR address="0x1101e" alias="SECSTS">
+		<Field template="SECSTS">
+		</Field>
+	</CSR>
+	<CSR address="0x1103e" alias="BCTRL">
+		<Field template="BCTRL">
+		</Field>
+	</CSR>
+	<CSR address="0x1109a" alias="DEVSTS">
+		<Field template="DEVSTS">
+		</Field>
+	</CSR>
+	<CSR address="0x12218" alias="UNCEDMASK">
+		<Field template="UNCEDMASK">
+		</Field>
+	</CSR>
+	<CSR address="0x1221c" alias="COREDMASK">
+		<Field template="COREDMASK">
+		</Field>
+	</CSR>
+	<CSR address="0x1214c" alias="UNCERRSTS">
+		<Field template="UNCERRSTS">
+		</Field>
+	</CSR>
+	<CSR address="0x12158" alias="CORERRSTS">
+		<Field template="CORERRSTS">
+		</Field>
+	</CSR>
+	<CSR address="0x12150" alias="UNCERRMSK">
+		<Field template="UNCERRMSK">
+		</Field>
+	</CSR>
+	<CSR address="0x1215C" alias="CORERRMSK">
+		<Field template="CORERRMSK">
+		</Field>
+	</CSR>
+	<CSR address="0x12154" alias="UNCERRSEV">
+		<Field template="UNCERRSEV">
+		</Field>
+	</CSR>
+	<CSR address="0x12164" alias="HDRLOG0">
+		<Field template="HDRLOG0">
+		</Field>
+	</CSR>
+	<CSR address="0x12168" alias="HDRLOG1">
+		<Field template="HDRLOG1">
+		</Field>
+	</CSR>
+	<CSR address="0x1216C" alias="HDRLOG2">
+		<Field template="HDRLOG2">
+		</Field>
+	</CSR>
+	<CSR address="0x12170" alias="HDRLOG3">
+		<Field template="HDRLOG3">
+		</Field>
+	</CSR>
+	<CSR address="0x12004" alias="PCICMD">
+		<Field template="PCICMD">
+		</Field>
+	</CSR>
+	<CSR address="0x12006" alias="PCISTS">
+		<Field template="PCISTS">
+		</Field>
+	</CSR>
+	<CSR address="0x12098" alias="DEVCTRL">
+		<Field template="DEVCTRL">
+		</Field>
+	</CSR>
+	<CSR address="0x120ac" alias="ROOTCON">
+		<Field template="ROOTCON">
+		</Field>
+	</CSR>
+	<CSR address="0x12188" alias="MISCCTRLSTS">
+		<Field template="MISCCTRLSTS">
+		</Field>
+	</CSR>
+	<CSR address="0x12230" alias="XPGLBERRSTS">
+		<Field template="XPGLBERRSTS">
+		</Field>
+	</CSR>
+	<CSR address="0x12232" alias="XPGLBERRPTR">
+		<Field template="XPGLBERRPTR">
+		</Field>
+	</CSR>
+	<CSR address="0x1201e" alias="SECSTS">
+		<Field template="SECSTS">
+		</Field>
+	</CSR>
+	<CSR address="0x1203e" alias="BCTRL">
+		<Field template="BCTRL">
+		</Field>
+	</CSR>
+	<CSR address="0x1209a" alias="DEVSTS">
+		<Field template="DEVSTS">
+		</Field>
+	</CSR>
+	<CSR address="0x13218" alias="UNCEDMASK">
+		<Field template="UNCEDMASK">
+		</Field>
+	</CSR>
+	<CSR address="0x1321c" alias="COREDMASK">
+		<Field template="COREDMASK">
+		</Field>
+	</CSR>
+	<CSR address="0x1314c" alias="UNCERRSTS">
+		<Field template="UNCERRSTS">
+		</Field>
+	</CSR>
+	<CSR address="0x13158" alias="CORERRSTS">
+		<Field template="CORERRSTS">
+		</Field>
+	</CSR>
+	<CSR address="0x13150" alias="UNCERRMSK">
+		<Field template="UNCERRMSK">
+		</Field>
+	</CSR>
+	<CSR address="0x1315C" alias="CORERRMSK">
+		<Field template="CORERRMSK">
+		</Field>
+	</CSR>
+	<CSR address="0x13154" alias="UNCERRSEV">
+		<Field template="UNCERRSEV">
+		</Field>
+	</CSR>
+	<CSR address="0x13164" alias="HDRLOG0">
+		<Field template="HDRLOG0">
+		</Field>
+	</CSR>
+	<CSR address="0x13168" alias="HDRLOG1">
+		<Field template="HDRLOG1">
+		</Field>
+	</CSR>
+	<CSR address="0x1316C" alias="HDRLOG2">
+		<Field template="HDRLOG2">
+		</Field>
+	</CSR>
+	<CSR address="0x13170" alias="HDRLOG3">
+		<Field template="HDRLOG3">
+		</Field>
+	</CSR>
+	<CSR address="0x13004" alias="PCICMD">
+		<Field template="PCICMD">
+		</Field>
+	</CSR>
+	<CSR address="0x13006" alias="PCISTS">
+		<Field template="PCISTS">
+		</Field>
+	</CSR>
+	<CSR address="0x13098" alias="DEVCTRL">
+		<Field template="DEVCTRL">
+		</Field>
+	</CSR>
+	<CSR address="0x130ac" alias="ROOTCON">
+		<Field template="ROOTCON">
+		</Field>
+	</CSR>
+	<CSR address="0x13188" alias="MISCCTRLSTS">
+		<Field template="MISCCTRLSTS">
+		</Field>
+	</CSR>
+	<CSR address="0x13230" alias="XPGLBERRSTS">
+		<Field template="XPGLBERRSTS">
+		</Field>
+	</CSR>
+	<CSR address="0x13232" alias="XPGLBERRPTR">
+		<Field template="XPGLBERRPTR">
+		</Field>
+	</CSR>
+	<CSR address="0x1301e" alias="SECSTS">
+		<Field template="SECSTS">
+		</Field>
+	</CSR>
+	<CSR address="0x1303e" alias="BCTRL">
+		<Field template="BCTRL">
+		</Field>
+	</CSR>
+	<CSR address="0x1309a" alias="DEVSTS">
+		<Field template="DEVSTS">
+		</Field>
+	</CSR>
+	<CSR address="0x18218" alias="UNCEDMASK">
+		<Field template="UNCEDMASK">
+		</Field>
+	</CSR>
+	<CSR address="0x1821c" alias="COREDMASK">
+		<Field template="COREDMASK">
+		</Field>
+	</CSR>
+	<CSR address="0x1814c" alias="UNCERRSTS">
+		<Field template="UNCERRSTS">
+		</Field>
+	</CSR>
+	<CSR address="0x18158" alias="CORERRSTS">
+		<Field template="CORERRSTS">
+		</Field>
+	</CSR>
+	<CSR address="0x18150" alias="UNCERRMSK">
+		<Field template="UNCERRMSK">
+		</Field>
+	</CSR>
+	<CSR address="0x1815C" alias="CORERRMSK">
+		<Field template="CORERRMSK">
+		</Field>
+	</CSR>
+	<CSR address="0x18154" alias="UNCERRSEV">
+		<Field template="UNCERRSEV">
+		</Field>
+	</CSR>
+	<CSR address="0x18164" alias="HDRLOG0">
+		<Field template="HDRLOG0">
+		</Field>
+	</CSR>
+	<CSR address="0x18168" alias="HDRLOG1">
+		<Field template="HDRLOG1">
+		</Field>
+	</CSR>
+	<CSR address="0x1816C" alias="HDRLOG2">
+		<Field template="HDRLOG2">
+		</Field>
+	</CSR>
+	<CSR address="0x18170" alias="HDRLOG3">
+		<Field template="HDRLOG3">
+		</Field>
+	</CSR>
+	<CSR address="0x18004" alias="PCICMD">
+		<Field template="PCICMD">
+		</Field>
+	</CSR>
+	<CSR address="0x18006" alias="PCISTS">
+		<Field template="PCISTS">
+		</Field>
+	</CSR>
+	<CSR address="0x18098" alias="DEVCTRL">
+		<Field template="DEVCTRL">
+		</Field>
+	</CSR>
+	<CSR address="0x180ac" alias="ROOTCON">
+		<Field template="ROOTCON">
+		</Field>
+	</CSR>
+	<CSR address="0x18188" alias="MISCCTRLSTS">
+		<Field template="MISCCTRLSTS">
+		</Field>
+	</CSR>
+	<CSR address="0x18230" alias="XPGLBERRSTS">
+		<Field template="XPGLBERRSTS">
+		</Field>
+	</CSR>
+	<CSR address="0x18232" alias="XPGLBERRPTR">
+		<Field template="XPGLBERRPTR">
+		</Field>
+	</CSR>
+	<CSR address="0x1801e" alias="SECSTS">
+		<Field template="SECSTS">
+		</Field>
+	</CSR>
+	<CSR address="0x1803e" alias="BCTRL">
+		<Field template="BCTRL">
+		</Field>
+	</CSR>
+	<CSR address="0x1809a" alias="DEVSTS">
+		<Field template="DEVSTS">
+		</Field>
+	</CSR>
+	<CSR address="0x19218" alias="UNCEDMASK">
+		<Field template="UNCEDMASK">
+		</Field>
+	</CSR>
+	<CSR address="0x1921c" alias="COREDMASK">
+		<Field template="COREDMASK">
+		</Field>
+	</CSR>
+	<CSR address="0x1914c" alias="UNCERRSTS">
+		<Field template="UNCERRSTS">
+		</Field>
+	</CSR>
+	<CSR address="0x19158" alias="CORERRSTS">
+		<Field template="CORERRSTS">
+		</Field>
+	</CSR>
+	<CSR address="0x19150" alias="UNCERRMSK">
+		<Field template="UNCERRMSK">
+		</Field>
+	</CSR>
+	<CSR address="0x1915C" alias="CORERRMSK">
+		<Field template="CORERRMSK">
+		</Field>
+	</CSR>
+	<CSR address="0x19154" alias="UNCERRSEV">
+		<Field template="UNCERRSEV">
+		</Field>
+	</CSR>
+	<CSR address="0x19164" alias="HDRLOG0">
+		<Field template="HDRLOG0">
+		</Field>
+	</CSR>
+	<CSR address="0x19168" alias="HDRLOG1">
+		<Field template="HDRLOG1">
+		</Field>
+	</CSR>
+	<CSR address="0x1916C" alias="HDRLOG2">
+		<Field template="HDRLOG2">
+		</Field>
+	</CSR>
+	<CSR address="0x19170" alias="HDRLOG3">
+		<Field template="HDRLOG3">
+		</Field>
+	</CSR>
+	<CSR address="0x19004" alias="PCICMD">
+		<Field template="PCICMD">
+		</Field>
+	</CSR>
+	<CSR address="0x19006" alias="PCISTS">
+		<Field template="PCISTS">
+		</Field>
+	</CSR>
+	<CSR address="0x19098" alias="DEVCTRL">
+		<Field template="DEVCTRL">
+		</Field>
+	</CSR>
+	<CSR address="0x190ac" alias="ROOTCON">
+		<Field template="ROOTCON">
+		</Field>
+	</CSR>
+	<CSR address="0x19188" alias="MISCCTRLSTS">
+		<Field template="MISCCTRLSTS">
+		</Field>
+	</CSR>
+	<CSR address="0x19230" alias="XPGLBERRSTS">
+		<Field template="XPGLBERRSTS">
+		</Field>
+	</CSR>
+	<CSR address="0x19232" alias="XPGLBERRPTR">
+		<Field template="XPGLBERRPTR">
+		</Field>
+	</CSR>
+	<CSR address="0x1901e" alias="SECSTS">
+		<Field template="SECSTS">
+		</Field>
+	</CSR>
+	<CSR address="0x1903e" alias="BCTRL">
+		<Field template="BCTRL">
+		</Field>
+	</CSR>
+	<CSR address="0x1909a" alias="DEVSTS">
+		<Field template="DEVSTS">
+		</Field>
+	</CSR>
+	<CSR address="0x1a218" alias="UNCEDMASK">
+		<Field template="UNCEDMASK">
+		</Field>
+	</CSR>
+	<CSR address="0x1a21c" alias="COREDMASK">
+		<Field template="COREDMASK">
+		</Field>
+	</CSR>
+	<CSR address="0x1a14c" alias="UNCERRSTS">
+		<Field template="UNCERRSTS">
+		</Field>
+	</CSR>
+	<CSR address="0x1a158" alias="CORERRSTS">
+		<Field template="CORERRSTS">
+		</Field>
+	</CSR>
+	<CSR address="0x1a150" alias="UNCERRMSK">
+		<Field template="UNCERRMSK">
+		</Field>
+	</CSR>
+	<CSR address="0x1a15C" alias="CORERRMSK">
+		<Field template="CORERRMSK">
+		</Field>
+	</CSR>
+	<CSR address="0x1a154" alias="UNCERRSEV">
+		<Field template="UNCERRSEV">
+		</Field>
+	</CSR>
+	<CSR address="0x1a164" alias="HDRLOG0">
+		<Field template="HDRLOG0">
+		</Field>
+	</CSR>
+	<CSR address="0x1a168" alias="HDRLOG1">
+		<Field template="HDRLOG1">
+		</Field>
+	</CSR>
+	<CSR address="0x1a16C" alias="HDRLOG2">
+		<Field template="HDRLOG2">
+		</Field>
+	</CSR>
+	<CSR address="0x1a170" alias="HDRLOG3">
+		<Field template="HDRLOG3">
+		</Field>
+	</CSR>
+	<CSR address="0x1a004" alias="PCICMD">
+		<Field template="PCICMD">
+		</Field>
+	</CSR>
+	<CSR address="0x1a006" alias="PCISTS">
+		<Field template="PCISTS">
+		</Field>
+	</CSR>
+	<CSR address="0x1a098" alias="DEVCTRL">
+		<Field template="DEVCTRL">
+		</Field>
+	</CSR>
+	<CSR address="0x1a0ac" alias="ROOTCON">
+		<Field template="ROOTCON">
+		</Field>
+	</CSR>
+	<CSR address="0x1a188" alias="MISCCTRLSTS">
+		<Field template="MISCCTRLSTS">
+		</Field>
+	</CSR>
+	<CSR address="0x1a230" alias="XPGLBERRSTS">
+		<Field template="XPGLBERRSTS">
+		</Field>
+	</CSR>
+	<CSR address="0x1a232" alias="XPGLBERRPTR">
+		<Field template="XPGLBERRPTR">
+		</Field>
+	</CSR>
+	<CSR address="0x1a01e" alias="SECSTS">
+		<Field template="SECSTS">
+		</Field>
+	</CSR>
+	<CSR address="0x1a03e" alias="BCTRL">
+		<Field template="BCTRL">
+		</Field>
+	</CSR>
+	<CSR address="0x1a09a" alias="DEVSTS">
+		<Field template="DEVSTS">
+		</Field>
+	</CSR>
+	<CSR address="0x1b218" alias="UNCEDMASK">
+		<Field template="UNCEDMASK">
+		</Field>
+	</CSR>
+	<CSR address="0x1b21c" alias="COREDMASK">
+		<Field template="COREDMASK">
+		</Field>
+	</CSR>
+	<CSR address="0x1b14c" alias="UNCERRSTS">
+		<Field template="UNCERRSTS">
+		</Field>
+	</CSR>
+	<CSR address="0x1b158" alias="CORERRSTS">
+		<Field template="CORERRSTS">
+		</Field>
+	</CSR>
+	<CSR address="0x1b150" alias="UNCERRMSK">
+		<Field template="UNCERRMSK">
+		</Field>
+	</CSR>
+	<CSR address="0x1b15C" alias="CORERRMSK">
+		<Field template="CORERRMSK">
+		</Field>
+	</CSR>
+	<CSR address="0x1b154" alias="UNCERRSEV">
+		<Field template="UNCERRSEV">
+		</Field>
+	</CSR>
+	<CSR address="0x1b164" alias="HDRLOG0">
+		<Field template="HDRLOG0">
+		</Field>
+	</CSR>
+	<CSR address="0x1b168" alias="HDRLOG1">
+		<Field template="HDRLOG1">
+		</Field>
+	</CSR>
+	<CSR address="0x1b16C" alias="HDRLOG2">
+		<Field template="HDRLOG2">
+		</Field>
+	</CSR>
+	<CSR address="0x1b170" alias="HDRLOG3">
+		<Field template="HDRLOG3">
+		</Field>
+	</CSR>
+	<CSR address="0x1b004" alias="PCICMD">
+		<Field template="PCICMD">
+		</Field>
+	</CSR>
+	<CSR address="0x1b006" alias="PCISTS">
+		<Field template="PCISTS">
+		</Field>
+	</CSR>
+	<CSR address="0x1b098" alias="DEVCTRL">
+		<Field template="DEVCTRL">
+		</Field>
+	</CSR>
+	<CSR address="0x1b0ac" alias="ROOTCON">
+		<Field template="ROOTCON">
+		</Field>
+	</CSR>
+	<CSR address="0x1b188" alias="MISCCTRLSTS">
+		<Field template="MISCCTRLSTS">
+		</Field>
+	</CSR>
+	<CSR address="0x1b230" alias="XPGLBERRSTS">
+		<Field template="XPGLBERRSTS">
+		</Field>
+	</CSR>
+	<CSR address="0x1b232" alias="XPGLBERRPTR">
+		<Field template="XPGLBERRPTR">
+		</Field>
+	</CSR>
+	<CSR address="0x1b01e" alias="SECSTS">
+		<Field template="SECSTS">
+		</Field>
+	</CSR>
+	<CSR address="0x1b03e" alias="BCTRL">
+		<Field template="BCTRL">
+		</Field>
+	</CSR>
+	<CSR address="0x1b09a" alias="DEVSTS">
+		<Field template="DEVSTS">
+		</Field>
+	</CSR>
+	<CSR address="0x174" alias="RPERRCMD">
+		<Field template="RPERRCMD">
+		</Field>
+	</CSR>
+	<CSR address="0x178" alias="RPERRSTS">
+		<Field template="RPERRSTS">
+		</Field>
+	</CSR>
+	<CSR address="0x17c" alias="ERRSID">
+		<Field template="ERRSID">
+		</Field>
+	</CSR>
+	<CSR address="0x188" alias="MISCCTRLSTS">
+		<Field template="MISCCTRLSTS">
+		</Field>
+	</CSR>
+	<CSR address="0x70" alias="MISIPENDING">
+		<Field template="MISIPENDING">
+		</Field>
+	</CSR>
+	<CSR address="0x8174" alias="RPERRCMD">
+		<Field template="RPERRCMD">
+		</Field>
+	</CSR>
+	<CSR address="0x8178" alias="RPERRSTS">
+		<Field template="RPERRSTS">
+		</Field>
+	</CSR>
+	<CSR address="0x817c" alias="ERRSID">
+		<Field template="ERRSID">
+		</Field>
+	</CSR>
+	<CSR address="0x8188" alias="MISCCTRLSTS">
+		<Field template="MISCCTRLSTS">
+		</Field>
+	</CSR>
+	<CSR address="0x8070" alias="MISIPENDING">
+		<Field template="MISIPENDING">
+		</Field>
+	</CSR>
+	<CSR address="0x9174" alias="RPERRCMD">
+		<Field template="RPERRCMD">
+		</Field>
+	</CSR>
+	<CSR address="0x9178" alias="RPERRSTS">
+		<Field template="RPERRSTS">
+		</Field>
+	</CSR>
+	<CSR address="0x917c" alias="ERRSID">
+		<Field template="ERRSID">
+		</Field>
+	</CSR>
+	<CSR address="0x9188" alias="MISCCTRLSTS">
+		<Field template="MISCCTRLSTS">
+		</Field>
+	</CSR>
+	<CSR address="0x9070" alias="MISIPENDING">
+		<Field template="MISIPENDING">
+		</Field>
+	</CSR>
+	<CSR address="0x10174" alias="RPERRCMD">
+		<Field template="RPERRCMD">
+		</Field>
+	</CSR>
+	<CSR address="0x10178" alias="RPERRSTS">
+		<Field template="RPERRSTS">
+		</Field>
+	</CSR>
+	<CSR address="0x1017c" alias="ERRSID">
+		<Field template="ERRSID">
+		</Field>
+	</CSR>
+	<CSR address="0x10188" alias="MISCCTRLSTS">
+		<Field template="MISCCTRLSTS">
+		</Field>
+	</CSR>
+	<CSR address="0x10070" alias="MISIPENDING">
+		<Field template="MISIPENDING">
+		</Field>
+	</CSR>
+	<CSR address="0x11174" alias="RPERRCMD">
+		<Field template="RPERRCMD">
+		</Field>
+	</CSR>
+	<CSR address="0x11178" alias="RPERRSTS">
+		<Field template="RPERRSTS">
+		</Field>
+	</CSR>
+	<CSR address="0x1117c" alias="ERRSID">
+		<Field template="ERRSID">
+		</Field>
+	</CSR>
+	<CSR address="0x11188" alias="MISCCTRLSTS">
+		<Field template="MISCCTRLSTS">
+		</Field>
+	</CSR>
+	<CSR address="0x11070" alias="MISIPENDING">
+		<Field template="MISIPENDING">
+		</Field>
+	</CSR>
+	<CSR address="0x12174" alias="RPERRCMD">
+		<Field template="RPERRCMD">
+		</Field>
+	</CSR>
+	<CSR address="0x12178" alias="RPERRSTS">
+		<Field template="RPERRSTS">
+		</Field>
+	</CSR>
+	<CSR address="0x1217c" alias="ERRSID">
+		<Field template="ERRSID">
+		</Field>
+	</CSR>
+	<CSR address="0x12188" alias="MISCCTRLSTS">
+		<Field template="MISCCTRLSTS">
+		</Field>
+	</CSR>
+	<CSR address="0x12070" alias="MISIPENDING">
+		<Field template="MISIPENDING">
+		</Field>
+	</CSR>
+	<CSR address="0x13174" alias="RPERRCMD">
+		<Field template="RPERRCMD">
+		</Field>
+	</CSR>
+	<CSR address="0x13178" alias="RPERRSTS">
+		<Field template="RPERRSTS">
+		</Field>
+	</CSR>
+	<CSR address="0x1317c" alias="ERRSID">
+		<Field template="ERRSID">
+		</Field>
+	</CSR>
+	<CSR address="0x13188" alias="MISCCTRLSTS">
+		<Field template="MISCCTRLSTS">
+		</Field>
+	</CSR>
+	<CSR address="0x13070" alias="MISIPENDING">
+		<Field template="MISIPENDING">
+		</Field>
+	</CSR>
+	<CSR address="0x18174" alias="RPERRCMD">
+		<Field template="RPERRCMD">
+		</Field>
+	</CSR>
+	<CSR address="0x18178" alias="RPERRSTS">
+		<Field template="RPERRSTS">
+		</Field>
+	</CSR>
+	<CSR address="0x1817c" alias="ERRSID">
+		<Field template="ERRSID">
+		</Field>
+	</CSR>
+	<CSR address="0x18188" alias="MISCCTRLSTS">
+		<Field template="MISCCTRLSTS">
+		</Field>
+	</CSR>
+	<CSR address="0x18070" alias="MISIPENDING">
+		<Field template="MISIPENDING">
+		</Field>
+	</CSR>
+	<CSR address="0x19174" alias="RPERRCMD">
+		<Field template="RPERRCMD">
+		</Field>
+	</CSR>
+	<CSR address="0x19178" alias="RPERRSTS">
+		<Field template="RPERRSTS">
+		</Field>
+	</CSR>
+	<CSR address="0x1917c" alias="ERRSID">
+		<Field template="ERRSID">
+		</Field>
+	</CSR>
+	<CSR address="0x19188" alias="MISCCTRLSTS">
+		<Field template="MISCCTRLSTS">
+		</Field>
+	</CSR>
+	<CSR address="0x19070" alias="MISIPENDING">
+		<Field template="MISIPENDING">
+		</Field>
+	</CSR>
+	<CSR address="0x1a174" alias="RPERRCMD">
+		<Field template="RPERRCMD">
+		</Field>
+	</CSR>
+	<CSR address="0x1a178" alias="RPERRSTS">
+		<Field template="RPERRSTS">
+		</Field>
+	</CSR>
+	<CSR address="0x1a17c" alias="ERRSID">
+		<Field template="ERRSID">
+		</Field>
+	</CSR>
+	<CSR address="0x1a188" alias="MISCCTRLSTS">
+		<Field template="MISCCTRLSTS">
+		</Field>
+	</CSR>
+	<CSR address="0x1a070" alias="MISIPENDING">
+		<Field template="MISIPENDING">
+		</Field>
+	</CSR>
+	<CSR address="0x1b174" alias="RPERRCMD">
+		<Field template="RPERRCMD">
+		</Field>
+	</CSR>
+	<CSR address="0x1b178" alias="RPERRSTS">
+		<Field template="RPERRSTS">
+		</Field>
+	</CSR>
+	<CSR address="0x1b17c" alias="ERRSID">
+		<Field template="ERRSID">
+		</Field>
+	</CSR>
+	<CSR address="0x1b188" alias="MISCCTRLSTS">
+		<Field template="MISCCTRLSTS">
+		</Field>
+	</CSR>
+	<CSR address="0x1b070" alias="MISIPENDING">
+		<Field template="MISIPENDING">
+		</Field>
+	</CSR>
+
+  <!-- Start of Memory Buffer part -->
+  <MB address="0x0000" alias="DIDVID"/>
+  <MB address="0x00AA" alias="TEMP"></MB>
+  <MB address="0x0104" alias="VMES_STATUS"></MB>
+  <MB address="0x0200" alias="FERR"></MB>
+  <MB address="0x0204" alias="NERR"></MB>
+  <MB address="0x0208" alias="LERR"></MB>
+  <MB address="0x020C" alias="EMASK"></MB>
+  <MB address="0x0214" alias="LOGVCRC"></MB>
+  <MB address="0x0218" alias="LOGVCRC"></MB>
+  <MB address="0x021C" alias="LOGVCRC"></MB>
+  <MB address="0x0220" alias="LOGVCRC"></MB>
+  <MB address="0x022C" alias="LOGWECC2"></MB>
+  <MB address="0x0224" alias="LOGWECC"></MB>
+  <MB address="0x0228" alias="LOGWECC"></MB>
+  <MB address="0x0238" alias="LOGCFGRW"></MB>
+  <MB address="0x0244" alias="LOGRECC"></MB>
+  <MB address="0x0270" alias="DDDC_FAILED_DEV1_0"></MB>
+  <MB address="0x0274" alias="DDDC_FAILED_DEV1_1"></MB>
+  <MB address="0x0278" alias="DDDC_FAILED_DEV2_0"></MB>
+  <MB address="0x027C" alias="DDDC_FAILED_DEV2_1"></MB>
+</Rule>
