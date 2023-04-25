@@ -1,0 +1,40 @@
+#--------------------------------------------------------------------------------
+#  sshd configuration file for IMM2 Secure Debug Ports.
+#--------------------------------------------------------------------------------
+
+Port 122
+Protocol 2
+HostKey /etc/ssh/ssh_host_rsa_key-immdebug
+
+MaxAuthTries 3
+MaxStartups 10:30:100
+MaxSessions 4
+StrictModes no
+LoginGraceTime 2m
+PermitRootLogin yes
+
+UseDNS no
+UsePAM yes
+RSAAuthentication no
+PubkeyAuthentication no
+PermitEmptyPasswords no
+PasswordAuthentication yes
+ChallengeResponseAuthentication yes
+
+KexAlgorithms ecdh-sha2-nistp256,ecdh-sha2-nistp384,ecdh-sha2-nistp521
+
+#this might need adjust, for what cipher and mac algorithms are supported, we can use "ssh -Q cipher" or "ssh -Q mac" to check.
+Ciphers aes128-ctr,aes192-ctr,aes256-ctr
+MACs hmac-sha2-512,hmac-sha2-256
+
+PrintMotd no
+X11Forwarding no
+AllowTcpForwarding no
+PermitUserEnvironment no
+UsePrivilegeSeparation yes
+
+PidFile /tmp/run/sshd-immdebug.pid
+
+AllowUsers     immdebug
+
+Subsystem sftp internal-sftp

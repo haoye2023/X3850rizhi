@@ -1,0 +1,48 @@
+#--------------------------------------------------------------------------------
+#  sshd configuration file for IMM2 user CLI.
+#--------------------------------------------------------------------------------
+
+Port 22
+Protocol 2
+HostKey /etc/ssh/ssh_host_rsa_key-immcli
+
+MaxSessions 4
+MaxStartups 10:30:100
+MaxAuthTries 3
+StrictModes no
+LoginGraceTime 2m
+PermitRootLogin yes
+
+UseDNS no
+UsePAM yes
+RSAAuthentication no
+PermitEmptyPasswords no
+
+#this might need adjust, for what cipher and mac algorithms are supported, we can use "ssh -Q cipher" or "ssh -Q mac" to check
+Ciphers aes128-ctr,aes192-ctr,aes256-ctr
+MACs hmac-sha2-256,hmac-sha2-512
+
+KexAlgorithms ecdh-sha2-nistp256,ecdh-sha2-nistp384,ecdh-sha2-nistp521
+
+    #
+    #  PubkeyAuthentication might be a security hole in this environment
+    #  since all user home directories are owned by 'immroot', and the
+    #  LegacyCLI process run's as immroot.  Operations to create/modify
+    #  files may be used by a lower authority user to create an authentication
+    #  key for a higher authority user.
+    #
+
+PubkeyAuthentication yes
+
+PasswordAuthentication yes
+ChallengeResponseAuthentication yes
+
+PrintMotd no
+X11Forwarding no
+AllowTcpForwarding no
+PermitUserEnvironment no
+UsePrivilegeSeparation yes
+
+PidFile /tmp/run/sshd-immcli.pid
+ClientAliveInterval 1800
+ClientAliveCountMax 0

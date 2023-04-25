@@ -1,0 +1,36 @@
+#--------------------------------------------------------------------------------
+#  sshd configuration file for IMM2 Lockdown mode
+#--------------------------------------------------------------------------------
+
+Port 22
+Protocol 2
+HostKey /etc/ssh/imm-recovery-key
+
+MaxAuthTries 3
+MaxStartups 10:30:100
+MaxSessions 4
+StrictModes no
+LoginGraceTime 2m
+PermitRootLogin yes
+Ciphers 3des-cbc,blowfish-cbc,aes128-cbc,aes192-cbc,aes256-cbc
+MACs hmac-sha1,hmac-md5
+
+UseDNS no
+UsePAM no
+RSAAuthentication no
+PubkeyAuthentication no
+PermitEmptyPasswords yes
+PasswordAuthentication yes
+ChallengeResponseAuthentication yes
+
+PrintMotd no
+X11Forwarding no
+AllowTcpForwarding no
+PermitUserEnvironment no
+UsePrivilegeSeparation no
+
+PidFile /tmp/run/sshd-immdebug.pid
+
+AllowUsers     immroot
+
+Subsystem sftp internal-sftp
